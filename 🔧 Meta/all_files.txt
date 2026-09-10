@@ -1,0 +1,761 @@
+--- FILE: /home/fabien/Documents/Agent/second_brain/📥 Inbox/MOC_Inbox.md ---
+---
+type: moc
+area: inbox
+tags:
+  - moc
+  - inbox
+  - capture
+parent: "[[Dashboard]]"
+---
+
+# 📥 📥 Inbox — Boîte de Réception & Captures Rapides
+
+> Zone de capture rapide — aucun tri, juste capturer.
+> ↖ [[Dashboard|Retour au Dashboard]]
+
+C'est ici que tu déposes toutes tes idées brutes, notes de réunion rapides, liens à lire, ou pensées non triées.
+
+---
+
+## 🔄 Règle d'or de l'Inbox
+
+1. **Capturer vite sans réfléchir au classement.**
+2. **Trier régulièrement** (avec l'aide de l'agent **Anaïs** ou lors d'une revue hebdomadaire) :
+   - Vers `🚀 Projets` si cela fait partie d'un projet avec une échéance.
+   - Vers `🌿 Domaines` si c'est un domaine de responsabilité continue (ex: sport, finance).
+   - Vers `📚 Ressources` si c'est une connaissance ou référence réutilisable.
+   - Vers `📦 Archives` si c'est historique mais plus actif.
+   - Vers la corbeille si non pertinent.
+
+---
+
+## 🔗 Liens croisés
+
+- [[Dashboard|🌿 Dashboard]] — vue d'ensemble
+- [[🚀 Projets/MOC_Projets|🚀 Projets]] — destination fréquente
+- [[🌿 Domaines/MOC_Domaines_de_Vie|🌿 Domaines de Vie]] — destination fréquente
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🚀 Projets/Certifications_Tech/Projet_Certifications.md ---
+---
+type: personal-project
+title: "Certifications Techniques"
+created: 2026-08-24
+status: "En cours"
+deadline: 2026-12-31
+lead_coach: "Dave"
+tags:
+  - project
+  - certifs
+  - apprentissage
+---
+
+# 🎓 Projet : Certifications Techniques
+
+## 🎯 Objectif
+> Valider officiellement mes compétences clés en ingénierie logicielle / cloud / data pour sécuriser les horizons (Master IA & SaaS).
+
+## ⏰ Créneaux de Révision
+- **Matinée :** Pendant l'Heure Dorée ou fin de matinée.
+- **Soir :** 20h00 - 20h45 (45 min de révision / veille ciblée).
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🚀 Projets/MOC_Projets.md ---
+---
+type: moc
+area: projects
+tags:
+  - moc
+  - projets
+parent: "[[Dashboard]]"
+---
+
+# 🚀 🚀 Projets — Projets Actifs
+
+> Tous tes projets en cours, chacun avec un objectif clair, une échéance et des actions concrètes.
+> ↖ [[Dashboard|Retour au Dashboard]]
+
+---
+
+## 🔥 Projets en cours
+
+### 💻 Stockly SaaS
+> *3h de code profond / jour · 14h–17h · Sans changer de stack*
+
+- [[Stockly_SaaS/Projet_Stockly|📋 Fiche Projet Stockly]]
+- [[Stockly_SaaS/Documentation/agents_fonctionnements|🤖 Agents — Fonctionnements]]
+- [[Stockly_SaaS/Documentation/résumé_agent_ia|📄 Résumé Agent IA]]
+
+### 🎓 Certifications Techniques
+> *Matinée & 20h00–20h45*
+
+- [[Certifications_Tech/Projet_Certifications|📋 Fiche Projet Certifications]]
+
+---
+
+## 📐 Structure d'un projet
+
+Chaque projet contient :
+- **`Projet - Nom.md`** : fiche projet (template [[vie_perso/template_bujo/Template - Projet|Template Projet]])
+- Notes de sessions d'agents associées
+- Fiches de tâches ou brainstorming
+
+---
+
+## 📦 Archiver un projet
+
+Quand un projet est terminé → déplacer vers [[📦 Archives/MOC_Archives|📦 Archives]].
+
+---
+
+## 🔗 Liens croisés
+
+- [[Dashboard|🌿 Dashboard]] — vue d'ensemble
+- [[🌿 Domaines/Vision/MOC_Vision_Objectifs|🧭 MOC Vision]] — les projets servent la vision
+- [[🌿 Domaines/03_Finances_&_Patrimoine/MOC_Finances|💰 MOC Finances]] — impact financier des projets
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🚀 Projets/Stockly_SaaS/Documentation/agents_fonctionnements.md ---
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🚀 Projets/Stockly_SaaS/Documentation/résumé_agent_ia.md ---
+Bonne question — voici comment ça fonctionne réellement :
+
+---
+
+## Ce qu'Antigravity charge **automatiquement**
+
+### ✅ Les `rules/` — toujours chargées
+
+Les fichiers dans `.agents/rules/` marqués `trigger: always_on` sont **injectés dans mon contexte à chaque conversation**. Je les lis comme des instructions permanentes, sans que tu aies à rien faire.
+
+```yaml
+# always_on = je les applique automatiquement
+trigger: always_on   → database, reasoner, api-patterns, ui-consistency, qa-verifier
+```
+
+### ✅ Les `rules/` `on_demand` — chargées si pertinentes
+
+Les agents `on_demand` sont dans mes règles globales — je les **applique activement quand la tâche correspond**, même sans que tu les nommes explicitement.
+
+```yaml
+trigger: on_demand   → flutter-expert, supabase-guardian, testing, documentation, performance, finalize
+```
+
+---
+
+## Ce qu'il faut **déclencher manuellement**
+
+| Ce que tu veux             | Comment l'invoquer                      |
+| -------------------------- | --------------------------------------- |
+| Vérification complète      | *"Fais une vérification complète"*      |
+| Vérifier un fichier précis | *"Vérifie vente_service.dart"*          |
+| Avant un commit            | *"Finalise avant commit"*               |
+| Débuguer un bug            | *"Débogue ce problème : [erreur]"*      |
+| Générer un test            | *"Écris les tests pour ArticleService"* |
+
+---
+
+## Ce que les Skills font
+
+Les **skills** (dans `.agent/skills/`) sont des **cheat sheets chargées à la demande**. Antigravity les lit quand une tâche correspond à leur domaine — mais là aussi il faut souvent être explicite :
+
+```
+"Aide-moi à brainstormer une feature"   → skill bmad-brainstorming
+"Revue de code"                         → skill bmad-code-review
+"Crée un test d'intégration"            → skill flutter-add-integration-test
+```
+
+---
+
+## En pratique pour Stockly
+
+> **Ce qui marche sans rien faire :**
+> Quand tu me donnes un fichier `.dart` à modifier, j'applique automatiquement `flutter-expert`, `api-patterns`, et `ui-consistency` dans ma façon de coder.
+
+> **Ce qui nécessite un prompt explicite :**
+> Le rapport QA formel (`qa-verifier`), les tests (`testing`), la finalisation avant commit (`finalize`).
+
+---
+
+**Conseil** : garde le cheat sheet [`AGENTS.md`](file:///home/fabien/Documents/Projets/Pro/project_mugen/bright_morning_app_flutter/.agents/AGENTS.md) ouvert — c'est ta référence rapide pour savoir quoi dire.
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🚀 Projets/Stockly_SaaS/Projet_Stockly.md ---
+---
+type: personal-project
+title: "Stockly SaaS"
+created: 2026-08-24
+updated: 2026-08-24
+status: "En développement" # [À démarrer, En cours, En pause, Terminé]
+deadline: 2026-12-31
+priority: "🔴 P0 - Haute"
+lead_coach: "Raphaël & Dave"
+stack: ["Flutter", "Supabase", "SQLite (bright_morning.db)", "PostgreSQL", "TypeScript"]
+tags:
+  - project
+  - saas
+  - stockly
+  - offline-first
+---
+
+# 📦 Projet : Stockly SaaS (ERP Négoce & Carrelage)
+
+> **Stockly** est un progiciel de gestion intégré (ERP) moderne pour quincailleries, magasins de carrelage et dépôts de matériaux. Conçu selon une architecture **Offline-First**, il garantit une réactivité instantanée au comptoir et une continuité d'activité totale sans dépendance réseau.
+
+---
+
+## 🧱 La Règle de la Brique Sacrée
+- **Créneau quotidien :** Du lundi au vendredi, de **14h00 à 17h00** (avec un bon café).
+- **Règle :** Poser une seule brique parfaite par session (sans changer de stack).
+
+---
+
+## 🏆 Tâches Récemment Effectuées (Bilan Août 2026)
+
+- [x] 🧠 **Brainstorming et création de la documentation complète** (Hub Diátaxis avec 6 fiches d'architecture et de référence métier).
+- [x] 🏗️ **Refactoring de l'architecture des services** (Séparation claire `lib/`, isolation des couches SQLite / sync_queue / Supabase).
+- [x] 🤖 **Création d'un Skill d'assistance au projet** pour le développement assisté par IA.
+- [x] 🧭 **Discussion et définition des prochaines étapes de développement** (Roadmap et jalons).
+- [x] 🎨 **Implémentation d'un indicateur de chargement (UX)** pour améliorer l'expérience utilisateur et le feedback visuel.
+
+---
+
+## ⚡ Macro-Architecture & 4 Piliers Invariants
+
+```text
+┌────────────────────────────────────────────────────────┐
+│                   Application Flutter                  │
+│       (Widgets réactifs connectés aux Streams SQLite)  │
+└──────────────────────────┬─────────────────────────────┘
+                           │ write (instantané)
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│                SQLite Local (bright_morning.db)        │
+│    - Lecture instantanée                               │
+│    - Écriture locale + insertion dans 'sync_queue'     │
+└──────────────────────────┬─────────────────────────────┘
+                           │ pushPendingWrites() (arrière-plan)
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│              Supabase PostgreSQL Cloud                 │
+│    - Centralisation multi-entreprises (entreprise_id)  │
+│    - Sécurité Row Level Security (RLS) & Auth          │
+└────────────────────────────────────────────────────────┘
+```
+
+1. **Zéro Latence :** Toute opération est exécutée en local sur SQLite (`executeWrite`) avant d'être synchronisée.
+2. **Règle d'Or Carrelage :** Le stock physique est géré en pièces indivisibles et cartons pleins, mais facturé au $m^2$ demandé.
+3. **Traçabilité par Lot :** Saisie obligatoire du `code_bain` pour éviter tout mélange de teintes d'usine.
+4. **Isolation Multi-Tenant :** Cloisonnement strict des données de chaque entreprise via `entreprise_id`.
+
+---
+
+## 📚 Documentation Technique Associée (Diátaxis)
+- `🧮 [MÉTIER]` Calculs Carrelage, Conversion m² & Code Bain
+- `🔄 [ARCHITECTURE]` Dual-Layer Offline-First & Moteur sync_queue
+- `🗄️ [RÉFÉRENCE]` Schéma de Base de Données & Dictionnaire des Tables
+- `💻 [RÉFÉRENCE]` Structure du Projet lib/ & Guide de Contribution
+- `🛠️ [HOW-TO]` Ajouter une Entité Synchronisée Offline-First
+- `🚨 [TROUBLESHOOTING]` Dépannage Connectivité, Sync & Lifecycle
+
+---
+
+## 🎯 Prochaines Actions Prioritaires
+- [ ] Finalisation des flux de synchronisation résiliente
+- [ ] Tests de montée en charge et cas d'erreurs réseau
+- [ ] Raffinement des interfaces de vente au comptoir
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/01_Organisation_&_Rituels/MOC_Organisation.md ---
+---
+type: moc
+area: organisation
+coach: Anaïs
+tags:
+  - moc
+  - organisation
+  - rituels
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# 🗂️ 01. Organisation & Rituels — Anaïs
+
+> Espace de pilotage de ta vie quotidienne, de tes rituels et de ta sérénité organisationnelle.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédiée :** Anaïs — Secrétaire de Vie & Orchestratrice
+**Rôle :** Planning, rituels matin/soir, intendance & sérénité
+
+---
+
+## 📌 Notes clés
+
+- [[Organisation_&_Vision_Fabien|🗓️ Organisation & Vision Fabien — Journée Type & Méthode]]
+
+---
+
+## 🔄 Ce qui va ici
+
+- Routines matinales et vespérales
+- Time blocking et planification de la semaine
+- Systèmes d'organisation personnelle
+- Rituels de transition (matin → travail → soirée)
+- Outils de planification (agenda, to-do, calendrier)
+
+---
+
+## 🔗 Liens croisés
+
+- [[02_Productivite_&_Focus/MOC_Productivite|⚡ MOC Productivité]] — profondément lié (organisation → focus)
+- [[06_Vision_&_Valeurs/MOC_Vision_Objectifs|🧭 MOC Vision]] — l'organisation sert la vision
+- [[MOC_Ressources|📋 Templates & BuJo]] — modèles de notes
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/01_Organisation_&_Rituels/Organisation_&_Vision_Fabien.md ---
+---
+type: area-core
+agent: "Anaïs"
+updated: 2026-08-24
+tags:
+  - organisation
+  - rituels
+  - vision
+  - anais
+---
+
+# 🗓️ Organisation & Programme — Méthode, Équilibre & Vision de Fabien
+
+> **QG d'équilibre holistique** : Conçu sur-mesure pour harmoniser un sommeil complet (chronotype naturel non lève-tôt), le dessin & les certifs, la construction de **Stockly** (maîtrise profonde du code), le sport à 17h, les carousels, le reset de la maison le soir et la foi.
+
+> 🌟 **Règle d'or :** *La nuit pour un sommeil complet de 8h sans forcer l'aube, le matin pour le chien & créer dans une maison déjà propre, l'après-midi pour bâtir Stockly avec un bon café, la fin d'après-midi pour le sport & les carousels, la soirée pour ranger, préparer demain sur papier, prier et remercier Dieu.*
+
+---
+
+## 🌟 1. Les 4 Habitudes Sacrées du Mois
+
+```text
+           📖 FOI & ESPRIT (Bible, culte du dimanche, prière, gratitude)
+                       ▲
+                       │
+🎨 DESIGN (Dessin/Croquis) ───┼─── 💻 CODE PROFOND (Stockly SaaS - Sans changer de stack)
+(Matinées & Heure Dorée)│    (14h - 17h avec un bon café en semaine)
+                       │
+                       ▼
+      🏋️‍♂️ CORPS (Sport 17h00) ─── 📱 RÉSEAUX & CAROUSELS (Partage & Certifs)
+      (Oxygénation post-code)     (Synthèse de mes apprentissages & Personal Branding)
+```
+
+1. 🎨 **Design (Dessin / Croquis)** : Affûter l'œil, le sens des proportions et la sensibilité de Product Designer.
+2. 💻 **Code Profond (Stockly & Projets)** : Maîtrise approfondie des architectures et du code réel sans s'éparpiller sur de nouvelles stacks (*Flutter / Supabase*).
+3. 🏋️‍♂️ **Santé & Corps (Sport 4x/semaine)** : Décharge physique à 17h00 pour régénérer le cerveau et couper les écrans.
+4. 📱 **Réseaux (1 post / carousel créé ou publié)** : Transformer ce que j'apprends en carousels inspirants pour développer mon audience.
+5. 🎓 **Objectif Transversal : Certifications** : Valider mes compétences clés et sécuriser mes horizons (Master & SaaS).
+6. 🕊️ **Le Dimanche (Le Vrai Repos / Sabbat)** : Culte le matin, sieste réparatrice, zéro pression de travail, ménage chambre du père.
+
+---
+
+## ⏰ 2. La Journée Type Réelle de Fabien
+
+| Horaire | Domaine | Activité & Focus | Bénéfice & Posture |
+| :--- | :--- | :--- | :--- |
+| **08h00 / 08h30** | 🌅 Réveil Naturel & Chien | **Sommeil complet de 8h (Non lève-tôt assumé)** • Soin du chien dans une maison déjà propre | 🔋 Batterie mentale à 100% |
+| **08h30 - 09h30** | 🎨 L'Heure Dorée & BuJo | **Dessin, croquis, certifications ou lecture libre** • Relecture BuJo du jour | ✨ Éveil créatif pur |
+| **09h30 - 13h30** | 🛋️ Matinée & Intendance | Temps libre, préparation, intendance légère, révisions certifs | 🕊️ Préservation d'énergie |
+| **13h30 - 14h00** | ☕ Le Bon Café & Target | Douche, préparation du bureau, café + **noter la target Stockly** | 🚀 Mise en route focus |
+| **14h00 - 17h00** | 💻 **Bâtir Stockly** | **3h Deep Work Flutter / Supabase (Mon SaaS)** — Maîtrise profonde sans changer de stack | 👑 Construction de mon capital |
+| **17h00 - 18h00** | 🏋️‍♂️ **Sport Fin d'Après-midi** | **Séance de sport (4x/semaine)** — Décharge physique post-Stockly | 💪 Santé, vitalité & coupure nette |
+| **18h00 - 19h00** | 🚿 Douche & 🚀 Projets/Réseaux | **Carousels réseaux / Clinic / Certifications / Typonator** | ✨ Créativité & Personal branding |
+| **19h00 - 20h00** | 🍲 Dîner & Famille | Dîner en famille, discussions sans écran | 🌴 Convivialité & Ancrage |
+| **20h00 - 20h45** | 📚 Veille Tech & Certifs | **45 min : Veille ciblée ou préparation de certifications** | 💡 Montée en compétences |
+| **20h45 - 21h15** | 🎮 Jeux Vidéo (JV) | **Détente ludique sans culpabilité** | 🎉 Plaisir & Fun |
+| **21h15 - 21h45** | 🧹 **Reset Maison du Soir** | **Rangement chambre & Nettoyage salon** pour libérer la matinée de demain | 🧼 Maison prête & esprit apaisé |
+| **21h45 - 22h15** | 📓 **Rituel BuJo du Soir** | **Ligne du Jour** • **Préparation du lendemain dans le BuJo** | 🧠 Sommeil sans overthinking |
+| **22h15 - 23h00** | 📖 Spiritualité & Gratitude | **Lecture biblique, prière pour les proches & gratitude** | 🕊️ Paix intérieure profonde |
+| **23h30 - 08h00** | 🌙 Nuit Complète de 8h | *« Je remercie Dieu pour ma journée, je prie pour ma famille, je dors profondément. »* | 😴 Sommeil régénérateur |
+
+---
+
+## 🔗 Liens Utiles
+- [[🌿 Domaines/02_Productivite_&_Focus/Antidotes_Anti_Overthinking_&_BuJo|🧠 Antidotes Anti-Overthinking & BuJo]]
+- [[🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons|🧭 Boussole de Vie & Horizons]]
+- [[🚀 Projets/Stockly_SaaS/Projet_Stockly|💻 Projet Stockly]]
+- [[🔧 Meta/Templates/Template - Bullet Journal (BuJo)|📓 Gabarit BuJo]]
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/01_Organisation_&_Rituels/README.md ---
+> Redirigé vers [[MOC_Organisation|📋 MOC Organisation & Rituels]]
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/02_Productivite_&_Focus/Antidotes_Anti_Overthinking_&_BuJo.md ---
+---
+type: method
+coaches: ["Dave", "Anaïs", "Sophie"]
+tags:
+  - productivite
+  - bujo
+  - anti-overthinking
+---
+
+# 🧠 Les Antidotes Anti-Overthinking & Règles d'Énergie
+
+### 🛌 1. L'alignement Chronotype : Assumer de ne pas être un lève-tôt (Noé & Sophie)
+- Le mythe du réveil à 5h/6h ne convient pas à tous les profils biologiques. 
+- En faisant le ménage le soir, tu t'offres **8 heures de sommeil ininterrompues** jusqu'à 8h00/8h30. Tu te réveilles avec 100% de ta batterie cognitive, sans dette de sommeil l'après-midi.
+
+### 🧹 2. Le "Reset de Maison du Soir" (21h15)
+- **Nettoyer le salon et ranger sa chambre le soir** permet de se réveiller dans un environnement propre et apaisant sans aucune corvée au saut du lit.
+
+### 📝 3. La règle du "Cerveau de Papier" (Ne pense jamais dans ta tête)
+- **Le cerveau est fait pour AVOIR des idées, pas pour les STOCKER.**
+- **La Boucle Fermée BuJo** : Écrire la veille à 21h45 (vider le cerveau) + Relire le matin (action sans friction) + Carnet ouvert pendant le code (capturer les bugs et idées à la volée).
+
+### ⚡ 4. La question coupe-circuit (5 minutes chrono)
+- Pose-toi cette question magique : **« Est-ce que je peux agir concrètement dessus dans les 5 prochaines minutes ? »**
+  - *Si OUI* : Fais une micro-action de 2 minutes maintenant.
+  - *Si NON* : Rendez-vous demain sur mon BuJo.
+
+### 🧱 5. Remplacer "Réussir ma vie" par "Poser ma seule brique aujourd'hui"
+- On ne construit pas un mur en fixant le sommet. On pose **une seule brique parfaite par jour** (les 3h de Stockly de 14h à 17h).
+
+### 📖 6. La Sagesse de la Foi (Matthieu 6:34)
+> *« Ne vous inquiétez donc pas du lendemain ; car le lendemain aura soin de lui-même. À chaque jour suffit sa peine. »*
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/02_Productivite_&_Focus/MOC_Productivite.md ---
+---
+type: moc
+area: productivite
+coach: Dave
+tags:
+  - moc
+  - productivite
+  - focus
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# ⚡ 02. Productivité & Focus — Dave
+
+> Espace du deep work, du time-blocking et de l'exécution sans friction.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédié :** Dave — Coach Productivité & Haute Performance
+**Rôle :** Brique sacrée (14h-17h), time-blocking, élimination des distractions
+
+---
+
+## 📌 Notes clés
+
+- [[Antidotes_Anti_Overthinking_&_BuJo|🧠 Antidotes Anti-Overthinking & BuJo — Cerveau de Papier & Règles]]
+
+---
+
+## 🔄 Ce qui va ici
+
+- Méthodes de deep work et time blocking
+- Systèmes de capture et vidage mental
+- Anti-procrastination et règles de focus
+- Optimisations de flux de travail
+- Gestion de l'énergie mentale
+
+---
+
+## 🔗 Liens croisés
+
+- [[01_Organisation_&_Rituels/MOC_Organisation|🗂️ MOC Organisation]] — profondément lié
+- [[🌿 Domaines/Santé/MOC_Sante_Vitalite|🥗 MOC Santé]] — l'énergie physique conditionne le focus
+- [[05_Mental_&_Equilibre/MOC_Mental_Equilibre|🧘 MOC Mental]] — équilibre → performance durable
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/02_Productivite_&_Focus/README.md ---
+> Redirigé vers [[MOC_Productivite|📋 MOC Productivité & Focus]]
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/03_Finances_&_Patrimoine/MOC_Finances.md ---
+---
+type: moc
+area: finances
+coach: Camille
+tags:
+  - moc
+  - finances
+  - patrimoine
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# 💰 03. Finances & Patrimoine — Camille
+
+> Espace de construction de ta liberté financière et de gestion de ton patrimoine.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédiée :** Camille — Gestionnaire Financière
+**Rôle :** Budget, épargne, investissements, indépendance financière
+
+---
+
+## 📌 Notes clés
+
+*(Aucune note encore — commence par capturer ici ton budget mensuel ou ta stratégie d'épargne.)*
+
+---
+
+## 🔄 Ce qui va ici
+
+- Budget mensuel et suivi des dépenses
+- Stratégie d'épargne et d'investissement
+- Projets financiers (immobilier, bourse, etc.)
+- Suivi des revenus (salaire, side projects)
+- Objectifs d'indépendance financière
+
+---
+
+## 🔗 Liens croisés
+
+- [[🚀 Projets/MOC_Projets|🚀 MOC Projets]] — les projets qui génèrent des revenus
+- [[06_Vision_&_Valeurs/MOC_Vision_Objectifs|🧭 MOC Vision]] — liberté financière comme objectif de vie
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/03_Finances_&_Patrimoine/README.md ---
+> Redirigé vers [[MOC_Finances|📋 MOC Finances & Patrimoine]]
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/Santé/Chronotype_&_Energie_Sommeil.md ---
+---
+type: health-guide
+coaches: ["Noé", "Sophie"]
+tags:
+  - sante
+  - sommeil
+  - energie
+---
+
+# 🔋 Chronotype, Sommeil Réparateur & Énergie (Noé)
+
+## 🛌 Le principe du Sommeil Naturel (8h pleines)
+- **Coucher :** 23h30 (après rituel spirituel et reset).
+- **Lever :** 08h00 / 08h30 sans violence d'alarme brutale.
+- **Pourquoi :** Respect du chronotype intermédiaire. Élimine la baisse de régime cognitive de 14h.
+
+## 🏋️‍♂️ Le SAS Sport de 17h00
+- **Fréquence :** 4 fois par semaine.
+- **Rôle physiologique :** Décharge de tension post-code profond (Stockly), oxygénation du cerveau, transition nette entre le travail logique et le temps créatif/famille.
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/Santé/MOC_Sante_Vitalite.md ---
+---
+type: moc
+area: sante
+coach: Noé
+tags:
+  - moc
+  - sante
+  - vitalite
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# 🥗 04. Santé & Vitalité — Noé
+
+> Espace de ton énergie physique, de ton sommeil et de ta vitalité au quotidien.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédié :** Noé — Coach Santé & Énergie
+**Rôle :** Sommeil complet (8h), sport à 17h, nutrition, récupération
+
+---
+
+## 📌 Notes clés
+
+- [[Chronotype_&_Energie_Sommeil|🔋 Chronotype & Énergie Sommeil — Chronotype 8h & Sport 17h]]
+
+---
+
+## 🔄 Ce qui va ici
+
+- Protocoles de sommeil et récupération
+- Routines sportives et suivi d'entraînement
+- Nutrition et alimentation
+- Énergie et gestion du corps
+- Santé préventive
+
+---
+
+## 🔗 Liens croisés
+
+- [[02_Productivite_&_Focus/MOC_Productivite|⚡ MOC Productivité]] — le corps alimente le focus
+- [[01_Organisation_&_Rituels/MOC_Organisation|🗂️ MOC Organisation]] — sport à 17h dans la routine
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/05_Mental_&_Equilibre/MOC_Mental_Equilibre.md ---
+---
+type: moc
+area: mental
+coach: Sophie
+tags:
+  - moc
+  - mental
+  - equilibre
+  - bien-etre
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# 🧘 05. Mental & Sérénité — Sophie
+
+> Espace de ta santé mentale, de la gestion du stress et de ton équilibre émotionnel.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédiée :** Sophie — Coach Bien-être Mental & Équilibre
+**Rôle :** Anti-stress, pleine conscience, lâcher-prise, équilibre émotionnel
+
+---
+
+## 📌 Notes clés
+
+*(Aucune note encore — commence par noter ici ce qui te pèse, ou un exercice de pleine conscience.)*
+
+---
+
+## 🔄 Ce qui va ici
+
+- Pratiques de méditation et pleine conscience
+- Gestion du stress et de l'anxiété
+- Journaling émotionnel
+- Équilibre travail / repos / relation
+- Thérapie, introspection, lâcher-prise
+
+---
+
+## 🔗 Liens croisés
+
+- [[10_Philosophie_&_Pensees/MOC_Philosophie|🏛️ MOC Philosophie]] — Stoïcisme & recul
+- [[🌿 Domaines/Santé/MOC_Sante_Vitalite|🥗 MOC Santé]] — corps et mental sont liés
+- [[06_Vision_&_Valeurs/MOC_Vision_Objectifs|🧭 MOC Vision]] — sérénité au service de la vision
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons.md ---
+---
+type: vision
+coaches: ["Lucas", "Thomas"]
+tags:
+  - vision
+  - horizons
+  - identite
+---
+
+# 🧭 La Boussole de Vie : Vision & Horizons de Fabien
+
+## 👤 Qui tu es
+> **Un futur Tech Entrepreneur & Product Designer (style Jony Ive)**, créateur de ses propres solutions logicielles indépendantes alliant élégance visuelle, rigueur architecturale et utilité concrète.
+
+---
+
+## 🔭 Les 3 Horizons de Progression
+
+### 🎯 Horizon 1 (Aujourd'hui - 24 ans)
+- Perfectionner et solidifier **Stockly** (produit pro perso SaaS).
+- Valider des **certifications techniques**.
+- Créer et publier des **carousels inspirants** sur les réseaux sociaux.
+- Développer la sensibilité artistique (**dessin/croquis**) et entretenir le corps (**sport 4x/semaine**).
+
+### 🚀 Horizon 2 (1 à 2 ans)
+- **Lancement commercial officiel de Stockly en SaaS**.
+- Obtention du **Master IA & Big Data**.
+- Acquisition des premiers clients payants et constitution d'une audience qualifiée.
+
+### 🏛️ Horizon 3 (3 à 5 ans)
+- **Studio de micro-SaaS indépendants**.
+- Liberté géographique, temporelle et financière.
+- Impact positif et transmission.
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/Vision/MOC_Vision_Objectifs.md ---
+---
+type: moc
+area: vision
+coach: Lucas
+tags:
+  - moc
+  - vision
+  - valeurs
+  - objectifs
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# 🧭 06. Vision & Sens — Lucas
+
+> Espace de tes valeurs, de ta boussole de vie et de tes objectifs à long terme.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédié :** Lucas — Coach de Vie & Clarté
+**Rôle :** Valeurs, OKRs de vie, vision à 3 horizons, sens et direction
+
+---
+
+## 📌 Notes clés
+
+- [[Boussole_de_Vie_&_Horizons|🧭 Boussole de Vie & Horizons — 3 Horizons (24 ans → 5 ans)]]
+
+---
+
+## 🔄 Ce qui va ici
+
+- Mes valeurs fondamentales
+- Vision à 3/5/10 ans (les 3 Horizons)
+- OKRs annuels et objectifs trimestriels
+- Bilans de sens et d'alignement
+- Lettres à moi-même / manifestes personnels
+
+---
+
+## 🔗 Liens croisés
+
+- [[🚀 Projets/MOC_Projets|🚀 MOC Projets]] — les projets doivent servir la vision
+- [[05_Mental_&_Equilibre/MOC_Mental_Equilibre|🧘 MOC Mental]] — clarté intérieure → vision juste
+- [[10_Philosophie_&_Pensees/MOC_Philosophie|🏛️ MOC Philosophie]] — fondations philosophiques de la vision
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/07_Maison_&_Environnement/MOC_Maison_Minimalisme.md ---
+---
+type: moc
+area: maison
+coach: Léa
+tags:
+  - moc
+  - maison
+  - minimalisme
+  - environnement
+parent: "[[MOC_Domaines_de_Vie]]"
+---
+
+# 🏡 07. Maison & Environnement — Léa
+
+> Espace de ton environnement de vie, du minimalisme et de la sérénité domestique.
+> ↖ [[MOC_Domaines_de_Vie|Retour aux Domaines de Vie]]
+
+**Coach dédiée :** Léa — Organisatrice du Quotidien
+**Rôle :** Reset du soir (21h15), espace épuré, logistique, minimalisme
+
+---
+
+## 📌 Notes clés
+
+*(Aucune note encore — commence par noter ici ton système de reset du soir ou tes règles minimalistes.)*
+
+---
+
+## 🔄 Ce qui va ici
+
+- Système de rangement et espace de vie
+- Minimalisme et désencombrement
+- Logistique domestique (courses, ménage, administratif)
+- Projets maison et amélioration de l'environnement
+- Rituels de reset du soir (21h15)
+
+---
+
+## 🔗 Liens croisés
+
+- [[01_Organisation_&_Rituels/MOC_Organisation|🗂️ MOC Organisation]] — l'environnement soutient les rituels
+- [[05_Mental_&_Equilibre/MOC_Mental_Equilibre|🧘 MOC Mental]] — espace épuré → esprit épuré
+
+
+--- FILE: /home/fabien/Documents/Agent/second_brain/🌿 Domaines/07_Maison_&_Environnement/README.md ---
+> Redirigé vers [[MOC_Maison_Minimalisme|📋 MOC Maison & Minimalisme]]
+

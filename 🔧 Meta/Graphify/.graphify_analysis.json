@@ -1,0 +1,2670 @@
+{
+  "communities": {
+    "0": [
+      "00_inbox_note_fatigue_coupure_jugement",
+      "00_inbox_note_fatigue_coupure_jugement_fatigue_seuil_de_sommeil_et_coupure_de_jugement",
+      "01_projects_charis_web_recap",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_1_l_alignement_chronotype_assumer_de_ne_pas_être_un_lève_tôt_noé_sophie",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_2_le_reset_de_maison_du_soir_21h15",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_3_la_règle_du_cerveau_de_papier_ne_pense_jamais_dans_ta_tête",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_4_la_question_coupe_circuit_5_minutes_chrono",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_5_remplacer_réussir_ma_vie_par_poser_ma_seule_brique_aujourd_hui",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_6_la_sagesse_de_la_foi_matthieu_6_34",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_7_la_règle_du_seuil_dormir_ou_tester_avant_de_condamner",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_les_antidotes_anti_overthinking_règles_d_énergie",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_carnet_1_le_life_tracker_le_grand_carnet",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_carnet_2_le_pocket_journal_le_petit_carnet",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_comment_l_intégrer_à_ton_système_fabien",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_l_idée_principale",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_vidéo_my_two_notebook_system_to_stop_infinite_scrolling",
+      "02_areas_01_systeme_execution_moc_systeme_execution",
+      "02_areas_01_systeme_execution_organisation_vision_fabien",
+      "02_areas_01_systeme_execution_profil_context_fabien",
+      "02_areas_01_systeme_execution_profil_context_fabien_1_rythme_chronotype_le_sommeil_avant_tout",
+      "02_areas_01_systeme_execution_profil_context_fabien_2_créativité_l_heure_dorée_du_matin",
+      "02_areas_01_systeme_execution_profil_context_fabien_3_code_focus_deep_work_wolf",
+      "02_areas_01_systeme_execution_profil_context_fabien_4_corps_énergie",
+      "02_areas_01_systeme_execution_profil_context_fabien_5_mental_foi_overthinking",
+      "02_areas_01_systeme_execution_profil_context_fabien_6_logistique_quotidienne",
+      "02_areas_01_systeme_execution_profil_context_fabien_7_univers_ludique_sensibilité_artistique",
+      "02_areas_01_systeme_execution_profil_context_fabien_profil_habitudes_de_fabien_mémoire_pour_anaïs",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee",
+      "02_areas_01_systeme_execution_skills_agents",
+      "02_areas_01_systeme_execution_skills_anaïs",
+      "02_areas_01_systeme_execution_skills_dave",
+      "02_areas_02_finances_patrimoine_skills_camille",
+      "02_areas_03_maison_environnement_skills_léa",
+      "02_areas_04_sante_vitalite_chronotype_energie_sommeil",
+      "02_areas_04_sante_vitalite_chronotype_energie_sommeil_chronotype_sommeil_réparateur_énergie_noé",
+      "02_areas_04_sante_vitalite_chronotype_energie_sommeil_le_principe_du_sommeil_naturel_8h_pleines",
+      "02_areas_04_sante_vitalite_chronotype_energie_sommeil_le_sas_sport_de_17h00",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol",
+      "02_areas_04_sante_vitalite_programme_physique",
+      "02_areas_04_sante_vitalite_programme_physique_programme_entraînement_physique_d_anime_esthétique_force",
+      "02_areas_04_sante_vitalite_programme_physique_séance_a_focus_largeur_dos_épaules_cuisses_quadriceps",
+      "02_areas_04_sante_vitalite_programme_physique_séance_b_focus_épaisseur_bras_buste_core",
+      "02_areas_04_sante_vitalite_programme_physique_séance_c_focus_full_body_esthétique_chaîne_postérieure",
+      "02_areas_04_sante_vitalite_sante_bien_etre",
+      "02_areas_04_sante_vitalite_sante_bien_etre_04_santé_vitalité_noé",
+      "02_areas_04_sante_vitalite_sante_bien_etre_ce_qui_va_ici",
+      "02_areas_04_sante_vitalite_sante_bien_etre_notes_clés",
+      "02_areas_04_sante_vitalite_skills_noé",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_horizon_1_aujourd_hui_24_ans",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_horizon_2_1_à_2_ans",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_horizon_3_3_à_5_ans",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_la_boussole_de_vie_vision_horizons_de_fabien",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_les_3_horizons_de_progression",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_qui_tu_es",
+      "02_areas_05_boussole_mindset_skills_lucas",
+      "02_areas_05_boussole_mindset_skills_sophie",
+      "02_areas_06_relations_social_skills_inès",
+      "02_areas_07_creativite_side_projects_skills_raphaël",
+      "02_areas_10_spiritualite_sagesse_skills_thomas"
+    ],
+    "1": [
+      "agents_skills_unlazy_scripts_gate_check",
+      "agents_skills_unlazy_scripts_gate_check_abandonedids",
+      "agents_skills_unlazy_scripts_gate_check_acquireregexworker",
+      "agents_skills_unlazy_scripts_gate_check_actionnames",
+      "agents_skills_unlazy_scripts_gate_check_aggregatedispatch",
+      "agents_skills_unlazy_scripts_gate_check_approvaldir",
+      "agents_skills_unlazy_scripts_gate_check_approvalexists",
+      "agents_skills_unlazy_scripts_gate_check_approvalpath",
+      "agents_skills_unlazy_scripts_gate_check_asdirectory",
+      "agents_skills_unlazy_scripts_gate_check_assertapprovaldirunchanged",
+      "agents_skills_unlazy_scripts_gate_check_assertprivateapprovalentry",
+      "agents_skills_unlazy_scripts_gate_check_canonicalroot",
+      "agents_skills_unlazy_scripts_gate_check_check_supervisor",
+      "agents_skills_unlazy_scripts_gate_check_defaultcwd",
+      "agents_skills_unlazy_scripts_gate_check_evidencefor",
+      "agents_skills_unlazy_scripts_gate_check_executablecandidates",
+      "agents_skills_unlazy_scripts_gate_check_extraunmet",
+      "agents_skills_unlazy_scripts_gate_check_failureoutput",
+      "agents_skills_unlazy_scripts_gate_check_failusage",
+      "agents_skills_unlazy_scripts_gate_check_finalstates",
+      "agents_skills_unlazy_scripts_gate_check_flag_options",
+      "agents_skills_unlazy_scripts_gate_check_insertorupdateevidence",
+      "agents_skills_unlazy_scripts_gate_check_jobcount",
+      "agents_skills_unlazy_scripts_gate_check_jobs",
+      "agents_skills_unlazy_scripts_gate_check_ledgers",
+      "agents_skills_unlazy_scripts_gate_check_loadledger",
+      "agents_skills_unlazy_scripts_gate_check_notrun",
+      "agents_skills_unlazy_scripts_gate_check_oracle",
+      "agents_skills_unlazy_scripts_gate_check_outputfingerprint",
+      "agents_skills_unlazy_scripts_gate_check_parseargs",
+      "agents_skills_unlazy_scripts_gate_check_parsedargs",
+      "agents_skills_unlazy_scripts_gate_check_pathhash",
+      "agents_skills_unlazy_scripts_gate_check_pathisinside",
+      "agents_skills_unlazy_scripts_gate_check_pathvalue",
+      "agents_skills_unlazy_scripts_gate_check_pending",
+      "agents_skills_unlazy_scripts_gate_check_printoracle",
+      "agents_skills_unlazy_scripts_gate_check_readapprovalfile",
+      "agents_skills_unlazy_scripts_gate_check_readledgerfile",
+      "agents_skills_unlazy_scripts_gate_check_recordapproval",
+      "agents_skills_unlazy_scripts_gate_check_regexwaiters",
+      "agents_skills_unlazy_scripts_gate_check_releaseregexworker",
+      "agents_skills_unlazy_scripts_gate_check_resolvedgatecwd",
+      "agents_skills_unlazy_scripts_gate_check_resolveshell",
+      "agents_skills_unlazy_scripts_gate_check_resultkey",
+      "agents_skills_unlazy_scripts_gate_check_root",
+      "agents_skills_unlazy_scripts_gate_check_runcheck",
+      "agents_skills_unlazy_scripts_gate_check_runnable",
+      "agents_skills_unlazy_scripts_gate_check_runrolling",
+      "agents_skills_unlazy_scripts_gate_check_runrolling_worker",
+      "agents_skills_unlazy_scripts_gate_check_saferegexmatch",
+      "agents_skills_unlazy_scripts_gate_check_signature",
+      "agents_skills_unlazy_scripts_gate_check_staleresults",
+      "agents_skills_unlazy_scripts_gate_check_target",
+      "agents_skills_unlazy_scripts_gate_check_terminalsafe",
+      "agents_skills_unlazy_scripts_gate_check_timeoutseconds",
+      "agents_skills_unlazy_scripts_gate_check_timeoutvalue",
+      "agents_skills_unlazy_scripts_gate_check_unmetids",
+      "agents_skills_unlazy_scripts_gate_check_validatedapprovaldir",
+      "agents_skills_unlazy_scripts_gate_check_value_options",
+      "agents_skills_unlazy_scripts_lib_gates_formatdocument",
+      "agents_skills_unlazy_scripts_lib_gates_qualify"
+    ],
+    "2": [
+      "02_areas_05_boussole_mindset_action_battant_doutes",
+      "02_areas_05_boussole_mindset_action_battant_doutes_action_doutes",
+      "02_areas_05_boussole_mindset_action_battant_doutes_comment_ça_s_applique",
+      "02_areas_05_boussole_mindset_action_battant_doutes_en_un_mot",
+      "02_areas_05_boussole_mindset_action_battant_doutes_la_boucle_vertueuse",
+      "02_areas_05_boussole_mindset_action_battant_doutes_le_principe",
+      "02_areas_05_boussole_mindset_stop_overthinking",
+      "02_areas_05_boussole_mindset_stop_overthinking_1_la_règle_du_cerveau_de_papier_ne_pense_jamais_dans_ta_tête",
+      "02_areas_05_boussole_mindset_stop_overthinking_2_la_question_coupe_circuit_est_ce_que_j_ai_un_levier_dessus_dans_les_5_prochaines_minutes",
+      "02_areas_05_boussole_mindset_stop_overthinking_3_remplacer_réussir_ma_vie_par_poser_une_seule_brique_aujourd_hui",
+      "02_areas_05_boussole_mindset_stop_overthinking_4_la_sagesse_de_ta_foi_la_règle_de_matthieu_6_34",
+      "02_areas_05_boussole_mindset_stop_overthinking_ce_soir_débranche_la_prise",
+      "02_areas_05_boussole_mindset_stratégie_organisation",
+      "02_areas_05_boussole_mindset_stratégie_organisation_1_le_framework_gps_goal_plan_system",
+      "02_areas_05_boussole_mindset_stratégie_organisation_1_vue_d_ensemble_thèse_centrale_executive_summary",
+      "02_areas_05_boussole_mindset_stratégie_organisation_2_le_système_de_gestion_du_temps_deep_work",
+      "02_areas_05_boussole_mindset_stratégie_organisation_2_les_4_piliers_fondamentaux_des_systèmes_personnels",
+      "02_areas_05_boussole_mindset_stratégie_organisation_3_le_health_operating_system_le_socle_biologique",
+      "02_areas_05_boussole_mindset_stratégie_organisation_3_tableau_comparatif_motivation_vs_approche_par_systèmes",
+      "02_areas_05_boussole_mindset_stratégie_organisation_4_clés_d_analyse_questions_fréquentes_faq",
+      "02_areas_05_boussole_mindset_stratégie_organisation_4_la_réduction_radicale_des_frictions_friction_free_environment",
+      "02_areas_05_boussole_mindset_stratégie_organisation_5_protocole_pratique_de_mise_en_place_en_4_étapes",
+      "02_areas_05_boussole_mindset_stratégie_organisation_comment_maintenir_la_flexibilité_sans_briser_la_discipline",
+      "02_areas_05_boussole_mindset_stratégie_organisation_guide_d_étude_synthèse_stratégique_notebooklm_edition",
+      "02_areas_05_boussole_mindset_stratégie_organisation_hygiène_de_vie_les_7_habitudes_matinales_à_bannir",
+      "02_areas_05_boussole_mindset_stratégie_organisation_l_altruisme_comme_moteur",
+      "02_areas_05_boussole_mindset_stratégie_organisation_l_art_de_dire_non",
+      "02_areas_05_boussole_mindset_stratégie_organisation_l_organisation_de_l_espace_physique",
+      "02_areas_05_boussole_mindset_stratégie_organisation_l_usage_critique_de_notion_et_la_paralysie_décisionnelle",
+      "02_areas_05_boussole_mindset_stratégie_organisation_la_gestion_du_temps_réel",
+      "02_areas_05_boussole_mindset_stratégie_organisation_la_matrice_d_eisenhower_et_la_méthode_abcde",
+      "02_areas_05_boussole_mindset_stratégie_organisation_la_procrastination_et_eat_that_frog",
+      "02_areas_05_boussole_mindset_stratégie_organisation_le_mythe_du_multitâche",
+      "02_areas_05_boussole_mindset_stratégie_organisation_le_piège_du_perfectionnisme",
+      "02_areas_05_boussole_mindset_stratégie_organisation_le_syndrome_de_la_gratification_immédiate",
+      "02_areas_05_boussole_mindset_stratégie_organisation_les_interruptions_et_l_ère_de_l_information",
+      "02_areas_05_boussole_mindset_stratégie_organisation_quelle_est_la_différence_essentielle_entre_un_objectif_et_un_système",
+      "02_areas_05_boussole_mindset_stratégie_organisation_section_i_psychologie_et_état_d_esprit_au_delà_de_la_volonté",
+      "02_areas_05_boussole_mindset_stratégie_organisation_section_ii_méthodologies_de_priorisation_et_planification_stratégique",
+      "02_areas_05_boussole_mindset_stratégie_organisation_section_iii_les_saboteurs_de_productivité_analyse_des_coûts_cachés",
+      "02_areas_05_boussole_mindset_stratégie_organisation_section_iv_écosystème_d_organisation_outils_et_environnement",
+      "02_areas_05_boussole_mindset_stratégie_organisation_section_v_dimension_sociale_et_communication",
+      "02_areas_05_boussole_mindset_stratégie_organisation_synthèse_de_premier_niveau_les_piliers_de_l_efficacité_durable",
+      "02_areas_05_boussole_mindset_stratégie_organisation_synthèse_intégrale_stratégies_d_organisation_et_maîtrise_de_la_gestion_du_temps",
+      "02_areas_05_boussole_mindset_stratégie_organisation_sélection_de_citations_clés",
+      "02_areas_05_boussole_mindset_vision_long_terme",
+      "02_areas_05_boussole_mindset_vision_long_terme_05_boussole_mindset_lucas_sophie",
+      "02_areas_05_boussole_mindset_vision_long_terme_notes_idées"
+    ],
+    "3": [
+      "01_projects_charis_web_arborescence_portfolio_onepage",
+      "01_projects_charis_web_arborescence_portfolio_onepage_arborescence_portfolio_onepage_charis_web",
+      "01_projects_charis_web_arborescence_portfolio_onepage_notes_de_design",
+      "01_projects_charis_web_arborescence_portfolio_onepage_parcours_utilisateur_couverts",
+      "01_projects_charis_web_arborescence_portfolio_onepage_structure_globale",
+      "01_projects_charis_web_moodboard_charis_web",
+      "01_projects_charis_web_moodboard_charis_web_1_hero_section",
+      "01_projects_charis_web_moodboard_charis_web_2_section_audio_enseignements",
+      "01_projects_charis_web_moodboard_charis_web_3_section_équipe",
+      "01_projects_charis_web_moodboard_charis_web_4_section_événements",
+      "01_projects_charis_web_moodboard_charis_web_5_footer",
+      "01_projects_charis_web_moodboard_charis_web_ce_qui_change_par_rapport_au_moodboard_précédent",
+      "01_projects_charis_web_moodboard_charis_web_couleurs_principales",
+      "01_projects_charis_web_moodboard_charis_web_couleurs_secondaires",
+      "01_projects_charis_web_moodboard_charis_web_direction_visuelle_retenue_lumière_dorée",
+      "01_projects_charis_web_moodboard_charis_web_dégradés_signature",
+      "01_projects_charis_web_moodboard_charis_web_iconographie",
+      "01_projects_charis_web_moodboard_charis_web_moodboard_charis_web",
+      "01_projects_charis_web_moodboard_charis_web_moodboard_web_sections",
+      "01_projects_charis_web_moodboard_charis_web_palette_officielle",
+      "01_projects_charis_web_moodboard_charis_web_principes",
+      "01_projects_charis_web_moodboard_charis_web_prochaines_étapes",
+      "01_projects_charis_web_moodboard_charis_web_références_visuelles",
+      "01_projects_charis_web_moodboard_charis_web_typographie",
+      "01_projects_charis_web_processus_design_charis_web",
+      "01_projects_charis_web_processus_design_charis_web_arborescence",
+      "01_projects_charis_web_processus_design_charis_web_boucle_de_feedback",
+      "01_projects_charis_web_processus_design_charis_web_checklist_de_bon_design_appliquée_à_charis_web",
+      "01_projects_charis_web_processus_design_charis_web_contraintes",
+      "01_projects_charis_web_processus_design_charis_web_directions_visuelles_possibles",
+      "01_projects_charis_web_processus_design_charis_web_le_vrai_problème_à_résoudre",
+      "01_projects_charis_web_processus_design_charis_web_moodboard_références",
+      "01_projects_charis_web_processus_design_charis_web_méthodes_de_validation",
+      "01_projects_charis_web_processus_design_charis_web_palette_de_couleurs_validée_depuis_les_affiches_existantes",
+      "01_projects_charis_web_processus_design_charis_web_phase_1_comprendre_le_problème_discover",
+      "01_projects_charis_web_processus_design_charis_web_phase_2_structurer_l_information_define",
+      "01_projects_charis_web_processus_design_charis_web_phase_3_explorer_les_idées_visuelles_ideate",
+      "01_projects_charis_web_processus_design_charis_web_phase_4_décider_critères_de_validation",
+      "01_projects_charis_web_processus_design_charis_web_phase_5_prototyper_et_itérer_deliver",
+      "01_projects_charis_web_processus_design_charis_web_points_d_attention_ux",
+      "01_projects_charis_web_processus_design_charis_web_processus_design_charis_web",
+      "01_projects_charis_web_processus_design_charis_web_prochaines_actions",
+      "01_projects_charis_web_processus_design_charis_web_synthèse_visuelle_du_processus",
+      "01_projects_charis_web_processus_design_charis_web_user_flows_validés",
+      "01_projects_charis_web_processus_design_charis_web_utilisateurs_cibles",
+      "01_projects_charis_web_processus_design_charis_web_étapes_de_production"
+    ],
+    "4": [
+      "02_areas_10_spiritualite_sagesse_bible_et_foi",
+      "02_areas_10_spiritualite_sagesse_bible_et_foi_10_spiritualité_sagesse_thomas",
+      "02_areas_10_spiritualite_sagesse_bible_et_foi_lectures_enseignements",
+      "02_areas_10_spiritualite_sagesse_bible_et_foi_notes_idées",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_1_synthèse_globale_la_révélation_du_conseil_de_dieu",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_2_la_dualité_des_échecs_spirituels_œuvres_mortes_et_ambitions_déviées",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_3_la_triade_du_ministère_messager_message_et_localisation",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_4_la_dynamique_de_la_recherche_patience_et_profondeur",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_5_l_échelle_de_la_consécration_du_salut_à_la_mort_à_soi",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_l_impératif_de_l_alignement_divin_au_delà_de_l_activité_religieuse",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_1_origines_et_contexte_l_enfance_dans_l_occultisme",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_2_la_théologie_des_capacités_spirituelles",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_3_nature_et_fonction_des_êtres_célestes",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_4_le_combat_spirituel_et_la_vie_de_l_esprit",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_5_ressources_et_enseignements",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_citations_clés",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_la_distinction_entre_essence_et_fonction",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_les_caractéristiques_des_anges",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_les_réalités_du_monde_spirituel_synthèse_du_témoignage_et_des_enseignements_de_jérémy_potin",
+      "02_areas_10_spiritualite_sagesse_les_réalités_du_monde_spirituel_témoignage_de_jérémy_potin_résumé_exécutif",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_1_introduction_l_importance_du_discernement",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_2_le_trio_des_voix_identifier_l_origine_de_nos_pensées",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_3_les_critères_de_la_voix_divine_paix_douceur_et_vérité",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_4_les_pièges_à_éviter_la_voix_de_la_chair_et_de_l_ennemi",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_5_la_boîte_à_outils_du_discernement_4_tests_pratiques",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_6_cultiver_sa_météo_intérieure_consolation_et_désolation",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_7_conclusion_le_chemin_vers_le_berger",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_manuel_d_initiation_apprendre_à_écouter_la_voix_du_divin_au_quotidienhttps_youtu_be_mbphu7aaklm_si_iii1oa9prydkhgs",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_1_la_manipulation_émotionnelle_et_la_fausse_paix",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_1_la_règle_de_la_première_pensée",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_2_l_abandon_vs_l_effort",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_2_le_piège_de_l_urgence_factice",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_3_la_distorsion_des_écritures",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_3_la_vigilance_environnementale",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_4_la_mise_en_pratique_de_l_inspiration_à_l_application",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_4_promotion_de_l_orgueil_et_de_la_division",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_briefing_discernement_spirituel_et_maîtrise_des_pensées_selon_les_enseignements_de_kathryn_kuhlman",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_conclusion",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_i_les_tactiques_de_séduction_comment_satan_imite_le_saint_esprit",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_ii_analyse_comparative_esprit_de_vérité_vs_esprit_de_mensonge",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_iii_méthodologie_pour_le_contrôle_des_pensées",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_iv_citations_clés_et_axiomes_de_discernement"
+    ],
+    "5": [
+      "03_resources_templates_bujo_moc_templates_bujo",
+      "03_resources_templates_bujo_moc_templates_bujo_comment_utiliser_un_template",
+      "03_resources_templates_bujo_moc_templates_bujo_moc_templates_bujo",
+      "03_resources_templates_bujo_moc_templates_bujo_notes_agents",
+      "03_resources_templates_bujo_moc_templates_bujo_projets_décisions",
+      "03_resources_templates_bujo_moc_templates_bujo_quotidien_suivi",
+      "03_resources_templates_bujo_moc_templates_bujo_templates_disponibles",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_alignement_des_4_piliers",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_bilan_hebdomadaire_semaine_date",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_frictions_blocages_ou_fatigue",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_priorités_clés_pour_la_semaine_prochaine",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_victoires_accomplissements",
+      "03_resources_templates_bujo_template_bullet_journal_bujo",
+      "03_resources_templates_bujo_template_bullet_journal_bujo_bujo_date",
+      "99_meta_templates_template_decision_adr",
+      "99_meta_templates_template_decision_adr_adr_title",
+      "99_meta_templates_template_decision_adr_conséquences_compromis_trade_offs",
+      "99_meta_templates_template_decision_adr_contexte_problématique",
+      "99_meta_templates_template_decision_adr_décision_retenue",
+      "99_meta_templates_template_decision_adr_options_envisagées",
+      "99_meta_templates_template_note_atomique",
+      "99_meta_templates_template_note_atomique_connexions_liens",
+      "99_meta_templates_template_note_atomique_explication_nuances",
+      "99_meta_templates_template_note_atomique_l_idée_en_une_phrase",
+      "99_meta_templates_template_note_atomique_title",
+      "99_meta_templates_template_projet",
+      "99_meta_templates_template_projet_agents_mobilisés",
+      "99_meta_templates_template_projet_notes_liens_liés",
+      "99_meta_templates_template_projet_objectif_définition_du_succès_dod",
+      "99_meta_templates_template_projet_plan_d_action_tâches",
+      "99_meta_templates_template_projet_projet_title",
+      "99_meta_templates_template_session_agent",
+      "99_meta_templates_template_session_agent_décisions_actions_concrètes",
+      "99_meta_templates_template_session_agent_intention_de_la_session",
+      "99_meta_templates_template_session_agent_liens_utiles",
+      "99_meta_templates_template_session_agent_points_clés_conseils",
+      "99_meta_templates_template_session_agent_session_avec_agent_title",
+      "_bmad_output_brainstorming_brainstorm_obsidian_graph_view_2026_08_24__memlog_99_meta_to_vie_perso",
+      "_bmad_output_brainstorming_brainstorm_obsidian_graph_view_2026_08_24__memlog_brainstorm_graph_view",
+      "_bmad_output_brainstorming_brainstorm_obsidian_graph_view_2026_08_24__memlog_moc_naming"
+    ],
+    "6": [
+      "agents_skills_unlazy_scripts_lib_gates",
+      "agents_skills_unlazy_scripts_lib_gates_assertregularsinglelink",
+      "agents_skills_unlazy_scripts_lib_gates_claimleases",
+      "agents_skills_unlazy_scripts_lib_gates_globsoverlap",
+      "agents_skills_unlazy_scripts_lib_gates_hookstatepath",
+      "agents_skills_unlazy_scripts_lib_gates_leaseregistry",
+      "agents_skills_unlazy_scripts_lib_gates_legacydiscovery",
+      "agents_skills_unlazy_scripts_lib_gates_legacyfiles",
+      "agents_skills_unlazy_scripts_lib_gates_listscopes",
+      "agents_skills_unlazy_scripts_lib_gates_literalprefix",
+      "agents_skills_unlazy_scripts_lib_gates_lock_dir",
+      "agents_skills_unlazy_scripts_lib_gates_markdowndiscovery",
+      "agents_skills_unlazy_scripts_lib_gates_namedentry",
+      "agents_skills_unlazy_scripts_lib_gates_normalizeownsglob",
+      "agents_skills_unlazy_scripts_lib_gates_parsegates",
+      "agents_skills_unlazy_scripts_lib_gates_parseregex",
+      "agents_skills_unlazy_scripts_lib_gates_pathisinside",
+      "agents_skills_unlazy_scripts_lib_gates_readleases",
+      "agents_skills_unlazy_scripts_lib_gates_readleasesunlocked",
+      "agents_skills_unlazy_scripts_lib_gates_readstableregularfile",
+      "agents_skills_unlazy_scripts_lib_gates_realdirectoryinside",
+      "agents_skills_unlazy_scripts_lib_gates_releaseleases",
+      "agents_skills_unlazy_scripts_lib_gates_resolvetarget",
+      "agents_skills_unlazy_scripts_lib_gates_sameidentity",
+      "agents_skills_unlazy_scripts_lib_gates_samesnapshot",
+      "agents_skills_unlazy_scripts_lib_gates_scopediscovery",
+      "agents_skills_unlazy_scripts_lib_gates_scopefiles",
+      "agents_skills_unlazy_scripts_lib_gates_scoperoot",
+      "agents_skills_unlazy_scripts_lib_gates_sha256",
+      "agents_skills_unlazy_scripts_lib_gates_statuslogpath",
+      "agents_skills_unlazy_scripts_lib_gates_sync_sleep_cell",
+      "agents_skills_unlazy_scripts_lib_gates_tail",
+      "agents_skills_unlazy_scripts_lib_gates_targetfromdiscovery",
+      "agents_skills_unlazy_scripts_lib_gates_validatescopeid",
+      "agents_skills_unlazy_scripts_lib_gates_windows_transient_fs_errors"
+    ],
+    "7": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_alors_qu_on_m_explique_à_quoi_sa_sert",
+      "02_areas_07_creativite_side_projects_ecrits_textes_alors_qu_on_m_explique_à_quoi_sa_sert_alors_qu_on_m_explique_à_quoi_sa_sert",
+      "02_areas_07_creativite_side_projects_ecrits_textes_arrête",
+      "02_areas_07_creativite_side_projects_ecrits_textes_arrête_arrête",
+      "02_areas_07_creativite_side_projects_ecrits_textes_aujourd_hui_j_ai_rien_fait_de_ma_journée_de_merde_et_c_est",
+      "02_areas_07_creativite_side_projects_ecrits_textes_aujourd_hui_j_ai_rien_fait_de_ma_journée_de_merde_et_c_est_aujourd_hui_j_ai_rien_fait_de_ma_journée_de_merde_et_c_est",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_sans_doute_vrai_je_regarde_trop_en_arrière",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_sans_doute_vrai_je_regarde_trop_en_arrière_c_est_sans_doute_vrai_je_regarde_trop_en_arrière",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_égoïste_de_penser_qu_on_trouvera_mieux",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_égoïste_de_penser_qu_on_trouvera_mieux_c_est_égoïste_de_penser_qu_on_trouvera_mieux",
+      "02_areas_07_creativite_side_projects_ecrits_textes_chercher_du_sens_ça_sert_à_quoi_en_vrai",
+      "02_areas_07_creativite_side_projects_ecrits_textes_chercher_du_sens_ça_sert_à_quoi_en_vrai_chercher_du_sens_ça_sert_à_quoi_en_vrai",
+      "02_areas_07_creativite_side_projects_ecrits_textes_fatigue",
+      "02_areas_07_creativite_side_projects_ecrits_textes_fatigue_fatigue",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ils_vivent_avec_la_version_qui_les_arrange_de_toi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ils_vivent_avec_la_version_qui_les_arrange_de_toi_ils_vivent_avec_la_version_qui_les_arrange_de_toi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_indécis",
+      "02_areas_07_creativite_side_projects_ecrits_textes_indécis_indécis",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_ne_suivrai_aucun_de_vos_canva",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_ne_suivrai_aucun_de_vos_canva_je_ne_suivrai_aucun_de_vos_canva",
+      "02_areas_07_creativite_side_projects_ecrits_textes_la_vie_t_a_mis_à_terre_alors_pourquoi_t_y_reste",
+      "02_areas_07_creativite_side_projects_ecrits_textes_la_vie_t_a_mis_à_terre_alors_pourquoi_t_y_reste_la_vie_t_a_mis_à_terre_alors_pourquoi_t_y_reste",
+      "02_areas_07_creativite_side_projects_ecrits_textes_que_celui_qui_veut_voler_ma_paix_viennent",
+      "02_areas_07_creativite_side_projects_ecrits_textes_que_celui_qui_veut_voler_ma_paix_viennent_que_celui_qui_veut_voler_ma_paix_viennent",
+      "02_areas_07_creativite_side_projects_ecrits_textes_si_tout_le_monde_écoutait_tout_le_monde_à_quel_moment",
+      "02_areas_07_creativite_side_projects_ecrits_textes_si_tout_le_monde_écoutait_tout_le_monde_à_quel_moment_si_tout_le_monde_écoutait_tout_le_monde_à_quel_moment",
+      "02_areas_07_creativite_side_projects_ecrits_textes_tu_sais_déjà_dans_mon_esprit_c_est_le_désordre",
+      "02_areas_07_creativite_side_projects_ecrits_textes_tu_sais_déjà_dans_mon_esprit_c_est_le_désordre_tu_sais_déjà_dans_mon_esprit_c_est_le_désordre",
+      "02_areas_07_creativite_side_projects_moc_creativite_textes"
+    ],
+    "8": [
+      "agents_skills_unlazy_scripts_lib_process_tree",
+      "agents_skills_unlazy_scripts_lib_process_tree_childexited",
+      "agents_skills_unlazy_scripts_lib_process_tree_syncfailure",
+      "agents_skills_unlazy_scripts_lib_process_tree_terminateprocesstree",
+      "agents_skills_unlazy_scripts_lib_process_tree_windows_taskkill_timeout_ms",
+      "agents_skills_unlazy_scripts_lib_process_tree_windowstaskkillpath",
+      "agents_skills_unlazy_tests_hardening_tests",
+      "agents_skills_unlazy_tests_hardening_tests_assert",
+      "agents_skills_unlazy_tests_hardening_tests_failures",
+      "agents_skills_unlazy_tests_hardening_tests_fileexists",
+      "agents_skills_unlazy_tests_hardening_tests_gate",
+      "agents_skills_unlazy_tests_hardening_tests_gate_check",
+      "agents_skills_unlazy_tests_hardening_tests_gaterun",
+      "agents_skills_unlazy_tests_hardening_tests_has",
+      "agents_skills_unlazy_tests_hardening_tests_here",
+      "agents_skills_unlazy_tests_hardening_tests_kill",
+      "agents_skills_unlazy_tests_hardening_tests_killgroup",
+      "agents_skills_unlazy_tests_hardening_tests_lacks",
+      "agents_skills_unlazy_tests_hardening_tests_processexists",
+      "agents_skills_unlazy_tests_hardening_tests_run",
+      "agents_skills_unlazy_tests_hardening_tests_sandbox",
+      "agents_skills_unlazy_tests_hardening_tests_stop_hook",
+      "agents_skills_unlazy_tests_hardening_tests_test",
+      "agents_skills_unlazy_tests_hardening_tests_tests",
+      "agents_skills_unlazy_tests_hardening_tests_waitforpath",
+      "agents_skills_unlazy_tests_hardening_tests_waitforprocessexit",
+      "agents_skills_unlazy_tests_hardening_tests_windows_env",
+      "promises"
+    ],
+    "9": [
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_activer_le_don_de_prophétie_jermaine_rebecca_francis",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_10_le_langage_de_la_prophétie",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_11_pratiquer_plus",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_1_vous_pouvez_prophétiser",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_2_qu_est_ce_que_la_prophétie",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_3_précision_du_cœur",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_4_les_façons_d_entendre_la_voix_de_dieu",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_5_transformer_les_sensations_en_prophétie",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_6_voir_et_discerner",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_7_discernement",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_8_séparer_l_âme_et_l_esprit",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_chapitre_9_protocoles_dans_la_prophétie",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_les_7_principes_clés_à_retenir",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_message_central",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_partie_1_les_fondations_chapitres_1_3",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_partie_2_comment_entendre_dieu_chapitres_4_6",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_partie_3_la_maturité_prophétique_chapitres_7_8",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_partie_4_les_règles_du_jeu_chapitres_9_11",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_partie_5_29_activations_pratiques",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_résonance_personnelle",
+      "02_areas_10_spiritualite_sagesse_activer_le_don_de_prophétie_jermaine_rebecca_francis_structure_du_livre_11_chapitres"
+    ],
+    "10": [
+      "agents_skills_unlazy_scripts_lib_gates_gatestate",
+      "agents_skills_unlazy_scripts_lib_gates_unlazy_dir",
+      "agents_skills_unlazy_scripts_stop_hook",
+      "agents_skills_unlazy_scripts_stop_hook_allow",
+      "agents_skills_unlazy_scripts_stop_hook_args",
+      "agents_skills_unlazy_scripts_stop_hook_clearsessionstate",
+      "agents_skills_unlazy_scripts_stop_hook_handoffmessage",
+      "agents_skills_unlazy_scripts_stop_hook_handoffs",
+      "agents_skills_unlazy_scripts_stop_hook_invalid",
+      "agents_skills_unlazy_scripts_stop_hook_normalizehookstate",
+      "agents_skills_unlazy_scripts_stop_hook_outstanding",
+      "agents_skills_unlazy_scripts_stop_hook_payload",
+      "agents_skills_unlazy_scripts_stop_hook_progresshash",
+      "agents_skills_unlazy_scripts_stop_hook_readhookstate",
+      "agents_skills_unlazy_scripts_stop_hook_resolved",
+      "agents_skills_unlazy_scripts_stop_hook_root",
+      "agents_skills_unlazy_scripts_stop_hook_safehosttext",
+      "agents_skills_unlazy_scripts_stop_hook_scopeindex",
+      "agents_skills_unlazy_scripts_stop_hook_sessionkey",
+      "agents_skills_unlazy_scripts_stop_hook_statepath",
+      "agents_skills_unlazy_scripts_stop_hook_target",
+      "agents_skills_unlazy_scripts_stop_hook_unmet"
+    ],
+    "11": [
+      "agents_skills_unlazy_scripts_lib_dispatch",
+      "agents_skills_unlazy_scripts_lib_dispatch_count",
+      "agents_skills_unlazy_scripts_lib_dispatch_dispatchissues",
+      "agents_skills_unlazy_scripts_lib_dispatch_dispatchstatepath",
+      "agents_skills_unlazy_scripts_lib_dispatch_dispatchstatus",
+      "agents_skills_unlazy_scripts_lib_dispatch_emptystate",
+      "agents_skills_unlazy_scripts_lib_dispatch_fail",
+      "agents_skills_unlazy_scripts_lib_dispatch_getdispatchwave",
+      "agents_skills_unlazy_scripts_lib_dispatch_hasown",
+      "agents_skills_unlazy_scripts_lib_dispatch_readstate",
+      "agents_skills_unlazy_scripts_lib_dispatch_record",
+      "agents_skills_unlazy_scripts_lib_dispatch_safediagnostic",
+      "agents_skills_unlazy_scripts_lib_dispatch_states",
+      "agents_skills_unlazy_scripts_lib_dispatch_updatedispatch",
+      "agents_skills_unlazy_scripts_lib_dispatch_validatestate",
+      "agents_skills_unlazy_scripts_lib_dispatch_validhandle",
+      "agents_skills_unlazy_scripts_lib_dispatch_validid",
+      "agents_skills_unlazy_scripts_lib_dispatch_validreason",
+      "agents_skills_unlazy_scripts_lib_dispatch_validtime",
+      "agents_skills_unlazy_scripts_lib_gates_appendstatus"
+    ],
+    "12": [
+      "agents_skills_unlazy_scripts_lib_gates_assertsafestatepath",
+      "agents_skills_unlazy_scripts_lib_gates_canonicallocktarget",
+      "agents_skills_unlazy_scripts_lib_gates_istransientwindowsfserror",
+      "agents_skills_unlazy_scripts_lib_gates_lockdirectory",
+      "agents_skills_unlazy_scripts_lib_gates_replaceatomic",
+      "agents_skills_unlazy_scripts_lib_gates_sleep",
+      "agents_skills_unlazy_scripts_lib_gates_withfilelock",
+      "agents_skills_unlazy_scripts_lib_gates_writeatomic",
+      "agents_skills_unlazy_tests_stress_tests",
+      "agents_skills_unlazy_tests_stress_tests_assert",
+      "agents_skills_unlazy_tests_stress_tests_failures",
+      "agents_skills_unlazy_tests_stress_tests_gate_check",
+      "agents_skills_unlazy_tests_stress_tests_has",
+      "agents_skills_unlazy_tests_stress_tests_here",
+      "agents_skills_unlazy_tests_stress_tests_install",
+      "agents_skills_unlazy_tests_stress_tests_run",
+      "agents_skills_unlazy_tests_stress_tests_sandbox",
+      "agents_skills_unlazy_tests_stress_tests_stop_hook",
+      "agents_skills_unlazy_tests_stress_tests_test",
+      "agents_skills_unlazy_tests_stress_tests_tests"
+    ],
+    "13": [
+      "02_areas_05_boussole_mindset_journal_introspection_au_fond_un_parent_reste_un_enfant_qui_a_eu_un_enfant",
+      "02_areas_05_boussole_mindset_journal_introspection_au_fond_un_parent_reste_un_enfant_qui_a_eu_un_enfant_au_fond_un_parent_reste_un_enfant_qui_a_eu_un_enfant",
+      "02_areas_05_boussole_mindset_journal_introspection_aujourd_hui_la_tâche_me_paraît_insupportable",
+      "02_areas_05_boussole_mindset_journal_introspection_aujourd_hui_la_tâche_me_paraît_insupportable_aujourd_hui_la_tâche_me_paraît_insupportable",
+      "02_areas_05_boussole_mindset_journal_introspection_c_est_de_leurs_fautes",
+      "02_areas_05_boussole_mindset_journal_introspection_c_est_de_leurs_fautes_c_est_de_leurs_fautes",
+      "02_areas_05_boussole_mindset_journal_introspection_je_pense_sincèrement_que_je_suis_pas_nul",
+      "02_areas_05_boussole_mindset_journal_introspection_je_pense_sincèrement_que_je_suis_pas_nul_je_pense_sincèrement_que_je_suis_pas_nul",
+      "02_areas_05_boussole_mindset_journal_introspection_jusqu_où_mon_désir_de_plaire_m_aura_détruit",
+      "02_areas_05_boussole_mindset_journal_introspection_jusqu_où_mon_désir_de_plaire_m_aura_détruit_jusqu_où_mon_désir_de_plaire_m_aura_détruit",
+      "02_areas_05_boussole_mindset_journal_introspection_les_gens_me_demandent_pourquoi_je_tiens_tant_que_ça_à",
+      "02_areas_05_boussole_mindset_journal_introspection_les_gens_me_demandent_pourquoi_je_tiens_tant_que_ça_à_les_gens_me_demandent_pourquoi_je_tiens_tant_que_ça_à",
+      "02_areas_05_boussole_mindset_journal_introspection_my_bad",
+      "02_areas_05_boussole_mindset_journal_introspection_my_bad_my_bad",
+      "02_areas_05_boussole_mindset_journal_introspection_nobody",
+      "02_areas_05_boussole_mindset_journal_introspection_nobody_nobody",
+      "02_areas_05_boussole_mindset_journal_introspection_sur_le_coup_je_n_ai_aucune_idée_de_par_où_commencer",
+      "02_areas_05_boussole_mindset_journal_introspection_sur_le_coup_je_n_ai_aucune_idée_de_par_où_commencer_sur_le_coup_je_n_ai_aucune_idée_de_par_où_commencer",
+      "02_areas_05_boussole_mindset_moc_journal_introspection"
+    ],
+    "14": [
+      "agents_skills_unlazy_contributing",
+      "agents_skills_unlazy_readme",
+      "agents_skills_unlazy_references_dispatch",
+      "agents_skills_unlazy_references_gates",
+      "agents_skills_unlazy_references_method",
+      "agents_skills_unlazy_references_method_choose_depth",
+      "agents_skills_unlazy_references_method_completion_hierarchy",
+      "agents_skills_unlazy_references_method_contract_checklist",
+      "agents_skills_unlazy_references_method_rules",
+      "agents_skills_unlazy_references_method_the_depth_tree",
+      "agents_skills_unlazy_references_orchestration",
+      "agents_skills_unlazy_references_parallel",
+      "agents_skills_unlazy_references_token_economy",
+      "agents_skills_unlazy_research_validation_protocol",
+      "agents_skills_unlazy_security",
+      "agents_skills_unlazy_skill",
+      "agents_skills_unlazy_templates_gates_leaf",
+      "agents_skills_unlazy_templates_gates_leaf_gates_leaf_or_task_name"
+    ],
+    "15": [
+      "agents_skills_unlazy_tests_run_tests",
+      "agents_skills_unlazy_tests_run_tests_approval_root",
+      "agents_skills_unlazy_tests_run_tests_assert",
+      "agents_skills_unlazy_tests_run_tests_asserthas",
+      "agents_skills_unlazy_tests_run_tests_assertlacks",
+      "agents_skills_unlazy_tests_run_tests_echook",
+      "agents_skills_unlazy_tests_run_tests_failures",
+      "agents_skills_unlazy_tests_run_tests_gate",
+      "agents_skills_unlazy_tests_run_tests_gate_check",
+      "agents_skills_unlazy_tests_run_tests_here",
+      "agents_skills_unlazy_tests_run_tests_install",
+      "agents_skills_unlazy_tests_run_tests_nodeeval",
+      "agents_skills_unlazy_tests_run_tests_run",
+      "agents_skills_unlazy_tests_run_tests_sandbox",
+      "agents_skills_unlazy_tests_run_tests_selected",
+      "agents_skills_unlazy_tests_run_tests_stop_hook",
+      "agents_skills_unlazy_tests_run_tests_test",
+      "agents_skills_unlazy_tests_run_tests_tests"
+    ],
+    "16": [
+      "02_areas_05_boussole_mindset_organisation",
+      "02_areas_05_boussole_mindset_organisation_1_la_procrastination_un_mécanisme_émotionnel",
+      "02_areas_05_boussole_mindset_organisation_1_le_danger_de_la_rigidité",
+      "02_areas_05_boussole_mindset_organisation_1_le_time_blocking_blocage_de_temps",
+      "02_areas_05_boussole_mindset_organisation_1_élimination_des_habitudes_chronophages",
+      "02_areas_05_boussole_mindset_organisation_2_la_fatigue_décisionnelle",
+      "02_areas_05_boussole_mindset_organisation_2_la_planification_stratégique",
+      "02_areas_05_boussole_mindset_organisation_2_le_paradoxe_des_habitudes",
+      "02_areas_05_boussole_mindset_organisation_2_le_regroupement_des_tâches_batching",
+      "02_areas_05_boussole_mindset_organisation_i_les_obstacles_psychologiques_et_biologiques",
+      "02_areas_05_boussole_mindset_organisation_ii_méthodologies_d_organisation_et_de_planification",
+      "02_areas_05_boussole_mindset_organisation_iii_optimisation_de_l_efficacité_opérationnelle",
+      "02_areas_05_boussole_mindset_organisation_iv_hygiène_de_vie_et_micro_habitudes_transformatrices",
+      "02_areas_05_boussole_mindset_organisation_résumé_exécutif",
+      "02_areas_05_boussole_mindset_organisation_synthèse_de_la_gestion_du_temps_et_de_l_efficacité_personnelle_fondements_stratégies_et_vigilances",
+      "02_areas_05_boussole_mindset_organisation_v_les_pièges_de_l_organisation_rigidité_et_surcharge",
+      "02_areas_05_boussole_mindset_organisation_vi_recommandations_pratiques_finales"
+    ],
+    "17": [
+      "agents_skills_unlazy_tests_dispatch_tests",
+      "agents_skills_unlazy_tests_dispatch_tests_assert",
+      "agents_skills_unlazy_tests_dispatch_tests_assertcommittedwarning",
+      "agents_skills_unlazy_tests_dispatch_tests_asserthas",
+      "agents_skills_unlazy_tests_dispatch_tests_base",
+      "agents_skills_unlazy_tests_dispatch_tests_dispatch_check",
+      "agents_skills_unlazy_tests_dispatch_tests_failures",
+      "agents_skills_unlazy_tests_dispatch_tests_gate_check",
+      "agents_skills_unlazy_tests_dispatch_tests_here",
+      "agents_skills_unlazy_tests_dispatch_tests_launchtimedworker",
+      "agents_skills_unlazy_tests_dispatch_tests_run",
+      "agents_skills_unlazy_tests_dispatch_tests_runscript",
+      "agents_skills_unlazy_tests_dispatch_tests_sandbox",
+      "agents_skills_unlazy_tests_dispatch_tests_selected",
+      "agents_skills_unlazy_tests_dispatch_tests_stop_hook",
+      "agents_skills_unlazy_tests_dispatch_tests_test",
+      "agents_skills_unlazy_tests_dispatch_tests_tests"
+    ],
+    "18": [
+      "04_sante_vitalite_circuit_pompes_maison",
+      "04_sante_vitalite_circuit_pompes_maison_1_pompes_classiques",
+      "04_sante_vitalite_circuit_pompes_maison_2_pompes_serrées",
+      "04_sante_vitalite_circuit_pompes_maison_3_pompes_larges",
+      "04_sante_vitalite_circuit_pompes_maison_4_pompes_diamant",
+      "04_sante_vitalite_circuit_pompes_maison_5_pompes_déclinées",
+      "04_sante_vitalite_circuit_pompes_maison_6_pompes_clap",
+      "04_sante_vitalite_circuit_pompes_maison_circuit_pompes_maison",
+      "04_sante_vitalite_circuit_pompes_maison_le_circuit",
+      "04_sante_vitalite_circuit_pompes_maison_lien_avec_ton_programme",
+      "04_sante_vitalite_circuit_pompes_maison_notes",
+      "04_sante_vitalite_circuit_pompes_maison_objectif",
+      "04_sante_vitalite_circuit_pompes_maison_points_de_vigilance",
+      "04_sante_vitalite_circuit_pompes_maison_progression",
+      "04_sante_vitalite_circuit_pompes_maison_structure_du_circuit",
+      "04_sante_vitalite_circuit_pompes_maison_technique_par_exercice"
+    ],
+    "19": [
+      "agents_skills_unlazy_readme_contributing",
+      "agents_skills_unlazy_readme_install",
+      "agents_skills_unlazy_readme_license",
+      "agents_skills_unlazy_readme_optional_claude_code_stop_hook",
+      "agents_skills_unlazy_readme_orchestration_and_parallel_work",
+      "agents_skills_unlazy_readme_quick_start",
+      "agents_skills_unlazy_readme_repository_map",
+      "agents_skills_unlazy_readme_research_basis",
+      "agents_skills_unlazy_readme_security_boundary",
+      "agents_skills_unlazy_readme_shell_and_path",
+      "agents_skills_unlazy_readme_sources_newest_first",
+      "agents_skills_unlazy_readme_the_gate_contract",
+      "agents_skills_unlazy_readme_unlazy",
+      "agents_skills_unlazy_readme_version_status",
+      "agents_skills_unlazy_readme_what_2_1_0_changes"
+    ],
+    "20": [
+      "agents_skills_unlazy_scripts_install_hooks",
+      "agents_skills_unlazy_scripts_install_hooks_args",
+      "agents_skills_unlazy_scripts_install_hooks_entry",
+      "agents_skills_unlazy_scripts_install_hooks_isobject",
+      "agents_skills_unlazy_scripts_install_hooks_isourhandler",
+      "agents_skills_unlazy_scripts_install_hooks_keptgroups",
+      "agents_skills_unlazy_scripts_install_hooks_known",
+      "agents_skills_unlazy_scripts_install_hooks_nextsettings",
+      "agents_skills_unlazy_scripts_install_hooks_persist",
+      "agents_skills_unlazy_scripts_install_hooks_quote",
+      "agents_skills_unlazy_scripts_install_hooks_script",
+      "agents_skills_unlazy_scripts_install_hooks_settings",
+      "agents_skills_unlazy_scripts_install_hooks_shapeerror",
+      "agents_skills_unlazy_scripts_install_hooks_usage",
+      "agents_skills_unlazy_scripts_install_hooks_validatesettings"
+    ],
+    "21": [
+      "agents_skills_unlazy_tests_lint_tests",
+      "agents_skills_unlazy_tests_lint_tests_assertdatasafe",
+      "agents_skills_unlazy_tests_lint_tests_assertterminalsafe",
+      "agents_skills_unlazy_tests_lint_tests_dir",
+      "agents_skills_unlazy_tests_lint_tests_failures",
+      "agents_skills_unlazy_tests_lint_tests_here",
+      "agents_skills_unlazy_tests_lint_tests_lint",
+      "agents_skills_unlazy_tests_lint_tests_manual",
+      "agents_skills_unlazy_tests_lint_tests_selected",
+      "agents_skills_unlazy_tests_lint_tests_sound",
+      "agents_skills_unlazy_tests_lint_tests_tainted",
+      "agents_skills_unlazy_tests_lint_tests_test",
+      "agents_skills_unlazy_tests_lint_tests_tests",
+      "agents_skills_unlazy_tests_lint_tests_weak",
+      "agents_skills_unlazy_tests_lint_tests_write"
+    ],
+    "22": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_3_tâches_du_jour",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_après_midi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_après_midi_12h30_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_baromètre_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_ce_qui_n_a_pas_été_fait",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_décision_du_jour",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_journal_réflexions_du_jour",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_liens_continuité",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_mantra_du_jour",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_matinée_12h30",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_samedi_29_août_2026",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_soirée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_29_samedi_soirée_18h00_23h00"
+    ],
+    "23": [
+      "02_areas_01_systeme_execution_moc_systeme_execution_01_système_exécution_anaïs_dave",
+      "02_areas_01_systeme_execution_moc_systeme_execution_base_de_connaissances_mémoire_d_anaïs",
+      "02_areas_01_systeme_execution_moc_systeme_execution_créativité_espace_raphaël",
+      "02_areas_01_systeme_execution_moc_systeme_execution_database",
+      "02_areas_01_systeme_execution_moc_systeme_execution_finances_espace_camille",
+      "02_areas_01_systeme_execution_moc_systeme_execution_intelligence_agent_anaïs",
+      "02_areas_01_systeme_execution_moc_systeme_execution_journals_quotidiens_daily_logs",
+      "02_areas_01_systeme_execution_moc_systeme_execution_maison_espace_léa",
+      "02_areas_01_systeme_execution_moc_systeme_execution_notes_idées",
+      "02_areas_01_systeme_execution_moc_systeme_execution_relations_espace_inès",
+      "02_areas_01_systeme_execution_moc_systeme_execution_sagesse_espace_thomas",
+      "02_areas_01_systeme_execution_moc_systeme_execution_santé_espace_noé",
+      "02_areas_01_systeme_execution_moc_systeme_execution_skills_de_l_équipe",
+      "02_areas_01_systeme_execution_moc_systeme_execution_vision_mental_espace_lucas_sophie"
+    ],
+    "24": [
+      "02_areas_01_systeme_execution_skills_anaïs_1_planification_organisation",
+      "02_areas_01_systeme_execution_skills_anaïs_2_daily_logs_tracking",
+      "02_areas_01_systeme_execution_skills_anaïs_3_rituels_routines",
+      "02_areas_01_systeme_execution_skills_anaïs_4_communication_coordination",
+      "02_areas_01_systeme_execution_skills_anaïs_compétences_principales",
+      "02_areas_01_systeme_execution_skills_anaïs_liens_utiles",
+      "02_areas_01_systeme_execution_skills_anaïs_mission",
+      "02_areas_01_systeme_execution_skills_anaïs_outils_fichiers",
+      "02_areas_01_systeme_execution_skills_anaïs_protocole_check_matin_09h30_10h00",
+      "02_areas_01_systeme_execution_skills_anaïs_protocole_daily_log",
+      "02_areas_01_systeme_execution_skills_anaïs_protocole_mode_b_journée_basse_énergie",
+      "02_areas_01_systeme_execution_skills_anaïs_protocole_planification_soir_22h_23h",
+      "02_areas_01_systeme_execution_skills_anaïs_protocoles",
+      "02_areas_01_systeme_execution_skills_anaïs_skills_d_anaïs_organisation_rituels"
+    ],
+    "25": [
+      "02_areas_01_systeme_execution_skills_dave_1_deep_work_concentration",
+      "02_areas_01_systeme_execution_skills_dave_2_time_blocking",
+      "02_areas_01_systeme_execution_skills_dave_3_élimination_de_la_friction",
+      "02_areas_01_systeme_execution_skills_dave_4_règles_discipline",
+      "02_areas_01_systeme_execution_skills_dave_compétences_principales",
+      "02_areas_01_systeme_execution_skills_dave_liens_utiles",
+      "02_areas_01_systeme_execution_skills_dave_mission",
+      "02_areas_01_systeme_execution_skills_dave_outils_fichiers",
+      "02_areas_01_systeme_execution_skills_dave_protocole_deep_work_18h_22h",
+      "02_areas_01_systeme_execution_skills_dave_protocole_ouverture_09h30_12h30",
+      "02_areas_01_systeme_execution_skills_dave_protocole_shutdown_22h",
+      "02_areas_01_systeme_execution_skills_dave_protocole_zéro_friction",
+      "02_areas_01_systeme_execution_skills_dave_protocoles",
+      "02_areas_01_systeme_execution_skills_dave_skills_de_dave_productivité_focus"
+    ],
+    "26": [
+      "02_areas_02_finances_patrimoine_skills_camille_1_budget_suivi",
+      "02_areas_02_finances_patrimoine_skills_camille_2_épargne_investissements",
+      "02_areas_02_finances_patrimoine_skills_camille_3_indépendance_financière",
+      "02_areas_02_finances_patrimoine_skills_camille_4_décisions_financières",
+      "02_areas_02_finances_patrimoine_skills_camille_compétences_principales",
+      "02_areas_02_finances_patrimoine_skills_camille_liens_utiles",
+      "02_areas_02_finances_patrimoine_skills_camille_mission",
+      "02_areas_02_finances_patrimoine_skills_camille_outils_fichiers",
+      "02_areas_02_finances_patrimoine_skills_camille_protocole_décision_financière_importante",
+      "02_areas_02_finances_patrimoine_skills_camille_protocole_projet_indépendance",
+      "02_areas_02_finances_patrimoine_skills_camille_protocole_revue_budgétaire_mensuelle",
+      "02_areas_02_finances_patrimoine_skills_camille_protocole_épargne_mensuelle",
+      "02_areas_02_finances_patrimoine_skills_camille_protocoles",
+      "02_areas_02_finances_patrimoine_skills_camille_skills_de_camille_finances_patrimoine"
+    ],
+    "27": [
+      "02_areas_03_maison_environnement_skills_léa_1_organisation_de_l_espace",
+      "02_areas_03_maison_environnement_skills_léa_2_rituels_de_rangement",
+      "02_areas_03_maison_environnement_skills_léa_3_logistique_quotidienne",
+      "02_areas_03_maison_environnement_skills_léa_4_environnement_de_travail",
+      "02_areas_03_maison_environnement_skills_léa_compétences_principales",
+      "02_areas_03_maison_environnement_skills_léa_liens_utiles",
+      "02_areas_03_maison_environnement_skills_léa_mission",
+      "02_areas_03_maison_environnement_skills_léa_outils_fichiers",
+      "02_areas_03_maison_environnement_skills_léa_protocole_gestion_du_chien",
+      "02_areas_03_maison_environnement_skills_léa_protocole_préparation_bureau",
+      "02_areas_03_maison_environnement_skills_léa_protocole_rangement_hebdomadaire",
+      "02_areas_03_maison_environnement_skills_léa_protocole_reset_du_soir_21h15",
+      "02_areas_03_maison_environnement_skills_léa_protocoles",
+      "02_areas_03_maison_environnement_skills_léa_skills_de_léa_maison_environnement"
+    ],
+    "28": [
+      "02_areas_04_sante_vitalite_skills_noé_1_sommeil_chronotype",
+      "02_areas_04_sante_vitalite_skills_noé_2_sport_entraînement",
+      "02_areas_04_sante_vitalite_skills_noé_3_nutrition_hydratation",
+      "02_areas_04_sante_vitalite_skills_noé_4_récupération_énergie",
+      "02_areas_04_sante_vitalite_skills_noé_compétences_principales",
+      "02_areas_04_sante_vitalite_skills_noé_liens_utiles",
+      "02_areas_04_sante_vitalite_skills_noé_mission",
+      "02_areas_04_sante_vitalite_skills_noé_outils_fichiers",
+      "02_areas_04_sante_vitalite_skills_noé_protocole_café_cortisol",
+      "02_areas_04_sante_vitalite_skills_noé_protocole_hydratation",
+      "02_areas_04_sante_vitalite_skills_noé_protocole_sommeil_wolf",
+      "02_areas_04_sante_vitalite_skills_noé_protocole_sport_17h_18h",
+      "02_areas_04_sante_vitalite_skills_noé_protocoles",
+      "02_areas_04_sante_vitalite_skills_noé_skills_de_noé_santé_vitalité"
+    ],
+    "29": [
+      "02_areas_05_boussole_mindset_skills_sophie_1_anti_overthinking",
+      "02_areas_05_boussole_mindset_skills_sophie_2_régulation_du_stress",
+      "02_areas_05_boussole_mindset_skills_sophie_3_pleine_conscience",
+      "02_areas_05_boussole_mindset_skills_sophie_4_rituels_du_soir",
+      "02_areas_05_boussole_mindset_skills_sophie_compétences_principales",
+      "02_areas_05_boussole_mindset_skills_sophie_liens_utiles",
+      "02_areas_05_boussole_mindset_skills_sophie_mission",
+      "02_areas_05_boussole_mindset_skills_sophie_outils_fichiers",
+      "02_areas_05_boussole_mindset_skills_sophie_protocole_brain_dump",
+      "02_areas_05_boussole_mindset_skills_sophie_protocole_marche_sans_téléphone",
+      "02_areas_05_boussole_mindset_skills_sophie_protocole_question_coupe_circuit",
+      "02_areas_05_boussole_mindset_skills_sophie_protocole_soupir_physiologique",
+      "02_areas_05_boussole_mindset_skills_sophie_protocoles",
+      "02_areas_05_boussole_mindset_skills_sophie_skills_de_sophie_mental_sérénité"
+    ],
+    "30": [
+      "02_areas_06_relations_social_skills_inès_1_communication_bienveillante",
+      "02_areas_06_relations_social_skills_inès_2_relations_familiales_cohabitation",
+      "02_areas_06_relations_social_skills_inès_3_relations_sociales",
+      "02_areas_06_relations_social_skills_inès_4_gestion_des_conflits",
+      "02_areas_06_relations_social_skills_inès_compétences_principales",
+      "02_areas_06_relations_social_skills_inès_liens_utiles",
+      "02_areas_06_relations_social_skills_inès_mission",
+      "02_areas_06_relations_social_skills_inès_outils_fichiers",
+      "02_areas_06_relations_social_skills_inès_protocole_cohabitation_échanges_sereins",
+      "02_areas_06_relations_social_skills_inès_protocole_communication_non_violente",
+      "02_areas_06_relations_social_skills_inès_protocole_entretien_des_relations",
+      "02_areas_06_relations_social_skills_inès_protocole_gestion_de_conflit",
+      "02_areas_06_relations_social_skills_inès_protocoles",
+      "02_areas_06_relations_social_skills_inès_skills_d_inès_relations_social"
+    ],
+    "31": [
+      "02_areas_07_creativite_side_projects_skills_raphaël_1_design_créativité",
+      "02_areas_07_creativite_side_projects_skills_raphaël_2_création_de_contenu",
+      "02_areas_07_creativite_side_projects_skills_raphaël_3_side_projects",
+      "02_areas_07_creativite_side_projects_skills_raphaël_4_veille_créative",
+      "02_areas_07_creativite_side_projects_skills_raphaël_compétences_principales",
+      "02_areas_07_creativite_side_projects_skills_raphaël_liens_utiles",
+      "02_areas_07_creativite_side_projects_skills_raphaël_mission",
+      "02_areas_07_creativite_side_projects_skills_raphaël_outils_fichiers",
+      "02_areas_07_creativite_side_projects_skills_raphaël_protocole_création_de_carrousel",
+      "02_areas_07_creativite_side_projects_skills_raphaël_protocole_heure_dorée_weekend",
+      "02_areas_07_creativite_side_projects_skills_raphaël_protocole_lancement_side_project",
+      "02_areas_07_creativite_side_projects_skills_raphaël_protocole_veille_créative",
+      "02_areas_07_creativite_side_projects_skills_raphaël_protocoles",
+      "02_areas_07_creativite_side_projects_skills_raphaël_skills_de_raphaël_side_projects_créativité"
+    ],
+    "32": [
+      "02_areas_10_spiritualite_sagesse_skills_thomas_1_stoïcisme_philosophie",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_2_spiritualité_foi",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_3_réflexion_écriture",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_4_rituels_du_soir",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_compétences_principales",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_liens_utiles",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_mission",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_outils_fichiers",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_protocole_journal_contemplatif",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_protocole_lecture_biblique",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_protocole_prière_gratitude",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_protocole_réflexion_stoïcienne",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_protocoles",
+      "02_areas_10_spiritualite_sagesse_skills_thomas_skills_de_thomas_philosophie_sagesse"
+    ],
+    "33": [
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_1_les_20_fondamentaux_créer_l_impact_premium",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_2_performance_et_fluidité_le_cadre_technique_inflexible",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_3_le_less_is_more_du_design_en_mouvement",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_4_checklist_d_audit_rapide_validation_actionnable",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_animation_delightful_l_impact_émotionnel",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_animation_fonctionnelle_et_narration",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_guide_stratégique_l_animation_ui_et_du_design_web",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_hiérarchie_des_propriétés_css_motion_gpu_vs_cpu",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_impératif_d_accessibilité_et_gestion_du_mouvement",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_la_grammaire_mathématique_et_physiologique_du_mouvement",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_le_basculement_vers_le_niveau_premium_micro_interactions_et_transitions",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_le_format_lottie_l_avantage_vectoriel",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_les_6_critères_d_évaluation_systématique"
+    ],
+    "34": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_1_stockly",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_2_sport_séance_a",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_3_projet_charis_web",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_après_midi_deep_work_14h00_17h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_baromètre_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_détente",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_fast_actions",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_lundi_24_août_2026",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_matinée_réveil_rituel",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_notes_recherches_page_de_droite",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_réflexion_spirituelle",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_24_lundi_soir_18h00"
+    ],
+    "35": [
+      "02_areas_01_systeme_execution_notion_mcp_setup",
+      "02_areas_01_systeme_execution_notion_mcp_setup_ce_que_tu_pourras_faire_avec_le_mcp",
+      "02_areas_01_systeme_execution_notion_mcp_setup_configuration_mcp_notion",
+      "02_areas_01_systeme_execution_notion_mcp_setup_deux_options_disponibles",
+      "02_areas_01_systeme_execution_notion_mcp_setup_installation_option_b_communautaire",
+      "02_areas_01_systeme_execution_notion_mcp_setup_lien_avec_ton_second_brain",
+      "02_areas_01_systeme_execution_notion_mcp_setup_option_a_serveur_officiel_notion_recommandé",
+      "02_areas_01_systeme_execution_notion_mcp_setup_option_b_serveur_communautaire_gratuit",
+      "02_areas_01_systeme_execution_notion_mcp_setup_sécurité",
+      "02_areas_01_systeme_execution_notion_mcp_setup_étape_1_vérifier_que_node_js_est_installé",
+      "02_areas_01_systeme_execution_notion_mcp_setup_étape_2_copier_le_fichier_de_configuration",
+      "02_areas_01_systeme_execution_notion_mcp_setup_étape_3_redémarrer_claude_desktop",
+      "02_areas_01_systeme_execution_notion_mcp_setup_étape_4_partager_tes_pages_notion"
+    ],
+    "36": [
+      "02_areas_05_boussole_mindset_carousel_insta",
+      "02_areas_05_boussole_mindset_carousel_insta_1_le_breathing_room_contrôle_du_rythme_par_le_lecteur",
+      "02_areas_05_boussole_mindset_carousel_insta_1_vue_d_ensemble_thèse_centrale_executive_summary",
+      "02_areas_05_boussole_mindset_carousel_insta_2_l_investissement_psychologique_par_le_swipe",
+      "02_areas_05_boussole_mindset_carousel_insta_2_les_4_avantages_majeurs_du_format_carousel",
+      "02_areas_05_boussole_mindset_carousel_insta_3_l_anatomie_d_un_carousel_performant_le_framework_en_3_parties",
+      "02_areas_05_boussole_mindset_carousel_insta_3_le_second_chance_effect_de_l_algorithme",
+      "02_areas_05_boussole_mindset_carousel_insta_4_clés_d_analyse_questions_fréquentes_faq",
+      "02_areas_05_boussole_mindset_carousel_insta_4_durabilité_économie_d_énergie_pour_le_créateur",
+      "02_areas_05_boussole_mindset_carousel_insta_5_le_playbook_de_création_pas_à_pas",
+      "02_areas_05_boussole_mindset_carousel_insta_comment_recycler_des_connaissances_existantes_en_carousels_content_repurposing",
+      "02_areas_05_boussole_mindset_carousel_insta_guide_d_étude_synthèse_stratégique_notebooklm_edition",
+      "02_areas_05_boussole_mindset_carousel_insta_pourquoi_les_carousels_génèrent_ils_autant_de_sauvegardes_saves"
+    ],
+    "37": [
+      "02_areas_05_boussole_mindset_skills_lucas_1_vision_horizons",
+      "02_areas_05_boussole_mindset_skills_lucas_2_okrs_objectifs",
+      "02_areas_05_boussole_mindset_skills_lucas_3_décisions_priorisation",
+      "02_areas_05_boussole_mindset_skills_lucas_4_valeurs_sens",
+      "02_areas_05_boussole_mindset_skills_lucas_compétences_principales",
+      "02_areas_05_boussole_mindset_skills_lucas_liens_utiles",
+      "02_areas_05_boussole_mindset_skills_lucas_mission",
+      "02_areas_05_boussole_mindset_skills_lucas_outils_fichiers",
+      "02_areas_05_boussole_mindset_skills_lucas_protocole_questionnement_valeurs",
+      "02_areas_05_boussole_mindset_skills_lucas_protocole_revue_de_vision_trimestrielle",
+      "02_areas_05_boussole_mindset_skills_lucas_protocole_validation_nouveau_projet",
+      "02_areas_05_boussole_mindset_skills_lucas_protocoles",
+      "02_areas_05_boussole_mindset_skills_lucas_skills_de_lucas_vision_sens"
+    ],
+    "38": [
+      "03_resources_ingenierie_produit_apprentisage_du_code",
+      "03_resources_ingenierie_produit_apprentisage_du_code_1_l_ia_comme_compagnon_et_non_comme_substitut",
+      "03_resources_ingenierie_produit_apprentisage_du_code_1_la_primauté_du_choix_initial",
+      "03_resources_ingenierie_produit_apprentisage_du_code_1_plateformes_de_formation",
+      "03_resources_ingenierie_produit_apprentisage_du_code_2_environnement_de_développement_intégré_ide",
+      "03_resources_ingenierie_produit_apprentisage_du_code_2_innovation_technologique_orchids_1_0",
+      "03_resources_ingenierie_produit_apprentisage_du_code_2_la_discipline_de_la_continuité",
+      "03_resources_ingenierie_produit_apprentisage_du_code_guide_stratégique_pour_l_apprentissage_de_la_programmation_modernehttps_youtu_be_mbphu7aaklm_si_iii1oa9prydkhgs",
+      "03_resources_ingenierie_produit_apprentisage_du_code_i_fondements_de_la_méthodologie_d_apprentissage",
+      "03_resources_ingenierie_produit_apprentisage_du_code_ii_analyse_des_ressources_et_outils_de_développement",
+      "03_resources_ingenierie_produit_apprentisage_du_code_iii_le_rôle_de_l_intelligence_artificielle",
+      "03_resources_ingenierie_produit_apprentisage_du_code_iv_perspectives_et_mentalité_de_développement",
+      "03_resources_ingenierie_produit_apprentisage_du_code_résumé_analytique"
+    ],
+    "39": [
+      "01_projects_charis_web_recap_charis_web_récap_pour_l_équipe_produit",
+      "01_projects_charis_web_recap_contexte",
+      "01_projects_charis_web_recap_court_terme_cette_semaine",
+      "01_projects_charis_web_recap_historique_des_derniers_jours",
+      "01_projects_charis_web_recap_moyen_terme",
+      "01_projects_charis_web_recap_phase_actuelle_ux_design_wireframes",
+      "01_projects_charis_web_recap_points_de_blocage_vigilance",
+      "01_projects_charis_web_recap_prochaines_étapes_recommandées",
+      "01_projects_charis_web_recap_recommandations_pour_l_équipe",
+      "01_projects_charis_web_recap_ressources_connexes",
+      "01_projects_charis_web_recap_résumé_exécutif",
+      "01_projects_charis_web_recap_tâches_en_cours"
+    ],
+    "40": [
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_après_midi_apprentissage_régulation_12h30_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_baromètre_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_catalogue_modulaire_articles_catégories",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_jeudi_03_septembre_2026_bilan_journal",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_matinée_démarches_créativité_jusqu_à_12h30",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_module_entrepôts_décrémentation_en_vente",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_pour_la_suite_vendredi_04_septembre_2026",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_priorités_du_bujo",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_refonte_architecturale_épuration_du_legacy",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_soirée_deep_work_stockly_saas",
+      "02_areas_01_systeme_execution_daily_logs_2026_09_03_jeudi_structure_outillage"
+    ],
+    "41": [
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_1_l_illusion_de_la_flemme_c_est_la_biologie_pas_un_défaut_de_caractère",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_2_la_fausse_liberté_du_soir_créer_des_contraintes",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_3_le_piège_de_la_chambre_l_environnement_commande_le_mode",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_4_le_faux_repos_du_scroll_se_reposer_vraiment",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_5_le_carburant_du_cerveau_oxygène_pas_sucre",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_6_l_inversion_temporelle_penser_à_la_fin_pas_au_début",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_7_une_seule_chose_réduire_l_ambition_du_soir",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_8_le_mode_endurance_des_sessions_courtes_pas_du_zombie",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_comment_l_intégrer_à_ton_système_fabien",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_l_idée_principale",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_note_honnête_sur_le_9e_secret",
+      "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_vidéo_comment_réviser_le_soir_après_les_cours_quand_tu_es_crevé"
+    ],
+    "42": [
+      "02_areas_01_systeme_execution_skills_agents_anaïs_organisation_rituels",
+      "02_areas_01_systeme_execution_skills_agents_camille_finances_patrimoine",
+      "02_areas_01_systeme_execution_skills_agents_dave_productivité_focus",
+      "02_areas_01_systeme_execution_skills_agents_inès_relations_social",
+      "02_areas_01_systeme_execution_skills_agents_lucas_vision_sens",
+      "02_areas_01_systeme_execution_skills_agents_léa_maison_environnement",
+      "02_areas_01_systeme_execution_skills_agents_noé_santé_vitalité",
+      "02_areas_01_systeme_execution_skills_agents_raphaël_side_projects_créativité",
+      "02_areas_01_systeme_execution_skills_agents_résumé_des_statuts",
+      "02_areas_01_systeme_execution_skills_agents_skills_de_l_équipe_d_agents_vue_centralisée",
+      "02_areas_01_systeme_execution_skills_agents_sophie_mental_sérénité",
+      "02_areas_01_systeme_execution_skills_agents_thomas_philosophie_sagesse"
+    ],
+    "43": [
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_certification_full_stack_freecodecamp",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_modules_progression",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_notes_apprentissages",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_objectif_de_la_certification",
+      "01_projects_certifications_tech_certifications",
+      "01_projects_certifications_tech_certifications_créneaux_de_révision",
+      "01_projects_certifications_tech_certifications_liste_des_certifications",
+      "01_projects_certifications_tech_certifications_méthodologie_d_étude_mémorisation",
+      "01_projects_certifications_tech_certifications_objectif",
+      "01_projects_certifications_tech_certifications_projet_certifications_techniques"
+    ],
+    "44": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_après_midi_brique_sacrée_14h00_17h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_baromètre_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_ce_qui_a_été_fait",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_ce_qui_a_été_reporté_carré_barré",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_charis_web",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_lien_avec_hier",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_mardi_25_août_2026",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_matinée_réveil_rituel",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_notes",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_soir_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_25_mardi_stockly"
+    ],
+    "45": [
+      "02_areas_01_systeme_execution_daily_logs_sync_notion",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_emojis_par_statut",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_pages_notion_existantes",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_script_de_sync",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_sync_auto_daily_logs_notion",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_template_json_pour_notion",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_workflow_en_4_étapes",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_étape_1_recevoir_le_journal",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_étape_2_créer_le_daily_log_obsidian",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_étape_3_synchroniser_vers_notion",
+      "02_areas_01_systeme_execution_daily_logs_sync_notion_étape_4_confirmer_à_fabien"
+    ],
+    "46": [
+      "agents_skills_unlazy_changelog",
+      "agents_skills_unlazy_changelog_1_0_0_source_milestone_2026_08_10",
+      "agents_skills_unlazy_changelog_2_0_0_source_milestone_2026_08_10",
+      "agents_skills_unlazy_changelog_changelog",
+      "agents_skills_unlazy_changelog_command_trust_and_portability",
+      "agents_skills_unlazy_changelog_community_work_integrated",
+      "agents_skills_unlazy_changelog_correctness_and_fail_closed_behavior",
+      "agents_skills_unlazy_changelog_gate_authoring",
+      "agents_skills_unlazy_changelog_installer_package_and_documentation",
+      "agents_skills_unlazy_changelog_orchestration_and_concurrency",
+      "agents_skills_unlazy_changelog_unreleased_target_2_1_0"
+    ],
+    "47": [
+      "agents_skills_unlazy_references_gates_abandonment",
+      "agents_skills_unlazy_references_gates_approval_boundary",
+      "agents_skills_unlazy_references_gates_author_gates_that_can_fail",
+      "agents_skills_unlazy_references_gates_concurrency",
+      "agents_skills_unlazy_references_gates_gate_file_format",
+      "agents_skills_unlazy_references_gates_leaf_gates_versus_branch_gates",
+      "agents_skills_unlazy_references_gates_lint_the_ledger_before_working_it",
+      "agents_skills_unlazy_references_gates_minimal_format",
+      "agents_skills_unlazy_references_gates_shell_path_and_working_directory",
+      "agents_skills_unlazy_references_gates_strict_parsing_rules",
+      "agents_skills_unlazy_references_gates_success_and_evidence"
+    ],
+    "48": [
+      "01_projects_stockly_saas_projet_stockly_documentation_technique_associée_diátaxis",
+      "01_projects_stockly_saas_projet_stockly_la_règle_de_la_brique_sacrée",
+      "01_projects_stockly_saas_projet_stockly_macro_architecture_4_piliers_invariants",
+      "01_projects_stockly_saas_projet_stockly_prochaines_actions_prioritaires",
+      "01_projects_stockly_saas_projet_stockly_projet_stockly_saas_erp_négoce_carrelage",
+      "01_projects_stockly_saas_projet_stockly_précédemment_24_25_août",
+      "01_projects_stockly_saas_projet_stockly_session_du_26_août_2026_refonte_section_articles",
+      "01_projects_stockly_saas_projet_stockly_session_du_31_août_2026_modules_logistique_achats_livraisons_offline_first",
+      "01_projects_stockly_saas_projet_stockly_session_du_3_septembre_2026_refonte_shell_applicatif_catalogue_modulaire_multi_entrepôts",
+      "01_projects_stockly_saas_projet_stockly_tâches_récemment_effectuées"
+    ],
+    "49": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_administratif_famille",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_après_midi_brique_sacrée_15h00_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_baromètre_réel_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_liens_continuité",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_matinée_réveil_rituels",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_mercredi_26_août_2026_bilan_journal",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_mindset_pépite_du_jour",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_soirée_18h30_20h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_sport_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_26_mercredi_stockly_saas_section_articles_documenté_sur_notion"
+    ],
+    "50": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_après_midi_la_brique_sacrée_14h00_15h00_17h00_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_bilan_de_journée_à_remplir_le_soir",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_fin_d_après_midi_décompression_17h30_18h00",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_jeudi_27_août_2026_planning_zéro_friction",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_liens_continuité",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_mantra_anti_overthinking_du_jour",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_matinée_douce_réveil_naturel_8h00_8h30",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_soirée_détente_fluidité",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_27_jeudi_stockly_saas"
+    ],
+    "51": [
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_1_application_directe_au_créneau_certifications_tech_20h00_20h45",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_1_la_faillite_de_la_linéarité_et_le_diagnostic_transversal",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_2_du_note_taking_au_question_making_l_active_recall_radical",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_2_synergie_avec_ton_chronotype_wolf_routine_night_owl_optimisee",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_3_l_anticipation_mathématique_de_la_courbe_de_l_oubli_ebbinghaus",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_4_l_examen_pensé_comme_une_performance_athlétique",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_5_analyse_critique_nuances_la_perspective_du_second_cerveau",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_comment_l_intégrer_à_ton_système_fabien",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_l_idée_principale",
+      "02_areas_01_systeme_execution_fiche_video_recommencer_mes_etudes_vidéo_si_je_devais_recommencer_mes_études_je_ferais_exactement_ça"
+    ],
+    "52": [
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_ce_qu_il_faut_arrêter",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_ce_qu_il_faut_faire",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_comprendre_son_chronotype",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_coucher_réveil",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_le_calcul_de_la_productivité",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_routine_night_owl_optimisée_chronotype_wolf",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_règles_clés",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_schedule_optimal",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_sources_références",
+      "02_areas_01_systeme_execution_routine_night_owl_optimisee_tranches_de_travail"
+    ],
+    "53": [
+      "agents_skills_unlazy_package",
+      "agents_skills_unlazy_package_description",
+      "agents_skills_unlazy_package_engines",
+      "agents_skills_unlazy_package_engines_node",
+      "agents_skills_unlazy_package_name",
+      "agents_skills_unlazy_package_private",
+      "agents_skills_unlazy_package_scripts",
+      "agents_skills_unlazy_package_scripts_test",
+      "agents_skills_unlazy_package_type",
+      "agents_skills_unlazy_package_version"
+    ],
+    "54": [
+      "agents_skills_unlazy_research_validation_protocol_1_pre_register_the_comparison",
+      "agents_skills_unlazy_research_validation_protocol_2_isolate_each_run",
+      "agents_skills_unlazy_research_validation_protocol_3_define_metrics_operationally",
+      "agents_skills_unlazy_research_validation_protocol_4_blind_and_duplicate_review",
+      "agents_skills_unlazy_research_validation_protocol_5_publish_calculations",
+      "agents_skills_unlazy_research_validation_protocol_6_bound_the_conclusion",
+      "agents_skills_unlazy_research_validation_protocol_minimum_protocol_for_a_reproducible_rerun",
+      "agents_skills_unlazy_research_validation_protocol_repository_level_validation",
+      "agents_skills_unlazy_research_validation_protocol_status_of_the_historical_six_run_comparison",
+      "agents_skills_unlazy_research_validation_protocol_validation_protocol_and_historical_limitations"
+    ],
+    "55": [
+      "agents_skills_unlazy_scripts_dispatch_check",
+      "agents_skills_unlazy_scripts_dispatch_check_args",
+      "agents_skills_unlazy_scripts_dispatch_check_command",
+      "agents_skills_unlazy_scripts_dispatch_check_commands",
+      "agents_skills_unlazy_scripts_dispatch_check_die",
+      "agents_skills_unlazy_scripts_dispatch_check_options",
+      "agents_skills_unlazy_scripts_dispatch_check_single",
+      "agents_skills_unlazy_scripts_dispatch_check_summary",
+      "agents_skills_unlazy_scripts_dispatch_check_terminalsafe",
+      "agents_skills_unlazy_scripts_dispatch_check_usage"
+    ],
+    "56": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_après_midi_repos_intendance",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_baromètre_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_continuité_perspective",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_dimanche_30_août_2026_sabbat_récupération",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_journal_synthèse_d_anaïs",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_mantra_du_dimanche",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_matinée_foi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_30_dimanche_soirée_transition_calme"
+    ],
+    "57": [
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_après_midi_régulation_fatigue_corps",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_baromètre_de_la_journée",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_fin_de_soirée_sas_de_décompression",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_lundi_31_août_2026_bilan_journal",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_matinée_famille_logistique_administratif",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_pour_demain_mardi_1er_septembre",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_soirée_18h00_deep_work_stockly_décompression",
+      "02_areas_01_systeme_execution_daily_logs_2026_08_31_lundi_stockly_saas"
+    ],
+    "58": [
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_3_tâches",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_après_midi",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_jour_date",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_journal",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_matinée",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_pas_fait",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_pour_demain",
+      "02_areas_01_systeme_execution_daily_logs_template_daily_log_soirée"
+    ],
+    "59": [
+      "02_areas_01_systeme_execution_organisation_vision_fabien_1_les_4_habitudes_sacrées_du_mois",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_2_la_journée_type_réelle_de_fabien",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_3_plan_b_journée_basse_énergie",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_ce_qu_on_ne_fait_pas_en_mode_b",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_le_menu_du_jour_choisir_2_3_tâches_max",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_le_mot_de_la_règle_d_or",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_organisation_programme_méthode_équilibre_vision_de_fabien",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_retour_au_mode_normal",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_signaux_qu_il_faut_passer_en_mode_b"
+    ],
+    "60": [
+      "03_resources_ingenierie_produit_processus_design",
+      "03_resources_ingenierie_produit_processus_design_1_comprendre_le_problème_avant_de_designer",
+      "03_resources_ingenierie_produit_processus_design_2_structurer_l_information_ux_avant_ui",
+      "03_resources_ingenierie_produit_processus_design_3_explorer_des_idées_visuelles_idéation",
+      "03_resources_ingenierie_produit_processus_design_4_décider_ce_qui_est_bon_ou_pas",
+      "03_resources_ingenierie_produit_processus_design_5_prototyper_et_itérer",
+      "03_resources_ingenierie_produit_processus_design_6_cadre_méthodologique_courant_double_diamond_design_thinking",
+      "03_resources_ingenierie_produit_processus_design_critères_objectifs_de_bon_design_web",
+      "03_resources_ingenierie_produit_processus_design_méthodes_de_décision"
+    ],
+    "61": [
+      "agents_skills_unlazy_scripts_gate_lint",
+      "agents_skills_unlazy_scripts_gate_lint_add",
+      "agents_skills_unlazy_scripts_gate_lint_args",
+      "agents_skills_unlazy_scripts_gate_lint_files",
+      "agents_skills_unlazy_scripts_gate_lint_findings",
+      "agents_skills_unlazy_scripts_gate_lint_known_options",
+      "agents_skills_unlazy_scripts_gate_lint_positionalindex",
+      "agents_skills_unlazy_scripts_gate_lint_terminalsafe",
+      "agents_skills_unlazy_scripts_gate_lint_weak_expect"
+    ],
+    "62": [
+      "agents_skills_unlazy_skill_audit_the_final_report",
+      "agents_skills_unlazy_skill_author_gates_that_can_fail_honestly",
+      "agents_skills_unlazy_skill_build_the_depth_tree",
+      "agents_skills_unlazy_skill_install_the_optional_claude_code_stop_hook_carefully",
+      "agents_skills_unlazy_skill_pick_the_smallest_fitting_mode",
+      "agents_skills_unlazy_skill_spend_attention_where_it_compounds",
+      "agents_skills_unlazy_skill_unlazy",
+      "agents_skills_unlazy_skill_work_each_leaf_in_four_passes",
+      "agents_skills_unlazy_skill_write_gates_before_real_work"
+    ],
+    "63": [
+      "agents_skills_unlazy_tests_self_check",
+      "agents_skills_unlazy_tests_self_check_check",
+      "agents_skills_unlazy_tests_self_check_checks",
+      "agents_skills_unlazy_tests_self_check_failures",
+      "agents_skills_unlazy_tests_self_check_planstructureproblems",
+      "agents_skills_unlazy_tests_self_check_read",
+      "agents_skills_unlazy_tests_self_check_releaseprecedespromotion",
+      "agents_skills_unlazy_tests_self_check_root",
+      "agents_skills_unlazy_tests_self_check_scripts"
+    ],
+    "64": [
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_1_pourquoi_le_combo_café_sucre_le_matin_favorise_l_angoisse",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_2_plan_d_action_réduire_le_sucre_du_café_zéro_frustration",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_3_outils_neurobiologiques_anti_angoisse_baisse_du_cortisol",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_astuces_hacks",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_la_méthode_progressive_des_7_jours",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_le_soupir_physiologique_physiological_sigh",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_les_piliers_protecteurs_déjà_en_place",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_protocole_sucre_caféine_cortisol_gestion_de_l_anxiété"
+    ],
+    "65": [
+      "agents_skills_unlazy_references_orchestration_check_concurrency",
+      "agents_skills_unlazy_references_orchestration_declare_states_and_paths",
+      "agents_skills_unlazy_references_orchestration_driver_loop",
+      "agents_skills_unlazy_references_orchestration_manual_gates",
+      "agents_skills_unlazy_references_orchestration_orchestrated_mode",
+      "agents_skills_unlazy_references_orchestration_rolling_dispatch",
+      "agents_skills_unlazy_references_orchestration_verification_hierarchy",
+      "agents_skills_unlazy_references_orchestration_when_not_to_orchestrate"
+    ],
+    "66": [
+      "agents_skills_unlazy_references_parallel_choose_the_right_isolation_level",
+      "agents_skills_unlazy_references_parallel_concurrent_ledger_updates",
+      "agents_skills_unlazy_references_parallel_layout",
+      "agents_skills_unlazy_references_parallel_ownership_declarations",
+      "agents_skills_unlazy_references_parallel_parallel_pipelines_and_leaves",
+      "agents_skills_unlazy_references_parallel_scope_resolution",
+      "agents_skills_unlazy_references_parallel_session_keyed_hook_state",
+      "agents_skills_unlazy_references_parallel_what_a_scope_isolates"
+    ],
+    "67": [
+      "agents_skills_unlazy_security_check_lines_are_code",
+      "agents_skills_unlazy_security_evidence_and_logs",
+      "agents_skills_unlazy_security_installer_targets_and_privacy",
+      "agents_skills_unlazy_security_reporting_a_vulnerability",
+      "agents_skills_unlazy_security_scopes_and_leases_are_not_a_sandbox",
+      "agents_skills_unlazy_security_security_model",
+      "agents_skills_unlazy_security_shell_and_environment",
+      "agents_skills_unlazy_security_stop_hook_and_local_state"
+    ],
+    "68": [
+      "agents_skills_unlazy_templates_plan",
+      "agents_skills_unlazy_templates_plan_contract",
+      "agents_skills_unlazy_templates_plan_current_contract_inventory",
+      "agents_skills_unlazy_templates_plan_leaf_dispatch_table",
+      "agents_skills_unlazy_templates_plan_plan_task",
+      "agents_skills_unlazy_templates_plan_state_vocabulary",
+      "agents_skills_unlazy_templates_plan_status_log",
+      "agents_skills_unlazy_templates_plan_tree"
+    ],
+    "69": [
+      "01_projects_stockly_saas_documentation_agents_fonctionnements",
+      "01_projects_stockly_saas_projet_stockly",
+      "03_resources_ingenierie_produit_entretient_trucs_a_savoir",
+      "03_resources_ingenierie_produit_my_dev_life",
+      "03_resources_ingenierie_produit_my_dev_life_ingénierie_produit_code_ux_ui",
+      "03_resources_ingenierie_produit_my_dev_life_notes_idées",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent"
+    ],
+    "70": [
+      "01_projects_stockly_saas_documentation_résumé_agent_ia",
+      "01_projects_stockly_saas_documentation_résumé_agent_ia_ce_qu_antigravity_charge_automatiquement",
+      "01_projects_stockly_saas_documentation_résumé_agent_ia_ce_qu_il_faut_déclencher_manuellement",
+      "01_projects_stockly_saas_documentation_résumé_agent_ia_ce_que_les_skills_font",
+      "01_projects_stockly_saas_documentation_résumé_agent_ia_en_pratique_pour_stockly",
+      "01_projects_stockly_saas_documentation_résumé_agent_ia_les_rules_on_demand_chargées_si_pertinentes",
+      "01_projects_stockly_saas_documentation_résumé_agent_ia_les_rules_toujours_chargées"
+    ],
+    "71": [
+      "02_areas_10_spiritualite_sagesse_moc_prieres_enseignements",
+      "02_areas_10_spiritualite_sagesse_moc_prieres_enseignements_index_chronologique",
+      "02_areas_10_spiritualite_sagesse_moc_prieres_enseignements_moc_prières_prophéties_enseignements",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_080826",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_080826_080826",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_maintenant_on_va_parler_des_faits",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_maintenant_on_va_parler_des_faits_maintenant_on_va_parler_des_faits"
+    ],
+    "72": [
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_1_le_manque_de_passage_à_l_action_ou_la_procrastination_déguisée",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_2_le_manque_de_résilience_et_de_réactivité",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_i_les_deux_causes_profondes_de_l_échec",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_ii_l_exemple_de_dan_la_méthode_appliquée",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_iii_points_clés_à_retenir",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_pourquoi_99_des_saas_apps_échouent_le_dev_ultime",
+      "03_resources_ingenierie_produit_pourquoi_les_saas_echouent_résumé_analytique"
+    ],
+    "73": [
+      "acceuil_les_4_habitudes_sacrées_du_mois",
+      "acceuil_md",
+      "acceuil_mon_second_cerveau_tableau_de_bord_de_fabien",
+      "acceuil_projets_personnels_en_cours",
+      "acceuil_raccourcis_stratégiques_rituels",
+      "acceuil_tâches_bujo",
+      "acceuil_vos_10_coachs_de_vie_dédiés_personal_team"
+    ],
+    "74": [
+      "agents",
+      "agents_agents_md_second_brain",
+      "agents_conventions_travailler_avec_fabien",
+      "agents_où_se_trouvent_les_choses",
+      "agents_pièges_connus",
+      "agents_politique",
+      "agents_second_brain_fabien"
+    ],
+    "75": [
+      "agents_skills_unlazy_contributing_contributing",
+      "agents_skills_unlazy_contributing_documentation_changes",
+      "agents_skills_unlazy_contributing_ground_rules",
+      "agents_skills_unlazy_contributing_pull_requests",
+      "agents_skills_unlazy_contributing_security_reports",
+      "agents_skills_unlazy_contributing_tests",
+      "agents_skills_unlazy_contributing_welcome_changes"
+    ],
+    "76": [
+      "estimation_dépense",
+      "estimation_dépense_détail_des_postes",
+      "estimation_dépense_estimation_des_dépenses_personnelles_mensuelles",
+      "estimation_dépense_estimation_à_prévoir",
+      "estimation_dépense_résumé_rapide",
+      "estimation_dépense_scénario_1_moyenne_avec_fournitures",
+      "estimation_dépense_scénario_2_sans_fournitures"
+    ],
+    "77": [
+      "03_resources_ingenierie_produit_sous_agent_antigravitty",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_1_dans_le_chat_antigravity_délégation_directe",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_2_créer_un_rôle_persona_de_sous_agent_réutilisable_customizations_skills",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_3_via_le_sdk_python_google_antigravity",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_option_a_délégation_native_via_capabilitiesconfig",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_option_b_orchestration_explicite_de_plusieurs_agents_dédiés"
+    ],
+    "78": [
+      "agents_skills_unlazy_references_dispatch_claude_code_adapter",
+      "agents_skills_unlazy_references_dispatch_codex_adapter",
+      "agents_skills_unlazy_references_dispatch_evidence_boundary",
+      "agents_skills_unlazy_references_dispatch_failure_and_fallback",
+      "agents_skills_unlazy_references_dispatch_native_agent_dispatch",
+      "agents_skills_unlazy_references_dispatch_open_and_seal_a_launch_wave"
+    ],
+    "79": [
+      "agents_skills_unlazy_references_token_economy_avoid_false_economy",
+      "agents_skills_unlazy_references_token_economy_keep_contexts_focused",
+      "agents_skills_unlazy_references_token_economy_keep_enforcement_cheap",
+      "agents_skills_unlazy_references_token_economy_mark_leaf_reasoning_needs_without_inventing_host_controls",
+      "agents_skills_unlazy_references_token_economy_measurement_claims",
+      "agents_skills_unlazy_references_token_economy_token_economy"
+    ],
+    "80": [
+      "agents_skills_unlazy_tests_contract_tests",
+      "agents_skills_unlazy_tests_contract_tests_base",
+      "agents_skills_unlazy_tests_contract_tests_failures",
+      "agents_skills_unlazy_tests_contract_tests_reviewcontract",
+      "agents_skills_unlazy_tests_contract_tests_test",
+      "agents_skills_unlazy_tests_contract_tests_tests"
+    ],
+    "81": [
+      "03_resources_ingenierie_produit_commandes_antigravity",
+      "03_resources_ingenierie_produit_commandes_antigravity_1_les_slash_commands_dans_le_chat",
+      "03_resources_ingenierie_produit_commandes_antigravity_2_les_commandes_inline_raccourcis_dans_l_éditeur_ide",
+      "03_resources_ingenierie_produit_commandes_antigravity_3_les_commandes_terminal_cli_agy",
+      "03_resources_ingenierie_produit_commandes_antigravity_astuce_complémentaire_les_mentions"
+    ],
+    "82": [
+      "generate_json",
+      "generate_json_add_edge",
+      "generate_json_add_node"
+    ],
+    "83": [
+      "01_projects_charis_web_gates",
+      "01_projects_charis_web_gates_gates_charis_web_arborescence_processus_design"
+    ],
+    "84": [
+      "02_areas_05_boussole_mindset_journal_introspection_1_introduction",
+      "02_areas_05_boussole_mindset_journal_introspection_1_introduction_1_introduction"
+    ],
+    "85": [
+      "02_areas_05_boussole_mindset_journal_introspection_actuellement_c_est_un_peu_compliqué",
+      "02_areas_05_boussole_mindset_journal_introspection_actuellement_c_est_un_peu_compliqué_actuellement_c_est_un_peu_compliqué"
+    ],
+    "86": [
+      "02_areas_05_boussole_mindset_journal_introspection_actuellement_ça_fait_que_deux_jours_que_je_me_suis_pas_br",
+      "02_areas_05_boussole_mindset_journal_introspection_actuellement_ça_fait_que_deux_jours_que_je_me_suis_pas_br_actuellement_ça_fait_que_deux_jours_que_je_me_suis_pas_br"
+    ],
+    "87": [
+      "02_areas_05_boussole_mindset_journal_introspection_aujourd_hui_encore",
+      "02_areas_05_boussole_mindset_journal_introspection_aujourd_hui_encore_aujourd_hui_encore"
+    ],
+    "88": [
+      "02_areas_05_boussole_mindset_journal_introspection_aujourd_hui_je_me_suis_réveillé_et_j_avais_envie_de_rien",
+      "02_areas_05_boussole_mindset_journal_introspection_aujourd_hui_je_me_suis_réveillé_et_j_avais_envie_de_rien_aujourd_hui_je_me_suis_réveillé_et_j_avais_envie_de_rien"
+    ],
+    "89": [
+      "02_areas_05_boussole_mindset_journal_introspection_avant_de_devenir_facile_les_choses_seront_d_abord_dure",
+      "02_areas_05_boussole_mindset_journal_introspection_avant_de_devenir_facile_les_choses_seront_d_abord_dure_avant_de_devenir_facile_les_choses_seront_d_abord_dure"
+    ],
+    "90": [
+      "02_areas_05_boussole_mindset_journal_introspection_briquet",
+      "02_areas_05_boussole_mindset_journal_introspection_briquet_briquet"
+    ],
+    "91": [
+      "02_areas_05_boussole_mindset_journal_introspection_c_est_quoi_la_place_de_la_prière",
+      "02_areas_05_boussole_mindset_journal_introspection_c_est_quoi_la_place_de_la_prière_c_est_quoi_la_place_de_la_prière"
+    ],
+    "92": [
+      "02_areas_05_boussole_mindset_journal_introspection_ce_n_est_pas_grave",
+      "02_areas_05_boussole_mindset_journal_introspection_ce_n_est_pas_grave_ce_n_est_pas_grave"
+    ],
+    "93": [
+      "02_areas_05_boussole_mindset_journal_introspection_ce_n_est_pas_mon_problème",
+      "02_areas_05_boussole_mindset_journal_introspection_ce_n_est_pas_mon_problème_ce_n_est_pas_mon_problème"
+    ],
+    "94": [
+      "02_areas_05_boussole_mindset_journal_introspection_ce_que_j_ai_fuisa_fini_par_me_détruire",
+      "02_areas_05_boussole_mindset_journal_introspection_ce_que_j_ai_fuisa_fini_par_me_détruire_ce_que_j_ai_fuisa_fini_par_me_détruire"
+    ],
+    "95": [
+      "02_areas_05_boussole_mindset_journal_introspection_ce_que_j_en_fais",
+      "02_areas_05_boussole_mindset_journal_introspection_ce_que_j_en_fais_ce_que_j_en_fais"
+    ],
+    "96": [
+      "02_areas_05_boussole_mindset_journal_introspection_ce_qui_me_dérange",
+      "02_areas_05_boussole_mindset_journal_introspection_ce_qui_me_dérange_ce_qui_me_dérange"
+    ],
+    "97": [
+      "02_areas_05_boussole_mindset_journal_introspection_cette_personne_je_n_ai_pas_envie_d_appeler_son_nom_mais",
+      "02_areas_05_boussole_mindset_journal_introspection_cette_personne_je_n_ai_pas_envie_d_appeler_son_nom_mais_cette_personne_je_n_ai_pas_envie_d_appeler_son_nom_mais"
+    ],
+    "98": [
+      "02_areas_05_boussole_mindset_journal_introspection_ceux_qui_t_aiment_te",
+      "02_areas_05_boussole_mindset_journal_introspection_ceux_qui_t_aiment_te_ceux_qui_t_aiment_te"
+    ],
+    "99": [
+      "02_areas_05_boussole_mindset_journal_introspection_chaque_jour_je_me_dis_aujourd_hui_c_est_bon_j_arrête_mais",
+      "02_areas_05_boussole_mindset_journal_introspection_chaque_jour_je_me_dis_aujourd_hui_c_est_bon_j_arrête_mais_chaque_jour_je_me_dis_aujourd_hui_c_est_bon_j_arrête_mais"
+    ],
+    "100": [
+      "02_areas_05_boussole_mindset_journal_introspection_conversation",
+      "02_areas_05_boussole_mindset_journal_introspection_conversation_conversation"
+    ],
+    "101": [
+      "02_areas_05_boussole_mindset_journal_introspection_des_fois_j_ai_vraiment_cette_sensation_qu_il_y_a_quelqu_un",
+      "02_areas_05_boussole_mindset_journal_introspection_des_fois_j_ai_vraiment_cette_sensation_qu_il_y_a_quelqu_un_des_fois_j_ai_vraiment_cette_sensation_qu_il_y_a_quelqu_un"
+    ],
+    "102": [
+      "02_areas_05_boussole_mindset_journal_introspection_en_ce_moment_mes_émotions_jouent_les_montagnes_russes",
+      "02_areas_05_boussole_mindset_journal_introspection_en_ce_moment_mes_émotions_jouent_les_montagnes_russes_en_ce_moment_mes_émotions_jouent_les_montagnes_russes"
+    ],
+    "103": [
+      "02_areas_05_boussole_mindset_journal_introspection_en_fin_de_compte",
+      "02_areas_05_boussole_mindset_journal_introspection_en_fin_de_compte_en_fin_de_compte"
+    ],
+    "104": [
+      "02_areas_05_boussole_mindset_journal_introspection_en_vrai_si_c_est_pas_toi_c_est_pas_grave",
+      "02_areas_05_boussole_mindset_journal_introspection_en_vrai_si_c_est_pas_toi_c_est_pas_grave_en_vrai_si_c_est_pas_toi_c_est_pas_grave"
+    ],
+    "105": [
+      "02_areas_05_boussole_mindset_journal_introspection_encore",
+      "02_areas_05_boussole_mindset_journal_introspection_encore_encore"
+    ],
+    "106": [
+      "02_areas_05_boussole_mindset_journal_introspection_enfaite",
+      "02_areas_05_boussole_mindset_journal_introspection_enfaite_enfaite"
+    ],
+    "107": [
+      "02_areas_05_boussole_mindset_journal_introspection_enfaite_ca_demande_du_courage",
+      "02_areas_05_boussole_mindset_journal_introspection_enfaite_ca_demande_du_courage_enfaite_ca_demande_du_courage"
+    ],
+    "108": [
+      "02_areas_05_boussole_mindset_journal_introspection_enfaite_je_ne_ressens_plus_grand_chose",
+      "02_areas_05_boussole_mindset_journal_introspection_enfaite_je_ne_ressens_plus_grand_chose_enfaite_je_ne_ressens_plus_grand_chose"
+    ],
+    "109": [
+      "02_areas_05_boussole_mindset_journal_introspection_et_je_me_rends_compte",
+      "02_areas_05_boussole_mindset_journal_introspection_et_je_me_rends_compte_et_je_me_rends_compte"
+    ],
+    "110": [
+      "02_areas_05_boussole_mindset_journal_introspection_et_je_me_rends_compte_d_une_chose",
+      "02_areas_05_boussole_mindset_journal_introspection_et_je_me_rends_compte_d_une_chose_et_je_me_rends_compte_d_une_chose"
+    ],
+    "111": [
+      "02_areas_05_boussole_mindset_journal_introspection_il_est_peut_être_temps",
+      "02_areas_05_boussole_mindset_journal_introspection_il_est_peut_être_temps_il_est_peut_être_temps"
+    ],
+    "112": [
+      "02_areas_05_boussole_mindset_journal_introspection_j_ai_l_impression_qu_il_ne_s_agit_pas_d_un_manque_de",
+      "02_areas_05_boussole_mindset_journal_introspection_j_ai_l_impression_qu_il_ne_s_agit_pas_d_un_manque_de_j_ai_l_impression_qu_il_ne_s_agit_pas_d_un_manque_de"
+    ],
+    "113": [
+      "02_areas_05_boussole_mindset_journal_introspection_j_aimerais_que_tu_arrêtes_de_te_soucier_de_comment_les",
+      "02_areas_05_boussole_mindset_journal_introspection_j_aimerais_que_tu_arrêtes_de_te_soucier_de_comment_les_j_aimerais_que_tu_arrêtes_de_te_soucier_de_comment_les"
+    ],
+    "114": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_cherche",
+      "02_areas_05_boussole_mindset_journal_introspection_je_cherche_je_cherche"
+    ],
+    "115": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_comprends_plus_vraiment",
+      "02_areas_05_boussole_mindset_journal_introspection_je_comprends_plus_vraiment_je_comprends_plus_vraiment"
+    ],
+    "116": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_fais_ma_part_des_choses_afin_qu_il_fasse_les_siennes",
+      "02_areas_05_boussole_mindset_journal_introspection_je_fais_ma_part_des_choses_afin_qu_il_fasse_les_siennes_je_fais_ma_part_des_choses_afin_qu_il_fasse_les_siennes"
+    ],
+    "117": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_me_pose_1000_questions",
+      "02_areas_05_boussole_mindset_journal_introspection_je_me_pose_1000_questions_je_me_pose_1000_questions"
+    ],
+    "118": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_n_ai_jamais_vraiment_eu_quelqu_un",
+      "02_areas_05_boussole_mindset_journal_introspection_je_n_ai_jamais_vraiment_eu_quelqu_un_je_n_ai_jamais_vraiment_eu_quelqu_un"
+    ],
+    "119": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_ne_sais_comment_le_nommer",
+      "02_areas_05_boussole_mindset_journal_introspection_je_ne_sais_comment_le_nommer_je_ne_sais_comment_le_nommer"
+    ],
+    "120": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_ne_sais_même_plus_à_quel_moment_j_ai_commencé_à_avoir",
+      "02_areas_05_boussole_mindset_journal_introspection_je_ne_sais_même_plus_à_quel_moment_j_ai_commencé_à_avoir_je_ne_sais_même_plus_à_quel_moment_j_ai_commencé_à_avoir"
+    ],
+    "121": [
+      "02_areas_05_boussole_mindset_journal_introspection_je_ne_sais_pas_pourquoi_je_doute_autant",
+      "02_areas_05_boussole_mindset_journal_introspection_je_ne_sais_pas_pourquoi_je_doute_autant_je_ne_sais_pas_pourquoi_je_doute_autant"
+    ],
+    "122": [
+      "02_areas_05_boussole_mindset_journal_introspection_le_plus_gros_des_poisons_ce_n_est_pas_la_compagnie_des",
+      "02_areas_05_boussole_mindset_journal_introspection_le_plus_gros_des_poisons_ce_n_est_pas_la_compagnie_des_le_plus_gros_des_poisons_ce_n_est_pas_la_compagnie_des"
+    ],
+    "123": [
+      "02_areas_05_boussole_mindset_journal_introspection_le_problème_était_que_j_avais_en_permanence_l_impression_de",
+      "02_areas_05_boussole_mindset_journal_introspection_le_problème_était_que_j_avais_en_permanence_l_impression_de_le_problème_était_que_j_avais_en_permanence_l_impression_de"
+    ],
+    "124": [
+      "02_areas_05_boussole_mindset_journal_introspection_lettre_à_un_futur_moi",
+      "02_areas_05_boussole_mindset_journal_introspection_lettre_à_un_futur_moi_lettre_à_un_futur_moi"
+    ],
+    "125": [
+      "02_areas_05_boussole_mindset_journal_introspection_maintenant_ce_que_je_vais_faire",
+      "02_areas_05_boussole_mindset_journal_introspection_maintenant_ce_que_je_vais_faire_maintenant_ce_que_je_vais_faire"
+    ],
+    "126": [
+      "02_areas_05_boussole_mindset_journal_introspection_mes_pensées_sont_une_fête_qui_ne_s_arrête_jamais",
+      "02_areas_05_boussole_mindset_journal_introspection_mes_pensées_sont_une_fête_qui_ne_s_arrête_jamais_mes_pensées_sont_une_fête_qui_ne_s_arrête_jamais"
+    ],
+    "127": [
+      "02_areas_05_boussole_mindset_journal_introspection_mon_âme_est_le_centre_de_mes_soucis",
+      "02_areas_05_boussole_mindset_journal_introspection_mon_âme_est_le_centre_de_mes_soucis_mon_âme_est_le_centre_de_mes_soucis"
+    ],
+    "128": [
+      "02_areas_05_boussole_mindset_journal_introspection_où_j_ai_grandi",
+      "02_areas_05_boussole_mindset_journal_introspection_où_j_ai_grandi_où_j_ai_grandi"
+    ],
+    "129": [
+      "02_areas_05_boussole_mindset_journal_introspection_pour_eux_à_chaque_fois_le_problème_c_est_toi",
+      "02_areas_05_boussole_mindset_journal_introspection_pour_eux_à_chaque_fois_le_problème_c_est_toi_pour_eux_à_chaque_fois_le_problème_c_est_toi"
+    ],
+    "130": [
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi",
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_pourquoi"
+    ],
+    "131": [
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_cela_me_dérange_d_être_moi",
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_cela_me_dérange_d_être_moi_pourquoi_cela_me_dérange_d_être_moi"
+    ],
+    "132": [
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_cette_sensation",
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_cette_sensation_pourquoi_cette_sensation"
+    ],
+    "133": [
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_devrait_on_apprécier_quelqu_un_comme_moi",
+      "02_areas_05_boussole_mindset_journal_introspection_pourquoi_devrait_on_apprécier_quelqu_un_comme_moi_pourquoi_devrait_on_apprécier_quelqu_un_comme_moi"
+    ],
+    "134": [
+      "02_areas_05_boussole_mindset_journal_introspection_prend_courage",
+      "02_areas_05_boussole_mindset_journal_introspection_prend_courage_prend_courage"
+    ],
+    "135": [
+      "02_areas_05_boussole_mindset_journal_introspection_qu_est_ce_que_je_sais_faire",
+      "02_areas_05_boussole_mindset_journal_introspection_qu_est_ce_que_je_sais_faire_qu_est_ce_que_je_sais_faire"
+    ],
+    "136": [
+      "02_areas_05_boussole_mindset_journal_introspection_quand_vous_pouvez",
+      "02_areas_05_boussole_mindset_journal_introspection_quand_vous_pouvez_quand_vous_pouvez"
+    ],
+    "137": [
+      "02_areas_05_boussole_mindset_journal_introspection_remplace_la_discipline_par_de_l_amour_et_tout_viendra_tout",
+      "02_areas_05_boussole_mindset_journal_introspection_remplace_la_discipline_par_de_l_amour_et_tout_viendra_tout_remplace_la_discipline_par_de_l_amour_et_tout_viendra_tout"
+    ],
+    "138": [
+      "02_areas_05_boussole_mindset_journal_introspection_sans_pression",
+      "02_areas_05_boussole_mindset_journal_introspection_sans_pression_sans_pression"
+    ],
+    "139": [
+      "02_areas_05_boussole_mindset_journal_introspection_seconde_l_idee_reste_le_temps_qui_passe",
+      "02_areas_05_boussole_mindset_journal_introspection_seconde_l_idee_reste_le_temps_qui_passe_seconde_l_idee_reste_le_temps_qui_passe"
+    ],
+    "140": [
+      "02_areas_05_boussole_mindset_journal_introspection_si_klk_te_parle_de_ces_problèmes_ou_a_des_problèmes_stp",
+      "02_areas_05_boussole_mindset_journal_introspection_si_klk_te_parle_de_ces_problèmes_ou_a_des_problèmes_stp_si_klk_te_parle_de_ces_problèmes_ou_a_des_problèmes_stp"
+    ],
+    "141": [
+      "02_areas_05_boussole_mindset_journal_introspection_sincèrement_pour_être_honnête_je_ne_sais_pas_pourquoi_je",
+      "02_areas_05_boussole_mindset_journal_introspection_sincèrement_pour_être_honnête_je_ne_sais_pas_pourquoi_je_sincèrement_pour_être_honnête_je_ne_sais_pas_pourquoi_je"
+    ],
+    "142": [
+      "02_areas_05_boussole_mindset_journal_introspection_t_as_tous_les_problèmes_du_monde",
+      "02_areas_05_boussole_mindset_journal_introspection_t_as_tous_les_problèmes_du_monde_t_as_tous_les_problèmes_du_monde"
+    ],
+    "143": [
+      "02_areas_05_boussole_mindset_journal_introspection_table_des_matières",
+      "02_areas_05_boussole_mindset_journal_introspection_table_des_matières_table_des_matières"
+    ],
+    "144": [
+      "02_areas_05_boussole_mindset_journal_introspection_teo_david",
+      "02_areas_05_boussole_mindset_journal_introspection_teo_david_teo_david"
+    ],
+    "145": [
+      "02_areas_05_boussole_mindset_journal_introspection_toute_chose_à_un_début_et_une_fin",
+      "02_areas_05_boussole_mindset_journal_introspection_toute_chose_à_un_début_et_une_fin_toute_chose_à_un_début_et_une_fin"
+    ],
+    "146": [
+      "02_areas_05_boussole_mindset_journal_introspection_tu_as_peur_de_quoi",
+      "02_areas_05_boussole_mindset_journal_introspection_tu_as_peur_de_quoi_tu_as_peur_de_quoi"
+    ],
+    "147": [
+      "02_areas_05_boussole_mindset_journal_introspection_un_jour_j_achetais_du_soja_nourriture_africaine_se",
+      "02_areas_05_boussole_mindset_journal_introspection_un_jour_j_achetais_du_soja_nourriture_africaine_se_un_jour_j_achetais_du_soja_nourriture_africaine_se"
+    ],
+    "148": [
+      "02_areas_05_boussole_mindset_journal_introspection_viens_ce_moment",
+      "02_areas_05_boussole_mindset_journal_introspection_viens_ce_moment_viens_ce_moment"
+    ],
+    "149": [
+      "02_areas_05_boussole_mindset_journal_introspection_ça_va_prendre_du_temps",
+      "02_areas_05_boussole_mindset_journal_introspection_ça_va_prendre_du_temps_ça_va_prendre_du_temps"
+    ],
+    "150": [
+      "02_areas_05_boussole_mindset_moc_journal_introspection_index_chronologique_des_réflexions",
+      "02_areas_05_boussole_mindset_moc_journal_introspection_moc_journal_introspectif_clarté_mentale"
+    ],
+    "151": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_a_chaque_saison_je_créés_mes_problèmes",
+      "02_areas_07_creativite_side_projects_ecrits_textes_a_chaque_saison_je_créés_mes_problèmes_a_chaque_saison_je_créés_mes_problèmes"
+    ],
+    "152": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_a_l_église_on_me_dit_que_je_fais_semblant_d_être_introverti",
+      "02_areas_07_creativite_side_projects_ecrits_textes_a_l_église_on_me_dit_que_je_fais_semblant_d_être_introverti_a_l_église_on_me_dit_que_je_fais_semblant_d_être_introverti"
+    ],
+    "153": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ai_je_vraiment_besoin_de_me_lamenter",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ai_je_vraiment_besoin_de_me_lamenter_ai_je_vraiment_besoin_de_me_lamenter"
+    ],
+    "154": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_attendre_la_mort_pour_savoir_qui_m_aime_j_ai_pas_envie",
+      "02_areas_07_creativite_side_projects_ecrits_textes_attendre_la_mort_pour_savoir_qui_m_aime_j_ai_pas_envie_attendre_la_mort_pour_savoir_qui_m_aime_j_ai_pas_envie"
+    ],
+    "155": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_aucun_homme_ne_peut_voler_cette_paix",
+      "02_areas_07_creativite_side_projects_ecrits_textes_aucun_homme_ne_peut_voler_cette_paix_aucun_homme_ne_peut_voler_cette_paix"
+    ],
+    "156": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_aujourd_hui",
+      "02_areas_07_creativite_side_projects_ecrits_textes_aujourd_hui_aujourd_hui"
+    ],
+    "157": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_avant_je_pensais_que_quelque_chose_clochait_chez_moi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_avant_je_pensais_que_quelque_chose_clochait_chez_moi_avant_je_pensais_que_quelque_chose_clochait_chez_moi"
+    ],
+    "158": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_comme_on_peut_pas_comme_on_veut",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_comme_on_peut_pas_comme_on_veut_c_est_comme_on_peut_pas_comme_on_veut"
+    ],
+    "159": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_drôle_mais_je_n_ai_aucune_idée_de_par_où_commencer",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_drôle_mais_je_n_ai_aucune_idée_de_par_où_commencer_c_est_drôle_mais_je_n_ai_aucune_idée_de_par_où_commencer"
+    ],
+    "160": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_enfin_l_aube_de_ma_nuit_noire",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_enfin_l_aube_de_ma_nuit_noire_c_est_enfin_l_aube_de_ma_nuit_noire"
+    ],
+    "161": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_plus_fort_que_moi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_c_est_plus_fort_que_moi_c_est_plus_fort_que_moi"
+    ],
+    "162": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_car_je_n_ai_pas_le_droit",
+      "02_areas_07_creativite_side_projects_ecrits_textes_car_je_n_ai_pas_le_droit_car_je_n_ai_pas_le_droit"
+    ],
+    "163": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ce_matin_je_me_suis_encore_réveillé",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ce_matin_je_me_suis_encore_réveillé_ce_matin_je_me_suis_encore_réveillé"
+    ],
+    "164": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ce_qui_reste",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ce_qui_reste_ce_qui_reste"
+    ],
+    "165": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ce_qui_reste_2",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ce_qui_reste_2_ce_qui_reste"
+    ],
+    "166": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_cet_endroit",
+      "02_areas_07_creativite_side_projects_ecrits_textes_cet_endroit_cet_endroit"
+    ],
+    "167": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ceux_qui_ont_bon_cœur_se_feront_mettre_à_terre_par_ceux",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ceux_qui_ont_bon_cœur_se_feront_mettre_à_terre_par_ceux_ceux_qui_ont_bon_cœur_se_feront_mettre_à_terre_par_ceux"
+    ],
+    "168": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ceux_qui_te_connaissent_mal_te_diront_que_le_problème",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ceux_qui_te_connaissent_mal_te_diront_que_le_problème_ceux_qui_te_connaissent_mal_te_diront_que_le_problème"
+    ],
+    "169": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_chapitre_1_ce_que_nous_étions",
+      "02_areas_07_creativite_side_projects_ecrits_textes_chapitre_1_ce_que_nous_étions_chapitre_1_ce_que_nous_étions"
+    ],
+    "170": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_chaque_soir_elle_veut_lire_qui_je_suis",
+      "02_areas_07_creativite_side_projects_ecrits_textes_chaque_soir_elle_veut_lire_qui_je_suis_chaque_soir_elle_veut_lire_qui_je_suis"
+    ],
+    "171": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_chaque_soir_la_lune_s_ennuie",
+      "02_areas_07_creativite_side_projects_ecrits_textes_chaque_soir_la_lune_s_ennuie_chaque_soir_la_lune_s_ennuie"
+    ],
+    "172": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_conclusion",
+      "02_areas_07_creativite_side_projects_ecrits_textes_conclusion_conclusion"
+    ],
+    "173": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_dada_m_aimais_beaucoup_j_ai_merdé_dada_me_parle_moins",
+      "02_areas_07_creativite_side_projects_ecrits_textes_dada_m_aimais_beaucoup_j_ai_merdé_dada_me_parle_moins_dada_m_aimais_beaucoup_j_ai_merdé_dada_me_parle_moins"
+    ],
+    "174": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_dans_ma_tête_tout_est_clair_mes_idées_sombres_se_promènent",
+      "02_areas_07_creativite_side_projects_ecrits_textes_dans_ma_tête_tout_est_clair_mes_idées_sombres_se_promènent_dans_ma_tête_tout_est_clair_mes_idées_sombres_se_promènent"
+    ],
+    "175": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_dernièrement",
+      "02_areas_07_creativite_side_projects_ecrits_textes_dernièrement_dernièrement"
+    ],
+    "176": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_des_fois_on_avance_je_sais_plus_rien_ne_sera_comme_avant",
+      "02_areas_07_creativite_side_projects_ecrits_textes_des_fois_on_avance_je_sais_plus_rien_ne_sera_comme_avant_des_fois_on_avance_je_sais_plus_rien_ne_sera_comme_avant"
+    ],
+    "177": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_désolé_si_maintenant_je_n_en_fais_qu_à_ma_tête",
+      "02_areas_07_creativite_side_projects_ecrits_textes_désolé_si_maintenant_je_n_en_fais_qu_à_ma_tête_désolé_si_maintenant_je_n_en_fais_qu_à_ma_tête"
+    ],
+    "178": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_elle_disparaît_souvent_je_lui_demande_si_elle_sauve_le",
+      "02_areas_07_creativite_side_projects_ecrits_textes_elle_disparaît_souvent_je_lui_demande_si_elle_sauve_le_elle_disparaît_souvent_je_lui_demande_si_elle_sauve_le"
+    ],
+    "179": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_je_me_suis_posé_cette_question_depuis_longtemps",
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_je_me_suis_posé_cette_question_depuis_longtemps_et_je_me_suis_posé_cette_question_depuis_longtemps"
+    ],
+    "180": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_je_pense_avoir_trouvé_le_moyen",
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_je_pense_avoir_trouvé_le_moyen_et_je_pense_avoir_trouvé_le_moyen"
+    ],
+    "181": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_si_demain_le_ciel_sera_meilleur",
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_si_demain_le_ciel_sera_meilleur_et_si_demain_le_ciel_sera_meilleur"
+    ],
+    "182": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_un_jour_l_oisillon_quittera_le_nid",
+      "02_areas_07_creativite_side_projects_ecrits_textes_et_un_jour_l_oisillon_quittera_le_nid_et_un_jour_l_oisillon_quittera_le_nid"
+    ],
+    "183": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_every_days",
+      "02_areas_07_creativite_side_projects_ecrits_textes_every_days_every_days"
+    ],
+    "184": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_faisais_je_tant_pitié_que_ça",
+      "02_areas_07_creativite_side_projects_ecrits_textes_faisais_je_tant_pitié_que_ça_faisais_je_tant_pitié_que_ça"
+    ],
+    "185": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_frère_je_sais_très_bien_ce_que_c_est",
+      "02_areas_07_creativite_side_projects_ecrits_textes_frère_je_sais_très_bien_ce_que_c_est_frère_je_sais_très_bien_ce_que_c_est"
+    ],
+    "186": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_gif",
+      "02_areas_07_creativite_side_projects_ecrits_textes_gif_gif"
+    ],
+    "187": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_honestly",
+      "02_areas_07_creativite_side_projects_ecrits_textes_honestly_honestly"
+    ],
+    "188": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_il_agite_l_eau_déjà_troublée_de_mes_pensées",
+      "02_areas_07_creativite_side_projects_ecrits_textes_il_agite_l_eau_déjà_troublée_de_mes_pensées_il_agite_l_eau_déjà_troublée_de_mes_pensées"
+    ],
+    "189": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ils_disent_et_je_refuse_de_croire_que_cette_vie_est_vaine",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ils_disent_et_je_refuse_de_croire_que_cette_vie_est_vaine_ils_disent_et_je_refuse_de_croire_que_cette_vie_est_vaine"
+    ],
+    "190": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ils_me_té_ma_en_chelou_comme_si_je_venais_de_namek",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ils_me_té_ma_en_chelou_comme_si_je_venais_de_namek_ils_me_té_ma_en_chelou_comme_si_je_venais_de_namek"
+    ],
+    "191": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_assez_écouté_vos_mauvais_conseils_pour_savoir_quoi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_assez_écouté_vos_mauvais_conseils_pour_savoir_quoi_j_ai_assez_écouté_vos_mauvais_conseils_pour_savoir_quoi"
+    ],
+    "192": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_beaucoup_appris_mais_je_continue_de_faire_le_con",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_beaucoup_appris_mais_je_continue_de_faire_le_con_j_ai_beaucoup_appris_mais_je_continue_de_faire_le_con"
+    ],
+    "193": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_brûlé_l_essence_de_mon_réservoir",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_brûlé_l_essence_de_mon_réservoir_j_ai_brûlé_l_essence_de_mon_réservoir"
+    ],
+    "194": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_charbonné_là_où_on_n_avait_rien_à_me_donner",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_charbonné_là_où_on_n_avait_rien_à_me_donner_j_ai_charbonné_là_où_on_n_avait_rien_à_me_donner"
+    ],
+    "195": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_conscience_que_je_masque_ta_présence_par_du_bruit",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_conscience_que_je_masque_ta_présence_par_du_bruit_j_ai_conscience_que_je_masque_ta_présence_par_du_bruit"
+    ],
+    "196": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_du_blé_à_battre_mais_je_suis_si_fatiguée_en_même_temps",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_du_blé_à_battre_mais_je_suis_si_fatiguée_en_même_temps_j_ai_du_blé_à_battre_mais_je_suis_si_fatiguée_en_même_temps"
+    ],
+    "197": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_finalement_trouvé_le_moyen_d_etre_libre",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_finalement_trouvé_le_moyen_d_etre_libre_j_ai_finalement_trouvé_le_moyen_d_etre_libre"
+    ],
+    "198": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_le_bruit_du_monde_qui_étouffe_mon_appel",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_le_bruit_du_monde_qui_étouffe_mon_appel_j_ai_le_bruit_du_monde_qui_étouffe_mon_appel"
+    ],
+    "199": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pas_de_rêve_de_voyage",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pas_de_rêve_de_voyage_j_ai_pas_de_rêve_de_voyage"
+    ],
+    "200": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pas_eu_le_temps_de_tout_ce_que_pense",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pas_eu_le_temps_de_tout_ce_que_pense_j_ai_pas_eu_le_temps_de_tout_ce_que_pense"
+    ],
+    "201": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pas_ma_place_ici_comme_une_blanche_dans_un_gbaka",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pas_ma_place_ici_comme_une_blanche_dans_un_gbaka_j_ai_pas_ma_place_ici_comme_une_blanche_dans_un_gbaka"
+    ],
+    "202": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pour_principe_d_écouter_personne_désolé",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_pour_principe_d_écouter_personne_désolé_j_ai_pour_principe_d_écouter_personne_désolé"
+    ],
+    "203": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_tellement_fuis_j_ai_oublier_pourquoi_je_cours",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_tellement_fuis_j_ai_oublier_pourquoi_je_cours_j_ai_tellement_fuis_j_ai_oublier_pourquoi_je_cours"
+    ],
+    "204": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_toujours_ces_mêmes_pensées_dans_mon_esprit",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_toujours_ces_mêmes_pensées_dans_mon_esprit_j_ai_toujours_ces_mêmes_pensées_dans_mon_esprit"
+    ],
+    "205": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_éteins_un_feu_que_j_alimente_encore",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_ai_éteins_un_feu_que_j_alimente_encore_j_ai_éteins_un_feu_que_j_alimente_encore"
+    ],
+    "206": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_essaie_de_comprendre_pourquoi_cela_m_effraie_tant",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_essaie_de_comprendre_pourquoi_cela_m_effraie_tant_j_essaie_de_comprendre_pourquoi_cela_m_effraie_tant"
+    ],
+    "207": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_essaie_de_me_comprendre_pour_avancer",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_essaie_de_me_comprendre_pour_avancer_j_essaie_de_me_comprendre_pour_avancer"
+    ],
+    "208": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_observe_le_monde_je_me_fais_tout_seul_des_films",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_observe_le_monde_je_me_fais_tout_seul_des_films_j_observe_le_monde_je_me_fais_tout_seul_des_films"
+    ],
+    "209": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_vois_rien_au_moins_y_a_pas_d_aveugle_qui_me_guide",
+      "02_areas_07_creativite_side_projects_ecrits_textes_j_vois_rien_au_moins_y_a_pas_d_aveugle_qui_me_guide_j_vois_rien_au_moins_y_a_pas_d_aveugle_qui_me_guide"
+    ],
+    "210": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_comprends_pas_pourquoi_je_cherche_à_plaire_au_femme",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_comprends_pas_pourquoi_je_cherche_à_plaire_au_femme_je_comprends_pas_pourquoi_je_cherche_à_plaire_au_femme"
+    ],
+    "211": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_dois_tout_séparer_une_bonne_fois_pour_toute",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_dois_tout_séparer_une_bonne_fois_pour_toute_je_dois_tout_séparer_une_bonne_fois_pour_toute"
+    ],
+    "212": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_me_sens_perdu_pourtant_si_près_du_rivage",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_me_sens_perdu_pourtant_si_près_du_rivage_je_me_sens_perdu_pourtant_si_près_du_rivage"
+    ],
+    "213": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_pense_que_finalement_que_j_ai_peur_d_aimer",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_pense_que_finalement_que_j_ai_peur_d_aimer_je_pense_que_finalement_que_j_ai_peur_d_aimer"
+    ],
+    "214": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_sais",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_sais_je_sais"
+    ],
+    "215": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_sais_pas_je_sais_pas",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_sais_pas_je_sais_pas_je_sais_pas_je_sais_pas"
+    ],
+    "216": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_suis_l_agneau_déguisé_en_loup_dans_chacune_de_vos",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_suis_l_agneau_déguisé_en_loup_dans_chacune_de_vos_je_suis_l_agneau_déguisé_en_loup_dans_chacune_de_vos"
+    ],
+    "217": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_suis_le_seul_à_voir_mes_combats",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_suis_le_seul_à_voir_mes_combats_je_suis_le_seul_à_voir_mes_combats"
+    ],
+    "218": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_vis_ma_nuit_noire",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_vis_ma_nuit_noire_je_vis_ma_nuit_noire"
+    ],
+    "219": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_vois",
+      "02_areas_07_creativite_side_projects_ecrits_textes_je_vois_je_vois"
+    ],
+    "220": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_l_esprit_qui_me_ronge_se_nomme_le_doute",
+      "02_areas_07_creativite_side_projects_ecrits_textes_l_esprit_qui_me_ronge_se_nomme_le_doute_l_esprit_qui_me_ronge_se_nomme_le_doute"
+    ],
+    "221": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_la_vérité_j_essaie_de_l_aimer_mais_j_ai_si_peur_de_mon_père",
+      "02_areas_07_creativite_side_projects_ecrits_textes_la_vérité_j_essaie_de_l_aimer_mais_j_ai_si_peur_de_mon_père_la_vérité_j_essaie_de_l_aimer_mais_j_ai_si_peur_de_mon_père"
+    ],
+    "222": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_le_bruit_dans_mon_esprit_refuse_de_mourir",
+      "02_areas_07_creativite_side_projects_ecrits_textes_le_bruit_dans_mon_esprit_refuse_de_mourir_le_bruit_dans_mon_esprit_refuse_de_mourir"
+    ],
+    "223": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_le_bruit_du_monde_étouffe_mon_appel",
+      "02_areas_07_creativite_side_projects_ecrits_textes_le_bruit_du_monde_étouffe_mon_appel_le_bruit_du_monde_étouffe_mon_appel"
+    ],
+    "224": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_les_enfants_grandissent_et_changent",
+      "02_areas_07_creativite_side_projects_ecrits_textes_les_enfants_grandissent_et_changent_les_enfants_grandissent_et_changent"
+    ],
+    "225": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_les_mauvaises_choses_ont_une_fin",
+      "02_areas_07_creativite_side_projects_ecrits_textes_les_mauvaises_choses_ont_une_fin_les_mauvaises_choses_ont_une_fin"
+    ],
+    "226": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_leur_indifférence_c_est_ce_qui_amplifiai_ma_douleur",
+      "02_areas_07_creativite_side_projects_ecrits_textes_leur_indifférence_c_est_ce_qui_amplifiai_ma_douleur_leur_indifférence_c_est_ce_qui_amplifiai_ma_douleur"
+    ],
+    "227": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_leur_indifférence_est_ce_qui_amplifiait_ma_douleur",
+      "02_areas_07_creativite_side_projects_ecrits_textes_leur_indifférence_est_ce_qui_amplifiait_ma_douleur_leur_indifférence_est_ce_qui_amplifiait_ma_douleur"
+    ],
+    "228": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_m_en_voulez_pas_pour_les_raisons_que_je_pense",
+      "02_areas_07_creativite_side_projects_ecrits_textes_m_en_voulez_pas_pour_les_raisons_que_je_pense_m_en_voulez_pas_pour_les_raisons_que_je_pense"
+    ],
+    "229": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_ma_solitude_me_fait_sentir_moins_seul",
+      "02_areas_07_creativite_side_projects_ecrits_textes_ma_solitude_me_fait_sentir_moins_seul_ma_solitude_me_fait_sentir_moins_seul"
+    ],
+    "230": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_maybe",
+      "02_areas_07_creativite_side_projects_ecrits_textes_maybe_maybe"
+    ],
+    "231": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_me_faisant_marcher_je_te_courrait_après",
+      "02_areas_07_creativite_side_projects_ecrits_textes_me_faisant_marcher_je_te_courrait_après_me_faisant_marcher_je_te_courrait_après"
+    ],
+    "232": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_mes_démons_j_écoute_moins_ce_qu_ils_ont_à_me_dire",
+      "02_areas_07_creativite_side_projects_ecrits_textes_mes_démons_j_écoute_moins_ce_qu_ils_ont_à_me_dire_mes_démons_j_écoute_moins_ce_qu_ils_ont_à_me_dire"
+    ],
+    "233": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_mon_frère_je_sais_ce_que_ça_fait",
+      "02_areas_07_creativite_side_projects_ecrits_textes_mon_frère_je_sais_ce_que_ça_fait_mon_frère_je_sais_ce_que_ça_fait"
+    ],
+    "234": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_même_avec_la_rage_je_me_retiens_de_les_frappé",
+      "02_areas_07_creativite_side_projects_ecrits_textes_même_avec_la_rage_je_me_retiens_de_les_frappé_même_avec_la_rage_je_me_retiens_de_les_frappé"
+    ],
+    "235": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_m_a_dit_que_je_ne_prenais_pas_assez_dieu_au_sérieux",
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_m_a_dit_que_je_ne_prenais_pas_assez_dieu_au_sérieux_on_m_a_dit_que_je_ne_prenais_pas_assez_dieu_au_sérieux"
+    ],
+    "236": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_m_a_toujours_dit_poursuit_tes_passions_et_jamais_l_argent",
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_m_a_toujours_dit_poursuit_tes_passions_et_jamais_l_argent_on_m_a_toujours_dit_poursuit_tes_passions_et_jamais_l_argent"
+    ],
+    "237": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_vit_un_peu_à_l_aveuglette_on_prie_afin_que_dieu_nous",
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_vit_un_peu_à_l_aveuglette_on_prie_afin_que_dieu_nous_on_vit_un_peu_à_l_aveuglette_on_prie_afin_que_dieu_nous"
+    ],
+    "238": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_voit_souvent_chez_les_autres_ce_qu_on_regarde_en_soit",
+      "02_areas_07_creativite_side_projects_ecrits_textes_on_voit_souvent_chez_les_autres_ce_qu_on_regarde_en_soit_on_voit_souvent_chez_les_autres_ce_qu_on_regarde_en_soit"
+    ],
+    "239": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_peut_être",
+      "02_areas_07_creativite_side_projects_ecrits_textes_peut_être_peut_être"
+    ],
+    "240": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_pourquoi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_pourquoi_pourquoi"
+    ],
+    "241": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_presence",
+      "02_areas_07_creativite_side_projects_ecrits_textes_presence_presence"
+    ],
+    "242": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_pulsions",
+      "02_areas_07_creativite_side_projects_ecrits_textes_pulsions_pulsions"
+    ],
+    "243": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_quand_je_parlais_personne_n_écoutais",
+      "02_areas_07_creativite_side_projects_ecrits_textes_quand_je_parlais_personne_n_écoutais_quand_je_parlais_personne_n_écoutais"
+    ],
+    "244": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_quand_je_suis_seul",
+      "02_areas_07_creativite_side_projects_ecrits_textes_quand_je_suis_seul_quand_je_suis_seul"
+    ],
+    "245": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_solitude",
+      "02_areas_07_creativite_side_projects_ecrits_textes_solitude_solitude"
+    ],
+    "246": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_tomber_c_est_humain_ça_fait_pas_de_nous_des_mauvaises",
+      "02_areas_07_creativite_side_projects_ecrits_textes_tomber_c_est_humain_ça_fait_pas_de_nous_des_mauvaises_tomber_c_est_humain_ça_fait_pas_de_nous_des_mauvaises"
+    ],
+    "247": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_toujours_cette_question_qui_revient",
+      "02_areas_07_creativite_side_projects_ecrits_textes_toujours_cette_question_qui_revient_toujours_cette_question_qui_revient"
+    ],
+    "248": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_tout_le_monde_ne_pense_pas_comme_toi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_tout_le_monde_ne_pense_pas_comme_toi_tout_le_monde_ne_pense_pas_comme_toi"
+    ],
+    "249": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_tout_va_bien",
+      "02_areas_07_creativite_side_projects_ecrits_textes_tout_va_bien_tout_va_bien"
+    ],
+    "250": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_tu_sais_hier_soir_j_ai_encore_rêver_de_toi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_tu_sais_hier_soir_j_ai_encore_rêver_de_toi_tu_sais_hier_soir_j_ai_encore_rêver_de_toi"
+    ],
+    "251": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_une_partie",
+      "02_areas_07_creativite_side_projects_ecrits_textes_une_partie_une_partie"
+    ],
+    "252": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_vous_devriez_voir_à_quel_point_c_est_brisé_en_moi",
+      "02_areas_07_creativite_side_projects_ecrits_textes_vous_devriez_voir_à_quel_point_c_est_brisé_en_moi_vous_devriez_voir_à_quel_point_c_est_brisé_en_moi"
+    ],
+    "253": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_à_quoi_aurait_ressembler_ma_vie",
+      "02_areas_07_creativite_side_projects_ecrits_textes_à_quoi_aurait_ressembler_ma_vie_à_quoi_aurait_ressembler_ma_vie"
+    ],
+    "254": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_à_temps",
+      "02_areas_07_creativite_side_projects_ecrits_textes_à_temps_à_temps"
+    ],
+    "255": [
+      "02_areas_07_creativite_side_projects_ecrits_textes_étais_je_vraiment_aussi_mauvais",
+      "02_areas_07_creativite_side_projects_ecrits_textes_étais_je_vraiment_aussi_mauvais_étais_je_vraiment_aussi_mauvais"
+    ],
+    "256": [
+      "02_areas_07_creativite_side_projects_moc_creativite_textes_index_chronologique_des_textes",
+      "02_areas_07_creativite_side_projects_moc_creativite_textes_moc_écrits_poésie_plume_de_fabien"
+    ],
+    "257": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_230826_isabelle",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_230826_isabelle_230826_isabelle"
+    ],
+    "258": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_certains_endroits",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_certains_endroits_certains_endroits"
+    ],
+    "259": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_dieu_est_ta_source_les_hommes_sont_des_ressources",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_dieu_est_ta_source_les_hommes_sont_des_ressources_dieu_est_ta_source_les_hommes_sont_des_ressources"
+    ],
+    "260": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_en_ce_moment_j_ai_peur_de_manquer_de_performance",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_en_ce_moment_j_ai_peur_de_manquer_de_performance_en_ce_moment_j_ai_peur_de_manquer_de_performance"
+    ],
+    "261": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_encore_un_autre_jour_où_je_me_perds_en_route",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_encore_un_autre_jour_où_je_me_perds_en_route_encore_un_autre_jour_où_je_me_perds_en_route"
+    ],
+    "262": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_et_si_ce_monde_n_avait_jamais_été_sombre",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_et_si_ce_monde_n_avait_jamais_été_sombre_et_si_ce_monde_n_avait_jamais_été_sombre"
+    ],
+    "263": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_ai_cette_sensation_d_être_quelqu_un_de_mauvais",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_ai_cette_sensation_d_être_quelqu_un_de_mauvais_j_ai_cette_sensation_d_être_quelqu_un_de_mauvais"
+    ],
+    "264": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_ai_dû_faire_une_pause",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_ai_dû_faire_une_pause_j_ai_dû_faire_une_pause"
+    ],
+    "265": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_ai_mes_jambes_pour_m_enfuir",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_ai_mes_jambes_pour_m_enfuir_j_ai_mes_jambes_pour_m_enfuir"
+    ],
+    "266": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_avais_cette_sensation_de_n_être_jamais_seul",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_j_avais_cette_sensation_de_n_être_jamais_seul_j_avais_cette_sensation_de_n_être_jamais_seul"
+    ],
+    "267": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_je_pense_avoir_compris",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_je_pense_avoir_compris_je_pense_avoir_compris"
+    ],
+    "268": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_jusqu_où_mon_besoin_de_plaire_aura_détruit",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_jusqu_où_mon_besoin_de_plaire_aura_détruit_jusqu_où_mon_besoin_de_plaire_aura_détruit"
+    ],
+    "269": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_l_une_des_capacités_les_plus_essentielles_du_chrétiens_est",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_l_une_des_capacités_les_plus_essentielles_du_chrétiens_est_l_une_des_capacités_les_plus_essentielles_du_chrétiens_est"
+    ],
+    "270": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_l_univers",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_l_univers_l_univers"
+    ],
+    "271": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_la_maison_du_potier",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_la_maison_du_potier_la_maison_du_potier"
+    ],
+    "272": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_les_bonnes_choses_demandent_toujours_du_temps",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_les_bonnes_choses_demandent_toujours_du_temps_les_bonnes_choses_demandent_toujours_du_temps"
+    ],
+    "273": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_mes_doutes_le_pied_sur_le_frein_mon_ambition_sur",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_mes_doutes_le_pied_sur_le_frein_mon_ambition_sur_mes_doutes_le_pied_sur_le_frein_mon_ambition_sur"
+    ],
+    "274": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_personne_ne_voyait_rien",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_personne_ne_voyait_rien_personne_ne_voyait_rien"
+    ],
+    "275": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_prie_ton_tous_le_même_dieu",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_prie_ton_tous_le_même_dieu_prie_ton_tous_le_même_dieu"
+    ],
+    "276": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_prophecy_250726",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_prophecy_250726_prophecy_250726"
+    ],
+    "277": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_que_dois_je_faire",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_que_dois_je_faire_que_dois_je_faire"
+    ],
+    "278": [
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_tu_penses_que_sa_te_fera_du_mal_de_résister",
+      "02_areas_10_spiritualite_sagesse_prieres_enseignements_tu_penses_que_sa_te_fera_du_mal_de_résister_tu_penses_que_sa_te_fera_du_mal_de_résister"
+    ],
+    "279": [
+      "agents_skills_unlazy_scripts_lib_check_supervisor",
+      "agents_skills_unlazy_scripts_lib_check_supervisor_shell_command"
+    ],
+    "280": [
+      "agents_skills_unlazy_templates_gates_node",
+      "agents_skills_unlazy_templates_gates_node_gates_branch_name_integration"
+    ],
+    "281": [
+      "gates",
+      "gates_gates_mise_à_jour_persona_style_claude_anthropic"
+    ],
+    "282": [
+      "01_projects_stockly_saas_documentation_r_sum__agent_ia"
+    ],
+    "283": [
+      "02_areas_04_sante___vitalite_chronotype___energie_sommeil"
+    ],
+    "284": [
+      "agent"
+    ],
+    "285": [
+      "agents_skills_unlazy_scripts_lib_regex_worker"
+    ],
+    "286": [
+      "daily_logs"
+    ],
+    "287": [
+      "read_chunk"
+    ]
+  },
+  "cohesion": {
+    "0": 0.055944055944055944,
+    "1": 0.05027322404371585,
+    "2": 0.041666666666666664,
+    "3": 0.043478260869565216,
+    "4": 0.043478260869565216,
+    "5": 0.04878048780487805,
+    "6": 0.1361344537815126,
+    "7": 0.06896551724137931,
+    "8": 0.10052910052910052,
+    "9": 0.09090909090909091,
+    "10": 0.11255411255411256,
+    "11": 0.29473684210526313,
+    "12": 0.11578947368421053,
+    "13": 0.10526315789473684,
+    "14": 0.1568627450980392,
+    "15": 0.13071895424836602,
+    "16": 0.11764705882352941,
+    "17": 0.15441176470588236,
+    "18": 0.125,
+    "19": 0.13333333333333333,
+    "20": 0.1523809523809524,
+    "21": 0.13333333333333333,
+    "22": 0.14285714285714285,
+    "23": 0.14285714285714285,
+    "24": 0.14285714285714285,
+    "25": 0.14285714285714285,
+    "26": 0.14285714285714285,
+    "27": 0.14285714285714285,
+    "28": 0.14285714285714285,
+    "29": 0.14285714285714285,
+    "30": 0.14285714285714285,
+    "31": 0.14285714285714285,
+    "32": 0.14285714285714285,
+    "33": 0.14285714285714285,
+    "34": 0.15384615384615385,
+    "35": 0.15384615384615385,
+    "36": 0.15384615384615385,
+    "37": 0.15384615384615385,
+    "38": 0.15384615384615385,
+    "39": 0.16666666666666666,
+    "40": 0.16666666666666666,
+    "41": 0.16666666666666666,
+    "42": 0.16666666666666666,
+    "43": 0.18181818181818182,
+    "44": 0.18181818181818182,
+    "45": 0.18181818181818182,
+    "46": 0.18181818181818182,
+    "47": 0.18181818181818182,
+    "48": 0.2,
+    "49": 0.2,
+    "50": 0.2,
+    "51": 0.2,
+    "52": 0.2,
+    "53": 0.2,
+    "54": 0.2,
+    "55": 0.26666666666666666,
+    "56": 0.2222222222222222,
+    "57": 0.2222222222222222,
+    "58": 0.2222222222222222,
+    "59": 0.2222222222222222,
+    "60": 0.2222222222222222,
+    "61": 0.25,
+    "62": 0.2222222222222222,
+    "63": 0.2222222222222222,
+    "64": 0.25,
+    "65": 0.25,
+    "66": 0.25,
+    "67": 0.25,
+    "68": 0.25,
+    "69": 0.2857142857142857,
+    "70": 0.2857142857142857,
+    "71": 0.2857142857142857,
+    "72": 0.2857142857142857,
+    "73": 0.2857142857142857,
+    "74": 0.2857142857142857,
+    "75": 0.2857142857142857,
+    "76": 0.2857142857142857,
+    "77": 0.3333333333333333,
+    "78": 0.3333333333333333,
+    "79": 0.3333333333333333,
+    "80": 0.3333333333333333,
+    "81": 0.4,
+    "82": 0.6666666666666666,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0,
+    "135": 1.0,
+    "136": 1.0,
+    "137": 1.0,
+    "138": 1.0,
+    "139": 1.0,
+    "140": 1.0,
+    "141": 1.0,
+    "142": 1.0,
+    "143": 1.0,
+    "144": 1.0,
+    "145": 1.0,
+    "146": 1.0,
+    "147": 1.0,
+    "148": 1.0,
+    "149": 1.0,
+    "150": 1.0,
+    "151": 1.0,
+    "152": 1.0,
+    "153": 1.0,
+    "154": 1.0,
+    "155": 1.0,
+    "156": 1.0,
+    "157": 1.0,
+    "158": 1.0,
+    "159": 1.0,
+    "160": 1.0,
+    "161": 1.0,
+    "162": 1.0,
+    "163": 1.0,
+    "164": 1.0,
+    "165": 1.0,
+    "166": 1.0,
+    "167": 1.0,
+    "168": 1.0,
+    "169": 1.0,
+    "170": 1.0,
+    "171": 1.0,
+    "172": 1.0,
+    "173": 1.0,
+    "174": 1.0,
+    "175": 1.0,
+    "176": 1.0,
+    "177": 1.0,
+    "178": 1.0,
+    "179": 1.0,
+    "180": 1.0,
+    "181": 1.0,
+    "182": 1.0,
+    "183": 1.0,
+    "184": 1.0,
+    "185": 1.0,
+    "186": 1.0,
+    "187": 1.0,
+    "188": 1.0,
+    "189": 1.0,
+    "190": 1.0,
+    "191": 1.0,
+    "192": 1.0,
+    "193": 1.0,
+    "194": 1.0,
+    "195": 1.0,
+    "196": 1.0,
+    "197": 1.0,
+    "198": 1.0,
+    "199": 1.0,
+    "200": 1.0,
+    "201": 1.0,
+    "202": 1.0,
+    "203": 1.0,
+    "204": 1.0,
+    "205": 1.0,
+    "206": 1.0,
+    "207": 1.0,
+    "208": 1.0,
+    "209": 1.0,
+    "210": 1.0,
+    "211": 1.0,
+    "212": 1.0,
+    "213": 1.0,
+    "214": 1.0,
+    "215": 1.0,
+    "216": 1.0,
+    "217": 1.0,
+    "218": 1.0,
+    "219": 1.0,
+    "220": 1.0,
+    "221": 1.0,
+    "222": 1.0,
+    "223": 1.0,
+    "224": 1.0,
+    "225": 1.0,
+    "226": 1.0,
+    "227": 1.0,
+    "228": 1.0,
+    "229": 1.0,
+    "230": 1.0,
+    "231": 1.0,
+    "232": 1.0,
+    "233": 1.0,
+    "234": 1.0,
+    "235": 1.0,
+    "236": 1.0,
+    "237": 1.0,
+    "238": 1.0,
+    "239": 1.0,
+    "240": 1.0,
+    "241": 1.0,
+    "242": 1.0,
+    "243": 1.0,
+    "244": 1.0,
+    "245": 1.0,
+    "246": 1.0,
+    "247": 1.0,
+    "248": 1.0,
+    "249": 1.0,
+    "250": 1.0,
+    "251": 1.0,
+    "252": 1.0,
+    "253": 1.0,
+    "254": 1.0,
+    "255": 1.0,
+    "256": 1.0,
+    "257": 1.0,
+    "258": 1.0,
+    "259": 1.0,
+    "260": 1.0,
+    "261": 1.0,
+    "262": 1.0,
+    "263": 1.0,
+    "264": 1.0,
+    "265": 1.0,
+    "266": 1.0,
+    "267": 1.0,
+    "268": 1.0,
+    "269": 1.0,
+    "270": 1.0,
+    "271": 1.0,
+    "272": 1.0,
+    "273": 1.0,
+    "274": 1.0,
+    "275": 1.0,
+    "276": 1.0,
+    "277": 1.0,
+    "278": 1.0,
+    "279": 1.0,
+    "280": 1.0,
+    "281": 1.0,
+    "282": 1.0,
+    "283": 1.0,
+    "284": 1.0,
+    "285": 1.0,
+    "286": 1.0,
+    "287": 1.0
+  },
+  "gods": [
+    {
+      "id": "agents_skills_unlazy_scripts_lib_dispatch_updatedispatch",
+      "label": "updateDispatch()",
+      "degree": 16
+    },
+    {
+      "id": "agents_skills_unlazy_scripts_lib_gates_readstableregularfile",
+      "label": "readStableRegularFile()",
+      "degree": 15
+    },
+    {
+      "id": "agents_skills_unlazy_scripts_lib_gates_withfilelock",
+      "label": "withFileLock()",
+      "degree": 14
+    },
+    {
+      "id": "agents_skills_unlazy_readme_unlazy",
+      "label": "unlazy",
+      "degree": 14
+    },
+    {
+      "id": "agents_skills_unlazy_scripts_lib_gates_writeatomic",
+      "label": "writeAtomic()",
+      "degree": 13
+    },
+    {
+      "id": "agents_skills_unlazy_scripts_lib_gates_resolvetarget",
+      "label": "resolveTarget()",
+      "degree": 12
+    },
+    {
+      "id": "agents_skills_unlazy_scripts_lib_gates_claimleases",
+      "label": "claimLeases()",
+      "degree": 12
+    },
+    {
+      "id": "02_areas_01_systeme_execution_fiche_video_reviser_le_soir_vidéo_comment_réviser_le_soir_après_les_cours_quand_tu_es_crevé",
+      "label": "📺 Vidéo : Comment réviser le soir APRÈS LES COURS quand tu es CREVÉ",
+      "degree": 12
+    },
+    {
+      "id": "02_areas_01_systeme_execution_skills_agents_skills_de_l_équipe_d_agents_vue_centralisée",
+      "label": "🤖 Skills de l'Équipe d'Agents — Vue Centralisée",
+      "degree": 12
+    },
+    {
+      "id": "agents_skills_unlazy_scripts_lib_dispatch_validatestate",
+      "label": "validateState()",
+      "degree": 11
+    }
+  ],
+  "surprises": [
+    {
+      "source": "MOC Naming Convention (Obsidian Graph)",
+      "target": "MOC Templates & BuJo",
+      "source_files": [
+        "_bmad-output/brainstorming/brainstorm-obsidian-graph-view-2026-08-24/.memlog.md",
+        "03_Resources/Templates_BuJo/MOC_Templates_BuJo.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "persist()",
+      "target": "writeAtomic()",
+      "source_files": [
+        ".agents/skills/unlazy/scripts/install-hooks.mjs",
+        ".agents/skills/unlazy/scripts/lib/gates.mjs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities; peripheral node `persist()` unexpectedly reaches hub `writeAtomic()`"
+    },
+    {
+      "source": "readLedgerFile()",
+      "target": "readStableRegularFile()",
+      "source_files": [
+        ".agents/skills/unlazy/scripts/gate-check.mjs",
+        ".agents/skills/unlazy/scripts/lib/gates.mjs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "loadLedger()",
+      "target": "parseGates()",
+      "source_files": [
+        ".agents/skills/unlazy/scripts/gate-check.mjs",
+        ".agents/skills/unlazy/scripts/lib/gates.mjs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "signature()",
+      "target": "sha256()",
+      "source_files": [
+        ".agents/skills/unlazy/scripts/gate-check.mjs",
+        ".agents/skills/unlazy/scripts/lib/gates.mjs"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `⚡ Skills de Dave — Productivité & Focus` connect `Community 25` to `Community 0`?",
+      "why": "High betweenness centrality (0.016) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `🤖 Skills de l'Équipe d'Agents — Vue Centralisée` connect `Community 42` to `Community 0`?",
+      "why": "High betweenness centrality (0.015) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Chronotype & Energie Sommeil`, `Renommage 99_Meta vers vie_perso`, `Agents Fonctionnements` to the rest of the system?",
+      "why": "970 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.055944055944055944 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.05027322404371585 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.041666666666666664 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.043478260869565216 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

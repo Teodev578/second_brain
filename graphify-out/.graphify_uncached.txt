@@ -1,0 +1,369 @@
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/anais_secrétaire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/camille_finances.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/dave_productivite.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/ines_relations.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/lea_organisation.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/lucas_coach_vie.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/noe_sante.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/raphael_exploration.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/sophie_bienetre.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/plugins/personal-team/agents/thomas_reflexion.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/.github/workflows/test.yml
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/CHANGELOG.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/CONTRIBUTING.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/README.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/SECURITY.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/SKILL.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/agents/openai.yaml
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/references/dispatch.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/references/gates.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/references/method.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/references/orchestration.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/references/parallel.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/references/token-economy.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/research/validation-protocol.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/templates/PLAN.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/templates/gates-leaf.md
+/home/fabien/Documents/Agent/persona_team/second_brain/.agents/skills/unlazy/templates/gates-node.md
+/home/fabien/Documents/Agent/persona_team/second_brain/AGENTS.md
+/home/fabien/Documents/Agent/persona_team/second_brain/Acceuil.md
+/home/fabien/Documents/Agent/persona_team/second_brain/Centre_de_control.md
+/home/fabien/Documents/Agent/persona_team/second_brain/Sans titre.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/MOC_Creativite_&_Textes.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/Ma_Progression_Sketching.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/A chaque saison je créés mes problèmes.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/A l'église on me dit que je fais semblant d'être introverti.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ai-je vraiment besoin de me lamenter.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Alors qu'on m'explique à quoi sa sert.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Arrête.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Attendre la mort pour savoir qui m'aime j'ai pas envie.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Aucun homme ne peut voler cette paix.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Aujourd'hui j'ai rien fait de ma journée de merde et c'est.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Aujourd'hui.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Avant, je pensais que quelque chose clochait chez moi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/C'est drôle mais je n'ai aucune idée de par où commencer.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/C'est enfin l'aube de ma nuit noire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/C'est plus fort que moi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/C'est sans doute vrai, je regarde trop en arrière.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/C'est égoïste de penser qu'on trouvera mieux.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Car je n'ai pas le droit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ce matin je me suis encore réveillé.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ce qui reste (2).md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ce qui reste.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Cet endroit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ceux qui ont bon cœur se feront mettre à terre, par ceux.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ceux qui te connaissent mal te diront que le problème,.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Chapitre 1  Ce que nous étions.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Chaque soir elle veut lire qui je suis.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Chaque soir la lune s'ennuie.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Chercher du sens ça sert à quoi en vrai.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Conclusion.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/C’est comme on peut, pas comme on veut.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Dada m'aimais beaucoup, j'ai merdé dada me parle moins.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Dans ma tête tout est clair, mes idées sombres se promènent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Dernièrement.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Des fois on avance, je sais, plus rien ne sera comme avant.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Désolé si maintenant je n'en fais qu'à ma tête.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Elle disparaît souvent, je lui demande si elle sauve le.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Et je me suis posé cette question depuis longtemps.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Et je pense avoir trouvé le moyen.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Et si demain le ciel sera meilleur.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Et un jour l'oisillon quittera le nid.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Every days.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Faisais-je tant pitié que ça.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Fatigue.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Frère, je sais très bien ce que c'est.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Gif.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Honestly.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Il agite l'eau déjà troublée de mes pensées.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ils disent et je refuse de croire que cette vie est vaine.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ils me té-ma en chelou comme si je venais de namek.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ils vivent avec la version qui les arrange de toi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Indécis.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai beaucoup appris mais je continue de faire le con.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai brûlé l'essence de mon réservoir.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai charbonné là où on n'avait rien à me donner.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai conscience que je masque ta présence par du bruit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai du blé à battre, mais je suis si fatiguée en même temps.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai pas de rêve de voyage.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai pas eu le temps de tout ce que pense.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai pas ma place ici comme une blanche dans un gbaka.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai pour principe d'écouter personne, désolé.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai tellement fuis, j'ai oublier pourquoi je cours.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai toujours ces mêmes pensées dans mon esprit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'ai éteins un feu que j'alimente encore.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'essaie de comprendre pourquoi cela m'effraie tant.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'essaie de me comprendre pour avancer.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'observe le monde, je me fais tout seul des films.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J'vois rien, au moins y'a pas d'aveugle qui me guide.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je comprends pas pourquoi je cherche à plaire au femme.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je dois tout séparer une bonne fois pour toute.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je me sens perdu pourtant si près du rivage.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je ne suivrai aucun de vos Canva.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je pense que finalement que j'ai peur d'aimer.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je sais pas, je sais pas.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je sais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je suis l'agneau déguisé en loup, dans chacune de vos.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je suis le seul à voir mes combats.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je vis ma nuit noire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Je vois.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J’ai assez écouté vos mauvais conseils pour savoir quoi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J’ai finalement trouvé le moyen d’etre libre.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/J’ai le bruit du monde qui étouffe mon appel.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/L'esprit qui me ronge se nomme le doute.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/La vie t'a mis à terre, alors pourquoi t'y reste.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/La vérité, j'essaie de l'aimer mais j'ai si peur de mon père.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Le bruit dans mon esprit refuse de mourir.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Le bruit du monde étouffe mon appel.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Les enfants grandissent et changent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Les mauvaises choses ont une fin.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Leur indifférence c'est ce qui amplifiai ma douleur.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Leur indifférence est ce qui amplifiait ma douleur.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/M'en voulez pas pour les raisons que je pense.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Ma solitude me fait sentir moins seul.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Maybe.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Me faisant marcher je te courrait après.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Mes démons j'écoute moins ce qu'ils ont à me dire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Mon frère, je sais ce que ça fait.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Même avec la rage, je me retiens de les frappé.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/On m'a dit que je ne prenais pas assez Dieu au sérieux.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/On m'a toujours dit poursuit tes passions et jamais l'argent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/On vit un peu à l’aveuglette, on prie afin que Dieu nous.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/On voit souvent chez les autres ce qu’on regarde en soit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Parfois.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Peut être.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Pourquoi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Presence.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Pulsions.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Quand je parlais personne n'écoutais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Quand je suis seul.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Que celui qui veut voler ma paix viennent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Si tout le monde écoutait tout le monde à quel moment.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Solitude.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Tomber c'est humain, ça fait pas de nous des mauvaises.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Toujours cette question qui revient.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Tout le monde ne pense pas comme toi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Tout va bien.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Tu sais déjà, dans mon esprit c'est le désordre.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Tu sais hier soir j’ai encore rêver de toi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Une partie.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Vous devriez voir à quel point c'est brisé en moi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/À quoi aurait ressembler ma vie.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/À temps.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Étais-je vraiment aussi mauvais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Finances/Bilan_&_Budget_Financier.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Finances/Estimation dépense.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Finances/Skills_Camille.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Relations/MOC_Relations_Social.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Chronotype_&_Energie_Sommeil.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Circuit_Pompes_Maison.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Gestion_Sucre_Cafe_&_Cortisol.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Programme_Physique.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Sante_Bien_Etre.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Skills_Noé.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Santé/Suivi_Guerison_Anxiete.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Activer le Don de Prophétie — Jermaine & Rebecca Francis.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Bible_Et_Foi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Tarry for the Spirit D1.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/The Spirit of Grace and Faith D2.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/MOC_Prieres_&_Enseignements.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/080826.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/230826  isabelle.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Certains endroits.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Dieu est ta source, les hommes sont des ressources.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/En ce moment j'ai peur de manquer de performance.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Encore un autre jour où je me perds en route.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Et si ce monde n'avait jamais été sombre.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/J'ai cette sensation d'être quelqu'un de mauvais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/J'ai dû faire une pause.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/J'ai mes jambes pour m'enfuir.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/J'avais cette sensation de n'être jamais seul.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Je pense avoir compris.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Jusqu'où mon besoin de plaire aura détruit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/L'une des capacités les plus essentielles du chrétiens est.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/L'univers.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/La maison du potier.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Les bonnes choses demandent toujours du temps.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Maintenant on va parler des faits.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Mes doutes, le pied sur le frein, mon ambition sur.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Personne ne voyait rien.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Prie ton tous le même Dieu.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Prophecy 250726.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Que dois je faire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/Prieres_&_Enseignements/Tu penses que sa te fera du mal de résister.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/The Divine Art of Spiritual Discernment.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/les trois voix.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Spiritualité/l’Alignement Divin.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Antidotes_Anti_Overthinking_&_BuJo.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-24_Lundi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-25_Mardi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-26_Mercredi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-27_Jeudi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-29_Samedi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-30_Dimanche.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-08-31_Lundi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-09-03_Jeudi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-09-07_Lundi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/2026-09-07_Revue_Hebdo.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/SYNC_NOTION.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Daily_Logs/Template_Daily_Log.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Fiche_Video_Recommencer_Mes_Etudes.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Fiche_Video_Reviser_le_Soir.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Fiche_Video_Two_Notebook_System.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/MOC_Systeme_Execution.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Notion_MCP_Setup.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Organisation_&_Vision_Fabien.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Profil_Context_Fabien.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Routine_Night_Owl_Optimisee.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Skills_Agents.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Skills_Anaïs.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Système/Skills_Dave.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Action_battant_Doutes.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/-   Table des matières.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/- Je me pose 1000 questions.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/1) Introduction.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Actuellement c'est un peu compliqué.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Actuellement ça fait que deux jours que je me suis pas br..md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Au fond, un parent reste un enfant qui a eu un enfant..md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Aujourd'hui encore.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Aujourd'hui je me suis réveillé et j'avais envie de rien.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Aujourd'hui la tâche me paraît insupportable.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Avant de devenir facile les choses seront d'abord dure.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Briquet.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/C'est de leurs fautes.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/C'est quoi la place de la prière.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ce feu en moi depuis tout petit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ce n'est pas grave.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ce n'est pas mon problème.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ce que j'ai fuisa fini par me détruire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ce que j'en fais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ce qui me dérange.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Cette personne je n'ai pas envie d'appeler son nom. Mais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ceux qui t'aiment te.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Chaque jour je me dis aujourd’hui c’est bon j’arrête, mais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Conversation.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Des fois j'ai vraiment cette sensation qu'il y a quelqu'un.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/En ce moment mes émotions jouent les montagnes russes..md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/En fin de compte.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/En vrai si c’est pas toi c’est pas grave.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Encore.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Enfaite ca demande du courage.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Enfaite je ne ressens plus grand chose.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Enfaite.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Et je me rends compte d'une chose.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Et je me rends compte.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Il est peut être temps.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/J'ai l'impression qu'il ne s'agit pas d'un manque de.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je cherche.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je comprends plus vraiment.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je fais ma part des choses afin qu'il fasse les siennes.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je ne sais comment le nommer.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je ne sais même plus à quel moment j'ai commencé à avoir.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je ne sais pas pourquoi je doute autant.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je n’ai jamais vraiment eu quelqu’un.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Je pense sincèrement que je suis pas nul.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Jusqu'où mon désir de plaire m'aura détruit.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/J’aimerais que tu arrêtes de te soucier de comment les.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Le plus gros des poisons ce n'est pas la compagnie des.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Le problème était que j'avais en permanence l'impression de.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Les gens me demandent pourquoi je tiens tant que ça à.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Lettre à un futur moi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Maintenant ce que je vais faire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Mes pensées sont une fête, qui ne s'arrête jamais.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Mon âme est le centre de mes soucis.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/My bad.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Nobody.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Où j'ai grandi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Pour eux à chaque fois le problème c'est toi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Pourquoi cela me dérange d'être moi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Pourquoi cette sensation.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Pourquoi devrait-on apprécier quelqu'un comme moi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Pourquoi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Prend courage.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Qu'est ce que je sais faire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Quand vous pouvez.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Remplace la discipline par de l'amour, et tout viendra tout.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Sans pression.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Seconde(l’idee reste le temps qui passe ).md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Si klk te parle de ces problèmes ou a des problèmes stp.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Sincèrement pour être honnête je ne sais pas pourquoi je.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Sur le coup je n'ai aucune idée de par où commencer.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/T'as tous les problèmes du monde.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Teo David.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Toute chose à un début et une fin.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Tu as peur de quoi.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Un jour j'achetais du soja( nourriture africaine se.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Viens ce moment.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Journal_Introspection/Ça va prendre du temps.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/MOC_Journal_Introspection.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Stratégie_organisation.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/Vision_Long_Terme.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/carousel_insta.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/organisation.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Vision/stop_overthinking.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/Entretient_Trucs_A_Savoir.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/My_Dev_Life.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/apprentisage_du_code.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/commandes_antigravity.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/l'Animation UI et du Design Web.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/pourquoi_les_saas_echouent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/processus_design.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Ingenierie_Code_UX_UI/sous_agent_antigravitty.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Templates_BuJo/MOC_Templates_BuJo.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Templates_BuJo/Template - Bilan Hebdomadaire.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📚 Ressources/Templates_BuJo/Template - Bullet Journal (BuJo).md
+/home/fabien/Documents/Agent/persona_team/second_brain/📥 Inbox/Note_Fatigue_Coupure_Jugement.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📥 Inbox/Recherche_Bonnes_Pratiques_Sketching.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📦 Archives/Agents_Gelés/Skills_Inès.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📦 Archives/Agents_Gelés/Skills_Lucas.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📦 Archives/Agents_Gelés/Skills_Léa.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📦 Archives/Agents_Gelés/Skills_Raphaël.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📦 Archives/Agents_Gelés/Skills_Sophie.md
+/home/fabien/Documents/Agent/persona_team/second_brain/📦 Archives/Agents_Gelés/Skills_Thomas.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Agent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Daily_Logs.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/GATES.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Graphify/.graphify_uncached.txt
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Graphify/2026-08-25/GRAPH_REPORT.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Graphify/GRAPH_REPORT.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Graphify/graph.html
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Capture Inbox.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Carousel.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Client.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Decision (ADR).md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Note Atomique.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Projet.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/Templates/Template - Session Agent.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/_bmad-output/brainstorming/brainstorm-obsidian-graph-view-2026-08-24/.memlog.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🔧 Meta/all_files.txt
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Certifications_Tech/Certification_Full_Stack_FreeCodeCamp.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Certifications_Tech/Certifications.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Charis_Web/Arborescence_Portfolio_OnePage.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Charis_Web/Charis_Web_Recap.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Charis_Web/GATES.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Charis_Web/Moodboard_Charis_Web.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Charis_Web/Processus_Design_Charis_Web.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Charis_Web/Projet_Charis_Web.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Clients/Architecte_BTP/Client_Architecte_BTP.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Clients/Expert_Logistique_Dior/Contact_Expert_Logistique.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Contenu_Instagram/Carousel_Skills_IA_pour_Devs.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Contenu_Instagram/Pipeline_Instagram.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/Documentation/Architecture_Offline_First.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/Documentation/Flux_Ecrans_App.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/Documentation/Modele_Donnees_SQLite_Supabase.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/Documentation/agents_fonctionnements.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/Documentation/résumé_agent_ia.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/MOC_Stockly.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Stockly_SaaS/Projet_Stockly.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🚀 Projets/Typonator/Typonator.md
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/18E5B433-DBCC-4683-8B69-CFC651983070.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/1A66D3C4-3624-4FD3-8EE3-7D4C01AC30C7.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/31739BE4-0173-4C81-93FC-92F7FA42B4F7.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/5C396CD9-9B23-4EAE-BF83-7F48AE44A3BE.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/5DB34E66-815C-4E9D-A9F5-FD298B7AA5F4.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/67AF26F4-A12B-4679-8A2E-C9BFB7B47751.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/843406A2-E06F-402E-B153-6BFDFD25F629.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/A88092D5-E6A5-4C7C-A7EE-95F35BB37441.JPG
+/home/fabien/Documents/Agent/persona_team/second_brain/🌿 Domaines/Créativité/Sketching_Boxes_Progress/B0FF3164-AACA-447A-9ACD-395921F4FBE5.JPG

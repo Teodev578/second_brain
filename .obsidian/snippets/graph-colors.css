@@ -1,0 +1,118 @@
+/* ============================================
+   Graph Colors — Second Brain Fabien
+   Coloration par dossiers PARA + tags
+   ============================================ */
+
+/* --- Dossiers PARA --- */
+
+/* Projets (violet) */
+.graph-view.color-fill-01-projects {
+  --color-fill-node: #cc77ff;
+}
+
+/* Santé (vert) */
+.graph-view.color-fill-sante {
+  --color-fill-node: #2ecc71;
+}
+
+/* Boussole & Mindset (bleu) */
+.graph-view.color-fill-boussole {
+  --color-fill-node: #3498db;
+}
+
+/* Système & Exécution (orange) */
+.graph-view.color-fill-systeme {
+  --color-fill-node: #ff8c00;
+}
+
+/* Finances (jaune) */
+.graph-view.color-fill-finances {
+  --color-fill-node: #d69e2e;
+}
+
+/* Relations (rose) */
+.graph-view.color-fill-relations {
+  --color-fill-node: #ffb6c1;
+}
+
+/* Créativité (magenta) */
+.graph-view.color-fill-creativite {
+  --color-fill-node: #a855f7;
+}
+
+/* Ressources (gris) */
+.graph-view.color-fill-ressources {
+  --color-fill-node: #95a5a6;
+}
+
+/* Archives (rouge sombre) */
+.graph-view.color-fill-archives {
+  --color-fill-node: #721c24;
+}
+
+/* BMAD output (cyan) */
+.graph-view.color-fill-bmad {
+  --color-fill-node: #a0e4e4;
+}
+
+/* --- Tags (via frontmatter ou inline) --- */
+
+/* #projet → violet */
+.tag[href="#projet"],
+.graph-view .node[href="#projet"] {
+  --color-fill-node: #cc77ff;
+}
+
+/* #sante → vert */
+.tag[href="#sante"],
+.graph-view .node[href="#sante"] {
+  --color-fill-node: #2ecc71;
+}
+
+/* #mindset → bleu */
+.tag[href="#mindset"],
+.graph-view .node[href="#mindset"] {
+  --color-fill-node: #3498db;
+}
+
+/* #urgent → rouge vif */
+.tag[href="#urgent"],
+.graph-view .node[href="#urgent"] {
+  --color-fill-node: #e74c3c;
+}
+
+/* #stockly → violet intense */
+.tag[href="#stockly"],
+.graph-view .node[href="#stockly"] {
+  --color-fill-node: #9b59b6;
+}
+
+/* #charis → doré */
+.tag[href="#charis"],
+.graph-view .node[href="#charis"] {
+  --color-fill-node: #f1c40f;
+}
+
+/* #veille → cyan */
+.tag[href="#veille"],
+.graph-view .node[href="#veille"] {
+  --color-fill-node: #00bcd4;
+}
+
+/* #diario → orange clair */
+.tag[href="#diario"],
+.graph-view .node[href="#diario"] {
+  --color-fill-node: #ff9800;
+}
+
+/* --- Améliorations visuelles graphe --- */
+
+/* Nœuds plus doux */
+.graph-view.color-fill {
+  opacity: 0.85;
+}
+
+/* Légèrement plus grand sur hover */
+.graph-view .node:hover {
+  filter: brightness(1.2);
+}

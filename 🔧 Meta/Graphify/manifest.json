@@ -1,0 +1,2036 @@
+{
+  "01_Projects/Stockly_SaaS/Documentation/agents_fonctionnements.md": {
+    "mtime": 1787598733.763657,
+    "seen": 1788608995.487349,
+    "ast_hash": "6cb3942b2b96ac2ee2411bb177474ce1",
+    "semantic_hash": "6cb3942b2b96ac2ee2411bb177474ce1"
+  },
+  "01_Projects/Stockly_SaaS/Documentation/r\u00e9sum\u00e9_agent_ia.md": {
+    "mtime": 1787598733.7639627,
+    "seen": 1788608995.487353,
+    "ast_hash": "82d5ba901b6091347129887a5c2353cb",
+    "semantic_hash": "82d5ba901b6091347129887a5c2353cb"
+  },
+  "01_Projects/Stockly_SaaS/Projet_Stockly.md": {
+    "mtime": 1788467501.2422757,
+    "seen": 1788608995.4873555,
+    "ast_hash": "b4dac644be7aad0f808042b5e0ac4579",
+    "semantic_hash": "b4dac644be7aad0f808042b5e0ac4579"
+  },
+  "02_Areas/04_Sante_&_Vitalite/Chronotype_&_Energie_Sommeil.md": {
+    "mtime": 1787742247.7365417,
+    "seen": 1788608995.487391,
+    "ast_hash": "bdde6910968e84eea229794bc4f181f8",
+    "semantic_hash": "bdde6910968e84eea229794bc4f181f8"
+  },
+  "03_Resources/Templates_BuJo/MOC_Templates_BuJo.md": {
+    "mtime": 1788608293.387786,
+    "seen": 1788608995.487792,
+    "ast_hash": "ede008a621dff8d3da65a9235d9733de",
+    "semantic_hash": "ede008a621dff8d3da65a9235d9733de"
+  },
+  "_bmad-output/brainstorming/brainstorm-obsidian-graph-view-2026-08-24/.memlog.md": {
+    "mtime": 1787595299.080656,
+    "seen": 1787598162.3685145,
+    "ast_hash": "ea88d23f3c56d13a3651fd47b37da512",
+    "semantic_hash": "ea88d23f3c56d13a3651fd47b37da512"
+  },
+  "generate_json.py": {
+    "mtime": 1787597961.9897223,
+    "seen": 1787700479.106483,
+    "ast_hash": "aece635093fbdbabbb2b94e6160e370a",
+    "semantic_hash": "aece635093fbdbabbb2b94e6160e370a"
+  },
+  "read_chunk.py": {
+    "mtime": 1787597889.7268336,
+    "seen": 1787700479.1064894,
+    "ast_hash": "4fe9a37d4f6894fe1f5b8129afd11cc5",
+    "semantic_hash": "4fe9a37d4f6894fe1f5b8129afd11cc5"
+  },
+  "01_Projects/Certifications_Tech/Certification_Full_Stack_FreeCodeCamp.md": {
+    "mtime": 1787656296.942513,
+    "seen": 1788608995.4873383,
+    "ast_hash": "4e73ffb70ffeb043398a7b899f7dd7e5",
+    "semantic_hash": "4e73ffb70ffeb043398a7b899f7dd7e5"
+  },
+  "01_Projects/Certifications_Tech/Certifications.md": {
+    "mtime": 1788600997.8520422,
+    "seen": 1788608995.4873397,
+    "ast_hash": "13e30f59da7fef2d26732e5a8f2f7263",
+    "semantic_hash": "13e30f59da7fef2d26732e5a8f2f7263"
+  },
+  "02_Areas/01_Systeme_&_Execution/Antidotes_Anti_Overthinking_&_BuJo.md": {
+    "mtime": 1788600955.7662792,
+    "seen": 1788608995.4873571,
+    "ast_hash": "7b7f07f11f25dc2cd830ab02e023fe6f",
+    "semantic_hash": "7b7f07f11f25dc2cd830ab02e023fe6f"
+  },
+  "02_Areas/01_Systeme_&_Execution/Fiche_Video_Two_Notebook_System.md": {
+    "mtime": 1787656765.2089481,
+    "seen": 1788608995.487375,
+    "ast_hash": "dfb5a4d8c617e47b402c98137ec2290f",
+    "semantic_hash": "dfb5a4d8c617e47b402c98137ec2290f"
+  },
+  "02_Areas/01_Systeme_&_Execution/MOC_Systeme_Execution.md": {
+    "mtime": 1788608293.3427873,
+    "seen": 1788608995.4873772,
+    "ast_hash": "635ec1f7161ab805a7a6164e92e46abf",
+    "semantic_hash": "635ec1f7161ab805a7a6164e92e46abf"
+  },
+  "02_Areas/01_Systeme_&_Execution/Organisation_&_Vision_Fabien.md": {
+    "mtime": 1787866370.0122585,
+    "seen": 1788608995.4873815,
+    "ast_hash": "d88721459722d4e88af580f289eb394e",
+    "semantic_hash": "d88721459722d4e88af580f289eb394e"
+  },
+  "02_Areas/01_Systeme_&_Execution/Profil_Context_Fabien.md": {
+    "mtime": 1788467964.2417402,
+    "seen": 1788608995.487383,
+    "ast_hash": "11535c125b25dfdfb990ac6377f068ad",
+    "semantic_hash": "11535c125b25dfdfb990ac6377f068ad"
+  },
+  "02_Areas/04_Sante_&_Vitalite/Gestion_Sucre_Cafe_&_Cortisol.md": {
+    "mtime": 1787742247.7505414,
+    "seen": 1788608995.4873922,
+    "ast_hash": "ed49a35df661a76f734ba23237e458f0",
+    "semantic_hash": "ed49a35df661a76f734ba23237e458f0"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Boussole_de_Vie_&_Horizons.md": {
+    "mtime": 1787742262.4192977,
+    "seen": 1788608995.4873989,
+    "ast_hash": "3db96879f7eb02e93933105e13d49f96",
+    "semantic_hash": "3db96879f7eb02e93933105e13d49f96"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Strat\u00e9gie_organisation.md": {
+    "mtime": 1787742262.455297,
+    "seen": 1788608995.487553,
+    "ast_hash": "0a41bf927e5c01629a3769dfe1f0ff3d",
+    "semantic_hash": "0a41bf927e5c01629a3769dfe1f0ff3d"
+  },
+  "02_Areas/05_Boussole_&_Mindset/carousel_insta.md": {
+    "mtime": 1787742262.4682968,
+    "seen": 1788608995.4875553,
+    "ast_hash": "4017a8f2bb7f24af6a75abf399a70ae3",
+    "semantic_hash": "4017a8f2bb7f24af6a75abf399a70ae3"
+  },
+  "02_Areas/05_Boussole_&_Mindset/organisation.md": {
+    "mtime": 1787742262.4782968,
+    "seen": 1788608995.4875567,
+    "ast_hash": "fb88afd5c30d967a074a9c1af0efe513",
+    "semantic_hash": "fb88afd5c30d967a074a9c1af0efe513"
+  },
+  "02_Areas/05_Boussole_&_Mindset/stop_overthinking.md": {
+    "mtime": 1787742262.4902964,
+    "seen": 1788608995.4875576,
+    "ast_hash": "42a58424efd760f3ebcacc2d952309ce",
+    "semantic_hash": "42a58424efd760f3ebcacc2d952309ce"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Les R\u00e9alit\u00e9s du Monde Spirituel : T\u00e9moignage de J\u00e9r\u00e9my Potin.md": {
+    "mtime": 1787742392.497182,
+    "seen": 1788608995.4877315,
+    "ast_hash": "87688c75f80a50288525a3550d349e68",
+    "semantic_hash": "87688c75f80a50288525a3550d349e68"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/The Divine Art of Spiritual Discernment.md": {
+    "mtime": 1787742392.5131817,
+    "seen": 1788608995.4877777,
+    "ast_hash": "faef318eda1025d65242d9e4edaeba14",
+    "semantic_hash": "faef318eda1025d65242d9e4edaeba14"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/les trois voix.md": {
+    "mtime": 1787742392.5321813,
+    "seen": 1788608995.4877791,
+    "ast_hash": "e60795c801e163b2ce3b7995291656b4",
+    "semantic_hash": "e60795c801e163b2ce3b7995291656b4"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/l\u2019Alignement Divin.md": {
+    "mtime": 1787742392.5431812,
+    "seen": 1788608995.487781,
+    "ast_hash": "d1fd24fdae1e7cf53fb340f59469e768",
+    "semantic_hash": "d1fd24fdae1e7cf53fb340f59469e768"
+  },
+  "03_Resources/Ingenierie_Produit/apprentisage_du_code.md": {
+    "mtime": 1787741835.3550358,
+    "seen": 1788608995.4877846,
+    "ast_hash": "678a45a4f710a9242b6a9b668dd3b951",
+    "semantic_hash": "678a45a4f710a9242b6a9b668dd3b951"
+  },
+  "03_Resources/Ingenierie_Produit/commandes_antigravity.md": {
+    "mtime": 1787741835.3590357,
+    "seen": 1788608995.4877858,
+    "ast_hash": "fa3ec32ff27355495e7acb0e3e4b2b04",
+    "semantic_hash": "fa3ec32ff27355495e7acb0e3e4b2b04"
+  },
+  "03_Resources/Ingenierie_Produit/l'Animation UI et du Design Web.md": {
+    "mtime": 1787741835.3640356,
+    "seen": 1788608995.487787,
+    "ast_hash": "60f2bc5b53d4e8e682a91f34ccac6cf0",
+    "semantic_hash": "60f2bc5b53d4e8e682a91f34ccac6cf0"
+  },
+  "03_Resources/Ingenierie_Produit/processus_design.md": {
+    "mtime": 1787771214.086983,
+    "seen": 1788608995.4877894,
+    "ast_hash": "42d0be535198a4bed57bbcfe5baeb8e9",
+    "semantic_hash": "42d0be535198a4bed57bbcfe5baeb8e9"
+  },
+  "03_Resources/Ingenierie_Produit/sous_agent_antigravitty.md": {
+    "mtime": 1787741835.3760355,
+    "seen": 1788608995.4877908,
+    "ast_hash": "e3c43ca7e3a86bc9955f99a16c070585",
+    "semantic_hash": "e3c43ca7e3a86bc9955f99a16c070585"
+  },
+  "03_Resources/Templates_BuJo/Template - Bilan Hebdomadaire.md": {
+    "mtime": 1787598733.7567964,
+    "seen": 1788608995.4877937,
+    "ast_hash": "edf99c6233f45b6aeb7d48ea8c3d182e",
+    "semantic_hash": "edf99c6233f45b6aeb7d48ea8c3d182e"
+  },
+  "03_Resources/Templates_BuJo/Template - Bullet Journal (BuJo).md": {
+    "mtime": 1787598733.756578,
+    "seen": 1788608995.487795,
+    "ast_hash": "66b9611a3583a7153f3632146a934a68",
+    "semantic_hash": "66b9611a3583a7153f3632146a934a68"
+  },
+  "all_files.txt": {
+    "mtime": 1787597889.7959604,
+    "seen": 1787685483.6706357,
+    "ast_hash": "204c3460b81cd5bb7c484d1499c79a9a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/unlazy/package.json": {
+    "mtime": 1788126227.7820392,
+    "seen": 1788608995.487121,
+    "ast_hash": "e57b7a112e5ad758e62f025262f23043",
+    "semantic_hash": "e57b7a112e5ad758e62f025262f23043"
+  },
+  ".agents/skills/unlazy/scripts/dispatch-check.mjs": {
+    "mtime": 1788126227.7831059,
+    "seen": 1788608995.4871273,
+    "ast_hash": "a6bdaf98ec469ce8650c1a27ebf82218",
+    "semantic_hash": "a6bdaf98ec469ce8650c1a27ebf82218"
+  },
+  ".agents/skills/unlazy/scripts/gate-check.mjs": {
+    "mtime": 1788126227.7831159,
+    "seen": 1788608995.4871302,
+    "ast_hash": "96befaf398871123c2df51b29ce753a5",
+    "semantic_hash": "96befaf398871123c2df51b29ce753a5"
+  },
+  ".agents/skills/unlazy/scripts/gate-lint.mjs": {
+    "mtime": 1788126227.7831337,
+    "seen": 1788608995.487132,
+    "ast_hash": "d91a8befc0b95cca1fbf7f94d9554e40",
+    "semantic_hash": "d91a8befc0b95cca1fbf7f94d9554e40"
+  },
+  ".agents/skills/unlazy/scripts/install-hooks.mjs": {
+    "mtime": 1788126227.7831337,
+    "seen": 1788608995.4871335,
+    "ast_hash": "efb76b5b27c3a21235ec33dccb009b1d",
+    "semantic_hash": "efb76b5b27c3a21235ec33dccb009b1d"
+  },
+  ".agents/skills/unlazy/scripts/lib/check-supervisor.mjs": {
+    "mtime": 1788126227.7841456,
+    "seen": 1788608995.4871347,
+    "ast_hash": "eeaa237894f6a2c0bdae63930c4e5ea9",
+    "semantic_hash": "eeaa237894f6a2c0bdae63930c4e5ea9"
+  },
+  ".agents/skills/unlazy/scripts/lib/dispatch.mjs": {
+    "mtime": 1788126227.784158,
+    "seen": 1788608995.487136,
+    "ast_hash": "dec00dff5819e3fee86326669f6e62f9",
+    "semantic_hash": "dec00dff5819e3fee86326669f6e62f9"
+  },
+  ".agents/skills/unlazy/scripts/lib/gates.mjs": {
+    "mtime": 1788126227.7841768,
+    "seen": 1788608995.4871376,
+    "ast_hash": "7f170b0764329bed3ebc04b673f5e7ce",
+    "semantic_hash": "7f170b0764329bed3ebc04b673f5e7ce"
+  },
+  ".agents/skills/unlazy/scripts/lib/process-tree.mjs": {
+    "mtime": 1788126227.7842002,
+    "seen": 1788608995.4871385,
+    "ast_hash": "730e6a88bd4056117e6fe81df508ca0e",
+    "semantic_hash": "730e6a88bd4056117e6fe81df508ca0e"
+  },
+  ".agents/skills/unlazy/scripts/lib/regex-worker.mjs": {
+    "mtime": 1788126227.7842002,
+    "seen": 1788608995.4871407,
+    "ast_hash": "770b235aee256f24247eb5bbcefee669",
+    "semantic_hash": "770b235aee256f24247eb5bbcefee669"
+  },
+  ".agents/skills/unlazy/scripts/stop-hook.mjs": {
+    "mtime": 1788126227.7832139,
+    "seen": 1788608995.4871433,
+    "ast_hash": "db9935267a8ed0267bc870e162b1993b",
+    "semantic_hash": "db9935267a8ed0267bc870e162b1993b"
+  },
+  ".agents/skills/unlazy/tests/contract-tests.mjs": {
+    "mtime": 1788126227.7832541,
+    "seen": 1788608995.4871447,
+    "ast_hash": "8698c7618e86c2c4a28af4863fc6c189",
+    "semantic_hash": "8698c7618e86c2c4a28af4863fc6c189"
+  },
+  ".agents/skills/unlazy/tests/dispatch-tests.mjs": {
+    "mtime": 1788126227.783282,
+    "seen": 1788608995.487146,
+    "ast_hash": "370d00941ca0e5d4b188829c4f91293e",
+    "semantic_hash": "370d00941ca0e5d4b188829c4f91293e"
+  },
+  ".agents/skills/unlazy/tests/hardening-tests.mjs": {
+    "mtime": 1788126227.783282,
+    "seen": 1788608995.487147,
+    "ast_hash": "72b7ae08ce585aafb5ca8e922d1e1ac6",
+    "semantic_hash": "72b7ae08ce585aafb5ca8e922d1e1ac6"
+  },
+  ".agents/skills/unlazy/tests/lint-tests.mjs": {
+    "mtime": 1788126227.7833054,
+    "seen": 1788608995.4871483,
+    "ast_hash": "832054412b7023abfd5b86f242a01634",
+    "semantic_hash": "832054412b7023abfd5b86f242a01634"
+  },
+  ".agents/skills/unlazy/tests/run-tests.mjs": {
+    "mtime": 1788126227.7833054,
+    "seen": 1788608995.487149,
+    "ast_hash": "db1af62375cbd502f5e6695118d723ce",
+    "semantic_hash": "db1af62375cbd502f5e6695118d723ce"
+  },
+  ".agents/skills/unlazy/tests/self-check.mjs": {
+    "mtime": 1788126227.783337,
+    "seen": 1788608995.4871502,
+    "ast_hash": "217537e01e1d40f2f7dbfe8de2f3ef2d",
+    "semantic_hash": "217537e01e1d40f2f7dbfe8de2f3ef2d"
+  },
+  ".agents/skills/unlazy/tests/stress-tests.mjs": {
+    "mtime": 1788126227.783337,
+    "seen": 1788608995.4871514,
+    "ast_hash": "208f514e390baa030412e7028e08733f",
+    "semantic_hash": "208f514e390baa030412e7028e08733f"
+  },
+  "skills-lock.json": {
+    "mtime": 1788126227.800105,
+    "seen": 1788608995.4873168,
+    "ast_hash": "13e6ca0a5533899c7038a8b58683cdd1",
+    "semantic_hash": "13e6ca0a5533899c7038a8b58683cdd1"
+  },
+  ".agents/skills/unlazy/CHANGELOG.md": {
+    "mtime": 1788126227.781929,
+    "seen": 1788608995.4873183,
+    "ast_hash": "ce21820c7f30558bcdb2ed494607a9e0",
+    "semantic_hash": "ce21820c7f30558bcdb2ed494607a9e0"
+  },
+  ".agents/skills/unlazy/CONTRIBUTING.md": {
+    "mtime": 1788126227.7819095,
+    "seen": 1788608995.4873195,
+    "ast_hash": "d9a2409b85c4de2e469f7e9b04f23858",
+    "semantic_hash": "d9a2409b85c4de2e469f7e9b04f23858"
+  },
+  ".agents/skills/unlazy/README.md": {
+    "mtime": 1788126227.7819912,
+    "seen": 1788608995.487321,
+    "ast_hash": "8c06e4467c1d04fee693b5aa725491cd",
+    "semantic_hash": "8c06e4467c1d04fee693b5aa725491cd"
+  },
+  ".agents/skills/unlazy/SECURITY.md": {
+    "mtime": 1788126227.7819912,
+    "seen": 1788608995.4873216,
+    "ast_hash": "0a473b184af438ba3d501b6033b5570b",
+    "semantic_hash": "0a473b184af438ba3d501b6033b5570b"
+  },
+  ".agents/skills/unlazy/SKILL.md": {
+    "mtime": 1788126227.7820191,
+    "seen": 1788608995.487323,
+    "ast_hash": "9d9a500a6b0a35ee8ee8119a7a32beb5",
+    "semantic_hash": "9d9a500a6b0a35ee8ee8119a7a32beb5"
+  },
+  ".agents/skills/unlazy/references/dispatch.md": {
+    "mtime": 1788126227.7830062,
+    "seen": 1788608995.4873242,
+    "ast_hash": "1397d12a045d6470471f1f43159bd166",
+    "semantic_hash": "1397d12a045d6470471f1f43159bd166"
+  },
+  ".agents/skills/unlazy/references/gates.md": {
+    "mtime": 1788126227.783016,
+    "seen": 1788608995.4873257,
+    "ast_hash": "500dd45ad97ad342d89e18e88c2e17f7",
+    "semantic_hash": "500dd45ad97ad342d89e18e88c2e17f7"
+  },
+  ".agents/skills/unlazy/references/method.md": {
+    "mtime": 1788126227.7830315,
+    "seen": 1788608995.4873264,
+    "ast_hash": "0fa006031e3e941da95a4fce86896d07",
+    "semantic_hash": "0fa006031e3e941da95a4fce86896d07"
+  },
+  ".agents/skills/unlazy/references/orchestration.md": {
+    "mtime": 1788126227.7830315,
+    "seen": 1788608995.4873283,
+    "ast_hash": "093874677073ec3df58898cfcbdf9d7a",
+    "semantic_hash": "093874677073ec3df58898cfcbdf9d7a"
+  },
+  ".agents/skills/unlazy/references/parallel.md": {
+    "mtime": 1788126227.7830591,
+    "seen": 1788608995.4873295,
+    "ast_hash": "2dd8c9956e410eb3b1df089880aa4288",
+    "semantic_hash": "2dd8c9956e410eb3b1df089880aa4288"
+  },
+  ".agents/skills/unlazy/references/token-economy.md": {
+    "mtime": 1788126227.7830591,
+    "seen": 1788608995.487331,
+    "ast_hash": "d5629e567d1e8dd0dd5ccd701ffd51c5",
+    "semantic_hash": "d5629e567d1e8dd0dd5ccd701ffd51c5"
+  },
+  ".agents/skills/unlazy/research/validation-protocol.md": {
+    "mtime": 1788126227.7830818,
+    "seen": 1788608995.4873316,
+    "ast_hash": "c286269401c0592536fb4977977fa12d",
+    "semantic_hash": "c286269401c0592536fb4977977fa12d"
+  },
+  ".agents/skills/unlazy/templates/PLAN.md": {
+    "mtime": 1788126227.783232,
+    "seen": 1788608995.4873328,
+    "ast_hash": "ed04fadadecbd2ff70768cd0ee024faf",
+    "semantic_hash": "ed04fadadecbd2ff70768cd0ee024faf"
+  },
+  ".agents/skills/unlazy/templates/gates-leaf.md": {
+    "mtime": 1788126227.783232,
+    "seen": 1788608995.4873338,
+    "ast_hash": "d66d61919d7f9a39ae517aa2d00ef374",
+    "semantic_hash": "d66d61919d7f9a39ae517aa2d00ef374"
+  },
+  ".agents/skills/unlazy/templates/gates-node.md": {
+    "mtime": 1788126227.7832437,
+    "seen": 1788608995.487335,
+    "ast_hash": "17d03f9a8a8da033e2ee4793ddc1e229",
+    "semantic_hash": "17d03f9a8a8da033e2ee4793ddc1e229"
+  },
+  "00_Inbox/Note_Fatigue_Coupure_Jugement.md": {
+    "mtime": 1788600955.7672791,
+    "seen": 1788608995.4873362,
+    "ast_hash": "b35e324971a62ecb28c065451f03f8b7",
+    "semantic_hash": "b35e324971a62ecb28c065451f03f8b7"
+  },
+  "01_Projects/Charis_Web/Arborescence_Portfolio_OnePage.md": {
+    "mtime": 1788035941.889582,
+    "seen": 1788608995.4873407,
+    "ast_hash": "430f3f1d0d15beed2f0d438679d12e45",
+    "semantic_hash": "430f3f1d0d15beed2f0d438679d12e45"
+  },
+  "01_Projects/Charis_Web/GATES.md": {
+    "mtime": 1788035010.39823,
+    "seen": 1788608995.4873421,
+    "ast_hash": "7d53cfab2b783ad5b5e8f2e0c268f050",
+    "semantic_hash": "7d53cfab2b783ad5b5e8f2e0c268f050"
+  },
+  "01_Projects/Charis_Web/Moodboard_Charis_Web.md": {
+    "mtime": 1788035847.9666207,
+    "seen": 1788608995.487343,
+    "ast_hash": "613cc1d68a11d01f4c09caea0acfeed3",
+    "semantic_hash": "613cc1d68a11d01f4c09caea0acfeed3"
+  },
+  "01_Projects/Charis_Web/Processus_Design_Charis_Web.md": {
+    "mtime": 1788035921.8108037,
+    "seen": 1788608995.487344,
+    "ast_hash": "569bd13bf26e883513975be425797a23",
+    "semantic_hash": "569bd13bf26e883513975be425797a23"
+  },
+  "01_Projects/Charis_Web_Recap.md": {
+    "mtime": 1788608293.333285,
+    "seen": 1788608995.4873455,
+    "ast_hash": "66161d53645a13c73f899115a84c5ea6",
+    "semantic_hash": "66161d53645a13c73f899115a84c5ea6"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-24_Lundi.md": {
+    "mtime": 1787697211.8818521,
+    "seen": 1788608995.4873598,
+    "ast_hash": "72fc7ea2576bb2c0ef472c5fdeda5a8e",
+    "semantic_hash": "72fc7ea2576bb2c0ef472c5fdeda5a8e"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-25_Mardi.md": {
+    "mtime": 1787697631.605076,
+    "seen": 1788608995.4873614,
+    "ast_hash": "73c45975a4a8386540b491ecd0f736f5",
+    "semantic_hash": "73c45975a4a8386540b491ecd0f736f5"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-26_Mercredi.md": {
+    "mtime": 1787787675.5560982,
+    "seen": 1788608995.4873636,
+    "ast_hash": "8ac1ce8efe84bc8550be9104623503fe",
+    "semantic_hash": "8ac1ce8efe84bc8550be9104623503fe"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-27_Jeudi.md": {
+    "mtime": 1787851062.3897917,
+    "seen": 1788608995.4873648,
+    "ast_hash": "888d57bf15603213bbd849584378d0ec",
+    "semantic_hash": "888d57bf15603213bbd849584378d0ec"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-29_Samedi.md": {
+    "mtime": 1788038692.3755338,
+    "seen": 1788608995.487366,
+    "ast_hash": "ad9594db4c5e55d9904aef440b8c0b6b",
+    "semantic_hash": "ad9594db4c5e55d9904aef440b8c0b6b"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-30_Dimanche.md": {
+    "mtime": 1788127328.7254183,
+    "seen": 1788608995.487367,
+    "ast_hash": "3949472ca701d43c6de4df7948414d39",
+    "semantic_hash": "3949472ca701d43c6de4df7948414d39"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-08-31_Lundi.md": {
+    "mtime": 1788212263.078091,
+    "seen": 1788608995.4873679,
+    "ast_hash": "60d9bf40156fa0adb38a34cb2611f260",
+    "semantic_hash": "60d9bf40156fa0adb38a34cb2611f260"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/2026-09-03_Jeudi.md": {
+    "mtime": 1788467480.3894734,
+    "seen": 1788608995.4873693,
+    "ast_hash": "0a7ef2c8c57adb689e6b8aadcd1bdf93",
+    "semantic_hash": "0a7ef2c8c57adb689e6b8aadcd1bdf93"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/SYNC_NOTION.md": {
+    "mtime": 1787699719.2594604,
+    "seen": 1788608995.4873703,
+    "ast_hash": "e861eb4660620983aad2ab1010860f84",
+    "semantic_hash": "e861eb4660620983aad2ab1010860f84"
+  },
+  "02_Areas/01_Systeme_&_Execution/Daily_Logs/Template_Daily_Log.md": {
+    "mtime": 1788038865.8047051,
+    "seen": 1788608995.4873712,
+    "ast_hash": "924ff2705245544788a3f2b0db4504f0",
+    "semantic_hash": "924ff2705245544788a3f2b0db4504f0"
+  },
+  "02_Areas/01_Systeme_&_Execution/Fiche_Video_Recommencer_Mes_Etudes.md": {
+    "mtime": 1788600965.7752192,
+    "seen": 1788608995.4873726,
+    "ast_hash": "09fe3c06c66ed5426abee48771576121",
+    "semantic_hash": "09fe3c06c66ed5426abee48771576121"
+  },
+  "02_Areas/01_Systeme_&_Execution/Fiche_Video_Reviser_le_Soir.md": {
+    "mtime": 1788540227.190611,
+    "seen": 1788608995.4873736,
+    "ast_hash": "6bb97fe9e593344c011ee2204690ca32",
+    "semantic_hash": "6bb97fe9e593344c011ee2204690ca32"
+  },
+  "02_Areas/01_Systeme_&_Execution/Notion_MCP_Setup.md": {
+    "mtime": 1787699200.3279982,
+    "seen": 1788608995.4873781,
+    "ast_hash": "0fd2bbab4613c5956b4d35619b8e0eb9",
+    "semantic_hash": "0fd2bbab4613c5956b4d35619b8e0eb9"
+  },
+  "02_Areas/01_Systeme_&_Execution/Routine_Night_Owl_Optimisee.md": {
+    "mtime": 1787866341.9255722,
+    "seen": 1788608995.4873838,
+    "ast_hash": "9e49054e5c282d9d067b68989f575a2a",
+    "semantic_hash": "9e49054e5c282d9d067b68989f575a2a"
+  },
+  "02_Areas/01_Systeme_&_Execution/Skills_Agents.md": {
+    "mtime": 1788127576.613421,
+    "seen": 1788608995.4873848,
+    "ast_hash": "630b40d95e17ea9063f7f0d27f8707ec",
+    "semantic_hash": "630b40d95e17ea9063f7f0d27f8707ec"
+  },
+  "02_Areas/01_Systeme_&_Execution/Skills_Ana\u00efs.md": {
+    "mtime": 1787954332.1381884,
+    "seen": 1788608995.4873865,
+    "ast_hash": "b066a3d7b6c3108b993f91ffbfebe719",
+    "semantic_hash": "b066a3d7b6c3108b993f91ffbfebe719"
+  },
+  "02_Areas/01_Systeme_&_Execution/Skills_Dave.md": {
+    "mtime": 1787954342.9312375,
+    "seen": 1788608995.4873872,
+    "ast_hash": "f8424b1c31b6d986d9ac69cf80d6be25",
+    "semantic_hash": "f8424b1c31b6d986d9ac69cf80d6be25"
+  },
+  "02_Areas/02_Finances_&_Patrimoine/Skills_Camille.md": {
+    "mtime": 1787954501.6885464,
+    "seen": 1788608995.4873881,
+    "ast_hash": "0d112dd6e2825b1d1ff85d9c71052806",
+    "semantic_hash": "0d112dd6e2825b1d1ff85d9c71052806"
+  },
+  "02_Areas/03_Maison_&_Environnement/Skills_L\u00e9a.md": {
+    "mtime": 1787954512.1545806,
+    "seen": 1788608995.4873893,
+    "ast_hash": "05ccb10c7e3c42eaa1cf64ac14dde397",
+    "semantic_hash": "05ccb10c7e3c42eaa1cf64ac14dde397"
+  },
+  "02_Areas/04_Sante_&_Vitalite/Programme_Physique.md": {
+    "mtime": 1788125984.231726,
+    "seen": 1788608995.4873934,
+    "ast_hash": "cd02c58e31a4d7e2bcf2f3e910ba0491",
+    "semantic_hash": "cd02c58e31a4d7e2bcf2f3e910ba0491"
+  },
+  "02_Areas/04_Sante_&_Vitalite/Sante_Bien_Etre.md": {
+    "mtime": 1788608293.347787,
+    "seen": 1788608995.4873948,
+    "ast_hash": "a7eea3f3f5288442a04f8929555ed370",
+    "semantic_hash": "a7eea3f3f5288442a04f8929555ed370"
+  },
+  "02_Areas/04_Sante_&_Vitalite/Skills_No\u00e9.md": {
+    "mtime": 1788125601.8470542,
+    "seen": 1788608995.4873962,
+    "ast_hash": "226cc542c0e5c0f42c0f924005bf3444",
+    "semantic_hash": "226cc542c0e5c0f42c0f924005bf3444"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Action_battant_Doutes.md": {
+    "mtime": 1788039192.482605,
+    "seen": 1788608995.4873974,
+    "ast_hash": "2b714c62e63c482428f7cc8d8a01a96c",
+    "semantic_hash": "2b714c62e63c482428f7cc8d8a01a96c"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/-   Table des mati\u00e8res.md": {
+    "mtime": 1788608428.4132295,
+    "seen": 1788608995.4874005,
+    "ast_hash": "69ec6f320eebefeedd921dd1bec1320b",
+    "semantic_hash": "69ec6f320eebefeedd921dd1bec1320b"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/- Je me pose 1000 questions.md": {
+    "mtime": 1788608428.4133008,
+    "seen": 1788608995.4874017,
+    "ast_hash": "b849aca86b8bc5886d92a9740a28f01f",
+    "semantic_hash": "b849aca86b8bc5886d92a9740a28f01f"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/1) Introduction.md": {
+    "mtime": 1788608428.412784,
+    "seen": 1788608995.4874027,
+    "ast_hash": "f9ce39cb583485adb5461cdfe4cab9ee",
+    "semantic_hash": "f9ce39cb583485adb5461cdfe4cab9ee"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Actuellement c'est un peu compliqu\u00e9.md": {
+    "mtime": 1788608428.4178953,
+    "seen": 1788608995.4874043,
+    "ast_hash": "41514b638fea0644c0574eb852645bac",
+    "semantic_hash": "41514b638fea0644c0574eb852645bac"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Actuellement \u00e7a fait que deux jours que je me suis pas br..md": {
+    "mtime": 1788608428.4183834,
+    "seen": 1788608995.4874058,
+    "ast_hash": "8ab06f4e6739cdef0de9399ad4d8bf70",
+    "semantic_hash": "8ab06f4e6739cdef0de9399ad4d8bf70"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Au fond, un parent reste un enfant qui a eu un enfant..md": {
+    "mtime": 1788608428.413545,
+    "seen": 1788608995.4874067,
+    "ast_hash": "7d3f0511c59e87a8e85715d00e2e1024",
+    "semantic_hash": "7d3f0511c59e87a8e85715d00e2e1024"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Aujourd'hui encore.md": {
+    "mtime": 1788608428.417335,
+    "seen": 1788608995.487408,
+    "ast_hash": "453f979f2cc44a3eebbbcc3567734897",
+    "semantic_hash": "453f979f2cc44a3eebbbcc3567734897"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Aujourd'hui je me suis r\u00e9veill\u00e9 et j'avais envie de rien.md": {
+    "mtime": 1788608428.4150612,
+    "seen": 1788608995.4874096,
+    "ast_hash": "63afb6cb3f29f5ea06be8b0b846e0955",
+    "semantic_hash": "63afb6cb3f29f5ea06be8b0b846e0955"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Aujourd'hui la t\u00e2che me para\u00eet insupportable.md": {
+    "mtime": 1788608428.41124,
+    "seen": 1788608995.4874127,
+    "ast_hash": "2113c46138db43102b91adfe112ef030",
+    "semantic_hash": "2113c46138db43102b91adfe112ef030"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Avant de devenir facile les choses seront d'abord dure.md": {
+    "mtime": 1788608428.4120758,
+    "seen": 1788608995.4874144,
+    "ast_hash": "137cb7984fb318c7a17153efa652b048",
+    "semantic_hash": "137cb7984fb318c7a17153efa652b048"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Briquet.md": {
+    "mtime": 1788608428.415661,
+    "seen": 1788608995.487416,
+    "ast_hash": "ec423c97f274cc090c7ad4d3daf5f2ce",
+    "semantic_hash": "ec423c97f274cc090c7ad4d3daf5f2ce"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/C'est de leurs fautes.md": {
+    "mtime": 1788608428.4133854,
+    "seen": 1788608995.4874177,
+    "ast_hash": "c9cdae9d5067f467b7a19be9dced85a8",
+    "semantic_hash": "c9cdae9d5067f467b7a19be9dced85a8"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/C'est quoi la place de la pri\u00e8re.md": {
+    "mtime": 1788608428.411323,
+    "seen": 1788608995.4874203,
+    "ast_hash": "2fcab5dfcff93a53d66b6b88c0a772bf",
+    "semantic_hash": "2fcab5dfcff93a53d66b6b88c0a772bf"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Ce n'est pas grave.md": {
+    "mtime": 1788608428.4260283,
+    "seen": 1788608995.4874222,
+    "ast_hash": "fdf1956939f362ec5bfc2d2219f9dcc0",
+    "semantic_hash": "fdf1956939f362ec5bfc2d2219f9dcc0"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Ce n'est pas mon probl\u00e8me.md": {
+    "mtime": 1788608428.415199,
+    "seen": 1788608995.487424,
+    "ast_hash": "7ee798fd8ea5bb6041345fe46f770a8b",
+    "semantic_hash": "7ee798fd8ea5bb6041345fe46f770a8b"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Ce que j'ai fuisa fini par me d\u00e9truire.md": {
+    "mtime": 1788608428.4200892,
+    "seen": 1788608995.487426,
+    "ast_hash": "315337fd8ddbb5468c7529f02e0d5a7d",
+    "semantic_hash": "315337fd8ddbb5468c7529f02e0d5a7d"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Ce que j'en fais.md": {
+    "mtime": 1788608428.4259603,
+    "seen": 1788608995.4874284,
+    "ast_hash": "179a97d0f4cbbf514c4f169e72ad35b1",
+    "semantic_hash": "179a97d0f4cbbf514c4f169e72ad35b1"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Ce qui me d\u00e9range.md": {
+    "mtime": 1788608428.414001,
+    "seen": 1788608995.4874318,
+    "ast_hash": "5784ca5ac31a5f36b650469d05eb0200",
+    "semantic_hash": "5784ca5ac31a5f36b650469d05eb0200"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Cette personne je n'ai pas envie d'appeler son nom. Mais.md": {
+    "mtime": 1788608428.4121854,
+    "seen": 1788608995.487433,
+    "ast_hash": "d135bf6eb1c46188a3d32edde3e15ced",
+    "semantic_hash": "d135bf6eb1c46188a3d32edde3e15ced"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Ceux qui t'aiment te.md": {
+    "mtime": 1788608428.415253,
+    "seen": 1788608995.4874344,
+    "ast_hash": "763e9d597b8c26092bc268994dfd9207",
+    "semantic_hash": "763e9d597b8c26092bc268994dfd9207"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Chaque jour je me dis aujourd\u2019hui c\u2019est bon j\u2019arr\u00eate, mais.md": {
+    "mtime": 1788608428.4171517,
+    "seen": 1788608995.4874372,
+    "ast_hash": "ba03d322202a5e2f847c387c53d091fe",
+    "semantic_hash": "ba03d322202a5e2f847c387c53d091fe"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Conversation.md": {
+    "mtime": 1788608428.410676,
+    "seen": 1788608995.487439,
+    "ast_hash": "8757c69e1e4b1f02bf77a8c7696ab9d5",
+    "semantic_hash": "8757c69e1e4b1f02bf77a8c7696ab9d5"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Des fois j'ai vraiment cette sensation qu'il y a quelqu'un.md": {
+    "mtime": 1788608428.4109576,
+    "seen": 1788608995.4874406,
+    "ast_hash": "a45adc67c556af7a7e259be554ffa2ce",
+    "semantic_hash": "a45adc67c556af7a7e259be554ffa2ce"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/En ce moment mes \u00e9motions jouent les montagnes russes..md": {
+    "mtime": 1788608428.4137542,
+    "seen": 1788608995.4874644,
+    "ast_hash": "5b1458c3012e82568491f939a73421d2",
+    "semantic_hash": "5b1458c3012e82568491f939a73421d2"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/En fin de compte.md": {
+    "mtime": 1788608428.4258773,
+    "seen": 1788608995.487469,
+    "ast_hash": "afb104586cb3cc16623cc51eb32e1732",
+    "semantic_hash": "afb104586cb3cc16623cc51eb32e1732"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/En vrai si c\u2019est pas toi c\u2019est pas grave.md": {
+    "mtime": 1788608428.4163406,
+    "seen": 1788608995.487472,
+    "ast_hash": "763be222265ca0eb9ecd172cc68d1f23",
+    "semantic_hash": "763be222265ca0eb9ecd172cc68d1f23"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Encore.md": {
+    "mtime": 1788608428.4249032,
+    "seen": 1788608995.487474,
+    "ast_hash": "a4ce77ce1c8c60c28724ee236d063ace",
+    "semantic_hash": "a4ce77ce1c8c60c28724ee236d063ace"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Enfaite ca demande du courage.md": {
+    "mtime": 1788608428.4215298,
+    "seen": 1788608995.487476,
+    "ast_hash": "d192cb54e5262bd5c571bf84c83adfbb",
+    "semantic_hash": "d192cb54e5262bd5c571bf84c83adfbb"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Enfaite je ne ressens plus grand chose.md": {
+    "mtime": 1788608428.4149806,
+    "seen": 1788608995.487478,
+    "ast_hash": "1b687193896b93e37cc575b33628adbd",
+    "semantic_hash": "1b687193896b93e37cc575b33628adbd"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Enfaite.md": {
+    "mtime": 1788608428.4272356,
+    "seen": 1788608995.48748,
+    "ast_hash": "f6fb31ea457f24bbea5f7a69b0eea009",
+    "semantic_hash": "f6fb31ea457f24bbea5f7a69b0eea009"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Et je me rends compte d'une chose.md": {
+    "mtime": 1788608428.412422,
+    "seen": 1788608995.4874818,
+    "ast_hash": "a1f8bd3a93f7e4c3b422aa1ceac0e684",
+    "semantic_hash": "a1f8bd3a93f7e4c3b422aa1ceac0e684"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Et je me rends compte.md": {
+    "mtime": 1788608428.4175584,
+    "seen": 1788608995.4874837,
+    "ast_hash": "8fc33fe6a15c3718fb1a24d036e7513f",
+    "semantic_hash": "8fc33fe6a15c3718fb1a24d036e7513f"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Il est peut \u00eatre temps.md": {
+    "mtime": 1788608428.4255419,
+    "seen": 1788608995.4874864,
+    "ast_hash": "b36eefde299cc5fbd7085e7e4c450a3b",
+    "semantic_hash": "b36eefde299cc5fbd7085e7e4c450a3b"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/J'ai l'impression qu'il ne s'agit pas d'un manque de.md": {
+    "mtime": 1788608428.4180422,
+    "seen": 1788608995.4874878,
+    "ast_hash": "33821496f52a68ca6778831c3388bd65",
+    "semantic_hash": "33821496f52a68ca6778831c3388bd65"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je cherche.md": {
+    "mtime": 1788608428.425473,
+    "seen": 1788608995.4874895,
+    "ast_hash": "3317dab448e50de7484de2028cda582e",
+    "semantic_hash": "3317dab448e50de7484de2028cda582e"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je comprends plus vraiment.md": {
+    "mtime": 1788608428.4114687,
+    "seen": 1788608995.4874907,
+    "ast_hash": "106661d8977896f52f0fdccc4655dfd6",
+    "semantic_hash": "106661d8977896f52f0fdccc4655dfd6"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je fais ma part des choses afin qu'il fasse les siennes.md": {
+    "mtime": 1788608428.4239938,
+    "seen": 1788608995.4874918,
+    "ast_hash": "6e6ed8d29f8cd67346e343b08e437845",
+    "semantic_hash": "6e6ed8d29f8cd67346e343b08e437845"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je ne sais comment le nommer.md": {
+    "mtime": 1788608428.4198325,
+    "seen": 1788608995.4874928,
+    "ast_hash": "d84352f36863d7a2c42090a2b791a865",
+    "semantic_hash": "d84352f36863d7a2c42090a2b791a865"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je ne sais m\u00eame plus \u00e0 quel moment j'ai commenc\u00e9 \u00e0 avoir.md": {
+    "mtime": 1788608428.4202096,
+    "seen": 1788608995.4874947,
+    "ast_hash": "2bdb0379a698d02394fe0644f252907b",
+    "semantic_hash": "2bdb0379a698d02394fe0644f252907b"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je ne sais pas pourquoi je doute autant.md": {
+    "mtime": 1788608428.411601,
+    "seen": 1788608995.4874961,
+    "ast_hash": "b1eeeb8e61a82cb0b5b7d91e1efc3df3",
+    "semantic_hash": "b1eeeb8e61a82cb0b5b7d91e1efc3df3"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je n\u2019ai jamais vraiment eu quelqu\u2019un.md": {
+    "mtime": 1788608428.4111512,
+    "seen": 1788608995.487498,
+    "ast_hash": "eedbd8e47e71593765cf5f723bbb6640",
+    "semantic_hash": "eedbd8e47e71593765cf5f723bbb6640"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Je pense sinc\u00e8rement que je suis pas nul.md": {
+    "mtime": 1788608428.418456,
+    "seen": 1788608995.4874995,
+    "ast_hash": "ea0eecff4c0452a57c873a3ccdae7a7e",
+    "semantic_hash": "ea0eecff4c0452a57c873a3ccdae7a7e"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Jusqu'o\u00f9 mon d\u00e9sir de plaire m'aura d\u00e9truit.md": {
+    "mtime": 1788608428.4113934,
+    "seen": 1788608995.4875011,
+    "ast_hash": "b2c642a7327afc9e6fbbcf15218ad05d",
+    "semantic_hash": "b2c642a7327afc9e6fbbcf15218ad05d"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/J\u2019aimerais que tu arr\u00eates de te soucier de comment les.md": {
+    "mtime": 1788608428.417485,
+    "seen": 1788608995.4875028,
+    "ast_hash": "fe2cb016479488f8d6fceb01ef01e985",
+    "semantic_hash": "fe2cb016479488f8d6fceb01ef01e985"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Le plus gros des poisons ce n'est pas la compagnie des.md": {
+    "mtime": 1788608428.4122603,
+    "seen": 1788608995.4875042,
+    "ast_hash": "388b9c355d15e9d6aff3871db827a1f1",
+    "semantic_hash": "388b9c355d15e9d6aff3871db827a1f1"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Le probl\u00e8me \u00e9tait que j'avais en permanence l'impression de.md": {
+    "mtime": 1788608428.4197164,
+    "seen": 1788608995.4875057,
+    "ast_hash": "4acf0b86648cb41d4f00ce0abaa94047",
+    "semantic_hash": "4acf0b86648cb41d4f00ce0abaa94047"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Les gens me demandent pourquoi je tiens tant que \u00e7a \u00e0.md": {
+    "mtime": 1788608428.4178333,
+    "seen": 1788608995.4875073,
+    "ast_hash": "fa80bd21e4266c1e81fab9f4f59a5d37",
+    "semantic_hash": "fa80bd21e4266c1e81fab9f4f59a5d37"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Lettre \u00e0 un futur moi.md": {
+    "mtime": 1788608428.4174116,
+    "seen": 1788608995.487509,
+    "ast_hash": "1b27d3ac4d967503a51952ec1dd2d351",
+    "semantic_hash": "1b27d3ac4d967503a51952ec1dd2d351"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Maintenant ce que je vais faire.md": {
+    "mtime": 1788608428.417965,
+    "seen": 1788608995.48751,
+    "ast_hash": "48782d94b1d1e0122aff1878b18ee397",
+    "semantic_hash": "48782d94b1d1e0122aff1878b18ee397"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Mes pens\u00e9es sont une f\u00eate, qui ne s'arr\u00eate jamais.md": {
+    "mtime": 1788608428.4245331,
+    "seen": 1788608995.4875119,
+    "ast_hash": "81e5fc6fc6813fc3a354dcfd09fd0286",
+    "semantic_hash": "81e5fc6fc6813fc3a354dcfd09fd0286"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Mon \u00e2me est le centre de mes soucis.md": {
+    "mtime": 1788608428.4108684,
+    "seen": 1788608995.4875133,
+    "ast_hash": "003ca66464998af0df36d55d878b06d8",
+    "semantic_hash": "003ca66464998af0df36d55d878b06d8"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/My bad.md": {
+    "mtime": 1788608428.4281378,
+    "seen": 1788608995.4875143,
+    "ast_hash": "b14bd6edc2d54ad3dd9aea67f50d814b",
+    "semantic_hash": "b14bd6edc2d54ad3dd9aea67f50d814b"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Nobody.md": {
+    "mtime": 1788608428.4249716,
+    "seen": 1788608995.4875154,
+    "ast_hash": "61ee0efdbc864485a97171092a2e3631",
+    "semantic_hash": "61ee0efdbc864485a97171092a2e3631"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/O\u00f9 j'ai grandi.md": {
+    "mtime": 1788608428.4243598,
+    "seen": 1788608995.4875169,
+    "ast_hash": "46be251b5ce95661a83968a9680aa5e3",
+    "semantic_hash": "46be251b5ce95661a83968a9680aa5e3"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Pour eux \u00e0 chaque fois le probl\u00e8me c'est toi.md": {
+    "mtime": 1788608428.413914,
+    "seen": 1788608995.4875185,
+    "ast_hash": "8f92879714be0070449868ecea88df76",
+    "semantic_hash": "8f92879714be0070449868ecea88df76"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Pourquoi cela me d\u00e9range d'\u00eatre moi.md": {
+    "mtime": 1788608428.4136539,
+    "seen": 1788608995.48752,
+    "ast_hash": "be0cfd02d69a02a0f1155fb02858b30a",
+    "semantic_hash": "be0cfd02d69a02a0f1155fb02858b30a"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Pourquoi cette sensation.md": {
+    "mtime": 1788608428.4105842,
+    "seen": 1788608995.4875207,
+    "ast_hash": "12a556a13263f83d997eda0294598a8e",
+    "semantic_hash": "12a556a13263f83d997eda0294598a8e"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Pourquoi devrait-on appr\u00e9cier quelqu'un comme moi.md": {
+    "mtime": 1788608428.4148974,
+    "seen": 1788608995.4875224,
+    "ast_hash": "4943ca7aa23e76426c68e729f447676f",
+    "semantic_hash": "4943ca7aa23e76426c68e729f447676f"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Pourquoi.md": {
+    "mtime": 1788608428.4250982,
+    "seen": 1788608995.4875236,
+    "ast_hash": "20e5652c329c87995e33a8d68a928261",
+    "semantic_hash": "20e5652c329c87995e33a8d68a928261"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Prend courage.md": {
+    "mtime": 1788608428.4124846,
+    "seen": 1788608995.4875245,
+    "ast_hash": "38377c2a84d03ccab214d2e60b983969",
+    "semantic_hash": "38377c2a84d03ccab214d2e60b983969"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Qu'est ce que je sais faire.md": {
+    "mtime": 1788608428.4095285,
+    "seen": 1788608995.487526,
+    "ast_hash": "9ab0928700f75b972c42e4d4c6eb41a0",
+    "semantic_hash": "9ab0928700f75b972c42e4d4c6eb41a0"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Quand vous pouvez.md": {
+    "mtime": 1788608428.4250386,
+    "seen": 1788608995.487527,
+    "ast_hash": "2f84cd91cc781bd12c987b0abb34fa6d",
+    "semantic_hash": "2f84cd91cc781bd12c987b0abb34fa6d"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Remplace la discipline par de l'amour, et tout viendra tout.md": {
+    "mtime": 1788608428.4239256,
+    "seen": 1788608995.4875276,
+    "ast_hash": "16805a5f6d0c5ec751cdb72ae286d15c",
+    "semantic_hash": "16805a5f6d0c5ec751cdb72ae286d15c"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Sans pression.md": {
+    "mtime": 1788608428.4110436,
+    "seen": 1788608995.487529,
+    "ast_hash": "cbd279680fb22b6728b25e2636d26174",
+    "semantic_hash": "cbd279680fb22b6728b25e2636d26174"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Seconde(l\u2019idee reste le temps qui passe ).md": {
+    "mtime": 1788608428.4248145,
+    "seen": 1788608995.4875305,
+    "ast_hash": "57636f3af1868faaf143341b1db49f6e",
+    "semantic_hash": "57636f3af1868faaf143341b1db49f6e"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Si klk te parle de ces probl\u00e8mes ou a des probl\u00e8mes stp.md": {
+    "mtime": 1788608428.4235716,
+    "seen": 1788608995.4875321,
+    "ast_hash": "aa0aa7d938573519877801f3e33842d1",
+    "semantic_hash": "aa0aa7d938573519877801f3e33842d1"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Sinc\u00e8rement pour \u00eatre honn\u00eate je ne sais pas pourquoi je.md": {
+    "mtime": 1788608428.423858,
+    "seen": 1788608995.4875333,
+    "ast_hash": "11eb5a4f6c594f7f4eab8220626b9a3c",
+    "semantic_hash": "11eb5a4f6c594f7f4eab8220626b9a3c"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Sur le coup je n'ai aucune id\u00e9e de par o\u00f9 commencer.md": {
+    "mtime": 1788608428.4169662,
+    "seen": 1788608995.4875348,
+    "ast_hash": "6253fa73a7d2744573b4d9d84e98e00c",
+    "semantic_hash": "6253fa73a7d2744573b4d9d84e98e00c"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/T'as tous les probl\u00e8mes du monde.md": {
+    "mtime": 1788608428.410478,
+    "seen": 1788608995.487537,
+    "ast_hash": "becd008656b56e46168f98b1c6040345",
+    "semantic_hash": "becd008656b56e46168f98b1c6040345"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Teo David.md": {
+    "mtime": 1788608428.4181087,
+    "seen": 1788608995.4875379,
+    "ast_hash": "a45c7b2ea95b83bde1d1e1d7843ad2f7",
+    "semantic_hash": "a45c7b2ea95b83bde1d1e1d7843ad2f7"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Toute chose \u00e0 un d\u00e9but et une fin.md": {
+    "mtime": 1788608428.4218066,
+    "seen": 1788608995.4875395,
+    "ast_hash": "2f70753ac1ba5a4b08148cd787c790e4",
+    "semantic_hash": "2f70753ac1ba5a4b08148cd787c790e4"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Tu as peur de quoi.md": {
+    "mtime": 1788608428.4128578,
+    "seen": 1788608995.4875405,
+    "ast_hash": "7385771a300e2487abbbb2b7e6aec64c",
+    "semantic_hash": "7385771a300e2487abbbb2b7e6aec64c"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Un jour j'achetais du soja( nourriture africaine se.md": {
+    "mtime": 1788608428.4209242,
+    "seen": 1788608995.4875414,
+    "ast_hash": "f8261e6a08980f9955a8044e153132a0",
+    "semantic_hash": "f8261e6a08980f9955a8044e153132a0"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/Viens ce moment.md": {
+    "mtime": 1788608428.4218779,
+    "seen": 1788608995.4875426,
+    "ast_hash": "cb5b2f2d42f8f4cdb45bfb339f912b73",
+    "semantic_hash": "cb5b2f2d42f8f4cdb45bfb339f912b73"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Journal_Introspection/\u00c7a va prendre du temps.md": {
+    "mtime": 1788608428.4123561,
+    "seen": 1788608995.487544,
+    "ast_hash": "e0b47d0ff7c535011b672f65a3d37155",
+    "semantic_hash": "e0b47d0ff7c535011b672f65a3d37155"
+  },
+  "02_Areas/05_Boussole_&_Mindset/MOC_Journal_Introspection.md": {
+    "mtime": 1788608460.426184,
+    "seen": 1788608995.4875486,
+    "ast_hash": "d5b26ffee4203075a34bfd73609eb605",
+    "semantic_hash": "d5b26ffee4203075a34bfd73609eb605"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Skills_Lucas.md": {
+    "mtime": 1787954378.7854378,
+    "seen": 1788608995.4875498,
+    "ast_hash": "82a1d813e6378588245fb2bd6bec41ca",
+    "semantic_hash": "82a1d813e6378588245fb2bd6bec41ca"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Skills_Sophie.md": {
+    "mtime": 1787954363.1213436,
+    "seen": 1788608995.4875507,
+    "ast_hash": "156916f3d1dc073073181123ac195bab",
+    "semantic_hash": "156916f3d1dc073073181123ac195bab"
+  },
+  "02_Areas/05_Boussole_&_Mindset/Vision_Long_Terme.md": {
+    "mtime": 1788608512.3949294,
+    "seen": 1788608995.487554,
+    "ast_hash": "5d8e94bf98a90bd69133e7ecd5ebe147",
+    "semantic_hash": "5d8e94bf98a90bd69133e7ecd5ebe147"
+  },
+  "02_Areas/06_Relations_&_Social/Skills_In\u00e8s.md": {
+    "mtime": 1788127567.594496,
+    "seen": 1788608995.487559,
+    "ast_hash": "ed30e0afcde5c09b3be76cd187a0506e",
+    "semantic_hash": "ed30e0afcde5c09b3be76cd187a0506e"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/A chaque saison je cr\u00e9\u00e9s mes probl\u00e8mes.md": {
+    "mtime": 1788608428.4227912,
+    "seen": 1788608995.4875605,
+    "ast_hash": "21c20f963e85ee8ccd5aa83ac79ba623",
+    "semantic_hash": "21c20f963e85ee8ccd5aa83ac79ba623"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/A l'\u00e9glise on me dit que je fais semblant d'\u00eatre introverti.md": {
+    "mtime": 1788608428.4276357,
+    "seen": 1788608995.487562,
+    "ast_hash": "8086f0c01f2b6e3ce11edf0fe5c3ba5c",
+    "semantic_hash": "8086f0c01f2b6e3ce11edf0fe5c3ba5c"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ai-je vraiment besoin de me lamenter.md": {
+    "mtime": 1788608428.424182,
+    "seen": 1788608995.487563,
+    "ast_hash": "421fd566b6d68f4830331622077b6c23",
+    "semantic_hash": "421fd566b6d68f4830331622077b6c23"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Alors qu'on m'explique \u00e0 quoi sa sert.md": {
+    "mtime": 1788608428.4129486,
+    "seen": 1788608995.487565,
+    "ast_hash": "19ede29fe406c99a16f183a02daf7d37",
+    "semantic_hash": "19ede29fe406c99a16f183a02daf7d37"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Arr\u00eate.md": {
+    "mtime": 1788608428.4269094,
+    "seen": 1788608995.4875662,
+    "ast_hash": "b56274ce8b1c35567c08817dc2a1daf8",
+    "semantic_hash": "b56274ce8b1c35567c08817dc2a1daf8"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Attendre la mort pour savoir qui m'aime j'ai pas envie.md": {
+    "mtime": 1788608428.4099216,
+    "seen": 1788608995.4875674,
+    "ast_hash": "922e9282bb81c5d3d93a72322c7d01b3",
+    "semantic_hash": "922e9282bb81c5d3d93a72322c7d01b3"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Aucun homme ne peut voler cette paix.md": {
+    "mtime": 1788608428.4210677,
+    "seen": 1788608995.4875684,
+    "ast_hash": "cb40ea692eb766257781f8c4794c30b2",
+    "semantic_hash": "cb40ea692eb766257781f8c4794c30b2"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Aujourd'hui j'ai rien fait de ma journ\u00e9e de merde et c'est.md": {
+    "mtime": 1788608428.4148264,
+    "seen": 1788608995.4875703,
+    "ast_hash": "80c7203e2354bbf491316ce1ab18bc57",
+    "semantic_hash": "80c7203e2354bbf491316ce1ab18bc57"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Aujourd'hui.md": {
+    "mtime": 1788608428.425818,
+    "seen": 1788608995.4875712,
+    "ast_hash": "716dca5f061c90969c12af871afd9b93",
+    "semantic_hash": "716dca5f061c90969c12af871afd9b93"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Avant, je pensais que quelque chose clochait chez moi.md": {
+    "mtime": 1788608428.41769,
+    "seen": 1788608995.4875722,
+    "ast_hash": "b402513ffb1775fe70b040ed0b602c8d",
+    "semantic_hash": "b402513ffb1775fe70b040ed0b602c8d"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/C'est dr\u00f4le mais je n'ai aucune id\u00e9e de par o\u00f9 commencer.md": {
+    "mtime": 1788608428.417052,
+    "seen": 1788608995.4875739,
+    "ast_hash": "9415bcc2f78eb37c231d814b6992cac7",
+    "semantic_hash": "9415bcc2f78eb37c231d814b6992cac7"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/C'est enfin l'aube de ma nuit noire.md": {
+    "mtime": 1788608428.4207795,
+    "seen": 1788608995.4875748,
+    "ast_hash": "e5b4fe9acb6f85e2b93e61d9cc1fa1da",
+    "semantic_hash": "e5b4fe9acb6f85e2b93e61d9cc1fa1da"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/C'est plus fort que moi.md": {
+    "mtime": 1788608428.427053,
+    "seen": 1788608995.4875758,
+    "ast_hash": "0b4217df6fcfea20b0fa62cafdc78034",
+    "semantic_hash": "0b4217df6fcfea20b0fa62cafdc78034"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/C'est sans doute vrai, je regarde trop en arri\u00e8re.md": {
+    "mtime": 1788608428.4095998,
+    "seen": 1788608995.4875774,
+    "ast_hash": "4b4118c990adebb10b0c7609c0e58edc",
+    "semantic_hash": "4b4118c990adebb10b0c7609c0e58edc"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/C'est \u00e9go\u00efste de penser qu'on trouvera mieux.md": {
+    "mtime": 1788608428.4164212,
+    "seen": 1788608995.4875789,
+    "ast_hash": "41a0f020ac727b5b86aefb3c7d20ded9",
+    "semantic_hash": "41a0f020ac727b5b86aefb3c7d20ded9"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Car je n'ai pas le droit.md": {
+    "mtime": 1788608428.4262104,
+    "seen": 1788608995.4875798,
+    "ast_hash": "28f016fb29da045feeac170dec613b7c",
+    "semantic_hash": "28f016fb29da045feeac170dec613b7c"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ce matin je me suis encore r\u00e9veill\u00e9.md": {
+    "mtime": 1788608428.4151366,
+    "seen": 1788608995.4875815,
+    "ast_hash": "4e556904dceab86be8818e19dcf9878f",
+    "semantic_hash": "4e556904dceab86be8818e19dcf9878f"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ce qui reste (2).md": {
+    "mtime": 1788608428.4223888,
+    "seen": 1788608995.4875824,
+    "ast_hash": "cdfa7569db7321e87a16e14418a0fb77",
+    "semantic_hash": "cdfa7569db7321e87a16e14418a0fb77"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ce qui reste.md": {
+    "mtime": 1788608428.422195,
+    "seen": 1788608995.4875834,
+    "ast_hash": "0debba1a9aa226b7dd14716e52ae9d12",
+    "semantic_hash": "0debba1a9aa226b7dd14716e52ae9d12"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Cet endroit.md": {
+    "mtime": 1788608428.4269726,
+    "seen": 1788608995.4875846,
+    "ast_hash": "cbd0a7dd03cd732d88ed3c8c41c4792c",
+    "semantic_hash": "cbd0a7dd03cd732d88ed3c8c41c4792c"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ceux qui ont bon c\u0153ur se feront mettre \u00e0 terre, par ceux.md": {
+    "mtime": 1788608428.4246447,
+    "seen": 1788608995.487586,
+    "ast_hash": "ffd42104b55a441a26c8cb7886b16ba1",
+    "semantic_hash": "ffd42104b55a441a26c8cb7886b16ba1"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ceux qui te connaissent mal te diront que le probl\u00e8me,.md": {
+    "mtime": 1788608428.4144003,
+    "seen": 1788608995.4875877,
+    "ast_hash": "d89abff8582d5c9bf5ede374f38b56ac",
+    "semantic_hash": "d89abff8582d5c9bf5ede374f38b56ac"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Chapitre 1  Ce que nous \u00e9tions.md": {
+    "mtime": 1788608428.4118288,
+    "seen": 1788608995.4875894,
+    "ast_hash": "cb508639f55ebb122d25f97aa13d399b",
+    "semantic_hash": "cb508639f55ebb122d25f97aa13d399b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Chaque soir elle veut lire qui je suis.md": {
+    "mtime": 1788608428.4199455,
+    "seen": 1788608995.4875903,
+    "ast_hash": "d6179a6427aed1edabac4fa786a5593d",
+    "semantic_hash": "d6179a6427aed1edabac4fa786a5593d"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Chaque soir la lune s'ennuie.md": {
+    "mtime": 1788608428.4164908,
+    "seen": 1788608995.4875915,
+    "ast_hash": "638db31e55f725ae08000e1b9e127eed",
+    "semantic_hash": "638db31e55f725ae08000e1b9e127eed"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Chercher du sens \u00e7a sert \u00e0 quoi en vrai.md": {
+    "mtime": 1788608428.4206607,
+    "seen": 1788608995.487593,
+    "ast_hash": "15a13e4d555eeba2c4363cb24c25751d",
+    "semantic_hash": "15a13e4d555eeba2c4363cb24c25751d"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Conclusion.md": {
+    "mtime": 1788608428.4266176,
+    "seen": 1788608995.4875941,
+    "ast_hash": "5241dbdd059d342afd46f5b05fd20c8a",
+    "semantic_hash": "5241dbdd059d342afd46f5b05fd20c8a"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/C\u2019est comme on peut, pas comme on veut.md": {
+    "mtime": 1788608428.4226868,
+    "seen": 1788608995.4875956,
+    "ast_hash": "173539927b30c0cd35b9ca4dfd96b4b0",
+    "semantic_hash": "173539927b30c0cd35b9ca4dfd96b4b0"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Dada m'aimais beaucoup, j'ai merd\u00e9 dada me parle moins.md": {
+    "mtime": 1788608428.4156024,
+    "seen": 1788608995.487597,
+    "ast_hash": "fa173723b2cf58de3e3177da86205e7e",
+    "semantic_hash": "fa173723b2cf58de3e3177da86205e7e"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Dans ma t\u00eate tout est clair, mes id\u00e9es sombres se prom\u00e8nent.md": {
+    "mtime": 1788608428.422483,
+    "seen": 1788608995.4875987,
+    "ast_hash": "08b35dc1ce97a40c409c347918046a44",
+    "semantic_hash": "08b35dc1ce97a40c409c347918046a44"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Derni\u00e8rement.md": {
+    "mtime": 1788608428.425186,
+    "seen": 1788608995.4875998,
+    "ast_hash": "9d3f64c1f753fca8c4b14e94b8ff7c45",
+    "semantic_hash": "9d3f64c1f753fca8c4b14e94b8ff7c45"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Des fois on avance, je sais, plus rien ne sera comme avant.md": {
+    "mtime": 1788608428.4231405,
+    "seen": 1788608995.4876008,
+    "ast_hash": "356e8ad34f243ed0f3095c1ad4951759",
+    "semantic_hash": "356e8ad34f243ed0f3095c1ad4951759"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/D\u00e9sol\u00e9 si maintenant je n'en fais qu'\u00e0 ma t\u00eate.md": {
+    "mtime": 1788608428.4125724,
+    "seen": 1788608995.4876025,
+    "ast_hash": "f637212050f8f2ddbef12473cfedcee2",
+    "semantic_hash": "f637212050f8f2ddbef12473cfedcee2"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Elle dispara\u00eet souvent, je lui demande si elle sauve le.md": {
+    "mtime": 1788608428.4159343,
+    "seen": 1788608995.487604,
+    "ast_hash": "579d2a7b6838e6b98d4355da373080ec",
+    "semantic_hash": "579d2a7b6838e6b98d4355da373080ec"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Et je me suis pos\u00e9 cette question depuis longtemps.md": {
+    "mtime": 1788608428.4220881,
+    "seen": 1788608995.4876056,
+    "ast_hash": "5c219f4ba288d7d53556a98573dc9169",
+    "semantic_hash": "5c219f4ba288d7d53556a98573dc9169"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Et je pense avoir trouv\u00e9 le moyen.md": {
+    "mtime": 1788608428.4186192,
+    "seen": 1788608995.4876072,
+    "ast_hash": "491a77c60c9f517c1c6fa7194ed0b32b",
+    "semantic_hash": "491a77c60c9f517c1c6fa7194ed0b32b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Et si demain le ciel sera meilleur.md": {
+    "mtime": 1788608428.42798,
+    "seen": 1788608995.4876084,
+    "ast_hash": "15c0f69f0dcea7b7e84cabbc26d2557e",
+    "semantic_hash": "15c0f69f0dcea7b7e84cabbc26d2557e"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Et un jour l'oisillon quittera le nid.md": {
+    "mtime": 1788608428.4155324,
+    "seen": 1788608995.4876094,
+    "ast_hash": "9ce5e014fadfd4cf79de21c107b07a38",
+    "semantic_hash": "9ce5e014fadfd4cf79de21c107b07a38"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Every days.md": {
+    "mtime": 1788608428.4253426,
+    "seen": 1788608995.4876103,
+    "ast_hash": "275f337828077c5b562652befd96c0ca",
+    "semantic_hash": "275f337828077c5b562652befd96c0ca"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Faisais-je tant piti\u00e9 que \u00e7a.md": {
+    "mtime": 1788608428.416812,
+    "seen": 1788608995.4876115,
+    "ast_hash": "690d49ea49cbca626c8c3ab4409bd0ca",
+    "semantic_hash": "690d49ea49cbca626c8c3ab4409bd0ca"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Fatigue.md": {
+    "mtime": 1788608428.415726,
+    "seen": 1788608995.4876127,
+    "ast_hash": "620ed3d533aca6515d8f7d0472689429",
+    "semantic_hash": "620ed3d533aca6515d8f7d0472689429"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Fr\u00e8re, je sais tr\u00e8s bien ce que c'est.md": {
+    "mtime": 1788608428.421259,
+    "seen": 1788608995.4876142,
+    "ast_hash": "f7576133c88890a52b8251c5399865ae",
+    "semantic_hash": "f7576133c88890a52b8251c5399865ae"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Gif.md": {
+    "mtime": 1788608428.4265397,
+    "seen": 1788608995.4876153,
+    "ast_hash": "26ac8d7f73d1a6dcffd292285d62bd3b",
+    "semantic_hash": "26ac8d7f73d1a6dcffd292285d62bd3b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Honestly.md": {
+    "mtime": 1788608428.426105,
+    "seen": 1788608995.4876163,
+    "ast_hash": "8de19a8e1dfebf6221aec3fb5905b2f9",
+    "semantic_hash": "8de19a8e1dfebf6221aec3fb5905b2f9"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Il agite l'eau d\u00e9j\u00e0 troubl\u00e9e de mes pens\u00e9es.md": {
+    "mtime": 1788608428.4247186,
+    "seen": 1788608995.4876175,
+    "ast_hash": "fe693358b903dfea0cd00e2a97406635",
+    "semantic_hash": "fe693358b903dfea0cd00e2a97406635"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ils disent et je refuse de croire que cette vie est vaine.md": {
+    "mtime": 1788608428.4229674,
+    "seen": 1788608995.4876184,
+    "ast_hash": "b0b6ab6e5b3ba673295291ded4771697",
+    "semantic_hash": "b0b6ab6e5b3ba673295291ded4771697"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ils me t\u00e9-ma en chelou comme si je venais de namek.md": {
+    "mtime": 1788608428.4195428,
+    "seen": 1788608995.48762,
+    "ast_hash": "cc1825c4538306263156f2961d29f6fd",
+    "semantic_hash": "cc1825c4538306263156f2961d29f6fd"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ils vivent avec la version qui les arrange de toi.md": {
+    "mtime": 1788608428.414174,
+    "seen": 1788608995.4876213,
+    "ast_hash": "ce0ce0ca3b773749ce5a361bd5451242",
+    "semantic_hash": "ce0ce0ca3b773749ce5a361bd5451242"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ind\u00e9cis.md": {
+    "mtime": 1788608428.425602,
+    "seen": 1788608995.487623,
+    "ast_hash": "06878ac2d3b763070504c00e9bbe8958",
+    "semantic_hash": "06878ac2d3b763070504c00e9bbe8958"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai beaucoup appris mais je continue de faire le con.md": {
+    "mtime": 1788608428.4102874,
+    "seen": 1788608995.487624,
+    "ast_hash": "be639985f904cf680c0ec6300d616e08",
+    "semantic_hash": "be639985f904cf680c0ec6300d616e08"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai br\u00fbl\u00e9 l'essence de mon r\u00e9servoir.md": {
+    "mtime": 1788608428.415326,
+    "seen": 1788608995.4876254,
+    "ast_hash": "34d8f3eb8e2a80dda7ea8bc6bb5c1bd3",
+    "semantic_hash": "34d8f3eb8e2a80dda7ea8bc6bb5c1bd3"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai charbonn\u00e9 l\u00e0 o\u00f9 on n'avait rien \u00e0 me donner.md": {
+    "mtime": 1788608428.409017,
+    "seen": 1788608995.487627,
+    "ast_hash": "7756daaa8809ef3b108100e08c46c7f1",
+    "semantic_hash": "7756daaa8809ef3b108100e08c46c7f1"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai conscience que je masque ta pr\u00e9sence par du bruit.md": {
+    "mtime": 1788608428.4142597,
+    "seen": 1788608995.4876287,
+    "ast_hash": "f6be6045ab7b19e766b2dd87eb26186b",
+    "semantic_hash": "f6be6045ab7b19e766b2dd87eb26186b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai du bl\u00e9 \u00e0 battre, mais je suis si fatigu\u00e9e en m\u00eame temps.md": {
+    "mtime": 1788608428.4154556,
+    "seen": 1788608995.4876304,
+    "ast_hash": "823328bda9497c1319cfc900037ef425",
+    "semantic_hash": "823328bda9497c1319cfc900037ef425"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai pas de r\u00eave de voyage.md": {
+    "mtime": 1788608428.4216192,
+    "seen": 1788608995.4876318,
+    "ast_hash": "3c03776ab4fbb15c18793954bc212fbe",
+    "semantic_hash": "3c03776ab4fbb15c18793954bc212fbe"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai pas eu le temps de tout ce que pense.md": {
+    "mtime": 1788608428.4165597,
+    "seen": 1788608995.487633,
+    "ast_hash": "ef51afb85aac06b4e4c6b48b6c47b721",
+    "semantic_hash": "ef51afb85aac06b4e4c6b48b6c47b721"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai pas ma place ici comme une blanche dans un gbaka.md": {
+    "mtime": 1788608428.4177628,
+    "seen": 1788608995.487634,
+    "ast_hash": "3023fa137e0c040ed590fe64226ca126",
+    "semantic_hash": "3023fa137e0c040ed590fe64226ca126"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai pour principe d'\u00e9couter personne, d\u00e9sol\u00e9.md": {
+    "mtime": 1788608428.4098527,
+    "seen": 1788608995.4876354,
+    "ast_hash": "82d4fb0975914eb7b1f41611d1ce6584",
+    "semantic_hash": "82d4fb0975914eb7b1f41611d1ce6584"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai tellement fuis, j'ai oublier pourquoi je cours.md": {
+    "mtime": 1788608428.4162688,
+    "seen": 1788608995.4876366,
+    "ast_hash": "be0238793ababd0aa9459c42513ec0a0",
+    "semantic_hash": "be0238793ababd0aa9459c42513ec0a0"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai toujours ces m\u00eames pens\u00e9es dans mon esprit.md": {
+    "mtime": 1788608428.4168897,
+    "seen": 1788608995.487638,
+    "ast_hash": "91877ae1b5872297b57588f3c88eeccf",
+    "semantic_hash": "91877ae1b5872297b57588f3c88eeccf"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'ai \u00e9teins un feu que j'alimente encore.md": {
+    "mtime": 1788608428.4144745,
+    "seen": 1788608995.4876397,
+    "ast_hash": "d510e5b97bdaf5e3bd1b06107f60af0f",
+    "semantic_hash": "d510e5b97bdaf5e3bd1b06107f60af0f"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'essaie de comprendre pourquoi cela m'effraie tant.md": {
+    "mtime": 1788608428.4233181,
+    "seen": 1788608995.4876406,
+    "ast_hash": "4338f118b25659380691d345fc0481d8",
+    "semantic_hash": "4338f118b25659380691d345fc0481d8"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'essaie de me comprendre pour avancer.md": {
+    "mtime": 1788608428.4096808,
+    "seen": 1788608995.4876413,
+    "ast_hash": "96df56389c15c1a0be8b799c5e22a882",
+    "semantic_hash": "96df56389c15c1a0be8b799c5e22a882"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'observe le monde, je me fais tout seul des films.md": {
+    "mtime": 1788608428.4278183,
+    "seen": 1788608995.4876425,
+    "ast_hash": "d4229502e3428f3b1bec8295aa8b375e",
+    "semantic_hash": "d4229502e3428f3b1bec8295aa8b375e"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J'vois rien, au moins y'a pas d'aveugle qui me guide.md": {
+    "mtime": 1788608428.4159997,
+    "seen": 1788608995.4876437,
+    "ast_hash": "5e0e35d4099855bdbdcc13343edb9f16",
+    "semantic_hash": "5e0e35d4099855bdbdcc13343edb9f16"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je comprends pas pourquoi je cherche \u00e0 plaire au femme.md": {
+    "mtime": 1788608428.4161537,
+    "seen": 1788608995.4876451,
+    "ast_hash": "4bbd5ecba97e1ba2f79f96002d8190a0",
+    "semantic_hash": "4bbd5ecba97e1ba2f79f96002d8190a0"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je dois tout s\u00e9parer une bonne fois pour toute.md": {
+    "mtime": 1788608428.4187932,
+    "seen": 1788608995.4876468,
+    "ast_hash": "5244e6e456e4040a00015d5b3c730fad",
+    "semantic_hash": "5244e6e456e4040a00015d5b3c730fad"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je me sens perdu pourtant si pr\u00e8s du rivage.md": {
+    "mtime": 1788608428.41037,
+    "seen": 1788608995.4876482,
+    "ast_hash": "91a41d966d250896a195047ff46b1a07",
+    "semantic_hash": "91a41d966d250896a195047ff46b1a07"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je ne suivrai aucun de vos Canva.md": {
+    "mtime": 1788608428.4271328,
+    "seen": 1788608995.4876492,
+    "ast_hash": "f16b38424d6d480ace743be7ede179b7",
+    "semantic_hash": "f16b38424d6d480ace743be7ede179b7"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je pense que finalement que j'ai peur d'aimer.md": {
+    "mtime": 1788608428.4187033,
+    "seen": 1788608995.4876502,
+    "ast_hash": "b1726c8f7cde7e5846442036567888c5",
+    "semantic_hash": "b1726c8f7cde7e5846442036567888c5"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je sais pas, je sais pas.md": {
+    "mtime": 1788608428.4214182,
+    "seen": 1788608995.4876513,
+    "ast_hash": "501e31e794492c5a6668625e15e722b3",
+    "semantic_hash": "501e31e794492c5a6668625e15e722b3"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je sais.md": {
+    "mtime": 1788608428.4267662,
+    "seen": 1788608995.487652,
+    "ast_hash": "4d05f1af8d90def2ed0b2ca226e1ff3a",
+    "semantic_hash": "4d05f1af8d90def2ed0b2ca226e1ff3a"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je suis l'agneau d\u00e9guis\u00e9 en loup, dans chacune de vos.md": {
+    "mtime": 1788608428.424445,
+    "seen": 1788608995.4876537,
+    "ast_hash": "f13e00d2a1436f71e9598fac303b5b7a",
+    "semantic_hash": "f13e00d2a1436f71e9598fac303b5b7a"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je suis le seul \u00e0 voir mes combats.md": {
+    "mtime": 1788608428.4274466,
+    "seen": 1788608995.4876552,
+    "ast_hash": "1aef12345a2c60ba9a4a3f31697b9704",
+    "semantic_hash": "1aef12345a2c60ba9a4a3f31697b9704"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je vis ma nuit noire.md": {
+    "mtime": 1788608428.4217074,
+    "seen": 1788608995.4876564,
+    "ast_hash": "c6504aee2c379590d18d39b6aa2c8b2b",
+    "semantic_hash": "c6504aee2c379590d18d39b6aa2c8b2b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Je vois.md": {
+    "mtime": 1788608428.4266906,
+    "seen": 1788608995.4876575,
+    "ast_hash": "1dde452e2d761808f8ef32801888b8b2",
+    "semantic_hash": "1dde452e2d761808f8ef32801888b8b2"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J\u2019ai assez \u00e9cout\u00e9 vos mauvais conseils pour savoir quoi.md": {
+    "mtime": 1788608428.4183016,
+    "seen": 1788608995.487659,
+    "ast_hash": "ad4943dc0acb9d2d8676f8c879b98b6b",
+    "semantic_hash": "ad4943dc0acb9d2d8676f8c879b98b6b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J\u2019ai finalement trouv\u00e9 le moyen d\u2019etre libre.md": {
+    "mtime": 1788608428.4092658,
+    "seen": 1788608995.4876606,
+    "ast_hash": "197aee8c1937bce6eec6f3350a7839ea",
+    "semantic_hash": "197aee8c1937bce6eec6f3350a7839ea"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/J\u2019ai le bruit du monde qui \u00e9touffe mon appel.md": {
+    "mtime": 1788608428.4228868,
+    "seen": 1788608995.487662,
+    "ast_hash": "c64f26b75ac41f3c5fb5ee287dd22e0e",
+    "semantic_hash": "c64f26b75ac41f3c5fb5ee287dd22e0e"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/L'esprit qui me ronge se nomme le doute.md": {
+    "mtime": 1788608428.4278908,
+    "seen": 1788608995.4876633,
+    "ast_hash": "a8c0bd4cb091db0d36dda0e5631eb7da",
+    "semantic_hash": "a8c0bd4cb091db0d36dda0e5631eb7da"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/La vie t'a mis \u00e0 terre, alors pourquoi t'y reste.md": {
+    "mtime": 1788608428.423493,
+    "seen": 1788608995.487665,
+    "ast_hash": "6ad61bccea37d63d388b012b3de9f608",
+    "semantic_hash": "6ad61bccea37d63d388b012b3de9f608"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/La v\u00e9rit\u00e9, j'essaie de l'aimer mais j'ai si peur de mon p\u00e8re.md": {
+    "mtime": 1788608428.4277327,
+    "seen": 1788608995.4876664,
+    "ast_hash": "502dc06d5fa488a05f04fe37e6960fb1",
+    "semantic_hash": "502dc06d5fa488a05f04fe37e6960fb1"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Le bruit dans mon esprit refuse de mourir.md": {
+    "mtime": 1788608428.412652,
+    "seen": 1788608995.4876676,
+    "ast_hash": "8b49bea9e2cf91c22b8726549c08350f",
+    "semantic_hash": "8b49bea9e2cf91c22b8726549c08350f"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Le bruit du monde \u00e9touffe mon appel.md": {
+    "mtime": 1788608428.423044,
+    "seen": 1788608995.487669,
+    "ast_hash": "084cae91edeedc701ab542034cf9f4fb",
+    "semantic_hash": "084cae91edeedc701ab542034cf9f4fb"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Les enfants grandissent et changent.md": {
+    "mtime": 1788608428.4236467,
+    "seen": 1788608995.4876702,
+    "ast_hash": "20b27bdcef4564c2a4af207fc80feba2",
+    "semantic_hash": "20b27bdcef4564c2a4af207fc80feba2"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Les mauvaises choses ont une fin.md": {
+    "mtime": 1788608428.4138377,
+    "seen": 1788608995.4876719,
+    "ast_hash": "09fc3e9801b70cb7afdd9a79846b6fce",
+    "semantic_hash": "09fc3e9801b70cb7afdd9a79846b6fce"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Leur indiff\u00e9rence c'est ce qui amplifiai ma douleur.md": {
+    "mtime": 1788608428.4101431,
+    "seen": 1788608995.4876733,
+    "ast_hash": "ce4bdbd6c33ad9341db51e9eaf5b5382",
+    "semantic_hash": "ce4bdbd6c33ad9341db51e9eaf5b5382"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Leur indiff\u00e9rence est ce qui amplifiait ma douleur.md": {
+    "mtime": 1788608428.4100714,
+    "seen": 1788608995.487675,
+    "ast_hash": "fac23d6f3584684c5d4e51e8ccec1baa",
+    "semantic_hash": "fac23d6f3584684c5d4e51e8ccec1baa"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/M'en voulez pas pour les raisons que je pense.md": {
+    "mtime": 1788608428.4242854,
+    "seen": 1788608995.4876757,
+    "ast_hash": "12635cbc88eec829f4aee4049d697d69",
+    "semantic_hash": "12635cbc88eec829f4aee4049d697d69"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Ma solitude me fait sentir moins seul.md": {
+    "mtime": 1788608428.423388,
+    "seen": 1788608995.4876766,
+    "ast_hash": "793428a0c9260714dca7e312cbd927c4",
+    "semantic_hash": "793428a0c9260714dca7e312cbd927c4"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Maybe.md": {
+    "mtime": 1788608428.4254117,
+    "seen": 1788608995.4876778,
+    "ast_hash": "03725725bc580ae8d2fc9c91a5f85424",
+    "semantic_hash": "03725725bc580ae8d2fc9c91a5f85424"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Me faisant marcher je te courrait apr\u00e8s.md": {
+    "mtime": 1788608428.416718,
+    "seen": 1788608995.4876792,
+    "ast_hash": "b0416c5be8b046dad41c3c5b54a6b922",
+    "semantic_hash": "b0416c5be8b046dad41c3c5b54a6b922"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Mes d\u00e9mons j'\u00e9coute moins ce qu'ils ont \u00e0 me dire.md": {
+    "mtime": 1788608428.4146245,
+    "seen": 1788608995.4876807,
+    "ast_hash": "9e3500cadf66c7fa46bdd0d3a6235ef7",
+    "semantic_hash": "9e3500cadf66c7fa46bdd0d3a6235ef7"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Mon fr\u00e8re, je sais ce que \u00e7a fait.md": {
+    "mtime": 1788608428.414333,
+    "seen": 1788608995.4876823,
+    "ast_hash": "e2c2a0955c89a1db94c40a62868241b5",
+    "semantic_hash": "e2c2a0955c89a1db94c40a62868241b5"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/M\u00eame avec la rage, je me retiens de les frapp\u00e9.md": {
+    "mtime": 1788608428.4166331,
+    "seen": 1788608995.4876842,
+    "ast_hash": "6c67a2b5184113f5b380d977a9b9b80e",
+    "semantic_hash": "6c67a2b5184113f5b380d977a9b9b80e"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/On m'a dit que je ne prenais pas assez Dieu au s\u00e9rieux.md": {
+    "mtime": 1788608428.4119735,
+    "seen": 1788608995.4876857,
+    "ast_hash": "8f22f5a6b8741dce31b29b910aa56813",
+    "semantic_hash": "8f22f5a6b8741dce31b29b910aa56813"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/On m'a toujours dit poursuit tes passions et jamais l'argent.md": {
+    "mtime": 1788608428.4134467,
+    "seen": 1788608995.4876866,
+    "ast_hash": "4bdc167198db92fd55e0041da76781ad",
+    "semantic_hash": "4bdc167198db92fd55e0041da76781ad"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/On vit un peu \u00e0 l\u2019aveuglette, on prie afin que Dieu nous.md": {
+    "mtime": 1788608428.4273305,
+    "seen": 1788608995.4876883,
+    "ast_hash": "d56e068358be0b8aa6c58d9b116cc888",
+    "semantic_hash": "d56e068358be0b8aa6c58d9b116cc888"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/On voit souvent chez les autres ce qu\u2019on regarde en soit.md": {
+    "mtime": 1788608428.4182084,
+    "seen": 1788608995.4876897,
+    "ast_hash": "6a6480a80fc8ffec60e61fa47afca656",
+    "semantic_hash": "6a6480a80fc8ffec60e61fa47afca656"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Peut \u00eatre.md": {
+    "mtime": 1788608428.4256642,
+    "seen": 1788608995.487691,
+    "ast_hash": "3c0c20953ae8b0eaf9691efb19c3d9e8",
+    "semantic_hash": "3c0c20953ae8b0eaf9691efb19c3d9e8"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Pourquoi.md": {
+    "mtime": 1788608428.4257264,
+    "seen": 1788608995.487692,
+    "ast_hash": "f53ceea7eee330c2f5ed95d59c595f27",
+    "semantic_hash": "f53ceea7eee330c2f5ed95d59c595f27"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Presence.md": {
+    "mtime": 1788608428.415802,
+    "seen": 1788608995.487693,
+    "ast_hash": "4911cd7afe3342d42c54e9cb080dfa4b",
+    "semantic_hash": "4911cd7afe3342d42c54e9cb080dfa4b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Pulsions.md": {
+    "mtime": 1788608428.4264672,
+    "seen": 1788608995.4876938,
+    "ast_hash": "519f1c942e756f522fccda7d20d87f28",
+    "semantic_hash": "519f1c942e756f522fccda7d20d87f28"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Quand je parlais personne n'\u00e9coutais.md": {
+    "mtime": 1788608428.4193425,
+    "seen": 1788608995.4876955,
+    "ast_hash": "eee89b7d9978053c5f0d85ceee41f86b",
+    "semantic_hash": "eee89b7d9978053c5f0d85ceee41f86b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Quand je suis seul.md": {
+    "mtime": 1788608428.4268296,
+    "seen": 1788608995.4876964,
+    "ast_hash": "8ff7a812ff478d619e8978a460faa4cd",
+    "semantic_hash": "8ff7a812ff478d619e8978a460faa4cd"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Que celui qui veut voler ma paix viennent.md": {
+    "mtime": 1788608428.4211633,
+    "seen": 1788608995.4876976,
+    "ast_hash": "14fa4ce06b0beee7dd01b8c4c5d31e70",
+    "semantic_hash": "14fa4ce06b0beee7dd01b8c4c5d31e70"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Si tout le monde \u00e9coutait tout le monde \u00e0 quel moment.md": {
+    "mtime": 1788608428.4130716,
+    "seen": 1788608995.4876993,
+    "ast_hash": "ecb35d4b4df05fd36b95dc6f8905d78a",
+    "semantic_hash": "ecb35d4b4df05fd36b95dc6f8905d78a"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Solitude.md": {
+    "mtime": 1788608428.4158635,
+    "seen": 1788608995.4877007,
+    "ast_hash": "b2230775fa0be565f67d50e64f6dd96c",
+    "semantic_hash": "b2230775fa0be565f67d50e64f6dd96c"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Tomber c'est humain, \u00e7a fait pas de nous des mauvaises.md": {
+    "mtime": 1788608428.416081,
+    "seen": 1788608995.4877024,
+    "ast_hash": "eaf92d7591858a6ce1ed67b5f40ef4df",
+    "semantic_hash": "eaf92d7591858a6ce1ed67b5f40ef4df"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Toujours cette question qui revient.md": {
+    "mtime": 1788608428.4131575,
+    "seen": 1788608995.4877033,
+    "ast_hash": "999f9ef09e3179c99b11f96dbff9d732",
+    "semantic_hash": "999f9ef09e3179c99b11f96dbff9d732"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Tout le monde ne pense pas comme toi.md": {
+    "mtime": 1788608428.409437,
+    "seen": 1788608995.4877043,
+    "ast_hash": "3824c3c5a5515f658ab62f6729b5603c",
+    "semantic_hash": "3824c3c5a5515f658ab62f6729b5603c"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Tout va bien.md": {
+    "mtime": 1788608428.4263458,
+    "seen": 1788608995.4877052,
+    "ast_hash": "97ec3ee603e1509564694bee08536f39",
+    "semantic_hash": "97ec3ee603e1509564694bee08536f39"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Tu sais d\u00e9j\u00e0, dans mon esprit c'est le d\u00e9sordre.md": {
+    "mtime": 1788608428.414563,
+    "seen": 1788608995.487707,
+    "ast_hash": "b468fefec868ef210141ae5f64169e15",
+    "semantic_hash": "b468fefec868ef210141ae5f64169e15"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Tu sais hier soir j\u2019ai encore r\u00eaver de toi.md": {
+    "mtime": 1788608428.4172435,
+    "seen": 1788608995.4877086,
+    "ast_hash": "e4348215a90dd185957f7591462eaeb8",
+    "semantic_hash": "e4348215a90dd185957f7591462eaeb8"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Une partie.md": {
+    "mtime": 1788608428.4280665,
+    "seen": 1788608995.4877095,
+    "ast_hash": "e1afba90ad265a97c90d7e2ee7f64029",
+    "semantic_hash": "e1afba90ad265a97c90d7e2ee7f64029"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/Vous devriez voir \u00e0 quel point c'est bris\u00e9 en moi.md": {
+    "mtime": 1788608428.4190989,
+    "seen": 1788608995.487711,
+    "ast_hash": "e9c847bd2f604ff4a89d53ce57dfe8d5",
+    "semantic_hash": "e9c847bd2f604ff4a89d53ce57dfe8d5"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/\u00c0 quoi aurait ressembler ma vie.md": {
+    "mtime": 1788608428.4093573,
+    "seen": 1788608995.4877126,
+    "ast_hash": "c85b5effc043d6201e4a4cc067d0622b",
+    "semantic_hash": "c85b5effc043d6201e4a4cc067d0622b"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/\u00c0 temps.md": {
+    "mtime": 1788608428.4252653,
+    "seen": 1788608995.487714,
+    "ast_hash": "44a21381ccb6ead379bf4aee4b2221e0",
+    "semantic_hash": "44a21381ccb6ead379bf4aee4b2221e0"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Ecrits_&_Textes/\u00c9tais-je vraiment aussi mauvais.md": {
+    "mtime": 1788608428.409768,
+    "seen": 1788608995.4877155,
+    "ast_hash": "b8bd9fd3f679680d82211f996cd68e77",
+    "semantic_hash": "b8bd9fd3f679680d82211f996cd68e77"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/MOC_Creativite_&_Textes.md": {
+    "mtime": 1788608460.4234276,
+    "seen": 1788608995.4877164,
+    "ast_hash": "0b54828d14577d4e2847d584f61b7268",
+    "semantic_hash": "0b54828d14577d4e2847d584f61b7268"
+  },
+  "02_Areas/07_Creativite_&_Side_Projects/Skills_Rapha\u00ebl.md": {
+    "mtime": 1788608477.9157648,
+    "seen": 1788608995.4877179,
+    "ast_hash": "c82f5b08e24791c8782889a2f8f1819f",
+    "semantic_hash": "c82f5b08e24791c8782889a2f8f1819f"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Activer le Don de Proph\u00e9tie \u2014 Jermaine & Rebecca Francis.md": {
+    "mtime": 1787744623.3845422,
+    "seen": 1788608995.4877198,
+    "ast_hash": "80ad84a50664197a2777070ff09dade6",
+    "semantic_hash": "80ad84a50664197a2777070ff09dade6"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Bible_Et_Foi.md": {
+    "mtime": 1788608530.5455008,
+    "seen": 1788608995.4877207,
+    "ast_hash": "bfd32f9772c31c39329d9cd24fc68c3f",
+    "semantic_hash": "bfd32f9772c31c39329d9cd24fc68c3f"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/MOC_Prieres_&_Enseignements.md": {
+    "mtime": 1788608460.4273505,
+    "seen": 1788608995.487733,
+    "ast_hash": "b5461e50f9ce881f7aa1e22dd48ae9eb",
+    "semantic_hash": "b5461e50f9ce881f7aa1e22dd48ae9eb"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/080826.md": {
+    "mtime": 1788608428.422019,
+    "seen": 1788608995.487734,
+    "ast_hash": "f7999a370899613e73f6bfc5133cf13c",
+    "semantic_hash": "f7999a370899613e73f6bfc5133cf13c"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/230826  isabelle.md": {
+    "mtime": 1788608428.4275494,
+    "seen": 1788608995.487735,
+    "ast_hash": "b005b4172c13579e07fc2e95a60f9868",
+    "semantic_hash": "b005b4172c13579e07fc2e95a60f9868"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Certains endroits.md": {
+    "mtime": 1788608428.422563,
+    "seen": 1788608995.4877453,
+    "ast_hash": "be36e165015a687e21fffcc6d11b5078",
+    "semantic_hash": "be36e165015a687e21fffcc6d11b5078"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Dieu est ta source, les hommes sont des ressources.md": {
+    "mtime": 1788608428.4213264,
+    "seen": 1788608995.487747,
+    "ast_hash": "a3ff74a54638d964ca8ac9b2392632c3",
+    "semantic_hash": "a3ff74a54638d964ca8ac9b2392632c3"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/En ce moment j'ai peur de manquer de performance.md": {
+    "mtime": 1788608428.4107924,
+    "seen": 1788608995.4877493,
+    "ast_hash": "f3f0d4cf655c99323982a44602682716",
+    "semantic_hash": "f3f0d4cf655c99323982a44602682716"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Encore un autre jour o\u00f9 je me perds en route.md": {
+    "mtime": 1788608428.415389,
+    "seen": 1788608995.487751,
+    "ast_hash": "69cbb9d5137a945073f22cb277b0772d",
+    "semantic_hash": "69cbb9d5137a945073f22cb277b0772d"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Et si ce monde n'avait jamais \u00e9t\u00e9 sombre.md": {
+    "mtime": 1788608428.4232278,
+    "seen": 1788608995.4877524,
+    "ast_hash": "4feb15bb53c08aeb6ecf9646fffbad60",
+    "semantic_hash": "4feb15bb53c08aeb6ecf9646fffbad60"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/J'ai cette sensation d'\u00eatre quelqu'un de mauvais.md": {
+    "mtime": 1788608428.4194505,
+    "seen": 1788608995.4877539,
+    "ast_hash": "fbe4078391dbc323167b8e366b65e5fe",
+    "semantic_hash": "fbe4078391dbc323167b8e366b65e5fe"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/J'ai d\u00fb faire une pause.md": {
+    "mtime": 1788608428.4205081,
+    "seen": 1788608995.4877555,
+    "ast_hash": "9a9ac072cc35b5d620898bf0df52638f",
+    "semantic_hash": "9a9ac072cc35b5d620898bf0df52638f"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/J'ai mes jambes pour m'enfuir.md": {
+    "mtime": 1788608428.4191885,
+    "seen": 1788608995.487757,
+    "ast_hash": "1e5887b67ac06db57ca9bd3dd0e8ca5a",
+    "semantic_hash": "1e5887b67ac06db57ca9bd3dd0e8ca5a"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/J'avais cette sensation de n'\u00eatre jamais seul.md": {
+    "mtime": 1788608428.409999,
+    "seen": 1788608995.4877586,
+    "ast_hash": "379d7b5941d2d77059f622190267d0c3",
+    "semantic_hash": "379d7b5941d2d77059f622190267d0c3"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Je pense avoir compris.md": {
+    "mtime": 1788608428.4240692,
+    "seen": 1788608995.4877596,
+    "ast_hash": "f1e00fa6a9f0667619fcdd87161a1f31",
+    "semantic_hash": "f1e00fa6a9f0667619fcdd87161a1f31"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Jusqu'o\u00f9 mon besoin de plaire aura d\u00e9truit.md": {
+    "mtime": 1788608428.4091303,
+    "seen": 1788608995.4877615,
+    "ast_hash": "578d6b8dec5edfb436ef97b704976221",
+    "semantic_hash": "578d6b8dec5edfb436ef97b704976221"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/L'une des capacit\u00e9s les plus essentielles du chr\u00e9tiens est.md": {
+    "mtime": 1788608428.4141011,
+    "seen": 1788608995.4877632,
+    "ast_hash": "513c9380fb772db249d1faf7a8c22a6b",
+    "semantic_hash": "513c9380fb772db249d1faf7a8c22a6b"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/L'univers.md": {
+    "mtime": 1788608428.4219599,
+    "seen": 1788608995.4877641,
+    "ast_hash": "cce519361ad22a1c5a7e10bf66edc20e",
+    "semantic_hash": "cce519361ad22a1c5a7e10bf66edc20e"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/La maison du potier.md": {
+    "mtime": 1788608428.4119,
+    "seen": 1788608995.4877656,
+    "ast_hash": "367837d9194b87c3508b89d7a7189497",
+    "semantic_hash": "367837d9194b87c3508b89d7a7189497"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Les bonnes choses demandent toujours du temps.md": {
+    "mtime": 1788608428.414734,
+    "seen": 1788608995.4877665,
+    "ast_hash": "387292108de29e00ed714fb7b817f9b4",
+    "semantic_hash": "387292108de29e00ed714fb7b817f9b4"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Maintenant on va parler des faits.md": {
+    "mtime": 1788608428.4185412,
+    "seen": 1788608995.4877675,
+    "ast_hash": "8aeb2b4214c712980856942fa51ceba6",
+    "semantic_hash": "8aeb2b4214c712980856942fa51ceba6"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Mes doutes, le pied sur le frein, mon ambition sur.md": {
+    "mtime": 1788608428.4237325,
+    "seen": 1788608995.4877687,
+    "ast_hash": "595a81b081a5cbbf1b8524433b0a8f8b",
+    "semantic_hash": "595a81b081a5cbbf1b8524433b0a8f8b"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Personne ne voyait rien.md": {
+    "mtime": 1788608428.420405,
+    "seen": 1788608995.4877698,
+    "ast_hash": "4320b5c310752f7e66dc611cd455dd6a",
+    "semantic_hash": "4320b5c310752f7e66dc611cd455dd6a"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Prie ton tous le m\u00eame Dieu.md": {
+    "mtime": 1788608428.4102118,
+    "seen": 1788608995.4877715,
+    "ast_hash": "bad023811bdd0599cca9deeb7793a79c",
+    "semantic_hash": "bad023811bdd0599cca9deeb7793a79c"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Prophecy 250726.md": {
+    "mtime": 1788608428.417624,
+    "seen": 1788608995.4877725,
+    "ast_hash": "ef63e29cc23dbcaf0fc0b9718f307b8b",
+    "semantic_hash": "ef63e29cc23dbcaf0fc0b9718f307b8b"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Que dois je faire.md": {
+    "mtime": 1788608428.4192665,
+    "seen": 1788608995.4877734,
+    "ast_hash": "ac7e643bb85d2bf64156288b27ef2b0c",
+    "semantic_hash": "ac7e643bb85d2bf64156288b27ef2b0c"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Prieres_&_Enseignements/Tu penses que sa te fera du mal de r\u00e9sister.md": {
+    "mtime": 1788608428.4203084,
+    "seen": 1788608995.4877756,
+    "ast_hash": "08c07b0718364b835837f1394958c249",
+    "semantic_hash": "08c07b0718364b835837f1394958c249"
+  },
+  "02_Areas/10_Spiritualite_&_Sagesse/Skills_Thomas.md": {
+    "mtime": 1787954387.7374961,
+    "seen": 1788608995.4877765,
+    "ast_hash": "69960d9f1de95b1d845df9402aa1eb69",
+    "semantic_hash": "69960d9f1de95b1d845df9402aa1eb69"
+  },
+  "03_Resources/Ingenierie_Produit/Entretient_Trucs_A_Savoir.md": {
+    "mtime": 1787741835.350036,
+    "seen": 1788608995.4877822,
+    "ast_hash": "44b03b5795c17168eaa6868116b08542",
+    "semantic_hash": "44b03b5795c17168eaa6868116b08542"
+  },
+  "03_Resources/Ingenierie_Produit/My_Dev_Life.md": {
+    "mtime": 1788608293.3817859,
+    "seen": 1788608995.4877832,
+    "ast_hash": "edaf51325f4ecaf042fd130716570ed2",
+    "semantic_hash": "edaf51325f4ecaf042fd130716570ed2"
+  },
+  "03_Resources/Ingenierie_Produit/pourquoi_les_saas_echouent.md": {
+    "mtime": 1788539832.8165262,
+    "seen": 1788608995.4877882,
+    "ast_hash": "985e33439ae82ed043c376704f6c1885",
+    "semantic_hash": "985e33439ae82ed043c376704f6c1885"
+  },
+  "04_Sante_&_Vitalite/Circuit_Pompes_Maison.md": {
+    "mtime": 1788125601.8660538,
+    "seen": 1788608995.4877968,
+    "ast_hash": "225f2457eb17f18d78b48112d40abdcf",
+    "semantic_hash": "225f2457eb17f18d78b48112d40abdcf"
+  },
+  "99_Meta/Templates/Template - Decision (ADR).md": {
+    "mtime": 1787598733.7554843,
+    "seen": 1788608995.487798,
+    "ast_hash": "536e3e91a813c33642147184b66fc4cf",
+    "semantic_hash": "536e3e91a813c33642147184b66fc4cf"
+  },
+  "99_Meta/Templates/Template - Note Atomique.md": {
+    "mtime": 1787598733.7572253,
+    "seen": 1788608995.4877994,
+    "ast_hash": "040e05f98ec3a9f78c90317580fbeade",
+    "semantic_hash": "040e05f98ec3a9f78c90317580fbeade"
+  },
+  "99_Meta/Templates/Template - Projet.md": {
+    "mtime": 1788608293.3917856,
+    "seen": 1788608995.4878004,
+    "ast_hash": "559e927197507d7521f4e4ef714c7976",
+    "semantic_hash": "559e927197507d7521f4e4ef714c7976"
+  },
+  "99_Meta/Templates/Template - Session Agent.md": {
+    "mtime": 1787598733.756321,
+    "seen": 1788608995.4878016,
+    "ast_hash": "380249648dab3f306626a4aba46cb482",
+    "semantic_hash": "380249648dab3f306626a4aba46cb482"
+  },
+  "AGENTS.md": {
+    "mtime": 1788126807.7490916,
+    "seen": 1788608995.4878025,
+    "ast_hash": "7f8e8bbe3296d4b4d1c858c895b3e07a",
+    "semantic_hash": "7f8e8bbe3296d4b4d1c858c895b3e07a"
+  },
+  "Acceuil.md": {
+    "mtime": 1788127579.1114001,
+    "seen": 1788608995.4878037,
+    "ast_hash": "ec0787a6021af0ccdae92ea6e7c99391",
+    "semantic_hash": "ec0787a6021af0ccdae92ea6e7c99391"
+  },
+  "Agent.md": {
+    "mtime": 1787742587.815132,
+    "seen": 1788608995.4878047,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "Daily_Logs.md": {
+    "mtime": 1787742612.561754,
+    "seen": 1788608995.4878058,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "Estimation d\u00e9pense.md": {
+    "mtime": 1787761695.0878384,
+    "seen": 1788608995.4878073,
+    "ast_hash": "37d00b784d042f70446e451bcf03be26",
+    "semantic_hash": "37d00b784d042f70446e451bcf03be26"
+  },
+  "GATES.md": {
+    "mtime": 1788127100.5684114,
+    "seen": 1788608995.4878082,
+    "ast_hash": "4ced647b05b450e98cbc11225964e394",
+    "semantic_hash": "4ced647b05b450e98cbc11225964e394"
+  }
+}

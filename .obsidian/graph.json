@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "-path:Daily_Logs -file:Skills -path:Daily_Logs -file:Skills -file:Template",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:01_Projects  ",
+      "color": {
+        "a": 1,
+        "rgb": 6764161
+      }
+    },
+    {
+      "query": "path:02_Areas/04_Sante_&_Vitalite  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431420
+      }
+    },
+    {
+      "query": "path:02_Areas/05_Boussole_&_Mindset  ",
+      "color": {
+        "a": 1,
+        "rgb": 5404128
+      }
+    },
+    {
+      "query": "path:02_Areas/01_Systeme_&_Execution  ",
+      "color": {
+        "a": 1,
+        "rgb": 16021781
+      }
+    },
+    {
+      "query": "path:03_Resources  ",
+      "color": {
+        "a": 1,
+        "rgb": 700020
+      }
+    },
+    {
+      "query": "path:04_Archives  ",
+      "color": {
+        "a": 1,
+        "rgb": 12125188
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 0.559032156368222,
+  "linkDistance": 30,
+  "scale": 0.3003387451171875,
+  "close": true
+}

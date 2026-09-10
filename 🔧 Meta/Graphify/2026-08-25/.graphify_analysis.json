@@ -1,0 +1,390 @@
+{
+  "communities": {
+    "0": [
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_carnet_1_le_life_tracker_le_grand_carnet",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_carnet_2_le_pocket_journal_le_petit_carnet",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_comment_l_int\u00e9grer_\u00e0_ton_syst\u00e8me_fabien",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_l_id\u00e9e_principale",
+      "02_areas_01_systeme_execution_fiche_video_two_notebook_system_vid\u00e9o_my_two_notebook_system_to_stop_infinite_scrolling",
+      "02_areas_01_systeme_execution_moc_systeme_execution",
+      "02_areas_01_systeme_execution_moc_systeme_execution_01_syst\u00e8me_ex\u00e9cution_ana\u00efs_dave",
+      "02_areas_01_systeme_execution_moc_systeme_execution_base_de_connaissances_m\u00e9moire_d_ana\u00efs",
+      "02_areas_01_systeme_execution_moc_systeme_execution_intelligence_agent_ana\u00efs",
+      "02_areas_01_systeme_execution_moc_systeme_execution_notes_id\u00e9es",
+      "02_areas_01_systeme_execution_organisation_vision_fabien",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_1_les_4_habitudes_sacr\u00e9es_du_mois",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_2_la_journ\u00e9e_type_r\u00e9elle_de_fabien",
+      "02_areas_01_systeme_execution_organisation_vision_fabien_organisation_programme_m\u00e9thode_\u00e9quilibre_vision_de_fabien",
+      "02_areas_04_sante___vitalite_chronotype___energie_sommeil",
+      "03_resources_templates_bujo_template_bullet_journal_bujo",
+      "03_resources_templates_bujo_template_bullet_journal_bujo_bujo_date",
+      "home",
+      "home_les_4_habitudes_sacr\u00e9es_du_mois",
+      "home_mon_second_cerveau_tableau_de_bord_de_fabien",
+      "home_projets_personnels_en_cours",
+      "home_raccourcis_strat\u00e9giques_rituels",
+      "home_t\u00e2ches_bujo",
+      "home_vos_10_coachs_de_vie_d\u00e9di\u00e9s_personal_team"
+    ],
+    "1": [
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_hygi\u00e8ne_de_vie_les_7_habitudes_matinales_\u00e0_bannir",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_l_altruisme_comme_moteur",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_l_art_de_dire_non",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_l_organisation_de_l_espace_physique",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_l_usage_critique_de_notion_et_la_paralysie_d\u00e9cisionnelle",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_la_gestion_du_temps_r\u00e9el",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_la_matrice_d_eisenhower_et_la_m\u00e9thode_abcde",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_la_procrastination_et_eat_that_frog",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_le_mythe_du_multit\u00e2che",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_le_pi\u00e8ge_du_perfectionnisme",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_le_syndrome_de_la_gratification_imm\u00e9diate",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_les_interruptions_et_l_\u00e8re_de_l_information",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_section_i_psychologie_et_\u00e9tat_d_esprit_au_del\u00e0_de_la_volont\u00e9",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_section_ii_m\u00e9thodologies_de_priorisation_et_planification_strat\u00e9gique",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_section_iii_les_saboteurs_de_productivit\u00e9_analyse_des_co\u00fbts_cach\u00e9s",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_section_iv_\u00e9cosyst\u00e8me_d_organisation_outils_et_environnement",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_section_v_dimension_sociale_et_communication",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_synth\u00e8se_de_premier_niveau_les_piliers_de_l_efficacit\u00e9_durable",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_synth\u00e8se_int\u00e9grale_strat\u00e9gies_d_organisation_et_ma\u00eetrise_de_la_gestion_du_temps",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_s\u00e9lection_de_citations_cl\u00e9s"
+    ],
+    "2": [
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_1_synth\u00e8se_globale_la_r\u00e9v\u00e9lation_du_conseil_de_dieu",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_2_la_dualit\u00e9_des_\u00e9checs_spirituels_\u0153uvres_mortes_et_ambitions_d\u00e9vi\u00e9es",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_3_la_triade_du_minist\u00e8re_messager_message_et_localisation",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_4_la_dynamique_de_la_recherche_patience_et_profondeur",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_5_l_\u00e9chelle_de_la_cons\u00e9cration_du_salut_\u00e0_la_mort_\u00e0_soi",
+      "02_areas_10_spiritualite_sagesse_l_alignement_divin_l_imp\u00e9ratif_de_l_alignement_divin_au_del\u00e0_de_l_activit\u00e9_religieuse",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_1_introduction_l_importance_du_discernement",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_2_le_trio_des_voix_identifier_l_origine_de_nos_pens\u00e9es",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_3_les_crit\u00e8res_de_la_voix_divine_paix_douceur_et_v\u00e9rit\u00e9",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_4_les_pi\u00e8ges_\u00e0_\u00e9viter_la_voix_de_la_chair_et_de_l_ennemi",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_5_la_bo\u00eete_\u00e0_outils_du_discernement_4_tests_pratiques",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_6_cultiver_sa_m\u00e9t\u00e9o_int\u00e9rieure_consolation_et_d\u00e9solation",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_7_conclusion_le_chemin_vers_le_berger",
+      "02_areas_10_spiritualite_sagesse_les_trois_voix_manuel_d_initiation_apprendre_\u00e0_\u00e9couter_la_voix_du_divin_au_quotidienhttps_youtu_be_mbphu7aaklm_si_iii1oa9prydkhgs",
+      "02_areas_10_spiritualite_sagesse_moc_spiritualite_sagesse",
+      "02_areas_10_spiritualite_sagesse_moc_spiritualite_sagesse_10_spiritualit\u00e9_sagesse_thomas",
+      "02_areas_10_spiritualite_sagesse_moc_spiritualite_sagesse_notes_id\u00e9es"
+    ],
+    "3": [
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_horizon_1_aujourd_hui_24_ans",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_horizon_2_1_\u00e0_2_ans",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_horizon_3_3_\u00e0_5_ans",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_la_boussole_de_vie_vision_horizons_de_fabien",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_les_3_horizons_de_progression",
+      "02_areas_05_boussole_mindset_boussole_de_vie_horizons_qui_tu_es",
+      "02_areas_05_boussole_mindset_moc_boussole_mindset",
+      "02_areas_05_boussole_mindset_moc_boussole_mindset_05_boussole_mindset_lucas_sophie",
+      "02_areas_05_boussole_mindset_moc_boussole_mindset_notes_id\u00e9es",
+      "02_areas_05_boussole_mindset_organisation",
+      "02_areas_05_boussole_mindset_stop_overthinking",
+      "02_areas_05_boussole_mindset_stop_overthinking_1_la_r\u00e8gle_du_cerveau_de_papier_ne_pense_jamais_dans_ta_t\u00eate",
+      "02_areas_05_boussole_mindset_stop_overthinking_2_la_question_coupe_circuit_est_ce_que_j_ai_un_levier_dessus_dans_les_5_prochaines_minutes",
+      "02_areas_05_boussole_mindset_stop_overthinking_3_remplacer_r\u00e9ussir_ma_vie_par_poser_une_seule_brique_aujourd_hui",
+      "02_areas_05_boussole_mindset_stop_overthinking_4_la_sagesse_de_ta_foi_la_r\u00e8gle_de_matthieu_6_34",
+      "02_areas_05_boussole_mindset_stop_overthinking_ce_soir_d\u00e9branche_la_prise",
+      "02_areas_05_boussole_mindset_strat\u00e9gie_organisation"
+    ],
+    "4": [
+      "02_areas_05_boussole_mindset_organisation_1_la_procrastination_un_m\u00e9canisme_\u00e9motionnel",
+      "02_areas_05_boussole_mindset_organisation_1_le_danger_de_la_rigidit\u00e9",
+      "02_areas_05_boussole_mindset_organisation_1_le_time_blocking_blocage_de_temps",
+      "02_areas_05_boussole_mindset_organisation_1_\u00e9limination_des_habitudes_chronophages",
+      "02_areas_05_boussole_mindset_organisation_2_la_fatigue_d\u00e9cisionnelle",
+      "02_areas_05_boussole_mindset_organisation_2_la_planification_strat\u00e9gique",
+      "02_areas_05_boussole_mindset_organisation_2_le_paradoxe_des_habitudes",
+      "02_areas_05_boussole_mindset_organisation_2_le_regroupement_des_t\u00e2ches_batching",
+      "02_areas_05_boussole_mindset_organisation_i_les_obstacles_psychologiques_et_biologiques",
+      "02_areas_05_boussole_mindset_organisation_ii_m\u00e9thodologies_d_organisation_et_de_planification",
+      "02_areas_05_boussole_mindset_organisation_iii_optimisation_de_l_efficacit\u00e9_op\u00e9rationnelle",
+      "02_areas_05_boussole_mindset_organisation_iv_hygi\u00e8ne_de_vie_et_micro_habitudes_transformatrices",
+      "02_areas_05_boussole_mindset_organisation_r\u00e9sum\u00e9_ex\u00e9cutif",
+      "02_areas_05_boussole_mindset_organisation_synth\u00e8se_de_la_gestion_du_temps_et_de_l_efficacit\u00e9_personnelle_fondements_strat\u00e9gies_et_vigilances",
+      "02_areas_05_boussole_mindset_organisation_v_les_pi\u00e8ges_de_l_organisation_rigidit\u00e9_et_surcharge",
+      "02_areas_05_boussole_mindset_organisation_vi_recommandations_pratiques_finales"
+    ],
+    "5": [
+      "02_areas_04_sante___vitalite_moc_sante_vitalite",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_1_pourquoi_le_combo_caf\u00e9_sucre_le_matin_favorise_l_angoisse",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_2_plan_d_action_r\u00e9duire_le_sucre_du_caf\u00e9_z\u00e9ro_frustration",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_3_outils_neurobiologiques_anti_angoisse_baisse_du_cortisol",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_astuces_hacks",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_la_m\u00e9thode_progressive_des_7_jours",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_le_soupir_physiologique_physiological_sigh",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_les_piliers_protecteurs_d\u00e9j\u00e0_en_place",
+      "02_areas_04_sante_vitalite_gestion_sucre_cafe_cortisol_protocole_sucre_caf\u00e9ine_cortisol_gestion_de_l_anxi\u00e9t\u00e9",
+      "02_areas_04_sante_vitalite_programme_physique_anime",
+      "02_areas_04_sante_vitalite_programme_physique_anime_programme_entra\u00eenement_physique_d_anime_esth\u00e9tique_force",
+      "02_areas_04_sante_vitalite_programme_physique_anime_s\u00e9ance_a_focus_largeur_dos_\u00e9paules_pistol_squat",
+      "02_areas_04_sante_vitalite_programme_physique_anime_s\u00e9ance_b_focus_\u00e9paisseur_bras_buste_core",
+      "02_areas_04_sante_vitalite_programme_physique_anime_s\u00e9ance_c_focus_full_body_esth\u00e9tique_volume"
+    ],
+    "6": [
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_1_la_manipulation_\u00e9motionnelle_et_la_fausse_paix",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_1_la_r\u00e8gle_de_la_premi\u00e8re_pens\u00e9e",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_2_l_abandon_vs_l_effort",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_2_le_pi\u00e8ge_de_l_urgence_factice",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_3_la_distorsion_des_\u00e9critures",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_3_la_vigilance_environnementale",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_4_la_mise_en_pratique_de_l_inspiration_\u00e0_l_application",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_4_promotion_de_l_orgueil_et_de_la_division",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_briefing_discernement_spirituel_et_ma\u00eetrise_des_pens\u00e9es_selon_les_enseignements_de_kathryn_kuhlman",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_conclusion",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_i_les_tactiques_de_s\u00e9duction_comment_satan_imite_le_saint_esprit",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_ii_analyse_comparative_esprit_de_v\u00e9rit\u00e9_vs_esprit_de_mensonge",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_iii_m\u00e9thodologie_pour_le_contr\u00f4le_des_pens\u00e9es",
+      "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_iv_citations_cl\u00e9s_et_axiomes_de_discernement"
+    ],
+    "7": [
+      "03_resources_ingenierie_produit_commandes_antigravity",
+      "03_resources_ingenierie_produit_commandes_antigravity_1_les_slash_commands_dans_le_chat",
+      "03_resources_ingenierie_produit_commandes_antigravity_2_les_commandes_inline_raccourcis_dans_l_\u00e9diteur_ide",
+      "03_resources_ingenierie_produit_commandes_antigravity_3_les_commandes_terminal_cli_agy",
+      "03_resources_ingenierie_produit_commandes_antigravity_astuce_compl\u00e9mentaire_les_mentions",
+      "03_resources_ingenierie_produit_entretient",
+      "03_resources_ingenierie_produit_moc_ingenierie_produit",
+      "03_resources_ingenierie_produit_moc_ingenierie_produit_ing\u00e9nierie_produit_code_ux_ui",
+      "03_resources_ingenierie_produit_moc_ingenierie_produit_notes_id\u00e9es",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_1_dans_le_chat_antigravity_d\u00e9l\u00e9gation_directe",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_2_cr\u00e9er_un_r\u00f4le_persona_de_sous_agent_r\u00e9utilisable_customizations_skills",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_3_via_le_sdk_python_google_antigravity",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_option_a_d\u00e9l\u00e9gation_native_via_capabilitiesconfig",
+      "03_resources_ingenierie_produit_sous_agent_antigravitty_option_b_orchestration_explicite_de_plusieurs_agents_d\u00e9di\u00e9s"
+    ],
+    "8": [
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_1_les_20_fondamentaux_cr\u00e9er_l_impact_premium",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_2_performance_et_fluidit\u00e9_le_cadre_technique_inflexible",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_3_le_less_is_more_du_design_en_mouvement",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_4_checklist_d_audit_rapide_validation_actionnable",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_animation_delightful_l_impact_\u00e9motionnel",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_animation_fonctionnelle_et_narration",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_guide_strat\u00e9gique_l_animation_ui_et_du_design_web",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_hi\u00e9rarchie_des_propri\u00e9t\u00e9s_css_motion_gpu_vs_cpu",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_imp\u00e9ratif_d_accessibilit\u00e9_et_gestion_du_mouvement",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_la_grammaire_math\u00e9matique_et_physiologique_du_mouvement",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_le_basculement_vers_le_niveau_premium_micro_interactions_et_transitions",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_le_format_lottie_l_avantage_vectoriel",
+      "03_resources_ingenierie_produit_l_animation_ui_et_du_design_web_les_6_crit\u00e8res_d_\u00e9valuation_syst\u00e9matique"
+    ],
+    "9": [
+      "02_areas_05_boussole_mindset_carousel_insta",
+      "02_areas_05_boussole_mindset_carousel_insta_1_le_breathing_room_contr\u00f4le_du_rythme_par_le_lecteur",
+      "02_areas_05_boussole_mindset_carousel_insta_1_vue_d_ensemble_th\u00e8se_centrale_executive_summary",
+      "02_areas_05_boussole_mindset_carousel_insta_2_l_investissement_psychologique_par_le_swipe",
+      "02_areas_05_boussole_mindset_carousel_insta_2_les_4_avantages_majeurs_du_format_carousel",
+      "02_areas_05_boussole_mindset_carousel_insta_3_l_anatomie_d_un_carousel_performant_le_framework_en_3_parties",
+      "02_areas_05_boussole_mindset_carousel_insta_3_le_second_chance_effect_de_l_algorithme",
+      "02_areas_05_boussole_mindset_carousel_insta_4_cl\u00e9s_d_analyse_questions_fr\u00e9quentes_faq",
+      "02_areas_05_boussole_mindset_carousel_insta_4_durabilit\u00e9_\u00e9conomie_d_\u00e9nergie_pour_le_cr\u00e9ateur",
+      "02_areas_05_boussole_mindset_carousel_insta_5_le_playbook_de_cr\u00e9ation_pas_\u00e0_pas",
+      "02_areas_05_boussole_mindset_carousel_insta_comment_recycler_des_connaissances_existantes_en_carousels_content_repurposing",
+      "02_areas_05_boussole_mindset_carousel_insta_guide_d_\u00e9tude_synth\u00e8se_strat\u00e9gique_notebooklm_edition",
+      "02_areas_05_boussole_mindset_carousel_insta_pourquoi_les_carousels_g\u00e9n\u00e8rent_ils_autant_de_sauvegardes_saves"
+    ],
+    "10": [
+      "03_resources_ingenierie_produit_apprentisage_du_code",
+      "03_resources_ingenierie_produit_apprentisage_du_code_1_l_ia_comme_compagnon_et_non_comme_substitut",
+      "03_resources_ingenierie_produit_apprentisage_du_code_1_la_primaut\u00e9_du_choix_initial",
+      "03_resources_ingenierie_produit_apprentisage_du_code_1_plateformes_de_formation",
+      "03_resources_ingenierie_produit_apprentisage_du_code_2_environnement_de_d\u00e9veloppement_int\u00e9gr\u00e9_ide",
+      "03_resources_ingenierie_produit_apprentisage_du_code_2_innovation_technologique_orchids_1_0",
+      "03_resources_ingenierie_produit_apprentisage_du_code_2_la_discipline_de_la_continuit\u00e9",
+      "03_resources_ingenierie_produit_apprentisage_du_code_guide_strat\u00e9gique_pour_l_apprentissage_de_la_programmation_modernehttps_youtu_be_mbphu7aaklm_si_iii1oa9prydkhgs",
+      "03_resources_ingenierie_produit_apprentisage_du_code_i_fondements_de_la_m\u00e9thodologie_d_apprentissage",
+      "03_resources_ingenierie_produit_apprentisage_du_code_ii_analyse_des_ressources_et_outils_de_d\u00e9veloppement",
+      "03_resources_ingenierie_produit_apprentisage_du_code_iii_le_r\u00f4le_de_l_intelligence_artificielle",
+      "03_resources_ingenierie_produit_apprentisage_du_code_iv_perspectives_et_mentalit\u00e9_de_d\u00e9veloppement",
+      "03_resources_ingenierie_produit_apprentisage_du_code_r\u00e9sum\u00e9_analytique"
+    ],
+    "11": [
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_certification_full_stack_freecodecamp",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_modules_progression",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_notes_apprentissages",
+      "01_projects_certifications_tech_certification_full_stack_freecodecamp_objectif_de_la_certification",
+      "01_projects_certifications_tech_certifications",
+      "01_projects_certifications_tech_certifications_cr\u00e9neaux_de_r\u00e9vision",
+      "01_projects_certifications_tech_certifications_liste_des_certifications",
+      "01_projects_certifications_tech_certifications_objectif",
+      "01_projects_certifications_tech_certifications_projet_certifications_techniques"
+    ],
+    "12": [
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_1_origines_et_contexte_l_enfance_dans_l_occultisme",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_2_la_th\u00e9ologie_des_capacit\u00e9s_spirituelles",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_3_nature_et_fonction_des_\u00eatres_c\u00e9lestes",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_4_le_combat_spirituel_et_la_vie_de_l_esprit",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_5_ressources_et_enseignements",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_citations_cl\u00e9s",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_la_distinction_entre_essence_et_fonction",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_les_caract\u00e9ristiques_des_anges",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_les_r\u00e9alit\u00e9s_du_monde_spirituel_synth\u00e8se_du_t\u00e9moignage_et_des_enseignements_de_j\u00e9r\u00e9my_potin",
+      "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_r\u00e9sum\u00e9_ex\u00e9cutif"
+    ],
+    "13": [
+      "03_resources_ingenierie_produit_processus_design",
+      "03_resources_ingenierie_produit_processus_design_1_comprendre_le_probl\u00e8me_avant_de_designer",
+      "03_resources_ingenierie_produit_processus_design_2_structurer_l_information_ux_avant_ui",
+      "03_resources_ingenierie_produit_processus_design_3_explorer_des_id\u00e9es_visuelles_id\u00e9ation",
+      "03_resources_ingenierie_produit_processus_design_4_d\u00e9cider_ce_qui_est_bon_ou_pas",
+      "03_resources_ingenierie_produit_processus_design_5_prototyper_et_it\u00e9rer",
+      "03_resources_ingenierie_produit_processus_design_6_cadre_m\u00e9thodologique_courant_double_diamond_design_thinking",
+      "03_resources_ingenierie_produit_processus_design_crit\u00e8res_objectifs_de_bon_design_web",
+      "03_resources_ingenierie_produit_processus_design_m\u00e9thodes_de_d\u00e9cision"
+    ],
+    "14": [
+      "02_areas_01_systeme_execution_profil_context_fabien",
+      "02_areas_01_systeme_execution_profil_context_fabien_1_rythme_chronotype_le_sommeil_avant_tout",
+      "02_areas_01_systeme_execution_profil_context_fabien_2_cr\u00e9ativit\u00e9_l_heure_dor\u00e9e_du_matin",
+      "02_areas_01_systeme_execution_profil_context_fabien_3_code_focus_la_brique_sacr\u00e9e",
+      "02_areas_01_systeme_execution_profil_context_fabien_4_corps_\u00e9nergie",
+      "02_areas_01_systeme_execution_profil_context_fabien_5_mental_foi_overthinking",
+      "02_areas_01_systeme_execution_profil_context_fabien_6_logistique_quotidienne",
+      "02_areas_01_systeme_execution_profil_context_fabien_profil_habitudes_de_fabien_m\u00e9moire_pour_ana\u00efs"
+    ],
+    "15": [
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_1_l_alignement_chronotype_assumer_de_ne_pas_\u00eatre_un_l\u00e8ve_t\u00f4t_no\u00e9_sophie",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_2_le_reset_de_maison_du_soir_21h15",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_3_la_r\u00e8gle_du_cerveau_de_papier_ne_pense_jamais_dans_ta_t\u00eate",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_4_la_question_coupe_circuit_5_minutes_chrono",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_5_remplacer_r\u00e9ussir_ma_vie_par_poser_ma_seule_brique_aujourd_hui",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_6_la_sagesse_de_la_foi_matthieu_6_34",
+      "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_les_antidotes_anti_overthinking_r\u00e8gles_d_\u00e9nergie"
+    ],
+    "16": [
+      "03_resources_templates_bujo_template_bilan_hebdomadaire",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_alignement_des_4_piliers",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_bilan_hebdomadaire_semaine_date",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_frictions_blocages_ou_fatigue",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_priorit\u00e9s_cl\u00e9s_pour_la_semaine_prochaine",
+      "03_resources_templates_bujo_template_bilan_hebdomadaire_victoires_accomplissements"
+    ],
+    "17": [
+      "03_resources_templates_bujo_moc_templates_bujo_moc_templates_bujo",
+      "_bmad_output_brainstorming_brainstorm_obsidian_graph_view_2026_08_24__memlog_99_meta_to_vie_perso",
+      "_bmad_output_brainstorming_brainstorm_obsidian_graph_view_2026_08_24__memlog_brainstorm_graph_view",
+      "_bmad_output_brainstorming_brainstorm_obsidian_graph_view_2026_08_24__memlog_moc_naming"
+    ],
+    "18": [
+      "generate_json",
+      "generate_json_add_edge",
+      "generate_json_add_node"
+    ],
+    "19": [
+      "01_projects_stockly_saas_documentation_agents_fonctionnements"
+    ],
+    "20": [
+      "01_projects_stockly_saas_documentation_r_sum__agent_ia"
+    ],
+    "21": [
+      "01_projects_stockly_saas_projet_stockly"
+    ],
+    "22": [
+      "read_chunk"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08307692307692308,
+    "1": 0.1,
+    "2": 0.1,
+    "3": 0.1111111111111111,
+    "4": 0.125,
+    "5": 0.13333333333333333,
+    "6": 0.13333333333333333,
+    "7": 0.13333333333333333,
+    "8": 0.14285714285714285,
+    "9": 0.15384615384615385,
+    "10": 0.15384615384615385,
+    "11": 0.2,
+    "12": 0.2,
+    "13": 0.2222222222222222,
+    "14": 0.25,
+    "15": 0.2857142857142857,
+    "16": 0.3333333333333333,
+    "17": 0.5,
+    "18": 0.6666666666666666,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0
+  },
+  "gods": [
+    {
+      "id": "02_areas_05_boussole_mindset_strat\u00e9gie_organisation_synth\u00e8se_int\u00e9grale_strat\u00e9gies_d_organisation_et_ma\u00eetrise_de_la_gestion_du_temps",
+      "label": "Synth\u00e8se Int\u00e9grale : Strat\u00e9gies d'Organisation et Ma\u00eetrise de la Gestion du Temps",
+      "degree": 8
+    },
+    {
+      "id": "02_areas_10_spiritualite_sagesse_les_r\u00e9alit\u00e9s_du_monde_spirituel_t\u00e9moignage_de_j\u00e9r\u00e9my_potin_les_r\u00e9alit\u00e9s_du_monde_spirituel_synth\u00e8se_du_t\u00e9moignage_et_des_enseignements_de_j\u00e9r\u00e9my_potin",
+      "label": "Les R\u00e9alit\u00e9s du Monde Spirituel : Synth\u00e8se du T\u00e9moignage et des Enseignements de J\u00e9r\u00e9my Potin",
+      "degree": 8
+    },
+    {
+      "id": "02_areas_10_spiritualite_sagesse_les_trois_voix_manuel_d_initiation_apprendre_\u00e0_\u00e9couter_la_voix_du_divin_au_quotidienhttps_youtu_be_mbphu7aaklm_si_iii1oa9prydkhgs",
+      "label": "Manuel d'initiation : Apprendre \u00e0 \u00e9couter la voix du Divin au quotidienhttps://youtu.be/MBPHU7aaklM?si=IiI1OA9pRYDKHGS-",
+      "degree": 8
+    },
+    {
+      "id": "02_areas_05_boussole_mindset_organisation_synth\u00e8se_de_la_gestion_du_temps_et_de_l_efficacit\u00e9_personnelle_fondements_strat\u00e9gies_et_vigilances",
+      "label": "Synth\u00e8se de la Gestion du Temps et de l'Efficacit\u00e9 Personnelle : Fondements, Strat\u00e9gies et Vigilances",
+      "degree": 8
+    },
+    {
+      "id": "02_areas_01_systeme_execution_profil_context_fabien_profil_habitudes_de_fabien_m\u00e9moire_pour_ana\u00efs",
+      "label": "\ud83e\udde0 Profil & Habitudes de Fabien (M\u00e9moire pour Ana\u00efs)",
+      "degree": 7
+    },
+    {
+      "id": "02_areas_01_systeme_execution_antidotes_anti_overthinking_bujo_les_antidotes_anti_overthinking_r\u00e8gles_d_\u00e9nergie",
+      "label": "\ud83e\udde0 Les Antidotes Anti-Overthinking & R\u00e8gles d'\u00c9nergie",
+      "degree": 7
+    },
+    {
+      "id": "03_resources_ingenierie_produit_apprentisage_du_code_guide_strat\u00e9gique_pour_l_apprentissage_de_la_programmation_modernehttps_youtu_be_mbphu7aaklm_si_iii1oa9prydkhgs",
+      "label": "Guide Strat\u00e9gique pour l'Apprentissage de la Programmation Modernehttps://youtu.be/MBPHU7aaklM?si=IiI1OA9pRYDKHGS-",
+      "degree": 6
+    },
+    {
+      "id": "home_mon_second_cerveau_tableau_de_bord_de_fabien",
+      "label": "\ud83c\udf3f Mon Second Cerveau \u2014 Tableau de Bord de Fabien",
+      "degree": 6
+    },
+    {
+      "id": "02_areas_10_spiritualite_sagesse_l_alignement_divin_l_imp\u00e9ratif_de_l_alignement_divin_au_del\u00e0_de_l_activit\u00e9_religieuse",
+      "label": "L\u2019Imp\u00e9ratif de l\u2019Alignement Divin : Au-del\u00e0 de l\u2019Activit\u00e9 Religieuse",
+      "degree": 6
+    },
+    {
+      "id": "02_areas_10_spiritualite_sagesse_the_divine_art_of_spiritual_discernment_briefing_discernement_spirituel_et_ma\u00eetrise_des_pens\u00e9es_selon_les_enseignements_de_kathryn_kuhlman",
+      "label": "Briefing : Discernement Spirituel et Ma\u00eetrise des Pens\u00e9es selon les Enseignements de Kathryn Kuhlman",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "MOC Naming Convention (Obsidian Graph)",
+      "target": "MOC Templates & BuJo",
+      "source_files": [
+        "_bmad-output/brainstorming/brainstorm-obsidian-graph-view-2026-08-24/.memlog.md",
+        "03_Resources/Templates_BuJo/MOC_Templates_BuJo.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

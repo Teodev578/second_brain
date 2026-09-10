@@ -1,0 +1,63 @@
+/home/fabien/Documents/Agent/second_brain/📥 Inbox/MOC_Inbox.md
+/home/fabien/Documents/Agent/second_brain/🚀 Projets/Certifications_Tech/Projet_Certifications.md
+/home/fabien/Documents/Agent/second_brain/🚀 Projets/MOC_Projets.md
+/home/fabien/Documents/Agent/second_brain/🚀 Projets/Stockly_SaaS/Documentation/agents_fonctionnements.md
+/home/fabien/Documents/Agent/second_brain/🚀 Projets/Stockly_SaaS/Documentation/résumé_agent_ia.md
+/home/fabien/Documents/Agent/second_brain/🚀 Projets/Stockly_SaaS/Projet_Stockly.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/01_Organisation_&_Rituels/MOC_Organisation.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/01_Organisation_&_Rituels/Organisation_&_Vision_Fabien.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/01_Organisation_&_Rituels/README.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/02_Productivite_&_Focus/Antidotes_Anti_Overthinking_&_BuJo.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/02_Productivite_&_Focus/MOC_Productivite.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/02_Productivite_&_Focus/README.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/03_Finances_&_Patrimoine/MOC_Finances.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/03_Finances_&_Patrimoine/README.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/Santé/Chronotype_&_Energie_Sommeil.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/Santé/MOC_Sante_Vitalite.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/05_Mental_&_Equilibre/MOC_Mental_Equilibre.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/Vision/MOC_Vision_Objectifs.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/07_Maison_&_Environnement/MOC_Maison_Minimalisme.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/07_Maison_&_Environnement/README.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/08_Relations_&_Connexions/MOC_Relations.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/09_Side_Projects_&_Passions/Side Projects & Passions (Raphaël).md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/10_Philosophie_&_Pensees/MOC_Philosophie.md
+/home/fabien/Documents/Agent/second_brain/🌿 Domaines/MOC_Domaines_de_Vie.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Antigravity_&_Agents_IA/MOC_Antigravity.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Antigravity_&_Agents_IA/commandes_antigravity.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Antigravity_&_Agents_IA/sous_agent_antigravitty.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Computer_Science/Entretient.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Computer_Science/MOC_Computer_Science.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Computer_Science/apprentisage_du_code.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Design_&_UI/MOC_Design.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Design_&_UI/l'Animation UI et du Design Web.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Design_&_UI/processus_design.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Developpement_Personnel_&_Mindset/MOC_Dev_Perso.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Developpement_Personnel_&_Mindset/Stratégie_organisation.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Developpement_Personnel_&_Mindset/carousel_insta.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Developpement_Personnel_&_Mindset/organisation.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Developpement_Personnel_&_Mindset/stop_overthinking.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Developpement_Personnel_&_Mindset/strategie_organisation.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/MOC_Ressources.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Spiritualite_&_Foi/Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Spiritualite_&_Foi/MOC_Spiritualite_Foi.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Spiritualite_&_Foi/The Divine Art of Spiritual Discernment.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Spiritualite_&_Foi/les trois voix.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Spiritualite_&_Foi/l’Alignement Divin.md
+/home/fabien/Documents/Agent/second_brain/📚 Ressources/Templates_BuJo/MOC_Templates_BuJo.md
+/home/fabien/Documents/Agent/second_brain/📦 Archives/MOC_Archives.md
+/home/fabien/Documents/Agent/second_brain/Alice.md
+/home/fabien/Documents/Agent/second_brain/Anaïs.md
+/home/fabien/Documents/Agent/second_brain/Dashboard.md
+/home/fabien/Documents/Agent/second_brain/Matthieu.md
+/home/fabien/Documents/Agent/second_brain/_bmad-output/brainstorming/brainstorm-obsidian-graph-view-2026-08-24/.memlog.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/MOC_Vie_Perso.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Bilan Hebdomadaire.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Bullet Journal (BuJo).md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Decision (ADR).md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Journal Quotidien.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Note Atomique.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Projet Perso.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Projet.md
+/home/fabien/Documents/Agent/second_brain/vie_perso/template_bujo/Template - Session Agent.md
+/home/fabien/Documents/Agent/second_brain/Élise.md

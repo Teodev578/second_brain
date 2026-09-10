@@ -1,0 +1,124 @@
+<mxfile host="Electron" agent="Buffy">
+  <diagram id="user-flow-visiteur" name="User Flow 1 — Le Visiteur">
+    <mxGraphModel dx="2830" dy="1457" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#1A0A21;" value="🔍 USER FLOW 1 — LE VISITEUR (Découverte)" vertex="1">
+          <mxGeometry height="40" width="500" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#1A0A21;strokeColor=#572269;fontColor=#F7F5F2;fontSize=12;fontStyle=1;rounded=1;arcSize=50;" value="🔍 Arrivée&#xa;(Google / Réseau social / Bouche-à-oreille)" vertex="1">
+          <mxGeometry height="60" width="280" x="440" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="s1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#572269;strokeWidth=2;" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=12;fontStyle=1;arcSize=20;" value="🏠 Homepage&#xa;(Hero + Extrait audio + Prochains cultes)" vertex="1">
+          <mxGeometry height="60" width="280" x="440" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="e2d" edge="1" parent="1" source="s2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#572269;strokeWidth=2;" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#3B1C47;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;fontStyle=1;arcSize=20;" value="Que veut-il ?" vertex="1">
+          <mxGeometry height="80" width="170" x="495" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ed1" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" target="b1" value="Découvrir l&#39;église">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="📖 À Propos&#xa;(Vision, Équipe, Valeurs)" vertex="1">
+          <mxGeometry height="50" width="180" x="160" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r1" edge="1" parent="1" source="b1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;" target="r1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="😊 Confiance&#xa;gagnée" vertex="1">
+          <mxGeometry height="40" width="130" x="185" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ed2" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" target="b2" value="Horaires &amp;&#xa;Localisation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="📅 Événements&#xa;(Quand est le culte ?)" vertex="1">
+          <mxGeometry height="50" width="180" x="440" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r2" edge="1" parent="1" source="b2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;" target="r2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="📍 Localisation&#xa;trouvée" vertex="1">
+          <mxGeometry height="40" width="130" x="465" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ed3" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" target="b3" value="Écouter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;fontStyle=1;arcSize=20;" value="🎧 Écouter un extrait&#xa;(Player hero)" vertex="1">
+          <mxGeometry height="50" width="180" x="700" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_b3_b4" edge="1" parent="1" source="b3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;" target="b4" value="Voir plus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#161616;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="🎧 /enseignements&#xa;(Catalogue)" vertex="1">
+          <mxGeometry height="50" width="180" x="700" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e_b4_b5" edge="1" parent="1" source="b4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#FBC906;strokeWidth=1.5;" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;fontStyle=1;arcSize=20;" value="🎧 Fiche Message&#xa;(Player complet)" vertex="1">
+          <mxGeometry height="50" width="180" x="700" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r3" edge="1" parent="1" source="b5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;" target="r3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="😍 Impression&#xa;positive" vertex="1">
+          <mxGeometry height="40" width="130" x="725" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ed6" edge="1" parent="1" source="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" target="b6" value="Soutenir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="💛 Dons &amp; Soutien" vertex="1">
+          <mxGeometry height="50" width="160" x="960" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r4" edge="1" parent="1" source="b6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;" target="r4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="💳 Transaction" vertex="1">
+          <mxGeometry height="40" width="110" x="985" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F5F2;strokeColor=#CCCCCC;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="200" width="250" x="890" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=1;fontColor=#1A0A21;" value="LÉGENDE" vertex="1">
+          <mxGeometry height="30" width="90" x="970" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A0A21;strokeColor=#572269;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="910" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Point d&#39;entrée" vertex="1">
+          <mxGeometry height="20" width="100" x="950" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="910" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Page vitrine" vertex="1">
+          <mxGeometry height="20" width="100" x="950" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="910" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Action / Streaming" vertex="1">
+          <mxGeometry height="20" width="120" x="950" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="910" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Succès" vertex="1">
+          <mxGeometry height="20" width="100" x="950" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#3B1C47;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="915" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="leg5t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Décision" vertex="1">
+          <mxGeometry height="20" width="100" x="950" y="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

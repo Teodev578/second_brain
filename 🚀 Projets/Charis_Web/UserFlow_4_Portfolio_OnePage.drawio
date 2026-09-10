@@ -1,0 +1,182 @@
+<mxfile host="Electron" agent="Buffy">
+  <diagram id="user-flow-portfolio-church" name="User Flow 4 — Page Présentation Église (OnePage)">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TITLE -->
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#1A0A21;" value="⛪ PAGE PRÉSENTATION ÉGLISE — ONE PAGE (Scrollable)" vertex="1">
+          <mxGeometry height="40" width="600" x="350" y="20" as="geometry" />
+        </mxCell>
+
+        <!-- SECTION 1: HERO -->
+        <mxCell id="hero" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=13;fontStyle=1;arcSize=15;" value="🔝 HERO SECTION&#xa;━━━━━━━━━━━━━━━━━━━━━━━━&#xa;&quot;Bienvenue à Charis Nation&quot;&#xa;+ Vidéo/Photo de fond&#xa;+ Bouton CTA : 🎧 Écouter nos enseignements" vertex="1">
+          <mxGeometry height="100" width="340" x="410" y="80" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Hero → CTA Decision -->
+        <mxCell id="e_hero_d" edge="1" parent="1" source="hero" target="d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#572269;strokeWidth=2;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DECISION: What does the visitor do? -->
+        <mxCell id="d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#3B1C47;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;fontStyle=1;arcSize=15;" value="Que fait-il ?" vertex="1">
+          <mxGeometry height="80" width="170" x="495" y="210" as="geometry" />
+        </mxCell>
+
+        <!-- BRANCH 1: Click CTA → Catalogue -->
+        <mxCell id="cta_click" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;fontStyle=1;arcSize=20;" value="🎧 CTA : Écouter&#xa;→ /enseignements" vertex="1">
+          <mxGeometry height="50" width="200" x="160" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ed1" edge="1" parent="1" source="d1" target="cta_click" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" value="🎧 Écouter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow CTA → Catalogue flow -->
+        <mxCell id="e_cta_cat" edge="1" parent="1" source="cta_click" target="catalogue" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#FBC906;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Catalogue box -->
+        <mxCell id="catalogue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#161616;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="📚 Catalogue → Fiche Message&#xa;→ Player Audio" vertex="1">
+          <mxGeometry height="50" width="200" x="160" y="430" as="geometry" />
+        </mxCell>
+
+        <!-- Success CTA -->
+        <mxCell id="r1" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="🎵 Écoute lancée" vertex="1">
+          <mxGeometry height="40" width="140" x="185" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r1" edge="1" parent="1" source="catalogue" target="r1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- BRANCH 2: Scroll → Vision -->
+        <mxCell id="scroll_vision" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="📜 Section : Vision &amp; Mission&#xa;(Défiler vers le bas)" vertex="1">
+          <mxGeometry height="50" width="220" x="430" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ed2" edge="1" parent="1" source="d1" target="scroll_vision" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" value="📜 Découvrir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Vision → Team -->
+        <mxCell id="e_vision_team" edge="1" parent="1" source="scroll_vision" target="scroll_team" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#572269;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Team box -->
+        <mxCell id="scroll_team" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="👥 Section : L'Équipe Pastorale&#xa;(Photos + Bios)" vertex="1">
+          <mxGeometry height="50" width="220" x="430" y="430" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Team → Events -->
+        <mxCell id="e_team_events" edge="1" parent="1" source="scroll_team" target="scroll_events" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#572269;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Events box -->
+        <mxCell id="scroll_events" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="📅 Section : Prochains Cultes&#xa;(Cards événements)" vertex="1">
+          <mxGeometry height="50" width="220" x="430" y="520" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Events → Location -->
+        <mxCell id="e_events_loc" edge="1" parent="1" source="scroll_events" target="scroll_location" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#572269;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Location box -->
+        <mxCell id="scroll_location" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="📍 Section : Localisation&#xa;(Adresse + Plan + Horaires)" vertex="1">
+          <mxGeometry height="50" width="220" x="430" y="610" as="geometry" />
+        </mxCell>
+
+        <!-- Success Scroll -->
+        <mxCell id="r2" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="😊 Confiance&#xa;gagnée" vertex="1">
+          <mxGeometry height="40" width="130" x="465" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r2" edge="1" parent="1" source="scroll_location" target="r2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- BRANCH 3: Scroll → Audio Preview -->
+        <mxCell id="scroll_audio" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;fontStyle=1;arcSize=20;" value="🎧 Section : Extrait Audio&#xa;(Player mini intégré)" vertex="1">
+          <mxGeometry height="50" width="220" x="720" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ed3" edge="1" parent="1" source="d1" target="scroll_audio" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" value="🎧 Écouter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Audio → Play -->
+        <mxCell id="e_audio_play" edge="1" parent="1" source="scroll_audio" target="play_mini" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#FBC906;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Mini player -->
+        <mxCell id="play_mini" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="▶️ Mini Player&#xa;(Lecture extraits)" vertex="1">
+          <mxGeometry height="45" width="180" x="740" y="430" as="geometry" />
+        </mxCell>
+
+        <!-- Success Audio -->
+        <mxCell id="r3" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="😍 Impression&#xa;positive" vertex="1">
+          <mxGeometry height="40" width="130" x="755" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r3" edge="1" parent="1" source="play_mini" target="r3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- BRANCH 4: Dons -->
+        <mxCell id="scroll_dons" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=11;arcSize=20;" value="💛 Section : Dons &amp; Soutien" vertex="1">
+          <mxGeometry height="50" width="180" x="1000" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ed4" edge="1" parent="1" source="d1" target="scroll_dons" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FBC906;strokeWidth=1.5;fontColor=#FBC906;fontSize=10;" value="💛 Soutenir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Success Dons -->
+        <mxCell id="r4" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=11;fontStyle=1;rounded=1;arcSize=50;" value="💳 Transaction" vertex="1">
+          <mxGeometry height="40" width="120" x="1030" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e_r4" edge="1" parent="1" source="scroll_dons" target="r4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#00875A;strokeWidth=1.5;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- LEGEND -->
+        <mxCell id="legend_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F7F5F2;strokeColor=#CCCCCC;arcSize=10;" value="" vertex="1">
+          <mxGeometry height="180" width="250" x="1100" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_title" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontStyle=1;fontColor=#1A0A21;" value="LÉGENDE" vertex="1">
+          <mxGeometry height="30" width="90" x="1180" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#572269;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="1120" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="leg1t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Action / Streaming" vertex="1">
+          <mxGeometry height="20" width="120" x="1160" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A1B30;strokeColor=#572269;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="1120" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="leg2t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Section scrollable" vertex="1">
+          <mxGeometry height="20" width="120" x="1160" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3" parent="1" style="shape=mxgraph.flowchart.terminator;fillColor=#00875A;strokeColor=#00B8D9;fontColor=#FFFFFF;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="30" x="1120" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="leg3t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Succès" vertex="1">
+          <mxGeometry height="20" width="100" x="1160" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#3B1C47;strokeColor=#FBC906;fontColor=#F7F5F2;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1125" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="leg4t" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#1A0A21;" value="Décision" vertex="1">
+          <mxGeometry height="20" width="100" x="1160" y="195" as="geometry" />
+        </mxCell>
+
+        <!-- SCROLL INDICATOR -->
+        <mxCell id="scroll_note" parent="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontStyle=2;fontColor=#572269;" value="↕️ Page scrollable en une seule Page — Sections empilées verticalement" vertex="1">
+          <mxGeometry height="30" width="500" x="400" y="770" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
