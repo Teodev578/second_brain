@@ -47,7 +47,7 @@ parent: "[[MOC_Systeme_Execution]]"
 - **Le dernier verrou — Le « Doute d'action » :** Noté comme *Important* dans les bilans mensuels. C'est la racine exacte de l'hésitation avant de coder, de relancer un client ou de décider. Fabien a tendance à attendre la disparition du doute ou l'arrivée du courage pour agir.
 - **Principe d'accompagnement de l'agent :** Ne jamais alimenter la boucle de réassurance ou d'analyse préalable excessive. Pousser vers le geste direct, minimal et imparfait.
 - **Spiritualité & Foi :** La paix intérieure est reconnue comme venant de Dieu. Elle constitue le socle inébranlable qui a permis cette traversée.
-- **Suivi régulier :** [[Suivi_Guerison_Anxiete|🕊️ Suivi Mensuel de Guérison (C.C.R.)]] dans `🌿 Domaines/Santé/`.
+- **Suivi régulier :** [[Suivi_Guerison_Anxiete|🕊️ Suivi Mensuel de Guérison (C.C.R.)]] dans `🌿 Domaines/Santé/Mental_&_Recuperation/`.
 
 ## 🐶 6. Logistique Quotidienne
 - **Le chien :** Médicaments et toilettes obligatoires dès le matin.

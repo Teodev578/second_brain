@@ -19,11 +19,21 @@ parent: "[[Acceuil]]"
 
 ---
 
-## 📌 Notes clés
+## 📌 Notes clés par Espace
 
-- [[Gestion_Sucre_Cafe_&_Cortisol|☕ Protocole Sucre, Café & Baisse du Cortisol]]
+### 🔋 Sommeil & Nutrition (`Sommeil_&_Nutrition/`)
 - [[Chronotype_&_Energie_Sommeil|🔋 Chronotype & Énergie Sommeil — Chronotype 8h & Sport 17h]]
+- [[Gestion_Sucre_Cafe_&_Cortisol|☕ Protocole Sucre, Café & Baisse du Cortisol]]
+
+### ⚔️ Sport & Mouvement (`Sport_&_Mouvement/`)
 - [[Programme_Physique|⚔️ Programme Entraînement : Physique d'Anime]]
+- [[Circuit_Pompes_Maison|💪 Circuit Pompes & Renforcement Maison]]
+
+### 🕊️ Mental & Récupération (`Mental_&_Recuperation/`)
+- [[Suivi_Guerison_Anxiete|🕊️ Suivi Mensuel de Guérison (C.C.R.)]]
+
+### 🤖 Fiche Coach
+- [[Skills_Noé|🥗 Skills de Noé — Santé & Vitalité]]
 
 ---
 

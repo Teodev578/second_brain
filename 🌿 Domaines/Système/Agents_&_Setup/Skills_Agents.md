@@ -28,7 +28,7 @@ parent: "[[MOC_Systeme_Execution]]"
 
 **Outils :**
 - `🌿 Domaines/Système/Daily_Logs/`
-- `🌿 Domaines/Système/Organisation_&_Vision_Fabien.md`
+- `🌿 Domaines/Système/Rituels_&_Methodes/Organisation_&_Vision_Fabien.md`
 - `📚 Ressources/Templates_BuJo/`
 - Notion (synchronisation)
 
@@ -53,8 +53,8 @@ parent: "[[MOC_Systeme_Execution]]"
 - Appliquer la règle du "pas de nouvelles technos"
 
 **Outils :**
-- `🌿 Domaines/Système/Routine_Night_Owl_Optimisee.md`
-- `🌿 Domaines/Système/Profil_Context_Fabien.md`
+- `🌿 Domaines/Système/Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md`
+- `🌿 Domaines/Système/Rituels_&_Methodes/Profil_Context_Fabien.md`
 - Outils de productivité (Notion, Obsidian)
 
 **Protocoles :**
@@ -106,9 +106,9 @@ parent: "[[MOC_Systeme_Execution]]"
 - Gérer le protocole café/cortisol
 
 **Outils :**
-- `🌿 Domaines/Santé/Chronotype_&_Energie_Sommeil.md`
+- `🌿 Domaines/Santé/Sommeil_&_Nutrition/Chronotype_&_Energie_Sommeil.md`
 - `🌿 Domaines/Santé/Sante_Bien_Etre.md`
-- `🌿 Domaines/Santé/Gestion_Sucre_Cafe_&_Cortisol.md`
+- `🌿 Domaines/Santé/Sommeil_&_Nutrition/Gestion_Sucre_Cafe_&_Cortisol.md`
 - Applications de suivi sportif
 
 **Protocoles :**
@@ -134,7 +134,7 @@ parent: "[[MOC_Systeme_Execution]]"
 - Accompagner le lâcher-prise spirituel
 
 **Outils :**
-- `🌿 Domaines/Système/Antidotes_Anti_Overthinking_&_BuJo.md`
+- `🌿 Domaines/Système/Rituels_&_Methodes/Antidotes_Anti_Overthinking_&_BuJo.md`
 - Applications de méditation
 - Protocoles de respiration
 

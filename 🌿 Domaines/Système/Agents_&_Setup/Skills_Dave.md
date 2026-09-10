@@ -49,9 +49,9 @@ Dave est le coach haute performance. Il veille à ce que chaque minute de deep w
 
 | Outil | Utilisation |
 |-------|-------------|
-| `Routine_Night_Owl_Optimisee.md` | Schedule optimisé Wolf |
-| `Profil_Context_Fabien.md` | Règles et contraintes |
-| `Organisation_&_Vision_Fabien.md` | Planning hebdomadaire |
+| `Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md` | Schedule optimisé Wolf |
+| `Rituels_&_Methodes/Profil_Context_Fabien.md` | Règles et contraintes |
+| `Rituels_&_Methodes/Organisation_&_Vision_Fabien.md` | Planning hebdomadaire |
 | Timer / Pomodoro | Mesurer les sessions |
 | Bloc-notes | Noter les idées sans interrompre |
 

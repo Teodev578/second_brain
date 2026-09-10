@@ -14,14 +14,16 @@ parent: "[[Acceuil]]"
 - *Ici viennent s'agréger tes pensées...*
 
 
-## 🧠 Base de Connaissances (Mémoire d'Anaïs)
-- [[Fiche_Video_Recommencer_Mes_Etudes|🎓 Vidéo : Recommencer ses études & Ingénierie de la mémoire]] *(Active recall et apprentissage durable — Céline De Luca)*
-- [[Fiche_Video_Reviser_le_Soir|📺 Vidéo : Réviser le soir quand tu es crevé]] *(Techniques de révision du soir — Learnivore)*
-- [[Fiche_Video_Two_Notebook_System|📓 Vidéo : Two Notebook System]] *(Système analogique anti-scroll — Reysu)*
-- [[Profil_Context_Fabien|🧠 Profil & Habitudes de Fabien]] *(À lire par l'IA pour adapter ses plannings)*
+## 🧠 Rituels & Méthodes d'Exécution (`Rituels_&_Methodes/`)
 - [[Organisation_&_Vision_Fabien|🗓️ Journée Type & Méthode de Fabien]]
 - [[Routine_Night_Owl_Optimisee|🐺 Routine Night Owl Optimisée]] *(Chronotype wolf — tranches de travail basées sur la science)*
 - [[Antidotes_Anti_Overthinking_&_BuJo|🛡️ Règles Anti-Overthinking]]
+- [[Profil_Context_Fabien|🧠 Profil & Habitudes de Fabien]] *(À lire par l'IA pour adapter ses plannings)*
+
+## 🎓 Fiches & Synthèses d'Étude (`Fiches_&_Syntheses/`)
+- [[Fiche_Video_Recommencer_Mes_Etudes|🎓 Vidéo : Recommencer ses études & Ingénierie de la mémoire]] *(Active recall et apprentissage durable — Céline De Luca)*
+- [[Fiche_Video_Reviser_le_Soir|📺 Vidéo : Réviser le soir quand tu es crevé]] *(Techniques de révision du soir — Learnivore)*
+- [[Fiche_Video_Two_Notebook_System|📓 Vidéo : Two Notebook System]] *(Système analogique anti-scroll — Reysu)*
 
 ## 📅 Journals Quotidiens (Daily Logs)
 - [[Template_Daily_Log|📝 Template Daily Log]]
@@ -51,10 +53,11 @@ parent: "[[Acceuil]]"
 
 ## 🤖 Intelligence & Agent (Anaïs)
 
-### 📊 Skills de l'Équipe
+### 📊 Skills de l'Équipe & Setup (`Agents_&_Setup/`)
 - [[Skills_Agents|🤖 Vue centralisée des Skills Agents]]
 - [[Skills_Anaïs|🗂️ Skills d'Anaïs — Organisation & Rituels]]
 - [[Skills_Dave|⚡ Skills de Dave — Productivité & Focus]]
+- [[Notion_MCP_Setup|🔧 Configuration Notion MCP]]
 
 ### 🏥 Santé (Espace Noé)
 - [[Skills_Noé|🥗 Skills de Noé — Santé & Vitalité]]

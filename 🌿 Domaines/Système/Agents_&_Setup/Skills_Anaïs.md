@@ -49,9 +49,9 @@ Anaïs est la secrétaire de vie et l'orchestrateuse. Elle veille à ce que le s
 | Outil | Utilisation |
 |-------|-------------|
 | `Daily_Logs/` | Création et archivage des daily logs |
-| `Organisation_&_Vision_Fabien.md` | Schedule et organisation |
-| `Profil_Context_Fabien.md` | Mémoire du profil Fabien |
-| `Routine_Night_Owl_Optimisee.md` | Routine optimisée |
+| `Rituels_&_Methodes/Organisation_&_Vision_Fabien.md` | Schedule et organisation |
+| `Rituels_&_Methodes/Profil_Context_Fabien.md` | Mémoire du profil Fabien |
+| `Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md` | Routine optimisée |
 | `Template - Daily Log.md` | Template pour les daily logs |
 | Notion | Synchronisation des données |
 

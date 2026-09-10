@@ -51,10 +51,10 @@ Noé est le gardien de l'énergie physique. Il veille au sommeil, au sport, à l
 
 | Outil | Utilisation |
 |-------|-------------|
-| `Chronotype_&_Energie_Sommeil.md` | Protocole sommeil |
+| `Sommeil_&_Nutrition/Chronotype_&_Energie_Sommeil.md` | Protocole sommeil |
 | `Sante_Bien_Etre.md` | MOC santé |
-| `Gestion_Sucre_Cafe_&_Cortisol.md` | Protocole café |
-| `Programme_Physique.md` | Programme sport (Calisthénie) |
+| `Sommeil_&_Nutrition/Gestion_Sucre_Cafe_&_Cortisol.md` | Protocole café |
+| `Sport_&_Mouvement/Programme_Physique.md` | Programme sport (Calisthénie) |
 | Applications sport | Suivi d'entraînement |
 
 ---
