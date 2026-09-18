@@ -11,10 +11,14 @@
             "id": "bfe4174ecd7c8eee",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "🌿 Domaines/Spiritualité/Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nouvel onglet"
+              "title": "Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin"
             }
           }
         ]
@@ -193,8 +197,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43a01ff0c61e5070",
+  "active": "ebec5e6e49cfd7b4",
   "lastOpenFiles": [
+    "🌿 Domaines/Spiritualité/Spiritualité_Prophetic/The Divine Art of Spiritual Discernment.md",
+    "🌿 Domaines/Spiritualité/Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin.md",
+    "🌿 Domaines/Spiritualité/Spiritualité_Prophetic/l’Alignement Divin.md",
+    "🌿 Domaines/Spiritualité/Bible_Et_Foi.md",
+    "🌿 Domaines/Spiritualité/MOC_Prieres_&_Enseignements.md",
+    "🌿 Domaines/Spiritualité/Enseignement_Biblique",
+    "🌿 Domaines/Spiritualité/Sans titre.md",
+    "🌿 Domaines/Spiritualité/Spiritualité_Prophetic",
+    "🌿 Domaines/Spiritualité/Spiritualité_Prophetic/les trois voix.md",
+    "🌿 Domaines/Spiritualité/Spiritualité_Prophetic/Activer le Don de Prophétie — Jermaine & Rebecca Francis.md",
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Leadership According to God's Way D4.md",
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Speaking as the Oracle of God D3.md",
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/What a God Can Do D4.md",
@@ -204,8 +218,6 @@
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/description_part3.mp3",
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/CONVOCATION PROPHETIQUE - JOUR 3.mp3",
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Tarry for the Spirit D1.md",
-    "🌿 Domaines/Spiritualité/l’Alignement Divin.md",
-    "🌿 Domaines/Spiritualité/Activer le Don de Prophétie — Jermaine & Rebecca Francis.md",
     "🌿 Domaines/Santé/Sport_&_Mouvement/Programme_Physique.md",
     "🌿 Domaines/Santé/Mental_&_Recuperation/Suivi_Guerison_Anxiete.md",
     "🌿 Domaines/Finances/Estimation dépense.md",
@@ -220,16 +232,7 @@
     "🌿 Domaines/Vision/Mindset_&_Action/stop_overthinking.md",
     "🌿 Domaines/Vision/Mindset_&_Action/Action_battant_Doutes.md",
     "🌿 Domaines/Vision/Mindset_&_Action",
-    "🌿 Domaines/Santé/Sommeil_&_Nutrition/Gestion_Sucre_Cafe_&_Cortisol.md",
-    "🌿 Domaines/Santé/Sommeil_&_Nutrition/Chronotype_&_Energie_Sommeil.md",
-    "🌿 Domaines/Santé/Sport_&_Mouvement/Circuit_Pompes_Maison.md",
     "🌿 Domaines/Santé/Mental_&_Recuperation",
-    "🌿 Domaines/Santé/Sommeil_&_Nutrition",
-    "🌿 Domaines/Santé/Sport_&_Mouvement",
-    "🌿 Domaines/Système/Agents_&_Setup/Notion_MCP_Setup.md",
-    "🌿 Domaines/Système/Agents_&_Setup/Skills_Dave.md",
-    "🌿 Domaines/Système/Agents_&_Setup/Skills_Anaïs.md",
-    "🌿 Domaines/Système/Agents_&_Setup/Skills_Agents.md",
-    "🌿 Domaines/Système/Agents_&_Setup"
+    "🌿 Domaines/Santé/Sommeil_&_Nutrition"
   ]
 }

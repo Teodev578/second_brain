@@ -15,7 +15,7 @@ parent: "[[Acceuil]]"
 
 ## 📖 Lectures & Enseignements
 - [[Activer le Don de Prophétie — Jermaine & Rebecca Francis|📖 Activer le Don de Prophétie]] — Synthèse du livre sur l'activation du don prophétique
-- [[Les trois voix|🗣️ Les Trois Voix]] — Apprendre à écouter la voix du Divin
+- [[les trois voix|🗣️ Les Trois Voix]] — Apprendre à écouter la voix du Divin
 - [[The Divine Art of Spiritual Discernment|🔍 Discernement Spirituel]] — Maîtrise des pensées selon Kathryn Kuhlman
 - [[Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin|🌍 Réalités du Monde Spirituel]] — Témoignage
 - [[l'Alignement Divin|✝️ L'Alignement Divin]]
