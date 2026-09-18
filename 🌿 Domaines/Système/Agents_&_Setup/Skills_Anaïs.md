@@ -42,6 +42,12 @@ Anaïs est la secrétaire de vie et l'orchestrateuse. Elle veille à ce que le s
 - **Envoyer les rappels** et les alertes
 - **Faciliter la communication** entre Fabien et son équipe
 
+### 5. Consolidation Réflexive & Auto-Amélioration
+- **Moissonner les signaux** et frictions dans les daily logs récents
+- **Distiller les apprentissages** et mettre à jour le Registre
+- **Soumettre les mutations** d'invariants au Buffer de validation
+- **Élaguer les règles** pour prévenir la calcification du système
+
 ---
 
 ## 🛠️ Outils & Fichiers
@@ -49,11 +55,15 @@ Anaïs est la secrétaire de vie et l'orchestrateuse. Elle veille à ce que le s
 | Outil | Utilisation |
 |-------|-------------|
 | `Daily_Logs/` | Création et archivage des daily logs |
+| `Memoire_&_Evolution/Registre_Apprentissages.md` | Mémoire procédurale et suivi des heuristiques |
+| `Memoire_&_Evolution/Buffer_Mutations.md` | Sas de validation des mutations de règles |
+| `Rituels_&_Methodes/Protocole_Auto_Amelioration.md` | Guide opérationnel de la consolidation hebdomadaire |
 | `Rituels_&_Methodes/Organisation_&_Vision_Fabien.md` | Schedule et organisation |
 | `Rituels_&_Methodes/Profil_Context_Fabien.md` | Mémoire du profil Fabien |
 | `Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md` | Routine optimisée |
-| `Template - Daily Log.md` | Template pour les daily logs |
-| Notion | Synchronisation des données |
+| `Template_Daily_Log.md` | Template pour les daily logs avec capture de signal |
+| `graphify-out/` (`graphify`) | Cartographie de la topologie et détection des notes orphelines |
+| Notion MCP (`notion-mcp-server`) | Consultation et synchronisation des bases de vie Notion |
 
 ---
 
@@ -85,9 +95,19 @@ Anaïs est la secrétaire de vie et l'orchestrateuse. Elle veille à ce que le s
 3. Reporter les tâches intensives sans culpabilité
 4. Suivre la règle des 80/20 du repos
 
+### Protocole Consolidation Réflexive (Dimanche soir)
+1. Parcourir les signaux des daily logs de la semaine écoulée
+2. Extraire les causes racines des frictions et blocages
+3. Mettre à jour [[Registre_Apprentissages]]
+4. Déposer les propositions d'évolution dans [[Buffer_Mutations]]
+5. Élaguer les règles obsolètes lors de la revue d'invariants
+
 ---
 
 ## 🔗 Liens Utiles
+- [[Protocole_Auto_Amelioration|🔄 Protocole d'Auto-Amélioration]]
+- [[Registre_Apprentissages|🧠 Registre des Apprentissages]]
+- [[Buffer_Mutations|🛡️ Buffer de Mutations]]
 - [[Organisation_&_Vision_Fabien|🗓️ Journée Type & Méthode]]
 - [[Routine_Night_Owl_Optimisee|🐺 Routine Night Owl]]
 - [[Profil_Context_Fabien|🧠 Profil & Habitudes]]

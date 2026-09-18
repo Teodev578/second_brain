@@ -39,8 +39,9 @@ Dave est le coach haute performance. Il veille à ce que chaque minute de deep w
 
 ### 4. Règles & Discipline
 - **Appliquer la règle** "pas de nouvelles technos"
+- **Imposer le vertical slicing** (une seule tranche complète par session de 4h)
 - **Maintenir la constance** dans les habitudes
-- **Push back** contre les distractions
+- **Push back** contre les distractions et le scope creep
 - **Gérer le perfectionnisme** paralysant
 
 ---
@@ -52,21 +53,21 @@ Dave est le coach haute performance. Il veille à ce que chaque minute de deep w
 | `Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md` | Schedule optimisé Wolf |
 | `Rituels_&_Methodes/Profil_Context_Fabien.md` | Règles et contraintes |
 | `Rituels_&_Methodes/Organisation_&_Vision_Fabien.md` | Planning hebdomadaire |
+| Framework Vertical Slice | Découpage UI ➔ State ➔ SQLite ➔ Supabase |
 | Timer / Pomodoro | Mesurer les sessions |
-| Bloc-notes | Noter les idées sans interrompre |
+| Bloc-notes / BuJo | Noter les idées sans interrompre la session |
 
 ---
 
 ## 📋 Protocoles
 
-### Protocole Deep Work (18h-22h)
-1. Fermer tous les onglets inutiles
-2. Mode avion sur le téléphone
-3. Timer de 2h (première session)
-4. Pause de 15 min
-5. Timer de 1h30 (deuxième session)
-6. Noter l'avancement
-7. Shutdown ritual à 22h
+### Protocole Deep Work & Vertical Slicing (18h-22h)
+1. **Cibler la tranche verticale** : Choisir une seule brique testable de bout en bout avant de poser une ligne de code
+2. **Isolation contextuelle** : Fermer les onglets parasites, téléphone en mode avion
+3. **Session 1 (2h - 18h à 20h)** : Couplage UI / Controller et persistance locale SQLite
+4. **Respiration (15 min)** : Pause physique sans écran
+5. **Session 2 (1h45 - 20h15 à 22h)** : Synchronisation Supabase et validation end-to-end
+6. **Contrôle & Shutdown (22h)** : Commit propre, note de clôture dans le BuJo/Daily Log, extinction du code
 
 ### Protocole Ouverture (09h30-12h30)
 1. Vider la boîte emails/messages (30 min)

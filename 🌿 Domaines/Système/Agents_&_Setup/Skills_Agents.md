@@ -25,9 +25,12 @@ parent: "[[MOC_Systeme_Execution]]"
 - Générer les plannings hebdomadaires
 - Adapter le planning aux jours basse énergie
 - Gérer les templates de daily log
+- Rétro-mining des signaux & auto-amélioration continue
 
 **Outils :**
 - `🌿 Domaines/Système/Daily_Logs/`
+- `🌿 Domaines/Système/Memoire_&_Evolution/` (Registre & Buffer)
+- `🌿 Domaines/Système/Rituels_&_Methodes/Protocole_Auto_Amelioration.md`
 - `🌿 Domaines/Système/Rituels_&_Methodes/Organisation_&_Vision_Fabien.md`
 - `📚 Ressources/Templates_BuJo/`
 - Notion (synchronisation)
@@ -36,6 +39,7 @@ parent: "[[MOC_Systeme_Execution]]"
 - Planification soir (3 tâches prioritaires)
 - Check matin (5 min de révision)
 - Adaptation jour B (2-3 tâches max)
+- Consolidation réflexive hebdomadaire (dimanche soir)
 
 **Statut :** ✅ Actif
 
@@ -49,18 +53,20 @@ parent: "[[MOC_Systeme_Execution]]"
 - Définir les blocs de deep work
 - Optimiser le time-blocking
 - Éliminer les sources de friction
+- Imposer le vertical slicing (1 brique testable par session de 4h)
 - Gérer les sessions de concentration
 - Appliquer la règle du "pas de nouvelles technos"
 
 **Outils :**
 - `🌿 Domaines/Système/Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md`
 - `🌿 Domaines/Système/Rituels_&_Methodes/Profil_Context_Fabien.md`
-- Outils de productivité (Notion, Obsidian)
+- Outils de productivité (Notion, Obsidian, BuJo)
+- Framework Vertical Slicing (UI ➔ State ➔ SQLite ➔ Supabase)
 
 **Protocoles :**
-- Deep work 18h-22h (pic Wolf)
+- Deep work & Vertical Slicing 18h-22h (pic Wolf)
 - Ouverture 09h30-12h30 (admin léger)
-- Règle "une seule brique à la fois"
+- Règle d'airain "une seule brique complète à la fois"
 - Shutdown ritual à 22h
 
 **Statut :** ✅ Actif

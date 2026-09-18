@@ -43,6 +43,14 @@ parent: "[[MOC_Systeme_Execution]]"
 
 ---
 
+## 📡 Signaux & Frictions (Auto-Amélioration)
+
+- **Friction constatée** : 
+- **Cause racine** : 
+- **Ajustement suggéré** : 
+
+---
+
 ## ⚠️ Pas fait
 
 - 

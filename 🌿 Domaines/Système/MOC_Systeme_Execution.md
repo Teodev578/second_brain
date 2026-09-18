@@ -17,8 +17,13 @@ parent: "[[Acceuil]]"
 ## 🧠 Rituels & Méthodes d'Exécution (`Rituels_&_Methodes/`)
 - [[Organisation_&_Vision_Fabien|🗓️ Journée Type & Méthode de Fabien]]
 - [[Routine_Night_Owl_Optimisee|🐺 Routine Night Owl Optimisée]] *(Chronotype wolf — tranches de travail basées sur la science)*
+- [[Protocole_Auto_Amelioration|🔄 Protocole de Consolidation & Auto-Amélioration]] *(Apprentissage en double boucle)*
 - [[Antidotes_Anti_Overthinking_&_BuJo|🛡️ Règles Anti-Overthinking]]
 - [[Profil_Context_Fabien|🧠 Profil & Habitudes de Fabien]] *(À lire par l'IA pour adapter ses plannings)*
+
+## 🧬 Mémoire & Évolution du Système (`Memoire_&_Evolution/`)
+- [[Registre_Apprentissages|🧠 Registre des Apprentissages & Heuristiques]] *(Mémoire procédurale et capitalisation des leçons)*
+- [[Buffer_Mutations|🛡️ Buffer de Mutations Procédurales]] *(Sas de validation souveraine des nouvelles règles)*
 
 ## 🎓 Fiches & Synthèses d'Étude (`Fiches_&_Syntheses/`)
 - [[Fiche_Video_Recommencer_Mes_Etudes|🎓 Vidéo : Recommencer ses études & Ingénierie de la mémoire]] *(Active recall et apprentissage durable — Céline De Luca)*

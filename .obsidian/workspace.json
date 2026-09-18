@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9435cc91b8e60d09",
+        "id": "70d23caa55cbb372",
         "type": "tabs",
         "children": [
           {
-            "id": "3a6d074e8b844c71",
+            "id": "bfe4174ecd7c8eee",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🌿 Domaines/Créativité/MOC_Creativite_&_Textes.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MOC_Creativite_&_Textes"
+              "title": "Nouvel onglet"
             }
           }
         ]
@@ -83,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.9921875
+    "width": 333.3359375
   },
   "right": {
     "id": "d6fdc4c950e4c63c",
@@ -183,7 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 350.40234375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,11 +195,34 @@
   },
   "active": "43a01ff0c61e5070",
   "lastOpenFiles": [
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Leadership According to God's Way D4.md",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Speaking as the Oracle of God D3.md",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/What a God Can Do D4.md",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/What a God Can Do D4.md.tmp.117555.b38f16d9f53d",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/The Spirit of Grace and Faith D2.md",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/CONVOCATION PROPHETIQUE - JOUR_3.mp3",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/description_part3.mp3",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/CONVOCATION PROPHETIQUE - JOUR 3.mp3",
+    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Tarry for the Spirit D1.md",
+    "🌿 Domaines/Spiritualité/l’Alignement Divin.md",
+    "🌿 Domaines/Spiritualité/Activer le Don de Prophétie — Jermaine & Rebecca Francis.md",
+    "🌿 Domaines/Santé/Sport_&_Mouvement/Programme_Physique.md",
     "🌿 Domaines/Santé/Mental_&_Recuperation/Suivi_Guerison_Anxiete.md",
+    "🌿 Domaines/Finances/Estimation dépense.md",
+    "🌿 Domaines/Finances/Skills_Camille.md",
+    "🌿 Domaines/Finances/Bilan_&_Budget_Financier.md",
+    "🌿 Domaines/Créativité/MOC_Creativite_&_Textes.md",
+    "🌿 Domaines/Vision/Journal_Introspection/MOC_Journal_Introspection.md",
+    "🌿 Domaines/Vision/Syntheses_&_Etudes/organisation.md",
+    "🌿 Domaines/Vision/Syntheses_&_Etudes/carousel_insta.md",
+    "🌿 Domaines/Vision/Syntheses_&_Etudes/Stratégie_organisation.md",
+    "🌿 Domaines/Vision/Syntheses_&_Etudes",
+    "🌿 Domaines/Vision/Mindset_&_Action/stop_overthinking.md",
+    "🌿 Domaines/Vision/Mindset_&_Action/Action_battant_Doutes.md",
+    "🌿 Domaines/Vision/Mindset_&_Action",
     "🌿 Domaines/Santé/Sommeil_&_Nutrition/Gestion_Sucre_Cafe_&_Cortisol.md",
     "🌿 Domaines/Santé/Sommeil_&_Nutrition/Chronotype_&_Energie_Sommeil.md",
     "🌿 Domaines/Santé/Sport_&_Mouvement/Circuit_Pompes_Maison.md",
-    "🌿 Domaines/Santé/Sport_&_Mouvement/Programme_Physique.md",
     "🌿 Domaines/Santé/Mental_&_Recuperation",
     "🌿 Domaines/Santé/Sommeil_&_Nutrition",
     "🌿 Domaines/Santé/Sport_&_Mouvement",
@@ -211,29 +230,6 @@
     "🌿 Domaines/Système/Agents_&_Setup/Skills_Dave.md",
     "🌿 Domaines/Système/Agents_&_Setup/Skills_Anaïs.md",
     "🌿 Domaines/Système/Agents_&_Setup/Skills_Agents.md",
-    "🌿 Domaines/Système/Fiches_&_Syntheses/Fiche_Video_Two_Notebook_System.md",
-    "🌿 Domaines/Système/Fiches_&_Syntheses/Fiche_Video_Reviser_le_Soir.md",
-    "🌿 Domaines/Système/Fiches_&_Syntheses/Fiche_Video_Recommencer_Mes_Etudes.md",
-    "🌿 Domaines/Système/Rituels_&_Methodes/Profil_Context_Fabien.md",
-    "🌿 Domaines/Système/Rituels_&_Methodes/Antidotes_Anti_Overthinking_&_BuJo.md",
-    "🌿 Domaines/Système/Rituels_&_Methodes/Routine_Night_Owl_Optimisee.md",
-    "🌿 Domaines/Système/Agents_&_Setup",
-    "🌿 Domaines/Système/Fiches_&_Syntheses",
-    "🌿 Domaines/Système/Rituels_&_Methodes/Organisation_&_Vision_Fabien.md",
-    "🌿 Domaines/Système/Rituels_&_Methodes",
-    "README.md",
-    "🌿 Domaines/Spiritualité/Activer le Don de Prophétie — Jermaine & Rebecca Francis.md",
-    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/The Spirit of Grace and Faith D2.md",
-    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source",
-    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/CONVOCATION PROPHETIQUE - JOUR 2 - PART 2_00m_00s__29m_32s_11h.mp3",
-    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Tarry for the Spirit D1.md",
-    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/source/CONVOCATION PROPHETIQUE 2026 - JOUR 1.mp3",
-    "🚀 Projets/Contenu_Instagram/Carousel_Skills_IA_pour_Devs.md",
-    "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/description_part1.mp3",
-    "🚀 Projets/Contenu_Instagram/Pipeline_Instagram.md",
-    "🌿 Domaines/Santé/Programme_Physique.md",
-    "🌿 Domaines/Santé/Circuit_Pompes_Maison.md",
-    "Sans titre.md",
-    "🌿 Domaines/Santé/Suivi_Guerison_Anxiete.md"
+    "🌿 Domaines/Système/Agents_&_Setup"
   ]
 }
