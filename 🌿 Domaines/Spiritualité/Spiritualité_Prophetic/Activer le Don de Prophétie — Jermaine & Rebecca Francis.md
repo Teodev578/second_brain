@@ -76,11 +76,11 @@ parent: "[[Bible_Et_Foi]]"
 
 **Le but de la prophétie :**
 
-| Fonction | Définition (Strong's) | Impact |
-|---|---|---|
-| **Édification** | Construire, fortifier comme un château (3619) | Vous donne la force de résister, plus de joie, foi, courage |
-| **Exhortation** | Appel, convocation, encouragement (3874) | Vous pousse à l'action, vous dynamise |
-| **Réconfort** | Encouragement, consolation (3889) | Vient là où vous êtes — douleur, déception — et vous apporte la paix |
+| Fonction        | Définition (Strong's)                         | Impact                                                               |
+| --------------- | --------------------------------------------- | -------------------------------------------------------------------- |
+| **Édification** | Construire, fortifier comme un château (3619) | Vous donne la force de résister, plus de joie, foi, courage          |
+| **Exhortation** | Appel, convocation, encouragement (3874)      | Vous pousse à l'action, vous dynamise                                |
+| **Réconfort**   | Encouragement, consolation (3889)             | Vient là où vous êtes — douleur, déception — et vous apporte la paix |
 
 **Témoignage de Jermaine :** Lors d'une conférence, il a prophétisé à un surintendant régional qui était venu pour *arrêter* l'événement prophétique. Jermaine lui a dit mot pour mot une conversation que cet homme avait eue avec sa femme dans la voiture. L'homme s'est levé le lendemain devant toute l'assemblée pour confirmer que c'était de vrais prophètes.
 
