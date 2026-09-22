@@ -22,3 +22,5 @@ parent: "[[Acceuil]]"
 - [[The Divine Art of Spiritual Discernment|🔍 Discernement Spirituel]] — Maîtrise des pensées selon Kathryn Kuhlman
 - [[Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin|🌍 Réalités du Monde Spirituel]] — Témoignage
 - [[l'Alignement Divin|✝️ L'Alignement Divin]]
+- [[Tu t’épuises pour Dieu… mais il ne te demande pas ça — Drk Ravo|🕊️ Tu t’épuises pour Dieu — Drk Ravo]] — Sortir du burn-out religieux et entrer dans le repos de la grâce
+
