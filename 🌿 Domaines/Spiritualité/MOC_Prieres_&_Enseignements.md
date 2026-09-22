@@ -14,7 +14,7 @@ parent: "[[Bible_Et_Foi]]"
 > Recueil de notes spirituelles, prières intimes, paroles prophétiques et enseignements bibliques.
 > ↖ [[🌿 Domaines/Spiritualité/Bible_Et_Foi|Retour à Bible & Foi]]
 
-Total : **26 notes** (Période : Juin — Septembre 2026)
+Total : **27 notes** (Période : Juin — Septembre 2026)
 
 ---
 
@@ -22,6 +22,7 @@ Total : **26 notes** (Période : Juin — Septembre 2026)
 
 | Date | Sujet / Première ligne |
 | :--- | :--- |
+| 2026-09-22 | [[Ce qui se passe réellement lors d'un Transfert d'Onction — Jérémy Potin]] |
 | 2026-09-22 | [[La Preuve que la Grande Onction Divine Repose sur Vous — Kathryn Kuhlman]] |
 | 2026-09-22 | [[Les Autels Familiaux — Comment s'en Libérer]] |
 | 2026-08-23 | [[230826  isabelle]] |
