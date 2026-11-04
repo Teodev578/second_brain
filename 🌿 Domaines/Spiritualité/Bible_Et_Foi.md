@@ -14,6 +14,7 @@ parent: "[[Acceuil]]"
 - [[MOC_Prieres_&_Enseignements|🕊️ Prières, Prophéties & Enseignements (24 notes personnelles)]]
 
 ## 📖 Lectures & Enseignements
+- [[Classe d'Affermissement — La Maison du Potier|🏺 Classe d'Affermissement — La Maison du Potier]] —Du Salut à la Sanctification à travers l'allégorie du Potier et de l'argile
 - [[La Marche Selon l'Esprit — Dave Roberson|📖 La Marche Selon l'Esprit — Dave Roberson]] — La prière en langues comme édification et accès aux mystères
 - [[Comment Entendre la Voix de Dieu — Mark Virkler|📖 Comment Mieux Entendre la Voix de Dieu — Mark Virkler]] — Les 4 clés d'Habacuc et le dialogue spontané
 - [[L'Onction Illimitée — Dennis Goldsworthy-Davis|📖 L'Onction Illimitée — Dennis Goldsworthy-Davis]] — De l'onction résidente à l'onction de débordement
