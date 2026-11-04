@@ -1,0 +1,23 @@
+Le choix entre vivre chaque jour ou mourir un jour,
+Certaines vérités sonnent comme un disc rayé,
+Chacun son combat, à chacun son joug,
+Foncer tête baissée, de peur d'être rattrapé par le prix à payer,
+Qu'aucun homme se plaigne de devoir payer son passé,
+C'est ça ou frère y rester, combattre ou abattre,
+En chaque chose se réfugier en Dieu, trouver du courage,
+J'ai avancé avec le frein à main, enclenché,
+Même quand c'est clair, une partie de moi fuit,
+Frère, se rapprocher de Dieu, c'est fuir les ennuis,
+Cette partie de moi, n'existe plus, c'est du passé.
+
+Ce combat m'a rattrapé, j'essaie, je sais,
+J'essaie de trouver l'amour dans tout ce que je fais,
+Pas dans quelqu'un, pas une paire de seins, de fesses,
+J'ai pas envie de finir ma vie avec un pot de fleurs,
+Du coup j'essaie de tout faire pour protéger mon cœur,
+Dieu m'a lavé de certaines blessures et beaucoup de stress,
+Je ne sais comment m'y prendre, je reviens souvent, pour d'autres conseils,
+Violent avec tout le monde, car confiance en personne,
+On s'aime et on se déteste souvent pour les mêmes raisons,
+Dans mes rêves j'entends sa voix qui résonne,
+Cette femme me connaissait comme personne.

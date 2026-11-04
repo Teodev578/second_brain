@@ -1,0 +1,12 @@
+J'ai tellement cherché ce qui dormait à côté de moi,
+Quand mes démons m'aidaient dans mon désarroi,
+Vous savez ce monde est tellement étrange,
+Choisis ton camp, mais réfléchis bien où tu te ranges,
+_**Allah n’est pas obligé**_ comme le dit Ahmadou Kourouma,
+Je me suis perdu pour me retrouver loin de chez moi,
+J'ai compris que se fuir, c'est se détester soi-même,
+Je crois en Dieu, j'ai nettoyé et trié mes rêves,
+Beaucoup me demandent ce qui m'a tant changé,
+Je sens comme un mur en face, je pousse encore,
+Y'a qu'à la salle que je transpi, music dans les amplis,
+Ce dans quoi je suis, il n'y a que moi qui ai compris.
