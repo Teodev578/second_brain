@@ -16,4 +16,5 @@ Pour naviguer directement dans vos espaces de vie :
 - **Vision & Boussole :** [[🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons|🧭 Boussole de Vie & 3 Horizons]]
 - **Projet P0 (Stockly SaaS) :** [[🚀 Projets/Stockly_SaaS/Projet_Stockly|📦 Projet Stockly]]
 - **Organisation & Rituels :** [[🌿 Domaines/Système/Rituels_&_Methodes/Organisation_&_Vision_Fabien|🗓️ Organisation & Méthode]]
+- **Études & Cours :** [[🌿 Domaines/Études_&_Cours/MOC_Etudes_&_Cours|🎓 Espace Études, Cours & Planning]]
 - **Agents Archivés :** Accès aux 6 agents gelés via `📦 Archives/Agents_Gelés/`

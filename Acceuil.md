@@ -15,10 +15,10 @@ Bienvenue dans votre QG d'équilibre holistique, synchronisé avec votre page No
 
 ## ⚡ Raccourcis Stratégiques & Rituels
 
-| 🗓️ Organisation Quotidienne                       | 🧭 Vision & Horizons         | 🧠 Anti-Overthinking & BuJo                     | 🔋 Sommeil & Énergie             |                                                          |                                 |                                                  |                                |
-| :------------------------------------------------- | :--------------------------- | :---------------------------------------------- | :------------------------------- | -------------------------------------------------------- | ------------------------------- | ------------------------------------------------ | ------------------------------ |
-| [[🌿 Domaines/Système/Rituels_&_Methodes/Organisation_&_Vision_Fabien | 🗓️ Journée Type & Méthode]] | [[🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons | 🧭 Les 3 Horizons Stratégiques]] | [[🌿 Domaines/Système/Rituels_&_Methodes/Antidotes_Anti_Overthinking_&_BuJo | 🧠 Cerveau de Papier & Règles]] | [[🌿 Domaines/Santé/Sommeil_&_Nutrition/Chronotype_&_Energie_Sommeil | 🔋 Chronotype 8h & Sport 17h]] |
-|                                                    |                              |                                                 |                                  |                                                          |                                 |                                                  |                                |
+| 🗓️ Organisation Quotidienne | 🧭 Vision & Horizons | 🧠 Anti-Overthinking & BuJo | 🔋 Sommeil & Énergie |
+| :--- | :--- | :--- | :--- |
+| [[🌿 Domaines/Système/Rituels_&_Methodes/Organisation_&_Vision_Fabien \| 🗓️ Journée Type & Méthode]] | [[🌿 Domaines/Vision/Boussole_de_Vie_&_Horizons \| 🧭 Les 3 Horizons Stratégiques]] | [[🌿 Domaines/Système/Rituels_&_Methodes/Antidotes_Anti_Overthinking_&_BuJo \| 🧠 Cerveau de Papier & Règles]] | [[🌿 Domaines/Santé/Sommeil_&_Nutrition/Chronotype_&_Energie_Sommeil \| 🔋 Chronotype 8h & Sport 17h]] |
+| [[🌿 Domaines/Études_&_Cours/MOC_Etudes_&_Cours \| 🎓 Études & Cours (MOC)]] | [[🌿 Domaines/Études_&_Cours/Planning_&_Horaires/Emploi_du_Temps \| 🗓️ Emploi du Temps]] | [[🌿 Domaines/Finances/Bilan_&_Budget_Financier \| 💰 Finances & Budget]] | [[🌿 Domaines/Spiritualité/MOC_Prieres_&_Enseignements \| 📖 Foi & Esprit]] |
 
 ---
 
