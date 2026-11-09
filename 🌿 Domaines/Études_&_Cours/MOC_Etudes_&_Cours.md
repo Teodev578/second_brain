@@ -34,7 +34,8 @@ SORT file.mtime DESC
 ```
 
 ### 🗂️ Matières & Domaines d'Étude
-- *Les dossiers par matière viendront s'organiser ici au fil du semestre dans `Notes_de_Cours/`.*
+- **Gestion de Projet & Business Analysis :**
+  - [[01_Analyse_des_Besoins_&_Cahier_des_Charges|01. Analyse des Besoins & Cahier des Charges Fonctionnel]]
 - Modèle de capture recommandé : [[Template - Note de Cours|📝 Template de Prise de Note & Active Recall]]
 
 ---

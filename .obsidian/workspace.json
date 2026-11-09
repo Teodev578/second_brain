@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌿 Domaines/Spiritualité/Enseignement_Biblique/Classe d'Affermissement — La Maison du Potier.md",
+                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Gestion_de_Projet_&_Business_Analysis/01_Analyse_des_Besoins_&_Cahier_des_Charges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Classe d'Affermissement — La Maison du Potier"
+              "title": "01_Analyse_des_Besoins_&_Cahier_des_Charges"
             }
           }
         ]
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌿 Domaines/Spiritualité/Enseignement_Biblique/Classe d'Affermissement — La Maison du Potier.md",
+                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Gestion_de_Projet_&_Business_Analysis/01_Analyse_des_Besoins_&_Cahier_des_Charges.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -197,8 +197,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "43a01ff0c61e5070",
+  "active": "1312e9f39e31900d",
   "lastOpenFiles": [
+    "🌿 Domaines/Spiritualité/Enseignement_Biblique/Classe d'Affermissement — La Maison du Potier.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Gestion_de_Projet_&_Business_Analysis/01_Analyse_des_Besoins_&_Cahier_des_Charges.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Gestion_de_Projet_&_Business_Analysis",
     "🔧 Meta/Templates/Template - Note de Cours.md",
     "🌿 Domaines/Études_&_Cours/Planning_&_Horaires/Emploi_du_Temps.md",
     "🌿 Domaines/Études_&_Cours/MOC_Etudes_&_Cours.md",
@@ -208,7 +211,6 @@
     "🌿 Domaines/Spiritualité/MOC_Prieres_&_Enseignements.md",
     "🌿 Domaines/Créativité/Textes_Personnels/NGL.md",
     "Classe affermissement.md",
-    "🌿 Domaines/Spiritualité/Enseignement_Biblique/Classe d'Affermissement — La Maison du Potier.md",
     "🌿 Domaines/Créativité/Textes_Personnels/Greg.md",
     "🌿 Domaines/Spiritualité/Personna/L'arche de Noé.md",
     "A croire.md",
@@ -232,8 +234,6 @@
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Speaking as the Oracle of God D3.md",
     "🌿 Domaines/Spiritualité/Convocation_Prophéque_2026/Tarry for the Spirit D1.md",
     "🌿 Domaines/Spiritualité/Spiritualité_Prophetic/Activer le Don de Prophétie — Jermaine & Rebecca Francis.md",
-    "🌿 Domaines/Spiritualité/Les Réalités du Monde Spirituel : Témoignage de Jérémy Potin.md",
-    "🌿 Domaines/Spiritualité/Enseignement_Biblique",
-    "🌿 Domaines/Spiritualité/Spiritualité_Prophetic"
+    "🌿 Domaines/Spiritualité/Enseignement_Biblique"
   ]
 }
