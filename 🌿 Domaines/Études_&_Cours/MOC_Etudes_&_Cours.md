@@ -36,6 +36,14 @@ SORT file.mtime DESC
 ### 🗂️ Matières & Domaines d'Étude
 - **Gestion de Projet & Business Analysis :**
   - [[01_Analyse_des_Besoins_&_Cahier_des_Charges|01. Analyse des Besoins & Cahier des Charges Fonctionnel]]
+- **Théorie des Graphes (Master 1 – IT) :**
+  - [[MOC_Theorie_des_Graphes|🌐 Hub & Index de Théorie des Graphes]]
+  - [[01_Introduction_&_Representations_des_Graphes|01. Introduction, Définitions et Représentations Mémoire]]
+  - [[02_Proprietes_Fondamentales_des_Graphes|02. Propriétés Fondamentales (Connexité, Arbres, Planarité, Coloriage)]]
+  - [[03_Algorithmes_sur_les_Graphes|03. Algorithmes Majeurs (BFS, DFS, Dijkstra, Bellman-Ford, Kruskal, Prim, Ford-Fulkerson)]]
+  - [[TD1_Introduction_&_Representations|📝 TD 1. Modélisation, Complexités & Topologies Réseaux]]
+  - [[TD2_Proprietes_&_Applications|📝 TD 2. Propriétés Fondamentales & Cas Réseaux]]
+  - [[TD3_Algorithmes_&_Routage|📝 TD 3. Algorithmique Avancée, Ordonnancement & Routage Distribué]]
 - Modèle de capture recommandé : [[Template - Note de Cours|📝 Template de Prise de Note & Active Recall]]
 
 ---
