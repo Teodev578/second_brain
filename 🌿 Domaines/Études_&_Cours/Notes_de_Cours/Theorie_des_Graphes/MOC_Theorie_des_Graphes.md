@@ -26,13 +26,14 @@ Bienvenue dans l'espace de synthèse, d'assimilation et d'exercices pratiques de
 
 ## 🧭 Navigation & Structure du Module
 
-### 📄 0. Documents de Référence Officiels
+### 📄 0. Documents de Référence (`pdf/` & `cours/`)
 - 📑 [[Support_Cours_Theorie_des_Graphes.pdf|Support de Cours & TD en PDF (Document Original de 51 pages)]]
+- 📋 [[sujets_recherche_Graphes.pdf|Sujets de Recherche (BFS, DFS, Dijkstra)]]
 - 📜 [[Cours_Integral_Verbatim_Theorie_des_Graphes|Transcription Intégrale Verbatim (Texte exhaustif des 3 chapitres et activités)]]
 
 ---
 
-### 📖 I. Notes de Cours Magistrales & Synthèses Actives
+### 📖 I. Notes de Cours & Explications (`cours/`)
 1. [[01_Introduction_&_Representations_des_Graphes|01. Introduction, Définitions et Représentations Mémoire]]
    - Graphes simples, multigraphes, ordre, degré et demi-degrés.
    - Lemme des poignées de main et parité des sommets impairs.
@@ -52,7 +53,7 @@ Bienvenue dans l'espace de synthèse, d'assimilation et d'exercices pratiques de
 
 ---
 
-### 📝 II. Travaux Dirigés & Exercices d'Application
+### 📝 II. Exercices, TD & Corrigés (`exercices/`)
 - [[TD1_Introduction_&_Representations|Feuille TD 1 : Modélisation, Complexités & Topologies Réseaux]]
   - Validité de séquences de degrés (lemme des poignées de main).
   - Évaluation de complexité asymptotique (matrice vs listes d'adjacence).
@@ -72,6 +73,18 @@ Bienvenue dans l'espace de synthèse, d'assimilation et d'exercices pratiques de
   - Construction comparée de l'ACPM (Kruskal vs Prim) et unicité de l'arbre.
   - Analyse d'ordonnancement par DAG (tri topologique DFS, dates au plus tôt/tard, chemin critique et marges).
   - Routage distribué à vecteur de distances : convergence, problème du *Count-to-Infinity*, *Split Horizon* et *Poison Reverse*, comparatif RIP / OSPF.
+
+#### Fiches d'Exercices & Sujets Corrigés (`exercices/`)
+- [[Exo Chapitre 1|Exercices – Chapitre 1 : Introduction et représentations]] • [[Sujet Corrigé Chapitre 1|Sujet Corrigé Chapitre 1]]
+- [[Exo Chapitre 2|Exercices – Chapitre 2 : Propriétés fondamentales]] • [[Exo 1, 2 & 3 Chapitre 2|Exo 1, 2 & 3 Chapitre 2]] • [[Sujet Corrigé Chapitre 2|Sujet Corrigé Chapitre 2]]
+- [[Exo Chapitre 3|Exercices – Chapitre 3 : Algorithmes sur les graphes]] • [[Sujet Corrigé Chapitre 3|Sujet Corrigé Chapitre 3]]
+
+---
+
+### 🎤 III. Exposé & Implémentation — Sujet 2 DFS (`expose/`, `Projet/`, `representation/`)
+- 📄 [[Rapport_Sujet2_DFS_Analyse_Structure_Graphe|Rapport Sujet 2 : Le parcours en profondeur (DFS) pour l'exploration et l'analyse de la structure d'un graphe]]
+- 💻 Code Python modulaire : `Projet/` (`main.py`, `src/`, `tests/`)
+- 🌐 Animations HTML pour l'oral : `representation/` (`dfs_trace_expose.html`, `animation_dfs_sujet2.html`, `simulation_labyrinthe_dfs.html`)
 
 ---
 

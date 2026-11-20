@@ -41,7 +41,7 @@
 - [4. Présentation de l'algorithme DFS et son pseudo-code](#4-présentation-de-lalgorithme-dfs-et-son-pseudo-code)
   - [4.1 Principe du parcours en profondeur et retour en arrière](#41-principe-du-parcours-en-profondeur-et-retour-en-arrière)
   - [4.2 Version récursive et pseudo-code](#42-version-récursive-et-pseudo-code)
-  - [4.3 Version itérative avec pile explicite (LIFO) et pseudo-code](#43-version-itérative-avec-pile-explicite-lifo-et-pseudo-code)
+  - [4.3 Version itérative avec pile explicite (LIFO) : base Sedgewick & Wayne et pseudo-code](#43-version-itérative-avec-pile-explicite-lifo--base-sedgewick--wayne-et-pseudo-code)
   - [4.4 Analyse du graphe : dates de visite, types d'arcs et applications](#44-analyse-du-graphe--dates-de-visite-types-darcs-et-applications)
 - [5. Analyse de la complexité](#5-analyse-de-la-complexité)
   - [5.1 Complexité temporelle](#51-complexité-temporelle)
@@ -151,12 +151,12 @@ Si le graphe comporte plusieurs parties séparées ou des sommets inatteignables
 
 ### 4.2 Version récursive et pseudo-code
 
-La version récursive utilise la pile d'appels du langage pour mémoriser le chemin suivi et revenir automatiquement en arrière dès qu'une fonction `DFS-Visiter(u)` se termine. Le **Listing 1** utilise aussi un compteur `temps` pour noter deux dates sur chaque sommet : la date de découverte $d[u]$ (passage en `GRIS`) et la date de fin $f[u]$ (passage en `NOIR`) [1, 5].
+La version récursive utilise la pile d'appels du langage pour mémoriser le chemin suivi et revenir automatiquement en arrière dès qu'une fonction `DFS-Visiter(u)` se termine. Le **Listing 1**, repris du support de cours (section 3.1.2 [5]) et de Cormen et al. [1], utilise aussi un compteur `temps` pour noter deux dates sur chaque sommet : la date de découverte $d[u]$ (passage en `GRIS`) et la date de fin $f[u]$ (passage en `NOIR`).
 
 ```text
 Algorithme DFS-Recursif(G = (V, E))
 Entrée  : Graphe G représenté par listes d'adjacence Adj
-Sorties : Tableaux couleur, prédécesseurs pi, dates d (découverte) et f (clôture)
+Sorties : Tableaux couleur, prédécesseurs pi, dates d (découverte) et f (fin)
 
 1.  Pour chaque sommet u ∈ V faire
 2.      couleur[u] ← BLANC
@@ -184,17 +184,55 @@ Procédure DFS-Visiter(G, u)
 12. f[u] ← temps                     // Retour en arrière vers pi[u] à la sortie
 ```
 
-*Listing 1 : Pseudo-code du parcours en profondeur récursif avec dates de début et de fin $[d, f]$ [1].*
+*Listing 1 : Pseudo-code du parcours en profondeur récursif avec dates de début et de fin $[d, f]$ [1, 5].*
 
 Dans le **Listing 1**, le retour en arrière se produit naturellement à la fin de `DFS-Visiter(G, u)` (ligne 12) : une fois tous les voisins de $u$ traités, le programme reprend là où il s'était arrêté dans le parent `pi[u]`.
 
-### 4.3 Version itérative avec pile explicite (LIFO) et pseudo-code
+### 4.3 Version itérative avec pile explicite (LIFO) : base Sedgewick & Wayne et pseudo-code
 
-Si le graphe est très profond (par exemple une chaîne de plusieurs milliers de sommets), la récursion risque de dépasser la taille maximale de la pile d'appels du système (`Stack Overflow` ou `RecursionError` en Python). On remplace alors la récursion par une **pile explicite LIFO** (*Last-In, First-Out*, dernier entré, premier sorti) stockée en mémoire classique [3].
+Si le graphe est très profond (par exemple une chaîne de plusieurs milliers de sommets), la récursion risque de dépasser la taille maximale de la pile d'appels du système (`Stack Overflow` ou `RecursionError` en Python). On remplace alors la récursion par une **pile explicite LIFO** (*Last-In, First-Out*, dernier entré, premier sorti) stockée dans la mémoire normale du programme [3].
 
-On peut coder cette pile de deux façons :
-- Empiler uniquement les sommets à visiter (en poussant les voisins dans l'ordre inverse). C'est court à écrire, mais cela ne donne pas directement la date de fermeture $f[u]$ dans le même ordre que la version récursive.
-- Empiler des couples `(u, idx)` où `idx` indique la position du prochain voisin à lire dans `Adj[u]`. C'est cette méthode, écrite dans le **Listing 2**, que nous retenons : elle produit exactement le même parcours, les mêmes dates $[d, f]$ et les mêmes retours en arrière que la version récursive, sans limite de profondeur.
+Une méthode simple consiste à empiler tous les voisins d'un sommet d'un seul coup dès qu'on le visite. Ce code est court, mais il change l'ordre d'exploration des branches et ne permet pas de savoir quand un sommet a fini d'explorer tous ses voisins pour noter sa date de fin $f[u]$.
+
+Pour garder exactement le même parcours que la version récursive, nous nous appuyons sur l'algorithme de référence de **Sedgewick et Wayne** (*Algorithms*, 4e édition, §4.2, `NonrecursiveDirectedDFS.java` [3]). Son code Java d'origine est donné dans le **Listing 2**.
+
+```java
+// Un itérateur par sommet pour retenir le prochain voisin à examiner
+Iterator<Integer>[] adj = (Iterator<Integer>[]) new Iterator[digraph.V()];
+for (int v = 0; v < digraph.V(); v++)
+    adj[v] = digraph.adj(v).iterator();
+
+Stack<Integer> stack = new Stack<Integer>();
+marked[s] = true;
+stack.push(s);
+
+while (!stack.isEmpty()) {
+    int v = stack.peek();
+    if (adj[v].hasNext()) {
+        int w = adj[v].next();
+        if (!marked[w]) {
+            marked[w] = true;
+            stack.push(w);
+        }
+    }
+    else {
+        stack.pop();   // Fin du sommet v (backtracking)
+    }
+}
+```
+
+*Listing 2 : Algorithme itératif de référence en Java (`NonrecursiveDirectedDFS`, Sedgewick & Wayne [3]).*
+
+Dans le **Listing 2**, l'idée clé est de séparer deux rôles :
+- La pile `stack` ne retient que les sommets en cours de visite. À chaque tour de boucle, `stack.peek()` lit le sommet tout en haut de la pile sans le retirer.
+- Le tableau d'itérateurs `adj` retient, pour chaque sommet `v`, où il s'est arrêté dans sa liste de voisins. `adj[v].hasNext()` vérifie s'il reste un voisin à voir, et `adj[v].next()` passe au suivant.
+- Quand `adj[v].hasNext()` devient faux, tous les voisins de `v` ont été examinés : `stack.pop()` retire `v` de la pile, ce qui fait revenir le parcours sur le sommet précédent.
+
+L'algorithme du **Listing 2** teste uniquement quels sommets sont atteignables depuis une seule source `s` à l'aide d'un tableau de booléens `marked[]`. Pour répondre aux besoins d'analyse de notre sujet (et le porter en Python), nous lui apportons deux ajouts tirés du cours [5] et de Cormen et al. [1] :
+1. **Parcourir tout le graphe :** nous ajoutons une boucle sur tous les sommets de $V$ pour relancer le parcours si le graphe comporte des zones isolées.
+2. **Analyser la structure :** nous remplaçons le simple `marked[]` par les trois couleurs (`BLANC`, `GRIS`, `NOIR`), le tableau des parents `pi` et les dates $[d, f]$ (date $d[v]$ à l'empilement, date $f[u]$ au dépilement).
+
+Le **Listing 3** rassemble l'algorithme complet en pseudo-code.
 
 ```text
 Algorithme DFS-Iteratif-Pile(G = (V, E))
@@ -203,26 +241,26 @@ Sorties : Tableaux couleur, pi, d et f
 
 1.  Pour chaque sommet u ∈ V faire
 2.      couleur[u] ← BLANC ; pi[u] ← NIL
-3.  Fin Pour
-4.  temps ← 0 ; P ← PileVide()
-5.  Pour chaque sommet depart ∈ V faire
-6.      Si couleur[depart] = BLANC alors
-7.          temps ← temps + 1 ; d[depart] ← temps
-8.          couleur[depart] ← GRIS
-9.          Empiler(P, (depart, 0))
-10.         Tant que Non EstVide(P) faire
-11.             (u, idx) ← SommetDePile(P)
-12.             Si idx < Longueur(Adj[u]) alors
-13.                 v ← Adj[u][idx]
-14.                 ModifierSommetDePile(P, (u, idx + 1))
+3.      Iter[u] ← Iterateur(Adj[u])         // Curseur sur les voisins de u
+4.  Fin Pour
+5.  temps ← 0 ; P ← PileVide()
+6.  Pour chaque sommet depart ∈ V faire
+7.      Si couleur[depart] = BLANC alors
+8.          temps ← temps + 1 ; d[depart] ← temps
+9.          couleur[depart] ← GRIS
+10.         Empiler(P, depart)
+11.         Tant que Non EstVide(P) faire
+12.             u ← SommetDePile(P)          // peek() : on lit sans retirer
+13.             Si AUnSuivant(Iter[u]) alors
+14.                 v ← Suivant(Iter[u])
 15.                 Si couleur[v] = BLANC alors
 16.                     pi[v] ← u
 17.                     temps ← temps + 1 ; d[v] ← temps
 18.                     couleur[v] ← GRIS
-19.                     Empiler(P, (v, 0))      // Avancée sur la nouvelle branche
+19.                     Empiler(P, v)    // Avancée sur la nouvelle branche
 20.                 Fin Si
 21.             Sinon
-22.                 Depiler(P)                      // Retour en arrière (backtracking)
+22.                 Depiler(P)               // Retour en arrière (backtracking)
 23.                 temps ← temps + 1 ; f[u] ← temps
 24.                 couleur[u] ← NOIR
 25.             Fin Si
@@ -231,7 +269,7 @@ Sorties : Tableaux couleur, pi, d et f
 28. Fin Pour
 ```
 
-*Listing 2 : Pseudo-code du parcours en profondeur itératif avec une pile explicite de couples `(u, idx)`.*
+*Listing 3 : Pseudo-code du DFS itératif avec pile explicite et itérateurs par sommet (adapté de Sedgewick & Wayne [3] avec les couleurs et dates $[d, f]$ de [1, 5]).*
 
 ### 4.4 Analyse du graphe : dates de visite, types d'arcs et applications
 
@@ -254,7 +292,7 @@ Grâce au **Tableau 2**, DFS permet de résoudre directement trois problèmes co
 
 1. **Détecter des cycles :** dans un graphe orienté, il y a un circuit si et seulement si DFS rencontre au moins un **arc arrière** (un arc vers un sommet `GRIS` encore présent dans la pile) [1]. Dans un graphe non orienté, il y a un cycle dès qu'on rencontre un voisin déjà visité qui n'est pas $\pi[u]$.
 2. **Trouver les composantes connexes :** sur un graphe non orienté, chaque appel lancé depuis la boucle principale (lignes 6–9 du **Listing 1**) visite tout un bloc isolé d'un seul coup. Compter combien de fois on entre dans cette boucle donne donc le nombre de composantes connexes, et chaque appel liste les sommets d'une composante [5].
-3. **Faire un tri topologique (DAG) :** dans un graphe orienté sans cycle, on veut classer les sommets pour que chaque arc $(u, v)$ place $u$ avant $v$. Comme il n'y a aucun arc arrière, tout sommet $v$ qui dépend de $u$ se ferme forcément avant $u$ ($f[v] < f[u]$). Il suffit donc de lancer DFS, de vérifier qu'il n'y a pas de cycle, puis de ranger les sommets par **ordre décroissant de date de fin $f[u]$** [1, 5], comme écrit dans le **Listing 3**.
+3. **Faire un tri topologique (DAG) :** dans un graphe orienté sans cycle, on veut classer les sommets pour que chaque arc $(u, v)$ place $u$ avant $v$. Comme il n'y a aucun arc arrière, tout sommet $v$ qui dépend de $u$ se ferme forcément avant $u$ ($f[v] < f[u]$). Il suffit donc de lancer DFS, de vérifier qu'il n'y a pas de cycle, puis de ranger les sommets par **ordre décroissant de date de fin $f[u]$** [1, 5], comme écrit dans le **Listing 4**.
 
 ```text
 Algorithme Tri-Topologique-DFS(G = (V, E))
@@ -266,7 +304,7 @@ Algorithme Tri-Topologique-DFS(G = (V, E))
    (ce qui revient à mettre chaque sommet au début de la liste quand il devient NOIR)
 ```
 
-*Listing 3 : Pseudo-code du tri topologique d'un DAG avec DFS.*
+*Listing 4 : Pseudo-code du tri topologique d'un DAG avec DFS [1, 5].*
 
 ---
 
@@ -274,11 +312,11 @@ Algorithme Tri-Topologique-DFS(G = (V, E))
 
 ### 5.1 Complexité temporelle
 
-Avec des **listes d'adjacence**, on calcule facilement le nombre total d'opérations effectuées par DFS [1] :
+Avec des **listes d'adjacence**, on calcule facilement le nombre total d'opérations effectuées par DFS [1, 3, 5] :
 
-- **Initialisation :** la première boucle met chaque sommet à `BLANC` et `NIL`, ce qui coûte $\Theta(|V|)$.
-- **Visite des sommets :** `DFS-Visiter(G, u)` (ou l'empilement initial du sommet) n'est appelée que si $u$ est `BLANC`, et elle le passe aussitôt à `GRIS`. Comme un sommet ne redevient jamais `BLANC`, chaque sommet est visité **une seule fois**.
-- **Parcours des voisins :** pendant cette unique visite de $u$, l'algorithme parcourt sa liste `Adj[u]`. Sur tout le graphe, la somme des longueurs des listes vaut $|E|$ si le graphe est orienté, ou $2|E|$ s'il est non orienté.
+- **Initialisation :** la première boucle met chaque sommet à `BLANC` et `NIL`, puis prépare son itérateur `Iter[u]`, ce qui coûte $\Theta(|V|)$.
+- **Visite des sommets :** `DFS-Visiter(G, u)` (ou l'empilement initial du sommet) n'est appelé que si $u$ est `BLANC`, et il le passe aussitôt à `GRIS`. Comme un sommet ne redevient jamais `BLANC`, chaque sommet est empilé et dépilé **une seule fois**.
+- **Parcours des voisins :** pendant cette unique visite de $u$, l'algorithme avance dans `Adj[u]` avec `Suivant(Iter[u])` sans jamais revenir en arrière sur un voisin déjà lu. Sur tout le graphe, le nombre total d'avancées vaut $|E|$ si le graphe est orienté, ou $2|E|$ s'il est non orienté.
 
 En additionnant le passage sur les sommets et le passage sur les arcs, on obtient une complexité temporelle linéaire :
 $$T_{\text{listes}}(|V|, |E|) = \Theta(|V| + |E|)$$
@@ -290,16 +328,17 @@ Les trois applications vues plus haut (détection de cycle sur test `GRIS`, comp
 
 ### 5.2 Complexité spatiale et gestion de la pile
 
-En plus du graphe lui-même, DFS a besoin de mémoire pour deux choses :
+En plus du graphe lui-même, DFS a besoin de mémoire pour :
 1. Les tableaux `couleur`, `pi`, `d` et `f`, qui prennent chacun $\Theta(|V|)$.
-2. La pile d'appels (version récursive) ou la pile LIFO (version itérative). Dans le pire cas, si le graphe est une longue chaîne de $|V|$ sommets, la pile contient tous les sommets en même temps, soit une hauteur maximale de $|V|$.
+2. Pour la version itérative (**Listing 3**), le tableau des itérateurs `Iter`, qui garde un curseur par sommet et prend donc $\Theta(|V|)$ [3].
+3. La pile d'appels (version récursive) ou la pile LIFO `P` (version itérative). Dans le pire cas, si le graphe est une longue chaîne de $|V|$ sommets, la pile contient tous les sommets en même temps, soit une hauteur maximale de $|V|$ ($\mathcal{O}(|V|)$).
 
-La complexité spatiale est donc $\mathcal{O}(|V|)$ dans les deux cas (et $\Theta(|V|)$ si l'on stocke les tableaux d'états et de dates). En pratique, il existe une différence importante : la version récursive utilise la pile système du langage, qui est limitée en taille (par exemple $1\,000$ appels imbriqués par défaut en Python), alors que la version itérative utilise la mémoire normale (le tas) et ne bloque pas sur les graphes très profonds [3]. Le **Tableau 3** résume ces résultats.
+La complexité spatiale totale est donc $\mathcal{O}(|V|)$ dans les deux cas (et $\Theta(|V|)$ avec les tableaux d'états, de dates et d'itérateurs). En pratique, il existe une différence importante : la version récursive utilise la pile système du langage, qui est limitée en taille (par exemple $1\,000$ appels imbriqués par défaut en Python), alors que la version itérative utilise la mémoire normale (le tas) et ne bloque pas sur les graphes très profonds [3]. Le **Tableau 3** résume ces résultats.
 
 | Version / Représentation | Complexité en temps | Complexité en espace | Risque de blocage (pile pleine) |
 | :--- | :---: | :---: | :--- |
 | DFS Récursif — Listes d'adjacence | $\Theta(\lvert V \rvert + \lvert E \rvert)$ | $\mathcal{O}(\lvert V \rvert)$ | Oui (si profondeur $\ge$ limite système) |
-| DFS Itératif (LIFO) — Listes d'adjacence | $\Theta(\lvert V \rvert + \lvert E \rvert)$ | $\mathcal{O}(\lvert V \rvert)$ | Non (pile gérée en mémoire libre) |
+| DFS Itératif (pile LIFO + itérateurs) — Listes d'adjacence | $\Theta(\lvert V \rvert + \lvert E \rvert)$ | $\mathcal{O}(\lvert V \rvert)$ | Non (pile gérée en mémoire libre) |
 | DFS — Matrice d'adjacence | $\Theta(\lvert V \rvert^2)$ | $\mathcal{O}(\lvert V \rvert)$ | Selon récursif / itératif |
 
 *Tableau 3 : Récapitulatif des complexités de DFS en temps et en mémoire [1, 3, 5].*
@@ -367,7 +406,7 @@ Dans le **Tableau 4**, on voit bien comment la pile grandit quand l'algorithme d
 Une fois le parcours terminé, tous les sommets ont été vus depuis $A$ :
 - **Ordre de découverte :** $A \to B \to D \to E \to G \to C \to F$.
 - **Ordre de fermeture :** $E \to G \to D \to B \to F \to C \to A$.
-- **Estampilles $[d / f]$ :** $A\,[1/14]$, $B\,[2/9]$, $C\,[10/13]$, $D\,[3/8]$, $E\,[4/5]$, $F\,[11/12]$, $G\,[6/7]$.
+- **Dates $[d / f]$ :** $A\,[1/14]$, $B\,[2/9]$, $C\,[10/13]$, $D\,[3/8]$, $E\,[4/5]$, $F\,[11/12]$, $G\,[6/7]$.
 - **Nombre de retours en arrière :** $6$.
 
 La **Figure 2** dessine l'arbre couvrant DFS (flèches pleines) ainsi que les autres arcs rencontrés (en pointillés), et le **Tableau 5** récapitule la catégorie des $10$ arcs.
@@ -411,19 +450,41 @@ Comme le montre le **Tableau 5**, l'arc $(E \to B)$ pointe vers un sommet encore
 
 ### 7.1 Environnement, langage choisi et structure du programme
 
-Nous avons codé le projet en **Python 3** (sous Linux, uniquement avec la bibliothèque standard) dans le fichier `projet_sujet2_dfs.py`. Le choix de Python permet d'écrire un code clair, proche du pseudo-code, tout en mesurant facilement le comportement des deux versions (récursive et itérative) sur différentes formes de graphes.
+Nous avons codé le projet en **Python 3** (sous Linux, uniquement avec la bibliothèque standard) et organisé le code en six modules dans le dossier `Projet/`. Ce découpage rend chaque partie facile à lire et à présenter, tout en séparant les structures de données, les algorithmes de parcours, les applications et les tests. En particulier, la fonction `dfs_iteratif_pile` porte en Python l'algorithme `NonrecursiveDirectedDFS` de Sedgewick et Wayne [3], complété avec les couleurs, les parents `pi` et les dates `d` et `f` pour l'analyse du graphe [1, 5].
 
-Le programme comprend :
-- Une classe `Graphe(oriente: bool)` qui stocke les sommets et leurs voisins sous forme de listes d'adjacence (`Dict[str, List[str]]`).
-- Les deux fonctions de parcours : `dfs_recursif` et `dfs_iteratif_pile`.
-- Les trois fonctions d'application : `detecter_cycle_oriente`, `composantes_connexes` et `tri_topologique_dag`.
-- Une fonction `main()` qui exécute automatiquement la trace de $G_{\text{ex}}$, les cas pratiques et les tests sur les 6 types de graphes.
+Le dossier `Projet/` comprend :
+- `graphe.py` : la classe `Graphe(oriente: bool)` (listes d'adjacence `Dict[str, List[str]]`), les états `Couleur`, les types d'arcs `TypeArc` et `ResultatDFS`.
+- `dfs.py` : les deux fonctions de parcours (`dfs_recursif` et `dfs_iteratif_pile`) avec des fonctions d'aide partagées pour la préparation des sommets, le classement des arcs et l'enregistrement des étapes.
+- `applications.py` : les trois applications (`detecter_cycle_oriente`, `tri_topologique_dag` et `composantes_connexes`).
+- `benchmarks.py` : la construction de $G_{\text{ex}}$, du pipeline logiciel, du réseau non connexe et des 6 graphes de test.
+- `main.py` : le point d'entrée qui exécute et affiche l'ensemble des démonstrations et mesures.
+- `test_dfs.py` : les tests unitaires (`unittest`) qui vérifient que les deux versions de DFS donnent le même résultat sur tous les cas et que les applications sont justes.
 
 ### 7.2 Implémentation de DFS (récursif et itératif)
 
-Les deux fonctions renvoient un objet `ResultatDFS` contenant l'ordre de découverte, l'ordre de fermeture, les dates `d` et `f`, les parents `pi`, la liste des arcs classés, la trace étape par étape et le nombre de retours en arrière. L'**Extrait 1** montre la boucle principale de `dfs_iteratif_pile`.
+Les deux fonctions renvoient un objet `ResultatDFS` contenant l'ordre de découverte, l'ordre de fermeture, les dates `d` et `f`, les parents `pi`, la liste des arcs classés, la trace étape par étape et le nombre de retours en arrière.
+
+Pour passer de la base Java de Sedgewick et Wayne (**Listing 2**) à Python, chaque instruction trouve un équivalent direct, résumé dans le **Tableau 6**.
+
+| Rôle dans l'algorithme | Version Java (Sedgewick & Wayne) | Traduction Python (`Projet/dfs.py`) |
+| :--- | :--- | :--- |
+| Itérateur des voisins par sommet | `Iterator<Integer>[] adj` | `adj_iter = {u: iter(...)}` |
+| Pile explicite LIFO | `Stack<Integer> stack` | `pile = []` |
+| Consulter le sommet en haut de pile | `stack.peek()` | `pile[-1]` |
+| Lire le voisin suivant s'il existe | `adj[v].hasNext()` puis `adj[v].next()` | `v = next(adj_iter[u], None)` puis `if v is not None:` |
+| Empiler / dépiler un sommet | `stack.push(w)` / `stack.pop()` | `pile.append(v)` / `pile.pop()` |
+
+*Tableau 6 : Correspondance entre l'algorithme Java de référence (Listing 2) et sa traduction en Python.*
+
+L'**Extrait 1** montre la préparation des itérateurs et la boucle principale de `dfs_iteratif_pile` dans `Projet/dfs.py`.
 
 ```python
+    adj_iter: Dict[str, Iterator[str]] = {
+        u: iter(sorted(graphe.adjacence[u]) if trier_voisins else graphe.adjacence[u])
+        for u in sommets
+    }
+    pile: List[str] = []
+
     for depart in sommets:
         if couleur[depart] != Couleur.BLANC:
             continue
@@ -432,16 +493,13 @@ Les deux fonctions renvoient un objet `ResultatDFS` contenant l'ordre de découv
         decouverte[depart] = temps
         couleur[depart] = Couleur.GRIS
         ordre_visite.append(depart)
-        pile.append([depart, 0])
+        pile.append(depart)
 
         while pile:
-            u = str(pile[-1][0])
-            idx = int(pile[-1][1])
-            voisins = listes_voisins[u]
+            u = pile[-1]
+            v = next(adj_iter[u], None)
 
-            if idx < len(voisins):
-                v = voisins[idx]
-                pile[-1][1] = idx + 1
+            if v is not None:
                 if couleur[v] == Couleur.BLANC:
                     parents[v] = u
                     arcs_classes.append((u, v, TypeArc.ARBRE))
@@ -449,32 +507,30 @@ Les deux fonctions renvoient un objet `ResultatDFS` contenant l'ordre de découv
                     decouverte[v] = temps
                     couleur[v] = Couleur.GRIS
                     ordre_visite.append(v)
-                    pile.append([v, 0])
-                elif couleur[v] == Couleur.GRIS:
-                    arcs_classes.append((u, v, TypeArc.ARRIERE))
+                    pile.append(v)
                 else:
-                    type_arc = TypeArc.AVANT if decouverte[u] < decouverte[v] else TypeArc.CROISE
+                    type_arc = _classer_arc_visite(u, v, couleur, decouverte)
                     arcs_classes.append((u, v, type_arc))
             else:
                 temps += 1
-                cloture[u] = temps
+                fin[u] = temps
                 couleur[u] = Couleur.NOIR
-                ordre_cloture.append(u)
+                ordre_fermeture.append(u)
                 pile.pop()
                 if pile:
                     retours_arriere += 1
 ```
 
-*Extrait 1 : Boucle du DFS itératif avec pile LIFO et classification des arcs (`projet_sujet2_dfs.py`).*
+*Extrait 1 : Boucle du DFS itératif avec pile LIFO, itérateurs `adj_iter` et classement des arcs (`Projet/dfs.py`).*
 
-Dans l'**Extrait 1**, chaque élément `[u, idx]` de la pile retient quel voisin de `u` doit être testé ensuite. Tant qu'il reste un voisin `BLANC`, on empile ce voisin ; quand `idx` atteint la fin de la liste, on ferme `u` en `NOIR`, on le dépile et on incrémente `retours_arriere`. On obtient exactement la même trace que la version récursive.
+Dans l'**Extrait 1**, `adj_iter[u]` garde en mémoire la position atteinte dans la liste des voisins de `u`. À chaque tour, on regarde le sommet `u = pile[-1]` et on demande le voisin suivant avec `next(adj_iter[u], None)`. S'il reste un voisin `v` : s'il est `BLANC`, on l'empile avec `pile.append(v)` ; s'il est déjà `GRIS` ou `NOIR`, `_classer_arc_visite` indique s'il s'agit d'un arc arrière, avant ou croisé. Lorsque `next()` renvoie `None`, la liste des voisins de `u` est terminée : on note sa date de fin `f[u]`, on le passe à `NOIR`, on l'ajoute à `ordre_fermeture`, on le dépile avec `pile.pop()` et on incrémente `retours_arriere` s'il reste un parent sur la pile. On obtient exactement la même trace que la version récursive.
 
 ### 7.3 Implémentation des applications
 
-À partir du même parcours DFS, nous avons codé les trois applications :
+À partir du même parcours DFS, nous avons regroupé les trois applications dans `Projet/applications.py` :
 
 1. **Détection et reconstruction de cycle (`detecter_cycle_oriente`) :** la fonction cherche s'il existe un arc classé `ARRIERE` $(u \to v)$. Comme $v$ est forcément un ancêtre de $u$ sur la pile, on remonte les parents depuis $u$ jusqu'à retrouver $v$, puis on inverse cette liste pour afficher le cycle complet dans le bon sens.
-2. **Tri topologique d'un pipeline de tâches (`tri_topologique_dag`) :** pour illustrer une application concrète, nous avons modélisé un pipeline de déploiement logiciel de $8$ tâches ($T_1$ à $T_8$), représenté sur la **Figure 3**. Comme le montre l'**Extrait 2**, la fonction vérifie d'abord l'absence de cycle ; si le graphe est bien un DAG, elle retourne l'inverse de `ordre_cloture` (donc les dates $f[u]$ décroissantes).
+2. **Tri topologique d'un pipeline de tâches (`tri_topologique_dag`) :** pour illustrer une application concrète, nous avons modélisé un pipeline de déploiement logiciel de $8$ tâches ($T_1$ à $T_8$), représenté sur la **Figure 3**. Comme le montre l'**Extrait 2**, la fonction lance un **seul parcours DFS**, vérifie tout de suite l'absence de cycle avec `extraire_cycle_oriente`, puis retourne l'inverse de `ordre_fermeture` (donc les dates $f[u]$ décroissantes) si le graphe est bien un DAG.
 
 ```mermaid
 graph LR
@@ -498,18 +554,18 @@ def tri_topologique_dag(graphe: Graphe) -> Tuple[bool, List[str]]:
     if not graphe.oriente:
         raise ValueError("Le tri topologique ne s'applique qu'aux graphes orientés.")
 
-    cycle = detecter_cycle_oriente(graphe)
+    resultat = dfs_iteratif_pile(graphe, enregistrer_trace=False)
+    cycle = extraire_cycle_oriente(resultat)
     if cycle is not None:
         return False, cycle
 
-    resultat = dfs_iteratif_pile(graphe, enregistrer_trace=False)
-    ordre_topologique = list(reversed(resultat.ordre_cloture))
-    return True, ordre_topologique
+    # L'ordre de fermeture donne f[u] croissant ; son inverse donne f[u] décroissant
+    return True, list(reversed(resultat.ordre_fermeture))
 ```
 
-*Extrait 2 : Fonction de tri topologique avec vérification préalable de cycle (`projet_sujet2_dfs.py`).*
+*Extrait 2 : Fonction de tri topologique en un seul parcours DFS (`Projet/applications.py`).*
 
-3. **Recherche de composantes connexes (`composantes_connexes`) :** sur un graphe non orienté, la fonction parcourt les sommets dans l'ordre et lance un DFS à partir de chaque sommet non encore visité afin de regrouper tous les nœuds d'un même sous-réseau.
+3. **Recherche de composantes connexes (`composantes_connexes`) :** sur un graphe non orienté, la fonction reprend le même parcours itératif avec pile explicite et itérateurs `adj_iter`, lancé depuis chaque sommet non encore visité afin de regrouper tous les nœuds d'un même sous-réseau.
 
 ---
 
@@ -517,30 +573,30 @@ def tri_topologique_dag(graphe: Graphe) -> Tuple[bool, List[str]]:
 
 ### 8.1 Exécution sur des graphes de formes différentes
 
-Pour tester notre implémentation dans des situations variées, nous avons exécuté les versions récursive et itérative sur six types de graphes différents (avec une graine aléatoire fixée à `42` pour que les mesures soient reproductibles). Le **Tableau 6** donne les temps mesurés et le diagnostic produit.
+Pour tester notre implémentation dans des situations variées, nous avons exécuté les versions récursive et itérative sur six formes de graphes différentes (avec une graine aléatoire fixée à `42` pour que les mesures soient reproductibles). Le **Tableau 7** donne les temps mesurés et le diagnostic produit.
 
-| Topologie testée | Orientation | $\lvert V \rvert$ | $\lvert E \rvert$ | Temps récursif (ms) | Temps itératif (ms) | Résultat de l'analyse |
+| Forme du graphe | Orientation | $\lvert V \rvert$ | $\lvert E \rvert$ | Temps récursif (ms) | Temps itératif (ms) | Résultat de l'analyse |
 | :--- | :--- | :---: | :---: | :---: | :---: | :--- |
-| Chaîne linéaire | Orienté | 500 | 499 | 1,48 | 1,26 | Acyclique (DAG) |
-| Arbre binaire complet | Orienté | 511 | 510 | 1,04 | 1,41 | Acyclique (DAG) |
-| Graphe complet dense | Orienté | 200 | 39 800 | 28,05 | 35,30 | Cycle détecté (19 900 arcs arrière) |
-| Graphe non connexe (5 îlots) | Non orienté | 500 | 737 | 1,70 | 2,08 | 5 composantes connexes |
-| DAG aléatoire | Orienté | 500 | 1 500 | 1,76 | 2,96 | Acyclique (DAG) |
-| Graphe cyclique | Orienté | 500 | 1 200 | 1,48 | 2,72 | Cycle détecté (352 arcs arrière) |
+| Chaîne linéaire | Orienté | 500 | 499 | 2,06 | 2,09 | Acyclique (DAG) |
+| Arbre binaire complet | Orienté | 511 | 510 | 1,61 | 1,92 | Acyclique (DAG) |
+| Graphe complet dense | Orienté | 200 | 39 800 | 60,24 | 40,95 | Cycle détecté (19 900 arcs arrière) |
+| Graphe non connexe (5 îlots) | Non orienté | 500 | 737 | 1,88 | 1,75 | 5 composantes connexes |
+| DAG aléatoire | Orienté | 500 | 1 500 | 2,00 | 2,52 | Acyclique (DAG) |
+| Graphe cyclique | Orienté | 500 | 1 200 | 1,68 | 1,51 | Cycle détecté (352 arcs arrière) |
 
-*Tableau 6 : Résultats et temps d'exécution de DFS sur 6 formes de graphes différentes.*
+*Tableau 7 : Résultats et temps d'exécution de DFS sur 6 formes de graphes différentes.*
 
-On peut tirer trois constats simples du **Tableau 6** :
-- Sur les graphes de $500$ sommets peu denses ($|E| \le 1\,500$), DFS s'exécute en $1$ à $3\text{ ms}$, ce qui correspond bien à une complexité linéaire en $|V| + |E|$.
-- Sur le graphe complet dense ($200$ sommets mais $39\,800$ arcs), le temps monte autour de $28\text{–}35\text{ ms}$ car l'algorithme doit inspecter presque $40\,000$ arcs.
-- La version récursive est un peu plus rapide en Python quand le graphe est très dense, car les appels de fonction sont gérés directement en C par l'interpréteur, tant que la profondeur reste raisonnable.
+On peut tirer trois constats simples du **Tableau 7** :
+- Sur les graphes de $500$ sommets peu denses ($|E| \le 1\,500$), DFS s'exécute en environ $1{,}5$ à $2{,}5\text{ ms}$, ce qui correspond bien à une complexité linéaire en $|V| + |E|$.
+- Sur le graphe complet dense ($200$ sommets mais $39\,800$ arcs), le temps monte autour de $41\text{–}60\text{ ms}$ car l'algorithme doit inspecter presque $40\,000$ arcs.
+- Sur ce graphe très dense, la version itérative avec itérateurs (`iter` / `next`) se montre même plus rapide que la version récursive ($40,95\text{ ms}$ contre $60,24\text{ ms}$), car elle évite l'empilement de nombreux appels de fonction dans la boucle interne.
 
 Nous avons ensuite testé une chaîne linéaire de $2\,000$ sommets ($|E| = 1\,999$) avec la limite de récursion par défaut de Python (`1000`). Comme le montre la **Sortie 1**, la version récursive plante alors que la version itérative avec pile explicite passe sans problème.
 
 ```text
 Limite de récursion Python active : 1000
 DFS récursif : ÉCHEC (RecursionError — dépassement de la pile d'appels)
-DFS itératif (pile LIFO) : SUCCÈS en 4.68 ms (2000 sommets visités, 1999 retours arrière)
+DFS itératif (pile LIFO) : SUCCÈS en 4.49 ms (2000 sommets visités, 1999 retours arrière)
 ```
 
 *Sortie 1 : Test comparatif sur une chaîne de 2 000 sommets.*
@@ -602,15 +658,15 @@ Ces tests montrent l'efficacité de DFS pour analyser un graphe, mais aussi ses 
 | Donne le plus court chemin (non pondéré) | Non | **Oui** |
 | Cas d'usage principaux | Cycles, tri topologique (DAG), composantes connexes ou fortement connexes | Plus court chemin en nombre d'arcs, calcul de sauts réseau |
 
-*Tableau 7 : Comparaison rapide entre DFS et BFS [1, 5].*
+*Tableau 8 : Comparaison rapide entre DFS et BFS [1, 5].*
 
-Le **Tableau 7** résume pourquoi les deux parcours se complètent : on choisit BFS pour les questions de distance minimale, et DFS dès qu'on veut étudier la structure du graphe.
+Le **Tableau 8** résume pourquoi les deux parcours se complètent : on choisit BFS pour les questions de distance minimale, et DFS dès qu'on veut étudier la structure du graphe.
 
 ---
 
 ## 9. Conclusion
 
-Dans ce travail, nous avons étudié le parcours en profondeur (DFS) sur le plan théorique et pratique. Avec une simple pile LIFO, trois couleurs (`BLANC`, `GRIS`, `NOIR`) et les dates de début et de fin $[d, f]$, DFS visite tout le graphe en temps linéaire $\Theta(|V| + |E|)$ tout en révélant sa structure interne.
+Dans ce travail, nous avons étudié le parcours en profondeur (DFS) sur le plan théorique et pratique. Avec une pile LIFO associée à un itérateur par sommet (d'après Sedgewick et Wayne [3]), trois couleurs (`BLANC`, `GRIS`, `NOIR`) et les dates de début et de fin $[d, f]$ [1, 5], DFS visite tout le graphe en temps linéaire $\Theta(|V| + |E|)$ tout en révélant sa structure interne.
 
 La trace détaillée sur l'exemple $G_{\text{ex}}$ a permis de voir comment se font les choix de branche, les retours en arrière et le classement des arcs en quatre types (arbre, arrière, avant, croisé). L'implémentation en Python a montré que les versions récursive et itérative donnent exactement les mêmes résultats, tout en prouvant que la pile explicite évite les erreurs sur les graphes très profonds. Enfin, nos tests sur l'ordonnancement de tâches (tri topologique), la détection de boucles bloquantes et les composantes connexes montrent concrètement pourquoi DFS est utilisé à la base de nombreux outils informatiques.
 
@@ -620,8 +676,8 @@ Pour aller plus loin, ce même principe de parcours sert de base aux algorithmes
 
 ## 10. Références bibliographiques
 
-1. **Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C.** (2022). *Introduction to Algorithms* (4e éd., Chapitre 20 : *Elementary Graph Algorithms*, p. 549–584). MIT Press. *(Édition française : Algorithmique, Dunod).*
+1. **Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C.** (2022). *Introduction to Algorithms* (4e éd., Chapitre 20 : *Elementary Graph Algorithms*, p. 549–584). MIT Press. *(Édition française de la 3e éd. : Algorithmique, Dunod).*
 2. **Tarjan, R. E.** (1972). Depth-first search and linear graph algorithms. *SIAM Journal on Computing*, 1(2), 146–160.
-3. **Sedgewick, R., & Wayne, K.** (2011). *Algorithms* (4e éd., Chapitre 4 : *Graphs*). Addison-Wesley Professional.
+3. **Sedgewick, R., & Wayne, K.** (2011). *Algorithms* (4e éd., Chapitre 4 : *Graphs*, §4.1–4.2). Addison-Wesley Professional. Codes source officiels compagnon : `NonrecursiveDFS.java` (https://algs4.cs.princeton.edu/41graph/NonrecursiveDFS.java.html) et `NonrecursiveDirectedDFS.java` (https://algs4.cs.princeton.edu/42digraph/NonrecursiveDirectedDFS.java.html).
 4. **Gondran, M., & Minoux, M.** (2009). *Graphes et algorithmes* (4e éd.). Éditions Lavoisier / Tec & Doc.
 5. **Hovi, E. K.** (2026). *Théorie des graphes — Support de cours et travaux dirigés (Master IT)*. ASCENCIA KEYCE, Campus de Lomé.

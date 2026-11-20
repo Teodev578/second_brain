@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trace DFS &amp; Retour en arrière — Sujet 2</title>
+  <style>
+    :root {
+      --bg: #18181b;
+      --card: #1f1f23;
+      --border: #3f3f46;
+      --fg: #f4f4f5;
+      --muted: #a1a1aa;
+      --primary: #38bdf8;
+      --primary-fg: #09090b;
+      --warning: #f59e0b;
+      --error: #ef4444;
+      --success: #10b981;
+      --accent: #a855f7;
+    }
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #cbd5e1;
+      --fg: #0f172a;
+      --muted: #475569;
+      --primary: #0284c7;
+      --primary-fg: #ffffff;
+      --warning: #f59e0b;
+      --error: #dc2626;
+      --success: #059669;
+      --accent: #9333ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 22px;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      font-size: 14px;
+    }
+    .container { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .topbar {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--border);
+    }
+    .group { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .btn {
+      padding: 6px 12px; border-radius: 7px; border: 1px solid var(--border);
+      background: var(--card); color: var(--fg); font-size: 13px; cursor: pointer; font-weight: 500;
+    }
+    .btn:hover { border-color: var(--primary); }
+    .btn.active { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); font-weight: 700; }
+    .legend { display: flex; gap: 12px; align-items: center; font-size: 12px; color: var(--muted); }
+    .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+    .grid { display: grid; grid-template-columns: 1fr 1.38fr; gap: 16px; }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    .left { display: flex; flex-direction: column; gap: 12px; }
+    .code-box {
+      border: 2px solid var(--primary); border-radius: 8px; background: var(--card);
+      padding: 10px 8px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; line-height: 1.5;
+    }
+    .code-line { display: flex; align-items: center; gap: 6px; padding: 2px 6px; border-radius: 4px; }
+    .stack-card {
+      flex: 1; border: 1px solid var(--border); border-radius: 8px; background: var(--card);
+      padding: 12px; display: flex; flex-direction: column; justify-content: space-between; min-height: 210px;
+    }
+    .stack-boxes {
+      display: flex; flex-direction: column-reverse; align-items: center; gap: 6px; flex: 1; padding-top: 10px;
+    }
+    .stack-item {
+      width: 130px; text-align: center; padding: 4px 0; border: 2px solid var(--border);
+      border-radius: 5px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 700;
+      background: rgba(245, 158, 11, 0.16); color: var(--fg);
+    }
+    .stack-item.top { border-color: var(--warning); background: var(--warning); color: #111827; }
+    .right {
+      border: 1px solid var(--border); border-radius: 8px; background: var(--card);
+      padding: 14px; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .svg-box { position: relative; }
+    .badge {
+      position: absolute; top: 2px; left: 2px; padding: 3px 8px; border-radius: 5px;
+      font-size: 12px; font-weight: 700; pointer-events: none;
+    }
+    svg { width: 100%; height: auto; display: block; }
+    .seq-bar { border-top: 1px solid var(--border); padding-top: 10px; display: flex; flex-direction: column; gap: 4px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .controls {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px;
+    }
+    input[type="range"] { flex: 1; min-width: 160px; accent-color: var(--primary); cursor: pointer; }
+    .hint { font-size: 12px; color: var(--muted); text-align: center; }
+    @keyframes ringPulse {
+      0% { transform: scale(1); opacity: 0.9; }
+      75% { transform: scale(1.34); opacity: 0; }
+      100% { transform: scale(1.34); opacity: 0; }
+    }
+    .ring-pulse { transform-box: fill-box; transform-origin: center; animation: ringPulse 1.15s ease-out infinite; }
+    @keyframes dashFlow { to { stroke-dashoffset: -16; } }
+    .dash-flow { stroke-dasharray: 6 4; animation: dashFlow 0.55s linear infinite; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="group">
+        <button data-mode="rec" class="btn mode-btn">Mode Récursif (Backtrack)</button>
+        <button data-mode="pile" class="btn mode-btn">Mode Pile (Listing 3)</button>
+        <button data-graph="tree" class="btn graph-btn">Arbre 1..11</button>
+        <button data-graph="gex" class="btn graph-btn">Graphe G_ex</button>
+      </div>
+      <div class="group">
+        <div class="legend">
+          <span><span class="dot" style="background: var(--warning);"></span>Pile (GRIS)</span>
+          <span><span class="dot" style="background: var(--primary);"></span>Fermé (NOIR)</span>
+        </div>
+        <button id="btn-theme" class="btn" title="Changer le thème">☀ / ☾</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="left">
+        <div class="code-box"><div id="code-lines"></div></div>
+        <div class="stack-card">
+          <div style="display:flex; justify-content:space-between; font-size:13px; color:var(--muted);">
+            <span id="stack-title">Pile active (chemin en cours)</span>
+            <span id="stack-info" class="mono">h = 0</span>
+          </div>
+          <div id="stack-boxes" class="stack-boxes"></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="svg-box">
+          <div id="action-badge" class="badge"></div>
+          <svg id="graph-svg" viewBox="0 0 360 218"></svg>
+        </div>
+        <div class="seq-bar">
+          <div style="display:flex; gap:8px; align-items:baseline;">
+            <span style="color:var(--muted); font-size:13px; white-space:nowrap;">Visite :</span>
+            <span id="visited-seq" class="mono" style="font-weight:700; font-size:15px;">—</span>
+          </div>
+          <div style="display:flex; gap:8px; align-items:baseline;">
+            <span id="bt-label" style="color:var(--warning); font-size:13px; font-weight:600; white-space:nowrap;">Retours (0) :</span>
+            <span id="bt-seq" class="mono" style="font-size:13px; color:var(--muted);">—</span>
+          </div>
+          <div id="step-note" style="font-size:13px; color:var(--fg); padding-top:2px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-reset" class="btn">⏮ Début</button>
+      <button id="btn-prev" class="btn">◀ Préc.</button>
+      <button id="btn-play" class="btn active" style="min-width:105px;">▶ Lecture</button>
+      <button id="btn-next" class="btn">Suiv. ▶</button>
+      <input id="step-slider" type="range" min="0" max="1" value="0" />
+      <span id="step-counter" class="mono" style="min-width:60px; text-align:right; color:var(--muted);">0 / 0</span>
+      <button id="btn-speed" class="btn mono">1x</button>
+    </div>
+
+    <div class="hint">Raccourcis clavier pour l'exposé : Flèche Gauche / Droite (étape par étape) • Espace (Lecture / Pause)</div>
+  </div>
+
+  <script>
+    const GRAPHS = {
+      tree: {
+        directed: false, root: '1',
+        nodes: [
+          { id: '1', x: 180, y: 26 }, { id: '2', x: 102, y: 76 }, { id: '3', x: 258, y: 76 },
+          { id: '4', x: 62, y: 132 }, { id: '5', x: 134, y: 132 }, { id: '6', x: 222, y: 132 },
+          { id: '7', x: 304, y: 132 }, { id: '8', x: 88, y: 188 }, { id: '9', x: 194, y: 188 },
+          { id: '10', x: 248, y: 188 }, { id: '11', x: 296, y: 188 },
+        ],
+        edges: [
+          { from: '1', to: '2' }, { from: '1', to: '3' }, { from: '2', to: '4' }, { from: '2', to: '5' },
+          { from: '4', to: '8' }, { from: '3', to: '6' }, { from: '3', to: '7' },
+          { from: '6', to: '9' }, { from: '6', to: '10' }, { from: '7', to: '11' },
+        ],
+        adj: {
+          '1': ['2', '3'], '2': ['4', '5'], '3': ['6', '7'], '4': ['8'], '5': [],
+          '6': ['9', '10'], '7': ['11'], '8': [], '9': [], '10': [], '11': []
+        }
+      },
+      gex: {
+        directed: true, root: 'A',
+        nodes: [
+          { id: 'A', x: 45, y: 118 }, { id: 'B', x: 132, y: 72 }, { id: 'C', x: 132, y: 180 },
+          { id: 'D', x: 228, y: 72 }, { id: 'E', x: 228, y: 146 }, { id: 'F', x: 246, y: 192 }, { id: 'G', x: 318, y: 96 },
+        ],
+        edges: [
+          { from: 'A', to: 'B' }, { from: 'A', to: 'C' }, { from: 'A', to: 'G', curve: -155 },
+          { from: 'B', to: 'D' }, { from: 'B', to: 'E', curve: 12 }, { from: 'C', to: 'F' },
+          { from: 'D', to: 'E' }, { from: 'D', to: 'G' }, { from: 'E', to: 'B', curve: 22 }, { from: 'F', to: 'E' },
+        ],
+        adj: { A: ['B', 'C', 'G'], B: ['D', 'E'], C: ['F'], D: ['E', 'G'], E: ['B'], F: ['E'], G: [] }
+      }
+    };
+
+    const CODE_TEMPLATES = {
+      rec: [
+        'DFS(n):', '  Marquer n en cours (GRIS)', '  Traiter(n)  // ajouter à visite',
+        '  Pour chaque voisin v de n:', '    Si v blanc: DFS(v)  // descente', '  Fermer n (NOIR) ; Retour parent ↩'
+      ],
+      pile: [
+        'Initialiser Iter[u] pour chaque u ; Empiler(départ)',
+        'Tant que pile non vide faire',
+        '  u ← SommetDePile(P)  // peek()',
+        '  Si Iter[u] a un voisin v suivant:',
+        '    Si v blanc: Empiler(v) ; Traiter(v)',
+        '  Sinon (fin voisins): Dépiler() ↩'
+      ]
+    };
+
+    function buildRecFrames(graphKey) {
+      const g = GRAPHS[graphKey], frames = [], color = {};
+      g.nodes.forEach(n => { color[n.id] = 'BLANC'; });
+      const stack = [], output = [], backtracks = [], treeEdges = new Set(), backEdges = new Set(), otherEdges = new Set();
+      const snap = (line, kind, activeNode, moveEdge, note) => frames.push({
+        line, kind, activeNode, moveEdge,
+        stack: stack.map(id => ({ id, label: id })), color: { ...color },
+        output: [...output], backtracks: [...backtracks],
+        treeEdges: new Set(treeEdges), backEdges: new Set(backEdges), otherEdges: new Set(otherEdges), note
+      });
+
+      snap(-1, 'init', null, null, `État initial : tous les sommets sont BLANC. Départ en ${g.root}.`);
+      function dfs(u) {
+        color[u] = 'GRIS'; stack.push(u);
+        snap(1, 'visit', u, null, `${u} passe en GRIS et entre sur la pile.`);
+        output.push(u);
+        snap(2, 'visit', u, null, `Traiter(${u}) : ajouté à l'ordre de visite.`);
+        for (const v of g.adj[u]) {
+          snap(3, 'visit', u, null, `Depuis ${u}, on regarde le voisin ${v} (${color[v]}).`);
+          if (color[v] === 'BLANC') {
+            treeEdges.add(`${u}->${v}`);
+            snap(4, 'down', u, `${u}->${v}`, `Descente (${u} → ${v}) : ${v} est blanc, appel DFS(${v}).`);
+            dfs(v);
+            backtracks.push(`${v}↩${u}`);
+            snap(5, 'back', u, `${v}->${u}`, `Retour en arrière (${v} ↩ ${u}) : ${v} est fermé, on reprend en ${u}.`);
+          } else if (g.directed && color[v] === 'GRIS') {
+            backEdges.add(`${u}->${v}`);
+            snap(4, 'cycle', u, `${u}->${v}`, `Arc arrière (${u} → ${v}) : ${v} est GRIS = cycle détecté !`);
+          } else if (g.directed && color[v] === 'NOIR') {
+            otherEdges.add(`${u}->${v}`);
+            snap(4, 'visit', u, null, `${v} est déjà NOIR (fermé) : on passe.`);
+          }
+        }
+        color[u] = 'NOIR'; stack.pop();
+        if (u === g.root) snap(5, 'done', null, null, `Fermeture de ${u} (NOIR). Pile vide : fin du parcours !`);
+      }
+      dfs(g.root);
+      return frames;
+    }
+
+    function buildPileFrames(graphKey) {
+      const g = GRAPHS[graphKey], frames = [], color = {}, iterPos = {};
+      g.nodes.forEach(n => { color[n.id] = 'BLANC'; iterPos[n.id] = 0; });
+      const stack = [], output = [], backtracks = [], treeEdges = new Set(), backEdges = new Set(), otherEdges = new Set();
+      const snap = (line, kind, activeNode, moveEdge, note) => frames.push({
+        line, kind, activeNode, moveEdge,
+        stack: stack.map(id => ({ id, label: `${id} (iter ${iterPos[id]}/${g.adj[id].length})` })),
+        color: { ...color }, output: [...output], backtracks: [...backtracks],
+        treeEdges: new Set(treeEdges), backEdges: new Set(backEdges), otherEdges: new Set(otherEdges), note
+      });
+
+      snap(-1, 'init', null, null, `État initial : la pile est vide, départ en ${g.root}.`);
+      color[g.root] = 'GRIS'; output.push(g.root); stack.push(g.root);
+      snap(0, 'visit', g.root, null, `Initialiser Iter[] et Empiler(${g.root}) en GRIS.`);
+
+      while (stack.length > 0) {
+        const u = stack[stack.length - 1], voisins = g.adj[u];
+        if (iterPos[u] < voisins.length) {
+          const v = voisins[iterPos[u]];
+          snap(2, 'visit', u, null, `Sommet de pile : ${u} — Iter[${u}] donne le voisin ${v}.`);
+          iterPos[u] += 1;
+          if (color[v] === 'BLANC') {
+            treeEdges.add(`${u}->${v}`); color[v] = 'GRIS'; output.push(v); stack.push(v);
+            snap(4, 'down', v, `${u}->${v}`, `Descente (${u} → ${v}) : on empile ${v} et on le traite.`);
+          } else if (g.directed && color[v] === 'GRIS') {
+            backEdges.add(`${u}->${v}`);
+            snap(3, 'cycle', u, `${u}->${v}`, `Arc arrière (${u} → ${v}) : ${v} est GRIS (cycle détecté) !`);
+          } else if (g.directed && color[v] === 'NOIR') {
+            otherEdges.add(`${u}->${v}`);
+            snap(3, 'visit', u, null, `${v} est déjà NOIR : ignoré.`);
+          }
+        } else {
+          color[u] = 'NOIR'; stack.pop();
+          if (stack.length > 0) {
+            const parent = stack[stack.length - 1];
+            backtracks.push(`${u}↩${parent}`);
+            snap(5, 'back', parent, `${u}->${parent}`, `Fin de Iter[${u}] (${u} NOIR) → Dépiler() et retour vers ${parent}.`);
+          } else snap(5, 'done', null, null, `Fin de Iter[${u}] (${u} NOIR) → Dépiler(). Terminé !`);
+        }
+      }
+      return frames;
+    }
+
+    let mode = 'rec', graphKey = 'tree', frames = [], frameIdx = 0, playing = false, timer = null, speedMs = 780;
+    function rebuild() {
+      playing = false; if (timer) { clearInterval(timer); timer = null; }
+      frames = mode === 'rec' ? buildRecFrames(graphKey) : buildPileFrames(graphKey);
+      frameIdx = 0; render();
+    }
+
+    function edgePath(u, v, curve = 0, directed = false, padEnd = 4) {
+      const dx = v.x - u.x, dy = v.y - u.y, len = Math.hypot(dx, dy) || 1, r = 16;
+      const sx = u.x + (dx / len) * r, sy = u.y + (dy / len) * r;
+      const ex = v.x - (dx / len) * (directed ? r + padEnd : r), ey = v.y - (dy / len) * (directed ? r + padEnd : r);
+      if (!curve) return `M ${sx.toFixed(1)} ${sy.toFixed(1)} L ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+      const mx = (u.x + v.x) / 2 - (dy / len) * curve, my = (u.y + v.y) / 2 + (dx / len) * curve;
+      return `M ${sx.toFixed(1)} ${sy.toFixed(1)} Q ${mx.toFixed(1)} ${my.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+    }
+
+    function render() {
+      if (!frames.length) return;
+      const fr = frames[frameIdx], g = GRAPHS[graphKey], nodeById = Object.fromEntries(g.nodes.map(n => [n.id, n]));
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+      document.querySelectorAll('.graph-btn').forEach(b => b.classList.toggle('active', b.dataset.graph === graphKey));
+
+      document.getElementById('code-lines').innerHTML = CODE_TEMPLATES[mode].map((txt, idx) => {
+        const act = fr.line === idx, isBack = idx === 5;
+        const hi = isBack ? 'rgba(245, 158, 11, 0.22)' : 'rgba(56, 189, 248, 0.18)';
+        const col = isBack ? 'var(--warning)' : 'var(--fg)';
+        const ptrCol = isBack ? 'var(--warning)' : 'var(--primary)';
+        return `<div class="code-line" style="${act ? `background:${hi};` : ''}"><span style="color:${ptrCol}; opacity:${act ? 1 : 0};">▶</span><span style="color:${col};">${txt.replace(/ /g, '&nbsp;')}</span></div>`;
+      }).join('');
+
+      document.getElementById('stack-title').textContent = mode === 'rec' ? "Pile d'appels (chemin actif)" : 'Pile LIFO (chemin actif)';
+      document.getElementById('stack-info').textContent = `h = ${fr.stack.length}`;
+      const stackEl = document.getElementById('stack-boxes');
+      stackEl.innerHTML = !fr.stack.length
+        ? `<div style="color:var(--muted); font-style:italic; margin:auto;">Pile vide</div>`
+        : fr.stack.map((it, i) => `<div class="stack-item ${i === fr.stack.length - 1 ? 'top' : ''}">${it.label}${i === fr.stack.length - 1 ? ' ←' : ''}</div>`).join('');
+
+      const badge = document.getElementById('action-badge');
+      if (fr.kind === 'back') { badge.style.background = 'var(--warning)'; badge.style.color = '#111827'; badge.textContent = `↩ RETOUR EN ARRIÈRE (${fr.moveEdge.replace('->', ' ↩ ')})`; }
+      else if (fr.kind === 'down') { badge.style.background = 'var(--primary)'; badge.style.color = 'var(--primary-fg)'; badge.textContent = `⬇ DESCENTE (${fr.moveEdge.replace('->', ' → ')})`; }
+      else if (fr.kind === 'cycle') { badge.style.background = 'var(--error)'; badge.style.color = '#ffffff'; badge.textContent = `⚠ CYCLE (${fr.moveEdge.replace('->', ' → ')})`; }
+      else if (fr.kind === 'done') { badge.style.background = 'var(--success)'; badge.style.color = '#ffffff'; badge.textContent = `✓ TERMINÉ (${fr.backtracks.length} retours)`; }
+      else { badge.style.background = 'transparent'; badge.textContent = ''; }
+
+      let html = `
+        <defs>
+          <marker id="arr-def" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--border)" /></marker>
+          <marker id="arr-act" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--primary)" /></marker>
+          <marker id="arr-bt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--warning)" /></marker>
+          <marker id="arr-cyc" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--error)" /></marker>
+        </defs>
+      `;
+      for (const e of g.edges) {
+        const u = nodeById[e.from], v = nodeById[e.to];
+        const isTree = fr.treeEdges.has(`${e.from}->${e.to}`), isCyc = fr.backEdges.has(`${e.from}->${e.to}`), isOther = fr.otherEdges.has(`${e.from}->${e.to}`);
+        let stroke = 'var(--border)', w = 1.8, op = 0.65, marker = g.directed ? 'url(#arr-def)' : '';
+        if (isCyc) { stroke = 'var(--error)'; w = 2.6; op = 1; marker = g.directed ? 'url(#arr-cyc)' : ''; }
+        else if (isTree) { stroke = 'var(--primary)'; w = 2.6; op = 1; marker = g.directed ? 'url(#arr-act)' : ''; }
+        else if (isOther) { stroke = 'var(--accent)'; w = 1.8; op = 0.75; }
+        html += `<path d="${edgePath(u, v, e.curve || 0, g.directed)}" fill="none" stroke="${stroke}" stroke-width="${w}" opacity="${op}" ${marker ? `marker-end="${marker}"` : ''} />`;
+      }
+      if ((fr.kind === 'down' || fr.kind === 'back') && fr.moveEdge) {
+        const [fId, tId] = fr.moveEdge.split('->');
+        const u = nodeById[fId], v = nodeById[tId];
+        if (u && v) {
+          const isBack = fr.kind === 'back', col = isBack ? 'var(--warning)' : 'var(--primary)', mk = isBack ? 'url(#arr-bt)' : 'url(#arr-act)';
+          const mp = edgePath(u, v, isBack ? 14 : 0, true, 2);
+          html += `<path d="${mp}" fill="none" stroke="${col}" stroke-width="3.2" class="dash-flow" marker-end="${mk}" />`;
+          html += `<circle r="5.5" fill="${col}" stroke="var(--card)" stroke-width="1.8"><animateMotion dur="0.65s" repeatCount="indefinite" path="${mp}" /></circle>`;
+        }
+      }
+      for (const n of g.nodes) {
+        const st = fr.color[n.id], isAct = fr.activeNode === n.id;
+        let fill = 'var(--bg)', stroke = 'var(--border)', txt = 'var(--fg)';
+        if (st === 'GRIS') { fill = 'var(--warning)'; stroke = 'var(--warning)'; txt = '#111827'; }
+        else if (st === 'NOIR') { fill = 'var(--primary)'; stroke = 'var(--primary)'; txt = 'var(--primary-fg)'; }
+        if (isAct) html += `<circle cx="${n.x}" cy="${n.y}" r="20" fill="none" stroke="${fr.kind === 'back' ? 'var(--warning)' : 'var(--primary)'}" stroke-width="2.4" class="ring-pulse" />`;
+        html += `<circle cx="${n.x}" cy="${n.y}" r="15" fill="${fill}" stroke="${stroke}" stroke-width="2.2" /><text x="${n.x}" y="${n.y + 4}" text-anchor="middle" font-size="12" font-weight="700" fill="${txt}">${n.id}</text>`;
+      }
+      document.getElementById('graph-svg').innerHTML = html;
+      document.getElementById('visited-seq').textContent = fr.output.length ? fr.output.join(', ') : '—';
+      document.getElementById('bt-label').textContent = `Retours (${fr.backtracks.length}) :`;
+      document.getElementById('bt-seq').textContent = fr.backtracks.length ? fr.backtracks.join(', ') : '—';
+      document.getElementById('step-note').textContent = fr.note;
+      const sl = document.getElementById('step-slider');
+      sl.max = frames.length - 1; sl.value = frameIdx;
+      document.getElementById('step-counter').textContent = `${frameIdx} / ${frames.length - 1}`;
+      document.getElementById('btn-play').textContent = playing ? '⏸ Pause' : '▶ Lecture';
+    }
+
+    function stopPlay() { playing = false; if (timer) { clearInterval(timer); timer = null; } render(); }
+    function startPlay() {
+      if (frameIdx >= frames.length - 1) frameIdx = 0;
+      playing = true; render();
+      timer = setInterval(() => { if (frameIdx < frames.length - 1) { frameIdx += 1; render(); } else stopPlay(); }, speedMs);
+    }
+
+    document.querySelectorAll('.mode-btn').forEach(b => b.addEventListener('click', () => { mode = b.dataset.mode; rebuild(); }));
+    document.querySelectorAll('.graph-btn').forEach(b => b.addEventListener('click', () => { graphKey = b.dataset.graph; rebuild(); }));
+    document.getElementById('btn-theme').addEventListener('click', () => document.body.classList.toggle('light'));
+    document.getElementById('btn-reset').addEventListener('click', () => { stopPlay(); frameIdx = 0; render(); });
+    document.getElementById('btn-prev').addEventListener('click', () => { stopPlay(); if (frameIdx > 0) { frameIdx -= 1; render(); } });
+    document.getElementById('btn-next').addEventListener('click', () => { stopPlay(); if (frameIdx < frames.length - 1) { frameIdx += 1; render(); } });
+    document.getElementById('btn-play').addEventListener('click', () => { playing ? stopPlay() : startPlay(); });
+    document.getElementById('step-slider').addEventListener('input', (e) => { stopPlay(); frameIdx = Number(e.target.value); render(); });
+    document.getElementById('btn-speed').addEventListener('click', (e) => {
+      speedMs = speedMs === 780 ? 390 : 780; e.target.textContent = speedMs === 780 ? '1x' : '2x';
+      if (playing) { clearInterval(timer); startPlay(); }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { stopPlay(); if (frameIdx < frames.length - 1) { frameIdx += 1; render(); } }
+      else if (e.key === 'ArrowLeft') { stopPlay(); if (frameIdx > 0) { frameIdx -= 1; render(); } }
+      else if (e.key === ' ') { e.preventDefault(); playing ? stopPlay() : startPlay(); }
+    });
+    rebuild();
+  </script>
+</body>
+</html>

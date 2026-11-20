@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animation DFS — Sujet 2 (Master IT)</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --border: #334155;
+      --fg: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-fg: #ffffff;
+      --warning: #f59e0b;
+      --error: #ef4444;
+      --success: #10b981;
+      --accent: #a855f7;
+      --chart-1: #3b82f6;
+      --chart-2: #10b981;
+      --chart-3: #8b5cf6;
+    }
+    body.light {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #cbd5e1;
+      --fg: #0f172a;
+      --muted: #475569;
+      --primary: #2563eb;
+      --primary-fg: #ffffff;
+      --warning: #f59e0b;
+      --error: #dc2626;
+      --success: #059669;
+      --accent: #9333ea;
+      --chart-1: #2563eb;
+      --chart-2: #059669;
+      --chart-3: #7c3aed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 20px;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      font-size: 14px;
+    }
+    .container { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .topbar {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--border);
+    }
+    .title-block h1 { margin: 0; font-size: 18px; font-weight: 700; }
+    .title-block p { margin: 2px 0 0; font-size: 12px; color: var(--muted); }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .btn {
+      padding: 7px 12px; border-radius: 7px; border: 1px solid var(--border);
+      background: var(--card); color: var(--fg); font-size: 13px; cursor: pointer;
+      font-weight: 500; transition: all 0.15s ease;
+    }
+    .btn:hover { border-color: var(--primary); }
+    .btn.active { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
+    .legend { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; font-size: 12px; color: var(--muted); }
+    .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; margin-right: 5px; vertical-align: middle; }
+    .grid { display: grid; grid-template-columns: 1.45fr 1fr; gap: 14px; }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+      padding: 14px;
+    }
+    .svg-wrap { padding: 6px; display: flex; align-items: center; justify-content: center; }
+    svg { width: 100%; height: auto; max-height: 430px; display: block; }
+    .side { display: flex; flex-direction: column; gap: 12px; }
+    .row-head { display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin-bottom: 6px; }
+    .label { color: var(--muted); font-weight: 600; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .stack-box { display: flex; flex-wrap: wrap; gap: 6px; min-height: 30px; align-items: center; }
+    .pill {
+      padding: 3px 8px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--bg); font-size: 13px;
+    }
+    .pill.top { background: var(--warning); color: #111827; border-color: var(--warning); font-weight: 700; }
+    .controls {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 10px 14px;
+    }
+    input[type="range"] { flex: 1; min-width: 160px; accent-color: var(--primary); cursor: pointer; }
+    .hint { font-size: 12px; color: var(--muted); text-align: center; }
+    @keyframes pulseRing {
+      0% { transform: scale(1); opacity: 0.85; }
+      70% { transform: scale(1.28); opacity: 0; }
+      100% { transform: scale(1.28); opacity: 0; }
+    }
+    .pulse-ring { transform-box: fill-box; transform-origin: center; animation: pulseRing 1.3s ease-out infinite; }
+    @keyframes dashFlow { to { stroke-dashoffset: -16; } }
+    .edge-flowing { stroke-dasharray: 5 3; animation: dashFlow 0.7s linear infinite; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="title-block">
+        <h1>Parcours en profondeur (DFS) — Démonstration interactive (Sujet 2)</h1>
+        <p>Master IT • Théorie des Graphes (M. Edem K. HOVI)</p>
+      </div>
+      <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+        <div class="tabs">
+          <button class="btn tab-btn" data-scenario="gex">1. Trace &amp; Cycle (G_ex)</button>
+          <button class="btn tab-btn" data-scenario="dag">2. Tri Topologique (DAG)</button>
+          <button class="btn tab-btn" data-scenario="cc">3. Composantes (Réseau)</button>
+        </div>
+        <button id="btn-theme" class="btn" title="Changer le thème">☀ / ☾</button>
+      </div>
+    </div>
+
+    <div class="legend">
+      <span><span class="dot" style="background: var(--bg); border:1px solid var(--border);"></span>BLANC (non visité)</span>
+      <span><span class="dot" style="background: var(--warning);"></span>GRIS (en cours / sur la pile)</span>
+      <span><span class="dot" style="background: var(--primary);"></span>NOIR (fermé)</span>
+      <span><span class="dot" style="background: var(--error);"></span>Arc arrière (cycle)</span>
+      <span><span class="dot" style="background: var(--accent);"></span>Arc avant / croisé</span>
+    </div>
+
+    <div class="grid">
+      <div class="card svg-wrap">
+        <svg id="graph-svg" viewBox="0 0 460 278"></svg>
+      </div>
+
+      <div class="side">
+        <div class="card">
+          <div class="row-head">
+            <span id="step-badge" style="color:var(--primary); font-weight:700;">Étape 0</span>
+            <span id="backtrack-count" class="mono" style="color:var(--muted);">Retours arrière : 0</span>
+          </div>
+          <div id="step-desc" style="min-height: 44px; line-height: 1.45;"></div>
+        </div>
+
+        <div class="card">
+          <div class="row-head">
+            <span class="label">Pile LIFO active (sommets GRIS)</span>
+            <span id="stack-depth" class="mono" style="color:var(--muted);">h = 0</span>
+          </div>
+          <div id="stack-view" class="stack-box"></div>
+        </div>
+
+        <div class="card" style="flex:1; display:flex; flex-direction:column; justify-content:space-between; gap:10px;">
+          <div>
+            <div class="label" style="font-size:12px; margin-bottom:4px;">Ordre de découverte</div>
+            <div id="visit-order" class="mono" style="line-height:1.5; word-break:break-word;">—</div>
+          </div>
+          <div style="border-top:1px solid var(--border); padding-top:10px;">
+            <div id="result-title" class="label" style="font-size:12px; margin-bottom:4px;">Diagnostic</div>
+            <div id="result-view" class="mono" style="line-height:1.5; word-break:break-word;">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-reset" class="btn" title="Début">⏮ Début</button>
+      <button id="btn-prev" class="btn" title="Précédent">◀ Préc.</button>
+      <button id="btn-play" class="btn active" style="min-width:105px;">▶ Lecture</button>
+      <button id="btn-next" class="btn" title="Suivant">Suiv. ▶</button>
+      <input id="step-slider" type="range" min="0" max="1" value="0" />
+      <span id="step-counter" class="mono" style="min-width:56px; text-align:right; color:var(--muted);">0 / 0</span>
+      <button id="btn-speed" class="btn mono">1x</button>
+    </div>
+
+    <div class="hint">Raccourcis clavier pour l'exposé : Flèche Gauche / Droite (étape par étape) • Espace (Lecture / Pause)</div>
+  </div>
+
+  <script>
+    const SCENARIOS = {
+      gex: {
+        directed: true,
+        nodes: [
+          { id: 'A', x: 58,  y: 145 },
+          { id: 'B', x: 170, y: 86  },
+          { id: 'C', x: 170, y: 218 },
+          { id: 'D', x: 292, y: 86  },
+          { id: 'E', x: 292, y: 178 },
+          { id: 'F', x: 312, y: 232 },
+          { id: 'G', x: 408, y: 118 },
+        ],
+        edges: [
+          { from: 'A', to: 'B' },
+          { from: 'A', to: 'C' },
+          { from: 'A', to: 'G', curve: -175 },
+          { from: 'B', to: 'D' },
+          { from: 'B', to: 'E', curve: 14 },
+          { from: 'C', to: 'F' },
+          { from: 'D', to: 'E' },
+          { from: 'D', to: 'G' },
+          { from: 'E', to: 'B', curve: 24 },
+          { from: 'F', to: 'E' },
+        ],
+        adj: { A: ['B', 'C', 'G'], B: ['D', 'E'], C: ['F'], D: ['E', 'G'], E: ['B'], F: ['E'], G: [] },
+        order: ['A', 'B', 'C', 'D', 'E', 'F', 'G'],
+        resultLabel: 'Classification & Cycle'
+      },
+      dag: {
+        directed: true,
+        nodes: [
+          { id: 'T1', x: 52,  y: 138 },
+          { id: 'T2', x: 140, y: 74  },
+          { id: 'T3', x: 140, y: 204 },
+          { id: 'T4', x: 234, y: 122 },
+          { id: 'T5', x: 242, y: 46  },
+          { id: 'T6', x: 242, y: 214 },
+          { id: 'T7', x: 334, y: 138 },
+          { id: 'T8', x: 416, y: 138 },
+        ],
+        edges: [
+          { from: 'T1', to: 'T2' }, { from: 'T1', to: 'T3' },
+          { from: 'T2', to: 'T4' }, { from: 'T2', to: 'T5' },
+          { from: 'T3', to: 'T4' }, { from: 'T3', to: 'T6' },
+          { from: 'T4', to: 'T6' }, { from: 'T4', to: 'T7' },
+          { from: 'T5', to: 'T7' }, { from: 'T6', to: 'T7' },
+          { from: 'T7', to: 'T8' },
+        ],
+        adj: {
+          T1: ['T2', 'T3'], T2: ['T4', 'T5'], T3: ['T4', 'T6'],
+          T4: ['T6', 'T7'], T5: ['T7'], T6: ['T7'], T7: ['T8'], T8: []
+        },
+        order: ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8'],
+        resultLabel: 'Tri topologique (ordre d’exécution)'
+      },
+      cc: {
+        directed: false,
+        nodes: [
+          { id: 'R1', x: 64,  y: 78  }, { id: 'R2', x: 158, y: 78  },
+          { id: 'R3', x: 158, y: 186 }, { id: 'R4', x: 64,  y: 186 },
+          { id: 'R5', x: 245, y: 66  }, { id: 'R6', x: 292, y: 146 },
+          { id: 'R7', x: 245, y: 222 }, { id: 'R8', x: 392, y: 92  },
+          { id: 'R9', x: 392, y: 196 },
+        ],
+        edges: [
+          { from: 'R1', to: 'R2' }, { from: 'R2', to: 'R3' },
+          { from: 'R3', to: 'R4' }, { from: 'R1', to: 'R4' },
+          { from: 'R5', to: 'R6' }, { from: 'R6', to: 'R7' },
+          { from: 'R8', to: 'R9' },
+        ],
+        adj: {
+          R1: ['R2', 'R4'], R2: ['R1', 'R3'], R3: ['R2', 'R4'], R4: ['R1', 'R3'],
+          R5: ['R6'], R6: ['R5', 'R7'], R7: ['R6'], R8: ['R9'], R9: ['R8']
+        },
+        order: ['R1', 'R2', 'R3', 'R4', 'R5', 'R6', 'R7', 'R8', 'R9'],
+        resultLabel: 'Composantes connexes détectées'
+      }
+    };
+
+    function edgeKey(u, v, directed) {
+      return directed ? `${u}->${v}` : [u, v].sort().join('--');
+    }
+
+    function buildFrames(key) {
+      const sc = SCENARIOS[key];
+      const frames = [];
+      const color = {}, d = {}, f = {}, pi = {}, compMap = {}, edgeTypes = {};
+      const pile = [], visitOrder = [], closeOrder = [], components = [];
+      let cycleFound = null, time = 0, backtracks = 0;
+
+      sc.order.forEach(u => { color[u] = 'BLANC'; pi[u] = null; });
+
+      function snapshot(activeNode, activeEdge, backEdge, desc) {
+        frames.push({
+          time, color: { ...color }, d: { ...d }, f: { ...f }, compMap: { ...compMap },
+          edgeTypes: { ...edgeTypes }, pile: [...pile], visitOrder: [...visitOrder],
+          closeOrder: [...closeOrder], components: components.map(c => [...c]),
+          cycleFound: cycleFound ? [...cycleFound] : null, activeNode, activeEdge, backEdge, backtracks, desc
+        });
+      }
+
+      snapshot(null, null, null, `État initial : tous les sommets sont BLANC. Départ prévu en ${sc.order[0]}.`);
+
+      function dfsVisit(u, compIdx) {
+        time += 1; d[u] = time; color[u] = 'GRIS'; pile.push(u); visitOrder.push(u);
+        if (!sc.directed) { compMap[u] = compIdx; components[compIdx].push(u); }
+
+        const parentEdge = pi[u] ? edgeKey(pi[u], u, sc.directed) : null;
+        snapshot(u, parentEdge, null, pi[u]
+          ? `Arc d'arbre (${pi[u]} → ${u}) : découverte de ${u} (d=${time}), passage en GRIS.`
+          : `Départ depuis ${u} (d=${time}) : empilement et passage en GRIS.`);
+
+        for (const v of sc.adj[u]) {
+          const ek = edgeKey(u, v, sc.directed);
+          if (color[v] === 'BLANC') {
+            pi[v] = u; edgeTypes[ek] = 'ARBRE';
+            dfsVisit(v, compIdx);
+            backtracks += 1;
+            snapshot(u, null, `${v}->${u}`, `Retour en arrière de ${v} vers ${u} pour continuer l'exploration.`);
+          } else if (sc.directed) {
+            if (color[v] === 'GRIS') {
+              edgeTypes[ek] = 'ARRIERE';
+              if (!cycleFound) cycleFound = [...pile.slice(pile.indexOf(v)), v];
+              snapshot(u, ek, null, `Arc arrière (${u} → ${v}) : ${v} est GRIS ! Cycle détecté : ${cycleFound.join(' → ')}.`);
+            } else {
+              const typ = d[u] < d[v] ? 'AVANT' : 'CROISE';
+              edgeTypes[ek] = typ;
+              const label = typ === 'AVANT' ? 'avant (descendant déjà fermé)' : 'croisé (autre branche déjà fermée)';
+              snapshot(u, ek, null, `Arc ${label} (${u} → ${v}) : ${v} est déjà NOIR.`);
+            }
+          } else if (v !== pi[u] && !edgeTypes[ek]) {
+            edgeTypes[ek] = 'ARRIERE';
+            snapshot(u, ek, null, `Arête de cycle (${u} — ${v}) : ${v} est déjà visité dans cette composante.`);
+          }
+        }
+
+        time += 1; f[u] = time; color[u] = 'NOIR'; closeOrder.push(u); pile.pop();
+        snapshot(u, null, null, `Fermeture de ${u} (f=${time}, NOIR) : plus de voisin à explorer.`);
+      }
+
+      for (const s of sc.order) {
+        if (color[s] === 'BLANC') {
+          let compIdx = components.length;
+          if (!sc.directed) components.push([]);
+          dfsVisit(s, compIdx);
+        }
+      }
+
+      let finalMsg = 'Parcours terminé.';
+      if (key === 'gex') finalMsg = `Fin du DFS : ${backtracks} retours en arrière et 1 cycle détecté (${cycleFound.join(' → ')}).`;
+      else if (key === 'dag') finalMsg = `Aucun cycle : l'ordre inverse de fermeture donne le tri topologique (${[...closeOrder].reverse().join(' → ')}).`;
+      else finalMsg = `Parcours terminé : ${components.length} composantes connexes isolées identifiées.`;
+      snapshot(null, null, null, finalMsg);
+      return frames;
+    }
+
+    const CACHE = { gex: buildFrames('gex'), dag: buildFrames('dag'), cc: buildFrames('cc') };
+    let currentKey = 'gex', frameIdx = 0, playing = false, timer = null, speedMs = 950;
+    const svg = document.getElementById('graph-svg');
+    const compColors = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)'];
+
+    function edgePath(u, v, curve = 0, directed = true) {
+      const dx = v.x - u.x, dy = v.y - u.y, len = Math.hypot(dx, dy) || 1, r = 20;
+      const sx = u.x + (dx / len) * r, sy = u.y + (dy / len) * r;
+      const ex = v.x - (dx / len) * (directed ? r + 4 : r), ey = v.y - (dy / len) * (directed ? r + 4 : r);
+      if (!curve) return `M ${sx.toFixed(1)} ${sy.toFixed(1)} L ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+      const mx = (u.x + v.x) / 2 - (dy / len) * curve, my = (u.y + v.y) / 2 + (dx / len) * curve;
+      return `M ${sx.toFixed(1)} ${sy.toFixed(1)} Q ${mx.toFixed(1)} ${my.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
+    }
+
+    function render() {
+      const sc = SCENARIOS[currentKey], frames = CACHE[currentKey], fr = frames[frameIdx];
+      const nodeById = Object.fromEntries(sc.nodes.map(n => [n.id, n]));
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.scenario === currentKey);
+      });
+
+      let html = `
+        <defs>
+          <marker id="arr-muted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--muted)" opacity="0.55" /></marker>
+          <marker id="arr-tree" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--primary)" /></marker>
+          <marker id="arr-back" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--error)" /></marker>
+          <marker id="arr-other" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--accent)" /></marker>
+          <marker id="arr-bt" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="var(--warning)" /></marker>
+        </defs>
+      `;
+
+      for (const e of sc.edges) {
+        const u = nodeById[e.from], v = nodeById[e.to], ek = edgeKey(e.from, e.to, sc.directed);
+        const typ = fr.edgeTypes[ek], isCurrent = fr.activeEdge === ek;
+        let stroke = 'var(--border)', width = isCurrent ? 3 : 1.8, opacity = typ ? 0.95 : 0.48;
+        let marker = sc.directed ? 'url(#arr-muted)' : '';
+        if (typ === 'ARBRE') { stroke = 'var(--primary)'; width = isCurrent ? 3.2 : 2.4; marker = sc.directed ? 'url(#arr-tree)' : ''; }
+        else if (typ === 'ARRIERE') { stroke = 'var(--error)'; width = 2.6; marker = sc.directed ? 'url(#arr-back)' : ''; }
+        else if (typ === 'AVANT' || typ === 'CROISE') { stroke = 'var(--accent)'; width = 2; marker = sc.directed ? 'url(#arr-other)' : ''; }
+        const dash = (typ === 'ARRIERE' || typ === 'AVANT' || typ === 'CROISE') && !isCurrent ? 'stroke-dasharray="5 3"' : '';
+        html += `<path d="${edgePath(u, v, e.curve || 0, sc.directed)}" fill="none" stroke="${stroke}" stroke-width="${width}" opacity="${opacity}" ${dash} class="${isCurrent ? 'edge-flowing' : ''}" ${marker ? `marker-end="${marker}"` : ''} />`;
+      }
+
+      if (fr.backEdge) {
+        const [fromId, toId] = fr.backEdge.split('->');
+        const u = nodeById[fromId], v = nodeById[toId];
+        if (u && v) html += `<path d="${edgePath(u, v, 14, true)}" fill="none" stroke="var(--warning)" stroke-width="2.8" class="edge-flowing" marker-end="url(#arr-bt)" />`;
+      }
+
+      for (const n of sc.nodes) {
+        const st = fr.color[n.id], isActive = fr.activeNode === n.id;
+        let fill = 'var(--bg)', stroke = 'var(--border)', textCol = 'var(--fg)';
+        if (st === 'GRIS') { fill = 'var(--warning)'; stroke = 'var(--warning)'; textCol = '#111827'; }
+        else if (st === 'NOIR') {
+          if (!sc.directed && fr.compMap[n.id] !== undefined) { fill = compColors[fr.compMap[n.id] % compColors.length]; stroke = fill; textCol = '#ffffff'; }
+          else { fill = 'var(--primary)'; stroke = 'var(--primary)'; textCol = 'var(--primary-fg)'; }
+        }
+        if (isActive) html += `<circle cx="${n.x}" cy="${n.y}" r="21" fill="none" stroke="${stroke}" stroke-width="2.5" class="pulse-ring" />`;
+        html += `<g><circle cx="${n.x}" cy="${n.y}" r="18" fill="${fill}" stroke="${stroke}" stroke-width="2.2" /><text x="${n.x}" y="${n.y + 4}" text-anchor="middle" font-size="12" font-weight="700" fill="${textCol}">${n.id}</text>`;
+        if (fr.d[n.id] !== undefined) {
+          const badge = `${fr.d[n.id]}/${fr.f[n.id] !== undefined ? fr.f[n.id] : '·'}`;
+          html += `<rect x="${n.x - 17}" y="${n.y + 20}" width="34" height="14" rx="4" fill="var(--card)" stroke="var(--border)" stroke-width="1" /><text x="${n.x}" y="${n.y + 30}" text-anchor="middle" font-size="10" font-family="monospace" fill="var(--muted)">${badge}</text>`;
+        }
+        html += `</g>`;
+      }
+      svg.innerHTML = html;
+
+      document.getElementById('step-badge').textContent = `Étape ${frameIdx} (t = ${fr.time})`;
+      document.getElementById('backtrack-count').textContent = `Retours arrière : ${fr.backtracks}`;
+      document.getElementById('step-desc').textContent = fr.desc;
+      document.getElementById('stack-depth').textContent = `h = ${fr.pile.length}`;
+      const stackEl = document.getElementById('stack-view');
+      stackEl.innerHTML = fr.pile.length === 0
+        ? `<span style="color:var(--muted); font-style:italic;">Pile vide</span>`
+        : fr.pile.map((id, idx) => `<span class="pill mono ${idx === fr.pile.length - 1 ? 'top' : ''}">${id}${idx === fr.pile.length - 1 ? ' ↑' : ''}</span>`).join('');
+
+      document.getElementById('visit-order').textContent = fr.visitOrder.length ? fr.visitOrder.join(' → ') : '—';
+      document.getElementById('result-title').textContent = sc.resultLabel;
+      const resEl = document.getElementById('result-view');
+      if (currentKey === 'gex') {
+        resEl.style.color = fr.cycleFound ? 'var(--error)' : 'var(--muted)';
+        resEl.textContent = fr.cycleFound ? `Cycle : ${fr.cycleFound.join(' → ')}` : 'Aucun cycle détecté pour le moment';
+      } else if (currentKey === 'dag') {
+        resEl.style.color = fr.closeOrder.length ? 'var(--success)' : 'var(--muted)';
+        resEl.textContent = fr.closeOrder.length ? [...fr.closeOrder].reverse().join(' → ') : 'En attente des premières fermetures...';
+      } else {
+        resEl.style.color = fr.components.length ? 'var(--fg)' : 'var(--muted)';
+        resEl.textContent = fr.components.length ? fr.components.map((c, i) => `C${i + 1}: {${c.join(', ')}}`).join(' | ') : '—';
+      }
+
+      const slider = document.getElementById('step-slider');
+      slider.max = frames.length - 1;
+      slider.value = frameIdx;
+      document.getElementById('step-counter').textContent = `${frameIdx} / ${frames.length - 1}`;
+      document.getElementById('btn-play').textContent = playing ? '⏸ Pause' : '▶ Lecture';
+    }
+
+    function stopPlay() { playing = false; if (timer) { clearInterval(timer); timer = null; } render(); }
+    function startPlay() {
+      const frames = CACHE[currentKey];
+      if (frameIdx >= frames.length - 1) frameIdx = 0;
+      playing = true; render();
+      timer = setInterval(() => {
+        if (frameIdx < CACHE[currentKey].length - 1) { frameIdx += 1; render(); }
+        else stopPlay();
+      }, speedMs);
+    }
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => { stopPlay(); currentKey = btn.dataset.scenario; frameIdx = 0; render(); });
+    });
+    document.getElementById('btn-theme').addEventListener('click', () => { document.body.classList.toggle('light'); });
+    document.getElementById('btn-reset').addEventListener('click', () => { stopPlay(); frameIdx = 0; render(); });
+    document.getElementById('btn-prev').addEventListener('click', () => { stopPlay(); if (frameIdx > 0) { frameIdx -= 1; render(); } });
+    document.getElementById('btn-next').addEventListener('click', () => { stopPlay(); if (frameIdx < CACHE[currentKey].length - 1) { frameIdx += 1; render(); } });
+    document.getElementById('btn-play').addEventListener('click', () => { playing ? stopPlay() : startPlay(); });
+    document.getElementById('step-slider').addEventListener('input', (e) => { stopPlay(); frameIdx = Number(e.target.value); render(); });
+    document.getElementById('btn-speed').addEventListener('click', (e) => {
+      speedMs = speedMs === 950 ? 480 : 950;
+      e.target.textContent = speedMs === 950 ? '1x' : '2x';
+      if (playing) { clearInterval(timer); startPlay(); }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') { stopPlay(); if (frameIdx < CACHE[currentKey].length - 1) { frameIdx += 1; render(); } }
+      else if (e.key === 'ArrowLeft') { stopPlay(); if (frameIdx > 0) { frameIdx -= 1; render(); } }
+      else if (e.key === ' ') { e.preventDefault(); playing ? stopPlay() : startPlay(); }
+    });
+    render();
+  </script>
+</body>
+</html>

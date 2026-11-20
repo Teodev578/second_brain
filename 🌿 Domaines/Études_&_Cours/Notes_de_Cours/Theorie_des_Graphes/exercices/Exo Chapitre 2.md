@@ -579,7 +579,7 @@ Degrés des $8$ vannes :
 
 *(Vérification : somme des degrés $= 26 = 2 \times 13$ conduites.)*
 
-Le graphe compte **6 sommets de degré impair** ($A, B, E, F, G, H$), alors que le théorème d'Euler n'autorise que $0$ ou $2$ sommets impairs. **Le graphe $G$ n'admet donc pas de chaîne eulérienne.**
+Le graphe compte **8 sommets de degré impair** ($A, B, E, F, G, H$), alors que le théorème d'Euler n'autorise que $0$ ou $2$ sommets impairs. **Le graphe $G$ n'admet donc pas de chaîne eulérienne.**
 
 ### 3. Matrice d'adjacence $M$ (ordre alphabétique $A, B, C, D, E, F, G, H$)
 
