@@ -23,14 +23,12 @@
             "id": "7dc64f265c9088c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo Chapitre 2.md",
-                "mode": "source",
-                "source": false
+                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/pdf/Graphe_IT.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Exo Chapitre 2"
+              "icon": "lucide-file-text",
+              "title": "Graphe_IT"
             }
           }
         ],
@@ -212,17 +210,17 @@
   },
   "active": "7dc64f265c9088c0",
   "lastOpenFiles": [
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Sujet Corrigé Chapitre 2.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/pdf/Support_Cours_Theorie_des_Graphes.pdf",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo Chapitre 3.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Sujet Corrigé Chapitre 3.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo Chapitre 2.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo Chapitre 1.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Sujet Corrigé Chapitre 1.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Sujet Corrigé Chapitre 2.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo 1, 2 & 3 Chapitre 2.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/pdf/Support_Cours_Theorie_des_Graphes.pdf",
     "🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Honestly.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/Rapport_Sujet2_DFS_Analyse_Structure_Graphe.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/expose/Rapport_Sujet2_DFS_Analyse_Structure_Graphe.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Sujet Corrigé Chapitre 3.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Sujet Corrigé Chapitre 1.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo 1, 2 & 3 Chapitre 2.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo Chapitre 3.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/Exo Chapitre 1.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/TD3_Algorithmes_&_Routage.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/TD2_Proprietes_&_Applications.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/exercices/TD1_Introduction_&_Representations.md",
