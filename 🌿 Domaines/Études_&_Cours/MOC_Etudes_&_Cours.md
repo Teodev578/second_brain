@@ -36,6 +36,18 @@ SORT file.mtime DESC
 ### 🗂️ Matières & Domaines d'Étude
 - **Gestion de Projet & Business Analysis :**
   - [[01_Analyse_des_Besoins_&_Cahier_des_Charges|01. Analyse des Besoins & Cahier des Charges Fonctionnel]]
+- **Statistiques Inférentielles (Master 1 – IT) :**
+  - [[MOC_Statistiques_Inferentielles|📊 Hub & Index de Statistiques Inférentielles]]
+  - [[01_Echantillonnage_et_Estimations|01. Échantillonnage et Estimations]]
+  - [[02_Intervalles_de_Confiance|02. Les Intervalles de Confiance]]
+  - [[03_Generalites_Tests_Hypotheses|03. Généralités sur les Tests d'Hypothèses]]
+  - [[04_Tests_Parametriques|04. Les Tests Paramétriques]]
+  - [[05_Tests_Non_Parametriques|05. Tests Non Paramétriques]]
+  - [[06_Correlation_et_Regression_Lineaire|06. Corrélation et Régression Linéaire]]
+  - [[TD1_Echantillonnage_et_Estimations|📝 TD 1. Échantillonnage et Estimations]]
+  - [[TD2_Tests_Hypotheses|📝 TD 2. Tests d'Hypothèses]]
+  - [[TD3_Regression_Lineaire|📝 TD 3. Corrélation et Régression Linéaire]]
+  - [[TP1_Utilisation_du_Logiciel_R|💻 TP 1. Utilisation du Logiciel R]]
 - **Théorie des Graphes (Master 1 – IT) :**
   - [[MOC_Theorie_des_Graphes|🌐 Hub & Index de Théorie des Graphes]]
   - [[01_Introduction_&_Representations_des_Graphes|01. Introduction, Définitions et Représentations Mémoire]]
