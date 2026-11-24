@@ -85,6 +85,12 @@ Bienvenue dans l'espace de synthèse, d'assimilation et de mise en pratique pour
 
 ---
 
+### 🎬 IV. Ressources Vidéo & Synthèses Complémentaires (`ressources/`)
+- [[Fiche_Video_Echantillonnage_et_Estimation|Fiche Vidéo : Échantillonnage, Estimation & Prérequis Proba/Stats]] (*L'Économie-Gestion Simplement*, 1h26)
+  - Acquis préalables (statistiques descriptives, loi normale centrée réduite, 6 règles de lecture de table $\Pi$), distinction échantillonnage vs estimation, 6 cas types corrigés et passerelle/vigilances M1 IT.
+
+---
+
 ## 📊 Récapitulatif Dataview du Module
 
 ```dataview

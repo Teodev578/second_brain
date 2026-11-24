@@ -4,37 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "09641c9f5cfb5851",
+        "id": "06d437a7aa39ec15",
         "type": "tabs",
         "children": [
           {
-            "id": "1312e9f39e31900d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/pdf/Support_Cours_Theorie_des_Graphes.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "Support_Cours_Theorie_des_Graphes"
-            }
-          },
-          {
-            "id": "7dc64f265c9088c0",
+            "id": "895bd192c95f3adc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/tp/TP1_Utilisation_du_Logiciel_R.md",
+                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/ressources/Fiche_Video_Echantillonnage_et_Estimation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP1_Utilisation_du_Logiciel_R"
+              "title": "Fiche_Video_Echantillonnage_et_Estimation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -54,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -96,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.0625
+    "width": 312.421875
   },
   "right": {
     "id": "d6fdc4c950e4c63c",
@@ -210,8 +197,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7dc64f265c9088c0",
+  "active": "895bd192c95f3adc",
   "lastOpenFiles": [
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/cours/01_Cadrage_Lab_Adressage_IP_&_Fondamentaux_Windows.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/tp/TP1_Utilisation_du_Logiciel_R.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/MOC_Architecture_Systeme_et_Reseau_Windows.md",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/media/Tableau_Seance1_Cadrage_&_Lab.jpg",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/tp",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/media",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/exercices",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows/cours",
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Architecture_Systeme_et_Reseau_Windows",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/exercices/TD3_Regression_Lineaire.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/exercices/TD2_Tests_Hypotheses.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/exercices/TD1_Echantillonnage_et_Estimations.md",
@@ -238,15 +234,7 @@
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/cours/Cours_Integral_Verbatim_Theorie_des_Graphes.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/cours/03_Algorithmes_sur_les_Graphes.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/cours/02_Proprietes_Fondamentales_des_Graphes.md",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/cours/01_Introduction_&_Representations_des_Graphes.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/expose",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/exercices",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/cours",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/Projet/tests/__pycache__/test_dfs.cpython-314.pyc",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/Projet/tests/__pycache__",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/Projet/src/__pycache__/benchmarks.cpython-314.pyc",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/Projet/src/__pycache__/graphe.cpython-314.pyc",
-    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Theorie_des_Graphes/Projet/README.md",
-    "🌿 Domaines/Créativité/Textes_Personnels/Ecrits_&_Textes/Car je n'ai pas le droit.md"
+    "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Theorie_des_Graphes/exercices"
   ]
 }
