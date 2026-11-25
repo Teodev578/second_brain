@@ -71,6 +71,11 @@ Bienvenue dans l'espace de synthèse, d'assimilation et de mise en pratique pour
 - [[TD3_Regression_Lineaire|Feuille TD 3 : Corrélation et Régression Linéaire]] (Exercices 1 à 5 résolus)
   - Corrélation de Pearson, test $t$ de significativité ($r$), ajustement MCO de projets IT, décomposition ANOVA/$R^2$ sur requêtes SQL, arbitrage IC/IP et alerte d'extrapolation Cloud.
 
+#### Guides Formules & Explications Terre à Terre (`exercices/`)
+- [[TD1_Formules_et_Explications_Terre_a_Terre|TD 1 — Formules & Explications Terre à Terre]] (Exercices 1 à 9)
+- [[TD2_Formules_et_Explications_Terre_a_Terre|TD 2 — Formules & Explications Terre à Terre]] (Exercices 1 à 16)
+- [[TD3_Formules_et_Explications_Terre_a_Terre|TD 3 — Formules & Explications Terre à Terre]] (Exercices 1 à 5)
+
 ---
 
 ### 💻 III. Travaux Pratiques sous R (`tp/`)
