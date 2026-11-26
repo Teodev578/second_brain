@@ -38,6 +38,7 @@ Bienvenue dans l'espace de synthèse, d'assimilation et de mise en pratique pour
    - Moyenne empirique $\overline{X}$ (Théorème 1.1.1 + TCL), variance biaisée $\overline{S}^2$ vs corrigée $S^2$, fréquence $F$.
    - Qualités d'un estimateur : biais, convergence, consistance, décomposition EQM $= \text{Var}(T) + b_\theta(T)^2$ et efficacité.
 2. [[02_Intervalles_de_Confiance|02. Les Intervalles de Confiance]]
+   - [[Fiche_Revision_Intervalles_de_Confiance|🧠 Fiche de Révision — Intervalles de Confiance]] (arbre de décision, tableau connu/inconnu, lecture des tables, pièges et active recall).
    - Niveau de confiance $1-\alpha$, marge d'erreur et arbitrage avec la taille $n$.
    - IC sur une proportion $p$ (formule exacte, grand $n$, règle rapide $f \pm 1/\sqrt{n}$).
    - IC sur l'espérance $\mu$ : $\mathcal{N}(0,1)$ ($\sigma$ connu ou TCL $n \ge 30$) vs Student $t(n-1)$ ($\sigma$ inconnu), avec arbre de décision.
@@ -47,6 +48,7 @@ Bienvenue dans l'espace de synthèse, d'assimilation et de mise en pratique pour
    - Dissymétrie $H_0$ / $H_1$, tests bilatéraux et unilatéraux, décision par région critique $R_c$ vs $p$-value.
    - Risques de 1re espèce ($\alpha$), 2e espèce ($\beta$) et puissance du test ($1-\beta$).
 4. [[04_Tests_Parametriques|04. Les Tests Paramétriques]]
+   - [[Fiche_Revision_Tests_Hypotheses_et_Parametriques|🧠 Fiche de Révision — Tests d'Hypothèses & Tests Paramétriques (Ch. 03–04)]] (méthodologie, arbre de décision, formules connu/inconnu, régions critiques et active recall).
    - Moyenne ($Z$, Student), variance ($\chi^2$), fréquence et comparaison de deux proportions.
    - Comparaison de deux moyennes : apparié, grands échantillons ($Z$), petits échantillons ($\sigma_1=\sigma_2$ poolé vs Welch), égalité de deux variances ($\mathcal{F}$).
    - Analyse de la Variance (ANOVA à un facteur) : variabilités inter/intra, tableau ANOVA et loi $\mathcal{F}(k-1, N-k)$.

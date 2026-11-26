@@ -33,15 +33,32 @@ Espace de synthèse, de prise de notes et de mise en pratique du module **Archit
 ---
 
 ### 📖 I. Notes de Cours & Fiches de Révision (`cours/`)
-1. [[01_Cadrage_Lab_Adressage_IP_&_Fondamentaux_Windows|01. Cadrage, Architecture du Lab, Adressage IP & Fondamentaux Windows]]
+1. [[01_Cadrage_Lab_Adressage_IP_&_Fondamentaux_Windows|01. Cadrage, Architecture du Lab, Adressage IP & Fondamentaux Windows]] *(Notes du tableau oral)*
    - Décodage intégral de la séance 1 (volume horaire, prérequis CCNA/CCNP, hyperviseurs Type 1 vs Type 2, P2V).
-   - Adressage IP & masque de sous-réseau pas à pas (`10.10.10.1/24` $\leftrightarrow$ `255.255.255.0`, calcul de plage et broadcast, communication directe vs routage).
-   - Rôle de la passerelle (`GTW`), du `DNS 1 / DNS 2`, mariage DNS + Active Directory, convention de nommage (`SRV-DMAD-MSTR01`, `PDT-ETU-M1IABD`) et paramétrage VMware `Local Net`.
+   - Adressage IP & masque de sous-réseau pas à pas (`10.10.10.1/24` $\leftrightarrow$ `255.255.255.0`), passerelle, DNS, convention `SRV-DMAD-MSTR01` et `Local Net`.
+2. [[01_Chapitre1_Architecture_Installation_Configuration_Windows_Server|01. Chapitre 1 — Architecture, Installation & Configuration de Windows Server (Fiche de révision)]]
+   - Synthèse complète du polycopié officiel (Windows Server 2022) : rôle & principes, éditions (`Standard`/`Datacenter`/`Essentials`), `GUI` vs `Server Core`, noyau/services/registre/NTFS, `AD DS` vs promotion DC, dépendance DNS (`SRV`), topologie `192.168.10.0/24`, ports critiques, MMC/Sconfig, PowerShell-first, script `Inventory-Lab.ps1` et diagnostic en 4 couches.
 
 ---
 
-### 📝 II. Travaux Dirigés & TP (`exercices/` & `tp/`)
-*(À compléter au fil des séances)*
+### 📝 II. Travaux Dirigés, Questionnaires & TP (`exercices/` & `tp/`)
+- [[Questionnaire_Revision_Chapitre_1|📝 Questionnaire de Révision, QCM & Études de Cas — Chapitre 1]]
+  - 15 questions de connaissance, Mini-QCM (8 questions), exercice de conflit IP, 3 études de cas, travail PowerShell (`WinRM`/`W32Time`) et barème TP1, avec corrigés pliables.
+
+---
+
+### 📅 III. Syllabus, Progression & Validation du Module (20 h)
+
+- **Évaluation :** Devoir écrit individuel (**50 %**) + Contrôle continu (**50 %** : TP et feuilles de contrôle 20 %, Projet intégrateur 20 %, Restitution & diagnostic oral 10 %).
+- **Projet intégrateur :** Mini-SI Windows Server isolé (`ad.ascencia.test`) pour une PME (Direction, Comptabilité, RH, Informatique) : DC avec DNS, serveur de ressources Core, poste client Windows, OU/comptes/groupes, partages SMB/NTFS, GPO de sécurité, durcissement, script d'inventaire et dossier technique.
+
+| Séance | Thématique | Théorie / Pratique | Livrable / Validation minimale | Fait |
+| :---: | :--- | :---: | :--- | :---: |
+| **1** | Installation, architecture et configuration initiale | 1h30 / 2h30 | GUI et Core démarrent ; IPv4 et noms d'hôtes vérifiés ; AD DS installé sans promotion | ☐ |
+| **2** | AD DS, OU, identités, groupes et ressources | 1h30 / 2h30 | Contrôleur AD DS actif ; OU, comptes, AGDLP et accès SMB/NTFS testés | ☐ |
+| **3** | DNS, DHCP, GPO et intégration des clients | 1h30 / 2h30 | Résolution DNS, bail DHCP, GPO et jonction client démontrés | ☐ |
+| **4** | Sécurité, journaux, performance et WSUS | 1h30 / 2h30 | Journaux, matrice de durcissement, PerfMon et politique MAJ documentés | ☐ |
+| **5** | Dépannage, automatisation et projet final | 2h / 2h | Diagnostic (`dcdiag`, `repadmin`), script CSV et dossier d'architecture présentés | ☐ |
 
 ---
 
