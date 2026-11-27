@@ -54,6 +54,19 @@ flowchart TD
 
 ---
 
+## 🧠 Méthode : comment savoir quelle formule utiliser ?
+
+Avec **deux variables quantitatives** $(X, Y)$, les questions suivent toujours cette progression logique :
+
+| Indice lu dans l'énoncé | Choix de la formule / méthode |
+| :--- | :--- |
+| « force et sens du lien linéaire », « corrélation » | **Covariance puis Pearson $r = \dfrac{\text{Cov}(X,Y)}{s_X \cdot s_Y}$** |
+| « $r$ est-il significatif ? », « tester $\rho = 0$ » | **Test de Student $t(n - 2)$** : $t = r\sqrt{\dfrac{n - 2}{1 - r^2}}$ |
+| « prédire $Y$ à partir de $X$ », « ajuster une droite » | **Droite MCO** $\hat{Y} = b_0 + b_1 X$ avec $b_1 = \dfrac{\text{Cov}(X,Y)}{s_X^2}$ et $b_0 = \overline{Y} - b_1\overline{X}$ |
+| « qualité du modèle », « part de variance expliquée » | **Coefficient de détermination $R^2 = \dfrac{\text{SCE}}{\text{SCT}} = r^2$** |
+| « valeur moyenne attendue » vs « un individu précis » | **IC** (plus étroit) pour une moyenne ; **IP** (plus large) pour un individu ; **jamais de prédiction hors de la plage observée** (extrapolation invalide) |
+
+---
 ## 📌 Exercice 1 – Analyse de la charge serveur et du temps de réponse
 
 > [!question] Énoncé résumé & Données
@@ -66,8 +79,17 @@ flowchart TD
 > **Astuce examen :**
 > Que tu divises par $n$ ou par $n - 1$, le facteur s'annule entre le numérateur et le dénominateur : $r$ est strictement identique dans les deux cas !
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | Couples $(X_i, Y_i)$ quantitatifs, « mesurer la force du lien » | Deux variables numériques : calculer moyennes, variances, covariance puis normaliser avec Pearson $r$. |
+> | Aucune prédiction demandée ici | On s'arrête à la corrélation sans ajuster de droite MCO. |
+> 
+> **Donc :** $r = \frac{\text{Cov}(X, Y)}{s_X \cdot s_Y}$ pour mesurer l'alignement linéaire entre $-1$ et $+1$.
+
 ### Les formules utilisées
 **Formules mathématiques :**
+$$\overline{X} = \frac{1}{n}\sum_{i=1}^n X_i, \qquad \overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$$
 $$s_X^2 = \frac{1}{n}\sum (X_i - \overline{X})^2, \qquad s_Y^2 = \frac{1}{n}\sum (Y_i - \overline{Y})^2, \qquad \text{Cov}(X, Y) = \frac{1}{n}\sum (X_i - \overline{X})(Y_i - \overline{Y})$$
 $$r = \frac{\text{Cov}(X, Y)}{s_X \cdot s_Y} = \frac{\sum (X_i - \overline{X})(Y_i - \overline{Y})}{\sqrt{\sum (X_i - \overline{X})^2 \cdot \sum (Y_i - \overline{Y})^2}}$$
 
@@ -78,8 +100,8 @@ $$r = \frac{\text{Cov}(X, Y)}{s_X \cdot s_Y} = \frac{\sum (X_i - \overline{X})(Y
 ### Résolution détaillée pas-à-pas
 
 #### 1. Moyennes $\overline{X}$ et $\overline{Y}$
-$$\overline{X} = \frac{100 + 200 + 300 + 400 + 500}{5} = \frac{1\,500}{5} = \mathbf{300\text{ requêtes}}$$
-$$\overline{Y} = \frac{150 + 250 + 310 + 400 + 490}{5} = \frac{1\,600}{5} = \mathbf{320\text{ ms}}$$
+$$\overline{X} = \frac{1}{n}\sum_{i=1}^5 X_i = \frac{100 + 200 + 300 + 400 + 500}{5} = \frac{1\,500}{5} = \mathbf{300\text{ requêtes}}$$
+$$\overline{Y} = \frac{1}{n}\sum_{i=1}^5 Y_i = \frac{150 + 250 + 310 + 400 + 490}{5} = \frac{1\,600}{5} = \mathbf{320\text{ ms}}$$
 
 #### 2. Variances, écarts-types et covariance
 
@@ -93,13 +115,14 @@ $$\overline{Y} = \frac{150 + 250 + 310 + 400 + 490}{5} = \frac{1\,600}{5} = \mat
 | **Total ($\sum$)** | **$1\,500$** | **$1\,600$** | **$0$** | **$100\,000$** | **$0$** | **$69\,200$** | **$83\,000$** |
 
 Selon la convention empirique (diviseur $n = 5$) :
-$$s_X^2 = \frac{100\,000}{5} = \mathbf{20\,000}, \qquad s_X = \sqrt{20\,000} \approx \mathbf{141{,}4214}$$
-$$s_Y^2 = \frac{69\,200}{5} = \mathbf{13\,840}, \qquad s_Y = \sqrt{13\,840} \approx \mathbf{117{,}6435}$$
-$$\text{Cov}(X, Y) = \frac{83\,000}{5} = \mathbf{16\,600}$$
-*(Note : avec le diviseur sans biais $n - 1 = 4$, on obtient $s_X^{\prime\,2} = 25\,000$ ($s_X' \approx 158{,}11$), $s_Y^{\prime\,2} = 17\,300$ ($s_Y' \approx 131{,}53$) et $\text{Cov}'(X,Y) = 20\,750$. Le rapport $r$ ci-dessous est strictement identique.)*
+$$s_X^2 = \frac{1}{n}\sum (X_i - \overline{X})^2 = \frac{100\,000}{5} = \mathbf{20\,000} \implies s_X = \sqrt{20\,000} \approx \mathbf{141{,}4214}$$
+$$s_Y^2 = \frac{1}{n}\sum (Y_i - \overline{Y})^2 = \frac{69\,200}{5} = \mathbf{13\,840} \implies s_Y = \sqrt{13\,840} \approx \mathbf{117{,}6435}$$
+$$\text{Cov}(X, Y) = \frac{1}{n}\sum (X_i - \overline{X})(Y_i - \overline{Y}) = \frac{83\,000}{5} = \mathbf{16\,600}$$
+*(Note : avec le diviseur sans biais $n - 1 = 4$, on obtient $s_X^{\prime\,2} = \frac{100\,000}{4} = 25\,000$ ($s_X' \approx 158{,}11$), $s_Y^{\prime\,2} = \frac{69\,200}{4} = 17\,300$ ($s_Y' \approx 131{,}53$) et $\text{Cov}'(X,Y) = \frac{83\,000}{4} = 20\,750$. Le rapport $r$ ci-dessous est strictement identique.)*
 
 #### 3. Coefficient de corrélation de Pearson $r$
-$$r = \frac{\text{Cov}(X, Y)}{s_X \cdot s_Y} = \frac{83\,000}{\sqrt{100\,000 \times 69\,200}} = \frac{16\,600}{141{,}4214 \times 117{,}6435} \approx \mathbf{0{,}9978}$$
+$$r = \frac{\text{Cov}(X, Y)}{s_X \cdot s_Y} = \frac{16\,600}{141{,}4214 \times 117{,}6435} = \frac{16\,600}{16\,637{,}31} \approx \mathbf{0{,}9978}$$
+*(Équivalent direct sans diviser par $n$ : $r = \frac{83\,000}{\sqrt{100\,000 \times 69\,200}} = \frac{83\,000}{\sqrt{6\,920\,000\,000}} = \frac{83\,000}{83\,186{,}54} \approx \mathbf{0{,}9978}$.)*
 
 #### 4. Conclusion sur le lien
 > [!check] Conclusion concrète
@@ -119,6 +142,14 @@ $$r = \frac{\text{Cov}(X, Y)}{s_X \cdot s_Y} = \frac{83\,000}{\sqrt{100\,000 \ti
 > **Pourquoi $n - 2$ degrés de liberté (et pas $n - 1$) ?**
 > Parce qu'une droite possède **2 paramètres** (pente et ordonnée à l'origine) qui consomment chacun $1$ degré de liberté.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | Corrélation $r = 0{,}52$ observée sur $n = 18$, « est-elle significative ? » | Vérifier si $r$ traduit un lien réel ($\rho \ne 0$) ou un accident d'échantillonnage. |
+> | Droite à $2$ paramètres | La statistique suit une loi de Student à $n - 2$ degrés de liberté. |
+> 
+> **Donc :** test $t(n - 2)$ avec $t_{\text{obs}} = r\sqrt{\frac{n - 2}{1 - r^2}}$.
+
 ### Les formules utilisées
 **Formule mathématique :**
 $$H_0 : \rho = 0 \quad \text{vs} \quad H_1 : \rho \ne 0, \qquad t_{\text{obs}} = r\sqrt{\frac{n - 2}{1 - r^2}} \sim t(n - 2)$$
@@ -132,8 +163,12 @@ $$H_0 : \rho = 0 \quad \text{vs} \quad H_1 : \rho \ne 0, \qquad t_{\text{obs}} =
 $$H_0 : \rho = 0 \quad (\text{aucune corrélation linéaire dans la population})$$
 $$H_1 : \rho \ne 0 \quad (\text{il existe une corrélation linéaire non nulle})$$
 
-#### 2. Calcul de la statistique de test $t$ ($\text{ddl} = n - 2 = 16$)
-$$t_{\text{obs}} = 0{,}52 \sqrt{\frac{18 - 2}{1 - 0{,}52^2}} = 0{,}52 \sqrt{\frac{16}{0{,}7296}} = 0{,}52 \times 4{,}6829 \approx \mathbf{2{,}4351}$$
+#### 2. Calcul de la statistique de test $t$ ($\text{ddl} = n - 2 = 18 - 2 = 16$)
+On décompose le calcul étape par étape :
+1. $r^2 = 0{,}52^2 = 0{,}2704 \implies 1 - r^2 = 1 - 0{,}2704 = 0{,}7296$.
+2. $\frac{n - 2}{1 - r^2} = \frac{16}{0{,}7296} = 21{,}9298 \implies \sqrt{21{,}9298} = 4{,}6829$.
+3. Statistique observée :
+   $$t_{\text{obs}} = r\sqrt{\frac{n - 2}{1 - r^2}} = 0{,}52 \times 4{,}6829 \approx \mathbf{2{,}4351}$$
 
 #### 3. Règle de décision et région critique ($\alpha = 5\%$)
 En Annexe C (ligne $\nu = 16$, colonne bilatérale `0,050`), $t_{\text{critique}} = \mathbf{2{,}120}$. Pour un test bilatéral à $\alpha = 5\%$, on rejette $H_0$ si $|t_{\text{obs}}| > 2{,}120$, soit dans la région critique $]-\infty \,;\, -2{,}120[ \cup ]2{,}120 \,;\, +\infty[$.
@@ -157,6 +192,14 @@ Ici $|t_{\text{obs}}| = 2{,}4351 > 2{,}120$, donc **le responsable sécurité re
 > **Piège classique d'examen :**
 > Ne divise jamais par $s_Y^2$ dans $b_1$ ! Pour prédire $Y$ à partir de $X$, on divise toujours par la variance de la variable **explicative** ($s_X^2$). Et $b_0 = \overline{Y} - b_1 \overline{X}$ garantit que ta droite passe exactement par le point moyen $(\overline{X}, \overline{Y})$.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « prédire la charge $Y$ à partir de $X$ », $\overline{X}, \overline{Y}, s_X^2, \text{Cov}(X,Y)$ fournis | Il faut l'équation d'une droite de prédiction : méthode des Moindres Carrés Ordinaires (MCO). |
+> | Prédiction demandée pour $X_0 = 150$ PF | Appliquer $\hat{Y} = b_0 + b_1 X_0$ une fois $b_1$ et $b_0$ calculés. |
+> 
+> **Donc :** MCO avec $b_1 = \frac{\text{Cov}(X,Y)}{s_X^2}$ et $b_0 = \overline{Y} - b_1\overline{X}$.
+
 ### Les formules utilisées
 **Formules mathématiques :**
 $$b_1 = \frac{\text{Cov}(X, Y)}{s_X^2}, \qquad b_0 = \overline{Y} - b_1 \overline{X}, \qquad \hat{Y} = b_0 + b_1 X$$
@@ -168,18 +211,18 @@ $$b_1 = \frac{\text{Cov}(X, Y)}{s_X^2}, \qquad b_0 = \overline{Y} - b_1 \overlin
 ### Résolution détaillée pas-à-pas
 
 #### 1. Pente $b_1$ et ordonnée à l'origine $b_0$
-$$b_1 = \frac{2\,200}{800} = \mathbf{2{,}75\text{ j-h/PF}}$$
-$$b_0 = 450 - 2{,}75 \times 120 = 450 - 330 = \mathbf{120\text{ j-h}}$$
+$$b_1 = \frac{\text{Cov}(X, Y)}{s_X^2} = \frac{2\,200}{800} = \mathbf{2{,}75\text{ j-h/PF}}$$
+$$b_0 = \overline{Y} - b_1 \overline{X} = 450 - (2{,}75 \times 120) = 450 - 330 = \mathbf{120\text{ j-h}}$$
 
 #### 2. Équation du modèle estimé
-$$\hat{Y} = \mathbf{120 + 2{,}75 X}$$
+$$\hat{Y} = b_0 + b_1 X \implies \hat{Y} = \mathbf{120 + 2{,}75 X}$$
 
 #### 3. Interprétation métier pour le Directeur de Projet IT
 - **Pente ($b_1 = 2{,}75$) :** chaque point de fonction supplémentaire dans le périmètre d'un projet requiert en moyenne **2,75 jours-homme** de charge additionnelle.
 - **Ordonnée à l'origine ($b_0 = 120$) :** charge fixe incompressible de base estimée à **120 jours-homme** (cadrage, mise en place de l'environnement, CI/CD, chefferie de projet) indépendante de la taille fonctionnelle *(à interpréter avec prudence si $X=0$ est loin des tailles observées)*.
 
 #### 4. Estimation pour un projet de $X_0 = 150$ points de fonction
-$$\hat{Y}(150) = 120 + 2{,}75 \times 150 = 120 + 412{,}5 = \mathbf{532{,}5\text{ jours-homme}}$$
+$$\hat{Y}(X_0) = b_0 + b_1 X_0 \implies \hat{Y}(150) = 120 + (2{,}75 \times 150) = 120 + 412{,}5 = \mathbf{532{,}5\text{ jours-homme}}$$
 
 > [!check] Conclusion concrète
 > Le modèle $\hat{Y} = 120 + 2{,}75 X$ estime à **532,5 jours-homme** la charge totale d'un projet de $150$ points de fonction.
@@ -198,10 +241,18 @@ $$\hat{Y}(150) = 120 + 2{,}75 \times 150 = 120 + 412{,}5 = \mathbf{532{,}5\text{
 > **Piège quand on remonte de $R^2$ vers $r$ :**
 > $\sqrt{0{,}78}$ donne $0{,}8832$, mais $R^2$ perd le signe (car $(-0{,}8832)^2 = (+0{,}8832)^2 = 0{,}78$). Il faut donc **toujours** vérifier le signe de la pente $b_1$ pour savoir si $r$ est $+0{,}8832$ ou $-0{,}8832$.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | $\text{SCT}$ et $\text{SCR}$ fournies, « part de variance expliquée » | Retrouver $\text{SCE} = \text{SCT} - \text{SCR}$, puis calculer le pouvoir explicatif $R^2$. |
+> | Indice « $b_1 > 0$ » donné avec $R^2$ | Comme $R^2 = r^2$ perd le signe, $b_1 > 0$ permet de choisir $+\sqrt{R^2}$. |
+> 
+> **Donc :** $R^2 = \frac{\text{SCE}}{\text{SCT}}$ puis $r = \text{signe}(b_1)\sqrt{R^2}$.
+
 ### Les formules utilisées
 **Formules mathématiques :**
 $$\text{SCT} = \text{SCE} + \text{SCR} \implies \text{SCE} = \text{SCT} - \text{SCR}$$
-$$R^2 = \frac{\text{SCE}}{\text{SCT}}, \qquad r = \text{signe}(b_1)\sqrt{R^2}$$
+$$R^2 = \frac{\text{SCE}}{\text{SCT}}, \qquad r = \text{signe}(b_1)\sqrt{R^2}, \qquad \text{Part non expliquée} = 1 - R^2$$
 
 **En français simple :**
 `Variation expliquée = Variation totale - Variation des erreurs`
@@ -219,10 +270,12 @@ $$R^2 = \frac{\text{SCE}}{\text{SCT}} = \frac{9\,750}{12\,500} = \mathbf{0{,}78}
 **78% de la variance totale** du temps d'exécution des requêtes complexes est expliquée linéairement par la taille de la table interrogée (en Go), indiquant un fort pouvoir explicatif.
 
 #### 4. Coefficient de corrélation de Pearson $r$
-En régression simple, $R^2 = r^2 \implies |r| = \sqrt{0{,}78} \approx 0{,}8832$. Comme la pente $b_1$ est positive, $r$ est positif :
-$$r = +\sqrt{0{,}78} \approx \mathbf{+0{,}8832}$$
+En régression simple, $R^2 = r^2 \implies |r| = \sqrt{R^2} = \sqrt{0{,}78} \approx 0{,}8832$. Comme la pente $b_1$ est positive ($b_1 > 0$), $r$ est positif :
+$$r = +\sqrt{R^2} = +\sqrt{0{,}78} \approx \mathbf{+0{,}8832}$$
 
-#### 5. Signification des $22\%$ non expliqués ($1 - R^2 = 0{,}22$)
+#### 5. Signification des $22\%$ non expliqués
+$$\text{Part non expliquée} = 1 - R^2 = 1 - 0{,}78 = \mathbf{0{,}22} \quad (\mathbf{22\%})$$
+
 > [!check] Conclusion concrète
 > Le modèle explique $78\%$ de la variance ($r = +0{,}8832$). Les **$22\%$ restants** correspondent à la variance résiduelle due à d'autres facteurs : sélectivité des clauses `WHERE`, nombre de jointures, fragmentation des index, charge CPU/I/O concurrente ou taux de *cache hit* en RAM.
 
@@ -240,9 +293,17 @@ $$r = +\sqrt{0{,}78} \approx \mathbf{+0{,}8832}$$
 > **Pourquoi l'extrapolation à $500$ TO est dangereuse :**
 > Ta droite n'a aucune donnée au-dessus de $80$ TO. À $500$ TO, les grilles tarifaires Cloud changent (remises volume, architecture distribuée, trafic inter-nœuds), et la relation n'est probablement plus linéaire.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | Deux intervalles pour $X_0 = 50$, « facture moyenne » vs « un client particulier » | Distinguer l'IC (pour la moyenne, plus étroit) de l'IP (pour un individu, plus large). |
+> | Modèle calibré sur $[10 \,;\, 80]$ TO, question sur $X_0 = 500$ TO | $500$ est très loin hors du domaine calibré : alerte d'extrapolation invalide. |
+> 
+> **Donc :** transmettre l'IP pour budgéter un client individuel, et rejeter l'extrapolation à $500$ TO.
+
 ### Les formules utilisées
 **Formules mathématiques :**
-$$\hat{Y}_0 = b_0 + b_1 X_0, \qquad \text{IC}_{95\%}(E[Y \mid X_0]) \subset \text{IP}_{95\%}(Y_0 \mid X_0)$$
+$$\hat{Y}_0 = b_0 + b_1 X_0, \qquad \text{Largeur} = \text{Borne sup} - \text{Borne inf}, \qquad \text{IC}_{95\%}(E[Y \mid X_0]) \subset \text{IP}_{95\%}(Y_0 \mid X_0)$$
 
 **En français simple :**
 `Largeur IP > Largeur IC (un individu fluctue toujours plus qu'une moyenne)`
@@ -250,9 +311,12 @@ $$\hat{Y}_0 = b_0 + b_1 X_0, \qquad \text{IC}_{95\%}(E[Y \mid X_0]) \subset \tex
 ### Résolution détaillée pas-à-pas
 
 #### 1. Estimation ponctuelle pour $X_0 = 50$ TO
-$$\hat{Y}_0 = 1{,}5 + 0{,}08 \times 50 = 1{,}5 + 4{,}0 = \mathbf{5{,}5\text{ k€ / mois}}$$
+$$\hat{Y}_0 = b_0 + b_1 X_0 = 1{,}5 + (0{,}08 \times 50) = 1{,}5 + 4{,}0 = \mathbf{5{,}5\text{ k€ / mois}}$$
 
 #### 2. Identification IC vs IP et choix pour le responsable financier
+On compare les largeurs des deux intervalles donnés :
+- **Intervalle A :** $\text{Largeur}_A = 5{,}85 - 5{,}15 = \mathbf{0{,}70\text{ k€}}$ (plus étroit $\implies$ **IC** de la moyenne).
+- **Intervalle B :** $\text{Largeur}_B = 6{,}70 - 4{,}30 = \mathbf{2{,}40\text{ k€}}$ (plus large $\implies$ **IP** d'un client individuel).
 
 | Intervalle | Bornes à 95% | Largeur | Nature statistique |
 | :---: | :---: | :---: | :--- |
@@ -263,7 +327,7 @@ L'IP intègre la variabilité résiduelle individuelle ($\sigma^2$) en plus de l
 
 #### 3. Projet Big Data massif estimé à $X_0 = 500$ TO
 Le calcul mécanique donne :
-$$\hat{Y}(500) = 1{,}5 + 0{,}08 \times 500 = \mathbf{41{,}5\text{ k€ / mois}}$$
+$$\hat{Y}(500) = b_0 + b_1 \times 500 = 1{,}5 + (0{,}08 \times 500) = 1{,}5 + 40{,}0 = \mathbf{41{,}5\text{ k€ / mois}}$$
 
 > [!check] Conclusion concrète
 > Pour $50$ TO, la facture attendue est de $\mathbf{5{,}5\text{ k€}}$ avec un IP individuel de **$[4{,}30 \,;\, 6{,}70]$ k€**. En revanche, le chiffre de $41{,}5$ k€ à $500$ TO est **invalide (piège d'extrapolation)** car le modèle n'est calibré que sur $[10\text{ TO} \,;\, 80\text{ TO}]$, bien en deçà des changements de régime tarifaire et d'architecture à $500$ TO.

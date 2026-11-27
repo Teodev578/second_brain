@@ -73,10 +73,47 @@ flowchart TD
 
 ---
 
+## 🧠 Méthode : comment savoir quelle formule utiliser ?
+
+### 1. Les 4 questions à se poser, dans l'ordre
+1. **Que demande-t-on ?** Calculer une probabilité (loi connue), estimer un chiffre unique (estimation ponctuelle), encadrer par une fourchette (intervalle de confiance) ou trancher une affirmation (test d'hypothèse) ?
+2. **Sur quel paramètre ?** Une moyenne $\mu$, une proportion $p$, une variance $\sigma^2$ (ou $\sigma$), un rapport de variances $\sigma_1^2/\sigma_2^2$, ou le lien entre deux variables ?
+3. **Que sait-on sur l'échantillon et la population ?** $\sigma$ connu ou inconnu, taille $n \ge 30$ ou $n < 30$, population normale ou quelconque ?
+4. **Quel sens pour le test ?** Bilatéral ou unilatéral (d'après les mots exacts de l'énoncé) ?
+
+### 2. Tableau de traduction : Indice dans l'énoncé → Choix
+
+| Indice lu dans l'énoncé | Choix de la loi / formule |
+| :--- | :--- |
+| « $\sigma = \dots$ » donné pour la population / « variance connue » | **Loi normale $\mathcal{N}(0, 1)$** ($z$) |
+| $\sigma$ inconnu (on calcule $s$ soi-même), population normale, $n < 30$ | **Loi de Student $t(n - 1)$** |
+| $n \ge 30$, même avec $\sigma$ inconnu (on utilise $s$) | **Loi normale $z$** par le TCL (Student $\approx$ normale) |
+| « proportion », « \% », « $k$ personnes sur $n$ » | Calculer $f = k / n$, puis **loi normale $z$** (si $np \ge 5$ et $n(1-p) \ge 5$) |
+| « variance », « écart-type », « variabilité », « dispersion » d'une population | **Loi du Khi-deux $\chi^2(n - 1)$** (normalité obligatoire) |
+| Comparer deux variances / tester l'homoscédasticité | **Loi de Fisher $\mathcal{F}$** (rapport $s_1^2 / s_2^2$) |
+| « égal à », « vaut », « différent de », « diffèrent-ils » | **Test bilatéral** ($\alpha/2$ de chaque côté, quantile $1 - \alpha/2$) |
+| « au moins », « supérieur », « plus grand », « ne dépasse pas » | **Test unilatéral** ($\alpha$ d'un seul côté, quantile $1 - \alpha$) |
+| Mêmes individus mesurés avant / après | **Données appariées** : travailler sur les différences $d_i$ |
+| $3$ groupes ou plus à comparer simultanément | **ANOVA à 1 facteur** (statistique $F$ de Fisher) |
+| Tableau croisé de deux caractères qualitatifs | **Test du $\chi^2$ d'indépendance** |
+| « suit-elle une loi … ? », « loi candidate » | **Test du $\chi^2$ d'ajustement** ($E_i \ge 5$) |
+| Petits effectifs, non-normalité ou valeur aberrante (outlier) | **Test non paramétrique** (Wilcoxon ou Mann-Whitney) |
+
+> [!tip] Pourquoi Student plutôt que la loi normale ?
+> Quand l'écart-type vrai $\sigma$ de la population est inconnu, on le remplace par l'estimation $s$ calculée sur l'échantillon, qui fluctue elle aussi d'un échantillon à l'autre. Cette incertitude supplémentaire élargit les queues de la distribution, et la loi de Student en tient compte grâce à ses $n - 1$ degrés de liberté (un degré de liberté a déjà été consommé pour calculer $\bar{x}$). Dès que $n$ grandit, $s \approx \sigma$ et Student rejoint la loi normale : $t(\infty) = z$, ce qui se lit directement dans l'Annexe C ($2{,}2622$ pour $\nu = 9$ contre $1{,}96$ à l'infini pour $95\%$).
+
+> [!tip] D'où vient la formule de l'intervalle de confiance ?
+> On part de la variable pivotale centrée-réduite (ici en Student, ou $Z$ si $\sigma$ connu) encadrée entre $-t$ et $+t$ avec probabilité $1 - \alpha$, puis on isole $\mu$ au centre :
+>
+> $$P\left(-t \le \frac{\bar{X}-\mu}{s/\sqrt{n}} \le t\right) = 1-\alpha \iff P\left(\bar{X} - t\frac{s}{\sqrt{n}} \le \mu \le \bar{X} + t\frac{s}{\sqrt{n}}\right) = 1-\alpha$$
+>
+> Tout IC a la forme **estimateur ± quantile × erreur standard**. Seuls le quantile ($z$, $t$, $\chi^2$, $F$, lu selon la situation) et l'erreur standard changent d'un cas à l'autre.
+
+---
 ## 📌 Exercice 1 – Insertion professionnelle des diplômés
 
 > [!question] Énoncé résumé & Données
-> L'ANPE étudie la durée $X$ de recherche d'un premier emploi (en mois) dans la région Maritime. On modélise cette durée par une loi normale de moyenne $\mu = 14$ mois et de variance $\sigma^2 = 36$ (soit un écart-type $\sigma = 6$ mois), d'où $Z = \frac{X - 14}{6} \sim \mathcal{N}(0, 1)$. On demande les limites de ce modèle, puis la probabilité de chercher plus de $24$ mois, moins de $6$ mois, ou entre $6$ et $12$ mois.
+> L'ANPE étudie la durée $X$ de recherche d'un premier emploi (en mois) dans la région Maritime. On modélise cette durée par une loi normale de moyenne $\mu = 14$ mois et de variance $\sigma^2 = 36$ (soit un écart-type $\sigma = \sqrt{36} = 6$ mois), d'où $Z = \frac{X - 14}{6} \sim \mathcal{N}(0, 1)$. On demande les limites de ce modèle, puis la probabilité de chercher plus de $24$ mois, moins de $6$ mois, ou entre $6$ et $12$ mois.
 
 > [!info] Comprendre la logique (terre à terre)
 > **Pourquoi passer par $Z$ ?**
@@ -85,9 +122,17 @@ flowchart TD
 > **Comment lire la table avec les signes négatifs ?**
 > La table ne donne que les aires à gauche d'un nombre positif : $\Phi(a) = P(Z \le a)$. Comme la cloche est parfaitement symétrique, la petite queue tout à gauche en dessous de $-1{,}33$ a exactement la même surface que la petite queue tout à droite au-dessus de $+1{,}33$, soit $1 - \Phi(1{,}33)$.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « modélise cette durée par une loi normale $\mu = 14$, $\sigma^2 = 36$ » | La loi et ses paramètres sont déjà connus : on calcule une probabilité, il n'y a rien à estimer. |
+> | « probabilité que $X > 24$ », « $X < 6$ », « $6 \le X \le 12$ » | Il faut mesurer une aire sous la courbe normale via la table $\mathcal{N}(0, 1)$. |
+> 
+> **Donc :** centrer-réduire $Z = \frac{X - \mu}{\sigma}$, car l'Annexe A.1 ne donne que $\mathcal{N}(0, 1)$ (attention, $\sigma = \sqrt{36} = 6$).
+
 ### Les formules utilisées
-**Formule mathématique :**
-$$Z = \frac{X - \mu}{\sigma} \sim \mathcal{N}(0, 1)$$
+**Formules mathématiques :**
+$$\sigma = \sqrt{\sigma^2}, \qquad Z = \frac{X - \mu}{\sigma} \sim \mathcal{N}(0, 1)$$
 $$P(Z > a) = 1 - \Phi(a), \qquad P(Z < -a) = 1 - \Phi(a), \qquad P(a \le Z \le b) = \Phi(b) - \Phi(a)$$
 
 **En français simple :**
@@ -99,27 +144,31 @@ $$P(Z > a) = 1 - \Phi(a), \qquad P(Z < -a) = 1 - \Phi(a), \qquad P(a \le Z \le b
 
 #### 1. Limites de cette modélisation
 Une variable normale prend ses valeurs sur $\mathbb{R} = ]-\infty; +\infty[$ et reste parfaitement symétrique autour de $\mu = 14$ :
-- **Support négatif impossible :** le modèle attribue une probabilité non nulle à des durées négatives, ce qui n'a aucun sens physique. Par lecture de l'Annexe A.1 (ligne `2,3`, col. `0,03` $\implies \Phi(2{,}33) = 0{,}9901$) :
-  $$P(X < 0) = \Phi\!\left(-\frac{14}{6}\right) = \Phi(-2{,}33) = 1 - \Phi(2{,}33) \approx \mathbf{0{,}0098} \quad (\approx 0{,}98\%)$$
+- **Support négatif impossible :** avec $\mu = 14$ et $\sigma = \sqrt{36} = 6$, on centre-réduit la borne $0$ :
+  $$Z = \frac{X - \mu}{\sigma} = \frac{0 - 14}{6} = -\frac{14}{6} \approx -2{,}33$$
+  Par symétrie puis lecture en Annexe A.1 (ligne `2,3`, col. `0,03` $\implies \Phi(2{,}33) = 0{,}9901$) :
+  $$P(X < 0) = P(Z < -2{,}33) = 1 - \Phi(2{,}33) \approx 1 - 0{,}9901 = 0{,}0099 \quad (\text{exact } z = -7/3 : \mathbf{0{,}0098}, \text{ soit } 0{,}98\%)$$
 - **Asymétrie réelle :** en pratique, les durées de chômage présentent une forte asymétrie à droite (queue longue vers les grandes durées), que la symétrie gaussienne ne capture pas.
 
 #### 2. Probabilité de chercher plus de 2 ans ($X > 24$ mois)
-On extrait $\sigma = \sqrt{36} = 6$ mois et on centre-réduit la borne $24$ mois :
-$$P(X > 24) = P\!\left(Z > \frac{24 - 14}{6}\right) = P(Z > 1{,}67) = 1 - \Phi(1{,}67)$$
-Par lecture de l'Annexe A.1 (ligne `1,6`, col. `0,07` $\implies \Phi(1{,}67) = 0{,}9525$) :
-$$P(X > 24) \approx 1 - 0{,}9525 = \mathbf{0{,}0475} \quad (\text{valeur exacte } z = 5/3 : 0{,}0478, \text{ soit } \mathbf{4{,}78\%})$$
+On centre-réduit la borne $X = 24$ mois :
+$$Z = \frac{X - \mu}{\sigma} = \frac{24 - 14}{6} = \frac{10}{6} \approx +1{,}67$$
+Par lecture en Annexe A.1 (ligne `1,6`, col. `0,07` $\implies \Phi(1{,}67) = 0{,}9525$) :
+$$P(X > 24) = P(Z > 1{,}67) = 1 - \Phi(1{,}67) \approx 1 - 0{,}9525 = \mathbf{0{,}0475} \quad (\text{exact } z = 5/3 : 0{,}0478, \text{ soit } \mathbf{4{,}78\%})$$
 
 #### 3. Probabilité de trouver un emploi en moins de 6 mois ($X < 6$ mois)
-On obtient une borne négative, qu'on retourne par symétrie :
-$$P(X < 6) = P\!\left(Z < \frac{6 - 14}{6}\right) = P(Z < -1{,}33) = 1 - \Phi(1{,}33)$$
-Par lecture de l'Annexe A.1 (ligne `1,3`, col. `0,03` $\implies \Phi(1{,}33) = 0{,}9082$) :
-$$P(X < 6) \approx 1 - 0{,}9082 = \mathbf{0{,}0918} \quad (\text{valeur exacte } z = -4/3 : 0{,}0912, \text{ soit } \mathbf{9{,}12\%})$$
+On centre-réduit la borne $X = 6$ mois :
+$$Z = \frac{X - \mu}{\sigma} = \frac{6 - 14}{6} = -\frac{8}{6} \approx -1{,}33$$
+Par symétrie puis lecture en Annexe A.1 (ligne `1,3`, col. `0,03` $\implies \Phi(1{,}33) = 0{,}9082$) :
+$$P(X < 6) = P(Z < -1{,}33) = 1 - \Phi(1{,}33) \approx 1 - 0{,}9082 = \mathbf{0{,}0918} \quad (\text{exact } z = -4/3 : 0{,}0912, \text{ soit } \mathbf{9{,}12\%})$$
 
 #### 4. Probabilité d'une recherche entre 6 mois et 1 an ($6 \le X \le 12$)
-On exprime l'intervalle avec la fonction de répartition $\Phi$ puis on applique la symétrie :
-$$P(6 \le X \le 12) = P\!\left(-1{,}33 \le Z \le \frac{12 - 14}{6}\right) = \Phi(-0{,}33) - \Phi(-1{,}33) = \Phi(1{,}33) - \Phi(0{,}33)$$
-Par lecture de l'Annexe A.1 (ligne `1,3`, col. `0,03` $\implies \Phi(1{,}33) = 0{,}9082$ et ligne `0,3`, col. `0,03` $\implies \Phi(0{,}33) = 0{,}6293$) :
-$$P(6 \le X \le 12) \approx 0{,}9082 - 0{,}6293 = \mathbf{0{,}2789} \quad (\text{valeur exacte : } 0{,}2782, \text{ soit } \mathbf{27{,}82\%})$$
+On centre-réduit les deux bornes :
+$$z_{\text{inf}} = \frac{6 - 14}{6} = -\frac{8}{6} \approx -1{,}33, \qquad z_{\text{sup}} = \frac{12 - 14}{6} = -\frac{2}{6} \approx -0{,}33$$
+On exprime l'intervalle avec $\Phi$ puis on applique la symétrie ($\Phi(-a) = 1 - \Phi(a)$) :
+$$P(6 \le X \le 12) = \Phi(-0{,}33) - \Phi(-1{,}33) = \big(1 - \Phi(0{,}33)\big) - \big(1 - \Phi(1{,}33)\big) = \Phi(1{,}33) - \Phi(0{,}33)$$
+Par lecture en Annexe A.1 ($\Phi(1{,}33) = 0{,}9082$ et ligne `0,3`, col. `0,03` $\implies \Phi(0{,}33) = 0{,}6293$) :
+$$P(6 \le X \le 12) \approx 0{,}9082 - 0{,}6293 = \mathbf{0{,}2789} \quad (\text{exact : } 0{,}2782, \text{ soit } \mathbf{27{,}82\%})$$
 
 > [!warning] Piège d'examen n° 1
 > L'énoncé écrit $\mathcal{N}(14, 36)$ : $36$ est la **variance** $\sigma^2$, pas l'écart-type ! Prends toujours $\sigma = \sqrt{36} = 6$ avant de calculer $Z$.
@@ -144,6 +193,14 @@ $$P(6 \le X \le 12) \approx 0{,}9082 - 0{,}6293 = \mathbf{0{,}2789} \quad (\text
 > **Pourquoi passer par $1 - P(Y \le 9)$ à la question 4 ?**
 > Calculer $P(Y \ge 10)$ directement oblige à additionner de $k=10$ à $k=20$. Soustraire de $k=0$ à $9$ est plus rapide et montre tout de suite que la somme des échecs est infinitésimale.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « $95\%$ arrivent en moins d'une minute », « on teste $n = 2$ puis $20$ SMS », « nombre qui arrivent » | $n$ essais indépendants, $2$ issues possibles (succès/échec), probabilité fixe $p = 0{,}95$ : on compte des succès. |
+> | « au moins la moitié ($Y \ge 10$) » | Additionner de $10$ à $20$ est long : passer par le complémentaire $1 - P(Y \le 9)$. |
+> 
+> **Donc :** loi Binomiale $\mathcal{B}(n, p)$ pour modéliser le comptage de succès.
+
 ### Les formules utilisées
 **Formules mathématiques :**
 $$P(X = k) = \binom{n}{k} p^k (1 - p)^{n-k}, \qquad \binom{n}{k} = \frac{n!}{k!(n-k)!}$$
@@ -160,22 +217,24 @@ D'après l'engagement de l'opérateur :
 $$p = \mathbf{0{,}95}$$
 
 #### 2. Envoi de 2 SMS de test ($X \sim \mathcal{B}(2;\, 0{,}95)$ sous indépendance)
+On calcule d'abord $\binom{2}{k} = \frac{2!}{k!(2-k)!}$ puis $P(X = k) = \binom{2}{k}(0{,}95)^k (0{,}05)^{2-k}$ :
 
-| $k$ (SMS transmis $< 1$ min) | Scénarios | Calcul détaillé | Probabilité | Pourcentage |
+| $k$ | Scénarios $\binom{2}{k}$ | Substitution & Calcul détaillé | Probabilité | Pourcentage |
 | :---: | :--- | :--- | :---: | :---: |
-| $0$ | 0 succès, 2 échecs | $1 \times 0{,}95^0 \times 0{,}05^2$ | **$\mathbf{0{,}0025}$** | $0{,}25\%$ |
-| $1$ | 1 succès, 1 échec (S-É ou É-S) | $2 \times 0{,}95^1 \times 0{,}05^1$ | **$\mathbf{0{,}0950}$** | $9{,}50\%$ |
-| $2$ | 2 succès, 0 échec | $1 \times 0{,}95^2 \times 0{,}05^0$ | **$\mathbf{0{,}9025}$** | $90{,}25\%$ |
+| $0$ | $\frac{2!}{0!\,2!} = 1$ | $1 \times 0{,}95^0 \times 0{,}05^2 = 1 \times 1 \times 0{,}0025$ | **$\mathbf{0{,}0025}$** | $0{,}25\%$ |
+| $1$ | $\frac{2!}{1!\,1!} = 2$ | $2 \times 0{,}95^1 \times 0{,}05^1 = 2 \times 0{,}0475$ | **$\mathbf{0{,}0950}$** | $9{,}50\%$ |
+| $2$ | $\frac{2!}{2!\,0!} = 1$ | $1 \times 0{,}95^2 \times 0{,}05^0 = 0{,}9025 \times 1$ | **$\mathbf{0{,}9025}$** | $90{,}25\%$ |
 
 #### 3. Modélisation pour 20 SMS par jour
 Chaque envoi étant modélisé comme une épreuve de Bernoulli de paramètre $p = 0{,}95$ indépendante d'un SMS à l'autre, le nombre $Y$ de SMS arrivés en moins d'une minute suit une **loi binomiale** :
 $$Y \sim \mathcal{B}(n = 20,\; p = 0{,}95)$$
 Son espérance et sa variance valent :
-$$E(Y) = np = 20 \times 0{,}95 = \mathbf{19\text{ SMS}}, \qquad \text{Var}(Y) = np(1 - p) = 20 \times 0{,}95 \times 0{,}05 = \mathbf{0{,}95}$$
+$$E(Y) = np = 20 \times 0{,}95 = \mathbf{19\text{ SMS}}$$
+$$\text{Var}(Y) = np(1 - p) = 20 \times 0{,}95 \times (1 - 0{,}95) = 20 \times 0{,}95 \times 0{,}05 = \mathbf{0{,}95}$$
 
 #### 4. Probabilité qu'au moins la moitié arrive en moins d'une minute ($Y \ge 10$)
 On passe par l'événement complémentaire :
-$$P(Y \ge 10) = 1 - \sum_{k=0}^{9} \binom{20}{k}(0{,}95)^k (0{,}05)^{20-k} \approx 1 - 5{,}38 \times 10^{-10} \approx \mathbf{0{,}9999999995}$$
+$$P(Y \ge 10) = 1 - P(Y \le 9) = 1 - \sum_{k=0}^{9} \binom{20}{k}(0{,}95)^k (0{,}05)^{20-k} \approx 1 - 5{,}38 \times 10^{-10} \approx \mathbf{0{,}9999999995}$$
 
 > [!check] Conclusion concrète
 > Il est **quasi certain** (probabilité supérieure à $99{,}9999999\%$) qu'au moins $10$ SMS sur $20$ soient transmis en moins d'une minute.
@@ -194,6 +253,14 @@ $$P(Y \ge 10) = 1 - \sum_{k=0}^{9} \binom{20}{k}(0{,}95)^k (0{,}05)^{20-k} \appr
 >
 > **Piège R :**
 > Dans `rnorm(n, mean, sd)`, le 3e argument est l'**écart-type** (`sd`), jamais la variance ! Ici `1` donne $\sigma^2 = 1^2 = 1$, mais `rnorm(12, 10, 4)` simulerait une variance de $16$.
+
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « obtient $n = 12$ valeurs », « estimer la moyenne et la variance » | On part de données brutes pour produire deux chiffres uniques : estimation ponctuelle. |
+> | On estime la variance inconnue de la population | La moyenne $\bar{x}$ consomme $1$ degré de liberté : diviser par $n - 1$ évite le biais. |
+> 
+> **Donc :** moyenne empirique $\bar{x}$ et variance corrigée $s^2$ (avec $\div (n - 1)$) pour une estimation sans biais.
 
 ### Les formules utilisées
 **Formules mathématiques :**
@@ -227,11 +294,14 @@ $$s^2 = \frac{1}{n - 1}\sum_{i=1}^{n} (x_i - \bar{x})^2 = \frac{\sum_{i=1}^n x_i
 | **Total ($\sum$)** | **$129{,}9$** | **$0$** | **$7{,}802500$** | **$1\,413{,}97$** |
 
 - **Moyenne empirique (sans biais) :**
-  $$\bar{x} = \frac{129{,}9}{12} = \mathbf{10{,}825\text{ ms}}$$
+  $$\bar{x} = \frac{1}{n}\sum_{i=1}^{12} x_i = \frac{129{,}9}{12} = \mathbf{10{,}825\text{ ms}}$$
 - **Variance empirique (biaisée) :**
-  $$\bar{s}^2 = \frac{7{,}8025}{12} = \frac{1\,413{,}97}{12} - 10{,}825^2 \approx \mathbf{0{,}6502\text{ ms}^2}$$
+  $$\bar{s}^2 = \frac{1}{n}\sum_{i=1}^{12}(x_i - \bar{x})^2 = \frac{7{,}8025}{12} \approx \mathbf{0{,}6502\text{ ms}^2}$$
+  *(Vérification Koenig-Huygens : $\bar{s}^2 = \frac{1\,413{,}97}{12} - 10{,}825^2 = 117{,}8308 - 117{,}1806 = 0{,}6502$.)*
 - **Variance corrigée (sans biais) et écart-type :**
-  $$s^2 = \frac{7{,}8025}{11} = \frac{1\,413{,}97 - 12 \times 10{,}825^2}{11} \approx \mathbf{0{,}7093\text{ ms}^2}, \qquad s = \sqrt{0{,}7093} \approx \mathbf{0{,}8422\text{ ms}}$$
+  $$s^2 = \frac{1}{n - 1}\sum_{i=1}^{12}(x_i - \bar{x})^2 = \frac{7{,}8025}{12 - 1} = \frac{7{,}8025}{11} \approx \mathbf{0{,}7093\text{ ms}^2}$$
+  *(Koenig-Huygens : $s^2 = \frac{1\,413{,}97 - 12 \times 10{,}825^2}{11} = \frac{1\,413{,}97 - 1\,406{,}1675}{11} = \frac{7{,}8025}{11} \approx 0{,}7093$.)*
+  $$s = \sqrt{s^2} = \sqrt{0{,}7093} \approx \mathbf{0{,}8422\text{ ms}}$$
 
 #### 2. Interprétation exacte de `round(rnorm(12, 10, 1), 1)`
 1. `rnorm(12, 10, 1)` simule un échantillon de **12 réalisations indépendantes** d'une loi normale de moyenne $\mu = 10$ et d'**écart-type** $\sigma = 1$ *(en R, le 3e paramètre de `rnorm` est `sd`, l'écart-type, qui vaut ici $\sqrt{1} = 1$)*.
@@ -251,10 +321,17 @@ $$s^2 = \frac{1}{n - 1}\sum_{i=1}^{n} (x_i - \bar{x})^2 = \frac{\sum_{i=1}^n x_i
 > **Comment reconnaître la loi de Poisson à coup sûr ?**
 > Deux indices réunis suffisent : d'abord, on compte des événements entiers ($0, 1, 2, \dots$ appels) sur un intervalle de temps fixe (1 heure) ; ensuite, la moyenne et la variance calculées sont presque égales ($\bar{x} = 4{,}00$ et $s^2 = 3{,}92$). C'est la signature unique de la loi de Poisson $\mathcal{P}(\lambda)$.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | Données regroupées en tableau d'effectifs ($x_i$ et $N_i$) | Chaque valeur compte $N_i$ fois : utiliser la moyenne et la variance pondérées par $N_i$. |
+> | « proposer une loi » + comptage par heure + $\bar{x} \approx s^2$ ($4{,}00 \approx 3{,}92$) | Égalité moyenne-variance caractéristique d'un processus de comptage sur durée fixe. |
+> 
+> **Donc :** loi de Poisson $\mathcal{P}(\lambda = \bar{x} = 4)$.
+
 ### Les formules utilisées
 **Formules mathématiques :**
-$$\bar{x} = \frac{1}{n}\sum N_i x_i$$
-$$\bar{s}^2 = \frac{1}{n}\sum N_i (x_i - \bar{x})^2 = \frac{1}{n}\sum N_i x_i^2 - \bar{x}^2, \qquad s^2 = \frac{1}{n - 1}\sum N_i (x_i - \bar{x})^2$$
+$$\bar{x} = \frac{1}{n}\sum N_i x_i, \qquad \bar{s}^2 = \frac{1}{n}\sum N_i (x_i - \bar{x})^2 = \frac{1}{n}\sum N_i x_i^2 - \bar{x}^2, \qquad s^2 = \frac{1}{n - 1}\sum N_i (x_i - \bar{x})^2$$
 
 **En français simple :**
 `Mode = Valeur x_i ayant le plus grand effectif N_i`
@@ -267,22 +344,27 @@ $$\bar{s}^2 = \frac{1}{n}\sum N_i (x_i - \bar{x})^2 = \frac{1}{n}\sum N_i x_i^2 
 
 | $x_i$ (appels/h) | $N_i$ (heures) | $N_i x_i$ | $x_i - \bar{x}$ | $N_i(x_i - \bar{x})^2$ | $N_i x_i^2$ *(Koenig-Huygens)* |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| 0 | 1 | 0 | $-4$ | 16 | 0 |
-| 1 | 4 | 4 | $-3$ | 36 | 4 |
-| 2 | 7 | 14 | $-2$ | 28 | 28 |
-| 3 | 11 | 33 | $-1$ | 11 | 99 |
-| 4 | 10 | 40 | $0$ | 0 | 160 |
-| 5 | 9 | 45 | $+1$ | 9 | 225 |
-| 6 | 5 | 30 | $+2$ | 20 | 180 |
-| 7 | 3 | 21 | $+3$ | 27 | 147 |
-| 8 | 2 | 16 | $+4$ | 32 | 128 |
-| 9 | 1 | 9 | $+5$ | 25 | 81 |
+| 0 | 1 | $1 \times 0 = 0$ | $-4$ | $16$ | $0$ |
+| 1 | 4 | $4 \times 1 = 4$ | $-3$ | $36$ | $4$ |
+| 2 | 7 | $7 \times 2 = 14$ | $-2$ | $28$ | $28$ |
+| 3 | 11 | $11 \times 3 = 33$ | $-1$ | $11$ | $99$ |
+| 4 | 10 | $10 \times 4 = 40$ | $0$ | $0$ | $160$ |
+| 5 | 9 | $9 \times 5 = 45$ | $+1$ | $9$ | $225$ |
+| 6 | 5 | $5 \times 6 = 30$ | $+2$ | $20$ | $180$ |
+| 7 | 3 | $3 \times 7 = 21$ | $+3$ | $27$ | $147$ |
+| 8 | 2 | $2 \times 8 = 16$ | $+4$ | $32$ | $128$ |
+| 9 | 1 | $1 \times 9 = 9$ | $+5$ | $25$ | $81$ |
 | **Total ($\sum$)** | **$53$** | **$212$** | — | **$204$** | **$1\,052$** |
 
 - **Mode :** valeur d'effectif maximal ($N_3 = 11$) $\implies \text{Mo} = \mathbf{3\text{ appels/h}}$.
-- **Moyenne empirique :** $\bar{x} = \frac{212}{53} = \mathbf{4{,}00\text{ appels/h}}$.
-- **Variances empirique et corrigée :**
-  $$\bar{s}^2 = \frac{204}{53} = \frac{1\,052}{53} - 4^2 \approx \mathbf{3{,}8491}, \qquad s^2 = \frac{204}{52} = \frac{1\,052 - 53 \times 4^2}{52} \approx \mathbf{3{,}9231} \quad (s \approx \mathbf{1{,}9807})$$
+- **Moyenne empirique :**
+  $$\bar{x} = \frac{1}{n}\sum N_i x_i = \frac{212}{53} = \mathbf{4{,}00\text{ appels/h}}$$
+- **Variance empirique (biaisée) :**
+  $$\bar{s}^2 = \frac{1}{n}\sum N_i(x_i - \bar{x})^2 = \frac{204}{53} \approx \mathbf{3{,}8491}$$
+  *(Vérification Koenig-Huygens : $\bar{s}^2 = \frac{1\,052}{53} - 4^2 = 19{,}8491 - 16 = 3{,}8491$.)*
+- **Variance corrigée (sans biais) et écart-type :**
+  $$s^2 = \frac{1}{n - 1}\sum N_i(x_i - \bar{x})^2 = \frac{204}{53 - 1} = \frac{204}{52} \approx \mathbf{3{,}9231}$$
+  *(Koenig-Huygens : $s^2 = \frac{1\,052 - 53 \times 4^2}{52} = \frac{1\,052 - 848}{52} = \frac{204}{52} \approx 3{,}9231$, d'où $s = \sqrt{3{,}9231} \approx \mathbf{1{,}9807}$.)*
 
 #### 2. Loi de probabilité proposée
 Le nombre d'appels par heure est une variable **discrète de comptage** sur un intervalle fixe, dont la moyenne et la variance empiriques sont quasi égales ($\bar{x} = 4{,}00 \approx s^2 = 3{,}92$).
@@ -305,6 +387,15 @@ Le nombre d'appels par heure est une variable **discrète de comptage** sur un i
 >
 > **Le piège « longueur vs marge d'erreur » (Q4) :**
 > Un intervalle s'écrit $[\bar{x} - e \,;\, \bar{x} + e]$. Sa **longueur totale** $L$ vaut donc **$2e$**, pas $e$ ! Si on exige $L \le 1$, la marge d'erreur tolérée de chaque côté vaut $0{,}5$.
+
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « supposé iid selon $\mathcal{N}(\mu, \sigma^2)$ », $\sigma$ non donné, $n = 10 < 30$ | Population normale avec $\sigma$ inconnu (estimé par $s$) et petit échantillon : Student $t(9)$. |
+> | Q4 : « longueur totale $\le 1$ » à $95\%$ | Problème de dimensionnement de $n$, en posant $L = 2e \implies e = 0{,}5$. |
+> | Q5 : « si $\sigma^2 = 42$ est connue » | L'incertitude sur $\sigma$ disparaît : on quitte Student pour la loi normale $z$. |
+> 
+> **Donc :** IC de Student $t(9)$ tant que $\sigma$ est inconnu, puis IC normal $z$ dès que $\sigma$ est connu.
 
 ### Les formules utilisées
 **Formules mathématiques :**
@@ -334,13 +425,23 @@ $$L = 2\, z_{0{,}975}\frac{s}{\sqrt{n}} \le 1 \implies n \ge (2\, z_{0{,}975}\, 
 | 10 | $767$ | $+7{,}5$ | $56{,}25$ | $588\,289$ |
 | **Total ($\sum$)** | **$7\,595$** | **$0$** | **$378{,}5$** | **$5\,768\,781$** |
 
-$$\hat{\mu} = \bar{x} = \frac{7\,595}{10} = \mathbf{759{,}5\text{ connexions/jour}}$$
-$$s^2 = \frac{378{,}5}{9} = \frac{5\,768\,781 - 10 \times 759{,}5^2}{9} \approx \mathbf{42{,}0556}, \qquad s = \sqrt{42{,}0556} \approx \mathbf{6{,}4850} \quad (\text{biaisée : } \bar{s}^2 = 37{,}85)$$
+- **Moyenne estimée :**
+  $$\hat{\mu} = \bar{x} = \frac{1}{n}\sum_{i=1}^{10} x_i = \frac{7\,595}{10} = \mathbf{759{,}5\text{ connexions/jour}}$$
+- **Variance corrigée et écart-type :**
+  $$s^2 = \frac{1}{n - 1}\sum_{i=1}^{10}(x_i - \bar{x})^2 = \frac{378{,}5}{10 - 1} = \frac{378{,}5}{9} \approx \mathbf{42{,}0556}$$
+  *(Koenig-Huygens : $10 \times 759{,}5^2 = 5\,768\,402{,}5 \implies s^2 = \frac{5\,768\,781 - 5\,768\,402{,}5}{9} = \frac{378{,}5}{9} \approx 42{,}0556$ ; biaisée : $\bar{s}^2 = \frac{378{,}5}{10} = 37{,}85$.)*
+  $$s = \sqrt{42{,}0556} \approx \mathbf{6{,}4850}$$
 
 #### 2. Intervalles de confiance pour $\mu$ ($\sigma$ inconnu $\implies$ Student à $\nu = 9$ ddl)
-L'erreur standard vaut :
-$$\text{ES} = \frac{s}{\sqrt{10}} = \frac{6{,}4850}{3{,}1623} \approx \mathbf{2{,}0507}$$
-En Annexe C (ligne $\nu = 9$, col. bilatérales `0,10` et `0,01`), on calcule $\text{Borne inf} = \bar{x} - e$ et $\text{Borne sup} = \bar{x} + e$ :
+1. **Erreur standard ($\text{ES}$) :**
+   $$\text{ES} = \frac{s}{\sqrt{n}} = \frac{6{,}4850}{\sqrt{10}} = \frac{6{,}4850}{3{,}1623} \approx \mathbf{2{,}0507}$$
+2. **Calcul des marges $e = t_{9,\, 1-\alpha/2} \times \text{ES}$ et des bornes ($\bar{x} \pm e$) :**
+   - **À $90\%$** ($\alpha = 0{,}10$, Annexe C ligne $\nu = 9$ col. `0,10` $\implies t_{9,\, 0{,}95} = 1{,}8331$) :
+     $$e_{90\%} = 1{,}8331 \times 2{,}0507 = 3{,}7592$$
+     $$\text{Borne inf} = 759{,}5 - 3{,}7592 = \mathbf{755{,}74}, \qquad \text{Borne sup} = 759{,}5 + 3{,}7592 = \mathbf{763{,}26}$$
+   - **À $99\%$** ($\alpha = 0{,}01$, Annexe C ligne $\nu = 9$ col. `0,01` $\implies t_{9,\, 0{,}995} = 3{,}2498$) :
+     $$e_{99\%} = 3{,}2498 \times 2{,}0507 = 6{,}6645$$
+     $$\text{Borne inf} = 759{,}5 - 6{,}6645 = \mathbf{752{,}84}, \qquad \text{Borne sup} = 759{,}5 + 6{,}6645 = \mathbf{766{,}16}$$
 
 | Niveau de confiance | $\alpha$ | Quantile $t_{9,\, 1-\alpha/2}$ (Annexe C) | Marge d'erreur $e$ | $IC_{1-\alpha}(\mu) = [\bar{x} - e \,;\, \bar{x} + e]$ |
 | :---: | :---: | :---: | :---: | :---: |
@@ -348,17 +449,20 @@ En Annexe C (ligne $\nu = 9$, col. bilatérales `0,10` et `0,01`), on calcule $\
 | **99%** | $0{,}01$ | $3{,}2498$ | $6{,}6645$ | **$\mathbf{[752{,}84 \,;\, 766{,}16]}$** |
 
 #### 3. Niveau de confiance pour un intervalle deux fois plus étroit qu'à 90%
-Diviser la demi-largeur par $2$ revient à diviser le quantile de Student par $2$ :
+Diviser la demi-largeur $e$ par $2$ à $\text{ES}$ constante revient à diviser le quantile de Student par $2$ :
 $$t_{9,\, 1-\alpha/2} = \frac{1{,}8331}{2} \approx \mathbf{0{,}9166}$$
 En Annexe C ($\nu = 9$), pour $\alpha = 0{,}500$ (confiance $50\%$) on lit $t = 0{,}7027$, et pour $\alpha = 0{,}300$ (confiance $70\%$) on lit $t = 1{,}0997$. Le niveau de confiance est donc **compris entre 50% et 70%** *(valeur exacte : $P(|T_9| \le 0{,}91655) \approx \mathbf{61{,}67\%}$)*.
 
 #### 4. Taille d'échantillon $n$ pour une longueur $\le 1$ à 95%
 On impose une longueur totale $L = 2\, t_{n-1,\, 0{,}975} \frac{s}{\sqrt{n}} \le 1$. Comme $n$ sera grand, on approxime $t_{n-1,\, 0{,}975} \approx z_{0{,}975} = 1{,}96$ (Annexe A.1, $\Phi(u) = 0{,}9750$) :
-$$n \ge (2 \times 1{,}96 \times 6{,}4850)^2 = 646{,}24 \implies \mathbf{n \ge 647\text{ jours}}$$
-*(En affinant avec $t_{648, 0{,}975} \approx 1{,}9636$, on obtient $648{,}64 \implies \mathbf{649\text{ jours}}$. Avec $\bar{s}^2 = 37{,}85$, le calcul donnerait $582$ jours.)*
+$$2 \times 1{,}96 \times \frac{6{,}4850}{\sqrt{n}} \le 1 \iff \sqrt{n} \ge 2 \times 1{,}96 \times 6{,}4850 = 25{,}4212$$
+$$n \ge (25{,}4212)^2 = 646{,}24 \implies \mathbf{n \ge 647\text{ jours}}$$
+*(En affinant avec $t_{648, 0{,}975} \approx 1{,}9636$, on obtient $(2 \times 1{,}9636 \times 6{,}4850)^2 = 648{,}64 \implies \mathbf{649\text{ jours}}$. Avec $\bar{s}^2 = 37{,}85$, le calcul donnerait $582$ jours.)*
 
 #### 5. Impact si $\sigma^2 = 42$ est connue ($\sigma = \sqrt{42} \approx 6{,}4807$)
-On n'estime plus $\sigma$ : la loi pivotale passe de Student $t(9)$ à la loi normale $\mathcal{N}(0, 1)$, ce qui **rétrécit les intervalles** (quantiles lus en Annexe A.1/A.2 plus faibles pour quasi la même erreur standard $\frac{\sqrt{42}}{\sqrt{10}} \approx 2{,}0494$) :
+On n'estime plus $\sigma$ : la loi pivotale passe de Student $t(9)$ à la loi normale $\mathcal{N}(0, 1)$, avec $\text{ES} = \frac{\sqrt{42}}{\sqrt{10}} = \frac{6{,}4807}{3{,}1623} \approx \mathbf{2{,}0494}$ :
+- **À $90\%$** ($z_{0{,}95} = 1{,}6449$) : $e = 1{,}6449 \times 2{,}0494 = 3{,}3711 \implies [759{,}5 - 3{,}37 \,;\, 759{,}5 + 3{,}37] = \mathbf{[756{,}13 \,;\, 762{,}87]}$ (largeur $2 \times 3{,}37 = 6{,}74$ contre $7{,}52$).
+- **À $99\%$** ($z_{0{,}995} = 2{,}5758$) : $e = 2{,}5758 \times 2{,}0494 = 5{,}2788 \implies [759{,}5 - 5{,}28 \,;\, 759{,}5 + 5{,}28] = \mathbf{[754{,}22 \,;\, 764{,}78]}$ (largeur $2 \times 5{,}28 = 10{,}56$ contre $13{,}33$).
 
 | Niveau | Quantile $z$ | $IC(\mu)$ avec $\sigma$ connu | Largeur (vs Student) |
 | :---: | :---: | :---: | :---: |
@@ -388,6 +492,15 @@ On n'estime plus $\sigma$ : la loi pivotale passe de Student $t(9)$ à la loi no
 > **Symétrie inversée dans Fisher :**
 > À gauche on divise par $F(\nu_1, \nu_2)$ (ddl numérateur d'abord) ; à droite on multiplie par $F(\nu_2, \nu_1)$ (en inversant les deux degrés de liberté).
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « variabilité », « IC à $95\%$ de $\sigma^2$ et $\sigma$ » | Encadrement d'une variance sous normalité : loi du $\chi^2(n - 1)$. |
+> | « comparer les deux centrales » | On encadre le rapport $\sigma_1^2 / \sigma_2^2$ : loi de Fisher $\mathcal{F}(n_1 - 1, n_2 - 1)$. |
+> | L'énoncé donne $v^2$ (variance empirique $\div n$) | Convertir en somme des carrés avec $n v^2 = (n - 1)s^2$. |
+> 
+> **Donc :** $\chi^2$ pour chaque centrale, puis Fisher $\mathcal{F}$ pour comparer leur rapport.
+
 ### Les formules utilisées
 **Formules mathématiques :**
 $$IC_{1-\alpha}(\sigma^2) = \left[\frac{n v^2}{\chi^2_{n-1,\, 1-\alpha/2}} \;;\; \frac{n v^2}{\chi^2_{n-1,\, \alpha/2}}\right], \qquad IC_{1-\alpha}(\sigma) = \left[\sqrt{\text{Borne inf}} \;;\; \sqrt{\text{Borne sup}}\right]$$
@@ -400,7 +513,17 @@ $$s_k^2 = \frac{n_k}{n_k - 1}v_k^2, \qquad IC_{1-\alpha}\!\left(\frac{\sigma_1^2
 ### Résolution détaillée pas-à-pas
 
 #### 1. IC à 95% pour la variabilité ($\sigma^2$ et $\sigma$) de chaque centrale
-La loi pivotale suit un $\chi^2(n-1)$. On lit en Annexe B les colonnes `0,975` ($\chi^2_{\text{inf}}$) et `0,025` ($\chi^2_{\text{sup}}$) aux lignes $\nu_1 = 24$ et $\nu_2 = 22$ :
+La loi pivotale suit un $\chi^2(n-1)$. On lit en Annexe B les colonnes `0,975` ($\chi^2_{\text{inf}}$) et `0,025` ($\chi^2_{\text{sup}}$) :
+- **Centrale 1 ($\nu_1 = 25 - 1 = 24$) :**
+  - Somme des carrés : $n_1 v_1^2 = 25 \times 65{,}42 = \mathbf{1\,635{,}50}$.
+  - Quantiles Annexe B ($\nu_1 = 24$) : $\chi^2_{\text{sup}} = 39{,}3641$ (col. `0,025`) et $\chi^2_{\text{inf}} = 12{,}4012$ (col. `0,975`).
+  - $IC_{95\%}(\sigma_1^2) = \left[\frac{1\,635{,}50}{39{,}3641} \,;\, \frac{1\,635{,}50}{12{,}4012}\right] = \mathbf{[41{,}55 \,;\, 131{,}88]}$.
+  - $IC_{95\%}(\sigma_1) = [\sqrt{41{,}55} \,;\, \sqrt{131{,}88}] = \mathbf{[6{,}45 \,;\, 11{,}48]}$.
+- **Centrale 2 ($\nu_2 = 23 - 1 = 22$) :**
+  - Somme des carrés : $n_2 v_2^2 = 23 \times 58{,}24 = \mathbf{1\,339{,}52}$.
+  - Quantiles Annexe B ($\nu_2 = 22$) : $\chi^2_{\text{sup}} = 36{,}7807$ (col. `0,025`) et $\chi^2_{\text{inf}} = 10{,}9823$ (col. `0,975`).
+  - $IC_{95\%}(\sigma_2^2) = \left[\frac{1\,339{,}52}{36{,}7807} \,;\, \frac{1\,339{,}52}{10{,}9823}\right] = \mathbf{[36{,}42 \,;\, 121{,}97]}$.
+  - $IC_{95\%}(\sigma_2) = [\sqrt{36{,}42} \,;\, \sqrt{121{,}97}] = \mathbf{[6{,}03 \,;\, 11{,}04]}$.
 
 | Centrale | $\nu = n - 1$ | $n v^2$ | $\chi^2_{\text{inf}}$ (`0,975`) | $\chi^2_{\text{sup}}$ (`0,025`) | $IC_{95\%}(\sigma^2)$ | $IC_{95\%}(\sigma)$ |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -413,13 +536,17 @@ La loi pivotale suit un $\chi^2(n-1)$. On lit en Annexe B les colonnes `0,975` (
 Les deux intervalles $[41{,}55 \,;\, 131{,}88]$ et $[36{,}42 \,;\, 121{,}97]$ **se recouvrent très largement**. On ne peut donc pas en déduire que les variances diffèrent ; le test rigoureux passe par le rapport de variances ci-dessous.
 
 #### 3. Intervalle de confiance à 95% pour le rapport $\sigma_1^2 / \sigma_2^2$
-On passe d'abord aux variances corrigées :
-$$s_1^2 = \frac{25}{24}(65{,}42) = 68{,}1458, \qquad s_2^2 = \frac{23}{22}(58{,}24) = 60{,}8873, \qquad \frac{s_1^2}{s_2^2} = \mathbf{1{,}1192}$$
-Par interpolation linéaire dans l'Annexe D.2 ($\alpha = 0{,}025$) :
-$$F_{0{,}025}(24, 22) \approx 2{,}39 - 0{,}4(2{,}39 - 2{,}27) = \mathbf{2{,}342}$$
-$$F_{0{,}025}(22, 24) \approx 2{,}33 - 0{,}2(2{,}33 - 2{,}21) = \mathbf{2{,}306}$$
-On construit l'intervalle de confiance de Fisher :
-$$IC_{95\%}\!\left(\frac{\sigma_1^2}{\sigma_2^2}\right) = \left[\frac{1{,}1192}{2{,}342} \,;\, 1{,}1192 \times 2{,}306\right] = \mathbf{[0{,}478 \,;\, 2{,}581]}$$
+1. **Passage aux variances corrigées ($s_k^2 = \frac{n_k}{n_k - 1} v_k^2$) et rapport :**
+   $$s_1^2 = \frac{25}{24} \times 65{,}42 = 68{,}1458, \qquad s_2^2 = \frac{23}{22} \times 58{,}24 = 60{,}8873, \qquad \frac{s_1^2}{s_2^2} = \frac{68{,}1458}{60{,}8873} = \mathbf{1{,}1192}$$
+2. **Interpolation linéaire dans l'Annexe D.2 ($\alpha = 0{,}025$) :**
+   - Pour $\nu_1 = 24$ ($24$ est à $40\%$ entre $20$ et $30$, car $\frac{24-20}{30-20} = 0{,}4$) et $\nu_2 = 22$ :
+     $$F_{0{,}025}(24, 22) \approx 2{,}39 - 0{,}4(2{,}39 - 2{,}27) = 2{,}39 - 0{,}048 = \mathbf{2{,}342}$$
+   - Pour $\nu_2 = 22$ ($22$ est à $20\%$ entre $20$ et $30$, car $\frac{22-20}{30-20} = 0{,}2$) et $\nu_1 = 24$ :
+     $$F_{0{,}025}(22, 24) \approx 2{,}33 - 0{,}2(2{,}33 - 2{,}21) = 2{,}33 - 0{,}024 = \mathbf{2{,}306}$$
+3. **Calcul des bornes de l'intervalle de Fisher :**
+   - Borne inférieure : $\frac{s_1^2 / s_2^2}{F_{0{,}025}(24, 22)} = \frac{1{,}1192}{2{,}342} = \mathbf{0{,}478}$
+   - Borne supérieure : $\frac{s_1^2}{s_2^2} \times F_{0{,}025}(22, 24) = 1{,}1192 \times 2{,}306 = \mathbf{2{,}581}$
+   $$IC_{95\%}\!\left(\frac{\sigma_1^2}{\sigma_2^2}\right) = \mathbf{[0{,}478 \,;\, 2{,}581]}$$
 *(Avec $v_1^2 / v_2^2 = 1{,}1233$ : $[0{,}480 \,;\, 2{,}590]$.)*
 
 > [!check] Conclusion concrète
@@ -430,15 +557,23 @@ $$IC_{95\%}\!\left(\frac{\sigma_1^2}{\sigma_2^2}\right) = \left[\frac{1{,}1192}{
 ## 📌 Exercice 7 – Sondage d'opinion et prédiction électorale
 
 > [!question] Énoncé résumé & Données
-> Lors d'un sondage pré-électoral sur $n = 500$ électeurs, $150$ déclarent voter pour le candidat $C_1$ et $140$ pour le candidat $C_2$. Peut-on prédire le gagnant avec des intervalles de confiance à $95\%$ ?
+> Lors d'un sondage pré-électoral sur $n = 500$ électeurs, $k_1 = 150$ déclarent voter pour le candidat $C_1$ et $k_2 = 140$ pour le candidat $C_2$. Peut-on prédire le gagnant avec des intervalles de confiance à $95\%$ ?
 
 > [!info] Comprendre la logique (terre à terre)
 > **Lire un sondage sans se faire piéger :**
 > Sur $500$ personnes, la marge d'erreur à $95\%$ avoisine $\pm 4\%$. Dire que $C_1$ devance $C_2$ parce que $30\% > 28\%$ est prématuré : l'écart observé ($2\%$) est deux fois plus petit que l'incertitude du sondage ($\pm 4\%$). Dans la population réelle, $C_1$ pourrait très bien valoir $27\%$ et $C_2$ valoir $31\%$.
 
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « sondage », « intentions de vote », $n = 500$ (grand échantillon) | Paramètre cible = proportion $p$ : approximation normale avec $f = k / n$. |
+> | « peut-on prédire le vainqueur ? » | Comparer les deux IC à $95\%$ pour voir s'ils se chevauchent ou se séparent. |
+> 
+> **Donc :** $f \pm 1{,}96\sqrt{\frac{f(1 - f)}{n}}$ pour chaque candidat.
+
 ### Les formules utilisées
 **Formules mathématiques :**
-$$f = \frac{k}{n}, \qquad IC_{95\%}(p) = \left[f - z_{0{,}975}\sqrt{\frac{f(1-f)}{n}} \;;\; f + z_{0{,}975}\sqrt{\frac{f(1-f)}{n}}\right]$$
+$$f = \frac{k}{n}, \qquad e = z_{0{,}975}\sqrt{\frac{f(1-f)}{n}}, \qquad IC_{95\%}(p) = \left[f - e \,;\, f + e\right]$$
 
 **En français simple :**
 `Fréquence = Nombre de partisans ÷ Taille du sondage`
@@ -447,7 +582,15 @@ $$f = \frac{k}{n}, \qquad IC_{95\%}(p) = \left[f - z_{0{,}975}\sqrt{\frac{f(1-f)
 ### Résolution détaillée pas-à-pas
 
 #### 1 & 2. Estimation ponctuelle et intervalles de confiance à 95%
-À $95\%$, $\alpha = 0{,}05 \implies \Phi(z) = 1 - 0{,}025 = 0{,}9750$, d'où $z_{0{,}975} = \mathbf{1{,}96}$ (Annexe A.1, ligne `1,9`, col. `0,06`). On calcule $e = 1{,}96\sqrt{\frac{f(1-f)}{500}}$, puis $\text{Borne inf} = f - e$ et $\text{Borne sup} = f + e$ :
+À $95\%$, $\alpha = 0{,}05 \implies \Phi(z) = 1 - \frac{0{,}05}{2} = 0{,}9750$, d'où $z_{0{,}975} = \mathbf{1{,}96}$ (Annexe A.1, ligne `1,9`, col. `0,06`).
+- **Pour le candidat $C_1$ :**
+  $$f_1 = \frac{150}{500} = \mathbf{0{,}30} \ (30\%)$$
+  $$e_1 = 1{,}96\sqrt{\frac{0{,}30 \times (1 - 0{,}30)}{500}} = 1{,}96\sqrt{\frac{0{,}21}{500}} = 1{,}96\sqrt{0{,}00042} = 1{,}96 \times 0{,}02049 = \mathbf{0{,}0402}$$
+  $$IC_{95\%}(C_1) = [0{,}30 - 0{,}0402 \,;\, 0{,}30 + 0{,}0402] = [0{,}2598 \,;\, 0{,}3402] = \mathbf{[25{,}98\% \,;\, 34{,}02\%]}$$
+- **Pour le candidat $C_2$ :**
+  $$f_2 = \frac{140}{500} = \mathbf{0{,}28} \ (28\%)$$
+  $$e_2 = 1{,}96\sqrt{\frac{0{,}28 \times (1 - 0{,}28)}{500}} = 1{,}96\sqrt{\frac{0{,}2016}{500}} = 1{,}96\sqrt{0{,}0004032} = 1{,}96 \times 0{,}02008 = \mathbf{0{,}0394}$$
+  $$IC_{95\%}(C_2) = [0{,}28 - 0{,}0394 \,;\, 0{,}28 + 0{,}0394] = [0{,}2406 \,;\, 0{,}3194] = \mathbf{[24{,}06\% \,;\, 31{,}94\%]}$$
 
 | Candidat | Voix $k$ | Proportion $f$ | Marge d'erreur ($95\%$) | $IC_{95\%}(p)$ |
 | :---: | :---: | :---: | :---: | :---: |
@@ -478,6 +621,14 @@ On compare les deux intervalles : $[25{,}98\% \,;\, 34{,}02\%]$ et $[24{,}06\% \
 >
 > **Cramér-Rao, c'est quoi ?**
 > C'est le « mur du son » des statistiques : aucun estimateur sans biais ne peut avoir une variance plus petite que $1 / I_n(\lambda)$. Si $\text{Var}(T)$ touche ce plancher, $T$ est mathématiquement imbattable (**efficace**).
+
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | « maximum de vraisemblance », « loi de Poisson » | Écrire le produit des probabilités $L(\lambda)$, passer au $\ln$, dériver et annuler pour trouver $\hat{\lambda}$. |
+> | « efficace », « information de Fisher » | Vérifier si $\text{Var}(T)$ atteint la borne inférieure de Cramér-Rao $1 / I_n(\lambda)$. |
+> 
+> **Donc :** méthode du maximum de vraisemblance menant à $\text{EMV} = \overline{X}$.
 
 ### Les formules utilisées
 **Formules mathématiques :**
@@ -510,16 +661,21 @@ Effectif
   0 +--0----1----2----3----4----5----6--> Nb notifications
 ```
 
-On calcule $\sum_{i=1}^{10} x_i = 19$ et $\prod_{i=1}^{10} x_i! = 4!\,3!\,6!\,3! = 24 \times 6 \times 720 \times 6 = 622\,080$ :
-$$L(\lambda) = \frac{e^{-10\lambda}\,\lambda^{19}}{622\,080}$$
-$$L(1) = \frac{e^{-10}}{622\,080} \approx \mathbf{7{,}298 \times 10^{-11}}, \qquad L(2) = \frac{e^{-20}\, 2^{19}}{622\,080} \approx \mathbf{1{,}737 \times 10^{-9}}$$
-Le maximum est atteint en $\hat{\lambda} = \frac{19}{10} = \mathbf{1{,}9}$, où $L(1{,}9) \approx 1{,}782 \times 10^{-9}$.
+- Somme des observations : $\sum_{i=1}^{10} x_i = 1 + 4 + 1 + 3 + 1 + 6 + 3 + 0 + 0 + 0 = \mathbf{19}$.
+- Produit des factorielles ($0!=1$, $1!=1$, $3!=6$, $4!=24$, $6!=720$) :
+  $$\prod_{i=1}^{10} x_i! = 4!\,3!\,6!\,3! = 24 \times 6 \times 720 \times 6 = \mathbf{622\,080}$$
+- Fonction de vraisemblance et évaluations :
+  $$L(\lambda) = \frac{e^{-10\lambda}\,\lambda^{19}}{622\,080}$$
+  $$L(1) = \frac{e^{-10} \times 1^{19}}{622\,080} = \frac{4{,}5400 \times 10^{-5}}{622\,080} \approx \mathbf{7{,}298 \times 10^{-11}}$$
+  $$L(2) = \frac{e^{-20} \times 2^{19}}{622\,080} = \frac{2{,}0612 \times 10^{-9} \times 524\,288}{622\,080} \approx \mathbf{1{,}737 \times 10^{-9}}$$
+  Le maximum est atteint en $\hat{\lambda} = \frac{19}{10} = \mathbf{1{,}9}$, où $L(1{,}9) = \frac{e^{-19} \times 1{,}9^{19}}{622\,080} \approx \mathbf{1{,}782 \times 10^{-9}}$.
 
 #### 4. Calcul théorique de l'EMV $T$ via la log-vraisemblance
 On passe au logarithme naturel :
 $$\ell(\lambda) = \ln L(X_1, \dots, X_n; \lambda) = -n\lambda + \left(\sum_{i=1}^n X_i\right)\ln\lambda - \sum_{i=1}^n \ln(X_i!)$$
 On annule la dérivée première et on vérifie la concavité :
-$$\frac{\partial \ell}{\partial \lambda} = -n + \frac{\sum_{i=1}^n X_i}{\lambda} = 0 \iff \hat{\lambda} = \frac{1}{n}\sum_{i=1}^n X_i = \overline{X}, \qquad \frac{\partial^2 \ell}{\partial \lambda^2} = -\frac{\sum_{i=1}^n X_i}{\lambda^2} < 0$$
+$$\frac{\partial \ell}{\partial \lambda} = -n + \frac{\sum_{i=1}^n X_i}{\lambda} = 0 \iff \frac{\sum_{i=1}^n X_i}{\lambda} = n \iff \hat{\lambda} = \frac{1}{n}\sum_{i=1}^n X_i = \overline{X}$$
+$$\frac{\partial^2 \ell}{\partial \lambda^2} = -\frac{\sum_{i=1}^n X_i}{\lambda^2} < 0 \quad (\text{maximum vérifié})$$
 L'estimateur du maximum de vraisemblance est donc **$T = \overline{X}$**.
 
 #### 5. Estimation numérique
@@ -527,14 +683,15 @@ $$\hat{\lambda}_{\text{EMV}} = \bar{x} = \frac{19}{10} = \mathbf{1{,}9\text{ not
 
 #### 6. Espérance et variance de $T = \overline{X}$
 Puisque $X_i \sim \mathcal{P}(\lambda)$ avec $E(X_i) = \lambda$ et $\text{Var}(X_i) = \lambda$ :
-$$E(T) = E(\overline{X}) = \lambda \quad (\text{estimateur sans biais}), \qquad \text{Var}(T) = \frac{\text{Var}(X)}{n} = \mathbf{\frac{\lambda}{n}}$$
+$$E(T) = E\!\left(\frac{1}{n}\sum_{i=1}^n X_i\right) = \frac{1}{n}(n\lambda) = \lambda \quad (\text{estimateur sans biais})$$
+$$\text{Var}(T) = \text{Var}\!\left(\frac{1}{n}\sum_{i=1}^n X_i\right) = \frac{1}{n^2}\sum_{i=1}^n \text{Var}(X_i) = \frac{n\lambda}{n^2} = \mathbf{\frac{\lambda}{n}}$$
 
 #### 7. Information de Fisher $I_n(\lambda)$
-$$I_n(\lambda) = -E\!\left[\frac{\partial^2 \ell(\lambda)}{\partial \lambda^2}\right] = E\!\left[\frac{\sum_{i=1}^n X_i}{\lambda^2}\right] = \frac{n\lambda}{\lambda^2} = \mathbf{\frac{n}{\lambda}}$$
+$$I_n(\lambda) = -E\!\left[\frac{\partial^2 \ell(\lambda)}{\partial \lambda^2}\right] = -E\!\left[-\frac{\sum_{i=1}^n X_i}{\lambda^2}\right] = \frac{\sum_{i=1}^n E(X_i)}{\lambda^2} = \frac{n\lambda}{\lambda^2} = \mathbf{\frac{n}{\lambda}}$$
 
 #### 8. Efficacité de $T$ (Borne de Fréchet-Darmois-Cramér-Rao)
 Pour tout estimateur sans biais $\hat{\theta}$ de $\lambda$ sous conditions de régularité :
-$$\text{Var}(\hat{\theta}) \ge \frac{1}{I_n(\lambda)} = \frac{\lambda}{n}$$
+$$\text{Var}(\hat{\theta}) \ge \frac{1}{I_n(\lambda)} = \frac{1}{n / \lambda} = \frac{\lambda}{n}$$
 
 > [!check] Conclusion concrète
 > Comme $\text{Var}(T) = \frac{\lambda}{n}$ atteint exactement la borne inférieure de Cramér-Rao, $T = \overline{X}$ est un **estimateur sans biais à variance minimale (efficace)** de $\lambda$. $\blacksquare$
@@ -551,6 +708,16 @@ $$\text{Var}(\hat{\theta}) \ge \frac{1}{I_n(\lambda)} = \frac{\lambda}{n}$$
 > [!info] Comprendre la logique (terre à terre)
 > **Pourquoi arrondir $52{,}016$ à $53$ et jamais à $52$ ?**
 > La contrainte est « marge d'erreur $\le 0{,}5$ kg ». Avec $52$ pieds, l'incertitude vaut $0{,}5001$ kg : la consigne n'est pas respectée ! Pour toute taille minimale $n$, dès qu'il y a la moindre décimale après la virgule, on arrondit **toujours à l'entier supérieur**.
+
+> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
+> | Indice lu dans l'énoncé | Ce que ça implique |
+> | :--- | :--- |
+> | $\mathcal{N}(\mu, \sigma^2)$, $\sigma$ inconnu, $n = 10$ (Q2) | IC de la moyenne avec Student $t(9)$. |
+> | « IC à $95\%$ pour $\sigma^2$ » (Q3) | IC d'une variance sous normalité avec $\chi^2(9)$. |
+> | « avec $\sigma = 1{,}4$ connu » (Q4) | $\sigma$ connu : on passe de Student à la loi normale $z$. |
+> | « précision $\pm 0{,}5$ kg à $99\%$ » (Q5) | Dimensionnement $n \ge (z\sigma / e)^2$, toujours arrondi à l'entier supérieur. |
+> 
+> **Donc :** Student ($\sigma$ inconnu), $\chi^2$ (variance), Normale $z$ ($\sigma$ connu), puis formule de taille minimale $n$.
 
 ### Les formules utilisées
 **Formules mathématiques :**
@@ -579,30 +746,38 @@ $$IC_{95\%}(\mu) = \left[\bar{x} \pm z_{0{,}975}\frac{\sigma}{\sqrt{10}}\right],
 | 10 | $6{,}9$ | $+2{,}18$ | $4{,}7524$ | $47{,}61$ |
 | **Total ($\sum$)** | **$47{,}2$** | **$0$** | **$18{,}7160$** | **$241{,}50$** |
 
-$$\hat{\mu} = \bar{x} = \frac{47{,}2}{10} = \mathbf{4{,}72\text{ kg}}$$
-$$\hat{\sigma}^2 = s^2 = \frac{18{,}716}{9} = \frac{241{,}50 - 10 \times 4{,}72^2}{9} \approx \mathbf{2{,}0796\text{ kg}^2}, \qquad s = \sqrt{2{,}0796} \approx \mathbf{1{,}4421\text{ kg}}$$
+- **Moyenne estimée :**
+  $$\hat{\mu} = \bar{x} = \frac{1}{n}\sum_{i=1}^{10} x_i = \frac{47{,}2}{10} = \mathbf{4{,}72\text{ kg}}$$
+- **Variance sans biais et écart-type :**
+  $$\hat{\sigma}^2 = s^2 = \frac{1}{n - 1}\sum_{i=1}^{10}(x_i - \bar{x})^2 = \frac{18{,}716}{10 - 1} = \frac{18{,}716}{9} \approx \mathbf{2{,}0796\text{ kg}^2}$$
+  *(Koenig-Huygens : $10 \times 4{,}72^2 = 222{,}784 \implies s^2 = \frac{241{,}50 - 222{,}784}{9} = \frac{18{,}716}{9} \approx 2{,}0796$, d'où $s = \sqrt{2{,}0796} \approx \mathbf{1{,}4421\text{ kg}}$.)*
 
 #### 2. IC à 95% pour $\mu$ (loi de Student, $\nu = 9$)
-En Annexe C (ligne $\nu = 9$, col. bilatérale `0,05`), $t_{9,\, 0{,}975} = \mathbf{2{,}2622}$, d'où la marge $e = 2{,}2622 \times \frac{1{,}4421}{\sqrt{10}} = 1{,}0316$ :
-- Borne inférieure : $4{,}72 - 1{,}0316 = \mathbf{3{,}69\text{ kg}}$
-- Borne supérieure : $4{,}72 + 1{,}0316 = \mathbf{5{,}75\text{ kg}}$
-$$IC_{95\%}(\mu) = \mathbf{[3{,}69 \,;\, 5{,}75]\text{ kg}}$$
+- Erreur standard : $\text{ES} = \frac{s}{\sqrt{n}} = \frac{1{,}4421}{\sqrt{10}} = \frac{1{,}4421}{3{,}1623} = \mathbf{0{,}4560\text{ kg}}$.
+- En Annexe C (ligne $\nu = 9$, col. bilatérale `0,05`), $t_{9,\, 0{,}975} = \mathbf{2{,}2622}$, d'où la marge $e = 2{,}2622 \times 0{,}4560 = \mathbf{1{,}0316\text{ kg}}$.
+- Bornes :
+  - Borne inférieure : $\bar{x} - e = 4{,}72 - 1{,}0316 = \mathbf{3{,}69\text{ kg}}$
+  - Borne supérieure : $\bar{x} + e = 4{,}72 + 1{,}0316 = \mathbf{5{,}75\text{ kg}}$
+  $$IC_{95\%}(\mu) = \mathbf{[3{,}69 \,;\, 5{,}75]\text{ kg}}$$
 
 #### 3. IC à 95% pour $\sigma^2$ (loi du $\chi^2$, $\nu = 9$)
-En Annexe B ($\nu = 9$), $k_{0{,}975} = \mathbf{19{,}0228}$ (col. `0,025`, le grand quantile) et $k_{0{,}025} = \mathbf{2{,}7004}$ (col. `0,975`, le petit quantile). Avec $(n-1)s^2 = 18{,}716$ :
-- Borne inférieure : $\frac{18{,}716}{19{,}0228} = \mathbf{0{,}98\text{ kg}^2}$
-- Borne supérieure : $\frac{18{,}716}{2{,}7004} = \mathbf{6{,}93\text{ kg}^2}$
+En Annexe B ($\nu = 9$), $k_{0{,}975} = \mathbf{19{,}0228}$ (col. `0,025`, le grand quantile) et $k_{0{,}025} = \mathbf{2{,}7004}$ (col. `0,975`, le petit quantile). Avec $(n-1)s^2 = 9 \times 2{,}0796 = 18{,}716$ :
+- Borne inférieure : $\frac{(n-1)s^2}{k_{0{,}975}} = \frac{18{,}716}{19{,}0228} = \mathbf{0{,}98\text{ kg}^2}$
+- Borne supérieure : $\frac{(n-1)s^2}{k_{0{,}025}} = \frac{18{,}716}{2{,}7004} = \mathbf{6{,}93\text{ kg}^2}$
 $$IC_{95\%}(\sigma^2) = \mathbf{[0{,}98 \,;\, 6{,}93]\text{ kg}^2}$$
 
 #### 4. IC à 95% pour $\mu$ avec $\sigma = 1{,}4$ connu (loi normale)
-En Annexe A.1 ($\Phi(z) = 0{,}9750$), $z_{0{,}975} = \mathbf{1{,}96}$, d'où la marge $e = 1{,}96 \times \frac{1{,}4}{\sqrt{10}} = 0{,}8677$ :
-- Borne inférieure : $4{,}72 - 0{,}8677 = \mathbf{3{,}85\text{ kg}}$
-- Borne supérieure : $4{,}72 + 0{,}8677 = \mathbf{5{,}59\text{ kg}}$
-$$IC_{95\%}(\mu) = \mathbf{[3{,}85 \,;\, 5{,}59]\text{ kg}}$$
+- Erreur standard : $\text{ES} = \frac{\sigma}{\sqrt{n}} = \frac{1{,}4}{\sqrt{10}} = \frac{1{,}4}{3{,}1623} = \mathbf{0{,}4427\text{ kg}}$.
+- En Annexe A.1 ($\Phi(z) = 0{,}9750$), $z_{0{,}975} = \mathbf{1{,}96}$, d'où la marge $e = 1{,}96 \times 0{,}4427 = \mathbf{0{,}8677\text{ kg}}$.
+- Bornes :
+  - Borne inférieure : $\bar{x} - e = 4{,}72 - 0{,}8677 = \mathbf{3{,}85\text{ kg}}$
+  - Borne supérieure : $\bar{x} + e = 4{,}72 + 0{,}8677 = \mathbf{5{,}59\text{ kg}}$
+  $$IC_{95\%}(\mu) = \mathbf{[3{,}85 \,;\, 5{,}59]\text{ kg}}$$
 
 #### 5. Nombre minimal de pieds pour précision $\pm 0{,}5$ kg à 99% ($\sigma = 1{,}4$)
 On impose $z_{0{,}995}\frac{\sigma}{\sqrt{n}} \le 0{,}5$, avec $z_{0{,}995} = 2{,}5758$ (Annexe A.1/A.2 pour $\Phi(z) = 0{,}9950$) :
-$$\sqrt{n} \ge \frac{2{,}5758 \times 1{,}4}{0{,}5} = 7{,}2122 \implies n \ge (7{,}2122)^2 = 52{,}016 \implies \mathbf{n_{\min} = 53\text{ pieds}}$$
+$$\sqrt{n} \ge \frac{z_{0{,}995} \cdot \sigma}{e} = \frac{2{,}5758 \times 1{,}4}{0{,}5} = \frac{3{,}6061}{0{,}5} = 7{,}2122$$
+$$n \ge (7{,}2122)^2 = 52{,}016 \implies \mathbf{n_{\min} = 53\text{ pieds}}$$
 *(Identique avec $z = 2{,}576$ issu du tableau du chapitre 2 : $52{,}025 \implies 53$ pieds.)*
 
 > [!check] Conclusion concrète
