@@ -74,7 +74,7 @@ flowchart TD
 
 > [!note] Mémo rapide — D'où viennent les seuils lus dans les tables ?
 > - **Loi Normale $\mathcal{N}(0, 1)$ (Annexe A.1 / A.2) :** On cherche $U_{1-\alpha/2} = z_{1-\alpha/2}$ tel que l'aire cumulée à gauche vaille $\Phi(u) = 1 - \frac{\alpha}{2}$ en **bilatéral** (ou $\Phi(u) = 1 - \alpha$ en **unilatéral**). Ex. à $\alpha = 5\%$ bilatéral : $\Phi(u) = 1 - 0{,}025 = 0{,}9750 \implies$ on repère `0,9750` *dans* l'Annexe A.1 $\to$ ligne **`1,9`** et colonne **`0,06`** $\implies \mathbf{1{,}96}$. À $\alpha = 10\%$ bilatéral (ou $5\%$ unilatéral) : $\Phi(u) = 0{,}9500 \implies \mathbf{1{,}6449}$ (entre `1,64` et `1,65`).
-> - **Loi de Student (Annexe C) :** Lire la ligne $\nu = \text{ddl}$ et la colonne **bilatérale** $\alpha$. Pour un test **unilatéral** au risque $\alpha$, placer tout $\alpha$ d'un seul côté équivaut à lire la colonne bilatérale **$2\alpha$** (ex. unilatéral à $\alpha = 2{,}5\%$ $\to$ colonne bilatérale `0,050`).
+> - **Loi de Student (Annexe C) :** Lire la ligne $\nu = \text{ddl}$ et la colonne **bilatérale** $\alpha$. Pour un test **unilatéral** au risque $\alpha$, placer tout $\alpha$ d'un seul côté revient à lire la colonne bilatérale **$2\alpha$** (ex. unilatéral à $\alpha = 2{,}5\%$ $\to$ colonne bilatérale `0,050`).
 > - **Loi du $\chi^2$ (Annexe B — queue droite) :** La table donne $k$ tel que $P(X \ge k) = \text{colonne}$ à la ligne $\nu = \text{ddl}$ (ex. test unilatéral droit à $\alpha = 5\%$ $\to$ colonne `0,05`).
 > - **Loi de Fisher-Snedecor $\mathcal{F}$ (Annexe D.1 / D.2) :** Lire le croisement $\nu_1$ (ddl numérateur, en colonne) et $\nu_2$ (ddl dénominateur, en ligne). Utiliser Annexe D.1 pour l'ANOVA ($\alpha = 0{,}05$ ou $0{,}01$) et Annexe D.2 ($\alpha = 0{,}025$) pour le test bilatéral d'homoscédasticité.
 
@@ -83,10 +83,10 @@ flowchart TD
 ## 🧠 Méthode : comment savoir quelle formule utiliser ?
 
 ### 1. Les 4 questions à se poser, dans l'ordre
-1. **Que demande-t-on ?** Calculer une probabilité (loi connue), estimer un chiffre unique (estimation ponctuelle), encadrer par une fourchette (intervalle de confiance) ou trancher une affirmation (test d'hypothèse) ?
-2. **Sur quel paramètre ?** Une moyenne $\mu$, une proportion $p$, une variance $\sigma^2$ (ou $\sigma$), un rapport de variances $\sigma_1^2/\sigma_2^2$, ou le lien entre deux variables ?
-3. **Que sait-on sur l'échantillon et la population ?** $\sigma$ connu ou inconnu, taille $n \ge 30$ ou $n < 30$, population normale ou quelconque ?
-4. **Quel sens pour le test ?** Bilatéral ou unilatéral (d'après les mots exacts de l'énoncé) ?
+1. **Qu'est-ce qu'on te demande ?** Calculer une chance (loi connue), donner un seul chiffre (estimation), donner une fourchette (intervalle de confiance) ou vérifier une affirmation (test) ?
+2. **Sur quoi ça porte ?** Une moyenne $\mu$, une proportion $p$, une variance $\sigma^2$ (ou $\sigma$), comparer deux variances, ou voir si deux trucs sont liés ?
+3. **Qu'est-ce que tu as dans les données ?** Est-ce que $\sigma$ est donné ou pas, est-ce que $n \ge 30$ ou $n < 30$, est-ce que c'est une loi normale ?
+4. **Quel sens pour le test ?** Les deux côtés (bilatéral) ou un seul côté (unilatéral), selon les mots exacts de l'énoncé ?
 
 ### 2. Tableau de traduction : Indice dans l'énoncé → Choix
 
@@ -97,87 +97,62 @@ flowchart TD
 | $n \ge 30$, même avec $\sigma$ inconnu (on utilise $s$) | **Loi normale $z$** par le TCL (Student $\approx$ normale) |
 | « proportion », « \% », « $k$ personnes sur $n$ » | Calculer $f = k / n$, puis **loi normale $z$** (si $np \ge 5$ et $n(1-p) \ge 5$) |
 | « variance », « écart-type », « variabilité », « dispersion » d'une population | **Loi du Khi-deux $\chi^2(n - 1)$** (normalité obligatoire) |
-| Comparer deux variances / tester l'homoscédasticité | **Loi de Fisher $\mathcal{F}$** (rapport $s_1^2 / s_2^2$) |
+| Comparer deux variances / tester si les écarts se ressemblent | **Loi de Fisher $\mathcal{F}$** (rapport $s_1^2 / s_2^2$) |
 | « égal à », « vaut », « différent de », « diffèrent-ils » | **Test bilatéral** ($\alpha/2$ de chaque côté, quantile $1 - \alpha/2$) |
 | « au moins », « supérieur », « plus grand », « ne dépasse pas » | **Test unilatéral** ($\alpha$ d'un seul côté, quantile $1 - \alpha$) |
-| Mêmes individus mesurés avant / après | **Données appariées** : travailler sur les différences $d_i$ |
-| $3$ groupes ou plus à comparer simultanément | **ANOVA à 1 facteur** (statistique $F$ de Fisher) |
-| Tableau croisé de deux caractères qualitatifs | **Test du $\chi^2$ d'indépendance** |
+| Mêmes personnes mesurées avant / après | **Données appariées** : travailler sur les différences $d_i$ |
+| $3$ groupes ou plus à comparer en même temps | **ANOVA à 1 facteur** (statistique $F$ de Fisher) |
+| Tableau croisé de deux critères qualitatifs | **Test du $\chi^2$ d'indépendance** |
 | « suit-elle une loi … ? », « loi candidate » | **Test du $\chi^2$ d'ajustement** ($E_i \ge 5$) |
-| Petits effectifs, non-normalité ou valeur aberrante (outlier) | **Test non paramétrique** (Wilcoxon ou Mann-Whitney) |
+| Petits effectifs, loi pas normale ou valeur extrême bizarre | **Test non paramétrique** (Wilcoxon ou Mann-Whitney) |
 
 > [!tip] Pourquoi Student plutôt que la loi normale ?
-> Quand l'écart-type vrai $\sigma$ de la population est inconnu, on le remplace par l'estimation $s$ calculée sur l'échantillon, qui fluctue elle aussi d'un échantillon à l'autre. Cette incertitude supplémentaire élargit les queues de la distribution, et la loi de Student en tient compte grâce à ses $n - 1$ degrés de liberté (un degré de liberté a déjà été consommé pour calculer $\bar{x}$). Dès que $n$ grandit, $s \approx \sigma$ et Student rejoint la loi normale : $t(\infty) = z$, ce qui se lit directement dans l'Annexe C ($2{,}2622$ pour $\nu = 9$ contre $1{,}96$ à l'infini pour $95\%$).
+> Parce que tu cumules deux trucs : ton groupe est petit ($n < 30$) ET tu ne connais pas le vrai écart-type $\sigma$ (tu as dû le calculer toi-même avec $s$). Comme $s$ est approximatif et change d'un tirage à l'autre, tu prends une marge de sécurité un peu plus large : c'est ça que fait la table de Student à $n - 1$ ddl. Dès que $n \ge 30$ ou que $\sigma$ est donné dans l'énoncé, tu repasses direct sur la loi normale ($Z$). Ça se voit dans l'Annexe C : à $95\%$, $t = 2{,}2622$ pour $\nu = 9$, puis ça descend doucement jusqu'à $1{,}96$ quand $n$ est très grand.
 
 > [!tip] Logique commune à tous les tests
-> 1. Poser $H_0$ et $H_1$ à partir des mots exacts de l'énoncé (égalité vs différence, supériorité ou infériorité).
-> 2. Choisir la statistique adaptée grâce au tableau ci-dessus.
-> 3. Calculer la statistique : $\text{Stat} = (\text{Observé} - \text{Attendu sous } H_0) \div \text{Erreur standard}$.
-> 4. Comparer au seuil lu dans la table (ou comparer la $p$-value à $\alpha$).
-> 5. Conclure en contexte : **ne pas rejeter $H_0$ ne prouve jamais que $H_0$ est vraie**, cela signifie seulement qu'on manque de preuves contre elle.
+> 1. Tu poses $H_0$ (l'hypothèse de départ) et $H_1$ (ce que tu soupçonnes) d'après les mots de l'énoncé.
+> 2. Tu choisis ta formule avec le tableau juste au-dessus.
+> 3. Tu calcules ta statistique : `(Ce qu'on observe - Ce qu'on attend sous H₀) ÷ Erreur standard`.
+> 4. Tu compares au seuil de la table (ou tu compares la $p$-value à $\alpha$).
+> 5. Tu conclus simple : **ne pas rejeter $H_0$ ne veut pas dire qu'elle est prouvée à 100 %**, ça veut juste dire qu'on n'a pas assez de preuves pour dire qu'elle est fausse.
 
 ---
+
 ## 📌 Exercice 1 – Montant moyen des remboursements de crédit
 
 > [!question] Énoncé résumé & Données
 > Un ingénieur risque crédit à Lomé veut vérifier si la mensualité moyenne de remboursement des clients vaut $\mu_0 = 200$ €. Sur un échantillon de $n = 144$ clients, il observe $\bar{x} = 193{,}74$ € et un écart-type corrigé $s = 48{,}24$ €. On demande de poser les hypothèses, de conclure au risque $\alpha = 5\%$, de tracer le schéma des régions, de calculer la $p$-value, puis de répondre pour $\alpha = 10\%$.
 
-> [!info] Comprendre la logique (terre à terre)
-> **D'où vient $U_{1-\alpha/2} = 1{,}96$ et comment trouve-t-on les bornes inf/sup ?**
-> À $\alpha = 5\%$ en bilatéral, on accepte $2{,}5\%$ d'erreur à gauche et $2{,}5\%$ à droite. On cherche donc le seuil $u$ tel que $\Phi(u) = 1 - 0{,}025 = 0{,}9750$ : dans l'Annexe A.1, `0,9750` se lit à la ligne `1,9` et colonne `0,06`, d'où $U_{0{,}975} = 1{,}96$. Ensuite, on multiplie ce quantile par l'erreur standard ($4{,}02$ €) pour obtenir la **marge d'erreur** $e \approx 7{,}88$ €. Selon ce qu'on cherche :
-> - **Intervalle d'acceptation de $H_0$** (centré sur $\mu_0 = 200$ €) : $\mu_0 - e = 192{,}12$ € et $\mu_0 + e = 207{,}88$ €.
-> - **Intervalle de confiance à $95\%$ de $\mu$** (centré sur $\bar{x} = 193{,}74$ €) : $\bar{x} - e = 185{,}86$ € et $\bar{x} + e = 201{,}62$ €.
-> Les deux approches donnent la **même** conclusion : $193{,}74 \in [192{,}12 \,;\, 207{,}88]$ tout comme $200 \in [185{,}86 \,;\, 201{,}62]$.
->
-> **C'est quoi la $p$-value, concrètement ?**
-> Imagine que la norme est vraie ($\mu = 200$ €). Si tu tires $144$ clients au sort, la $p$-value est la probabilité d'observer un écart d'au moins $\pm 6{,}26$ € par pur hasard. Ici elle vaut $11{,}94\%$ : c'est trop banal pour rejeter $H_0$, même à $\alpha = 10\%$.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | « vérifier si la mensualité moyenne vaut $\mu_0 = 200$ € » | Test de conformité d'une moyenne contre une norme ; le mot « vaut » donne un test bilatéral ($\ne 200$). |
-> | $n = 144 \ge 30$, même avec $\sigma$ inconnu (on a $s$) | Grand échantillon : le TCL garantit que $Z$ suit approximativement $\mathcal{N}(0, 1)$. |
-> 
-> **Donc :** test $Z$ bilatéral sur moyenne, seuil critique $\pm 1{,}96$ à $5\%$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$H_0 : \mu = 200 \quad \text{vs} \quad H_1 : \mu \ne 200$$
-$$\text{ES} = \frac{s}{\sqrt{n}}, \qquad z_{\text{obs}} = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}, \qquad e = U_{1-\alpha/2} \cdot \frac{s}{\sqrt{n}}$$
-$$\text{IC}_{1-\alpha}(\mu) = \left[\bar{x} - e \,;\, \bar{x} + e\right], \qquad \text{Zone d'acceptation de } H_0 = \left[\mu_0 - e \,;\, \mu_0 + e\right], \qquad p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big)$$
-
-**En français simple :**
-`Erreur standard = Écart-type ÷ √Effectif`
-`Score Z = (Moyenne mesurée - Moyenne prétendue) ÷ Erreur standard`
-`Borne inf = Centre - (U × Erreur standard)` et `Borne sup = Centre + (U × Erreur standard)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et type de test
-On pose un **test bilatéral de conformité** sur une moyenne :
+### 1. Hypothèses et choix de la loi du test
+Regarde le mot dans l'énoncé : on veut vérifier si la moyenne « **vaut** $\mu_0 = 200$ € ». Comme ça peut être faux en dessous comme au-dessus de $200$ €, on pose un **test bilatéral** :
 $$H_0 : \mu = 200\text{ €} \qquad \text{contre} \qquad H_1 : \mu \ne 200\text{ €}$$
-Comme $n = 144 \ge 30$ (grand échantillon), par le Théorème Central Limite (TCL), la statistique $Z$ suit approximativement la loi normale centrée réduite $\mathcal{N}(0, 1)$ sous $H_0$.
+En fait, même si on ne connaît pas le vrai écart-type $\sigma$ de tous les clients (on utilise $s = 48{,}24$ €), notre échantillon est grand ($n = 144 \ge 30$). Grâce au Théorème Central Limite (TCL), on passe direct sur la **loi normale $\mathcal{N}(0, 1)$** ($Z$) sous $H_0$ : pas besoin de Student ici.
 
-#### 2. Décision au risque $\alpha = 5\%$
+### 2. Décision au risque $\alpha = 5\%$ (erreur standard, score $Z$ et bornes)
 1. **Calcul de l'erreur standard ($\text{ES}$) :**
+   La moyenne de $144$ clients bouge beaucoup moins qu'un seul client pris au hasard : sa marge d'erreur est divisée par $\sqrt{n}$. *En clair : `Erreur standard = Écart-type ÷ √Effectif`.*
    $$\text{ES} = \frac{s}{\sqrt{n}} = \frac{48{,}24}{\sqrt{144}} = \frac{48{,}24}{12} = \mathbf{4{,}02\text{ €}}$$
 2. **Calcul de la statistique observée ($z_{\text{obs}}$) :**
-   $$z_{\text{obs}} = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} = \frac{193{,}74 - 200}{4{,}02} = \frac{-6{,}26}{4{,}02} \approx \mathbf{-1{,}5572}$$
-3. **Lecture du quantile et calcul de la marge d'erreur ($e$) :**
-   - À $\alpha = 5\% = 0{,}05$ en bilatéral, on calcule $\Phi(U_{1-\alpha/2}) = 1 - \frac{0{,}05}{2} = 1 - 0{,}025 = 0{,}9750$. En Annexe A.1 (ligne `1,9`, col. `0,06`), on lit $U_{0{,}975} = \mathbf{1{,}96}$, d'où les seuils critiques $z_{\text{crit}} = \pm 1{,}96$.
-   - Marge d'erreur :
-     $$e = U_{1-\alpha/2} \times \frac{s}{\sqrt{n}} = 1{,}96 \times 4{,}02 = 7{,}8792 \approx \mathbf{7{,}88\text{ €}}$$
+   On regarde combien d'erreurs standards séparent notre moyenne ($193{,}74$ €) de la cible ($200$ €), pour pouvoir comparer ça à la table normale. *En clair : `Score Z = (Moyenne mesurée - Cible μ₀) ÷ Erreur standard`.*
+   $$z_{\text{obs}} = \frac{\bar{x} - \mu_0}{\text{ES}} = \frac{193{,}74 - 200}{4{,}02} = \frac{-6{,}26}{4{,}02} \approx \mathbf{-1{,}5572}$$
+3. **D'où vient $U_{1-\alpha/2} = 1{,}96$ et calcul de la marge d'erreur ($e$) :**
+   À $\alpha = 5\% = 0{,}05$ en **bilatéral**, tu coupes le risque en deux : $0{,}025$ à gauche et $0{,}025$ à droite. Du coup, toute la zone à gauche du seuil droit vaut $\Phi(U_{1-\alpha/2}) = 1 - \frac{0{,}05}{2} = 0{,}9750$. Tu cherches `0,9750` *à l'intérieur* de l'Annexe A.1 : c'est à la ligne **`1,9`** et colonne **`0,06`**, d'où $U_{0{,}975} = \mathbf{1{,}96}$ (seuils critiques $z_{\text{crit}} = \pm 1{,}96$).
+   Pour passer ce $1{,}96$ en euros, on le multiplie par l'erreur standard :
+   $$e = U_{1-\alpha/2} \times \frac{s}{\sqrt{n}} = 1{,}96 \times 4{,}02 = 7{,}8792 \approx \mathbf{7{,}88\text{ €}}$$
 4. **Calcul des bornes inférieures et supérieures :**
-   - **Intervalle d'acceptation de $H_0$** (centré sur $\mu_0 = 200$ €) :
+   C'est tout simple : tu enlèves $e$ pour la borne du bas, et tu ajoutes $e$ pour la borne du haut :
+   - **Zone où on garde $H_0$** (centrée sur $\mu_0 = 200$ €) :
      - Borne inférieure : $\mu_0 - e = 200 - 7{,}88 = \mathbf{192{,}12\text{ €}}$
      - Borne supérieure : $\mu_0 + e = 200 + 7{,}88 = \mathbf{207{,}88\text{ €}}$
    - **Intervalle de confiance à $95\%$ de $\mu$** (centré sur $\bar{x} = 193{,}74$ €) :
      - Borne inférieure : $\bar{x} - e = 193{,}74 - 7{,}88 = \mathbf{185{,}86\text{ €}}$
      - Borne supérieure : $\bar{x} + e = 193{,}74 + 7{,}88 = \mathbf{201{,}62\text{ €}}$
 
-Comme $|z_{\text{obs}}| = 1{,}5572 < 1{,}96$ (équivalent à $193{,}74 \in [192{,}12 \,;\, 207{,}88]$ et $\mu_0 = 200 \in [185{,}86 \,;\, 201{,}62]$), **on ne rejette pas $H_0$**.
+Comme $|z_{\text{obs}}| = 1{,}5572 < 1{,}96$ (pareil que de dire $193{,}74 \in [192{,}12 \,;\, 207{,}88]$ ou $200 \in [185{,}86 \,;\, 201{,}62]$), **on ne rejette pas $H_0$**.
 
-#### 3 & 4. Schéma des régions et $p$-value
+### 3. Schéma des régions d'acceptation et de rejet
+Comme le test est bilatéral ($H_1 : \mu \ne 200$), on a deux petites zones de rejet aux deux bouts ($\alpha/2 = 2{,}5\%$ chacune) : si notre $Z$ tombe dedans (trop petit ou trop grand), on rejette $H_0$.
+
 ```text
              Densité N(0,1) sous H0
                       ^
@@ -192,18 +167,19 @@ Comme $|z_{\text{obs}}| = 1{,}5572 < 1{,}96$ (équivalent à $193{,}74 \in [192{
   ████ Région de rejet α = 5% (|Z| > 1,96)
   ░░░░ Aires correspondant à la p-value totale = 2 × P(Z ≤ -1,5572)
 ```
-Par lecture de l'Annexe A.1 (ligne `1,5`, col. `0,06`, soit $\Phi(1{,}56) = 0{,}9406$) :
-$$p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) \approx 2(1 - 0{,}9406) = 2 \times 0{,}0594 = \mathbf{0{,}1188} \quad (\text{exact : } \mathbf{0{,}1194}, \text{ soit } \mathbf{11{,}94\%})$$
 
-#### 5. Réponse pour $\alpha = 10\%$
-À $\alpha = 10\% = 0{,}10$ en bilatéral :
-- $\Phi(U_{1-\alpha/2}) = 1 - \frac{0{,}10}{2} = 0{,}9500 \implies U_{0{,}95} = \mathbf{1{,}6449}$.
-- Marge d'erreur : $e = U_{0{,}95} \times \text{ES} = 1{,}6449 \times 4{,}02 = 6{,}6125 \approx \mathbf{6{,}61\text{ €}}$.
-- Zone d'acceptation de $H_0$ : $[200 - 6{,}61 \,;\, 200 + 6{,}61] = \mathbf{[193{,}39 \,;\, 206{,}61]\text{ €}}$ (et $\text{IC}_{90\%}(\mu) = [193{,}74 - 6{,}61 \,;\, 193{,}74 + 6{,}61] = \mathbf{[187{,}13 \,;\, 200{,}35]\text{ €}}$).
-- Comme $p\text{-value} = 0{,}1194 > \alpha = 0{,}10$ (et $|z_{\text{obs}}| = 1{,}5572 < 1{,}6449$), **on ne rejette toujours pas $H_0$** au risque de $10\%$.
+### 4. Calcul et sens concret de la $p$-value
+En vrai, la $p$-value te dit juste : *« Si la moyenne vaut vraiment $200$ €, j'avais combien de chances d'observer un écart d'au moins $6{,}26$ € juste par hasard ? »*
+Comme on est en bilatéral (l'écart peut être en moins ou en plus), on multiplie l'aire d'une queue par $2$. Dans l'Annexe A.1 (ligne `1,5`, col. `0,06`), $\Phi(1{,}56) = 0{,}9406$ :
+$$p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) \approx 2(1 - 0{,}9406) = 2 \times 0{,}0594 = \mathbf{0{,}1188} \quad (\text{exact : } \mathbf{0{,}1194}, \text{ soit } \mathbf{11{,}94\%})$$
+$11{,}94\%$ de chances par pur hasard, c'est beaucoup plus grand que les $5\%$ qu'on s'autorise : rien de bizarre.
+
+### 5. Décision au risque $\alpha = 10\%$
+Retiens simple : on rejette $H_0$ seulement si $p\text{-value} < \alpha$. Ici $11{,}94\% > 10\%$, donc **on ne rejette toujours pas $H_0$**.
+- *Vérification avec les bornes à $90\%$ ($\alpha = 0{,}10$ bilatéral) :* $\Phi(U_{0{,}95}) = 1 - \frac{0{,}10}{2} = 0{,}9500 \implies U_{0{,}95} = \mathbf{1{,}6449}$. Marge : $e = 1{,}6449 \times 4{,}02 = 6{,}6125 \approx \mathbf{6{,}61\text{ €}}$, soit $[200 - 6{,}61 \,;\, 200 + 6{,}61] = \mathbf{[193{,}39 \,;\, 206{,}61]\text{ €}}$ autour de $200$ € (et $\text{IC}_{90\%}(\mu) = [193{,}74 - 6{,}61 \,;\, 193{,}74 + 6{,}61] = \mathbf{[187{,}13 \,;\, 200{,}35]\text{ €}}$), avec $|z_{\text{obs}}| = 1{,}5572 < 1{,}6449$.
 
 > [!check] Conclusion concrète
-> Au seuil de $5\%$ comme à $10\%$, l'écart observé ($193{,}74$ € vs $200$ €) est compatible avec les fluctuations d'échantillonnage : la valeur moyenne postulée de $200$ € reste plausible.
+> À $5\%$ comme à $10\%$, **on ne rejette pas $H_0$** : en clair, le petit écart qu'on voit ($193{,}74$ € au lieu de $200$ €) peut très bien venir juste du hasard du tirage.
 
 ---
 
@@ -212,48 +188,26 @@ $$p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) \approx 2(1 - 0{,}9406)
 > [!question] Énoncé résumé & Données
 > Dans une promotion de Master IT à Lomé de $n = 64$ étudiants, on compte $k = 28$ femmes. Peut-on soutenir que la filière attire autant les hommes que les femmes ($p_0 = 0{,}50$, $\alpha = 5\%$) ?
 
-> [!info] Comprendre la logique (terre à terre)
-> **Pourquoi mettre $p_0$ et pas $f$ sous la racine carrée ?**
-> Contrairement à un intervalle de confiance (où $p$ est inconnu et remplacé par $f$), dans un test d'hypothèse on se place **dans le monde où $H_0$ est vraie** ($p = 0{,}50$). On calcule donc la variabilité théorique avec $p_0(1 - p_0)$.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | « $k = 28$ femmes sur $n = 64$ », « attire autant les hommes que les femmes » | Conformité d'une proportion face à $p_0 = 0{,}50$, test bilatéral ($p \ne 0{,}50$). |
-> | $np_0 = 32 \ge 5$ et $n(1 - p_0) = 32 \ge 5$ | Approximation normale valide ; sous $H_0$, l'erreur standard utilise $p_0$ (et non $f$). |
-> 
-> **Donc :** test $Z$ bilatéral sur proportion avec $p_0(1 - p_0)$ au dénominateur.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$f = \frac{k}{n}, \qquad H_0 : p = 0{,}50 \quad \text{vs} \quad H_1 : p \ne 0{,}50$$
-$$\text{ES}_0 = \sqrt{\frac{p_0(1 - p_0)}{n}}, \qquad z_{\text{obs}} = \frac{f - p_0}{\text{ES}_0}, \qquad p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big)$$
-
-**En français simple :**
-`Fréquence observée = Nb de femmes ÷ Effectif total`
-`Score Z = (Fréquence observée - 0,50) ÷ √(0,50 × 0,50 ÷ Effectif)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et conditions d'application
-On calcule d'abord la proportion observée :
+### 1. Fréquence observée, hypothèses et conditions d'application
+Ici on ne parle pas de moyenne mais d'une **proportion** ($28$ femmes sur $64$). « Attire autant les hommes que les femmes » veut dire $50\%$ de femmes ($p_0 = 0{,}50$), peu importe que ce soit en plus ou en moins $\implies$ **test bilatéral** :
 $$f = \frac{k}{n} = \frac{28}{64} = \mathbf{0{,}4375} \quad (43{,}75\%)$$
-On formule un **test bilatéral de conformité d'une proportion** :
 $$H_0 : p = 0{,}50 \qquad \text{contre} \qquad H_1 : p \ne 0{,}50$$
-Vérification des conditions de l'approximation normale :
-$$n p_0 = 64 \times 0{,}50 = 32 \ge 5 \qquad \text{et} \qquad n(1 - p_0) = 64 \times (1 - 0{,}50) = 32 \ge 5 \quad (\text{conditions validées})$$
+Avant d'utiliser la loi normale $Z$, on vérifie vite fait que l'échantillon est assez grand ($np_0 \ge 5$ et $n(1 - p_0) \ge 5$) :
+$$n p_0 = 64 \times 0{,}50 = 32 \ge 5 \qquad \text{et} \qquad n(1 - p_0) = 64 \times (1 - 0{,}50) = 32 \ge 5 \quad (\text{c'est bon})$$
 
-#### 2. Statistique de test, seuil critique et $p$-value
-1. **Erreur standard sous $H_0$ :**
+### 2. Statistique $Z$, $p$-value et décision ($\alpha = 5\%$)
+1. **Erreur standard sous $H_0$ ($\text{ES}_0$) :**
+   *Pourquoi on met $0{,}50$ sous la racine et pas $0{,}4375$ ?* Parce que dans un test, tu fais comme si $H_0$ disait vrai ($p = 0{,}50$) jusqu'à preuve du contraire. Dans un intervalle de confiance, tu n'as aucune valeur de départ, donc là tu mets $f$.
    $$\text{ES}_0 = \sqrt{\frac{p_0(1 - p_0)}{n}} = \sqrt{\frac{0{,}50 \times 0{,}50}{64}} = \sqrt{\frac{0{,}25}{64}} = \frac{0{,}50}{8} = \mathbf{0{,}0625}$$
 2. **Statistique observée ($z_{\text{obs}}$) :**
+   *En clair : `Score Z = (Proportion observée - 0,50) ÷ Erreur standard sous H₀`.*
    $$z_{\text{obs}} = \frac{f - p_0}{\text{ES}_0} = \frac{0{,}4375 - 0{,}50}{0{,}0625} = \frac{-0{,}0625}{0{,}0625} = \mathbf{-1{,}00}$$
 3. **Seuil critique et $p$-value :**
-   À $\alpha = 5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), $z_{\text{crit}} = \pm 1{,}96$. Avec $\Phi(1{,}00) = 0{,}8413$ (Annexe A.1, ligne `1,0`, col. `0,00`) :
+   À $5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), le seuil vaut $z_{\text{crit}} = \pm 1{,}96$. Avec $\Phi(1{,}00) = 0{,}8413$ (Annexe A.1, ligne `1,0`, col. `0,00`), et $\times 2$ pour le bilatéral :
    $$p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) = 2(1 - 0{,}8413) = 2 \times 0{,}1587 = \mathbf{0{,}3174} \quad (31{,}74\%)$$
 
 > [!check] Conclusion concrète
-> Comme $|z_{\text{obs}}| = 1{,}00 < 1{,}96$ ($p = 0{,}3174 > 0{,}05$), **on ne rejette pas $H_0$** : l'écart observé ne permet pas de contester l'égale attractivité de la filière auprès des hommes et des femmes.
+> Comme $|z_{\text{obs}}| = 1{,}00 < 1{,}96$ ($p = 31{,}74\% > 5\%$), **on ne rejette pas $H_0$** : avoir $28$ femmes sur $64$ reste tout à fait normal si la filière attire autant les hommes que les femmes.
 
 ---
 
@@ -262,32 +216,7 @@ $$n p_0 = 64 \times 0{,}50 = 32 \ge 5 \qquad \text{et} \qquad n(1 - p_0) = 64 \t
 > [!question] Énoncé résumé & Données
 > La Direction de l'Évaluation sélectionne $n = 30$ étudiants pour un test standardisé dont l'écart-type ne doit pas dépasser $\sigma_0 = 20$ points ($\sigma_0^2 = 20^2 = 400$), au risque $\alpha = 5\%$. On demande d'estimer $\sigma$ sans biais puis de réaliser le test d'hypothèse.
 
-> [!info] Comprendre la logique (terre à terre)
-> **Attention à la condition cachée :**
-> Le test du $\chi^2$ sur une variance exige impérativement que les scores suivent une **loi normale** (contrairement aux tests sur la moyenne avec $n \ge 30$, le TCL ne protège pas la variance).
->
-> **Lecture de la table (Annexe B) :**
-> Pour un test unilatéral droit ($H_1 : \sigma > 20$), tout le risque $\alpha = 5\%$ est placé dans la queue droite : on lit directement la ligne $\nu = n - 1 = 29$ et la colonne `0,05` ($\chi^2_{0{,}95}(29) = 42{,}5570$).
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | « l'écart-type ne doit pas dépasser $\sigma_0 = 20$ points » | Test de conformité sur une variance ; « dépasser » impose un test unilatéral droit ($\sigma > 20$). |
-> | Statistique sur la dispersion | Exige la normalité stricte de la population ; la statistique suit un $\chi^2(n - 1)$. |
-> 
-> **Donc :** test du $\chi^2$ unilatéral droit avec $V = \frac{(n - 1)s^2}{\sigma_0^2}$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i, \qquad \bar{s}^2 = \frac{1}{n}\sum_{i=1}^n (x_i - \bar{x})^2, \qquad s^2 = \frac{1}{n - 1}\sum_{i=1}^n (x_i - \bar{x})^2 = \frac{\sum_{i=1}^n x_i^2 - n\bar{x}^2}{n - 1}$$
-$$s = \sqrt{s^2}, \qquad V = \frac{(n - 1)s^2}{\sigma_0^2} \sim \chi^2(n - 1)$$
-
-**En français simple :**
-`Statistique V = Somme des carrés des écarts ÷ Variance maximale tolérée (400)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Estimation sans biais de $\sigma$ ($n = 30$)
+### 1. Estimation sans biais de $\sigma$ (pourquoi diviser par $n - 1 = 29$ ?)
 
 | Étudiant $i$ | $x_i$ | $x_i - \bar{x}$ | $(x_i - \bar{x})^2$ | $x_i^2$ *(Koenig-Huygens)* |
 | :---: | :---: | :---: | :---: | :---: |
@@ -326,22 +255,21 @@ $$s = \sqrt{s^2}, \qquad V = \frac{(n - 1)s^2}{\sigma_0^2} \sim \chi^2(n - 1)$$
 - **Moyenne empirique :**
   $$\bar{x} = \frac{1}{n}\sum_{i=1}^{30} x_i = \frac{3\,120}{30} = \mathbf{104{,}00\text{ points}}$$
 - **Variance corrigée (sans biais) :**
+  *Pourquoi on divise par $n - 1 = 29$ et pas par $n = 30$ ?* En fait, tu n'as pas toute la population des étudiants, tu as juste un groupe de $30$. Comme tu calcules les écarts autour de la moyenne $\bar{x}$ de ce même groupe (et pas autour de la vraie moyenne inconnue), tes écarts sont un peu tassés (trop petits par rapport à la réalité). En divisant par $n - 1 = 29$ au lieu de $30$, tu remontes légèrement le résultat pour corriger ça (variance corrigée sans biais). Retiens simple : dès que tu estimes la population, tu divises par $n - 1$.
   $$s^2 = \frac{1}{n - 1}\sum_{i=1}^{30}(x_i - \bar{x})^2 = \frac{7\,132}{30 - 1} = \frac{7\,132}{29} \approx \mathbf{245{,}9310}$$
-  *(Vérification par Koenig-Huygens : $s^2 = \frac{331\,612 - 30 \times 104^2}{29} = \frac{331\,612 - 324\,480}{29} = \frac{7\,132}{29} \approx 245{,}9310$. La variance biaisée vaudrait $\bar{s}^2 = \frac{7\,132}{30} \approx 237{,}7333$.)*
+  *(Vérification par Koenig-Huygens : $s^2 = \frac{\sum x_i^2 - n\bar{x}^2}{n - 1} = \frac{331\,612 - 30 \times 104^2}{29} = \frac{331\,612 - 324\,480}{29} = \frac{7\,132}{29} \approx 245{,}9310$. La variance empirique divisée par $30$ vaudrait $\bar{s}^2 = \frac{7\,132}{30} \approx 237{,}7333$.)*
 - **Écart-type corrigé :**
   $$s = \sqrt{s^2} = \sqrt{245{,}9310} \approx \mathbf{15{,}6822\text{ points}}$$
 
-#### 2. Test sur l'écart-type ($\sigma_0 = 20 \implies \sigma_0^2 = 400$, $\alpha = 5\%$)
-**Hypothèse préalable indispensable :**
-Les $30$ scores doivent former un échantillon iid issu d'une **loi normale** pour que la loi du $\chi^2$ soit valide.
-
-On teste unilatéralement à droite :
+### 2. Test du Khi-deux sur l'écart-type ($\sigma_0 = 20 \implies \sigma_0^2 = 400$, $\alpha = 5\%$)
+*Pourquoi cette formule et quelle condition ?* On veut tester si la **dispersion** ($\sigma$) dépasse une limite (« ne doit pas dépasser $\sigma_0 = 20$ »). Dès que le test porte sur une variance ou un écart-type, on utilise la **loi du Khi-deux $\chi^2(n - 1)$** — mais attention, ça ne marche que si les notes suivent une **loi normale** (même avec $n = 30$, le TCL ne sauve pas la variance). « Ne doit pas dépasser » donne un **test unilatéral droit** :
 $$H_0 : \sigma \le 20 \ (\sigma^2 \le 400) \qquad \text{contre} \qquad H_1 : \sigma > 20 \ (\sigma^2 > 400)$$
+*En clair : `Statistique V = Somme des carrés des écarts ÷ Variance maximale tolérée (400)`.*
 $$V = \frac{(n - 1)s^2}{\sigma_0^2} = \frac{29 \times 245{,}9310}{20^2} = \frac{7\,132}{400} = \mathbf{17{,}8300} \sim \chi^2(29)$$
-En Annexe B ($\nu = 29$, colonne `0,05`), le seuil critique vaut $\chi^2_{0{,}95}(29) = \mathbf{42{,}5570}$.
+*Lecture de l'Annexe B :* Pour un test unilatéral droit à $\alpha = 5\%$, tu lis direct la ligne $\nu = n - 1 = 29$ et la colonne `0,05`, soit $\chi^2_{0{,}95}(29) = \mathbf{42{,}5570}$.
 
 > [!check] Conclusion concrète
-> Comme $V = 17{,}8300 < 42{,}5570$ ($p = 0{,}9477$), **on ne rejette pas $H_0$** : l'exigence d'homogénéité ($\sigma \le 20$) est largement respectée ($s = 15{,}68 < 20$).
+> Comme $V = 17{,}8300 < 42{,}5570$ ($p = 0{,}9477$), **on ne rejette pas $H_0$** : les scores restent bien regroupés, largement sous le plafond des $20$ points ($s = 15{,}68$).
 
 ---
 
@@ -351,34 +279,11 @@ En Annexe B ($\nu = 29$, colonne `0,05`), le seuil critique vaut $\chi^2_{0{,}95
 > Une réglementation impose aux communes de consacrer au moins $25\%$ de leur budget aux infrastructures numériques. On relève ces pourcentages dans $n = 10$ communes (supposés normaux) au risque $\alpha = 2{,}5\%$ :
 > `25.6, 24.5, 24.3, 25.0, 29.5, 24.1, 24.8, 24.7, 25.2, 24.9`
 
-> [!info] Comprendre la logique (terre à terre)
-> **Comment lire la table de Student (Annexe C) pour un test unilatéral ?**
-> La table indique souvent le risque **bilatéral** (les deux queues additionnées). Si ton test est **unilatéral à $\alpha = 2{,}5\%$** (une seule queue à gauche), cherche la colonne où chaque queue vaut $2{,}5\%$, donc la colonne bilatérale **$2\alpha = 5\% = 0{,}050$** !
->
-> **L'esprit critique de l'ingénieur :**
-> La moyenne ($25{,}26\%$) dépasse $25\%$, donc le test valide la norme. Mais regarde les $10$ lignes du tableau : **$7$ communes sur $10$ sont sous $25\%$** ! Une seule commune à $29{,}5\%$ tire toute la moyenne vers le haut.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | « consacrer au moins $25\%$ » | $H_0 : \mu \ge 25\%$ contre $H_1 : \mu < 25\%$ (unilatéral gauche). |
-> | $n = 10 < 30$, supposés normaux, $\sigma$ inconnu | Petit échantillon normal avec écart-type estimé $s$ : loi de Student $t(9)$. |
-> 
-> **Donc :** test $t$ de Student unilatéral gauche, lu en colonne bilatérale $2\alpha = 0{,}050$ à $\nu = 9$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$H_0 : \mu \ge 25 \quad \text{vs} \quad H_1 : \mu < 25$$
-$$\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i, \qquad s^2 = \frac{1}{n - 1}\sum_{i=1}^n (x_i - \bar{x})^2, \qquad \text{ES} = \frac{s}{\sqrt{n}}, \qquad t_{\text{obs}} = \frac{\bar{x} - \mu_0}{\text{ES}} \sim t(n - 1)$$
-
-**En français simple :**
-`t_obs = (Moyenne des 10 communes - Norme 25) ÷ (Écart-type corrigé ÷ √10)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et estimations ($n = 10$)
-On réalise un test unilatéral gauche :
+### 1. Hypothèses du test (pourquoi unilatéral gauche ?)
+Regarde les mots : la loi demande « **au moins** $25\%$ » ($\mu \ge 25\%$). On s'inquiète seulement si les communes sont en dessous de $25\%$, donc c'est un **test unilatéral gauche** :
 $$H_0 : \mu \ge 25\% \ (\text{norme respectée}) \qquad \text{contre} \qquad H_1 : \mu < 25\% \ (\text{quota non respecté})$$
+
+### 2. Moyenne et variance corrigée (pourquoi $n - 1 = 9$ ?)
 
 | Commune $i$ | $x_i$ (%) | $x_i - \bar{x}$ | $(x_i - \bar{x})^2$ | $x_i^2$ *(Koenig-Huygens)* |
 | :---: | :---: | :---: | :---: | :---: |
@@ -397,19 +302,21 @@ $$H_0 : \mu \ge 25\% \ (\text{norme respectée}) \qquad \text{contre} \qquad H_1
 - **Moyenne empirique :**
   $$\bar{x} = \frac{1}{n}\sum_{i=1}^{10} x_i = \frac{252{,}6}{10} = \mathbf{25{,}26\%}$$
 - **Variance corrigée et écart-type :**
+  *Pourquoi diviser par $n - 1 = 9$ et pas par $n = 10$ ?* En fait, tu n'as que $10$ communes et tu ne connais pas le vrai écart-type $\sigma$ de toutes les communes. Comme tu calcules les écarts autour de $\bar{x}$ (tirée de ces mêmes $10$ communes), tes écarts sont un peu tassés. Diviser par $n - 1 = 9$ corrige ça, et c'est obligatoire pour pouvoir lire ensuite la table de Student à $9$ ddl.
   $$s^2 = \frac{1}{n - 1}\sum_{i=1}^{10}(x_i - \bar{x})^2 = \frac{21{,}6640}{10 - 1} = \frac{21{,}6640}{9} \approx \mathbf{2{,}4071}$$
   *(Koenig-Huygens : $s^2 = \frac{6\,402{,}34 - 10 \times 25{,}26^2}{9} = \frac{6\,402{,}34 - 6\,380{,}676}{9} = \frac{21{,}664}{9} \approx 2{,}4071$.)*
   $$s = \sqrt{2{,}4071} \approx \mathbf{1{,}5515\%}$$
 
-#### 2. Statistique $t$, lecture de la table de Student et décision
+### 3. Statistique de Student $t(9)$, lecture de table et décision
+*Pourquoi Student $t(9)$ et pas la loi normale $Z$ ?* Trois indices sont réunis : la loi est normale, tu ne connais pas $\sigma$ (tu utilises $s$) et ton échantillon est petit ($n = 10 < 30$). Comme $s$ est estimé sur peu de données, tu prends la marge de sécurité de **Student $t(9)$**. *En clair : `t_obs = (Moyenne des 10 communes - Norme 25) ÷ (Écart-type corrigé ÷ √10)`.*
 1. **Erreur standard ($\text{ES}$) :**
    $$\text{ES} = \frac{s}{\sqrt{n}} = \frac{1{,}5515}{\sqrt{10}} = \frac{1{,}5515}{3{,}1623} \approx \mathbf{0{,}4906\%}$$
 2. **Statistique observée ($t_{\text{obs}}$) :**
    $$t_{\text{obs}} = \frac{\bar{x} - \mu_0}{\text{ES}} = \frac{25{,}26 - 25}{0{,}4906} = \frac{+0{,}26}{0{,}4906} \approx \mathbf{+0{,}5299} \sim t(9)$$
-3. **Seuil critique :** en unilatéral gauche à $\alpha = 2{,}5\%$, on lit l'Annexe C à la ligne $\nu = 10 - 1 = 9$ et dans la colonne bilatérale $2\alpha = 0{,}050$ : la valeur critique vaut $-t_{9,\, 0{,}975} = \mathbf{-2{,}2622}$ (région de rejet $]-\infty \,;\, -2{,}2622[$).
+3. **Lecture de l'Annexe C :** La table de Student donne le risque **bilatéral** (les deux queues ensemble). Ici ton test est **unilatéral à gauche à $\alpha = 2{,}5\%$**, donc tu cherches la colonne où chaque queue vaut $2{,}5\%$, c'est-à-dire la colonne bilatérale **$2\alpha = 5\% = 0{,}050$** à la ligne $\nu = 9$. Ça donne $-t_{9,\, 0{,}975} = \mathbf{-2{,}2622}$ (on rejette si $t_{\text{obs}} < -2{,}2622$).
 
 > [!check] Conclusion concrète
-> Comme $t_{\text{obs}} = +0{,}53 > -2{,}2622$ ($p = 0{,}6090$ en bilatéral), **on ne rejette pas $H_0$** : les communes respectent statistiquement le quota en moyenne à $\alpha = 2{,}5\%$ *(nuance critique : $7$ communes sur $10$ sont légèrement sous $25\%$, la moyenne étant tirée vers le haut par l'observation extrême à $29{,}5\%$)*.
+> Comme $t_{\text{obs}} = +0{,}53 > -2{,}2622$ ($p = 0{,}6090$ en bilatéral), **on ne rejette pas $H_0$** : en moyenne, le quota de $25\%$ est respecté *(petit bémol à noter : regarde le tableau, **$7$ communes sur $10$** sont en dessous de $25\%$ ; c'est juste la commune n° 5 à $29{,}5\%$ qui tire toute la moyenne vers le haut)*.
 
 ---
 
@@ -420,36 +327,8 @@ $$H_0 : \mu \ge 25\% \ (\text{norme respectée}) \qquad \text{contre} \qquad H_1
 > `x_i = 0 (1h), 1 (4h), 2 (7h), 3 (11h), 4 (10h), 5 (9h), 6 (5h), 7 (3h), 8 (2h), 9 (1h)`.
 > On demande d'estimer l'espérance et la variance, de tester l'ajustement à la loi candidate au risque $\alpha = 5\%$, puis de trouver combien d'opérateurs (capacité $7$ appels/h chacun) couvrent au moins $95\%$ des appels.
 
-> [!info] Comprendre la logique (terre à terre)
-> **Pourquoi fusionner les petites classes jusqu'à $E_i \ge 5$ ?**
-> Regarde la fraction $\frac{(O_i - E_i)^2}{E_i}$ : si $E_i$ est minuscule (par ex. $E_0 = 0{,}97$), un écart banal de $1$ appel divise par $0{,}97$ et fait exploser artificiellement le $\chi^2$. Exiger $E_i \ge 5$ garantit que la statistique suit bien la loi du $\chi^2$.
->
-> **Pourquoi retirer $1 + 1 = 2$ aux degrés de liberté ?**
-> On part de $6$ classes après regroupement. On perd $1$ ddl car le total est fixé à $53$, et on perd encore $1$ ddl parce que le paramètre $\lambda = 4$ n'était pas connu d'avance mais estimé sur l'échantillon. Il reste $6 - 2 = 4$ ddl.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | « tester l'ajustement à la loi candidate » | Comparer des effectifs observés à une loi théorique : test d'ajustement du $\chi^2$. |
-> | Comptage horaire avec $\bar{x} = 4{,}00 \approx s^2 = 3{,}92$ | Loi candidate = Poisson $\mathcal{P}(\lambda = 4)$ ; $\lambda$ estimé retire $1$ ddl ($\nu = c - 1 - 1$). |
-> | « couvrent au moins $95\%$ des appels » | Additionner les probabilités $P(X \le k)$ jusqu'à atteindre $0{,}95$. |
-> 
-> **Donc :** $\chi^2$ d'ajustement avec regroupement $E_i \ge 5$ et $\nu = c - 1 - 1$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$\bar{x} = \frac{1}{n}\sum N_i x_i, \qquad \bar{s}^2 = \frac{1}{n}\sum N_i (x_i - \bar{x})^2 = \frac{1}{n}\sum N_i x_i^2 - \bar{x}^2, \qquad s^2 = \frac{1}{n - 1}\sum N_i (x_i - \bar{x})^2$$
-$$p_k = e^{-\lambda}\frac{\lambda^k}{k!}, \qquad E_k = n \cdot p_k, \qquad \chi^2_{\text{obs}} = \sum_{i=1}^{c} \frac{(O_i - E_i)^2}{E_i}, \qquad \nu = c - 1 - p$$
-
-**En français simple :**
-`Moyenne = Somme de (Nb d'heures × Nb d'appels) ÷ 53`
-`Effectif attendu E_k = 53 × Probabilité théorique de Poisson`
-`χ² observé = Somme des (Nb d'heures réel - Nb d'heures théorique)² ÷ Nb d'heures théorique`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Espérance, variance et loi candidate ($n = 53$ heures)
-On construit le tableau des effectifs pour calculer $\bar{x}$, $\bar{s}^2$ et $s^2$ :
+### 1. Moyenne, variances pondérées et choix de la loi de Poisson ($n = 53$ heures)
+Les données sont regroupées dans un tableau d'effectifs (chaque valeur $x_i$ revient $N_i$ fois), donc on multiplie par $N_i$ à chaque ligne. On calcule la moyenne $\bar{x}$, la variance empirique $\bar{s}^2$ ($\div 53$, qui décrit juste ces $53$ heures) et la variance corrigée sans biais $s^2$ ($\div 52$, car on calcule autour de $\bar{x}$ tirée de ces mêmes $53$ heures, ce qui tasse un peu les écarts et oblige à diviser par $n - 1$ pour estimer la réalité).
 
 | $x_i$ (appels/h) | $N_i$ (heures) | $N_i x_i$ | $x_i - \bar{x}$ | $N_i(x_i - \bar{x})^2$ | $N_i x_i^2$ *(Koenig-Huygens)* |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -474,10 +353,10 @@ On construit le tableau des effectifs pour calculer $\bar{x}$, $\bar{s}^2$ et $s
   $$s^2 = \frac{1}{n - 1}\sum N_i(x_i - \bar{x})^2 = \frac{204}{53 - 1} = \frac{204}{52} \approx \mathbf{3{,}9231}$$
   *(Vérification Koenig-Huygens : $s^2 = \frac{1\,052 - 53 \times 4^2}{52} = \frac{1\,052 - 848}{52} = \frac{204}{52} \approx 3{,}9231$.)*
 
-Comme $\bar{x} = 4{,}00 \approx s^2 = 3{,}9231$ sur un comptage discret d'événements par heure, on propose et teste l'ajustement à une **loi de Poisson $\mathcal{P}(\lambda = 4)$** ($H_0 : X \sim \mathcal{P}(4)$ contre $H_1 : X \not\sim \mathcal{P}(4)$).
+*Pourquoi choisir la loi de Poisson $\mathcal{P}(4)$ ?* Deux trucs le montrent tout de suite : tu comptes des événements entiers ($0, 1, 2, \dots$ appels) sur $1$ heure fixe, et la moyenne est presque égale à la variance ($\bar{x} = 4{,}00 \approx s^2 = 3{,}9231$). C'est le signal clair de la **loi de Poisson $\mathcal{P}(\lambda = 4)$**. On teste donc : $H_0 : X \sim \mathcal{P}(4)$ contre $H_1 : X \not\sim \mathcal{P}(4)$.
 
-#### 2. Test d'ajustement du $\chi^2$ au risque $\alpha = 5\%$
-On calcule les probabilités théoriques $p_k = e^{-4}\frac{4^k}{k!}$ (avec $e^{-4} \approx 0{,}018316$) et les effectifs attendus $E_k = 53 \times p_k$ **avant regroupement** :
+### 2. Test d'ajustement du Khi-deux ($\alpha = 5\%$)
+*Pourquoi ce test ?* Pour vérifier si nos chiffres réels ($O_k$) collent à la courbe théorique de Poisson, on calcule d'abord la chance théorique $p_k = e^{-4}\frac{4^k}{k!}$ (avec $e^{-4} \approx 0{,}018316$), puis combien d'heures sur $53$ ça devrait donner ($E_k = 53 \times p_k$), et on fait un **$\chi^2$ d'ajustement**.
 
 | $k$ | Calcul de $p_k = e^{-4}\dfrac{4^k}{k!}$ | Probabilité $p_k$ | Calcul de $E_k = 53 \times p_k$ | Effectif attendu $E_k$ |
 | :---: | :--- | :---: | :--- | :---: |
@@ -492,7 +371,7 @@ On calcule les probabilités théoriques $p_k = e^{-4}\frac{4^k}{k!}$ (avec $e^{
 | $8$ | $0{,}018316 \times \frac{4^8}{8!} = 0{,}018316 \times \frac{65\,536}{40\,320}$ | $0{,}02977$ | $53 \times 0{,}029770$ | $1{,}5778$ *(à regrouper)* |
 | $9+$ | $1 - \sum_{k=0}^8 p_k = 1 - 0{,}97864$ | $0{,}02136$ | $53 \times 0{,}021364$ | $1{,}1323$ *(à regrouper)* |
 
-Pour respecter strictement la condition **$E_i \ge 5$** dans chaque classe, on fusionne les classes extrêmes :
+*Pourquoi fusionner les petites lignes jusqu'à $E_i \ge 5$ ?* Regarde la division $\frac{(O_i - E_i)^2}{E_i}$ : si $E_i$ est tout petit (comme $E_0 = 0{,}97$), le moindre écart de $1$ appel divise par $0{,}97$ et fait exploser le $\chi^2$ pour rien. En regroupant les extrêmes pour avoir au moins $E_i \ge 5$, le test reste propre :
 - **Classe `0–2` :** $O = 1 + 4 + 7 = \mathbf{12}$ ; $E = 0{,}9707 + 3{,}8829 + 7{,}7658 = \mathbf{12{,}6195} \ge 5$.
 - **Classe `7 et +` :** $O = 3 + 2 + 1 = \mathbf{6}$ ; $E = 3{,}1556 + 1{,}5778 + 1{,}1323 = \mathbf{5{,}8657} \ge 5$.
 
@@ -506,21 +385,21 @@ Pour respecter strictement la condition **$E_i \ge 5$** dans chaque classe, on f
 | **7 et +** | 6 | 5,8657 | $\frac{(6 - 5{,}8657)^2}{5{,}8657} = \frac{0{,}1343^2}{5{,}8657} = \frac{0{,}0180}{5{,}8657}$ | $0{,}0031$ |
 | **Total ($\sum$)** | **53** | **53,0000** | $0{,}0304 + 0{,}0402 + 0{,}0121 + 0{,}0620 + 0{,}0494 + 0{,}0031$ | **$\chi^2_{\text{obs}} = 0{,}1972$** |
 
-Nombre de degrés de liberté ($c = 6$ classes après regroupement, $p = 1$ paramètre $\lambda$ estimé sur les données) :
+*Pourquoi $\nu = 6 - 1 - 1 = 4$ ?* On a $c = 6$ lignes après regroupement. On enlève $1$ parce que le total doit faire $53$, et encore $p = 1$ parce qu'on a dû estimer $\lambda = 4$ à partir de nos données (au lieu de le connaître d'avance) :
 $$\nu = c - 1 - p = 6 - 1 - 1 = \mathbf{4}$$
-En Annexe B ($\nu = 4$, colonne `0,05`), $\chi^2_{0{,}95}(4) = \mathbf{9{,}4877}$. Comme $\chi^2_{\text{obs}} = 0{,}1972 \ll 9{,}4877$ ($p = 0{,}9954$), on ne rejette pas $H_0$ : l'ajustement à $\mathcal{P}(4)$ est excellent. *(Avec le regroupement $\{0,1\}$ [$E=4{,}85$] et $\{6+\}$, $\chi^2 = 0{,}2075$, même conclusion.)*
+En Annexe B ($\nu = 4$, colonne `0,05`), $\chi^2_{0{,}95}(4) = \mathbf{9{,}4877}$. Comme $\chi^2_{\text{obs}} = 0{,}1972 \ll 9{,}4877$ ($p = 0{,}9954$), on ne rejette pas $H_0$ : nos données collent super bien à $\mathcal{P}(4)$. *(Avec le regroupement $\{0,1\}$ [$E=4{,}85$] et $\{6+\}$, $\chi^2 = 0{,}2075$, même conclusion.)*
 
-#### 3. Nombre d'opérateurs pour répondre à au moins $95\%$ des appels
-Un opérateur traite au plus $7$ appels/h. Sous $X \sim \mathcal{P}(4)$, on additionne les probabilités $p_k$ calculées à la question 2 :
-- **Pour $1$ opérateur ($X \le 7$) :**
+### 3. Nombre d'opérateurs pour couvrir au moins $95\%$ des appels
+Maintenant qu'on sait que $\mathcal{P}(4)$ marche, on additionne les chances $p_k$ depuis $k = 0$ jusqu'à dépasser $0{,}95$ :
+- **Avec $1$ opérateur (max $7$ appels/h, soit $X \le 7$) :**
   $$P(X \le 7) = \sum_{k=0}^{7} p_k = 0{,}01832 + 0{,}07326 + 0{,}14653 + 0{,}19537 + 0{,}19537 + 0{,}15629 + 0{,}10420 + 0{,}05954 = \mathbf{0{,}94887} \quad (94{,}89\% < 95\%)$$
-  Un seul opérateur ne couvre que $94{,}89\%$ des heures : c'est juste en dessous de $95\%$.
-- **Pour $X \le 8$ (donc $2$ opérateurs de capacité cumulée $2 \times 7 = 14$ appels/h) :**
+  Un seul opérateur s'arrête à $94{,}89\%$ : il en manque un tout petit peu pour atteindre $95\%$.
+- **En ajoutant $X = 8$ (donc il faut $2$ opérateurs, capacité $2 \times 7 = 14$ appels/h) :**
   $$P(X \le 8) = P(X \le 7) + p_8 = 0{,}94887 + 0{,}02977 = \mathbf{0{,}97864} \quad (97{,}86\% \ge 95\%)$$
-  Et avec $2$ opérateurs (capacité $14$ appels/h), la couverture réelle atteint $P(X \le 14) \approx \mathbf{99{,}998\%}$.
+  Et avec $2$ opérateurs (jusqu'à $14$ appels/h), la couverture réelle monte à $P(X \le 14) \approx \mathbf{99{,}998\%}$.
 
 > [!check] Conclusion concrète
-> L'ajustement à $\mathcal{P}(4)$ est validé ($\chi^2 = 0{,}1972 < 9{,}4877$) et il faut employer **2 opérateurs** (capacité cumulée de $14$ appels/h, couvrant $99{,}998\%$ des heures).
+> La loi de Poisson $\mathcal{P}(4)$ est validée ($\chi^2 = 0{,}1972 < 9{,}4877$) et il faut **2 opérateurs** pour couvrir au moins $95\%$ des heures (ils couvrent en fait $99{,}998\%$ des heures).
 
 ---
 
@@ -529,45 +408,23 @@ Un opérateur traite au plus $7$ appels/h. Sous $X \sim \mathcal{P}(4)$, on addi
 > [!question] Énoncé résumé & Données
 > À Lomé, $k_1 = 1\,040$ personnes sur $n_1 = 2\,000$ utilisent régulièrement le paiement mobile. À Kara, elles sont $k_2 = 915$ sur $n_2 = 1\,500$. Ces taux diffèrent-ils au risque $\alpha = 5\%$ ?
 
-> [!info] Comprendre la logique (terre à terre)
-> **À quoi sert la proportion poolée $F$ ?**
-> Sous $H_0$, on suppose que Lomé et Kara ont **exactement le même taux d'usage** $p_1 = p_2 = p$. Si c'est le même taux dans les deux villes, le moyen le plus précis de l'estimer est de mélanger tout le monde dans un seul panier de $3\,500$ sondés.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Deux villes indépendantes (Lomé / Kara), deux pourcentages, « diffèrent-ils ? » | Comparaison de deux proportions, test bilatéral ($p_1 \ne p_2$). |
-> | Grands effectifs ($2\,000$ et $1\,500$) | Test $Z$ avec proportion poolée $F$, car sous $H_0$ on suppose $p_1 = p_2$. |
-> 
-> **Donc :** test $Z$ de comparaison de deux proportions avec fréquence commune $F$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$f_1 = \frac{k_1}{n_1}, \qquad f_2 = \frac{k_2}{n_2}, \qquad H_0 : p_1 = p_2 \quad \text{vs} \quad H_1 : p_1 \ne p_2$$
-$$F = \frac{k_1 + k_2}{n_1 + n_2}, \qquad z_{\text{obs}} = \frac{f_1 - f_2}{\sqrt{F(1 - F)\left(\dfrac{1}{n_1} + \dfrac{1}{n_2}\right)}}$$
-
-**En français simple :**
-`Taux commun F = Total utilisateurs (Lomé + Kara) ÷ Total sondés (Lomé + Kara)`
-`Score Z = (Taux Lomé - Taux Kara) ÷ Erreur standard calculée avec F`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et proportion poolée $F$
-On calcule d'abord les deux proportions observées :
-$$f_1 = \frac{1\,040}{2\,000} = \mathbf{0{,}52} \ (52\%), \qquad f_2 = \frac{915}{1\,500} = \mathbf{0{,}61} \ (61\%)$$
-On teste $H_0 : p_1 = p_2$ contre $H_1 : p_1 \ne p_2$ (test bilatéral sur deux grands échantillons indépendants). Sous $H_0$, la proportion commune (poolée) vaut :
+### 1. Hypothèses et proportion commune (poolée) $F$
+On compare deux pourcentages sur deux villes différentes ; comme on demande « diffèrent-ils ? » sans préciser qui est devant, c'est un **test bilatéral** ($H_0 : p_1 = p_2$ contre $H_1 : p_1 \ne p_2$).
+$$f_1 = \frac{k_1}{n_1} = \frac{1\,040}{2\,000} = \mathbf{0{,}52} \ (52\%), \qquad f_2 = \frac{k_2}{n_2} = \frac{915}{1\,500} = \mathbf{0{,}61} \ (61\%)$$
+*À quoi sert la proportion poolée $F$ ?* Sous $H_0$, on fait comme si Lomé et Kara avaient **exactement le même taux** $p_1 = p_2 = p$. Pour estimer ce taux commun le plus proprement possible, on met tout le monde dans le même panier ($3\,500$ personnes). *En clair : `Taux commun F = Total utilisateurs ÷ Total sondés`.*
 $$F = \frac{k_1 + k_2}{n_1 + n_2} = \frac{1\,040 + 915}{2\,000 + 1\,500} = \frac{1\,955}{3\,500} \approx \mathbf{0{,}5586} \implies 1 - F = 1 - 0{,}5586 = \mathbf{0{,}4414}$$
 
-#### 2. Statistique $Z$ et décision ($\alpha = 5\%$)
-1. **Calcul de l'erreur standard poolée (dénominateur) :**
+### 2. Statistique $Z$ et décision ($\alpha = 5\%$)
+Les deux groupes sont grands ($2\,000$ et $1\,500$) et séparés, donc on utilise la **loi normale $Z$** :
+1. **Erreur standard poolée (dénominateur) :**
    $$\frac{1}{n_1} + \frac{1}{n_2} = \frac{1}{2\,000} + \frac{1}{1\,500} = 0{,}0005 + 0{,}0006667 = 0{,}0011667$$
-   $$\text{ES} = \sqrt{0{,}5586 \times 0{,}4414 \times 0{,}0011667} = \sqrt{0{,}0002877} \approx \mathbf{0{,}01696}$$
-2. **Statistique observée ($z_{\text{obs}}$) :**
+   $$\text{ES} = \sqrt{F(1 - F)\left(\frac{1}{n_1} + \frac{1}{n_2}\right)} = \sqrt{0{,}5586 \times 0{,}4414 \times 0{,}0011667} = \sqrt{0{,}0002877} \approx \mathbf{0{,}01696}$$
+2. **Statistique observée ($z_{\text{obs}}$) :** *En clair : `Score Z = (Taux Lomé - Taux Kara) ÷ Erreur standard`.*
    $$z_{\text{obs}} = \frac{f_1 - f_2}{\text{ES}} = \frac{0{,}52 - 0{,}61}{0{,}01696} = \frac{-0{,}09}{0{,}01696} \approx \mathbf{-5{,}3064}$$
-À $\alpha = 5\%$ bilatéral, le seuil critique lu en Annexe A.1 ($\Phi(u) = 0{,}9750$) est $z_{\text{crit}} = \pm 1{,}96$.
+3. **Seuil critique :** À $\alpha = 5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), le seuil vaut $z_{\text{crit}} = \pm 1{,}96$.
 
 > [!check] Conclusion concrète
-> Comme $|z_{\text{obs}}| = 5{,}31 > 1{,}96$ ($p < 10^{-6}$), **on rejette catégoriquement $H_0$** : le taux d'utilisation du paiement mobile est significativement plus élevé à Kara ($61\%$) qu'à Lomé ($52\%$).
+> Comme $|z_{\text{obs}}| = 5{,}31 > 1{,}96$ ($p < 10^{-6}$), **on rejette $H_0$ sans hésiter** : on utilise vraiment beaucoup plus le paiement mobile à Kara ($61\%$) qu'à Lomé ($52\%$).
 
 ---
 
@@ -576,48 +433,24 @@ $$F = \frac{k_1 + k_2}{n_1 + n_2} = \frac{1\,040 + 915}{2\,000 + 1\,500} = \frac
 > [!question] Énoncé résumé & Données
 > Une compagnie d'assurance étudie le nombre de nouveaux clients obtenus par $n = 48$ agents généraux répartis dans $K = 7$ régions du Togo. On demande d'interpréter $\overline{X}_k$ et $\overline{X}$, de démontrer l'équation de décomposition de variance, de calculer $V_T^2, V_A^2, V_R^2$ et de conclure l'ANOVA au seuil $\alpha = 5\%$.
 
-> [!info] Comprendre la logique (terre à terre)
-> **Pourquoi le double produit disparaît-il dans la démonstration ?**
-> Parce que dans chaque région $k$, la somme des écarts à sa propre moyenne vaut toujours **zéro** ($\sum (X_k^i - \overline{X}_k) = 0$). C'est ce qui rend la décomposition $V_T^2 = V_R^2 + V_A^2$ aussi propre que le théorème de Pythagore.
->
-> **Pourquoi tester des moyennes avec un rapport de variances $F$ ?**
-> Si la campagne avait le même effet partout, les moyennes des $7$ régions seraient très proches les unes des autres ($V_A^2$ petit) comparé au bruit interne entre agents d'une même région ($V_R^2$). Un grand $F$ ($5{,}42$) prouve que les écarts entre régions dépassent largement le bruit interne.
+### 1. Interprétation de $\overline{X}_k$ et $\overline{X}$
+- $\overline{X}_k$ est le **nombre moyen de nouveaux clients par agent dans la région $k$**.
+- $\overline{X}$ est la **moyenne globale** sur les $48$ agents. Comme les régions n'ont pas toutes le même nombre d'agents $n_k$, il faut pondérer chaque région par son effectif : $\overline{X} = \frac{1}{n}\sum_{k=1}^K n_k \overline{X}_k$.
 
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | $K = 7$ régions à comparer simultanément | Faire $21$ tests $t$ deux à deux ferait exploser le risque d'erreur $\alpha$ : utiliser l'ANOVA. |
-> | Décomposition $V_T^2 = V_R^2 + V_A^2$ | Mesurer si la variance entre régions dépasse la variance interne résiduelle. |
-> 
-> **Donc :** ANOVA à 1 facteur avec $F_{\text{obs}} = \frac{\text{MS}_A}{\text{MS}_R}$.
+### 2. Démonstration de $V_T^2 = V_R^2 + V_A^2$
+*Pourquoi le bloc du milieu disparaît ?* Parce que dans chaque région $k$, quand tu additionnes les écarts en plus et en moins autour de la moyenne $\overline{X}_k$ de cette région, ça fait toujours **zéro** ($\sum (X_k^i - \overline{X}_k) = 0$). Du coup tout le double produit tombe à $0$, exactement comme un théorème de Pythagore.
 
-### Les formules utilisées
-**Formules mathématiques :**
-$$\overline{X} = \frac{1}{n}\sum_{k=1}^K n_k \overline{X}_k, \qquad V_T^2 = V_R^2 + V_A^2$$
-$$V_A^2 = \frac{1}{n}\sum_{k=1}^K n_k (\overline{X}_k - \overline{X})^2, \qquad V_R^2 = \frac{1}{n}\sum_{k=1}^K n_k v_k^2$$
-$$\text{SC}_A = n V_A^2, \qquad \text{SC}_R = n V_R^2, \qquad F_{\text{obs}} = \frac{\text{MS}_A}{\text{MS}_R} = \frac{\text{SC}_A / (K - 1)}{\text{SC}_R / (n - K)}$$
-
-**En français simple :**
-`Variance Totale = Bruit interne aux régions (V_R²) + Écart entre régions (V_A²)`
-`F = Variance moyenne entre régions (÷ 6) ÷ Variance moyenne interne (÷ 41)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Interprétation de $\overline{X}_k$ et $\overline{X}$
-- $\overline{X}_k$ est le **nombre moyen de nouveaux clients par agent général dans la région $k$**.
-- $\overline{X}$ est la **moyenne globale** (tous agents confondus sur l'ensemble des $n = 48$ agents des $7$ zones).
-
-#### 2. Démonstration de l'équation d'analyse de variance ($V_T^2 = V_R^2 + V_A^2$)
 Partons de $X_k^i - \overline{X} = (X_k^i - \overline{X}_k) + (\overline{X}_k - \overline{X})$. En élevant au carré et en sommant sur $k = 1 \dots K$ et $i = 1 \dots n_k$ :
 $$\sum_{k=1}^K \sum_{i=1}^{n_k} (X_k^i - \overline{X})^2 = \sum_{k=1}^K \sum_{i=1}^{n_k} (X_k^i - \overline{X}_k)^2 + \sum_{k=1}^K \sum_{i=1}^{n_k} (\overline{X}_k - \overline{X})^2 + 2\sum_{k=1}^K (\overline{X}_k - \overline{X})\underbrace{\sum_{i=1}^{n_k} (X_k^i - \overline{X}_k)}_{= 0}$$
-Or, par définition de la moyenne $\overline{X}_k$, $\sum_{i=1}^{n_k} (X_k^i - \overline{X}_k) = n_k\overline{X}_k - n_k\overline{X}_k = 0$ pour tout $k$. Le terme rectangle s'annule donc identiquement. Comme $(\overline{X}_k - \overline{X})^2$ ne dépend pas de $i$, sa somme sur $i = 1 \dots n_k$ vaut $n_k(\overline{X}_k - \overline{X})^2$. En divisant par $n$ :
+Or $\sum_{i=1}^{n_k} (X_k^i - \overline{X}_k) = n_k\overline{X}_k - n_k\overline{X}_k = 0$ pour tout $k$. Le double produit s'annule donc complètement. Comme $(\overline{X}_k - \overline{X})^2$ ne dépend pas de $i$, sa somme sur $i = 1 \dots n_k$ vaut $n_k(\overline{X}_k - \overline{X})^2$. En divisant par $n$ :
 $$\underbrace{\frac{1}{n}\sum_{k=1}^K \sum_{i=1}^{n_k} (X_k^i - \overline{X})^2}_{V_T^2} = \underbrace{\frac{1}{n}\sum_{k=1}^K \sum_{i=1}^{n_k} (X_k^i - \overline{X}_k)^2}_{V_R^2} + \underbrace{\frac{1}{n}\sum_{k=1}^K n_k (\overline{X}_k - \overline{X})^2}_{V_A^2} \quad \blacksquare$$
 
-#### 3. Calcul numérique de $V_T^2$, $V_A^2$ et $V_R^2$
-On commence par trouver la moyenne globale $\overline{X}$ via la somme des $n_k \bar{x}_k$ :
-$$\overline{X} = \frac{1}{n}\sum_{k=1}^7 n_k \bar{x}_k = \frac{241{,}92 + 156{,}38 + 136{,}78 + 113{,}70 + 190{,}19 + 155{,}22 + 154{,}32}{48} = \frac{1\,148{,}51}{48} \approx \mathbf{23{,}9273}$$
+### 3. Calcul numérique de $V_T^2$, $V_A^2$ et $V_R^2$
+*Pourquoi diviser ici par $n = 48$ ?* Cette question demande les variances empiriques de la formule $V_T^2 = V_R^2 + V_A^2$ qu'on vient de prouver (juste après, en Q4, on divise les sommes des carrés $\text{SC}_A = nV_A^2$ et $\text{SC}_R = nV_R^2$ par $K - 1$ et $n - K$ pour le test $F$).
 
-On remplit ensuite chaque ligne du tableau (ex. pour la **Région 1** : $n_1\bar{x}_1 = 9 \times 26{,}88 = 241{,}92$, $n_1(\bar{x}_1 - \bar{x})^2 = 9 \times (26{,}88 - 23{,}9273)^2 = 78{,}4664$, et $n_1 v_1^2 = 9 \times 13{,}54 = 121{,}86$) :
+1. **Moyenne globale :**
+   $$\overline{X} = \frac{1}{n}\sum_{k=1}^7 n_k \bar{x}_k = \frac{241{,}92 + 156{,}38 + 136{,}78 + 113{,}70 + 190{,}19 + 155{,}22 + 154{,}32}{48} = \frac{1\,148{,}51}{48} \approx \mathbf{23{,}9273}$$
+2. **Tableau de calcul** (ex. pour la **Région 1** : $n_1\bar{x}_1 = 9 \times 26{,}88 = 241{,}92$, $n_1(\bar{x}_1 - \bar{x})^2 = 9 \times (26{,}88 - 23{,}9273)^2 = 78{,}4664$, et $n_1 v_1^2 = 9 \times 13{,}54 = 121{,}86$) :
 
 | Région $k$ | $n_k$ | $\bar{x}_k$ | $v_k^2$ | $n_k\bar{x}_k$ | $n_k(\bar{x}_k - \bar{x})^2$ | $n_k v_k^2$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -630,14 +463,14 @@ On remplit ensuite chaque ligne du tableau (ex. pour la **Région 1** : $n_1\bar
 | 7 | 6 | $25{,}72$ | $12{,}64$ | $154{,}32$ | $19{,}2828$ | $75{,}84$ |
 | **Total ($\sum$)** | **$48$** | — | — | **$1\,148{,}51$** | **$495{,}0154$** | **$623{,}99$** |
 
-On divise chaque somme des carrés par $n = 48$ :
-$$V_A^2 = \frac{1}{n}\sum n_k(\bar{x}_k - \bar{x})^2 = \frac{495{,}0154}{48} \approx \mathbf{10{,}3128}$$
-$$V_R^2 = \frac{1}{n}\sum n_k v_k^2 = \frac{623{,}99}{48} \approx \mathbf{12{,}9998}$$
-$$V_T^2 = V_A^2 + V_R^2 = 10{,}3128 + 12{,}9998 = \mathbf{23{,}3126}$$
-*(Note : si les variances du tableau étaient déjà corrigées par $n_k - 1$, on aurait $V_R^2 = \frac{533{,}20}{48} = 11{,}1083$ et $V_T^2 = 10{,}3128 + 11{,}1083 = 21{,}4212$.)*
+3. **Calcul des trois variances :**
+   $$V_A^2 = \frac{1}{n}\sum n_k(\bar{x}_k - \bar{x})^2 = \frac{495{,}0154}{48} \approx \mathbf{10{,}3128}$$
+   $$V_R^2 = \frac{1}{n}\sum n_k v_k^2 = \frac{623{,}99}{48} \approx \mathbf{12{,}9998}$$
+   $$V_T^2 = V_A^2 + V_R^2 = 10{,}3128 + 12{,}9998 = \mathbf{23{,}3126}$$
+   *(Note : si les variances du tableau étaient déjà corrigées par $n_k - 1$, on aurait $V_R^2 = \frac{533{,}20}{48} = 11{,}1083$ et $V_T^2 = 10{,}3128 + 11{,}1083 = 21{,}4212$.)*
 
-#### 4. Finalisation de l'ANOVA ($\alpha = 5\%$)
-On teste $H_0 : \mu_1 = \mu_2 = \dots = \mu_7$ contre $H_1 :$ au moins une région diffère :
+### 4. Tableau ANOVA, statistique $F$ de Fisher et décision ($\alpha = 5\%$)
+*Pourquoi une ANOVA au lieu de comparer les régions deux par deux ?* Avec $7$ régions, ça ferait $21$ tests $t$ à la suite et le risque de se tromper exploserait. L'ANOVA compare tout d'un coup ($H_0 : \mu_1 = \mu_2 = \dots = \mu_7$ vs $H_1 :$ au moins une région diffère) avec un seul chiffre $F$ : l'écart moyen *entre* régions ($\text{MS}_A = \text{SC}_A \div (K - 1)$) divisé par le bruit interne *dans* les régions ($\text{MS}_R = \text{SC}_R \div (n - K)$).
 - $\text{SC}_A = 495{,}0154$ avec $\text{ddl}_A = K - 1 = 7 - 1 = \mathbf{6} \implies \text{MS}_A = \frac{\text{SC}_A}{K - 1} = \frac{495{,}0154}{6} = \mathbf{82{,}5026}$
 - $\text{SC}_R = 623{,}9900$ avec $\text{ddl}_R = n - K = 48 - 7 = \mathbf{41} \implies \text{MS}_R = \frac{\text{SC}_R}{n - K} = \frac{623{,}9900}{41} = \mathbf{15{,}2193}$
 - Statistique de Fisher :
@@ -652,7 +485,7 @@ On teste $H_0 : \mu_1 = \mu_2 = \dots = \mu_7$ contre $H_1 :$ au moins une régi
 En Annexe D.1 ($\nu_1 = 6$, $\nu_2 = 40$), $F_{0{,}05}(6, 40) = 2{,}34$ (soit $F_{0{,}05}(6, 41) \approx \mathbf{2{,}33}$).
 
 > [!check] Conclusion concrète
-> Comme $F_{\text{obs}} = 5{,}42 > 2{,}33$, **on rejette $H_0$** : l'impact de la campagne publicitaire varie significativement d'une région à l'autre.
+> Comme $F_{\text{obs}} = 5{,}42 > 2{,}33$, **on rejette $H_0$** : la campagne publicitaire n'a pas eu le même effet dans toutes les régions.
 
 ---
 
@@ -661,47 +494,26 @@ En Annexe D.1 ($\nu_1 = 6$, $\nu_2 = 40$), $F_{0{,}05}(6, 40) = 2{,}34$ (soit $F
 > [!question] Énoncé résumé & Données
 > Dans une école primaire de Lomé, on mesure $n_1 = 41$ garçons ($\bar{x}_1 = 107\text{ cm}$, $v_1 = 8\text{ cm}$, Shapiro-Wilk $p_1 = 0{,}82$) et $n_2 = 61$ filles ($\bar{x}_2 = 104\text{ cm}$, $v_2 = 9\text{ cm}$, Shapiro-Wilk $p_2 = 0{,}21$). Peut-on affirmer que les garçons sont plus grands au risque $\alpha = 5\%$ ?
 
-> [!info] Comprendre la logique (terre à terre)
-> **À quoi servent Shapiro-Wilk et Fisher avant la formule finale ?**
-> C'est le contrôle technique avant de rouler : Shapiro-Wilk vérifie la normalité de chaque groupe ($p > 0{,}05 \implies$ OK), et le quotient $F = v_{\max}^2 / v_{\min}^2$ vérifie que les deux groupes ont une dispersion comparable ($F < F_{\text{crit}} \implies$ OK).
->
-> **Pourquoi $z_{\text{crit}} = 1{,}6449$ au lieu de $1{,}96$ ?**
-> Le test est **unilatéral droit** ($H_1 : \mu_1 > \mu_2$) : tout le risque $\alpha = 5\%$ est concentré dans la queue droite, donc $\Phi(u) = 1 - 0{,}05 = 0{,}9500 \implies z_{0{,}95} = 1{,}6449$.
+### 1. Vérification des prérequis (Shapiro-Wilk et Fisher)
+Avant de comparer les moyennes, on vérifie deux feux verts :
+- **Shapiro-Wilk :** vérifie si les tailles suivent une loi normale ($p > 0{,}05 \implies$ feu vert). Ici $p_1 = 0{,}82 > 0{,}05$ et $p_2 = 0{,}21 > 0{,}05$ $\implies$ c'est bon.
+- **Test de Fisher :** le cours appelle ça l'**homoscédasticité**, mais en vrai ça veut juste dire : est-ce que les deux groupes ont à peu près les mêmes écarts ? On met la plus grande variance en haut et on compare à l'Annexe D.2 ($\alpha = 0{,}025$, $\nu_1 = 60$, $\nu_2 = 40$) :
+  $$F_{\text{hom}} = \frac{v_2^2}{v_1^2} = \frac{9^2}{8^2} = \frac{81}{64} = \mathbf{1{,}2656} < F_{0{,}025}(60, 40) \approx 1{,}84 \quad (\text{écarts comparables, feu vert})$$
 
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Deux groupes indépendants (garçons/filles), « sont plus grands » | Comparaison de deux moyennes, test unilatéral droit ($\mu_1 > \mu_2$). |
-> | $n_1 = 41$, $n_2 = 61$ (grands), Shapiro-Wilk + variances données | Vérifier normalité puis homoscédasticité ($F$) avant de calculer la statistique $N$. |
-> 
-> **Donc :** $N_{\text{obs}} = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{v_1^2/n_1 + v_2^2/n_2}}$ comparé au seuil unilatéral $z_{0{,}95} = 1{,}6449$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$F_{\text{hom}} = \frac{v_2^2}{v_1^2}, \qquad H_0 : \mu_1 = \mu_2 \quad \text{vs} \quad H_1 : \mu_1 > \mu_2, \qquad N_{\text{obs}} = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\dfrac{v_1^2}{n_1} + \dfrac{v_2^2}{n_2}}}$$
-
-**En français simple :**
-`Statistique N = (Moyenne garçons - Moyenne filles) ÷ √(Var₁/n₁ + Var₂/n₂)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Vérification des prérequis (normalité et homoscédasticité)
-- **Normalité :** Shapiro-Wilk donne $p_1 = 0{,}82 > 0{,}05$ et $p_2 = 0{,}21 > 0{,}05$ $\implies$ normalité compatible dans les deux groupes.
-- **Égalité des variances :** on met la plus grande variance au numérateur et on lit l'Annexe D.2 ($\alpha = 0{,}025$, $\nu_1 = 60$, $\nu_2 = 40$) :
-  $$F_{\text{hom}} = \frac{v_2^2}{v_1^2} = \frac{9^2}{8^2} = \frac{81}{64} = \mathbf{1{,}2656} < F_{0{,}025}(60, 40) \approx 1{,}84 \quad (\text{homoscédasticité acceptée})$$
-
-#### 2. Hypothèses, statistique de test et décision (unilatéral droit, $\alpha = 5\%$)
+### 2. Hypothèses, statistique $N$ et décision en unilatéral droit ($\alpha = 5\%$)
+On compare deux moyennes de groupes séparés et la question « sont plus grands » donne un **test unilatéral droit** :
 $$H_0 : \mu_1 = \mu_2 \qquad \text{contre} \qquad H_1 : \mu_1 > \mu_2$$
-1. **Calcul de l'erreur standard (dénominateur) :**
+Comme les deux groupes sont grands ($n_1 = 41 \ge 30$ et $n_2 = 61 \ge 30$), on utilise la **loi normale $\mathcal{N}(0, 1)$**. *En clair : `Statistique N = (Moyenne garçons - Moyenne filles) ÷ √(Var₁/n₁ + Var₂/n₂)`.*
+1. **Erreur standard (dénominateur) :**
    $$\frac{v_1^2}{n_1} = \frac{8^2}{41} = \frac{64}{41} \approx 1{,}5610, \qquad \frac{v_2^2}{n_2} = \frac{9^2}{61} = \frac{81}{61} \approx 1{,}3279$$
    $$\text{ES} = \sqrt{1{,}5610 + 1{,}3279} = \sqrt{2{,}8889} \approx \mathbf{1{,}6997}$$
 2. **Statistique observée ($N_{\text{obs}}$) :**
    $$N_{\text{obs}} = \frac{\bar{x}_1 - \bar{x}_2}{\text{ES}} = \frac{107 - 104}{1{,}6997} = \frac{3}{1{,}6997} \approx \mathbf{1{,}7651}$$
-En unilatéral droit à $\alpha = 5\%$ ($\Phi(u) = 0{,}9500$ en Annexe A.1), le seuil critique vaut $z_{0{,}95} = \mathbf{1{,}6449}$ ($p = 1 - \Phi(1{,}7651) = \mathbf{0{,}0388}$).
+3. **Pourquoi le seuil vaut $1{,}6449$ et non $1{,}96$ ?** Comme on teste un seul côté (à droite), on met tout $\alpha = 5\%$ d'un seul côté : tu cherches $\Phi(u) = 1 - 0{,}05 = 0{,}9500$ en Annexe A.1, ce qui donne $z_{0{,}95} = \mathbf{1{,}6449}$ (et $p = 1 - \Phi(1{,}7651) = \mathbf{0{,}0388}$).
 *(Avec le test $t$ poolé à $n_1 + n_2 - 2 = 100$ ddl : $s_p = 8{,}613$, $t_{\text{obs}} = 1{,}7246$, $p_{\text{unilat}} = 0{,}0438$.)*
 
 > [!check] Conclusion concrète
-> Comme $N_{\text{obs}} = 1{,}7651 > z_{0{,}95} = 1{,}6449$ ($p = 0{,}0388 < 0{,}05$), **on rejette $H_0$** : au seuil de $5\%$, les garçons de CP sont statistiquement plus grands en moyenne que les filles.
+> Comme $N_{\text{obs}} = 1{,}7651 > z_{0{,}95} = 1{,}6449$ ($p = 3{,}88\% < 5\%$), **on rejette $H_0$** : au seuil de $5\%$, les garçons de CP sont en moyenne plus grands que les filles.
 
 ---
 
@@ -710,30 +522,8 @@ En unilatéral droit à $\alpha = 5\%$ ($\Phi(u) = 0{,}9500$ en Annexe A.1), le 
 > [!question] Énoncé résumé & Données
 > On mesure en simulateur le temps de réaction (en s) de conducteurs sans alcool puis avec alcool sur $n = 15$ paires d'observations *(bien que l'énoncé introductif mentionne 30 chauffeurs)*. L'alcool a-t-il un effet significatif au risque $\alpha = 5\%$ ?
 
-> [!info] Comprendre la logique (terre à terre)
-> **Pourquoi soustraire paire par paire au lieu de comparer les deux colonnes séparément ?**
-> Un conducteur naturellement rapide met peut-être $0{,}45\text{ s}$ sans alcool et $0{,}52\text{ s}$ avec ; un conducteur lent met $0{,}80\text{ s}$ et $0{,}88\text{ s}$. Si tu mélanges les groupes, la différence entre individus noie l'effet de l'alcool. En calculant $d_i = \text{Avec}_i - \text{Sans}_i$ pour **chaque** conducteur, tu élimines le niveau de base individuel et tu isoles uniquement l'effet de l'alcool.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Mêmes conducteurs mesurés sans alcool puis avec alcool | Données appariées : éliminer l'effet individuel en formant $d_i = \text{Avec}_i - \text{Sans}_i$. |
-> | $n = 15$ paires ($< 30$), $\sigma_d$ inconnu, « a-t-il un effet ? » | Petit échantillon et test bilatéral ($\mu_d \ne 0$) : loi de Student $t(14)$. |
-> 
-> **Donc :** test $t$ de Student apparié sur les différences $d_i$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$d_i = \text{Avec}_i - \text{Sans}_i, \qquad \bar{d} = \frac{1}{n}\sum_{i=1}^n d_i, \qquad s_d^2 = \frac{1}{n - 1}\sum_{i=1}^n (d_i - \bar{d})^2 = \frac{\sum_{i=1}^n d_i^2 - n\bar{d}^2}{n - 1}$$
-$$H_0 : \mu_d = 0 \quad \text{vs} \quad H_1 : \mu_d \ne 0, \qquad \text{ES} = \frac{s_d}{\sqrt{n}}, \qquad t_{\text{obs}} = \frac{\bar{d} - 0}{\text{ES}} \sim t(n - 1)$$
-
-**En français simple :**
-`t_obs = Moyenne des écarts (Avec - Sans) ÷ (Écart-type des écarts ÷ √15)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et calcul des différences appariées ($n = 15$)
-On pose $d_i = \text{Avec}_i - \text{Sans}_i$ et on réalise un test **apparié bilatéral** :
+### 1. Pourquoi travailler sur les différences $d_i$ et calculer $s_d^2$ avec $n - 1 = 14$ ?
+*Pourquoi soustraire paire par paire au lieu de comparer les deux colonnes séparément ?* Un conducteur rapide de base met $0{,}45\text{ s}$ sans alcool et $0{,}52\text{ s}$ avec ; un conducteur lent met $0{,}80\text{ s}$ et $0{,}88\text{ s}$. Si tu compares les deux groupes en vrac, les écarts entre personnes cachent l'effet de l'alcool. Comme ce sont **les mêmes conducteurs** testés deux fois (**données appariées**), tu fais $d_i = \text{Avec}_i - \text{Sans}_i$ pour chacun : ça efface le niveau de base de chaque personne et il ne reste que l'effet pur de l'alcool. La question « a-t-il un effet ? » donne un test **bilatéral** :
 $$H_0 : \mu_d = 0 \qquad \text{contre} \qquad H_1 : \mu_d \ne 0$$
 
 | Paire $i$ | Sans | Avec | $d_i$ | $d_i - \bar{d}$ | $(d_i - \bar{d})^2$ | $d_i^2$ *(Koenig-Huygens)* |
@@ -758,19 +548,21 @@ $$H_0 : \mu_d = 0 \qquad \text{contre} \qquad H_1 : \mu_d \ne 0$$
 - **Moyenne des différences :**
   $$\bar{d} = \frac{1}{n}\sum_{i=1}^{15} d_i = \frac{1{,}18}{15} \approx \mathbf{0{,}0787\text{ s}}$$
 - **Variance corrigée et écart-type des différences :**
+  *Pourquoi on divise par $n - 1 = 14$ et pas par $n = 15$ ?* En fait, tu n'as pas tous les conducteurs du monde, tu as juste $15$ paires. Comme tu calcules les écarts autour de $\bar{d}$ (la moyenne de ces mêmes $15$ paires), tes écarts sont un peu tassés (trop petits par rapport à la réalité). En divisant par $n - 1 = 14$ au lieu de $15$, tu remontes légèrement le résultat pour corriger ça (variance corrigée sans biais), et ça te donne pile ce qu'il faut pour faire un Student à $14$ ddl juste après.
   $$s_d^2 = \frac{1}{n - 1}\sum_{i=1}^{15}(d_i - \bar{d})^2 = \frac{0{,}053573}{15 - 1} = \frac{0{,}053573}{14} \approx \mathbf{0{,}003827}$$
   *(Koenig-Huygens : $s_d^2 = \frac{0{,}1464 - 15 \times (1{,}18/15)^2}{14} = \frac{0{,}1464 - 0{,}092827}{14} \approx 0{,}003827$.)*
   $$s_d = \sqrt{0{,}003827} \approx \mathbf{0{,}0619\text{ s}}$$
 
-#### 2. Statistique $t$, lecture Annexe C et décision
+### 2. Pourquoi utiliser Student $t(14)$, calcul de $t_{\text{obs}}$ et décision ($\alpha = 5\%$)
+*Pourquoi Student et pas la loi normale ?* Parce que tu cumules deux trucs : ton groupe est petit ($n = 15 < 30$) ET tu ne connais pas le vrai écart-type $\sigma_d$ (tu as dû le calculer toi-même avec $s_d$). Du coup tu prends la marge de sécurité de **Student $t(14)$**. *En clair : `t_obs = Moyenne des écarts ÷ (Écart-type corrigé des écarts ÷ √15)`.*
 1. **Erreur standard ($\text{ES}$) :**
    $$\text{ES} = \frac{s_d}{\sqrt{n}} = \frac{0{,}06186}{\sqrt{15}} = \frac{0{,}06186}{3{,}8730} \approx \mathbf{0{,}01597\text{ s}}$$
 2. **Statistique observée ($t_{\text{obs}}$) :**
-   $$t_{\text{obs}} = \frac{\bar{d}}{\text{ES}} = \frac{0{,}07867}{0{,}01597} \approx \mathbf{4{,}9252} \sim t(14)$$
-3. **Seuil critique :** en Annexe C ($\nu = 15 - 1 = 14$, colonne bilatérale `0,050`), la valeur critique vaut $t_{\text{crit}} = \mathbf{2{,}1448}$ ($p = 0{,}00022$).
+   $$t_{\text{obs}} = \frac{\bar{d} - 0}{\text{ES}} = \frac{0{,}07867}{0{,}01597} \approx \mathbf{4{,}9252} \sim t(14)$$
+3. **Seuil critique :** En Annexe C (ligne $\nu = 14$, colonne bilatérale `0,050`), le seuil critique vaut $t_{\text{crit}} = \mathbf{2{,}1448}$ ($p = 0{,}00022$).
 
 > [!check] Conclusion concrète
-> Comme $4{,}9252 > 2{,}1448$ ($p = 0{,}00022$), **on rejette $H_0$** : l'alcool augmente très significativement le temps de réaction au volant *(même si l'on traitait les deux lignes en groupes indépendants, $t = 2{,}6571 > 2{,}0484$ avec $\nu = 28$ donne le même rejet)*.
+> Comme $4{,}9252 > 2{,}1448$ ($p = 0{,}00022$), **on rejette $H_0$** : l'alcool rallonge vraiment le temps de réaction au volant *(même en comparant deux groupes séparés à $\nu = 28$, $t = 2{,}6571 > 2{,}0484$ donne le même rejet)*.
 
 ---
 
@@ -779,39 +571,15 @@ $$H_0 : \mu_d = 0 \qquad \text{contre} \qquad H_1 : \mu_d \ne 0$$
 > [!question] Énoncé résumé & Données
 > On pèse $N = 10$ participants (en kg) avant et après un programme nutritionnel et sportif. Un participant passe de $158$ à $121$ kg ($d_3 = -37$ kg). Quel test choisir et quelle conclusion tirer au risque $\alpha = 5\%$ ?
 
-> [!info] Comprendre la logique (terre à terre)
-> **Pourquoi Student échoue et comment Wilcoxon résiste à $-37$ kg :**
-> L'individu 3 ($-37$ kg) fait exploser l'écart-type $s_d = 11{,}45$ kg, ce qui écrase le test $t$ de Student ($t = -1{,}3259$, $p = 0{,}2175$). Le test de **Wilcoxon** résout ce problème en remplaçant les valeurs par leur **rang** : que la perte soit de $10$ kg ou $37$ kg, son poids dans le calcul reste le rang $9$ sur $9$.
->
-> **Sens de rejet inversé :**
-> Dans $Z, t, \chi^2, F$, on rejette quand la statistique dépasse le seuil. Pour **Wilcoxon ($W$) et Mann-Whitney ($U$)**, on rejette quand la statistique est **inférieure ou égale** au seuil critique ($W \le W_{\text{crit}}$) !
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Mesures Avant/Après sur les mêmes individus ($N = 10$) | Séries appariées. |
-> | Valeur aberrante extrême ($158 \to 121$ kg, soit $d_3 = -37$ kg) | La normalité est violée et $s_d$ explose, faussant le test $t$ de Student : passer au non paramétrique. |
-> 
-> **Donc :** test des rangs signés de Wilcoxon (robuste aux valeurs aberrantes).
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$W^+ = \sum_{d_i > 0} r_i, \qquad W^- = \sum_{d_i < 0} r_i, \qquad W = \min(W^+, W^-), \qquad W^+ + W^- = \frac{n(n + 1)}{2}$$
-
-**Procédure en français simple :**
-1. Jeter les $d_i = 0$ (il reste $n = 9$ paires).
-2. Trier les écarts sans le signe ($\lvert d_i\rvert$) du plus petit au plus grand, donner un rang (moyenne si ex-æquo).
-3. Additionner les rangs des positifs ($W^+$) et ceux des négatifs ($W^-$) ; retenir le plus petit ($W$).
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Constat préalable critique (échec du test $t$ face à l'outlier)
-L'individu n° 3 passe de $158$ à $121$ kg ($d_3 = -37$ kg), créant une **valeur aberrante massive** qui viole la normalité des différences. Avec les $10$ différences ($-1, +1, -37, -2, -5, 0, -2, +1, -1, -2$), on aurait :
+### 1. Pourquoi le test $t$ de Student est faussé ici (valeur extrême $-37$ kg)
+Comme ce sont les mêmes $10$ personnes avant/après, on pourrait vouloir faire un test $t$ apparié comme à l'Exo 9. Mais regarde la personne n° 3 : elle passe de $158$ à $121$ kg ($d_3 = -37$ kg) ! Cet écart énorme casse la loi normale et fait gonfler l'écart-type $s_d$ :
 $$\bar{d} = \frac{-48}{10} = -4{,}8\text{ kg}, \qquad s_d = 11{,}45\text{ kg} \implies t = \frac{\bar{d}}{s_d / \sqrt{10}} = \frac{-4{,}8}{11{,}45 / 3{,}1623} = \frac{-4{,}8}{3{,}6208} = -1{,}3259 \quad (p = 0{,}2175)$$
-Ce test $t$ est faussement non significatif car l'outlier gonfle artificiellement $s_d$.
+Le test $t$ conclut à tort qu'il n'y a rien, juste parce que ce $-37$ kg fait exploser le dénominateur $s_d$.
 
-#### 2. Choix méthodologique et calcul des rangs signés de Wilcoxon
-On applique le **test des rangs signés de Wilcoxon** ($H_0 : \text{médiane des } d_i = 0$ vs $H_1 : \text{médiane} \ne 0$). On retire d'abord la différence nulle (individu 6 : $58 \to 58$), ce qui laisse $n = 9$ paires non nulles :
+### 2. Pourquoi Wilcoxon résiste et calcul des rangs signés ($W^+$, $W^-$, $W$)
+*Pourquoi choisir le test de Wilcoxon ?* Au lieu de calculer avec les kilos exacts, il remplace chaque écart par son **rang** (sa place du plus petit au plus grand). Que la personne n° 3 ait perdu $10$ kg ou $37$ kg, elle prend juste le rang $9$ sur $9$, et ça ne casse plus rien. On teste $H_0 : \text{médiane des } d_i = 0$ vs $H_1 : \text{médiane} \ne 0$.
+1. **Enlever les $0$ :** la personne n° 6 ($58 \to 58$) donne $d_6 = 0$, on l'enlève $\implies$ il reste $n = 9$ paires.
+2. **Trier sans le signe ($\lvert d_i\rvert$) et donner les rangs (moyenne des rangs s'il y a égalité) :**
 
 | Individu $i$ | Avant | Après | $d_i = \text{Après} - \text{Avant}$ | $\lvert d_i \rvert$ | Rang | $W^+$ ($d_i > 0$) | $W^-$ ($d_i < 0$) |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -827,19 +595,18 @@ On applique le **test des rangs signés de Wilcoxon** ($H_0 : \text{médiane des
 | 10 | $72$ | $70$ | $-2$ | $2$ | $6{,}0$ | — | $6{,}0$ |
 | **Total ($\sum$)** | — | — | — | — | **$45{,}0$** | **$5{,}0$** | **$40{,}0$** |
 
-- **Calcul des rangs ex-æquo :**
-  - Les $4$ valeurs $\lvert d \rvert = 1$ occupent les rangs $1, 2, 3, 4$ $\implies$ rang moyen $= \frac{1 + 2 + 3 + 4}{4} = \mathbf{2{,}5}$.
-  - Les $3$ valeurs $\lvert d \rvert = 2$ occupent les rangs $5, 6, 7$ $\implies$ rang moyen $= \frac{5 + 6 + 7}{3} = \mathbf{6{,}0}$.
-- **Sommes $W^+$ et $W^-$ et vérification :**
+- Les $4$ écarts $\lvert d \rvert = 1$ (places $1, 2, 3, 4$) prennent la moyenne $\frac{1 + 2 + 3 + 4}{4} = \mathbf{2{,}5}$.
+- Les $3$ écarts $\lvert d \rvert = 2$ (places $5, 6, 7$) prennent la moyenne $\frac{5 + 6 + 7}{3} = \mathbf{6{,}0}$.
+- **Sommes $W^+$, $W^-$ et statistique $W$ :**
   $$W^+ = 2{,}5 + 2{,}5 = \mathbf{5{,}0}, \qquad W^- = 2{,}5 + 9{,}0 + 6{,}0 + 8{,}0 + 6{,}0 + 2{,}5 + 6{,}0 = \mathbf{40{,}0}$$
   $$\text{Vérification : } W^+ + W^- = 5{,}0 + 40{,}0 = 45{,}0 = \frac{n(n+1)}{2} = \frac{9 \times 10}{2}$$
   $$W = \min(W^+, W^-) = \min(5{,}0 \,;\, 40{,}0) = \mathbf{5{,}0}$$
 
-#### 3. Décision au risque $\alpha = 5\%$
-Pour $n = 9$ à $\alpha = 5\%$ (bilatéral), la table de Wilcoxon donne $W_{\text{crit}} = \mathbf{5}$ (et la $p$-value exacte vaut $\frac{22}{512} = \mathbf{0{,}0430} < 0{,}05$).
+### 3. Décision à $\alpha = 5\%$ (pourquoi rejeter quand $W \le W_{\text{crit}}$ ?)
+*Attention, sens inversé :* dans $Z, t, \chi^2, F$, on rejette quand le score dépasse le seuil. Ici, plus le programme marche dans un seul sens, plus le plus petit des deux tas ($W$) devient **petit** : on rejette donc quand **$W \le W_{\text{crit}}$**. Pour $n = 9$ à $\alpha = 5\%$ bilatéral, la table donne $W_{\text{crit}} = \mathbf{5}$ (et $p\text{-value exacte} = \frac{22}{512} = \mathbf{0{,}0430} < 0{,}05$).
 
 > [!check] Conclusion concrète
-> Comme $W = 5 \le W_{\text{crit}} = 5$ ($p = 0{,}0430 < 0{,}05$), **on rejette $H_0$** : le programme a un effet significatif à la baisse ($7$ participants sur $10$ ont perdu du poids).
+> Comme $W = 5 \le W_{\text{crit}} = 5$ ($p = 4{,}30\% < 5\%$), **on rejette $H_0$** : le programme fait bien baisser le poids ($7$ participants sur $10$ ont maigri).
 
 ---
 
@@ -848,31 +615,10 @@ Pour $n = 9$ à $\alpha = 5\%$ (bilatéral), la table de Wilcoxon donne $W_{\tex
 > [!question] Énoncé résumé & Données
 > On compare les temps de traitement de $k = 3$ SGBD (PostgreSQL, MongoDB, MySQL) avec $n_j = 5$ exécutions par groupe ($\text{SC}_{\text{Facteur}} = 320$, $\text{SC}_{\text{Résiduelle}} = 240$, $F_{0{,}05}(2, 12) = 3{,}89$).
 
-> [!info] Comprendre la logique (terre à terre)
-> **Recette mécanique de tout tableau ANOVA :**
-> Il n'y a que 3 divisions à connaître par cœur : $\text{SC}_F \div (k - 1)$ donne $\text{MS}_F$ ; $\text{SC}_R \div (N - k)$ donne $\text{MS}_R$ ; $\text{MS}_F \div \text{MS}_R$ donne $F$. Si $F$ dépasse $F_{\text{crit}}$, l'effet du facteur domine le bruit.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | $k = 3$ SGBD à comparer, $\text{SC}_{\text{Facteur}}$ et $\text{SC}_{\text{Résiduelle}}$ fournies | Comparaison de $3$ moyennes à partir des sommes de carrés : tableau ANOVA. |
-> | $n_j = 5$ par groupe ($N = 15$) | Degrés de liberté $k - 1 = 2$ et $N - k = 12$. |
-> 
-> **Donc :** tableau ANOVA et statistique $F(2, 12)$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$\text{ddl}_F = k - 1, \qquad \text{ddl}_R = N - k, \qquad \text{MS}_F = \frac{\text{SC}_F}{\text{ddl}_F}, \qquad \text{MS}_R = \frac{\text{SC}_R}{\text{ddl}_R}, \qquad F = \frac{\text{MS}_F}{\text{MS}_R}$$
-
-**En français simple :**
-`Carré moyen (MS) = Somme des carrés ÷ Degrés de liberté`
-`F = Carré moyen du SGBD ÷ Carré moyen du Bruit`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et tableau ANOVA
-On teste $H_0 : \mu_{\text{PostgreSQL}} = \mu_{\text{MongoDB}} = \mu_{\text{MySQL}}$ contre $H_1 :$ au moins un SGBD diffère.
-- Nombre total d'observations : $N = k \times n_j = 3 \times 5 = \mathbf{15}$.
+### 1. Pourquoi une ANOVA et construction du tableau (ddl, $\text{MS}$, $F$)
+On compare $k = 3$ moyennes en même temps ($H_0 : \mu_{\text{PostgreSQL}} = \mu_{\text{MongoDB}} = \mu_{\text{MySQL}}$ contre $H_1 :$ au moins un SGBD diffère) avec les sommes de carrés déjà données : c'est une **ANOVA à 1 facteur**.
+Le tableau se remplit toujours avec les 3 mêmes divisions : $\text{SC}_F \div (k - 1)$ donne la variation moyenne due au SGBD ($\text{MS}_F$), $\text{SC}_R \div (N - k)$ donne le bruit moyen interne ($\text{MS}_R$), et $F = \text{MS}_F \div \text{MS}_R$.
+- Total de mesures : $N = k \times n_j = 3 \times 5 = \mathbf{15}$.
 - Degrés de liberté : $\text{ddl}_F = k - 1 = 3 - 1 = \mathbf{2}$, $\text{ddl}_R = N - k = 15 - 3 = \mathbf{12}$.
 - Carrés moyens : $\text{MS}_F = \frac{\text{SC}_F}{\text{ddl}_F} = \frac{320}{2} = \mathbf{160}$, $\text{MS}_R = \frac{\text{SC}_R}{\text{ddl}_R} = \frac{240}{12} = \mathbf{20}$.
 - Statistique de Fisher : $F_{\text{obs}} = \frac{\text{MS}_F}{\text{MS}_R} = \frac{160}{20} = \mathbf{8{,}00}$ ($p = 0{,}0062$).
@@ -882,11 +628,11 @@ On teste $H_0 : \mu_{\text{PostgreSQL}} = \mu_{\text{MongoDB}} = \mu_{\text{MySQ
 | **Facteur (SGBD)** | $320$ | $2$ | $160$ | **$\mathbf{8{,}00}$** ($p = 0{,}0062$) |
 | **Résiduelle (Intra)** | $240$ | $12$ | $20$ | — |
 
-#### 2. Décision au seuil $\alpha = 5\%$
+### 2. Décision au seuil $\alpha = 5\%$
 On compare $F_{\text{obs}} = 8{,}00$ au seuil critique donné (Annexe D.1) : $F_{0{,}05}(2, 12) = \mathbf{3{,}89}$.
 
 > [!check] Conclusion concrète
-> Comme $F = 8{,}00 > F_{0{,}05}(2, 12) = 3{,}89$, **on rejette $H_0$** : le choix du SGBD a un impact statistiquement significatif sur le temps de traitement au seuil de $5\%$.
+> Comme $F = 8{,}00 > F_{0{,}05}(2, 12) = 3{,}89$, **on rejette $H_0$** : le choix du SGBD change vraiment le temps de traitement.
 
 ---
 
@@ -895,32 +641,11 @@ On compare $F_{\text{obs}} = 8{,}00$ au seuil critique donné (Annexe D.1) : $F_
 > [!question] Énoncé résumé & Données
 > Un audit Green IT mesure la RAM d'un microservice en $k = 4$ langages ($6$ mesures par langage, $N = 4 \times 6 = 24$), donnant $\text{SCT} = 1\,200$ et $\text{SCR} = 300$. On teste l'influence du langage à $\alpha = 1\%$ ($F_{0{,}01}(3, 20) = 4{,}94$).
 
-> [!info] Comprendre la logique (terre à terre)
-> **Le puzzle à 3 pièces :**
-> $\text{SCT} = \text{SCE} + \text{SCR}$. Dès qu'on te donne 2 des 3 sommes de carrés, tu trouves la 3e par simple soustraction, puis tu déroules le même tableau qu'à l'Exercice 11.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | $k = 4$ langages ($N = 24$), $\text{SCT}$ et $\text{SCR}$ fournies | Utiliser $\text{SCT} = \text{SCE} + \text{SCR}$ pour retrouver $\text{SCE}$, puis dérouler l'ANOVA. |
-> | Test au risque $\alpha = 1\%$ | Comparer à $F_{0{,}01}(3, 20)$. |
-> 
-> **Donc :** déduire $\text{SCE} = \text{SCT} - \text{SCR}$, puis test $F(3, 20)$ à $1\%$.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$\text{SCE} = \text{SCT} - \text{SCR}, \qquad \text{ddl}_F = k - 1, \qquad \text{ddl}_R = N - k, \qquad F = \frac{\text{SCE} / \text{ddl}_F}{\text{SCR} / \text{ddl}_R}$$
-
-**En français simple :**
-`Variation expliquée (langages) = Variation totale - Variation résiduelle`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et calcul de $\text{SCE}$
-On teste $H_0 : \mu_1 = \mu_2 = \mu_3 = \mu_4$ contre $H_1 :$ au moins un langage diffère. On déduit d'abord :
+### 1. Pourquoi $\text{SCE} = \text{SCT} - \text{SCR}$ et calcul
+On compare $k = 4$ moyennes ($H_0 : \mu_1 = \mu_2 = \mu_3 = \mu_4$ vs $H_1 :$ au moins un langage diffère) par ANOVA. La variation totale ($\text{SCT}$) est toujours la somme de ce que les langages expliquent ($\text{SCE}$) plus le bruit restant ($\text{SCR}$) : $\text{SCT} = \text{SCE} + \text{SCR}$. Du coup, une simple soustraction donne $\text{SCE}$ :
 $$\text{SCE} = \text{SCT} - \text{SCR} = 1\,200 - 300 = \mathbf{900}$$
 
-#### 2. Tableau ANOVA et décision à $\alpha = 1\%$
+### 2. Tableau ANOVA et décision à $\alpha = 1\%$
 - Degrés de liberté : $\text{ddl}_F = k - 1 = 4 - 1 = \mathbf{3}$, $\text{ddl}_R = N - k = 24 - 4 = \mathbf{20}$, $\text{ddl}_{\text{Total}} = N - 1 = 24 - 1 = \mathbf{23}$.
 - Carrés moyens : $\text{MS}_F = \frac{\text{SCE}}{\text{ddl}_F} = \frac{900}{3} = \mathbf{300}$, $\text{MS}_R = \frac{\text{SCR}}{\text{ddl}_R} = \frac{300}{20} = \mathbf{15}$.
 - Statistique de Fisher : $F_{\text{obs}} = \frac{\text{MS}_F}{\text{MS}_R} = \frac{300}{15} = \mathbf{20{,}00}$ ($p = 3{,}1 \times 10^{-6}$).
@@ -931,10 +656,10 @@ $$\text{SCE} = \text{SCT} - \text{SCR} = 1\,200 - 300 = \mathbf{900}$$
 | **Résiduelle (Intra)** | $300$ | $20$ | $15$ | — |
 | **Total** | $1\,200$ | $23$ | — | — |
 
-On compare $F_{\text{obs}} = 20{,}00$ au seuil critique $F_{0{,}01}(3, 20) = \mathbf{4{,}94}$.
+On compare $F_{\text{obs}} = 20{,}00$ au seuil critique donné : $F_{0{,}01}(3, 20) = \mathbf{4{,}94}$.
 
 > [!check] Conclusion concrète
-> Comme $F = 20{,}00 > F_{0{,}01}(3, 20) = 4{,}94$, **on rejette $H_0$ au seuil de $1\%$** : le langage de programmation influence très significativement la consommation mémoire.
+> Comme $F = 20{,}00 > F_{0{,}01}(3, 20) = 4{,}94$, **on rejette $H_0$ au seuil de $1\%$** : le choix du langage pèse énormément sur la consommation de RAM.
 
 ---
 
@@ -943,30 +668,8 @@ On compare $F_{\text{obs}} = 20{,}00$ au seuil critique $F_{0{,}01}(3, 20) = \ma
 > [!question] Énoncé résumé & Données
 > Deux groupes de $n_1 = n_2 = 5$ développeurs passent un test Agile : Méthode A Présentiel (`78, 85, 90, 92, 96`) et Méthode B E-learning (`60, 70, 75, 80, 88`). On réalise le test de Mann-Whitney à $\alpha = 5\%$ ($U_{\text{critique}} = 2$).
 
-> [!info] Comprendre la logique (terre à terre)
-> **Ce que mesure vraiment $U$ :**
-> Il y a $5 \times 5 = 25$ duels possibles entre un élève de A et un élève de B. $U_1 = 22$ signifie que dans **$22$ duels sur $25$**, l'élève de A bat celui de B, et dans $U_2 = 3$ duels seulement, B bat A ($88 > 78$, $88 > 85$, $80 > 78$). Avec seulement $5$ personnes par groupe, $U = 3$ reste juste au-dessus du seuil de rejet ($2$) : trop juste pour conclure en bilatéral.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Deux groupes indépendants de $n_1 = n_2 = 5$ développeurs | Effectifs très faibles ($< 30$) sans garantie de normalité : test non paramétrique. |
-> | $U_{\text{critique}} = 2$ fourni | Le critère $U$ confirme le choix du test sur les rangs conjoints. |
-> 
-> **Donc :** test de Mann-Whitney $U = \min(U_1, U_2)$ (rejet si $U \le U_{\text{critique}}$).
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$U_1 = R_1 - \frac{n_1(n_1 + 1)}{2}, \qquad U_2 = n_1 n_2 - U_1, \qquad U = \min(U_1, U_2)$$
-
-**En français simple :**
-`U₁ = Somme des rangs de A - Somme minimale possible si A était tout en bas (1 + 2 + ... + n₁)`
-`U₂ = (Nb total de duels n₁ × n₂) - U₁`
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et classement conjoint croissant (aucun ex-æquo)
-On teste $H_0 :$ les deux distributions sont identiques contre $H_1 :$ l'une des deux méthodes donne des scores systématiquement plus élevés.
+### 1. Pourquoi Mann-Whitney et classement conjoint en rangs
+On compare deux groupes **séparés** tout petits ($5$ personnes chacun, $n < 30$) sans savoir si c'est normal, et on te donne $U_{\text{critique}} = 2$ : c'est le test de **Mann-Whitney** (alternative sans loi normale au test $t$). On classe toutes les notes ensemble de la plus petite à la plus grande ($H_0 :$ mêmes notes globales vs $H_1 :$ une méthode fait mieux que l'autre).
 
 | Rang | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -975,18 +678,19 @@ On teste $H_0 :$ les deux distributions sont identiques contre $H_1 :$ l'une des
 
 $$R_1 = 4 + 6 + 8 + 9 + 10 = \mathbf{37} \quad \left(R_2 = 1 + 2 + 3 + 5 + 7 = 18, \text{ vérif. } 37 + 18 = 55 = \frac{10 \times 11}{2}\right)$$
 
-#### 2. Calcul de $U_1$
+### 2. Calcul de $U_1$ (pourquoi retrancher $\frac{n_1(n_1+1)}{2}$ ?)
+*Qu'est-ce qu'on mesure avec $U_1$ ?* Même si le groupe A avait les $5$ pires notes tout en bas (rangs $1, 2, 3, 4, 5$), sa somme vaudrait déjà $1 + 2 + 3 + 4 + 5 = \frac{5 \times 6}{2} = 15$. Enlever ce minimum à $R_1$ compte exactement combien de **duels** un élève de A gagne contre un élève de B ($22$ sur $25$) :
 $$U_1 = R_1 - \frac{n_1(n_1 + 1)}{2} = 37 - \frac{5 \times (5 + 1)}{2} = 37 - \frac{30}{2} = 37 - 15 = \mathbf{22}$$
 
-#### 3. Calcul de $U_2$ et $U$
-$$n_1 n_2 = 5 \times 5 = 25 \implies U_2 = n_1 n_2 - U_1 = 25 - 22 = \mathbf{3}$$
-$$U = \min(U_1, U_2) = \min(22, 3) = \mathbf{3}$$
+### 3. Calcul de $U_2$ et de $U = \min(U_1, U_2)$
+Il y a $n_1 n_2 = 5 \times 5 = 25$ duels possibles au total, donc $U_2$ compte les duels gagnés par B ($88 > 78$, $88 > 85$, $80 > 78$) :
+$$U_2 = n_1 n_2 - U_1 = 25 - 22 = \mathbf{3}, \qquad U = \min(U_1, U_2) = \min(22, 3) = \mathbf{3}$$
 
-#### 4. Décision ($\alpha = 5\%$ bilatéral)
-On compare $U = 3$ à $U_{\text{critique}} = \mathbf{2}$ (rejet si $U \le U_{\text{critique}}$).
+### 4. Décision à $\alpha = 5\%$ (sens de rejet inversé $U \le U_{\text{crit}}$)
+*Rappel :* comme pour Wilcoxon, plus un groupe écrase l'autre, plus $\min(U_1, U_2)$ devient **petit**. Donc on rejette $H_0$ seulement si $U \le U_{\text{critique}} = \mathbf{2}$.
 
 > [!check] Conclusion concrète
-> Comme $U = 3 > U_{\text{critique}} = 2$, **on ne rejette pas $H_0$** au seuil de $5\%$ : l'écart de notes en faveur du présentiel n'est pas statistiquement suffisant avec seulement $5$ développeurs par groupe.
+> Comme $U = 3 > U_{\text{critique}} = 2$, **on ne rejette pas $H_0$** : le présentiel est devant sur ce petit groupe, mais avec seulement $5$ personnes par groupe l'écart n'est pas assez net pour trancher à $5\%$.
 
 ---
 
@@ -995,38 +699,22 @@ On compare $U = 3$ à $U_{\text{critique}} = \mathbf{2}$ (rejet si $U \le U_{\te
 > [!question] Énoncé résumé & Données
 > On compare les temps de résolution d'incidents ITIL entre $n_1 = 6$ Juniors ($R_1 = 51$) et $n_2 = 6$ Seniors ($R_2 = 27$), soit $N = 6 + 6 = 12$ observations ($U_{\text{critique}} = 5$ à $\alpha = 5\%$).
 
-> [!info] Comprendre la logique (terre à terre)
-> **Deux vérifications gratuites pour zéro erreur de calcul :**
-> D'abord, $R_1 + R_2$ doit **toujours** égaler $\frac{N(N+1)}{2}$ ; ensuite, $U_1 + U_2$ doit **toujours** égaler $n_1 \times n_2$. Si l'une des deux échoue, il y a une erreur d'addition ou de rang.
+### 1. Pourquoi Mann-Whitney et contrôle de la somme des rangs
+On compare deux petits groupes séparés ($6$ et $6$), déjà classés en rangs ($R_1, R_2$), avec $U_{\text{critique}} = 5$ ($H_0 :$ mêmes temps vs $H_1 :$ temps différents).
+*Vérif rapide :* la somme des entiers de $1$ à $12$ vaut toujours $\frac{N(N+1)}{2}$, donc $R_1 + R_2$ doit tomber juste dessus :
+$$\sum \text{Rangs} = R_1 + R_2 = 51 + 27 = 78, \qquad \frac{N(N + 1)}{2} = \frac{12 \times (12 + 1)}{2} = \frac{156}{2} = \mathbf{78} \quad (\text{c'est bon})$$
 
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Deux groupes indépendants ($n_1 = 6$, $n_2 = 6$), sommes de rangs $R_1, R_2$ données | Petits échantillons non paramétriques déjà mis en rangs. |
-> | $U_{\text{critique}} = 5$ fourni | On passe directement des rangs aux statistiques $U_1, U_2$ puis $U = \min(U_1, U_2)$. |
-> 
-> **Donc :** test de Mann-Whitney $U$ (rejet si $U \le U_{\text{critique}}$).
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$\sum \text{Rangs} = \frac{N(N + 1)}{2}, \qquad U_1 = R_1 - \frac{n_1(n_1 + 1)}{2}, \qquad U_2 = R_2 - \frac{n_2(n_2 + 1)}{2}, \qquad U = \min(U_1, U_2)$$
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et vérification de la somme des rangs
-On teste $H_0 :$ temps de résolution identiques (Juniors vs Seniors) contre $H_1 :$ distributions différentes :
-$$\sum \text{Rangs} = R_1 + R_2 = 51 + 27 = 78, \qquad \frac{N(N + 1)}{2} = \frac{12 \times (12 + 1)}{2} = \frac{156}{2} = \mathbf{78} \quad (\text{vérifié})$$
-
-#### 2. Calcul de $U_1$ et $U_2$
+### 2. Calcul de $U_1$ et $U_2$ et second contrôle
+On enlève à chaque somme de rangs le minimum possible $\frac{n_k(n_k + 1)}{2}$ :
 $$U_1 = R_1 - \frac{n_1(n_1 + 1)}{2} = 51 - \frac{6 \times (6 + 1)}{2} = 51 - \frac{42}{2} = 51 - 21 = \mathbf{30}$$
 $$U_2 = R_2 - \frac{n_2(n_2 + 1)}{2} = 27 - \frac{6 \times (6 + 1)}{2} = 27 - 21 = \mathbf{6}$$
-*(Vérification : $U_1 + U_2 = 30 + 6 = 36 = n_1 n_2 = 6 \times 6$.)*
+*Deuxième vérif :* $U_1 + U_2 = 30 + 6 = 36$, ce qui fait bien le total des duels $n_1 \times n_2 = 6 \times 6 = 36$.
 
-#### 3. Statistique $U$ et décision ($\alpha = 5\%$ bilatéral)
+### 3. Décision à $\alpha = 5\%$
 $$U = \min(U_1, U_2) = \min(30, 6) = \mathbf{6} > U_{\text{critique}} = 5$$
 
 > [!check] Conclusion concrète
-> Comme $U = 6 > U_{\text{critique}} = 5$, **on ne rejette pas $H_0$** au seuil bilatéral de $5\%$ *(résultat très proche de la limite critique, où un test unilatéral à $5\%$ aurait rejeté ; les effectifs sont trop faibles pour conclure formellement en bilatéral)*.
+> Comme $U = 6 > U_{\text{critique}} = 5$, **on ne rejette pas $H_0$** en bilatéral à $5\%$ *(on est vraiment tout près de la limite : en unilatéral à $5\%$, ça aurait rejeté, mais avec $6$ personnes par groupe c'est trop juste pour le bilatéral)*.
 
 ---
 
@@ -1035,35 +723,18 @@ $$U = \min(U_1, U_2) = \min(30, 6) = \mathbf{6} > U_{\text{critique}} = 5$$
 > [!question] Énoncé résumé & Données
 > Un RSSI croise l'OS mobile (iOS $50$, Android $50$) et le mode de validation 2FA choisi (App Mobile $60$, SMS $40$) sur $n = 100$ salariés ($\chi^2_{\text{critique}} = 3{,}841$ à $\alpha = 5\%$).
 
-> [!info] Comprendre la logique (terre à terre)
-> **Pourquoi $\frac{\text{Total ligne} \times \text{Total colonne}}{N}$ représente-t-il l'indépendance ?**
-> Globalement, $60\%$ des salariés utilisent l'App ($60/100$). Si l'OS n'avait aucune influence sur ce choix, on retrouverait ces mêmes $60\%$ chez les $50$ utilisateurs iOS ($60\% \times 50 = 30$) et chez les $50$ utilisateurs Android ($30$). Le $\chi^2$ mesure l'ampleur du décalage entre ce monde neutre ($30$) et la réalité ($35$ vs $25$).
+### 1. Pourquoi un $\chi^2$ d'indépendance et calcul des effectifs attendus $E_{ij}$
+Ici ce ne sont pas des nombres, ce sont **deux catégories** (OS mobile et type de 2FA) dans un tableau croisé : pour voir s'il y a un lien entre les deux, on fait un **$\chi^2$ d'indépendance** ($H_0 :$ pas de lien entre l'OS et le 2FA vs $H_1 :$ il y a un lien).
+*Pourquoi $E_{ij} = \frac{\text{Total ligne}_i \times \text{Total colonne}_j}{N}$ ?* En tout, $60\%$ des salariés prennent l'App Mobile ($60$ sur $100$). Si le téléphone n'avait aucune influence ($H_0$), on devrait retrouver ces mêmes $60\%$ chez les $50$ utilisateurs iOS ($30$) et chez les $50$ Android ($30$). *En clair : `Attendu = (Total ligne × Total colonne) ÷ Total global`.*
+- $E_{11} \text{ (iOS / App)} = \frac{50 \times 60}{100} = \mathbf{30}$, $\quad E_{12} \text{ (iOS / SMS)} = \frac{50 \times 40}{100} = \mathbf{20}$
+- $E_{21} \text{ (Android / App)} = \frac{50 \times 60}{100} = \mathbf{30}$, $\quad E_{22} \text{ (Android / SMS)} = \frac{50 \times 40}{100} = \mathbf{20}$
 
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Deux variables qualitatives croisées (OS mobile $\times$ mode 2FA) | Pas de moyenne ni de variance : on teste le lien entre deux caractères dans un tableau de contingence. |
-> | Tableau $2 \times 2$, tous $E_{ij} \ge 5$ | Conditions du $\chi^2$ d'indépendance remplies. |
-> 
-> **Donc :** test du $\chi^2$ d'indépendance avec $E_{ij} = \frac{L_i \times C_j}{N}$ et $\text{ddl} = (l - 1)(c - 1)$.
+*(Condition vérifiée : tous les attendus $E_{ij}$ valent au moins $5$, le plus petit est $20$.)*
 
-### Les formules utilisées
-**Formules mathématiques :**
-$$E_{ij} = \frac{\text{Total ligne}_i \times \text{Total colonne}_j}{N}, \qquad \chi^2_{\text{obs}} = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}, \qquad \text{ddl} = (l - 1)(c - 1)$$
-
-**En français simple :**
-`Effectif attendu = (Total de sa ligne × Total de sa colonne) ÷ Effectif total`
-`ddl = (Nb lignes - 1) × (Nb colonnes - 1)`
-
-### Résolution détaillée pas-à-pas
-
-#### 1 & 2. Hypothèses, effectifs théoriques $E_{ij}$ et contributions $\frac{(O_{ij} - E_{ij})^2}{E_{ij}}$
-On teste $H_0 :$ indépendance entre l'OS mobile et le mode 2FA contre $H_1 :$ dépendance.
-Calcul détaillé des 4 cases :
-- **iOS / App Mobile :** $E_{11} = \frac{50 \times 60}{100} = 30 \implies \text{Contrib} = \frac{(35 - 30)^2}{30} = \frac{25}{30} = \mathbf{0{,}8333}$
-- **iOS / SMS :** $E_{12} = \frac{50 \times 40}{100} = 20 \implies \text{Contrib} = \frac{(15 - 20)^2}{20} = \frac{25}{20} = \mathbf{1{,}2500}$
-- **Android / App Mobile :** $E_{21} = \frac{50 \times 60}{100} = 30 \implies \text{Contrib} = \frac{(25 - 30)^2}{30} = \frac{25}{30} = \mathbf{0{,}8333}$
-- **Android / SMS :** $E_{22} = \frac{50 \times 40}{100} = 20 \implies \text{Contrib} = \frac{(25 - 20)^2}{20} = \frac{25}{20} = \mathbf{1{,}2500}$
+### 2. Contributions $\dfrac{(O_{ij} - E_{ij})^2}{E_{ij}}$ et tableau récapitulatif
+On élève l'écart $(O_{ij} - E_{ij})$ au carré (sinon les $+$ et les $-$ se compensent) et on divise par l'effectif attendu $E_{ij}$ :
+- **iOS / App Mobile :** $\frac{(35 - 30)^2}{30} = \frac{25}{30} = \mathbf{0{,}8333}$ ; **iOS / SMS :** $\frac{(15 - 20)^2}{20} = \frac{25}{20} = \mathbf{1{,}2500}$
+- **Android / App Mobile :** $\frac{(25 - 30)^2}{30} = \frac{25}{30} = \mathbf{0{,}8333}$ ; **Android / SMS :** $\frac{(25 - 20)^2}{20} = \frac{25}{20} = \mathbf{1{,}2500}$
 
 | OS \ 2FA | App Mobile ($T_1 = 60$) | SMS ($T_2 = 40$) | Total |
 | :--- | :---: | :---: | :---: |
@@ -1071,15 +742,14 @@ Calcul détaillé des 4 cases :
 | **Android** ($S_2 = 50$) | $O=25$, $E=\mathbf{30}$, Contrib $=\mathbf{0{,}8333}$ | $O=25$, $E=\mathbf{20}$, Contrib $=\mathbf{1{,}2500}$ | 50 |
 | **Total** | **60** | **40** | **100** |
 
-*(Condition d'application vérifiée : tous les $E_{ij} \ge 5$, car le plus petit vaut $20$.)*
-
-#### 3 & 4. Statistique $\chi^2$, ddl et décision ($\alpha = 5\%$)
-$$\chi^2_{\text{obs}} = 0{,}8333 + 1{,}2500 + 0{,}8333 + 1{,}2500 = \mathbf{4{,}1667} \quad (p = 0{,}0412)$$
+### 3. Statistique $\chi^2$, pourquoi $\text{ddl} = (l - 1)(c - 1) = 1$ et décision ($\alpha = 5\%$)
+$$\chi^2_{\text{obs}} = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}} = 0{,}8333 + 1{,}2500 + 0{,}8333 + 1{,}2500 = \mathbf{4{,}1667} \quad (p = 0{,}0412)$$
+*Pourquoi $\text{ddl} = 1$ ?* Comme les totaux des bords ($50, 50, 60, 40$) sont bloqués, dès que tu remplis **1 seule** case du tableau $2 \times 2$, les 3 autres sont forcées par soustraction :
 $$\text{ddl} = (l - 1)(c - 1) = (2 - 1)(2 - 1) = 1 \times 1 = \mathbf{1}$$
 En Annexe B ($\nu = 1$, colonne `0,05`), $\chi^2_{\text{critique}} = \mathbf{3{,}841}$.
 
 > [!check] Conclusion concrète
-> Comme $\chi^2_{\text{obs}} = 4{,}1667 > \chi^2_{\text{critique}} = 3{,}841$, **on rejette l'hypothèse d'indépendance $H_0$** : le choix du mode 2FA dépend significativement de l'OS (les utilisateurs iOS privilégient davantage l'app d'authentification que ceux d'Android).
+> Comme $\chi^2_{\text{obs}} = 4{,}1667 > \chi^2_{\text{critique}} = 3{,}841$, **on rejette $H_0$** : le choix du 2FA dépend bien de l'OS (les gens sur iOS utilisent davantage l'application que ceux sur Android).
 
 ---
 
@@ -1088,26 +758,8 @@ En Annexe B ($\nu = 1$, colonne `0,05`), $\chi^2_{\text{critique}} = \mathbf{3{,
 > [!question] Énoncé résumé & Données
 > Une étude auprès de $200$ entreprises croise le type d'architecture SI (Monolithe, Microservices, Serverless) et la satisfaction du DSI (Satisfait / Non satisfait), avec les effectifs observés et attendus fournis ($\chi^2_{0{,}05}(2) = 5{,}991$).
 
-> [!info] Comprendre la logique (terre à terre)
-> **Lire les contributions pour comprendre d'où vient le résultat :**
-> Le $\chi^2$ total te dit « il y a un lien », mais ce sont les **contributions individuelles** qui te disent *pourquoi*. Ici, la case *Monolithe / Non satisfait* pèse à elle seule **$15{,}0$ sur $28{,}89$** (plus de la moitié du score !) : c'est l'insatisfaction massive sur le Monolithe ($30/60 = 50\%$ de mécontents contre $10/80 = 12{,}5\%$ et $10/60 = 16{,}7\%$ ailleurs) qui crée la dépendance.
-
-> [!abstract] 🔎 Pourquoi cette méthode ? (indices de l'énoncé → choix)
-> | Indice lu dans l'énoncé | Ce que ça implique |
-> | :--- | :--- |
-> | Architecture SI $\times$ satisfaction du DSI en tableau $3 \times 2$ | Croisement de deux variables qualitatives : test d'indépendance. |
-> | Effectifs observés $O_i$ et attendus $E_i \ge 15 \ge 5$ fournis | Calcul direct des contributions au $\chi^2$ avec $\text{ddl} = (3 - 1)(2 - 1) = 2$. |
-> 
-> **Donc :** test du $\chi^2$ d'indépendance à $2$ degrés de liberté.
-
-### Les formules utilisées
-**Formules mathématiques :**
-$$\chi^2_{\text{obs}} = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}}, \qquad \text{ddl} = (l - 1)(c - 1)$$
-
-### Résolution détaillée pas-à-pas
-
-#### 1. Hypothèses et calcul de la statistique globale du $\chi^2$
-On teste $H_0 :$ l'architecture SI et la satisfaction du DSI sont indépendantes contre $H_1 :$ elles sont liées.
+### 1. Pourquoi un $\chi^2$ d'indépendance et calcul des contributions
+Comme à l'Exo 15, on croise deux catégories (Architecture $\times$ Satisfaction) dans un tableau $3 \times 2$ : on teste $H_0 :$ pas de lien contre $H_1 :$ il y a un lien. Regarder chaque contribution $\frac{(O_i - E_i)^2}{E_i}$ te montre **d'où vient le problème** : ici, la ligne *Monolithe / Non satisfait* pèse à elle seule **$15{,}0$ sur $28{,}89$** (plus de la moitié du score total !).
 
 | Architecture / Satisfaction | $O_i$ | $E_i$ | $(O_i - E_i)^2$ | $\dfrac{(O_i - E_i)^2}{E_i}$ |
 | :--- | :---: | :---: | :---: | :---: |
@@ -1121,15 +773,15 @@ On teste $H_0 :$ l'architecture SI et la satisfaction du DSI sont indépendantes
 
 $$\chi^2_{\text{obs}} = 5{,}0000 + 15{,}0000 + 1{,}6667 + 5{,}0000 + 0{,}5556 + 1{,}6667 = \frac{260}{9} \approx \mathbf{28{,}8889} \quad (p = 5{,}3 \times 10^{-7})$$
 
-#### 2. Degrés de liberté
-Pour un tableau $3 \times 2$ (condition vérifiée : tous les $E_i \ge 15 \ge 5$) :
+### 2. Degrés de liberté et condition de validité
+La condition du $\chi^2$ passe largement : tous les attendus $E_i$ valent au moins $15 \ge 5$. Pour un tableau à $l = 3$ lignes et $c = 2$ colonnes :
 $$\text{ddl} = (l - 1)(c - 1) = (3 - 1)(2 - 1) = 2 \times 1 = \mathbf{2}$$
 
-#### 3. Décision au seuil $\alpha = 5\%$
-En Annexe B ($\nu = 2$, colonne `0,05`), $\chi^2_{0{,}05}(2) = \mathbf{5{,}991}$. Calcul des taux de satisfaction observés :
+### 3. Décision au seuil $\alpha = 5\%$ et taux par architecture
+En Annexe B ($\nu = 2$, colonne `0,05`), $\chi^2_{0{,}05}(2) = \mathbf{5{,}991}$. On calcule les % de satisfaits pour voir concrètement ce qui change :
 - Microservices : $\frac{70}{70 + 10} = \frac{70}{80} = \mathbf{87{,}5\%}$
 - Serverless : $\frac{50}{50 + 10} = \frac{50}{60} = \mathbf{83{,}3\%}$
 - Monolithe : $\frac{30}{30 + 30} = \frac{30}{60} = \mathbf{50{,}0\%}$
 
 > [!check] Conclusion concrète
-> Comme $\chi^2_{\text{obs}} = 28{,}89 \gg \chi^2_{0{,}05}(2) = 5{,}991$, **on rejette très nettement $H_0$** : il existe une association forte entre l'architecture SI et la satisfaction du DSI (Microservices à $87{,}5\%$ et Serverless à $83{,}3\%$, contre seulement $50\%$ pour le Monolithe).
+> Comme $\chi^2_{\text{obs}} = 28{,}89 \gg \chi^2_{0{,}05}(2) = 5{,}991$, **on rejette nettement $H_0$** : l'architecture change beaucoup la satisfaction du DSI (Microservices à $87{,}5\%$ et Serverless à $83{,}3\%$, contre seulement $50\%$ sur du Monolithe).

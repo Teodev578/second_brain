@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/cours/Fiche_Revision_Tests_Hypotheses_et_Parametriques.md",
+                "file": "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/exercices/TD2_Tests_Hypotheses.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fiche_Revision_Tests_Hypotheses_et_Parametriques"
+              "title": "TD2_Tests_Hypotheses"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -226,7 +226,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62bee0da15e73046",
+  "active": "4dd970707707b2d0",
   "lastOpenFiles": [
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/exercices/TD2_Formules_et_Explications_Terre_a_Terre.md",
     "🌿 Domaines/Études_&_Cours/Notes_de_Cours/Semmestre_1/Statistiques_Inferentielles/exercices/TD2_Tests_Hypotheses.md",
