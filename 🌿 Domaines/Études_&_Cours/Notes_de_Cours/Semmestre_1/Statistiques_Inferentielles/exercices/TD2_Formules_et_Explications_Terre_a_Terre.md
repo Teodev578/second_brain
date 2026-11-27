@@ -73,17 +73,23 @@ flowchart TD
 > | **$\chi^2$ d'indépendance** | $E_{ij} = \dfrac{L_i \times C_j}{N}$, $\nu = (l-1)(c-1)$ | `Attendu = (Total ligne × Total colonne) ÷ Total global` | Lien entre 2 variables qualitatives (tous $E_{ij} \ge 5$). |
 
 > [!note] Mémo rapide — D'où viennent les seuils lus dans les tables ?
-> - **Loi Normale $\mathcal{N}(0, 1)$ (Annexe A.1 / A.2) :** On cherche $U_{1-\alpha/2} = z_{1-\alpha/2}$ tel que l'aire cumulée à gauche vaille $\Phi(u) = 1 - \frac{\alpha}{2}$ en **bilatéral** (ou $\Phi(u) = 1 - \alpha$ en **unilatéral**). Ex. à $\alpha = 5\%$ bilatéral : $\Phi(u) = 1 - 0{,}025 = 0{,}9750 \implies$ on repère `0,9750` *dans* l'Annexe A.1 $\to$ ligne **`1,9`** et colonne **`0,06`** $\implies \mathbf{1{,}96}$. À $\alpha = 10\%$ bilatéral (ou $5\%$ unilatéral) : $\Phi(u) = 0{,}9500 \implies \mathbf{1{,}6449}$ (entre `1,64` et `1,65`).
-> - **Loi de Student (Annexe C) :** Lire la ligne $\nu = \text{ddl}$ et la colonne **bilatérale** $\alpha$. Pour un test **unilatéral** au risque $\alpha$, placer tout $\alpha$ d'un seul côté revient à lire la colonne bilatérale **$2\alpha$** (ex. unilatéral à $\alpha = 2{,}5\%$ $\to$ colonne bilatérale `0,050`).
-> - **Loi du $\chi^2$ (Annexe B — queue droite) :** La table donne $k$ tel que $P(X \ge k) = \text{colonne}$ à la ligne $\nu = \text{ddl}$ (ex. test unilatéral droit à $\alpha = 5\%$ $\to$ colonne `0,05`).
+> - **Loi Normale $\mathcal{N}(0, 1)$ (Annexe A.1 / A.2 / Annexe 1) :** On cherche $u_{1-\alpha/2}$ tel que l'aire cumulée à gauche vaille $\Phi(u) = 1 - \frac{\alpha}{2}$ en **bilatéral** (ou $u_{1-\alpha}$ tel que $\Phi(u) = 1 - \alpha$ en **unilatéral**). Ex. à $\alpha = 5\%$ bilatéral : $\Phi(u) = 1 - 0{,}025 = 0{,}9750 \implies$ on repère `0,9750` *dans* l'Annexe A.1 $\to$ ligne **`1,9`** et colonne **`0,06`** $\implies u_{0{,}975} = \mathbf{1{,}96}$.
+> - **Loi de Student $t_{\nu;\, p}$ (Annexe C vs Annexe 1) :** Dans l'Annexe C du polycopié, on lit la ligne $\nu = n - 1$ et la colonne **bilatérale** $\alpha$ (en **unilatéral**, lire la colonne **$2\alpha$**). Dans l'Annexe 1 des slides, la colonne indique directement l'aire cumulée à gauche $p$ (`0,95`, `0,975`, `0,99`...).
+> - **Loi du $\chi^2_{\nu;\, p}$ (Annexe B vs Annexe 2) :** Dans l'Annexe B du polycopié (**queue droite**), la colonne est $P(X \ge k)$ (ex. unilatéral droit à $5\%$ $\to$ col. `0,05`). Dans l'Annexe 2 des slides (**queue gauche** $p$), l'unilatéral droit à $5\%$ se lit en col. **`0,95`** ($\chi^2_{\nu;\, 1-\alpha}$) et l'unilatéral gauche en col. **`0,05`** ($\chi^2_{\nu;\, \alpha}$).
 > - **Loi de Fisher-Snedecor $\mathcal{F}$ (Annexe D.1 / D.2) :** Lire le croisement $\nu_1$ (ddl numérateur, en colonne) et $\nu_2$ (ddl dénominateur, en ligne). Utiliser Annexe D.1 pour l'ANOVA ($\alpha = 0{,}05$ ou $0{,}01$) et Annexe D.2 ($\alpha = 0{,}025$) pour le test bilatéral d'homoscédasticité.
+
+| Risque $\alpha$ | Unilatéral droit ($u_{1-\alpha}$) | Unilatéral gauche ($-u_{1-\alpha}$) | Bilatéral ($\pm u_{1-\alpha/2}$) |
+| :---: | :---: | :---: | :---: |
+| **10%** ($0{,}10$) | $1{,}282$ | $-1{,}282$ | $\pm 1{,}645$ |
+| **5%** ($0{,}05$) | $1{,}645$ | $-1{,}645$ | $\pm 1{,}960$ |
+| **1%** ($0{,}01$) | $2{,}326$ | $-2{,}326$ | $\pm 2{,}576$ |
 
 ---
 
 ## 🧠 Méthode : comment savoir quelle formule utiliser ?
 
 ### 1. Les 4 questions à se poser, dans l'ordre
-1. **Qu'est-ce qu'on te demande ?** Calculer une chance (loi connue), donner un seul chiffre (estimation), donner une fourchette (intervalle de confiance) ou vérifier une affirmation (test) ?
+1. **Qu'est-ce qu'on te demande ?** Calculer une chance (loi connue), donner un seul chiffre (estimation), donner une fourchette (intervalle de confiance) ou vérifier une affirmation (test) ? *(Les 4 grands types de tests du cours : **conformité** = 1 échantillon vs norme ; **ajustement** = données vs loi théorique ; **homogénéité** = comparaison de $K \ge 2$ groupes ; **indépendance** = lien entre 2 variables.)*
 2. **Sur quoi ça porte ?** Une moyenne $\mu$, une proportion $p$, une variance $\sigma^2$ (ou $\sigma$), comparer deux variances, ou voir si deux trucs sont liés ?
 3. **Qu'est-ce que tu as dans les données ?** Est-ce que $\sigma$ est donné ou pas, est-ce que $n \ge 30$ ou $n < 30$, est-ce que c'est une loi normale ?
 4. **Quel sens pour le test ?** Les deux côtés (bilatéral) ou un seul côté (unilatéral), selon les mots exacts de l'énoncé ?
@@ -109,12 +115,36 @@ flowchart TD
 > [!tip] Pourquoi Student plutôt que la loi normale ?
 > Parce que tu cumules deux trucs : ton groupe est petit ($n < 30$) ET tu ne connais pas le vrai écart-type $\sigma$ (tu as dû le calculer toi-même avec $s$). Comme $s$ est approximatif et change d'un tirage à l'autre, tu prends une marge de sécurité un peu plus large : c'est ça que fait la table de Student à $n - 1$ ddl. Dès que $n \ge 30$ ou que $\sigma$ est donné dans l'énoncé, tu repasses direct sur la loi normale ($Z$). Ça se voit dans l'Annexe C : à $95\%$, $t = 2{,}2622$ pour $\nu = 9$, puis ça descend doucement jusqu'à $1{,}96$ quand $n$ est très grand.
 
-> [!tip] Logique commune à tous les tests
-> 1. Tu poses $H_0$ (l'hypothèse de départ) et $H_1$ (ce que tu soupçonnes) d'après les mots de l'énoncé.
-> 2. Tu choisis ta formule avec le tableau juste au-dessus.
-> 3. Tu calcules ta statistique : `(Ce qu'on observe - Ce qu'on attend sous H₀) ÷ Erreur standard`.
-> 4. Tu compares au seuil de la table (ou tu compares la $p$-value à $\alpha$).
-> 5. Tu conclus simple : **ne pas rejeter $H_0$ ne veut pas dire qu'elle est prouvée à 100 %**, ça veut juste dire qu'on n'a pas assez de preuves pour dire qu'elle est fausse.
+### 3. Tableau récapitulatif des zones de rejet de $H_0$ (1 échantillon)
+
+| Paramètre & Loi | Bilatéral ($H_1 : \theta \ne \theta_0$) | Unilatéral gauche ($< \theta_0$) | Unilatéral droit ($> \theta_0$) |
+| :--- | :---: | :---: | :---: |
+| **Moyenne ($\sigma$ connu ou $n \ge 30$), $\mathcal{N}(0, 1)$** | $\lvert Z \rvert > u_{1-\alpha/2}$ | $Z < -u_{1-\alpha}$ | $Z > u_{1-\alpha}$ |
+| **Moyenne ($\sigma$ inconnu, $n < 30$), $t_{n-1}$** | $\lvert T \rvert > t_{n-1;\, 1-\alpha/2}$ | $T < -t_{n-1;\, 1-\alpha}$ | $T > t_{n-1;\, 1-\alpha}$ |
+| **Variance, $\chi^2_{n-1}$** | $\chi^2 < \chi^2_{n-1;\, \alpha/2}$ ou $> \chi^2_{n-1;\, 1-\alpha/2}$ | $\chi^2 < \chi^2_{n-1;\, \alpha}$ | $\chi^2 > \chi^2_{n-1;\, 1-\alpha}$ |
+| **Proportion, $\mathcal{N}(0, 1)$** | $\lvert Z \rvert > u_{1-\alpha/2}$ | $Z < -u_{1-\alpha}$ | $Z > u_{1-\alpha}$ |
+
+### 4. Démarche officielle en 6 étapes, règles de décision et risques ($\alpha$, $\beta$)
+
+> [!tip] Les 6 étapes de tout test (méthode du cours)
+> 1. **Hypothèses :** poser $H_0$ (absence d'effet / valeur cible) et $H_1$ (bilatéral $\ne$, unilatéral gauche $<$ ou droit $>$).
+> 2. **Statistique de test :** choisir la formule adaptée ($Z$, $T$, $\chi^2$, $F$, $W$, $U$).
+> 3. **Loi sous $H_0$ :** vérifier les conditions ($\sigma$ connu ou $n \ge 30$, normalité, $np_0 \ge 5$, etc.).
+> 4. **Seuil $\alpha$ & zone de rejet $R$ :** lire le quantile critique dans la table (ou Excel).
+> 5. **Valeur observée ($S_{\text{obs}}$) :** calculer l'erreur standard (si moyenne/proportion) puis la statistique observée.
+> 6. **Décision :**
+>    - **Règle 1 (zone de rejet $R$) :** si $S_{\text{obs}} \in R$, on rejette $H_0$ au risque $\alpha$ ; sinon on **ne rejette pas $H_0$** *(on ne « prouve » jamais $H_0$)*.
+>    - **Règle 2 ($p$-valeur $\alpha_{\text{obs}}$) :** si $\alpha_{\text{obs}} < \alpha$, on rejette $H_0$ ; si $\alpha_{\text{obs}} \ge \alpha$, on ne rejette pas $H_0$.
+>
+> **Risques d'erreur & puissance :** $\alpha$ (1re espèce) = rejeter $H_0$ à tort alors qu'elle est vraie ; $\beta$ (2e espèce) = ne pas rejeter $H_0$ alors que $H_1$ est vraie ; **puissance ($1 - \beta$)** = capacité à rejeter $H_0$ quand elle est fausse (augmente avec $n$).
+
+### 5. Détermination des quantiles sous Excel
+
+| Loi | Unilatéral droit ($>$) | Unilatéral gauche ($<$) | Bilatéral ($\ne$) |
+| :--- | :--- | :--- | :--- |
+| **Normale $\mathcal{N}(0, 1)$** | `=LOI.NORM.STANDARD.INVERSE(1-α)` | `=LOI.NORM.STANDARD.INVERSE(α)` | `=±LOI.NORM.STANDARD.INVERSE(1-α/2)` |
+| **Student $t_\nu$ ($\nu = n-1$)** | `=LOI.STUDENT.INVERSE(1-α;ν)` | `=LOI.STUDENT.INVERSE(α;ν)` | `=±LOI.STUDENT.INVERSE(1-α/2;ν)` |
+| **Khi-deux $\chi^2_\nu$ ($\nu = n-1$)** | `=LOI.KHIDEUX.INVERSE(1-α;ν)` | `=LOI.KHIDEUX.INVERSE(α;ν)` | Inf : `=LOI.KHIDEUX.INVERSE(α/2;ν)` <br> Sup : `=LOI.KHIDEUX.INVERSE(1-α/2;ν)` |
 
 ---
 
@@ -128,27 +158,19 @@ Regarde le mot dans l'énoncé : on veut vérifier si la moyenne « **vaut** $\m
 $$H_0 : \mu = 200\text{ €} \qquad \text{contre} \qquad H_1 : \mu \ne 200\text{ €}$$
 En fait, même si on ne connaît pas le vrai écart-type $\sigma$ de tous les clients (on utilise $s = 48{,}24$ €), notre échantillon est grand ($n = 144 \ge 30$). Grâce au Théorème Central Limite (TCL), on passe direct sur la **loi normale $\mathcal{N}(0, 1)$** ($Z$) sous $H_0$ : pas besoin de Student ici.
 
-### 2. Décision au risque $\alpha = 5\%$ (erreur standard, score $Z$ et bornes)
-1. **Calcul de l'erreur standard ($\text{ES}$) :**
-   La moyenne de $144$ clients bouge beaucoup moins qu'un seul client pris au hasard : sa marge d'erreur est divisée par $\sqrt{n}$. *En clair : `Erreur standard = Écart-type ÷ √Effectif`.*
+### 2. Décision au risque $\alpha = 5\%$ (les 3 étapes clés)
+1. **Erreur standard ($\text{ES}$) :**
+   La moyenne de $144$ clients bouge beaucoup moins qu'un seul client pris au hasard : sa dispersion est divisée par $\sqrt{n}$. *En clair : `Erreur standard = Écart-type ÷ √Effectif`.*
    $$\text{ES} = \frac{s}{\sqrt{n}} = \frac{48{,}24}{\sqrt{144}} = \frac{48{,}24}{12} = \mathbf{4{,}02\text{ €}}$$
-2. **Calcul de la statistique observée ($z_{\text{obs}}$) :**
-   On regarde combien d'erreurs standards séparent notre moyenne ($193{,}74$ €) de la cible ($200$ €), pour pouvoir comparer ça à la table normale. *En clair : `Score Z = (Moyenne mesurée - Cible μ₀) ÷ Erreur standard`.*
-   $$z_{\text{obs}} = \frac{\bar{x} - \mu_0}{\text{ES}} = \frac{193{,}74 - 200}{4{,}02} = \frac{-6{,}26}{4{,}02} \approx \mathbf{-1{,}5572}$$
-3. **D'où vient $U_{1-\alpha/2} = 1{,}96$ et calcul de la marge d'erreur ($e$) :**
-   À $\alpha = 5\% = 0{,}05$ en **bilatéral**, tu coupes le risque en deux : $0{,}025$ à gauche et $0{,}025$ à droite. Du coup, toute la zone à gauche du seuil droit vaut $\Phi(U_{1-\alpha/2}) = 1 - \frac{0{,}05}{2} = 0{,}9750$. Tu cherches `0,9750` *à l'intérieur* de l'Annexe A.1 : c'est à la ligne **`1,9`** et colonne **`0,06`**, d'où $U_{0{,}975} = \mathbf{1{,}96}$ (seuils critiques $z_{\text{crit}} = \pm 1{,}96$).
-   Pour passer ce $1{,}96$ en euros, on le multiplie par l'erreur standard :
-   $$e = U_{1-\alpha/2} \times \frac{s}{\sqrt{n}} = 1{,}96 \times 4{,}02 = 7{,}8792 \approx \mathbf{7{,}88\text{ €}}$$
-4. **Calcul des bornes inférieures et supérieures :**
-   C'est tout simple : tu enlèves $e$ pour la borne du bas, et tu ajoutes $e$ pour la borne du haut :
-   - **Zone où on garde $H_0$** (centrée sur $\mu_0 = 200$ €) :
-     - Borne inférieure : $\mu_0 - e = 200 - 7{,}88 = \mathbf{192{,}12\text{ €}}$
-     - Borne supérieure : $\mu_0 + e = 200 + 7{,}88 = \mathbf{207{,}88\text{ €}}$
-   - **Intervalle de confiance à $95\%$ de $\mu$** (centré sur $\bar{x} = 193{,}74$ €) :
-     - Borne inférieure : $\bar{x} - e = 193{,}74 - 7{,}88 = \mathbf{185{,}86\text{ €}}$
-     - Borne supérieure : $\bar{x} + e = 193{,}74 + 7{,}88 = \mathbf{201{,}62\text{ €}}$
-
-Comme $|z_{\text{obs}}| = 1{,}5572 < 1{,}96$ (pareil que de dire $193{,}74 \in [192{,}12 \,;\, 207{,}88]$ ou $200 \in [185{,}86 \,;\, 201{,}62]$), **on ne rejette pas $H_0$**.
+2. **Statistique observée ($z_{\text{obs}}$) :**
+   On regarde combien d'erreurs standards séparent la moyenne mesurée ($193{,}74$ €) de la cible ($200$ €). *En clair : `Score Z = (Moyenne mesurée - Cible μ₀) ÷ Erreur standard`.*
+   $$z_{\text{obs}} = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} = \frac{193{,}74 - 200}{4{,}02} = \frac{-6{,}26}{4{,}02} \approx \mathbf{-1{,}5572}$$
+3. **Décision au seuil $\alpha = 5\%$** *(une seule des deux vérifications suffit)* :
+   En bilatéral à $\alpha = 5\%$, on cherche $\Phi(u) = 1 - \frac{0{,}05}{2} = 0{,}9750$ dans l'Annexe A.1 (ligne `1,9`, col. `0,06`), ce qui donne $u_{0{,}975} = \mathbf{1{,}96}$ ($R = ]-\infty \,;\, -1{,}96[ \cup ]1{,}96 \,;\, +\infty[$) :
+   - **Avec $z$ :** $z_{\text{obs}} = -1{,}5572 \notin R$ (soit $|z_{\text{obs}}| = 1{,}5572 < 1{,}96$) $\implies$ **on ne rejette pas $H_0$**.
+   - **En euros (zone de non-rejet autour de $\mu_0 = 200\text{ €}$) :**
+     $$\left[\mu_0 - u_{1-\alpha/2}\frac{s}{\sqrt{n}} \,;\, \mu_0 + u_{1-\alpha/2}\frac{s}{\sqrt{n}}\right] = \left[200 - 1{,}96 \times \frac{48{,}24}{\sqrt{144}} \,;\, 200 + 1{,}96 \times \frac{48{,}24}{\sqrt{144}}\right] = \mathbf{\left[192{,}12 \,;\, 207{,}88\right]\text{ €}}$$
+     Comme $\bar{x} = 193{,}74\text{ €}$ est dedans, **on ne rejette pas $H_0$**. *(Ce n'est pas l'intervalle de confiance — l'IC est centré sur $\bar{x}$, pas sur $\mu_0$ — et tu n'as pas besoin de l'IC ici.)*
 
 ### 3. Schéma des régions d'acceptation et de rejet
 Comme le test est bilatéral ($H_1 : \mu \ne 200$), on a deux petites zones de rejet aux deux bouts ($\alpha/2 = 2{,}5\%$ chacune) : si notre $Z$ tombe dedans (trop petit ou trop grand), on rejette $H_0$.
@@ -168,15 +190,17 @@ Comme le test est bilatéral ($H_1 : \mu \ne 200$), on a deux petites zones de r
   ░░░░ Aires correspondant à la p-value totale = 2 × P(Z ≤ -1,5572)
 ```
 
-### 4. Calcul et sens concret de la $p$-value
-En vrai, la $p$-value te dit juste : *« Si la moyenne vaut vraiment $200$ €, j'avais combien de chances d'observer un écart d'au moins $6{,}26$ € juste par hasard ? »*
+### 4. Calcul et sens concret de la $p$-value ($\alpha_{\text{obs}}$)
+En vrai, la $p$-value ($\alpha_{\text{obs}}$) te dit juste : *« Si la moyenne vaut vraiment $200$ €, j'avais combien de chances d'observer un écart d'au moins $6{,}26$ € juste par hasard ? »*
 Comme on est en bilatéral (l'écart peut être en moins ou en plus), on multiplie l'aire d'une queue par $2$. Dans l'Annexe A.1 (ligne `1,5`, col. `0,06`), $\Phi(1{,}56) = 0{,}9406$ :
-$$p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) \approx 2(1 - 0{,}9406) = 2 \times 0{,}0594 = \mathbf{0{,}1188} \quad (\text{exact : } \mathbf{0{,}1194}, \text{ soit } \mathbf{11{,}94\%})$$
-$11{,}94\%$ de chances par pur hasard, c'est beaucoup plus grand que les $5\%$ qu'on s'autorise : rien de bizarre.
+$$\alpha_{\text{obs}} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) \approx 2(1 - 0{,}9406) = 2 \times 0{,}0594 = \mathbf{0{,}1188} \quad (\text{exact : } \mathbf{0{,}1194}, \text{ soit } \mathbf{11{,}94\%})$$
+$11{,}94\%$ de chances par pur hasard ($\alpha_{\text{obs}} = 11{,}94\% \ge \alpha = 5\%$, Règle 2) : rien de bizarre, on ne rejette pas $H_0$.
 
 ### 5. Décision au risque $\alpha = 10\%$
-Retiens simple : on rejette $H_0$ seulement si $p\text{-value} < \alpha$. Ici $11{,}94\% > 10\%$, donc **on ne rejette toujours pas $H_0$**.
-- *Vérification avec les bornes à $90\%$ ($\alpha = 0{,}10$ bilatéral) :* $\Phi(U_{0{,}95}) = 1 - \frac{0{,}10}{2} = 0{,}9500 \implies U_{0{,}95} = \mathbf{1{,}6449}$. Marge : $e = 1{,}6449 \times 4{,}02 = 6{,}6125 \approx \mathbf{6{,}61\text{ €}}$, soit $[200 - 6{,}61 \,;\, 200 + 6{,}61] = \mathbf{[193{,}39 \,;\, 206{,}61]\text{ €}}$ autour de $200$ € (et $\text{IC}_{90\%}(\mu) = [193{,}74 - 6{,}61 \,;\, 193{,}74 + 6{,}61] = \mathbf{[187{,}13 \,;\, 200{,}35]\text{ €}}$), avec $|z_{\text{obs}}| = 1{,}5572 < 1{,}6449$.
+Retiens simple (Règle 2) : on rejette $H_0$ seulement si $\alpha_{\text{obs}} < \alpha$. Ici $11{,}94\% \ge 10\%$, donc **on ne rejette toujours pas $H_0$**.
+- *Vérification au seuil $\alpha = 10\%$ bilatéral :* $\Phi(u) = 1 - \frac{0{,}10}{2} = 0{,}9500 \implies u_{0{,}95} = \mathbf{1{,}6449}$ ($R = ]-\infty \,;\, -1{,}6449[ \cup ]1{,}6449 \,;\, +\infty[$). On a bien $z_{\text{obs}} = -1{,}5572 \notin R$ ($|z_{\text{obs}}| = 1{,}5572 < 1{,}6449$), et en euros :
+  $$\left[\mu_0 - u_{1-\alpha/2}\frac{s}{\sqrt{n}} \,;\, \mu_0 + u_{1-\alpha/2}\frac{s}{\sqrt{n}}\right] = \left[200 - 1{,}6449 \times \frac{48{,}24}{\sqrt{144}} \,;\, 200 + 1{,}6449 \times \frac{48{,}24}{\sqrt{144}}\right] = \mathbf{\left[193{,}39 \,;\, 206{,}61\right]\text{ €}}$$
+  ($\bar{x} = 193{,}74\text{ €}$ reste dans la zone de non-rejet).
 
 > [!check] Conclusion concrète
 > À $5\%$ comme à $10\%$, **on ne rejette pas $H_0$** : en clair, le petit écart qu'on voit ($193{,}74$ € au lieu de $200$ €) peut très bien venir juste du hasard du tirage.
@@ -201,10 +225,11 @@ $$n p_0 = 64 \times 0{,}50 = 32 \ge 5 \qquad \text{et} \qquad n(1 - p_0) = 64 \t
    $$\text{ES}_0 = \sqrt{\frac{p_0(1 - p_0)}{n}} = \sqrt{\frac{0{,}50 \times 0{,}50}{64}} = \sqrt{\frac{0{,}25}{64}} = \frac{0{,}50}{8} = \mathbf{0{,}0625}$$
 2. **Statistique observée ($z_{\text{obs}}$) :**
    *En clair : `Score Z = (Proportion observée - 0,50) ÷ Erreur standard sous H₀`.*
-   $$z_{\text{obs}} = \frac{f - p_0}{\text{ES}_0} = \frac{0{,}4375 - 0{,}50}{0{,}0625} = \frac{-0{,}0625}{0{,}0625} = \mathbf{-1{,}00}$$
-3. **Seuil critique et $p$-value :**
-   À $5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), le seuil vaut $z_{\text{crit}} = \pm 1{,}96$. Avec $\Phi(1{,}00) = 0{,}8413$ (Annexe A.1, ligne `1,0`, col. `0,00`), et $\times 2$ pour le bilatéral :
-   $$p\text{-value} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) = 2(1 - 0{,}8413) = 2 \times 0{,}1587 = \mathbf{0{,}3174} \quad (31{,}74\%)$$
+   $$z_{\text{obs}} = \frac{f - p_0}{\sqrt{\dfrac{p_0(1 - p_0)}{n}}} = \frac{0{,}4375 - 0{,}50}{0{,}0625} = \frac{-0{,}0625}{0{,}0625} = \mathbf{-1{,}00}$$
+3. **Décision au seuil $\alpha = 5\%$ et $p$-value ($\alpha_{\text{obs}}$) :**
+   À $5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), le seuil vaut $u_{0{,}975} = \mathbf{1{,}96}$ ($R = ]-\infty \,;\, -1{,}96[ \cup ]1{,}96 \,;\, +\infty[$) : comme $z_{\text{obs}} = -1{,}00 \notin R$ ($|z_{\text{obs}}| = 1{,}00 < 1{,}96$), **on ne rejette pas $H_0$**.
+   Avec $\Phi(1{,}00) = 0{,}8413$ (Annexe A.1, ligne `1,0`, col. `0,00`), et $\times 2$ pour le bilatéral :
+   $$\alpha_{\text{obs}} = 2\big(1 - \Phi(|z_{\text{obs}}|)\big) = 2(1 - 0{,}8413) = 2 \times 0{,}1587 = \mathbf{0{,}3174} \quad (31{,}74\% \ge 5\%)$$
 
 > [!check] Conclusion concrète
 > Comme $|z_{\text{obs}}| = 1{,}00 < 1{,}96$ ($p = 31{,}74\% > 5\%$), **on ne rejette pas $H_0$** : avoir $28$ femmes sur $64$ reste tout à fait normal si la filière attire autant les hommes que les femmes.
@@ -264,9 +289,9 @@ $$n p_0 = 64 \times 0{,}50 = 32 \ge 5 \qquad \text{et} \qquad n(1 - p_0) = 64 \t
 ### 2. Test du Khi-deux sur l'écart-type ($\sigma_0 = 20 \implies \sigma_0^2 = 400$, $\alpha = 5\%$)
 *Pourquoi cette formule et quelle condition ?* On veut tester si la **dispersion** ($\sigma$) dépasse une limite (« ne doit pas dépasser $\sigma_0 = 20$ »). Dès que le test porte sur une variance ou un écart-type, on utilise la **loi du Khi-deux $\chi^2(n - 1)$** — mais attention, ça ne marche que si les notes suivent une **loi normale** (même avec $n = 30$, le TCL ne sauve pas la variance). « Ne doit pas dépasser » donne un **test unilatéral droit** :
 $$H_0 : \sigma \le 20 \ (\sigma^2 \le 400) \qquad \text{contre} \qquad H_1 : \sigma > 20 \ (\sigma^2 > 400)$$
-*En clair : `Statistique V = Somme des carrés des écarts ÷ Variance maximale tolérée (400)`.*
-$$V = \frac{(n - 1)s^2}{\sigma_0^2} = \frac{29 \times 245{,}9310}{20^2} = \frac{7\,132}{400} = \mathbf{17{,}8300} \sim \chi^2(29)$$
-*Lecture de l'Annexe B :* Pour un test unilatéral droit à $\alpha = 5\%$, tu lis direct la ligne $\nu = n - 1 = 29$ et la colonne `0,05`, soit $\chi^2_{0{,}95}(29) = \mathbf{42{,}5570}$.
+1. **Statistique observée ($V = \chi^2_{\text{obs}}$) :** *En clair : `Statistique V = Somme des carrés des écarts ÷ Variance maximale tolérée (400)`.*
+   $$V = \chi^2_{\text{obs}} = \frac{(n - 1)s^2}{\sigma_0^2} = \frac{29 \times 245{,}9310}{20^2} = \frac{7\,132}{400} = \mathbf{17{,}8300} \sim \chi^2_{29}$$
+2. **Décision au seuil $\alpha = 5\%$ (Annexe B / Annexe 2) :** Pour un test unilatéral droit à $\nu = n - 1 = 29$, le quantile vaut $\chi^2_{29;\, 0{,}95} = \mathbf{42{,}5570}$ ($R = ]42{,}5570 \,;\, +\infty[$). Comme $\chi^2_{\text{obs}} = 17{,}8300 \notin R$ ($17{,}8300 < 42{,}5570$), **on ne rejette pas $H_0$**.
 
 > [!check] Conclusion concrète
 > Comme $V = 17{,}8300 < 42{,}5570$ ($p = 0{,}9477$), **on ne rejette pas $H_0$** : les scores restent bien regroupés, largement sous le plafond des $20$ points ($s = 15{,}68$).
@@ -312,8 +337,8 @@ $$H_0 : \mu \ge 25\% \ (\text{norme respectée}) \qquad \text{contre} \qquad H_1
 1. **Erreur standard ($\text{ES}$) :**
    $$\text{ES} = \frac{s}{\sqrt{n}} = \frac{1{,}5515}{\sqrt{10}} = \frac{1{,}5515}{3{,}1623} \approx \mathbf{0{,}4906\%}$$
 2. **Statistique observée ($t_{\text{obs}}$) :**
-   $$t_{\text{obs}} = \frac{\bar{x} - \mu_0}{\text{ES}} = \frac{25{,}26 - 25}{0{,}4906} = \frac{+0{,}26}{0{,}4906} \approx \mathbf{+0{,}5299} \sim t(9)$$
-3. **Lecture de l'Annexe C :** La table de Student donne le risque **bilatéral** (les deux queues ensemble). Ici ton test est **unilatéral à gauche à $\alpha = 2{,}5\%$**, donc tu cherches la colonne où chaque queue vaut $2{,}5\%$, c'est-à-dire la colonne bilatérale **$2\alpha = 5\% = 0{,}050$** à la ligne $\nu = 9$. Ça donne $-t_{9,\, 0{,}975} = \mathbf{-2{,}2622}$ (on rejette si $t_{\text{obs}} < -2{,}2622$).
+   $$t_{\text{obs}} = \frac{\bar{x} - \mu_0}{s / \sqrt{n}} = \frac{25{,}26 - 25}{0{,}4906} = \frac{+0{,}26}{0{,}4906} \approx \mathbf{+0{,}5299} \sim t(9)$$
+3. **Décision au seuil $\alpha = 2{,}5\%$ (Annexe C / Annexe 1) :** La table de Student (Annexe C) donne le risque **bilatéral** (les deux queues ensemble). Ici ton test est **unilatéral à gauche à $\alpha = 2{,}5\%$**, donc tu lis la colonne bilatérale **$2\alpha = 5\% = 0{,}050$** (ou col. $p = 0{,}975$ en Annexe 1) à la ligne $\nu = 9$, ce qui donne $-t_{9;\, 0{,}975} = \mathbf{-2{,}2622}$ ($R = ]-\infty \,;\, -2{,}2622[$). Comme $t_{\text{obs}} = +0{,}53 \notin R$ ($+0{,}53 > -2{,}2622$), **on ne rejette pas $H_0$**.
 
 > [!check] Conclusion concrète
 > Comme $t_{\text{obs}} = +0{,}53 > -2{,}2622$ ($p = 0{,}6090$ en bilatéral), **on ne rejette pas $H_0$** : en moyenne, le quota de $25\%$ est respecté *(petit bémol à noter : regarde le tableau, **$7$ communes sur $10$** sont en dessous de $25\%$ ; c'est juste la commune n° 5 à $29{,}5\%$ qui tire toute la moyenne vers le haut)*.
@@ -387,7 +412,8 @@ Les données sont regroupées dans un tableau d'effectifs (chaque valeur $x_i$ r
 
 *Pourquoi $\nu = 6 - 1 - 1 = 4$ ?* On a $c = 6$ lignes après regroupement. On enlève $1$ parce que le total doit faire $53$, et encore $p = 1$ parce qu'on a dû estimer $\lambda = 4$ à partir de nos données (au lieu de le connaître d'avance) :
 $$\nu = c - 1 - p = 6 - 1 - 1 = \mathbf{4}$$
-En Annexe B ($\nu = 4$, colonne `0,05`), $\chi^2_{0{,}95}(4) = \mathbf{9{,}4877}$. Comme $\chi^2_{\text{obs}} = 0{,}1972 \ll 9{,}4877$ ($p = 0{,}9954$), on ne rejette pas $H_0$ : nos données collent super bien à $\mathcal{P}(4)$. *(Avec le regroupement $\{0,1\}$ [$E=4{,}85$] et $\{6+\}$, $\chi^2 = 0{,}2075$, même conclusion.)*
+En Annexe B ($\nu = 4$, colonne `0,05`), $\chi^2_{4;\, 0{,}95} = \mathbf{9{,}4877}$ ($R = ]9{,}4877 \,;\, +\infty[$).
+Comme $\chi^2_{\text{obs}} = 0{,}1972 \notin R$ ($0{,}1972 \ll 9{,}4877$, $\alpha_{\text{obs}} = 0{,}9954$), on ne rejette pas $H_0$ : nos données collent super bien à $\mathcal{P}(4)$. *(Avec le regroupement $\{0,1\}$ [$E=4{,}85$] et $\{6+\}$, $\chi^2 = 0{,}2075$, même conclusion.)*
 
 ### 3. Nombre d'opérateurs pour couvrir au moins $95\%$ des appels
 Maintenant qu'on sait que $\mathcal{P}(4)$ marche, on additionne les chances $p_k$ depuis $k = 0$ jusqu'à dépasser $0{,}95$ :
@@ -420,8 +446,8 @@ Les deux groupes sont grands ($2\,000$ et $1\,500$) et séparés, donc on utilis
    $$\frac{1}{n_1} + \frac{1}{n_2} = \frac{1}{2\,000} + \frac{1}{1\,500} = 0{,}0005 + 0{,}0006667 = 0{,}0011667$$
    $$\text{ES} = \sqrt{F(1 - F)\left(\frac{1}{n_1} + \frac{1}{n_2}\right)} = \sqrt{0{,}5586 \times 0{,}4414 \times 0{,}0011667} = \sqrt{0{,}0002877} \approx \mathbf{0{,}01696}$$
 2. **Statistique observée ($z_{\text{obs}}$) :** *En clair : `Score Z = (Taux Lomé - Taux Kara) ÷ Erreur standard`.*
-   $$z_{\text{obs}} = \frac{f_1 - f_2}{\text{ES}} = \frac{0{,}52 - 0{,}61}{0{,}01696} = \frac{-0{,}09}{0{,}01696} \approx \mathbf{-5{,}3064}$$
-3. **Seuil critique :** À $\alpha = 5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), le seuil vaut $z_{\text{crit}} = \pm 1{,}96$.
+   $$z_{\text{obs}} = \frac{f_1 - f_2}{\sqrt{F(1 - F)\left(\frac{1}{n_1} + \frac{1}{n_2}\right)}} = \frac{0{,}52 - 0{,}61}{0{,}01696} = \frac{-0{,}09}{0{,}01696} \approx \mathbf{-5{,}3064}$$
+3. **Seuil critique :** À $\alpha = 5\%$ bilatéral ($\Phi(u) = 0{,}9750$ en Annexe A.1), le seuil vaut $u_{0{,}975} = \mathbf{1{,}96}$ ($R = ]-\infty \,;\, -1{,}96[ \cup ]1{,}96 \,;\, +\infty[$ ; ici $z_{\text{obs}} = -5{,}31 \in R$).
 
 > [!check] Conclusion concrète
 > Comme $|z_{\text{obs}}| = 5{,}31 > 1{,}96$ ($p < 10^{-6}$), **on rejette $H_0$ sans hésiter** : on utilise vraiment beaucoup plus le paiement mobile à Kara ($61\%$) qu'à Lomé ($52\%$).
@@ -471,10 +497,11 @@ $$\underbrace{\frac{1}{n}\sum_{k=1}^K \sum_{i=1}^{n_k} (X_k^i - \overline{X})^2}
 
 ### 4. Tableau ANOVA, statistique $F$ de Fisher et décision ($\alpha = 5\%$)
 *Pourquoi une ANOVA au lieu de comparer les régions deux par deux ?* Avec $7$ régions, ça ferait $21$ tests $t$ à la suite et le risque de se tromper exploserait. L'ANOVA compare tout d'un coup ($H_0 : \mu_1 = \mu_2 = \dots = \mu_7$ vs $H_1 :$ au moins une région diffère) avec un seul chiffre $F$ : l'écart moyen *entre* régions ($\text{MS}_A = \text{SC}_A \div (K - 1)$) divisé par le bruit interne *dans* les régions ($\text{MS}_R = \text{SC}_R \div (n - K)$).
-- $\text{SC}_A = 495{,}0154$ avec $\text{ddl}_A = K - 1 = 7 - 1 = \mathbf{6} \implies \text{MS}_A = \frac{\text{SC}_A}{K - 1} = \frac{495{,}0154}{6} = \mathbf{82{,}5026}$
-- $\text{SC}_R = 623{,}9900$ avec $\text{ddl}_R = n - K = 48 - 7 = \mathbf{41} \implies \text{MS}_R = \frac{\text{SC}_R}{n - K} = \frac{623{,}9900}{41} = \mathbf{15{,}2193}$
-- Statistique de Fisher :
-  $$F_{\text{obs}} = \frac{\text{MS}_A}{\text{MS}_R} = \frac{82{,}5026}{15{,}2193} \approx \mathbf{5{,}4209} \quad (p = 0{,}00034)$$
+1. **Carrés moyens ($\text{MS}_A$ et $\text{MS}_R$) :**
+   - $\text{SC}_A = 495{,}0154$ avec $\text{ddl}_A = K - 1 = 7 - 1 = \mathbf{6} \implies \text{MS}_A = \frac{\text{SC}_A}{K - 1} = \frac{495{,}0154}{6} = \mathbf{82{,}5026}$
+   - $\text{SC}_R = 623{,}9900$ avec $\text{ddl}_R = n - K = 48 - 7 = \mathbf{41} \implies \text{MS}_R = \frac{\text{SC}_R}{n - K} = \frac{623{,}9900}{41} = \mathbf{15{,}2193}$
+2. **Statistique observée ($F_{\text{obs}}$) :**
+   $$F_{\text{obs}} = \frac{\text{MS}_A}{\text{MS}_R} = \frac{82{,}5026}{15{,}2193} \approx \mathbf{5{,}4209} \quad (p = 0{,}00034)$$
 
 | Source de variation | Somme des carrés (SC) | ddl | Carré moyen (MS) | Statistique $F_{\text{obs}}$ |
 | :--- | :---: | :---: | :---: | :---: |
@@ -482,7 +509,7 @@ $$\underbrace{\frac{1}{n}\sum_{k=1}^K \sum_{i=1}^{n_k} (X_k^i - \overline{X})^2}
 | **Résiduelle (Intra)** | $623{,}9900$ | $41$ | $15{,}2193$ | — |
 
 *(Avec la variante $s_k^2$ corrigée : $F_{\text{obs}} = \mathbf{6{,}3440}$, $p = 8{,}8 \times 10^{-5}$.)*
-En Annexe D.1 ($\nu_1 = 6$, $\nu_2 = 40$), $F_{0{,}05}(6, 40) = 2{,}34$ (soit $F_{0{,}05}(6, 41) \approx \mathbf{2{,}33}$).
+3. **Seuil critique (Annexe D.1) :** Pour $\nu_1 = 6$ et $\nu_2 = 40$, $F_{0{,}05}(6, 40) = 2{,}34$ (soit $F_{0{,}05}(6, 41) \approx \mathbf{2{,}33}$, $R = ]2{,}33 \,;\, +\infty[$ ; ici $F_{\text{obs}} = 5{,}42 \in R$).
 
 > [!check] Conclusion concrète
 > Comme $F_{\text{obs}} = 5{,}42 > 2{,}33$, **on rejette $H_0$** : la campagne publicitaire n'a pas eu le même effet dans toutes les régions.
@@ -508,8 +535,8 @@ Comme les deux groupes sont grands ($n_1 = 41 \ge 30$ et $n_2 = 61 \ge 30$), on 
    $$\frac{v_1^2}{n_1} = \frac{8^2}{41} = \frac{64}{41} \approx 1{,}5610, \qquad \frac{v_2^2}{n_2} = \frac{9^2}{61} = \frac{81}{61} \approx 1{,}3279$$
    $$\text{ES} = \sqrt{1{,}5610 + 1{,}3279} = \sqrt{2{,}8889} \approx \mathbf{1{,}6997}$$
 2. **Statistique observée ($N_{\text{obs}}$) :**
-   $$N_{\text{obs}} = \frac{\bar{x}_1 - \bar{x}_2}{\text{ES}} = \frac{107 - 104}{1{,}6997} = \frac{3}{1{,}6997} \approx \mathbf{1{,}7651}$$
-3. **Pourquoi le seuil vaut $1{,}6449$ et non $1{,}96$ ?** Comme on teste un seul côté (à droite), on met tout $\alpha = 5\%$ d'un seul côté : tu cherches $\Phi(u) = 1 - 0{,}05 = 0{,}9500$ en Annexe A.1, ce qui donne $z_{0{,}95} = \mathbf{1{,}6449}$ (et $p = 1 - \Phi(1{,}7651) = \mathbf{0{,}0388}$).
+   $$N_{\text{obs}} = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{v_1^2}{n_1} + \frac{v_2^2}{n_2}}} = \frac{107 - 104}{1{,}6997} = \frac{3}{1{,}6997} \approx \mathbf{1{,}7651}$$
+3. **Pourquoi le seuil vaut $1{,}6449$ et non $1{,}96$ ?** Comme on teste un seul côté (à droite), on met tout $\alpha = 5\%$ d'un seul côté : tu cherches $\Phi(u) = 1 - 0{,}05 = 0{,}9500$ en Annexe A.1, ce qui donne $u_{0{,}95} = \mathbf{1{,}6449}$ ($R = ]1{,}6449 \,;\, +\infty[$ ; ici $N_{\text{obs}} = 1{,}7651 \in R$ et $\alpha_{\text{obs}} = 1 - \Phi(1{,}7651) = \mathbf{0{,}0388}$).
 *(Avec le test $t$ poolé à $n_1 + n_2 - 2 = 100$ ddl : $s_p = 8{,}613$, $t_{\text{obs}} = 1{,}7246$, $p_{\text{unilat}} = 0{,}0438$.)*
 
 > [!check] Conclusion concrète
@@ -558,8 +585,8 @@ $$H_0 : \mu_d = 0 \qquad \text{contre} \qquad H_1 : \mu_d \ne 0$$
 1. **Erreur standard ($\text{ES}$) :**
    $$\text{ES} = \frac{s_d}{\sqrt{n}} = \frac{0{,}06186}{\sqrt{15}} = \frac{0{,}06186}{3{,}8730} \approx \mathbf{0{,}01597\text{ s}}$$
 2. **Statistique observée ($t_{\text{obs}}$) :**
-   $$t_{\text{obs}} = \frac{\bar{d} - 0}{\text{ES}} = \frac{0{,}07867}{0{,}01597} \approx \mathbf{4{,}9252} \sim t(14)$$
-3. **Seuil critique :** En Annexe C (ligne $\nu = 14$, colonne bilatérale `0,050`), le seuil critique vaut $t_{\text{crit}} = \mathbf{2{,}1448}$ ($p = 0{,}00022$).
+   $$t_{\text{obs}} = \frac{\bar{d} - 0}{s_d / \sqrt{n}} = \frac{0{,}07867}{0{,}01597} \approx \mathbf{4{,}9252} \sim t(14)$$
+3. **Seuil critique :** En Annexe C (ligne $\nu = 14$, colonne bilatérale `0,050`), le seuil critique vaut $t_{14;\, 0{,}975} = \mathbf{2{,}1448}$ ($R = ]-\infty \,;\, -2{,}1448[ \cup ]2{,}1448 \,;\, +\infty[$ ; ici $t_{\text{obs}} = 4{,}9252 \in R$, $\alpha_{\text{obs}} = 0{,}00022$).
 
 > [!check] Conclusion concrète
 > Comme $4{,}9252 > 2{,}1448$ ($p = 0{,}00022$), **on rejette $H_0$** : l'alcool rallonge vraiment le temps de réaction au volant *(même en comparant deux groupes séparés à $\nu = 28$, $t = 2{,}6571 > 2{,}0484$ donne le même rejet)*.
@@ -603,7 +630,7 @@ Le test $t$ conclut à tort qu'il n'y a rien, juste parce que ce $-37$ kg fait e
   $$W = \min(W^+, W^-) = \min(5{,}0 \,;\, 40{,}0) = \mathbf{5{,}0}$$
 
 ### 3. Décision à $\alpha = 5\%$ (pourquoi rejeter quand $W \le W_{\text{crit}}$ ?)
-*Attention, sens inversé :* dans $Z, t, \chi^2, F$, on rejette quand le score dépasse le seuil. Ici, plus le programme marche dans un seul sens, plus le plus petit des deux tas ($W$) devient **petit** : on rejette donc quand **$W \le W_{\text{crit}}$**. Pour $n = 9$ à $\alpha = 5\%$ bilatéral, la table donne $W_{\text{crit}} = \mathbf{5}$ (et $p\text{-value exacte} = \frac{22}{512} = \mathbf{0{,}0430} < 0{,}05$).
+*Attention, sens inversé :* dans $Z, t, \chi^2, F$, on rejette quand le score dépasse le seuil. Ici, plus le programme marche dans un seul sens, plus le plus petit des deux tas ($W$) devient **petit** : on rejette donc quand **$W \le W_{\text{crit}}$**. Pour $n = 9$ à $\alpha = 5\%$ bilatéral, la table donne $W_{\text{crit}} = \mathbf{5}$ ($R = [0 \,;\, 5]$, et $\alpha_{\text{obs}} = \frac{22}{512} = \mathbf{0{,}0430} < 0{,}05$).
 
 > [!check] Conclusion concrète
 > Comme $W = 5 \le W_{\text{crit}} = 5$ ($p = 4{,}30\% < 5\%$), **on rejette $H_0$** : le programme fait bien baisser le poids ($7$ participants sur $10$ ont maigri).
@@ -629,7 +656,7 @@ Le tableau se remplit toujours avec les 3 mêmes divisions : $\text{SC}_F \div (
 | **Résiduelle (Intra)** | $240$ | $12$ | $20$ | — |
 
 ### 2. Décision au seuil $\alpha = 5\%$
-On compare $F_{\text{obs}} = 8{,}00$ au seuil critique donné (Annexe D.1) : $F_{0{,}05}(2, 12) = \mathbf{3{,}89}$.
+On compare $F_{\text{obs}} = 8{,}00$ au seuil critique donné (Annexe D.1) : $F_{0{,}05}(2, 12) = \mathbf{3{,}89}$ ($R = ]3{,}89 \,;\, +\infty[$).
 
 > [!check] Conclusion concrète
 > Comme $F = 8{,}00 > F_{0{,}05}(2, 12) = 3{,}89$, **on rejette $H_0$** : le choix du SGBD change vraiment le temps de traitement.
@@ -656,7 +683,7 @@ $$\text{SCE} = \text{SCT} - \text{SCR} = 1\,200 - 300 = \mathbf{900}$$
 | **Résiduelle (Intra)** | $300$ | $20$ | $15$ | — |
 | **Total** | $1\,200$ | $23$ | — | — |
 
-On compare $F_{\text{obs}} = 20{,}00$ au seuil critique donné : $F_{0{,}01}(3, 20) = \mathbf{4{,}94}$.
+On compare $F_{\text{obs}} = 20{,}00$ au seuil critique donné : $F_{0{,}01}(3, 20) = \mathbf{4{,}94}$ ($R = ]4{,}94 \,;\, +\infty[$).
 
 > [!check] Conclusion concrète
 > Comme $F = 20{,}00 > F_{0{,}01}(3, 20) = 4{,}94$, **on rejette $H_0$ au seuil de $1\%$** : le choix du langage pèse énormément sur la consommation de RAM.
@@ -687,7 +714,7 @@ Il y a $n_1 n_2 = 5 \times 5 = 25$ duels possibles au total, donc $U_2$ compte l
 $$U_2 = n_1 n_2 - U_1 = 25 - 22 = \mathbf{3}, \qquad U = \min(U_1, U_2) = \min(22, 3) = \mathbf{3}$$
 
 ### 4. Décision à $\alpha = 5\%$ (sens de rejet inversé $U \le U_{\text{crit}}$)
-*Rappel :* comme pour Wilcoxon, plus un groupe écrase l'autre, plus $\min(U_1, U_2)$ devient **petit**. Donc on rejette $H_0$ seulement si $U \le U_{\text{critique}} = \mathbf{2}$.
+*Rappel :* comme pour Wilcoxon, plus un groupe écrase l'autre, plus $\min(U_1, U_2)$ devient **petit**. Donc on rejette $H_0$ seulement si $U \le U_{\text{critique}} = \mathbf{2}$ ($R = [0 \,;\, 2]$).
 
 > [!check] Conclusion concrète
 > Comme $U = 3 > U_{\text{critique}} = 2$, **on ne rejette pas $H_0$** : le présentiel est devant sur ce petit groupe, mais avec seulement $5$ personnes par groupe l'écart n'est pas assez net pour trancher à $5\%$.
@@ -711,7 +738,7 @@ $$U_2 = R_2 - \frac{n_2(n_2 + 1)}{2} = 27 - \frac{6 \times (6 + 1)}{2} = 27 - 21
 *Deuxième vérif :* $U_1 + U_2 = 30 + 6 = 36$, ce qui fait bien le total des duels $n_1 \times n_2 = 6 \times 6 = 36$.
 
 ### 3. Décision à $\alpha = 5\%$
-$$U = \min(U_1, U_2) = \min(30, 6) = \mathbf{6} > U_{\text{critique}} = 5$$
+$$U = \min(U_1, U_2) = \min(30, 6) = \mathbf{6} > U_{\text{critique}} = 5 \quad (R = [0 \,;\, 5])$$
 
 > [!check] Conclusion concrète
 > Comme $U = 6 > U_{\text{critique}} = 5$, **on ne rejette pas $H_0$** en bilatéral à $5\%$ *(on est vraiment tout près de la limite : en unilatéral à $5\%$, ça aurait rejeté, mais avec $6$ personnes par groupe c'est trop juste pour le bilatéral)*.
@@ -746,7 +773,7 @@ On élève l'écart $(O_{ij} - E_{ij})$ au carré (sinon les $+$ et les $-$ se c
 $$\chi^2_{\text{obs}} = \sum \frac{(O_{ij} - E_{ij})^2}{E_{ij}} = 0{,}8333 + 1{,}2500 + 0{,}8333 + 1{,}2500 = \mathbf{4{,}1667} \quad (p = 0{,}0412)$$
 *Pourquoi $\text{ddl} = 1$ ?* Comme les totaux des bords ($50, 50, 60, 40$) sont bloqués, dès que tu remplis **1 seule** case du tableau $2 \times 2$, les 3 autres sont forcées par soustraction :
 $$\text{ddl} = (l - 1)(c - 1) = (2 - 1)(2 - 1) = 1 \times 1 = \mathbf{1}$$
-En Annexe B ($\nu = 1$, colonne `0,05`), $\chi^2_{\text{critique}} = \mathbf{3{,}841}$.
+En Annexe B ($\nu = 1$, colonne `0,05`), $\chi^2_{1;\, 0{,}95} = \mathbf{3{,}841}$ ($R = ]3{,}841 \,;\, +\infty[$).
 
 > [!check] Conclusion concrète
 > Comme $\chi^2_{\text{obs}} = 4{,}1667 > \chi^2_{\text{critique}} = 3{,}841$, **on rejette $H_0$** : le choix du 2FA dépend bien de l'OS (les gens sur iOS utilisent davantage l'application que ceux sur Android).
@@ -778,7 +805,7 @@ La condition du $\chi^2$ passe largement : tous les attendus $E_i$ valent au moi
 $$\text{ddl} = (l - 1)(c - 1) = (3 - 1)(2 - 1) = 2 \times 1 = \mathbf{2}$$
 
 ### 3. Décision au seuil $\alpha = 5\%$ et taux par architecture
-En Annexe B ($\nu = 2$, colonne `0,05`), $\chi^2_{0{,}05}(2) = \mathbf{5{,}991}$. On calcule les % de satisfaits pour voir concrètement ce qui change :
+En Annexe B ($\nu = 2$, colonne `0,05`), $\chi^2_{2;\, 0{,}95} = \mathbf{5{,}991}$ ($R = ]5{,}991 \,;\, +\infty[$). On calcule les % de satisfaits pour voir concrètement ce qui change :
 - Microservices : $\frac{70}{70 + 10} = \frac{70}{80} = \mathbf{87{,}5\%}$
 - Serverless : $\frac{50}{50 + 10} = \frac{50}{60} = \mathbf{83{,}3\%}$
 - Monolithe : $\frac{30}{30 + 30} = \frac{30}{60} = \mathbf{50{,}0\%}$

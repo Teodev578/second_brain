@@ -115,7 +115,29 @@ On cherche $z_{1-\alpha/2}$ tel que $\Phi(z) = 1 - \frac{\alpha}{2}$ :
 
 ---
 
-## ⚠️ 5. Pièges Classiques d'Examen
+## 🔄 5. IC vs Zones de Rejet $R$ selon le sens (pour chaque loi)
+
+> [!IMPORTANT] Règle clé : l'IC ne change pas de côté, seule la zone de rejet d'un test change
+> - **Intervalle de confiance (IC) :** dans le cours, un IC est **toujours bilatéral** ($\alpha$ coupé en $\alpha/2$ à gauche et $\alpha/2$ à droite, centré sur l'estimation $\bar{x}, f, s^2$).
+> - **Test d'hypothèse :** la **zone de rejet $R$** change à la fois **de côté** et **de seuil** selon $H_1$ ($\alpha/2$ de chaque côté en bilatéral, contre tout $\alpha$ d'un seul côté en unilatéral).
+
+### Tableau comparatif des zones de rejet $R$ par loi (au risque $\alpha$)
+
+| Loi sous $H_0$ | IC du cours *(toujours bilatéral)* | Test bilatéral ($H_1 : \ne$) | Unilatéral gauche ($H_1 : <$) | Unilatéral droit ($H_1 : >$) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Normale $\mathcal{N}(0, 1)$** <br> *(ex. $\alpha = 5\%$)* | $\left[\bar{x} \pm u_{1-\alpha/2}\dfrac{\sigma}{\sqrt{n}}\right]$ <br> *($\pm 1{,}96$)* | $]-\infty; -u_{1-\alpha/2}[ \cup ]u_{1-\alpha/2}; +\infty[$ <br> *($]-\infty; -1{,}96[ \cup ]1{,}96; +\infty[$)* | $]-\infty; -u_{1-\alpha}[$ <br> *($]-\infty; -1{,}645[$)* | $]u_{1-\alpha}; +\infty[$ <br> *($]1{,}645; +\infty[$)* |
+| **Student $t(\nu)$** <br> *($\nu = n-1$, ex. $\nu=10, 5\%$)* | $\left[\bar{x} \pm t_{\nu;\, 1-\alpha/2}\dfrac{s}{\sqrt{n}}\right]$ <br> *($\pm 2{,}228$)* | $]-\infty; -t_{\nu;\, 1-\alpha/2}[ \cup ]t_{\nu;\, 1-\alpha/2}; +\infty[$ <br> *($]-\infty; -2{,}228[ \cup ]2{,}228; +\infty[$)* | $]-\infty; -t_{\nu;\, 1-\alpha}[$ <br> *($]-\infty; -1{,}812[$)* | $]t_{\nu;\, 1-\alpha}; +\infty[$ <br> *($]1{,}812; +\infty[$)* |
+| **Khi-deux $\chi^2(\nu)$** <br> *(positif, ex. $\nu=10, 5\%$)* | $\left[\dfrac{(n-1)s^2}{\chi^2_{\nu;\, 1-\alpha/2}} \,;\, \dfrac{(n-1)s^2}{\chi^2_{\nu;\, \alpha/2}}\right]$ <br> *(div. par $20{,}483$ et $3{,}247$)* | $[0; \chi^2_{\nu;\, \alpha/2}[ \cup ]\chi^2_{\nu;\, 1-\alpha/2}; +\infty[$ <br> *($[0; 3{,}247[ \cup ]20{,}483; +\infty[$)* | $[0; \chi^2_{\nu;\, \alpha}[$ <br> *($[0; 3{,}940[$)* | $]\chi^2_{\nu;\, 1-\alpha}; +\infty[$ <br> *($]18{,}307; +\infty[$ — aussi ajust./indép.)* |
+| **Fisher $\mathcal{F}(\nu_1, \nu_2)$** <br> *(positif, asymétrique)* | $\left[\dfrac{s_1^2 / s_2^2}{f_{1-\alpha/2}(\nu_1,\nu_2)} \,;\, \dfrac{s_1^2}{s_2^2}f_{1-\alpha/2}(\nu_2,\nu_1)\right]$ | $[0; f_{\alpha/2}(\nu_1,\nu_2)[ \cup ]f_{1-\alpha/2}(\nu_1,\nu_2); +\infty[$ <br> *(ou $s_{\max}^2/s_{\min}^2 > f_{1-\alpha/2}$ en Ann. D.2)* | $[0; f_{\alpha}(\nu_1,\nu_2)[$ <br> *(avec $f_{\alpha}(\nu_1,\nu_2) = \frac{1}{f_{1-\alpha}(\nu_2,\nu_1)}$)* | $]f_{1-\alpha}(\nu_1,\nu_2); +\infty[$ <br> *(toujours ce cas pour l'ANOVA, Ann. D.1)* |
+
+- **Attention aux conventions d'indices dans les tables :** ci-dessus, $u_p, t_{\nu;\, p}, \chi^2_{\nu;\, p}, f_p$ notent le quantile d'aire cumulée **à gauche** $p$ (convention des slides Module 1). Dans le polycopié :
+  - **Annexe C (Student)** est indexée par le risque bilatéral $\alpha$ (lire la colonne $2\alpha$ en unilatéral).
+  - **Annexe B ($\chi^2$)** et **Annexes D.1/D.2 ($\mathcal{F}$)** sont indexées par la **queue droite** : $\chi^2_{\nu;\, 0{,}95}$ se lit en colonne `0,05`, et $f_{0{,}975}$ se lit dans la table $\alpha = 0{,}025$ (notée $F_{0{,}025}$).
+- **Zone de non-rejet en unités réelles (autour de $\mu_0$ sous $\mathcal{N}(0,1)$) :** $\left[\mu_0 - u_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} \,;\, \mu_0 + u_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}\right]$ en bilatéral, $\left[\mu_0 - u_{1-\alpha}\frac{\sigma}{\sqrt{n}} \,;\, +\infty\right[$ en unilatéral gauche, et $\left]-\infty \,;\, \mu_0 + u_{1-\alpha}\frac{\sigma}{\sqrt{n}}\right]$ en unilatéral droit.
+
+---
+
+## ⚠️ 6. Pièges Classiques d'Examen
 
 > [!warning] Les 6 erreurs à ne pas commettre
 > 1. **Oublier la normalité stricte pour $\chi^2$ et $\mathcal{F}$ :** le TCL ne sauve pas l'IC d'une variance $\sigma^2$, même si $n \ge 30$.
@@ -127,7 +149,7 @@ On cherche $z_{1-\alpha/2}$ tel que $\Phi(z) = 1 - \frac{\alpha}{2}$ :
 
 ---
 
-## 🧠 6. Active Recall
+## 🧠 7. Active Recall
 
 - [ ] **Q1 : Pour encadrer $\mu$, quand passe-t-on de Student $t(n-1)$ à $\mathcal{N}(0,1)$ ?**
   - *Réponse flash :* Dès que $\sigma$ est connu (sous population normale), ou lorsque $n \ge 30$ grâce au TCL (en remplaçant $\sigma$ par $s$ s'il est inconnu).

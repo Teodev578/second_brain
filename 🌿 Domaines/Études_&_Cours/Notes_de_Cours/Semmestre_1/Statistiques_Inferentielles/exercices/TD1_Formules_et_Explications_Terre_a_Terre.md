@@ -302,13 +302,11 @@ Deux indices te le montrent à coup sûr : d'abord tu comptes des nombres entier
 *Comment trouver les bornes ?* Toujours pareil : $\text{Borne inf} = \bar{x} - e$ et $\text{Borne sup} = \bar{x} + e$, avec $e = t_{9,\, 1-\alpha/2} \times \frac{s}{\sqrt{n}}$ :
 1. **Erreur standard ($\text{ES}$) :**
    $$\text{ES} = \frac{s}{\sqrt{n}} = \frac{6{,}4850}{\sqrt{10}} = \frac{6{,}4850}{3{,}1623} \approx \mathbf{2{,}0507}$$
-2. **Calcul des marges $e$ et des bornes :**
-   - **À $90\%$** ($\alpha = 0{,}10$, Annexe C ligne $\nu = 9$ col. `0,10` $\implies t_{9,\, 0{,}95} = 1{,}8331$) :
-     $$e_{90\%} = 1{,}8331 \times 2{,}0507 = 3{,}7592$$
-     $$\text{Borne inf} = 759{,}5 - 3{,}7592 = \mathbf{755{,}74}, \qquad \text{Borne sup} = 759{,}5 + 3{,}7592 = \mathbf{763{,}26}$$
-   - **À $99\%$** ($\alpha = 0{,}01$, Annexe C ligne $\nu = 9$ col. `0,01` $\implies t_{9,\, 0{,}995} = 3{,}2498$) :
-     $$e_{99\%} = 3{,}2498 \times 2{,}0507 = 6{,}6645$$
-     $$\text{Borne inf} = 759{,}5 - 6{,}6645 = \mathbf{752{,}84}, \qquad \text{Borne sup} = 759{,}5 + 6{,}6645 = \mathbf{766{,}16}$$
+2. **Calcul des marges $e$ et des intervalles de confiance :**
+   - **À $90\%$** ($\alpha = 0{,}10$, Annexe C ligne $\nu = 9$ col. `0,10` $\implies t_{9,\, 0{,}95} = 1{,}8331$, $e_{90\%} = 1{,}8331 \times 2{,}0507 = 3{,}7592$) :
+     $$\text{IC}_{90\%}(\mu) = \left[\bar{x} - t_{n-1,\, 1-\alpha/2}\frac{s}{\sqrt{n}} \,;\, \bar{x} + t_{n-1,\, 1-\alpha/2}\frac{s}{\sqrt{n}}\right] = \left[759{,}5 - 3{,}7592 \,;\, 759{,}5 + 3{,}7592\right] = \mathbf{\left[755{,}74 \,;\, 763{,}26\right]}$$
+   - **À $99\%$** ($\alpha = 0{,}01$, Annexe C ligne $\nu = 9$ col. `0,01` $\implies t_{9,\, 0{,}995} = 3{,}2498$, $e_{99\%} = 3{,}2498 \times 2{,}0507 = 6{,}6645$) :
+     $$\text{IC}_{99\%}(\mu) = \left[\bar{x} - t_{n-1,\, 1-\alpha/2}\frac{s}{\sqrt{n}} \,;\, \bar{x} + t_{n-1,\, 1-\alpha/2}\frac{s}{\sqrt{n}}\right] = \left[759{,}5 - 6{,}6645 \,;\, 759{,}5 + 6{,}6645\right] = \mathbf{\left[752{,}84 \,;\, 766{,}16\right]}$$
 
 | Niveau de confiance | $\alpha$ | Quantile $t_{9,\, 1-\alpha/2}$ (Annexe C) | Marge d'erreur $e$ | $IC_{1-\alpha}(\mu) = [\bar{x} - e \,;\, \bar{x} + e]$ |
 | :---: | :---: | :---: | :---: | :---: |
@@ -329,8 +327,10 @@ $$n \ge (25{,}4212)^2 = 646{,}24 \implies \mathbf{n \ge 647\text{ jours}}$$
 
 ### 5. Impact si $\sigma^2 = 42$ est connue (pourquoi passer à la loi Normale $z$ ?)
 *Pourquoi changer de loi ?* Dès qu'on te donne la vraie variance $\sigma^2 = 42$, tu n'as plus besoin de deviner $\sigma$ avec $s$ : le flou en moins te permet de quitter Student et de repasser direct sur la **loi normale $\mathcal{N}(0, 1)$**. Comme les chiffres $z$ sont plus petits que ceux de Student, les fourchettes deviennent plus serrées (avec $\text{ES} = \frac{\sqrt{42}}{\sqrt{10}} = \frac{6{,}4807}{3{,}1623} \approx \mathbf{2{,}0494}$) :
-- **À $90\%$** ($z_{0{,}95} = 1{,}6449$) : $e = 1{,}6449 \times 2{,}0494 = 3{,}3711 \implies [759{,}5 - 3{,}37 \,;\, 759{,}5 + 3{,}37] = \mathbf{[756{,}13 \,;\, 762{,}87]}$ (largeur $2 \times 3{,}37 = 6{,}74$ contre $7{,}52$).
-- **À $99\%$** ($z_{0{,}995} = 2{,}5758$) : $e = 2{,}5758 \times 2{,}0494 = 5{,}2788 \implies [759{,}5 - 5{,}28 \,;\, 759{,}5 + 5{,}28] = \mathbf{[754{,}22 \,;\, 764{,}78]}$ (largeur $2 \times 5{,}28 = 10{,}56$ contre $13{,}33$).
+- **À $90\%$** ($z_{0{,}95} = 1{,}6449$, $e = 1{,}6449 \times 2{,}0494 = 3{,}3711$, largeur $6{,}74$ contre $7{,}52$) :
+  $$\text{IC}_{90\%}(\mu) = \left[\bar{x} - z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} \,;\, \bar{x} + z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}\right] = \left[759{,}5 - 3{,}3711 \,;\, 759{,}5 + 3{,}3711\right] = \mathbf{\left[756{,}13 \,;\, 762{,}87\right]}$$
+- **À $99\%$** ($z_{0{,}995} = 2{,}5758$, $e = 2{,}5758 \times 2{,}0494 = 5{,}2788$, largeur $10{,}56$ contre $13{,}33$) :
+  $$\text{IC}_{99\%}(\mu) = \left[\bar{x} - z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} \,;\, \bar{x} + z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}\right] = \left[759{,}5 - 5{,}2788 \,;\, 759{,}5 + 5{,}2788\right] = \mathbf{\left[754{,}22 \,;\, 764{,}78\right]}$$
 
 | Niveau | Quantile $z$ | $IC(\mu)$ avec $\sigma$ connu | Largeur (vs Student) |
 | :---: | :---: | :---: | :---: |
@@ -356,11 +356,13 @@ $$n \ge (25{,}4212)^2 = 646{,}24 \implies \mathbf{n \ge 647\text{ jours}}$$
 - **Centrale 1 ($\nu_1 = 25 - 1 = 24$) :**
   - Somme des carrés : $n_1 v_1^2 = 25 \times 65{,}42 = \mathbf{1\,635{,}50}$.
   - Quantiles Annexe B ($\nu_1 = 24$) : $\chi^2_{\text{sup}} = 39{,}3641$ (col. `0,025`) et $\chi^2_{\text{inf}} = 12{,}4012$ (col. `0,975`).
-  - $IC_{95\%}(\sigma_1^2) = \left[\frac{1\,635{,}50}{39{,}3641} \,;\, \frac{1\,635{,}50}{12{,}4012}\right] = \mathbf{[41{,}55 \,;\, 131{,}88]} \implies IC_{95\%}(\sigma_1) = [\sqrt{41{,}55} \,;\, \sqrt{131{,}88}] = \mathbf{[6{,}45 \,;\, 11{,}48]}$.
+    $$\text{IC}_{95\%}(\sigma_1^2) = \left[\frac{n_1 v_1^2}{\chi^2_{n_1-1,\, 1-\alpha/2}} \,;\, \frac{n_1 v_1^2}{\chi^2_{n_1-1,\, \alpha/2}}\right] = \left[\frac{1\,635{,}50}{39{,}3641} \,;\, \frac{1\,635{,}50}{12{,}4012}\right] = \mathbf{\left[41{,}55 \,;\, 131{,}88\right]}$$
+    $$\text{IC}_{95\%}(\sigma_1) = \left[\sqrt{\frac{n_1 v_1^2}{\chi^2_{n_1-1,\, 1-\alpha/2}}} \,;\, \sqrt{\frac{n_1 v_1^2}{\chi^2_{n_1-1,\, \alpha/2}}}\right] = \left[\sqrt{41{,}55} \,;\, \sqrt{131{,}88}\right] = \mathbf{\left[6{,}45 \,;\, 11{,}48\right]}$$
 - **Centrale 2 ($\nu_2 = 23 - 1 = 22$) :**
   - Somme des carrés : $n_2 v_2^2 = 23 \times 58{,}24 = \mathbf{1\,339{,}52}$.
   - Quantiles Annexe B ($\nu_2 = 22$) : $\chi^2_{\text{sup}} = 36{,}7807$ (col. `0,025`) et $\chi^2_{\text{inf}} = 10{,}9823$ (col. `0,975`).
-  - $IC_{95\%}(\sigma_2^2) = \left[\frac{1\,339{,}52}{36{,}7807} \,;\, \frac{1\,339{,}52}{10{,}9823}\right] = \mathbf{[36{,}42 \,;\, 121{,}97]} \implies IC_{95\%}(\sigma_2) = [\sqrt{36{,}42} \,;\, \sqrt{121{,}97}] = \mathbf{[6{,}03 \,;\, 11{,}04]}$.
+    $$\text{IC}_{95\%}(\sigma_2^2) = \left[\frac{n_2 v_2^2}{\chi^2_{n_2-1,\, 1-\alpha/2}} \,;\, \frac{n_2 v_2^2}{\chi^2_{n_2-1,\, \alpha/2}}\right] = \left[\frac{1\,339{,}52}{36{,}7807} \,;\, \frac{1\,339{,}52}{10{,}9823}\right] = \mathbf{\left[36{,}42 \,;\, 121{,}97\right]}$$
+    $$\text{IC}_{95\%}(\sigma_2) = \left[\sqrt{\frac{n_2 v_2^2}{\chi^2_{n_2-1,\, 1-\alpha/2}}} \,;\, \sqrt{\frac{n_2 v_2^2}{\chi^2_{n_2-1,\, \alpha/2}}}\right] = \left[\sqrt{36{,}42} \,;\, \sqrt{121{,}97}\right] = \mathbf{\left[6{,}03 \,;\, 11{,}04\right]}$$
 
 | Centrale | $\nu = n - 1$ | $n v^2$ | $\chi^2_{\text{inf}}$ (`0,975`) | $\chi^2_{\text{sup}}$ (`0,025`) | $IC_{95\%}(\sigma^2)$ | $IC_{95\%}(\sigma)$ |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -382,7 +384,7 @@ Les deux fourchettes $[41{,}55 \,;\, 131{,}88]$ et $[36{,}42 \,;\, 121{,}97]$ **
    - Pour $\nu_2 = 22$ ($22$ est à $20\%$ entre $20$ et $30$, car $\frac{22-20}{30-20} = 0{,}2$) et $\nu_1 = 24$ :
      $$F_{0{,}025}(22, 24) \approx 2{,}33 - 0{,}2(2{,}33 - 2{,}21) = 2{,}33 - 0{,}024 = \mathbf{2{,}306}$$
 3. **Calcul des bornes :**
-   $$IC_{95\%}\!\left(\frac{\sigma_1^2}{\sigma_2^2}\right) = \left[\frac{s_1^2 / s_2^2}{F_{0{,}025}(24, 22)} \,;\, \frac{s_1^2}{s_2^2} \cdot F_{0{,}025}(22, 24)\right] = \left[\frac{1{,}1192}{2{,}342} \,;\, 1{,}1192 \times 2{,}306\right] = \mathbf{[0{,}478 \,;\, 2{,}581]}$$
+   $$\text{IC}_{95\%}\!\left(\frac{\sigma_1^2}{\sigma_2^2}\right) = \left[\frac{s_1^2 / s_2^2}{F_{\alpha/2}(\nu_1, \nu_2)} \,;\, \frac{s_1^2}{s_2^2} \cdot F_{\alpha/2}(\nu_2, \nu_1)\right] = \left[\frac{1{,}1192}{2{,}342} \,;\, 1{,}1192 \times 2{,}306\right] = \mathbf{\left[0{,}478 \,;\, 2{,}581\right]}$$
    *(Avec $v_1^2 / v_2^2 = 1{,}1233$ : $[0{,}480 \,;\, 2{,}590]$.)*
    *Pourquoi regarder si $1$ est dans l'intervalle ?* Si les deux centrales ont les mêmes écarts ($\sigma_1^2 = \sigma_2^2$), leur division vaut $\mathbf{1}$.
 
@@ -402,11 +404,11 @@ $$f_1 = \frac{150}{500} = \mathbf{0{,}30} \ (30\%), \qquad f_2 = \frac{140}{500}
 ### 2. IC à 95% des intentions de vote (pourquoi loi Normale $z$ et $f(1-f)$ sous la racine ?)
 On encadre un pourcentage sur un grand sondage ($n = 500 > 30$) : c'est la **loi normale $z$**. Et comme on fait un **intervalle de confiance** (on n'a pas de $p_0$ imposé au départ), on met la fréquence observée $f(1 - f)$ sous la racine. À $95\%$, $\Phi(z) = 1 - \frac{0{,}05}{2} = 0{,}9750 \implies z_{0{,}975} = \mathbf{1{,}96}$ (Annexe A.1, ligne `1,9`, col. `0,06`). *En clair : `IC = Score observé ± 1,96 × √(Score × (1 - Score) ÷ n)`.*
 - **Pour le candidat $C_1$ :**
-  $$e_1 = z_{0{,}975}\sqrt{\frac{f_1(1 - f_1)}{n}} = 1{,}96\sqrt{\frac{0{,}30 \times (1 - 0{,}30)}{500}} = 1{,}96\sqrt{\frac{0{,}21}{500}} = 1{,}96\sqrt{0{,}00042} = 1{,}96 \times 0{,}02049 = \mathbf{0{,}0402}$$
-  $$IC_{95\%}(C_1) = [0{,}30 - 0{,}0402 \,;\, 0{,}30 + 0{,}0402] = [0{,}2598 \,;\, 0{,}3402] = \mathbf{[25{,}98\% \,;\, 34{,}02\%]}$$
+  $$e_1 = z_{1-\alpha/2}\sqrt{\frac{f_1(1 - f_1)}{n}} = 1{,}96\sqrt{\frac{0{,}30 \times (1 - 0{,}30)}{500}} = 1{,}96\sqrt{\frac{0{,}21}{500}} = 1{,}96\sqrt{0{,}00042} = 1{,}96 \times 0{,}02049 = \mathbf{0{,}0402}$$
+  $$\text{IC}_{95\%}(C_1) = \left[f_1 - z_{1-\alpha/2}\sqrt{\frac{f_1(1 - f_1)}{n}} \,;\, f_1 + z_{1-\alpha/2}\sqrt{\frac{f_1(1 - f_1)}{n}}\right] = \left[0{,}30 - 0{,}0402 \,;\, 0{,}30 + 0{,}0402\right] = \left[0{,}2598 \,;\, 0{,}3402\right] = \mathbf{\left[25{,}98\% \,;\, 34{,}02\%\right]}$$
 - **Pour le candidat $C_2$ :**
-  $$e_2 = z_{0{,}975}\sqrt{\frac{f_2(1 - f_2)}{n}} = 1{,}96\sqrt{\frac{0{,}28 \times (1 - 0{,}28)}{500}} = 1{,}96\sqrt{\frac{0{,}2016}{500}} = 1{,}96\sqrt{0{,}0004032} = 1{,}96 \times 0{,}02008 = \mathbf{0{,}0394}$$
-  $$IC_{95\%}(C_2) = [0{,}28 - 0{,}0394 \,;\, 0{,}28 + 0{,}0394] = [0{,}2406 \,;\, 0{,}3194] = \mathbf{[24{,}06\% \,;\, 31{,}94\%]}$$
+  $$e_2 = z_{1-\alpha/2}\sqrt{\frac{f_2(1 - f_2)}{n}} = 1{,}96\sqrt{\frac{0{,}28 \times (1 - 0{,}28)}{500}} = 1{,}96\sqrt{\frac{0{,}2016}{500}} = 1{,}96\sqrt{0{,}0004032} = 1{,}96 \times 0{,}02008 = \mathbf{0{,}0394}$$
+  $$\text{IC}_{95\%}(C_2) = \left[f_2 - z_{1-\alpha/2}\sqrt{\frac{f_2(1 - f_2)}{n}} \,;\, f_2 + z_{1-\alpha/2}\sqrt{\frac{f_2(1 - f_2)}{n}}\right] = \left[0{,}28 - 0{,}0394 \,;\, 0{,}28 + 0{,}0394\right] = \left[0{,}2406 \,;\, 0{,}3194\right] = \mathbf{\left[24{,}06\% \,;\, 31{,}94\%\right]}$$
 
 | Candidat | Voix $k$ | Proportion $f$ | Marge d'erreur ($95\%$) | $IC_{95\%}(p)$ |
 | :---: | :---: | :---: | :---: | :---: |
@@ -516,25 +518,19 @@ $$\text{Var}(\hat{\theta}) \ge \frac{1}{I_n(\lambda)} = \frac{1}{n / \lambda} = 
 *Pourquoi Student ?* Parce que tu as un petit groupe ($n = 10 < 30$), une loi normale, et tu ne connais pas le vrai $\sigma$ (tu as dû le remplacer par $s$) $\implies$ **Student $t(9)$**.
 - Erreur standard : $\text{ES} = \frac{s}{\sqrt{n}} = \frac{1{,}4421}{\sqrt{10}} = \frac{1{,}4421}{3{,}1623} = \mathbf{0{,}4560\text{ kg}}$.
 - En Annexe C (ligne $\nu = 9$, col. bilatérale `0,05`), $t_{9,\, 0{,}975} = \mathbf{2{,}2622}$, d'où la marge $e = 2{,}2622 \times 0{,}4560 = \mathbf{1{,}0316\text{ kg}}$.
-- Bornes ($\bar{x} \pm e$) :
-  - Borne inférieure : $4{,}72 - 1{,}0316 = \mathbf{3{,}69\text{ kg}}$
-  - Borne supérieure : $4{,}72 + 1{,}0316 = \mathbf{5{,}75\text{ kg}}$
-  $$IC_{95\%}(\mu) = \mathbf{[3{,}69 \,;\, 5{,}75]\text{ kg}}$$
+- **Intervalle de confiance à $95\%$ de $\mu$ :**
+  $$\text{IC}_{95\%}(\mu) = \left[\bar{x} - t_{n-1,\, 1-\alpha/2}\frac{s}{\sqrt{n}} \,;\, \bar{x} + t_{n-1,\, 1-\alpha/2}\frac{s}{\sqrt{n}}\right] = \left[4{,}72 - 1{,}0316 \,;\, 4{,}72 + 1{,}0316\right] = \mathbf{\left[3{,}69 \,;\, 5{,}75\right]\text{ kg}}$$
 
 ### 3. IC à 95% de $\sigma^2$ (pourquoi Khi-deux $\chi^2(9)$ ?)
 *Pourquoi $\chi^2$ et pourquoi cet ordre ?* On veut encadrer la **variance $\sigma^2$** sous loi normale ($\frac{(n-1)s^2}{\sigma^2} \sim \chi^2(9)$). Comme on divise $(n-1)s^2 = 18{,}716$ par les chiffres de la table, on divise par le **grand** chiffre (col. `0,025` en Annexe B : $k_{0{,}975} = 19{,}0228$) pour avoir la petite borne à gauche, et par le **petit** chiffre (col. `0,975` : $k_{0{,}025} = 2{,}7004$) pour avoir la grande borne à droite :
-- Borne inférieure : $\frac{(n-1)s^2}{k_{0{,}975}} = \frac{18{,}716}{19{,}0228} = \mathbf{0{,}98\text{ kg}^2}$
-- Borne supérieure : $\frac{(n-1)s^2}{k_{0{,}025}} = \frac{18{,}716}{2{,}7004} = \mathbf{6{,}93\text{ kg}^2}$
-$$IC_{95\%}(\sigma^2) = \mathbf{[0{,}98 \,;\, 6{,}93]\text{ kg}^2}$$
+$$\text{IC}_{95\%}(\sigma^2) = \left[\frac{(n - 1)s^2}{\chi^2_{n-1,\, 1-\alpha/2}} \,;\, \frac{(n - 1)s^2}{\chi^2_{n-1,\, \alpha/2}}\right] = \left[\frac{18{,}716}{19{,}0228} \,;\, \frac{18{,}716}{2{,}7004}\right] = \mathbf{\left[0{,}98 \,;\, 6{,}93\right]\text{ kg}^2}$$
 
 ### 4. IC à 95% de $\mu$ avec $\sigma = 1{,}4$ connu (pourquoi loi Normale $z$ ?)
 *Pourquoi la loi normale ?* Comme on te donne $\sigma = 1{,}4$, tu n'as plus à deviner la dispersion : tu quittes Student et tu repasses direct sur la **loi normale $\mathcal{N}(0, 1)$** ($z_{0{,}975} = 1{,}96$ en Annexe A.1 pour $\Phi(z) = 0{,}9750$).
 - Erreur standard : $\text{ES} = \frac{\sigma}{\sqrt{n}} = \frac{1{,}4}{\sqrt{10}} = \frac{1{,}4}{3{,}1623} = \mathbf{0{,}4427\text{ kg}}$.
 - Marge d'erreur : $e = 1{,}96 \times 0{,}4427 = \mathbf{0{,}8677\text{ kg}}$.
-- Bornes ($\bar{x} \pm e$) :
-  - Borne inférieure : $4{,}72 - 0{,}8677 = \mathbf{3{,}85\text{ kg}}$
-  - Borne supérieure : $4{,}72 + 0{,}8677 = \mathbf{5{,}59\text{ kg}}$
-  $$IC_{95\%}(\mu) = \mathbf{[3{,}85 \,;\, 5{,}59]\text{ kg}}$$
+- **Intervalle de confiance à $95\%$ de $\mu$ :**
+  $$\text{IC}_{95\%}(\mu) = \left[\bar{x} - z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}} \,;\, \bar{x} + z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}\right] = \left[4{,}72 - 0{,}8677 \,;\, 4{,}72 + 0{,}8677\right] = \mathbf{\left[3{,}85 \,;\, 5{,}59\right]\text{ kg}}$$
 
 ### 5. Taille minimale $n$ à 99% (pourquoi arrondir $52{,}016$ à $53$ ?)
 On veut que la marge d'erreur $z_{0{,}995}\frac{\sigma}{\sqrt{n}}$ ne dépasse pas $0{,}5$ kg, avec $z_{0{,}995} = 2{,}5758$ (Annexe A.1/A.2 pour $\Phi(z) = 1 - \frac{0{,}01}{2} = 0{,}9950$) :
